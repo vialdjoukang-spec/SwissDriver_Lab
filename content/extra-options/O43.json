@@ -1,0 +1,146 @@
+{
+ "D14-O43-PERMIS-01": {
+  "option": "Sans limite de durée jusqu’à l’examen pratique",
+  "why": "Le permis d’élève conducteur B a une durée de validité limitée, normalement 24 mois."
+ },
+ "D14-O43-PERMIS-02": {
+  "option": "Dès l’inscription dans une auto-école",
+  "why": "L’inscription en auto-école ne suffit pas : il faut réussir la théorie et prouver l’aptitude requise."
+ },
+ "D14-O43-PERMIS-03": {
+  "option": "Comme un permis d’élève prolongé",
+  "why": "Le premier permis est un permis à l’essai, distinct du permis d’élève conducteur."
+ },
+ "D14-O43-PERMIS-08": {
+  "option": "Il autorise aussi C pour des trajets privés sans marchandises",
+  "why": "La catégorie dépend du véhicule conduit, pas du caractère privé du trajet."
+ },
+ "D14-O43-PERMIS-09": {
+  "option": "Conduire seulement pour les trajets entre domicile et travail",
+  "why": "Le retrait interdit la conduite des véhicules concernés pour tous les trajets."
+ },
+ "D14-O43-PERMIS-10": {
+  "option": "Il suffit de le présenter plus tard au poste de police, sans conséquence",
+  "why": "Ne pas être porteur du permis est une contravention prévue dans la liste des amendes d’ordre."
+ },
+ "D14-O43-APPRENTISSAGE-01": {
+  "option": "Aucun âge minimal, seule l’ancienneté du permis compte",
+  "why": "L’accompagnateur doit avoir au moins 23 ans en plus des autres conditions."
+ },
+ "D14-O43-APPRENTISSAGE-03": {
+  "option": "Oui, si l’élève a déjà suivi le CTC",
+  "why": "La formation de l’élève ne change rien : l’accompagnateur ne peut pas être en période probatoire."
+ },
+ "D14-O43-APPRENTISSAGE-04": {
+  "option": "Contrôler seulement que l’élève a son permis d’élève sur lui",
+  "why": "L’accompagnateur doit veiller à la sécurité de toute la course et au respect des prescriptions."
+ },
+ "D14-O43-APPRENTISSAGE-05": {
+  "option": "Dès qu’il a suivi le CTC, quel que soit le délai écoulé",
+  "why": "Le CTC ne supprime pas la détention minimale de douze mois du permis d’élève."
+ },
+ "D14-O43-APPRENTISSAGE-08": {
+  "option": "Profiter des heures de pointe pour exercer les manœuvres en situation réelle",
+  "why": "Les exercices qui perturbent le trafic doivent être évités sur une chaussée fortement fréquentée."
+ },
+ "D14-O43-APPRENTISSAGE-09": {
+  "option": "Oui, si son retrait se termine bientôt",
+  "why": "Tant que le permis est retiré, il ne remplit pas les conditions pour accompagner un élève."
+ },
+ "D14-O43-FORMATION-01": {
+  "option": "En même temps que la formation complémentaire après le permis à l’essai",
+  "why": "En 2026, le CTC fait partie de la formation de base, avant l’examen pratique."
+ },
+ "D14-O43-FORMATION-02": {
+  "option": "Avoir effectué un nombre minimal de leçons en auto-école",
+  "why": "Aucun nombre minimal de leçons n’est prescrit pour la catégorie B ; le CTC est la condition visée."
+ },
+ "D14-O43-FORMATION-03": {
+  "option": "Vérifier surtout la connaissance théorique des signaux",
+  "why": "La connaissance des signaux relève de l’examen théorique ; l’examen pratique évalue la conduite réelle."
+ },
+ "D14-O43-FORMATION-06": {
+  "option": "Oui, le CTC est la première partie de la formation complémentaire",
+  "why": "Le CTC et la formation complémentaire sont deux formations distinctes à des moments différents."
+ },
+ "D14-O43-FORMATION-07": {
+  "option": "Oui, s’il est accompagné d’une personne remplissant les conditions",
+  "why": "Un accompagnateur ne remplace pas le permis d’élève, indispensable pour toute course d’apprentissage."
+ },
+ "D14-O43-FORMATION-08": {
+  "option": "Capacité à rouler toujours à la vitesse maximale autorisée",
+  "why": "La vitesse doit être adaptée aux circonstances ; l’examen évalue l’anticipation et les égards."
+ },
+ "D14-O43-PROBATOIRE-02": {
+  "option": "Le titulaire doit repasser l’examen théorique",
+  "why": "La conséquence prévue pour une première infraction de ce type est la prolongation de la période probatoire."
+ },
+ "D14-O43-PROBATOIRE-03": {
+  "option": "Le titulaire doit suivre un second cours complémentaire",
+  "why": "Une deuxième infraction moyennement grave ou grave avec retrait entraîne l’annulation du permis à l’essai."
+ },
+ "D14-O43-PROBATOIRE-04": {
+  "option": "Oui, dès qu’une amende d’ordre est payée",
+  "why": "Seules les infractions moyennement graves ou graves avec retrait ont cet effet sur la probation."
+ },
+ "D14-O43-PROBATOIRE-07": {
+  "option": "Ils peuvent encore servir pour conduire accompagné",
+  "why": "Après l’annulation, les permis d’élève conducteur doivent aussi être retirés et restitués."
+ },
+ "D14-O43-PROBATOIRE-08": {
+  "option": "Le montant de l’amende infligée",
+  "why": "Le critère est la qualification de l’infraction comme moyennement grave ou grave avec retrait, pas le montant."
+ },
+ "D14-O43-PROBATOIRE-10": {
+  "option": "Parce que toute infraction, même sanctionnée d’une amende d’ordre, prolonge la période d’essai",
+  "why": "Seules les infractions moyennement graves ou graves avec retrait prolongent ou annulent le permis à l’essai."
+ },
+ "D14-O43-DEUXPHASES-03": {
+  "option": "Réviser l’ensemble des questions de l’examen théorique",
+  "why": "La formation complémentaire est pratique et vise notamment le freinage, pas la révision de la théorie."
+ },
+ "D14-O43-DEUXPHASES-04": {
+  "option": "Apprendre à conduire avec une remorque lourde",
+  "why": "La conduite avec remorque n’est pas un objectif de cette formation, contrairement à la conduite économe."
+ },
+ "D14-O43-DEUXPHASES-05": {
+  "option": "Par une conférence théorique, sans aucune conduite",
+  "why": "Elle repose sur des situations de conduite proches de la réalité."
+ },
+ "D14-O43-DEUXPHASES-07": {
+  "option": "Ne pas avoir trouvé le temps à cause du travail",
+  "why": "Un manque de temps relève de la convenance personnelle, pas d’une impossibilité objective."
+ },
+ "D14-O43-DEUXPHASES-08": {
+  "option": "Oui, c’est une condition d’admission à l’examen pratique",
+  "why": "La formation complémentaire intervient après la délivrance du permis à l’essai."
+ },
+ "D14-O43-DEUXPHASES-09": {
+  "option": "CTC = après le permis à l’essai ; complémentaire = avant la théorie",
+  "why": "C’est l’inverse : le CTC appartient à la formation de base, la formation complémentaire suit le permis à l’essai."
+ },
+ "D14-O43-REFORME2027-02": {
+  "option": "Le passage de l’examen pratique sur simulateur",
+  "why": "La réforme intègre au CTC l’utilisation sûre des aides à la conduite ; elle ne remplace pas l’examen pratique."
+ },
+ "D14-O43-REFORME2027-03": {
+  "option": "Oui, dès l’annonce officielle de la réforme",
+  "why": "Une règle s’applique à son entrée en vigueur, ici le 1er janvier 2027, non à son annonce."
+ },
+ "D14-O43-REFORME2027-04": {
+  "option": "L’inscription est valable si le CTC est suivi avant l’examen pratique",
+  "why": "À partir de 2027, le CTC est une condition préalable à l’inscription à l’examen théorique."
+ },
+ "D14-O43-REFORME2027-06": {
+  "option": "Oui, un module en ligne peut remplacer la présence au cours",
+  "why": "Le CTC est conçu comme un cours en présence ; l’en ligne sert à préparer l’examen théorique."
+ },
+ "D14-O43-REFORME2027-08": {
+  "option": "Oui, le CTC remplace désormais l’examen théorique",
+  "why": "L’examen théorique est maintenu ; le CTC le précède seulement."
+ },
+ "D14-O43-REFORME2027-10": {
+  "option": "2026 : CTC → théorie → permis d’élève ; 2027 : théorie → permis d’élève → CTC",
+  "why": "C’est l’ordre inversé : le CTC passe avant la théorie à partir de 2027."
+ }
+}

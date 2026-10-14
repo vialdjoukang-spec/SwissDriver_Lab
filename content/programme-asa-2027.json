@@ -1,0 +1,1377 @@
+{
+ "schema": "swissdriver.programme-coverage/1",
+ "source": {
+  "label": "asa · Catalogue des compétences d’action et des objectifs d’apprentissage pour l’examen de la théorie de base",
+  "version": "juillet 2026",
+  "effective": "2027-01-01",
+  "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf",
+  "checked": "2026-10-14"
+ },
+ "scope": "Correspondance entre chaque contenu d’examen du catalogue asa et les sous-chapitres du programme. Intitulés abrégés ; le catalogue fait foi. Couverture rédactionnelle, non validée par l’asa ni par une personne compétente.",
+ "sectors": {
+  "1.1": "Priorités",
+  "1.2": "Interdictions",
+  "1.3": "Obligations, indications",
+  "1.4": "Gestion du trafic",
+  "2.1": "Conduite et dangers",
+  "2.2": "Changement de direction",
+  "2.3": "Avec les autres usagers de la route",
+  "2.4": "Conduite préventive et analyse des usagers de la route en 4 points (nouveau)",
+  "2.5": "Observation de la circulation et techniques d’observation (nouveau)",
+  "2.6": "Dynamique de conduite: modèle des phases de virage (nouveau)",
+  "3.1": "Infrastructure",
+  "3.2": "Conditions variables",
+  "3.3": "Analyse TSB pour les tronçons routiers (nouveau)",
+  "4.1": "Responsabilité",
+  "4.2": "Usagers de la route plus vulnérables",
+  "4.3": "Motivations à conduire et développement du sens de la circulation (nouveau)",
+  "4.4": "Aspects administratifs",
+  "4.5": "Dispositions pénales",
+  "4.6": "Formation à la conduite: déroulement et règles régissant la période probatoire (nouveau)",
+  "4.7": "Accidents et conscience des risques (nouveau)",
+  "4.8": "Modèles de concepts: modèle des interactions et de la fourche analytique (nouveau)",
+  "4.9": "Assurances",
+  "5.1": "Sécurité d’exploitation",
+  "5.2": "Passagers",
+  "5.3": "Équipements, accessoires, chargement",
+  "5.4": "Aspects administratifs",
+  "6.1": "Différenciation: systèmes d’aide à la conduite ou d’automatisation (nouveau)",
+  "6.2": "Principaux systèmes: fonctions, limites et risques (nouveau)",
+  "6.3": "Attention et disponibilité à prendre le relais"
+ },
+ "items": [
+  {
+   "id": "1.1.1",
+   "sector": "1.1",
+   "topic": "Intersections",
+   "coverage": [
+    "O11/intersections"
+   ]
+  },
+  {
+   "id": "1.1.2",
+   "sector": "1.1",
+   "topic": "Ronds-points",
+   "coverage": [
+    "O11/giratoires"
+   ]
+  },
+  {
+   "id": "1.1.3",
+   "sector": "1.1",
+   "topic": "Entrées et sorties de véhicules",
+   "coverage": [
+    "O11/entrees-sorties"
+   ]
+  },
+  {
+   "id": "1.1.4",
+   "sector": "1.1",
+   "topic": "Rétrécissements",
+   "coverage": [
+    "O11/retrecissements"
+   ]
+  },
+  {
+   "id": "1.1.5",
+   "sector": "1.1",
+   "topic": "Routes principales et secondaires",
+   "coverage": [
+    "O11/routes"
+   ]
+  },
+  {
+   "id": "1.1.6",
+   "sector": "1.1",
+   "topic": "Véhicules de secours routier",
+   "coverage": [
+    "O11/prioritaires-tram"
+   ]
+  },
+  {
+   "id": "1.1.7",
+   "sector": "1.1",
+   "topic": "Tramway",
+   "coverage": [
+    "O11/prioritaires-tram"
+   ]
+  },
+  {
+   "id": "1.2.1",
+   "sector": "1.2",
+   "topic": "Interdictions de circuler",
+   "coverage": [
+    "O12/circuler"
+   ]
+  },
+  {
+   "id": "1.2.2",
+   "sector": "1.2",
+   "topic": "Limites de dimensions et de poids",
+   "coverage": [
+    "O12/gabarit"
+   ]
+  },
+  {
+   "id": "1.2.3",
+   "sector": "1.2",
+   "topic": "Interdictions de s’arrêter",
+   "coverage": [
+    "O12/arret"
+   ]
+  },
+  {
+   "id": "1.2.4",
+   "sector": "1.2",
+   "topic": "Interdictions de parquer",
+   "coverage": [
+    "O12/stationner",
+    "O13/parking"
+   ]
+  },
+  {
+   "id": "1.3.1",
+   "sector": "1.3",
+   "topic": "Sens de circulation",
+   "coverage": [
+    "O13/direction"
+   ]
+  },
+  {
+   "id": "1.3.2",
+   "sector": "1.3",
+   "topic": "Stationnement",
+   "coverage": [
+    "O13/parking",
+    "O12/stationner"
+   ]
+  },
+  {
+   "id": "1.3.3",
+   "sector": "1.3",
+   "topic": "Signes et instructions pour la régulation du trafic",
+   "coverage": [
+    "O13/agents-auxiliaires",
+    "O14/feux"
+   ]
+  },
+  {
+   "id": "1.4.1",
+   "sector": "1.4",
+   "topic": "Indication de direction",
+   "coverage": [
+    "O14/orientation",
+    "O13/indications"
+   ]
+  },
+  {
+   "id": "1.4.2",
+   "sector": "1.4",
+   "topic": "Voie",
+   "coverage": [
+    "O14/voies"
+   ]
+  },
+  {
+   "id": "1.4.3",
+   "sector": "1.4",
+   "topic": "Tronçons servant à la présélection",
+   "coverage": [
+    "O14/preselection"
+   ]
+  },
+  {
+   "id": "1.4.4",
+   "sector": "1.4",
+   "topic": "Marquages et balisage",
+   "coverage": [
+    "O14/marquages"
+   ]
+  },
+  {
+   "id": "1.4.5",
+   "sector": "1.4",
+   "topic": "Passages piétons",
+   "coverage": [
+    "O14/pietons"
+   ]
+  },
+  {
+   "id": "1.4.6",
+   "sector": "1.4",
+   "topic": "Pistes cyclables, bandes cyclables",
+   "coverage": [
+    "O14/cycles"
+   ]
+  },
+  {
+   "id": "1.4.7",
+   "sector": "1.4",
+   "topic": "Feux de signalisation",
+   "coverage": [
+    "O14/feux",
+    "O14/feux-pietons"
+   ]
+  },
+  {
+   "id": "1.4.8",
+   "sector": "1.4",
+   "topic": "Trottoir",
+   "coverage": [
+    "O14/zones"
+   ]
+  },
+  {
+   "id": "1.4.9",
+   "sector": "1.4",
+   "topic": "Zones",
+   "coverage": [
+    "O14/zones"
+   ]
+  },
+  {
+   "id": "2.1.1",
+   "sector": "2.1",
+   "topic": "Limitations de vitesse",
+   "coverage": [
+    "O21/vitesse"
+   ]
+  },
+  {
+   "id": "2.1.2",
+   "sector": "2.1",
+   "topic": "Rouler à droite",
+   "coverage": [
+    "O21/droite"
+   ]
+  },
+  {
+   "id": "2.1.3",
+   "sector": "2.1",
+   "topic": "Accélérer",
+   "coverage": [
+    "O21/accelerer"
+   ]
+  },
+  {
+   "id": "2.1.4",
+   "sector": "2.1",
+   "topic": "Virages",
+   "coverage": [
+    "O21/virages",
+    "N26"
+   ]
+  },
+  {
+   "id": "2.1.5",
+   "sector": "2.1",
+   "topic": "Côtes et descentes",
+   "coverage": [
+    "O21/pentes"
+   ]
+  },
+  {
+   "id": "2.1.6",
+   "sector": "2.1",
+   "topic": "Ralentir, freiner",
+   "coverage": [
+    "O21/freiner"
+   ]
+  },
+  {
+   "id": "2.1.7",
+   "sector": "2.1",
+   "topic": "S’arrêter",
+   "coverage": [
+    "O21/arreter"
+   ]
+  },
+  {
+   "id": "2.1.8",
+   "sector": "2.1",
+   "topic": "Autres risques",
+   "coverage": [
+    "O21/dangers"
+   ]
+  },
+  {
+   "id": "2.2.1",
+   "sector": "2.2",
+   "topic": "Démarrer",
+   "coverage": [
+    "O22/demarrer"
+   ]
+  },
+  {
+   "id": "2.2.2",
+   "sector": "2.2",
+   "topic": "Se présélectionner",
+   "coverage": [
+    "O22/preselection"
+   ]
+  },
+  {
+   "id": "2.2.3",
+   "sector": "2.2",
+   "topic": "Changer de direction",
+   "coverage": [
+    "O22/tourner",
+    "O14/clignotants"
+   ]
+  },
+  {
+   "id": "2.2.4",
+   "sector": "2.2",
+   "topic": "Contourner",
+   "coverage": [
+    "O22/contourner"
+   ]
+  },
+  {
+   "id": "2.2.5",
+   "sector": "2.2",
+   "topic": "Faire une marche arrière",
+   "coverage": [
+    "O22/marche-arriere"
+   ]
+  },
+  {
+   "id": "2.2.6",
+   "sector": "2.2",
+   "topic": "Faire demi-tour",
+   "coverage": [
+    "O22/demi-tour"
+   ]
+  },
+  {
+   "id": "2.3.1",
+   "sector": "2.3",
+   "topic": "Croiser",
+   "coverage": [
+    "O23/croiser"
+   ]
+  },
+  {
+   "id": "2.3.2",
+   "sector": "2.3",
+   "topic": "Éviter",
+   "coverage": [
+    "O23/eviter"
+   ]
+  },
+  {
+   "id": "2.3.3",
+   "sector": "2.3",
+   "topic": "Rouler côte à côte",
+   "coverage": [
+    "O23/cote-a-cote"
+   ]
+  },
+  {
+   "id": "2.3.4",
+   "sector": "2.3",
+   "topic": "Véhicules qui se suivent",
+   "coverage": [
+    "O23/suivi"
+   ]
+  },
+  {
+   "id": "2.3.5",
+   "sector": "2.3",
+   "topic": "Doubler",
+   "coverage": [
+    "O23/depasser"
+   ]
+  },
+  {
+   "id": "2.3.6",
+   "sector": "2.3",
+   "topic": "Distance",
+   "coverage": [
+    "O23/distance"
+   ]
+  },
+  {
+   "id": "2.3.7",
+   "sector": "2.3",
+   "topic": "Signaliser",
+   "coverage": [
+    "O23/signaler",
+    "O14/clignotants"
+   ]
+  },
+  {
+   "id": "2.4.1",
+   "sector": "2.4",
+   "topic": "Analyse des usagers de la route en 4 points",
+   "coverage": [
+    "N24/analyse-usagers"
+   ]
+  },
+  {
+   "id": "2.4.2",
+   "sector": "2.4",
+   "topic": "Anticipation",
+   "coverage": [
+    "N24/anticipation"
+   ]
+  },
+  {
+   "id": "2.4.3",
+   "sector": "2.4",
+   "topic": "Tactique défensive",
+   "coverage": [
+    "N24/tactique-defensive"
+   ]
+  },
+  {
+   "id": "2.4.4",
+   "sector": "2.4",
+   "topic": "Stratégies de sécurité",
+   "coverage": [
+    "N24/tactique-defensive"
+   ]
+  },
+  {
+   "id": "2.4.5",
+   "sector": "2.4",
+   "topic": "Stratégies de sécurité globales",
+   "coverage": [
+    "N24/tactique-defensive"
+   ]
+  },
+  {
+   "id": "2.4.6",
+   "sector": "2.4",
+   "topic": "Limites de perception du véhicule dans le contexte de l’analyse des usagers de la route en 4 points",
+   "coverage": [
+    "N24/limites-perception"
+   ]
+  },
+  {
+   "id": "2.5.1",
+   "sector": "2.5",
+   "topic": "Orientation du regard",
+   "coverage": [
+    "N25/orientation-regard"
+   ]
+  },
+  {
+   "id": "2.5.2",
+   "sector": "2.5",
+   "topic": "Anticipation",
+   "coverage": [
+    "N25/orientation-regard"
+   ]
+  },
+  {
+   "id": "2.5.3",
+   "sector": "2.5",
+   "topic": "Regards sélectifs et méthodiques",
+   "coverage": [
+    "N25/regards-selectifs"
+   ]
+  },
+  {
+   "id": "2.5.4",
+   "sector": "2.5",
+   "topic": "Regards de contrôle",
+   "coverage": [
+    "N25/regards-controle"
+   ]
+  },
+  {
+   "id": "2.5.5",
+   "sector": "2.5",
+   "topic": "Conditions de visibilité",
+   "coverage": [
+    "N25/visibilite-reaction",
+    "O32/visibilite"
+   ]
+  },
+  {
+   "id": "2.5.6",
+   "sector": "2.5",
+   "topic": "Liens entre la perception, le traitement des informations et le temps de réaction",
+   "coverage": [
+    "N25/visibilite-reaction"
+   ]
+  },
+  {
+   "id": "2.6.1",
+   "sector": "2.6",
+   "topic": "Principes de la physique",
+   "coverage": [
+    "N26/principes-physiques"
+   ]
+  },
+  {
+   "id": "2.6.2",
+   "sector": "2.6",
+   "topic": "Phases des virages",
+   "coverage": [
+    "N26/phases-virage"
+   ]
+  },
+  {
+   "id": "2.6.3",
+   "sector": "2.6",
+   "topic": "Signification de la division en phases pour la vitesse et la trajectoire",
+   "coverage": [
+    "N26/phases-virage"
+   ]
+  },
+  {
+   "id": "2.6.4",
+   "sector": "2.6",
+   "topic": "Marge de sécurité personnelle",
+   "coverage": [
+    "N26/marge-securite"
+   ]
+  },
+  {
+   "id": "2.6.5",
+   "sector": "2.6",
+   "topic": "Liens entre le rayon du virage, la vitesse et la distance d’arrêt",
+   "coverage": [
+    "N26/principes-physiques",
+    "O21/virages"
+   ]
+  },
+  {
+   "id": "2.6.6",
+   "sector": "2.6",
+   "topic": "Particularités concernant les conductrices et conducteurs de motos",
+   "coverage": [
+    "N26/virage-moto"
+   ]
+  },
+  {
+   "id": "3.1.1",
+   "sector": "3.1",
+   "topic": "Autoroute et semi-autoroute",
+   "coverage": [
+    "O31/autoroute",
+    "O31/interfaces",
+    "O31/panne-autoroute"
+   ]
+  },
+  {
+   "id": "3.1.2",
+   "sector": "3.1",
+   "topic": "Tunnel",
+   "coverage": [
+    "O31/tunnel"
+   ]
+  },
+  {
+   "id": "3.1.3",
+   "sector": "3.1",
+   "topic": "Passages à niveau",
+   "coverage": [
+    "O31/rail"
+   ]
+  },
+  {
+   "id": "3.1.4",
+   "sector": "3.1",
+   "topic": "Arrêts de transports publics",
+   "coverage": [
+    "O31/transports",
+    "O31/bus-arret"
+   ]
+  },
+  {
+   "id": "3.2.1",
+   "sector": "3.2",
+   "topic": "Conditions de visibilité",
+   "coverage": [
+    "O32/visibilite"
+   ]
+  },
+  {
+   "id": "3.2.2",
+   "sector": "3.2",
+   "topic": "État de la route",
+   "coverage": [
+    "O32/chaussee",
+    "N33"
+   ]
+  },
+  {
+   "id": "3.2.3",
+   "sector": "3.2",
+   "topic": "Gestion du trafic en présence de situations exceptionnelles",
+   "coverage": [
+    "O32/gestion",
+    "O32/situations-exceptionnelles"
+   ]
+  },
+  {
+   "id": "3.2.4",
+   "sector": "3.2",
+   "topic": "Chantiers",
+   "coverage": [
+    "O32/chantiers"
+   ]
+  },
+  {
+   "id": "3.2.5",
+   "sector": "3.2",
+   "topic": "Embouteillage",
+   "coverage": [
+    "O32/bouchons"
+   ]
+  },
+  {
+   "id": "3.3.1",
+   "sector": "3.3",
+   "topic": "Analyse TSB",
+   "coverage": [
+    "N33/analyse-tsb"
+   ]
+  },
+  {
+   "id": "3.3.2",
+   "sector": "3.3",
+   "topic": "Déduction de la vitesse et de la trajectoire à partir de l’analyse TSB",
+   "coverage": [
+    "N33/vitesse-trajectoire"
+   ]
+  },
+  {
+   "id": "3.3.3",
+   "sector": "3.3",
+   "topic": "Stratégies de sécurité",
+   "coverage": [
+    "N33/strategies-securite"
+   ]
+  },
+  {
+   "id": "3.3.4",
+   "sector": "3.3",
+   "topic": "Types de routes spéciaux",
+   "coverage": [
+    "N33/routes-speciales"
+   ]
+  },
+  {
+   "id": "4.1.1",
+   "sector": "4.1",
+   "topic": "Règle fondamentale",
+   "coverage": [
+    "O41/regle-base"
+   ]
+  },
+  {
+   "id": "4.1.2",
+   "sector": "4.1",
+   "topic": "Aptitude à la conduite",
+   "coverage": [
+    "O41/aptitude",
+    "O41/distraction"
+   ]
+  },
+  {
+   "id": "4.1.3",
+   "sector": "4.1",
+   "topic": "Bonne connaissance du véhicule",
+   "coverage": [
+    "O41/vehicule"
+   ]
+  },
+  {
+   "id": "4.1.4",
+   "sector": "4.1",
+   "topic": "Comportement en cas d’accident",
+   "coverage": [
+    "O41/accident"
+   ]
+  },
+  {
+   "id": "4.2.1",
+   "sector": "4.2",
+   "topic": "Enfants",
+   "coverage": [
+    "O42/enfants"
+   ]
+  },
+  {
+   "id": "4.2.2",
+   "sector": "4.2",
+   "topic": "Personnes handicapées",
+   "coverage": [
+    "O42/handicap"
+   ]
+  },
+  {
+   "id": "4.2.3",
+   "sector": "4.2",
+   "topic": "Personnes âgées",
+   "coverage": [
+    "O42/ages"
+   ]
+  },
+  {
+   "id": "4.2.4",
+   "sector": "4.2",
+   "topic": "Piétons",
+   "coverage": [
+    "O42/pietons"
+   ]
+  },
+  {
+   "id": "4.2.5",
+   "sector": "4.2",
+   "topic": "Cyclistes",
+   "coverage": [
+    "O42/cyclistes",
+    "O42/nouveaux-usagers"
+   ]
+  },
+  {
+   "id": "4.3.1",
+   "sector": "4.3",
+   "topic": "Réflexion sur les propres motivations à conduire",
+   "coverage": [
+    "N43/propres-motivations"
+   ]
+  },
+  {
+   "id": "4.3.2",
+   "sector": "4.3",
+   "topic": "Lien entre les motivations à conduire et le comportement de conduite",
+   "coverage": [
+    "N43/motivations-comportement"
+   ]
+  },
+  {
+   "id": "4.3.3",
+   "sector": "4.3",
+   "topic": "Développement du sens de la circulation",
+   "coverage": [
+    "N43/sens-circulation"
+   ]
+  },
+  {
+   "id": "4.3.4",
+   "sector": "4.3",
+   "topic": "Motivations à conduire typiques et risquées",
+   "coverage": [
+    "N43/motivations-risquees"
+   ]
+  },
+  {
+   "id": "4.3.5",
+   "sector": "4.3",
+   "topic": "Lien entre les motivations à conduire et les capacités",
+   "coverage": [
+    "N43/motivations-comportement"
+   ]
+  },
+  {
+   "id": "4.3.6",
+   "sector": "4.3",
+   "topic": "La sécurité routière doit primer sur les motivations à conduire personnelles, même si cela implique de rouler moins vite ou de perdre en confort.",
+   "coverage": [
+    "N43/sens-circulation"
+   ]
+  },
+  {
+   "id": "4.4.1",
+   "sector": "4.4",
+   "topic": "Permis de conduire",
+   "coverage": [
+    "O43/permis",
+    "O43/categories"
+   ]
+  },
+  {
+   "id": "4.4.2",
+   "sector": "4.4",
+   "topic": "Cours de théorie de la circulation",
+   "coverage": [
+    "O43/formation",
+    "O43/reforme-2027"
+   ]
+  },
+  {
+   "id": "4.4.3",
+   "sector": "4.4",
+   "topic": "Courses d’apprentissage",
+   "coverage": [
+    "O43/apprentissage"
+   ]
+  },
+  {
+   "id": "4.4.4",
+   "sector": "4.4",
+   "topic": "Instruction pratique de base moto",
+   "coverage": [
+    "O43/moto-base"
+   ]
+  },
+  {
+   "id": "4.4.5",
+   "sector": "4.4",
+   "topic": "Formation complémentaire",
+   "coverage": [
+    "O43/deux-phases",
+    "O43/probatoire",
+    "N46"
+   ]
+  },
+  {
+   "id": "4.5.1",
+   "sector": "4.5",
+   "topic": "Amendes",
+   "coverage": [
+    "O44/amendes"
+   ]
+  },
+  {
+   "id": "4.5.2",
+   "sector": "4.5",
+   "topic": "Retrait de permis",
+   "coverage": [
+    "O44/retrait",
+    "O44/retrait-preventif"
+   ]
+  },
+  {
+   "id": "4.5.3",
+   "sector": "4.5",
+   "topic": "Peines de prison",
+   "coverage": [
+    "O44/penal",
+    "O44/alcool-drogues"
+   ]
+  },
+  {
+   "id": "4.6.1",
+   "sector": "4.6",
+   "topic": "Déroulement de la formation à la conduite",
+   "coverage": [
+    "N46/deroulement-formation"
+   ]
+  },
+  {
+   "id": "4.6.2",
+   "sector": "4.6",
+   "topic": "Importance des heures de conduite professionnelles",
+   "coverage": [
+    "N46/heures-et-courses"
+   ]
+  },
+  {
+   "id": "4.6.3",
+   "sector": "4.6",
+   "topic": "Importance des courses d’entraînement privées",
+   "coverage": [
+    "N46/heures-et-courses"
+   ]
+  },
+  {
+   "id": "4.6.4",
+   "sector": "4.6",
+   "topic": "Permis de conduire à l’essai",
+   "coverage": [
+    "N46/permis-essai",
+    "O43/probatoire"
+   ]
+  },
+  {
+   "id": "4.6.5",
+   "sector": "4.6",
+   "topic": "Sanctions pendant la période probatoire",
+   "coverage": [
+    "N46/permis-essai",
+    "O44/retrait"
+   ]
+  },
+  {
+   "id": "4.6.6",
+   "sector": "4.6",
+   "topic": "Responsabilité du détenteur",
+   "coverage": [
+    "N46/responsabilite-detenteur"
+   ]
+  },
+  {
+   "id": "4.6.7",
+   "sector": "4.6",
+   "topic": "Cours de formation continue CFC",
+   "coverage": [
+    "N46/formation-complementaire",
+    "O43/deux-phases"
+   ]
+  },
+  {
+   "id": "4.7.1",
+   "sector": "4.7",
+   "topic": "Statistiques des accidents",
+   "coverage": [
+    "N47/statistiques-accidents"
+   ]
+  },
+  {
+   "id": "4.7.2",
+   "sector": "4.7",
+   "topic": "Causes typiques d’accidents chez les nouveaux conducteurs",
+   "coverage": [
+    "N47/causes-nouveaux"
+   ]
+  },
+  {
+   "id": "4.7.3",
+   "sector": "4.7",
+   "topic": "Modèle de risque des interactions",
+   "coverage": [
+    "N47/facteurs-personnels",
+    "N48/modele-interactions"
+   ]
+  },
+  {
+   "id": "4.7.4",
+   "sector": "4.7",
+   "topic": "Modèle de la fourche analytique",
+   "coverage": [
+    "N47/facteurs-personnels",
+    "N48/fourche-analytique"
+   ]
+  },
+  {
+   "id": "4.7.5",
+   "sector": "4.7",
+   "topic": "Facteurs de risque personnels aggravants",
+   "coverage": [
+    "N47/facteurs-personnels"
+   ]
+  },
+  {
+   "id": "4.7.6",
+   "sector": "4.7",
+   "topic": "Stratégie de prévention des accidents",
+   "coverage": [
+    "N47/strategie-prevention"
+   ]
+  },
+  {
+   "id": "4.8.1",
+   "sector": "4.8",
+   "topic": "Modèle des interactions",
+   "coverage": [
+    "N48/modele-interactions"
+   ]
+  },
+  {
+   "id": "4.8.2",
+   "sector": "4.8",
+   "topic": "Modèle de la fourche analytique",
+   "coverage": [
+    "N48/fourche-analytique"
+   ]
+  },
+  {
+   "id": "4.8.3",
+   "sector": "4.8",
+   "topic": "Élaboration de stratégies personnelles à partir des deux modèles",
+   "coverage": [
+    "N48/strategies-personnelles"
+   ]
+  },
+  {
+   "id": "4.8.4",
+   "sector": "4.8",
+   "topic": "Le modèle des interactions et la fourche analytique comme instruments de mise en œuvre de la règle fondamentale",
+   "coverage": [
+    "N48/modeles-regle-fondamentale",
+    "O41/regle-base"
+   ]
+  },
+  {
+   "id": "4.8.5",
+   "sector": "4.8",
+   "topic": "Sens des responsabilités",
+   "coverage": [
+    "N48/modeles-regle-fondamentale"
+   ]
+  },
+  {
+   "id": "4.9.1",
+   "sector": "4.9",
+   "topic": "Responsabilité civile",
+   "coverage": [
+    "O45/rc",
+    "O45/couvertures"
+   ]
+  },
+  {
+   "id": "4.9.2",
+   "sector": "4.9",
+   "topic": "Recours",
+   "coverage": [
+    "O45/recours",
+    "O45/negligence-grave"
+   ]
+  },
+  {
+   "id": "5.1.1",
+   "sector": "5.1",
+   "topic": "Réglages",
+   "coverage": [
+    "O51/reglages"
+   ]
+  },
+  {
+   "id": "5.1.2",
+   "sector": "5.1",
+   "topic": "Éclairage",
+   "coverage": [
+    "O51/eclairage"
+   ]
+  },
+  {
+   "id": "5.1.3",
+   "sector": "5.1",
+   "topic": "Éléments de commande",
+   "coverage": [
+    "O51/commandes"
+   ]
+  },
+  {
+   "id": "5.1.4",
+   "sector": "5.1",
+   "topic": "Voyants lumineux",
+   "coverage": [
+    "O51/voyants"
+   ]
+  },
+  {
+   "id": "5.1.5",
+   "sector": "5.1",
+   "topic": "Freins",
+   "coverage": [
+    "O51/freins"
+   ]
+  },
+  {
+   "id": "5.1.6",
+   "sector": "5.1",
+   "topic": "Pneumatiques",
+   "coverage": [
+    "O51/pneus"
+   ]
+  },
+  {
+   "id": "5.1.7",
+   "sector": "5.1",
+   "topic": "Propreté",
+   "coverage": [
+    "O51/proprete"
+   ]
+  },
+  {
+   "id": "5.1.8",
+   "sector": "5.1",
+   "topic": "État conforme aux prescriptions",
+   "coverage": [
+    "O51/conformite"
+   ]
+  },
+  {
+   "id": "5.1.9",
+   "sector": "5.1",
+   "topic": "Dimensions et poids",
+   "coverage": [
+    "O51/dimensions"
+   ]
+  },
+  {
+   "id": "5.1.10",
+   "sector": "5.1",
+   "topic": "Dispositifs d’alerte",
+   "coverage": [
+    "O51/alerte-panne"
+   ]
+  },
+  {
+   "id": "5.1.11",
+   "sector": "5.1",
+   "topic": "Pannes",
+   "coverage": [
+    "O51/alerte-panne",
+    "O41/accident"
+   ]
+  },
+  {
+   "id": "5.2.1",
+   "sector": "5.2",
+   "topic": "Places assises",
+   "coverage": [
+    "O52/places",
+    "O52/surface-charge"
+   ]
+  },
+  {
+   "id": "5.2.2",
+   "sector": "5.2",
+   "topic": "Ceintures de sécurité",
+   "coverage": [
+    "O52/ceintures"
+   ]
+  },
+  {
+   "id": "5.2.3",
+   "sector": "5.2",
+   "topic": "Siège enfant",
+   "coverage": [
+    "O52/enfants"
+   ]
+  },
+  {
+   "id": "5.3.1",
+   "sector": "5.3",
+   "topic": "Sécurisation du chargement",
+   "coverage": [
+    "O53/arrimage"
+   ]
+  },
+  {
+   "id": "5.3.2",
+   "sector": "5.3",
+   "topic": "Chaînes neige",
+   "coverage": [
+    "O53/chaines"
+   ]
+  },
+  {
+   "id": "5.3.3",
+   "sector": "5.3",
+   "topic": "Casque et vêtements",
+   "coverage": [
+    "O53/equipement-moto"
+   ]
+  },
+  {
+   "id": "5.3.4",
+   "sector": "5.3",
+   "topic": "Charge sur le toit et porte-vélos",
+   "coverage": [
+    "O53/toit"
+   ]
+  },
+  {
+   "id": "5.3.5",
+   "sector": "5.3",
+   "topic": "Remorques",
+   "coverage": [
+    "O53/remorque"
+   ]
+  },
+  {
+   "id": "5.4.1",
+   "sector": "5.4",
+   "topic": "Plaques de contrôle",
+   "coverage": [
+    "O54/plaques",
+    "O54/plaques-speciales"
+   ]
+  },
+  {
+   "id": "5.4.2",
+   "sector": "5.4",
+   "topic": "Permis de circulation",
+   "coverage": [
+    "O54/circulation"
+   ]
+  },
+  {
+   "id": "5.4.3",
+   "sector": "5.4",
+   "topic": "Entretien du système antipollution",
+   "coverage": [
+    "O54/antipollution"
+   ]
+  },
+  {
+   "id": "5.4.4",
+   "sector": "5.4",
+   "topic": "Vignette autoroutière",
+   "coverage": [
+    "O54/vignette"
+   ]
+  },
+  {
+   "id": "6.1.1",
+   "sector": "6.1",
+   "topic": "Définition des systèmes d’aide à la conduite",
+   "coverage": [
+    "U25/familles"
+   ]
+  },
+  {
+   "id": "6.1.2",
+   "sector": "6.1",
+   "topic": "Définition des systèmes d’automatisation",
+   "coverage": [
+    "U25/familles",
+    "U25/niveaux"
+   ]
+  },
+  {
+   "id": "6.1.3",
+   "sector": "6.1",
+   "topic": "Exemples d’ADAS",
+   "coverage": [
+    "U25/familles",
+    "U25/systemes"
+   ]
+  },
+  {
+   "id": "6.1.4",
+   "sector": "6.1",
+   "topic": "Exemples d'automatisation",
+   "coverage": [
+    "U25/niveaux",
+    "U25/systemes"
+   ]
+  },
+  {
+   "id": "6.1.5",
+   "sector": "6.1",
+   "topic": "Différents modes d’action",
+   "coverage": [
+    "U25/familles",
+    "U25/usage"
+   ]
+  },
+  {
+   "id": "6.2.1",
+   "sector": "6.2",
+   "topic": "ABS – Système antiblocage automatique",
+   "coverage": [
+    "U25/systemes"
+   ]
+  },
+  {
+   "id": "6.2.2",
+   "sector": "6.2",
+   "topic": "ESP – Stabilisateur électronique de trajectoire",
+   "coverage": [
+    "U25/systemes"
+   ]
+  },
+  {
+   "id": "6.2.3",
+   "sector": "6.2",
+   "topic": "AEB – Freinage automatique d’urgence",
+   "coverage": [
+    "U25/systemes"
+   ]
+  },
+  {
+   "id": "6.2.4",
+   "sector": "6.2",
+   "topic": "Système de suivi de voie",
+   "coverage": [
+    "U25/systemes"
+   ]
+  },
+  {
+   "id": "6.2.5",
+   "sector": "6.2",
+   "topic": "Avertisseur d’angle mort",
+   "coverage": [
+    "U25/systemes"
+   ]
+  },
+  {
+   "id": "6.2.6",
+   "sector": "6.2",
+   "topic": "ACC – Régulateur de vitesse adaptatif",
+   "coverage": [
+    "U25/systemes"
+   ]
+  },
+  {
+   "id": "6.2.7",
+   "sector": "6.2",
+   "topic": "Assistant de stationnement",
+   "coverage": [
+    "U25/systemes"
+   ]
+  },
+  {
+   "id": "6.2.8",
+   "sector": "6.2",
+   "topic": "Activation et désactivation des systèmes",
+   "coverage": [
+    "U25/usage",
+    "U25/systemes"
+   ]
+  },
+  {
+   "id": "6.2.9",
+   "sector": "6.2",
+   "topic": "Limites technologiques de tous les systèmes",
+   "coverage": [
+    "U25/limites",
+    "U25/systemes"
+   ]
+  },
+  {
+   "id": "6.3.1",
+   "sector": "6.3",
+   "topic": "Notion de «disponibilité à prendre le relais»",
+   "coverage": [
+    "U25/usage",
+    "U25/responsabilite"
+   ]
+  },
+  {
+   "id": "6.3.2",
+   "sector": "6.3",
+   "topic": "Risques de distraction liés aux systèmes d’assistance",
+   "coverage": [
+    "U25/limites",
+    "U25/usage"
+   ]
+  },
+  {
+   "id": "6.3.3",
+   "sector": "6.3",
+   "topic": "Situations nécessitant impérativement une intervention manuelle",
+   "coverage": [
+    "U25/limites",
+    "U25/cas"
+   ]
+  },
+  {
+   "id": "6.3.4",
+   "sector": "6.3",
+   "topic": "Responsabilité juridique",
+   "coverage": [
+    "U25/responsabilite"
+   ]
+  },
+  {
+   "id": "6.3.5",
+   "sector": "6.3",
+   "topic": "Panne du système et réaction",
+   "coverage": [
+    "U25/limites",
+    "U25/cas"
+   ]
+  },
+  {
+   "id": "6.3.6",
+   "sector": "6.3",
+   "topic": "Influence des ADAS sur le comportement de conduite",
+   "coverage": [
+    "U25/usage",
+    "U25/responsabilite"
+   ]
+  }
+ ]
+}

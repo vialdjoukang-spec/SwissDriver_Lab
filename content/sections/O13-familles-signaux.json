@@ -1,0 +1,289 @@
+{
+ "chapterId": "O13",
+ "after": "indications",
+ "section": {
+  "id": "familles-signaux",
+  "otitle": "Reconnaître un signal par sa forme et sa couleur",
+  "title": "Avant de lire le symbole, reconnaissez la famille du panneau",
+  "ogoal": "Identifier la famille d’un signal routier suisse d’après sa forme et ses couleurs, puis en déduire immédiatement le type de comportement attendu.",
+  "question": "Un panneau apparaît au loin, encore trop petit pour lire le dessin : pouvez-vous déjà savoir ce qu’il attend de vous ?",
+  "lead": [
+   "En Suisse, l’ordonnance sur la signalisation routière, l’OSR, range les panneaux en grandes familles. Chaque famille a sa forme et ses couleurs. Si vous reconnaissez la famille, vous savez déjà quel genre de décision prendre, avant même de distinguer le symbole. Cette section relie cette lecture rapide aux autres parties du cours : les règles de priorité (chapitre O11), les interdictions (chapitre O12) et les obligations de ce chapitre."
+  ],
+  "parts": [
+   {
+    "title": "Triangle à bord rouge, pointe en haut : un danger arrive",
+    "body": [
+     "Les **signaux de danger** sont des triangles posés sur leur base, pointe en haut, avec un bord rouge et un fond blanc. Ils ne vous interdisent rien et ne vous obligent à aucun mouvement précis : ils vous **annoncent** un danger qui se trouve plus loin. En principe, ils sont placés à l’avance, pour vous laisser le temps de vous préparer. Le dessin au centre précise la nature du danger : un passage pour piétons, des enfants, une chaussée glissante, des travaux, une intersection où s’applique la priorité de droite, ou encore des signaux lumineux.",
+     "Le comportement attendu est toujours le même : **anticiper**. Vous levez le pied, vous regardez plus loin, vous cherchez l’objet annoncé (des enfants près d’une école, un feu derrière un virage, des engins de chantier) et vous vous préparez à freiner. Le triangle d’intersection avec priorité de droite vous renvoie directement aux règles de priorité du chapitre O11 : à ce carrefour, aucun panneau ne vous donne la priorité, c’est la règle générale qui s’applique."
+    ]
+   },
+   {
+    "title": "Les disques : interdiction, obligation, fin de prescription",
+    "body": [
+     "Les **signaux de prescription** sont ronds. Un disque **à bord rouge** exprime une interdiction : circulation interdite (disque blanc vide bordé de rouge), vitesse maximale (chiffre dans le disque), interdiction de dépasser, interdiction de tourner. L’interdiction de s’arrêter et l’interdiction de parquer ont un **fond bleu** avec un bord rouge et une ou deux barres rouges : le bord rouge reste la marque de l’interdiction. Le signal d’accès interdit est une exception visuelle : un disque entièrement rouge traversé d’une barre blanche. Le détail de ces interdictions se trouve au chapitre O12.",
+     "Un disque **bleu à symbole blanc** exprime une obligation : direction obligatoire, piste cyclable obligatoire, chemin pour piétons. Il vous dit ce que vous **devez** faire ou quel chemin est réservé à qui ; les sous-chapitres sur les directions obligatoires en donnent le détail. Enfin, un signal **barré** de traits obliques annonce la **fin d’une prescription** : par exemple la fin d’une vitesse maximale ou la fin de l’interdiction de dépasser. La règle s’arrête là, mais la règle générale et la prudence reprennent leur place."
+    ]
+   },
+   {
+    "title": "Formes uniques de la priorité, rectangles de l’indication",
+    "body": [
+     "Les **signaux de priorité** ont des formes que l’on ne retrouve nulle part ailleurs, pour être reconnus même de dos, sales ou couverts de neige. Le **Stop** est un octogone rouge : arrêt complet obligatoire. Le **Cédez le passage** est un triangle **pointe en bas** à bord rouge : vous laissez passer, en vous arrêtant si nécessaire. La **route principale** est un losange jaune bordé de blanc : vous avez la priorité aux intersections. La **fin de route principale** est ce même losange barré : la priorité de la route principale cesse. Le chapitre O11 explique comment ces signaux modifient la priorité de droite.",
+     "Les **signaux d’indication** sont surtout des rectangles ou des carrés **bleus** : parking, impasse, passage pour piétons (carré bleu portant un triangle blanc avec un piéton). Ils informent, mais certains font aussi commencer une règle : au passage pour piétons, vous devez accorder la priorité aux piétons qui traversent ou s’apprêtent à le faire. Les **grands panneaux de zone**, comme ceux de la zone 30 et de la zone de rencontre, sont rectangulaires et annoncent des règles valables dans toute la zone jusqu’au panneau de fin. Les panneaux **verts** signalent les autoroutes et semi-autoroutes."
+    ]
+   }
+  ],
+  "words": [
+   {
+    "term": "Famille de signaux",
+    "def": "Groupe de panneaux qui partagent une forme et des couleurs, et qui demandent le même type de comportement : anticiper, s’abstenir, exécuter, céder ou s’informer."
+   },
+   {
+    "term": "Signal de prescription",
+    "def": "Panneau, en général rond, qui interdit, oblige ou lève une règle. Il a force obligatoire à l’endroit où il est placé."
+   },
+   {
+    "term": "Signal de danger",
+    "def": "Triangle pointe en haut, à bord rouge et fond blanc, qui annonce à l’avance un danger situé plus loin."
+   },
+   {
+    "term": "Fin de prescription",
+    "def": "Signal barré de traits obliques qui indique que la règle signalée auparavant cesse de s’appliquer."
+   }
+  ],
+  "method": [
+   "Identifiez la forme dès que le panneau apparaît : triangle, disque, octogone, losange ou rectangle.",
+   "Ajoutez la couleur dominante : bord rouge, fond bleu, jaune ou vert.",
+   "Déduisez la famille et le type de comportement : anticiper, ne pas faire, faire, céder ou s’informer.",
+   "Lisez ensuite le symbole pour préciser la règle exacte.",
+   "Traduisez le tout en action concrète avant d’arriver à la hauteur du panneau."
+  ],
+  "example": {
+   "title": "Trois panneaux à l’entrée d’un village",
+   "scene": "Vous roulez hors localité et approchez d’un village. Vous voyez successivement un triangle pointe en haut bordé de rouge, puis un disque bordé de rouge contenant un chiffre, puis, juste avant un carrefour, un losange jaune bordé de blanc.",
+   "reasoning": [
+    "Le triangle pointe en haut est un signal de danger : un danger se trouve plus loin. Vous levez le pied et cherchez ce qu’il annonce, par exemple des enfants ou un passage pour piétons.",
+    "Le disque à bord rouge est une interdiction : le chiffre fixe une vitesse que vous ne devez pas dépasser à partir de cet endroit. C’est un plafond, pas une vitesse conseillée.",
+    "Le losange jaune indique que vous êtes sur une route principale : vous avez la priorité au carrefour, mais vous restez prêt à freiner si un autre usager ne vous l’accorde pas."
+   ],
+   "answer": "Vous anticipez le danger annoncé, vous respectez la vitesse maximale et vous traversez le carrefour en prioritaire attentif. Trois formes, trois familles, trois comportements différents."
+  },
+  "trap": "Le piège est de se fier à une seule couleur. Le bleu n’est pas toujours une simple information : un disque bleu oblige, un disque bleu bordé de rouge interdit de s’arrêter ou de parquer, et un carré bleu de passage pour piétons fait commencer une règle de priorité. De même, deux triangles bordés de rouge n’ont rien de commun selon que la pointe est en haut (danger annoncé) ou en bas (Cédez le passage). Lisez toujours la forme **et** la couleur ensemble.",
+  "remember": "Forme et couleur donnent la famille, la famille donne le comportement, le symbole donne le détail.",
+  "memo": {
+   "code": "F–C–F–C",
+   "text": "Forme, Couleur, Famille, Comportement : je regarde la forme, j’ajoute la couleur, je nomme la famille et j’en tire mon comportement avant même de lire le symbole."
+  },
+  "law": "OSR",
+  "source": {
+   "label": "Fedlex · Ordonnance sur la signalisation routière (OSR)",
+   "href": "https://www.fedlex.admin.ch/eli/cc/1979/1961_1961_1961/fr"
+  }
+ },
+ "questions": [
+  {
+   "id": "O13-FAM-01",
+   "chapter": "O13",
+   "section": "familles-signaux",
+   "stem": "Vous apercevez au loin un triangle bordé de rouge, pointe en haut, fond blanc. Que savez-vous déjà, avant de lire le symbole ?",
+   "options": [
+    "Il annonce un danger situé plus loin.",
+    "Il vous oblige à vous arrêter à sa hauteur.",
+    "Vous devez vous préparer à adapter votre vitesse."
+   ],
+   "answers": [0, 2],
+   "truth": "Le triangle pointe en haut est un signal de danger : il annonce, il n’ordonne pas d’arrêt.",
+   "why": "Il est placé en principe à l’avance pour vous laisser le temps d’anticiper.",
+   "trap": "Confondre ce triangle avec le Cédez le passage, dont la pointe est en bas.",
+   "action": "Levez le pied et cherchez le danger annoncé.",
+   "memory": "Pointe en haut : danger devant."
+  },
+  {
+   "id": "O13-FAM-02",
+   "chapter": "O13",
+   "section": "familles-signaux",
+   "stem": "Un triangle bordé de rouge, pointe en bas, se trouve à l’approche d’un carrefour. Quelles affirmations sont correctes ?",
+   "options": [
+    "C’est un signal de danger annonçant un carrefour.",
+    "Vous devez accorder la priorité aux véhicules de la route que vous abordez.",
+    "Vous devez vous arrêter si nécessaire pour laisser passer."
+   ],
+   "answers": [1, 2],
+   "truth": "Le triangle pointe en bas est le signal Cédez le passage, un signal de priorité.",
+   "why": "Sa forme unique le distingue des signaux de danger, dont la pointe est en haut.",
+   "trap": "Ne voir que le bord rouge et le classer parmi les signaux de danger.",
+   "action": "Ralentissez, observez et cédez le passage, arrêt compris si nécessaire.",
+   "memory": "Pointe en bas : je cède."
+  },
+  {
+   "id": "O13-FAM-03",
+   "chapter": "O13",
+   "section": "familles-signaux",
+   "stem": "Vous voyez un disque blanc bordé de rouge, avec un chiffre au centre. Que signifient la forme et la couleur de ce panneau ?",
+   "options": [
+    "Il s’agit d’une interdiction.",
+    "Il s’agit d’une vitesse recommandée.",
+    "Le chiffre est une limite que vous ne devez pas dépasser."
+   ],
+   "answers": [0, 2],
+   "truth": "Le disque à bord rouge appartient aux interdictions ; avec un chiffre, il fixe une vitesse maximale.",
+   "why": "La vitesse maximale est un plafond : elle peut être trop élevée selon les conditions.",
+   "trap": "Prendre la limite pour une vitesse à atteindre.",
+   "action": "Restez sous la limite et adaptez encore selon la visibilité et la chaussée.",
+   "memory": "Bord rouge : je ne dépasse pas."
+  },
+  {
+   "id": "O13-FAM-04",
+   "chapter": "O13",
+   "section": "familles-signaux",
+   "stem": "Un disque bleu portant une flèche blanche est placé avant un îlot. Que vous indique sa famille ?",
+   "options": [
+    "C’est une obligation : vous devez suivre la direction indiquée.",
+    "C’est une simple information sur l’itinéraire conseillé.",
+    "C’est une interdiction de continuer tout droit, signalée en bleu."
+   ],
+   "answers": [0],
+   "truth": "Un disque bleu à symbole blanc est un signal d’obligation.",
+   "why": "La flèche impose le mouvement ; elle ne propose pas un itinéraire.",
+   "trap": "Croire que le bleu signifie toujours une simple information.",
+   "action": "Suivez la direction prescrite après avoir contrôlé les autres usagers.",
+   "memory": "Disque bleu : je dois."
+  },
+  {
+   "id": "O13-FAM-05",
+   "chapter": "O13",
+   "section": "familles-signaux",
+   "stem": "Un disque à fond bleu, bordé de rouge et traversé de deux barres rouges en croix, se trouve au bord de la rue. À quelle famille appartient-il ?",
+   "options": [
+    "À la famille des interdictions, malgré son fond bleu.",
+    "À la famille des obligations, parce que son fond est bleu.",
+    "Il s’agit de l’interdiction de s’arrêter."
+   ],
+   "answers": [0, 2],
+   "truth": "Le bord rouge marque l’interdiction ; le fond bleu avec croix rouge signifie interdiction de s’arrêter.",
+   "why": "C’est le bord et les barres rouges qui donnent le sens, pas la couleur du fond.",
+   "trap": "Classer le panneau parmi les obligations à cause du bleu.",
+   "action": "Ne vous arrêtez pas sur le tronçon concerné.",
+   "memory": "Bord rouge, même sur fond bleu : interdit."
+  },
+  {
+   "id": "O13-FAM-06",
+   "chapter": "O13",
+   "section": "familles-signaux",
+   "stem": "Un disque blanc, barré de traits obliques noirs, reprend le chiffre d’une limite de vitesse. Quelle est sa signification ?",
+   "options": [
+    "La vitesse maximale signalée auparavant cesse de s’appliquer.",
+    "Vous pouvez désormais rouler aussi vite que vous le souhaitez.",
+    "La vitesse indiquée devient une vitesse minimale."
+   ],
+   "answers": [0],
+   "truth": "Un signal barré indique la fin d’une prescription.",
+   "why": "Après la fin, la limitation générale et le devoir d’adapter la vitesse continuent de s’appliquer.",
+   "trap": "Croire que la fin d’une prescription supprime toute limite.",
+   "action": "Reprenez la limitation générale valable à cet endroit, en adaptant aux conditions.",
+   "memory": "Barré : la règle s’arrête, pas la prudence."
+  },
+  {
+   "id": "O13-FAM-07",
+   "chapter": "O13",
+   "section": "familles-signaux",
+   "stem": "Pourquoi le signal Stop a-t-il une forme octogonale unique ?",
+   "options": [
+    "Pour qu’il soit reconnaissable même si son inscription est illisible.",
+    "Parce qu’il appartient à la famille des signaux d’indication.",
+    "Parce qu’il impose une décision particulièrement importante : l’arrêt complet."
+   ],
+   "answers": [0, 2],
+   "truth": "Le Stop est un signal de priorité à forme unique qui impose l’arrêt complet.",
+   "why": "Une forme unique permet de le reconnaître de loin, de dos ou couvert de neige.",
+   "trap": "Ralentir sans s’arrêter complètement quand la route semble libre.",
+   "action": "Arrêtez-vous complètement, puis cédez le passage.",
+   "memory": "Huit côtés : arrêt complet."
+  },
+  {
+   "id": "O13-FAM-08",
+   "chapter": "O13",
+   "section": "familles-signaux",
+   "stem": "Vous roulez sur une route signalée par un losange jaune bordé de blanc. Plus loin, ce même losange apparaît barré. Que signifie ce changement ?",
+   "options": [
+    "Vous perdez la priorité que vous donnait la route principale.",
+    "Vous gardez la priorité jusqu’au prochain village.",
+    "Aux intersections suivantes, il faut à nouveau regarder la signalisation ou appliquer la priorité de droite."
+   ],
+   "answers": [0, 2],
+   "truth": "Le losange barré signale la fin de route principale.",
+   "why": "Sans signal de priorité, la règle générale de la priorité de droite s’applique.",
+   "trap": "Garder par habitude un comportement de prioritaire.",
+   "action": "Ralentissez avant les intersections et vérifiez qui a la priorité.",
+   "memory": "Losange barré : priorité terminée."
+  },
+  {
+   "id": "O13-FAM-09",
+   "chapter": "O13",
+   "section": "familles-signaux",
+   "stem": "Un carré bleu portant un triangle blanc avec un piéton se trouve au bord de la chaussée. Quelles affirmations sont correctes ?",
+   "options": [
+    "Il s’agit d’un signal d’indication qui marque un passage pour piétons.",
+    "Comme il est bleu, il ne change rien à votre comportement.",
+    "Vous devez accorder la priorité aux piétons qui traversent ou s’apprêtent à le faire."
+   ],
+   "answers": [0, 2],
+   "truth": "Le carré bleu signale un passage pour piétons et y fait s’appliquer la priorité des piétons.",
+   "why": "Certains signaux d’indication font commencer une règle de comportement obligatoire.",
+   "trap": "Réduire tous les panneaux bleus à de simples informations.",
+   "action": "Ralentissez et soyez prêt à vous arrêter devant le passage.",
+   "memory": "Carré bleu piéton : je laisse traverser."
+  },
+  {
+   "id": "O13-FAM-10",
+   "chapter": "O13",
+   "section": "familles-signaux",
+   "stem": "Vous approchez d’un triangle pointe en haut bordé de rouge montrant un feu tricolore. Que faut-il comprendre ?",
+   "options": [
+    "Des signaux lumineux se trouvent plus loin.",
+    "Ce triangle remplace le feu et vous donne la priorité.",
+    "Vous devez vous préparer à devoir vous arrêter au feu."
+   ],
+   "answers": [0, 2],
+   "truth": "Ce signal de danger annonce des signaux lumineux, souvent peu visibles de loin.",
+   "why": "L’annonce à l’avance vous laisse le temps de ralentir si le feu passe au rouge.",
+   "trap": "Croire qu’un panneau de danger règle lui-même la priorité.",
+   "action": "Levez le pied et observez le feu dès qu’il devient visible.",
+   "memory": "Feu dessiné : feu à venir."
+  },
+  {
+   "id": "O13-FAM-11",
+   "chapter": "O13",
+   "section": "familles-signaux",
+   "stem": "Vous voyez un panneau vert indiquant le début d’une autoroute. À quelle famille appartient-il et que vous apprend-il ?",
+   "options": [
+    "C’est un signal d’indication.",
+    "C’est un signal de danger, puisqu’il annonce une route rapide.",
+    "Les règles propres aux autoroutes s’appliquent à partir de là."
+   ],
+   "answers": [0, 2],
+   "truth": "Les panneaux verts signalent autoroutes et semi-autoroutes ; ce sont des signaux d’indication qui font commencer des règles propres.",
+   "why": "Le début d’autoroute déclenche des règles particulières de circulation sur ce type de route.",
+   "trap": "Penser qu’un signal d’indication n’a aucune conséquence sur la conduite.",
+   "action": "Appliquez les règles de l’autoroute dès le panneau.",
+   "memory": "Vert : autoroute et ses règles."
+  },
+  {
+   "id": "O13-FAM-12",
+   "chapter": "O13",
+   "section": "familles-signaux",
+   "stem": "Un disque entièrement rouge traversé d’une barre blanche horizontale est placé à l’entrée d’une rue. Quelles affirmations sont correctes ?",
+   "options": [
+    "C’est le signal d’accès interdit.",
+    "Vous ne devez pas vous engager dans cette rue depuis ce côté.",
+    "C’est un signal d’obligation, car il n’a pas de bord rouge sur fond blanc."
+   ],
+   "answers": [0, 1],
+   "truth": "Le signal d’accès interdit est une exception visuelle parmi les interdictions : il est entièrement rouge.",
+   "why": "Il interdit d’entrer, souvent à l’extrémité d’une rue à sens unique.",
+   "trap": "Le classer ailleurs parce qu’il ne ressemble pas aux autres disques bordés de rouge.",
+   "action": "N’entrez pas et cherchez un autre itinéraire.",
+   "memory": "Disque rouge à barre blanche : on n’entre pas."
+  }
+ ]
+}

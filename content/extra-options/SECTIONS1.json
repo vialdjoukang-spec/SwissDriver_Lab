@@ -1,0 +1,102 @@
+{
+ "O13-AUX-02": {
+  "option": "Il vous demande de ralentir fortement.",
+  "why": "Pour demander de ralentir, l’agent bouge le bras de haut en bas ; de profil, il ouvre la voie."
+ },
+ "O13-AUX-03": {
+  "option": "Vous pouvez passer si aucun enfant n’est encore sur la chaussée.",
+  "why": "Lorsque le patrouilleur fait signe de s’arrêter, vous vous arrêtez, que les enfants soient déjà engagés ou non."
+ },
+ "O13-AUX-04": {
+  "option": "Le signal « Cédez le passage » l’emporte, car il est fixe.",
+  "why": "Les signes de l’agent passent avant les signaux et les marques."
+ },
+ "O13-AUX-06": {
+  "option": "Vous ne vous arrêtez que si le feu de l’endroit est rouge.",
+  "why": "Les signes de la personne qui règle la circulation passent avant les feux."
+ },
+ "O13-FAM-01": {
+  "option": "Il annonce la fin d’une interdiction.",
+  "why": "Un triangle bordé de rouge pointe en haut est un signal de danger, qui annonce un danger plus loin."
+ },
+ "O13-FAM-02": {
+  "option": "Vous devez toujours vous arrêter complètement, même si la route est libre.",
+  "why": "L’arrêt obligatoire correspond au signal Stop ; « Cédez le passage » impose de s’arrêter seulement si nécessaire."
+ },
+ "O13-FAM-03": {
+  "option": "Le chiffre est une vitesse minimale à respecter.",
+  "why": "Une vitesse minimale est signalée par un disque bleu ; le disque blanc bordé de rouge est une interdiction."
+ },
+ "O13-FAM-04": {
+  "option": "C’est un signal de danger qui annonce un îlot.",
+  "why": "Les signaux de danger sont triangulaires ; le disque bleu à flèche blanche est une obligation."
+ },
+ "O13-FAM-06": {
+  "option": "La même limite reste valable jusqu’au prochain carrefour.",
+  "why": "Le disque barré marque la fin de la limite signalée ; elle cesse de s’appliquer à cet endroit."
+ },
+ "O13-FAM-09": {
+  "option": "C’est un signal de danger, puisqu’il concerne les piétons.",
+  "why": "Le carré bleu est un signal d’indication ; les signaux de danger sont des triangles bordés de rouge."
+ },
+ "O13-FAM-11": {
+  "option": "Les règles de l’autoroute ne s’appliquent qu’à la prochaine jonction.",
+  "why": "Les règles propres aux autoroutes s’appliquent dès le signal de début d’autoroute."
+ },
+ "O14-ORI-01": {
+  "option": "Une route principale à l’intérieur de la localité.",
+  "why": "Le fond vert est réservé aux destinations par autoroute ou semi-autoroute ; les routes principales sont signalées en bleu."
+ },
+ "O14-ORI-02": {
+  "option": "Un indicateur à fond bleu réservé aux transports publics.",
+  "why": "Le fond bleu signale des routes principales, pas des transports publics ; une destination locale figure sur fond blanc."
+ },
+ "O14-ORI-03": {
+  "option": "À signaler une interdiction de dépasser sur chaque voie.",
+  "why": "L’indicateur de présélection attribue des destinations aux voies ; il n’exprime aucune interdiction de dépasser."
+ },
+ "O14-ORI-05": {
+  "option": "Ralentir fortement devant chaque panneau pour bien le lire.",
+  "why": "La lecture anticipée consiste à lire de loin pour décider tôt, sans freinage brusque devant le panneau."
+ },
+ "O43-MOT-02": {
+  "option": "Obtenir directement le permis définitif.",
+  "why": "L’instruction de base prépare à rouler dans la circulation ; elle ne dispense ni de l’examen pratique ni de la période probatoire."
+ },
+ "O43-MOT-03": {
+  "option": "Elle peut être donnée par n’importe quel motocycliste expérimenté.",
+  "why": "Elle doit être donnée par un moniteur de conduite habilité."
+ },
+ "O43-MOT-04": {
+  "option": "Elle se suit avant l’examen théorique de base.",
+  "why": "Elle se déroule pendant la période du permis d’élève, qui suppose l’examen théorique réussi."
+ },
+ "O43-MOT-05": {
+  "option": "Une veste en jean suffit à protéger le corps en cas de chute.",
+  "why": "Un vêtement ordinaire ne protège pas contre l’abrasion et les chocs ; un équipement de protection est recommandé."
+ },
+ "U25-SYS-01": {
+  "option": "Il permet de freiner plus tard sans risque.",
+  "why": "L’ABS empêche le blocage des roues mais ne crée pas d’adhérence ; freiner plus tard reste dangereux."
+ },
+ "U25-SYS-02": {
+  "option": "Il remplace l’adaptation de la vitesse à l’état de la route.",
+  "why": "L’ESP agit dans les limites de l’adhérence ; il ne dispense pas d’adapter sa vitesse."
+ },
+ "U25-SYS-03": {
+  "option": "Il vous permet de réduire votre distance de sécurité.",
+  "why": "L’AEB peut échouer ; la distance et l’attention doivent rester les mêmes que sans système."
+ },
+ "U25-SYS-05": {
+  "option": "Il réagit toujours aux piétons qui traversent.",
+  "why": "Un régulateur adaptatif suit surtout les véhicules qui précèdent ; il ne détecte pas de manière fiable tous les piétons."
+ },
+ "U25-SYS-07": {
+  "option": "Vous pouvez lâcher le volant, l’assistant compensera.",
+  "why": "Un système à caméra encrassée peut ne plus fonctionner ; vous devez tenir le volant et maintenir vous-même la trajectoire."
+ },
+ "U25-SYS-10": {
+  "option": "Le passager avant, s’il est titulaire du permis.",
+  "why": "La maîtrise du véhicule incombe au conducteur en tout temps, pas au passager."
+ }
+}

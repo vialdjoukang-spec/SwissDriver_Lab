@@ -1,0 +1,183 @@
+{
+ "chapterId": "O54",
+ "after": "plaques",
+ "section": {
+  "id": "plaques-speciales",
+  "otitle": "Plaques à court terme et plaques professionnelles",
+  "title": "Les plaques qui ne restent pas sur une seule voiture",
+  "ogoal": "Comprendre à quoi servent les plaques à court terme et les plaques professionnelles, quelles limites elles imposent et qui en porte la responsabilité.",
+  "question": "Un garagiste vous prête une voiture non immatriculée avec des plaques de son garage : pouvez-vous l’utiliser comme votre propre voiture ?",
+  "lead": [
+   "La plupart des voitures portent des plaques ordinaires, liées à un détenteur et à un permis de circulation. Il existe pourtant des plaques prévues pour des situations particulières : déplacer un véhicule qui n’est pas encore immatriculé, l’exporter, ou permettre à une entreprise de la branche automobile de faire des essais. Cette section vous explique leur principe, leurs limites et votre responsabilité si vous conduisez avec elles."
+  ],
+  "parts": [
+   {
+    "title": "Les plaques à court terme : pour un besoin limité dans le temps",
+    "body": [
+     "Les **plaques à court terme** sont délivrées par le service cantonal des automobiles pour une **durée limitée**. Elles servent par exemple à déplacer un véhicule qui n’est pas encore immatriculé en Suisse, ou à conduire un véhicule hors du pays en vue de son exportation. Elles sont accompagnées d’un permis de circulation et d’une couverture d’assurance responsabilité civile valables pour la même période.",
+     "Leur validité est le point clé : une fois la durée écoulée, la plaque ne vaut plus rien et le véhicule ne peut plus circuler avec elle. Les conditions exactes de délivrance, de durée et d’usage relèvent du service cantonal des automobiles : renseignez-vous auprès de lui avant d’organiser un tel déplacement, plutôt que de supposer qu’une plaque provisoire permet tout."
+    ]
+   },
+   {
+    "title": "Les plaques professionnelles : réservées aux entreprises de la branche",
+    "body": [
+     "Les **plaques professionnelles** sont attribuées à des entreprises de la branche automobile, comme un garage ou un commerce de véhicules. Elles se reconnaissent à la lettre **U** qui suit le numéro. Elles permettent à l’entreprise de faire circuler, pour ses besoins professionnels, des véhicules qui n’ont pas de plaques ordinaires, par exemple pour une course d’essai, un transfert ou une réparation.",
+     "Elles ne transforment pas un véhicule en voiture privée à disposition de chacun. Leur usage est encadré : il doit rester lié à l’activité de l’entreprise, et le conducteur doit avoir avec lui le permis de circulation qui accompagne ces plaques. Pour savoir précisément quels trajets sont admis, la référence est le service cantonal des automobiles."
+    ]
+   },
+   {
+    "title": "Qui est responsable ?",
+    "body": [
+     "Le détenteur des plaques, c’est-à-dire la personne ou l’entreprise à qui elles ont été attribuées, répond de leur bon usage et de l’assurance qui les couvre. Mais le **conducteur** reste responsable de sa conduite et de l’état du véhicule qu’il utilise : un véhicule qui circule avec une plaque spéciale doit, lui aussi, être sûr et en état de fonctionner.",
+     "Avant de partir, vérifiez donc trois choses : la plaque est encore valable, le permis de circulation correspondant est à bord, et le véhicule est en bon état (freins, feux, pneus). Si l’un de ces points manque, ne roulez pas : une plaque spéciale ne couvre ni un usage hors des limites prévues, ni un véhicule dangereux."
+    ]
+   }
+  ],
+  "words": [
+   {
+    "term": "Plaque à court terme",
+    "def": "Plaque délivrée pour une durée limitée, par exemple pour déplacer ou exporter un véhicule non immatriculé en Suisse."
+   },
+   {
+    "term": "Plaque professionnelle",
+    "def": "Plaque attribuée à une entreprise de la branche automobile, reconnaissable à la lettre U, pour faire circuler ses véhicules dans le cadre de son activité."
+   },
+   {
+    "term": "Détenteur des plaques",
+    "def": "La personne ou l’entreprise à qui les plaques ont été attribuées et qui répond de leur usage et de leur assurance."
+   },
+   {
+    "term": "Service cantonal des automobiles",
+    "def": "L’office de votre canton qui délivre les plaques, fixe leurs conditions et répond à vos questions."
+   }
+  ],
+  "method": [
+   "Identifiez le type de plaque posé sur le véhicule.",
+   "Vérifiez qu’elle est encore valable et que le permis de circulation correspondant est à bord.",
+   "Assurez-vous que le trajet prévu entre dans l’usage autorisé pour ces plaques.",
+   "Contrôlez l’état du véhicule avant de partir.",
+   "En cas de doute, renseignez-vous auprès du service cantonal des automobiles avant de rouler."
+  ],
+  "example": {
+   "title": "La voiture d’essai du garage",
+   "scene": "Vous cherchez une voiture d’occasion. Le garagiste fixe ses plaques professionnelles sur un véhicule non immatriculé et vous propose un essai sur les routes de la localité. Il vous remet le permis de circulation qui va avec les plaques.",
+   "reasoning": [
+    "L’essai est lié à l’activité du garage : c’est le type d’usage pour lequel ces plaques existent.",
+    "Vous conduisez : vous restez responsable de votre conduite et vous jetez un œil à l’état du véhicule avant de partir.",
+    "Vous n’en profitez pas pour garder la voiture le week-end ou faire vos courses : cela sortirait de l’usage prévu."
+   ],
+   "answer": "Vous faites l’essai avec le permis de circulation à bord, en conduisant prudemment, puis vous rendez le véhicule. Les plaques professionnelles ne font pas de cette voiture votre véhicule privé."
+  },
+  "trap": "Le piège est de croire qu’une plaque, quelle qu’elle soit, autorise n’importe quel trajet. Une plaque à court terme expire, et une plaque professionnelle est liée à l’activité de l’entreprise. Avant de rouler, demandez-vous toujours : cette plaque est-elle valable aujourd’hui, et pour ce trajet ?",
+  "remember": "Une plaque spéciale a une durée et un usage limités ; le conducteur reste responsable de sa conduite et de l’état du véhicule.",
+  "memo": {
+   "code": "V–P–U",
+   "text": "Valable aujourd’hui ? Permis de circulation à bord ? Usage prévu respecté ? Trois oui, sinon on ne part pas."
+  },
+  "law": "LCR ; OAC ; OAV"
+ },
+ "questions": [
+  {
+   "id": "O54-PSP-01",
+   "chapter": "O54",
+   "section": "plaques-speciales",
+   "stem": "Que savez-vous des plaques à court terme ?",
+   "options": [
+    "Elles sont valables pour une durée limitée.",
+    "Elles restent valables tant que le véhicule n’est pas vendu.",
+    "Elles peuvent servir à déplacer un véhicule qui n’est pas encore immatriculé en Suisse."
+   ],
+   "answers": [0, 2],
+   "truth": "Les plaques à court terme répondent à un besoin limité dans le temps.",
+   "why": "Elles sont délivrées pour une période déterminée, par exemple pour un déplacement ou une exportation.",
+   "trap": "Les confondre avec des plaques ordinaires sans limite de durée.",
+   "action": "Contrôlez la durée de validité avant chaque trajet.",
+   "memory": "Court terme = durée limitée."
+  },
+  {
+   "id": "O54-PSP-02",
+   "chapter": "O54",
+   "section": "plaques-speciales",
+   "stem": "Comment reconnaître des plaques professionnelles ?",
+   "options": [
+    "Elles portent la lettre U après le numéro.",
+    "Elles sont attribuées à des entreprises de la branche automobile.",
+    "Elles sont réservées aux véhicules de police."
+   ],
+   "answers": [0, 1],
+   "truth": "Les plaques professionnelles portent un U et sont attribuées à des entreprises de la branche automobile.",
+   "why": "Elles permettent à ces entreprises de faire circuler des véhicules sans plaques ordinaires dans le cadre de leur activité.",
+   "trap": "Croire qu’il s’agit de plaques officielles d’une administration.",
+   "action": "Si vous voyez un U, pensez à un garage ou à un commerce de véhicules.",
+   "memory": "U comme usage professionnel."
+  },
+  {
+   "id": "O54-PSP-03",
+   "chapter": "O54",
+   "section": "plaques-speciales",
+   "stem": "Un garagiste vous confie une voiture avec ses plaques professionnelles pour une course d’essai. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Vous devez avoir à bord le permis de circulation qui accompagne ces plaques.",
+    "Vous pouvez garder la voiture pour vos besoins privés aussi longtemps que vous voulez.",
+    "Vous restez responsable de votre conduite pendant l’essai."
+   ],
+   "answers": [0, 2],
+   "truth": "L’essai est un usage professionnel admis, avec le permis de circulation correspondant et sous la responsabilité du conducteur.",
+   "why": "Les plaques professionnelles sont liées à l’activité de l’entreprise, pas à un usage privé libre.",
+   "trap": "Penser que les plaques du garage couvrent n’importe quel trajet.",
+   "action": "Faites l’essai prévu, avec les documents, puis rendez le véhicule.",
+   "memory": "Plaque U : usage du garage, pas usage privé."
+  },
+  {
+   "id": "O54-PSP-04",
+   "chapter": "O54",
+   "section": "plaques-speciales",
+   "stem": "La durée de validité de plaques à court terme est dépassée depuis hier. Que faites-vous ?",
+   "options": [
+    "Vous pouvez encore rouler une semaine par tolérance.",
+    "Vous ne circulez plus avec ces plaques.",
+    "Vous vous adressez au service cantonal des automobiles pour régler la situation."
+   ],
+   "answers": [1, 2],
+   "truth": "Une plaque à court terme expirée ne permet plus de circuler.",
+   "why": "Le permis de circulation et l’assurance qui l’accompagnent sont limités à la même période.",
+   "trap": "Inventer une tolérance qui n’existe pas.",
+   "action": "Laissez le véhicule à l’arrêt et contactez l’office cantonal.",
+   "memory": "Expirée = immobilisée."
+  },
+  {
+   "id": "O54-PSP-05",
+   "chapter": "O54",
+   "section": "plaques-speciales",
+   "stem": "Vous conduisez un véhicule muni de plaques professionnelles et vous remarquez que les freins tirent fortement d’un côté. Qu’est-ce qui est juste ?",
+   "options": [
+    "Les plaques professionnelles dispensent le véhicule d’être en bon état.",
+    "Vous ne devez pas circuler avec un véhicule qui n’est pas sûr.",
+    "Le conducteur reste responsable de l’état du véhicule qu’il utilise."
+   ],
+   "answers": [1, 2],
+   "truth": "Un véhicule muni de plaques spéciales doit lui aussi être sûr.",
+   "why": "La plaque règle l’autorisation de circuler, pas la sécurité technique du véhicule.",
+   "trap": "Croire que le garage porte seul toute la responsabilité.",
+   "action": "Arrêtez-vous en lieu sûr et informez le garage.",
+   "memory": "Plaque spéciale, sécurité normale."
+  },
+  {
+   "id": "O54-PSP-06",
+   "chapter": "O54",
+   "section": "plaques-speciales",
+   "stem": "Vous voulez exporter votre ancienne voiture et ne savez pas quelles plaques utiliser pour le trajet. Quelle démarche est correcte ?",
+   "options": [
+    "Vous demandez les conditions au service cantonal des automobiles.",
+    "Vous empruntez les plaques d’un ami pour la durée du trajet.",
+    "Vous vous informez avant le départ plutôt qu’en route."
+   ],
+   "answers": [0, 2],
+   "truth": "Les conditions des plaques spéciales sont fixées par le service cantonal des automobiles.",
+   "why": "Seul l’office compétent peut délivrer des plaques et un permis de circulation valables pour ce trajet.",
+   "trap": "Poser des plaques attribuées à un autre véhicule.",
+   "action": "Contactez l’office cantonal assez tôt avant le déplacement.",
+   "memory": "Plaque spéciale ? Je demande d’abord."
+  }
+ ]
+}

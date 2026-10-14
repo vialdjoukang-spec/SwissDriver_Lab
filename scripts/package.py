@@ -18,19 +18,23 @@ def package(require_evidence=False):
         raise ValueError('Le fichier historique a change ; publication refusee.')
     subprocess.run(['node', str(ROOT / 'scripts/build.cjs')], check=True, cwd=ROOT)
     source = original.decode('utf-8')
-    data = json.JSONDecoder().raw_decode(source.split('window.DATA=', 1)[1])[0]
+    # Inventory from the data the engine really uses: historical DATA merged with content/.
+    merged = ("const fs=require('fs');const c=require('./src/curriculum.js');const s=fs.readFileSync('Permis_GT_Rossa.html','utf8');"
+              "const d=JSON.parse(s.split('window.DATA=')[1].split(';\\n')[0]);process.stdout.write(JSON.stringify(c.merge(d,c.loadExtension('.'))));")
+    data = json.loads(subprocess.check_output(['node', '-e', merged], cwd=ROOT, text=True))
     start = source.index('var Uu=') + 7
     end = source.index(',Nu=[', start)
     # Evaluate only the trusted source object in an isolated VM with a time limit.
     code = "const fs=require('fs'),vm=require('vm');const s=fs.readFileSync(0,'utf8');process.stdout.write(JSON.stringify(vm.runInNewContext('('+s+')',{}, {timeout:2000})));"
     scenarios = json.loads(subprocess.check_output(['node', '-e', code], input=source[start:end], text=True))
     catalogue = []
-    for chapter in data['chapters']:
+    by_id = {c['id']: c for c in data['chapters']}
+    for chapter in [by_id[i] for g in data['groups'] for i in g['chapters']]:
         sections = []
         for section in chapter['sections']:
             ids = [s['id'] for s in scenarios.get(chapter['id'], {}).get(section['id'], [])]
             sections.append({'id': section['id'], 'title': section['otitle'], 'scenarioIds': ids})
-        catalogue.append({'id': chapter['id'], 'title': chapter['otitle'], 'sections': sections,
+        catalogue.append({'id': chapter['id'], 'official': chapter.get('official'), 'title': chapter['otitle'], 'sections': sections,
                           'simulationAvailable': any(s['scenarioIds'] for s in sections)})
     totals = {'parts': len(data['groups']), 'chapters': len(catalogue),
               'sections': sum(len(c['sections']) for c in catalogue), 'storedQuestions': len(data['questions']),
@@ -44,7 +48,7 @@ def package(require_evidence=False):
     for name in root_files:
         files[name] = (ROOT / name).read_bytes()
     for folder, suffixes in [('src', {'.js', '.css'}), ('scripts', {'.py', '.cjs'}),
-                             ('tests', {'.py'}), ('docs', {'.md', '.json'}),
+                             ('tests', {'.py'}), ('docs', {'.md', '.json'}), ('content', {'.json'}),
                              ('.github/workflows', {'.yml'}), ('test-results', {'.json', '.png', '.txt'})]:
         for p in sorted((ROOT / folder).glob('**/*')):
             if p.is_file() and p.suffix in suffixes and '__pycache__' not in p.parts:

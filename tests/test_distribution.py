@@ -23,7 +23,7 @@ class DistributionTests(unittest.TestCase):
                      'scripts/build.cjs', 'scripts/serve.cjs', 'scripts/package.py',
                      'tests/browser_smoke.py', 'tests/scene_coherence.py',
                      'tests/decision_paths.py', 'tests/test_evidence_gate.py', 'tests/test_coherence_matrix.py',
-                     'scripts/evidence.py', 'scripts/coherence_matrix.py', 'src/decision-safety.js',
+                     'scripts/evidence.py', 'src/learning.js', 'src/learning.css', 'src/signs.js', 'src/gestures.js', 'tests/test_programme.py', 'src/curriculum.js', 'content/index.json', 'tests/learning_flow.py', 'scripts/coherence_matrix.py', 'src/decision-safety.js',
                      'docs/COHERENCE_PRIORITES.json', 'docs/DECISIONS_75.md', '.github/workflows/pages.yml', 'START_HERE.md',
                      'docs/EDITER.md', 'docs/ETAT_ET_RESTE.md', 'AGENTS.md',
                      '.github/workflows/swissdriver-quality.yml']:
@@ -39,7 +39,7 @@ class DistributionTests(unittest.TestCase):
             self.assertNotIn(Path(name).name, {'.env', 'credentials.json'})
     def test_04_coverage_and_original_are_truthful(self):
         c = self.manifest['coverage']
-        self.assertEqual((c['chapters'],c['sections'],c['simulatedChapters'],c['simulatedSections'],c['scenarios']), (19,120,1,7,25))
+        self.assertEqual((c['chapters'],c['sections'],c['simulatedChapters'],c['simulatedSections'],c['scenarios']), (27,166,1,7,25))
         self.assertEqual(self.manifest['originalSha256'], '58ec2197dd14b8e8895cb83d134a2b598213b7f3d03b221fbf39f8e74258335a')
     def test_05_html_matches_the_build(self):
         actual = self.archive.read(PREFIX + 'dist/SwissDriver_Lab.html')

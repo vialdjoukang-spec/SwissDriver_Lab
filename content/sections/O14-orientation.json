@@ -1,0 +1,200 @@
+{
+ "chapterId": "O14",
+ "after": "clignotants",
+ "section": {
+  "id": "orientation",
+  "otitle": "Indication de direction : tableaux d’orientation et noms de rues",
+  "title": "Lire les panneaux de direction à temps pour choisir la bonne voie",
+  "ogoal": "Comprendre les signaux indicateurs de direction et de présélection, leurs couleurs et les noms de rues, afin de se présélectionner calmement et à temps.",
+  "question": "Comment savoir assez tôt dans quelle voie se placer pour aller vers l’autoroute ?",
+  "lead": [
+   "Avant chaque grand carrefour, des panneaux vous indiquent où mène chaque route et quelle voie choisir. Si vous les lisez trop tard, vous changez de voie au dernier moment, vous freinez brusquement ou vous coupez la route à quelqu’un. Cette section vous apprend à lire ces panneaux de loin et à en tirer une décision calme."
+  ],
+  "parts": [
+   {
+    "title": "Indicateurs de direction et de présélection",
+    "body": [
+     "Un **indicateur de direction** montre, par une flèche ou une forme de panneau pointue, la direction à prendre pour atteindre une localité ou une destination. Il se trouve en général juste avant ou au carrefour lui-même. Un **signal de présélection** est placé plus tôt, avant le carrefour : il dessine les directions possibles et vous permet de préparer votre manœuvre.",
+     "Sur les routes à plusieurs voies, l’**indicateur de présélection** attribue une ou plusieurs destinations à chaque voie, souvent avec une flèche au-dessus ou à côté de chaque voie. Il complète les flèches marquées au sol. Le principe est toujours le même : une fois la voie choisie selon ces panneaux, vous y restez et vous suivez la direction qu’elle impose."
+    ]
+   },
+   {
+    "title": "Les couleurs qui renseignent sur le type de route",
+    "body": [
+     "La couleur de fond vous dit vers quel genre de route vous conduit la direction indiquée. Un fond **vert** signale une destination atteinte par une **autoroute ou une semi-autoroute** : en localité, un panneau vert vous montre donc le chemin vers l’entrée de l’autoroute. Un fond **bleu** indique les destinations atteintes par les autres routes, notamment les routes principales.",
+     "Un fond **blanc** est utilisé pour des **destinations locales**, par exemple un quartier, une gare, une zone industrielle ou un hôpital. Ce code couleur vous aide à repérer l’information utile en un coup d’œil : si vous cherchez l’autoroute, vous suivez le vert ; si vous cherchez un lieu de la localité, vous cherchez le blanc."
+    ]
+   },
+   {
+    "title": "Noms de rues et lecture anticipée",
+    "body": [
+     "En localité, les **plaques de nom de rue** sont souvent le seul repère pour trouver une adresse. Elles sont fixées à l’angle des carrefours ou sur les façades et sont parfois petites. Préparez votre itinéraire avant de partir et, si vous cherchez une rue, roulez à une allure qui vous permet de lire sans gêner les autres. Si vous la manquez, continuez et faites un détour : ne freinez pas brusquement et ne tournez pas au dernier moment.",
+     "La règle d’or est la **lecture anticipée** : regardez loin devant, lisez les panneaux dès qu’ils deviennent lisibles, décidez de votre direction, puis contrôlez rétroviseurs et angle mort, clignotez et changez de voie tôt, quand il reste de la place. Si vous vous trouvez finalement dans la mauvaise voie, suivez-la : un détour coûte quelques minutes, une manœuvre de dernière seconde peut coûter un accident."
+    ]
+   }
+  ],
+  "words": [
+   {
+    "term": "Indicateur de direction",
+    "def": "Panneau qui montre la direction à prendre pour atteindre une localité ou une destination, placé au carrefour ou juste avant."
+   },
+   {
+    "term": "Signal de présélection",
+    "def": "Panneau placé avant un carrefour qui représente les directions possibles pour vous permettre de préparer votre manœuvre."
+   },
+   {
+    "term": "Indicateur de présélection",
+    "def": "Panneau qui attribue une ou plusieurs destinations à chaque voie de circulation."
+   },
+   {
+    "term": "Lecture anticipée",
+    "def": "Habitude de lire les panneaux de loin pour décider tôt, avant d’être contraint à une manœuvre précipitée."
+   }
+  ],
+  "method": [
+   "Regardez loin devant et repérez les panneaux de direction dès qu’ils sont lisibles.",
+   "Cherchez la couleur qui correspond à votre but : vert pour l’autoroute, bleu pour les autres routes, blanc pour une destination locale.",
+   "Identifiez la voie attribuée à votre destination sur l’indicateur de présélection et au sol.",
+   "Contrôlez rétroviseurs et angle mort, clignotez, puis changez de voie tôt.",
+   "Si vous êtes dans la mauvaise voie au dernier moment, suivez-la et corrigez plus loin."
+  ],
+  "example": {
+   "title": "Trouver l’autoroute en ville",
+   "scene": "Vous traversez une ville que vous ne connaissez pas et voulez prendre l’autoroute. Quelques centaines de mètres avant un grand carrefour, un panneau au-dessus de la chaussée montre trois voies : à gauche une destination sur fond vert, au milieu et à droite des destinations sur fond bleu et blanc.",
+   "reasoning": [
+    "Le fond vert indique la direction de l’autoroute : c’est votre but.",
+    "Le panneau attribue cette direction à la voie de gauche. Vous roulez à droite et il reste encore de la distance.",
+    "Vous contrôlez le rétroviseur et l’angle mort, clignotez à gauche et changez de voie calmement, bien avant les lignes continues."
+   ],
+   "answer": "Vous vous placez tôt dans la voie de gauche indiquée en vert, puis vous y restez jusqu’au carrefour."
+  },
+  "trap": "Le piège est de ne regarder que la voiture devant soi et de découvrir le panneau au moment où l’on arrive à la ligne continue. On change alors de voie brusquement. Levez les yeux plus loin et, si c’est trop tard, acceptez le détour.",
+  "remember": "Lire tôt, décider tôt, changer de voie tôt ; trop tard, on suit sa voie et on fait un détour.",
+  "memo": {
+   "code": "V–B–B",
+   "text": "Vert : voie rapide (autoroute) ; Bleu : bonnes routes de liaison ; Blanc : but local."
+  },
+  "law": "OSR"
+ },
+ "questions": [
+  {
+   "id": "O14-ORI-01",
+   "chapter": "O14",
+   "section": "orientation",
+   "stem": "En localité, vous voyez un indicateur de direction sur fond vert. Que vous indique-t-il ?",
+   "options": [
+    "Une destination atteinte par une autoroute ou une semi-autoroute.",
+    "Le chemin vers un parc ou un espace vert de la localité.",
+    "La direction à suivre pour rejoindre l’entrée de l’autoroute."
+   ],
+   "answers": [0, 2],
+   "truth": "Le fond vert est réservé aux destinations par autoroute ou semi-autoroute.",
+   "why": "Le code couleur renseigne sur le type de route qui mène à la destination.",
+   "trap": "Associer le vert à la nature ou aux parcs.",
+   "action": "Suivez le vert si vous voulez rejoindre l’autoroute.",
+   "memory": "Vert = voie rapide."
+  },
+  {
+   "id": "O14-ORI-02",
+   "chapter": "O14",
+   "section": "orientation",
+   "stem": "Vous cherchez la gare d’une localité. Quel type de panneau est le plus susceptible de vous y guider ?",
+   "options": [
+    "Un indicateur à fond blanc pour une destination locale.",
+    "Un indicateur à fond vert, car la gare est une destination importante.",
+    "Un indicateur à fond vert réservé aux trains."
+   ],
+   "answers": [0],
+   "truth": "Les destinations locales sont signalées sur fond blanc.",
+   "why": "Le vert est lié aux autoroutes et semi-autoroutes, pas à l’importance d’un lieu.",
+   "trap": "Croire que la couleur dépend de l’importance de la destination.",
+   "action": "Cherchez les panneaux blancs lorsque vous visez un lieu de la localité.",
+   "memory": "Blanc = but local."
+  },
+  {
+   "id": "O14-ORI-03",
+   "chapter": "O14",
+   "section": "orientation",
+   "stem": "À quoi sert un indicateur de présélection au-dessus d’une chaussée à plusieurs voies ?",
+   "options": [
+    "À attribuer une ou plusieurs destinations à chaque voie.",
+    "À indiquer la vitesse maximale de chaque voie.",
+    "À vous permettre de choisir votre voie avant le carrefour."
+   ],
+   "answers": [0, 2],
+   "truth": "L’indicateur de présélection associe les destinations aux voies.",
+   "why": "Il vous permet de vous placer tôt dans la voie correspondant à votre direction.",
+   "trap": "Le confondre avec un panneau de limitation de vitesse.",
+   "action": "Repérez votre destination, puis la voie qui lui correspond.",
+   "memory": "Une flèche par voie, une voie par but."
+  },
+  {
+   "id": "O14-ORI-04",
+   "chapter": "O14",
+   "section": "orientation",
+   "stem": "Vous remarquez trop tard que vous êtes dans une voie de présélection qui ne mène pas à votre destination, juste avant des lignes continues. Que faites-vous ?",
+   "options": [
+    "Vous suivez la direction imposée par votre voie et corrigez plus loin.",
+    "Vous franchissez la ligne continue pour rejoindre la bonne voie.",
+    "Vous vous arrêtez dans votre voie pour attendre une place dans la voie voisine."
+   ],
+   "answers": [0],
+   "truth": "Une fois engagé dans une voie de présélection, on suit la direction qu’elle impose.",
+   "why": "Un changement de voie de dernière seconde ou un arrêt surprend les autres et crée un danger.",
+   "trap": "Vouloir à tout prix éviter le détour.",
+   "action": "Suivez votre voie, puis cherchez calmement un autre chemin.",
+   "memory": "Mauvaise voie ? Détour, pas de coup de volant."
+  },
+  {
+   "id": "O14-ORI-05",
+   "chapter": "O14",
+   "section": "orientation",
+   "stem": "Que signifie « lecture anticipée » des panneaux de direction ?",
+   "options": [
+    "Lire les panneaux dès qu’ils deviennent lisibles, loin devant.",
+    "Attendre d’être au carrefour pour lire le dernier indicateur.",
+    "Décider tôt pour changer de voie pendant qu’il reste de la place."
+   ],
+   "answers": [0, 2],
+   "truth": "Lire tôt permet de décider et de manœuvrer calmement.",
+   "why": "Plus la décision est tardive, plus la manœuvre devient brusque et dangereuse.",
+   "trap": "Se concentrer uniquement sur le véhicule qui précède.",
+   "action": "Levez le regard loin devant à l’approche de chaque grand carrefour.",
+   "memory": "Lire tôt, agir tôt."
+  },
+  {
+   "id": "O14-ORI-06",
+   "chapter": "O14",
+   "section": "orientation",
+   "stem": "En localité, vous cherchez une rue précise et lisez les plaques de nom de rue. Quel comportement est correct ?",
+   "options": [
+    "Préparer votre itinéraire avant de partir pour limiter les recherches en roulant.",
+    "Freiner brusquement dès que vous apercevez le bon nom.",
+    "Continuer et faire un détour si vous avez dépassé la rue."
+   ],
+   "answers": [0, 2],
+   "truth": "Chercher une adresse ne doit jamais conduire à une manœuvre surprenante.",
+   "why": "Un freinage brusque ou un virage de dernière seconde surprend les véhicules qui suivent.",
+   "trap": "Regarder les façades et oublier la circulation.",
+   "action": "Roulez à une allure qui vous permet de lire sans gêner, et acceptez le détour.",
+   "memory": "Rue manquée, rue retrouvée plus loin."
+  },
+  {
+   "id": "O14-ORI-07",
+   "chapter": "O14",
+   "section": "orientation",
+   "stem": "Un signal de présélection est placé à une certaine distance avant un carrefour. Quelles affirmations sont correctes ?",
+   "options": [
+    "Il représente les directions possibles au prochain carrefour.",
+    "Il vous oblige à vous arrêter au carrefour.",
+    "Il vous laisse le temps de préparer rétroviseur, clignotant et changement de voie."
+   ],
+   "answers": [0, 2],
+   "truth": "Le signal de présélection annonce les directions avant le carrefour.",
+   "why": "Il est placé en avance précisément pour permettre une manœuvre préparée.",
+   "trap": "Le confondre avec un signal de priorité.",
+   "action": "Dès que vous le voyez, choisissez votre direction et préparez la manœuvre.",
+   "memory": "Présélection = préparation."
+  }
+ ]
+}

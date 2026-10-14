@@ -1,0 +1,66 @@
+{
+ "N48-INT-01": {
+  "option": "Le conducteur, le moniteur et l’expert.",
+  "why": "Le modèle des interactions réunit le conducteur, le véhicule et l’environnement de la circulation."
+ },
+ "N48-INT-02": {
+  "option": "Vous suivez de plus près pour mieux voir la trajectoire du véhicule qui précède.",
+  "why": "Sur chaussée mouillée, la distance de freinage s’allonge ; il faut augmenter la distance."
+ },
+ "N48-INT-03": {
+  "option": "L’état des pneus.",
+  "why": "L’état des pneus relève de l’élément « véhicule », pas de l’élément « conducteur »."
+ },
+ "N48-INT-04": {
+  "option": "Une voiture chargée s’arrête sur une distance plus courte.",
+  "why": "Une charge importante augmente la masse et tend à allonger la distance de freinage."
+ },
+ "N48-FOU-01": {
+  "option": "Le calcul exact de la distance de freinage.",
+  "why": "La fourche représente l’évolution d’une situation et les points de décision, pas un calcul de distance."
+ },
+ "N48-FOU-02": {
+  "option": "Une fois que l’autre usager a commis son erreur.",
+  "why": "Après l’erreur, il ne reste souvent que des réactions d’urgence ; les options sont plus nombreuses au premier indice."
+ },
+ "N48-FOU-03": {
+  "option": "Vous klaxonnez et gardez votre vitesse.",
+  "why": "Le klaxon ne protège pas un enfant qui surgit ; il faut ralentir et être prêt à freiner."
+ },
+ "N48-FOU-04": {
+  "option": "Il reste toujours assez de temps pour une réaction calme.",
+  "why": "Une situation critique se caractérise justement par le manque de temps et d’espace pour réagir."
+ },
+ "N48-STR-01": {
+  "option": "L’habitude d’imiter ce que font les autres conducteurs.",
+  "why": "Une stratégie personnelle est décidée à l’avance selon vos propres points faibles, pas copiée sur les autres."
+ },
+ "N48-STR-02": {
+  "option": "Freiner fortement chaque fois qu’un véhicule vous suit.",
+  "why": "Freiner sans raison surprend le véhicule suivant et crée un danger ; ce n’est pas une conduite défensive."
+ },
+ "N48-STR-04": {
+  "option": "Rouler plus vite pour passer moins de temps dans ces conditions.",
+  "why": "Par mauvaise visibilité, la vitesse doit baisser ; accélérer réduit encore votre marge."
+ },
+ "N48-STR-06": {
+  "option": "Vous rejetez la faute sur l’autre usager sans rien changer à votre conduite.",
+  "why": "Analyser l’incident sert à ajuster sa propre stratégie, même si l’autre a commis une erreur."
+ },
+ "N48-REG-01": {
+  "option": "Respecter les règles seulement en présence de la police.",
+  "why": "La règle fondamentale s’applique en tout temps, qu’un contrôle soit possible ou non."
+ },
+ "N48-REG-02": {
+  "option": "Vous pouvez compter sur une conduite correcte des enfants.",
+  "why": "Le principe de la confiance ne vaut pas envers les enfants, dont le comportement est imprévisible."
+ },
+ "N48-REG-03": {
+  "option": "Les usagers qui respectent visiblement les règles.",
+  "why": "La confiance se réduit face aux indices d’erreur ou aux usagers vulnérables, pas face à ceux qui se comportent correctement."
+ },
+ "N48-REG-04": {
+  "option": "Elle vous permet de rester prioritaire en toutes circonstances.",
+  "why": "La fourche aide à repérer le moment de renoncer à son droit pour choisir la branche sûre."
+ }
+}

@@ -1,0 +1,1031 @@
+{
+ "chapter": {
+  "id": "N46",
+  "official": "4.6",
+  "group": "G4",
+  "color": "#3c5a99",
+  "otitle": "Formation à la conduite : déroulement et règles de la période probatoire",
+  "title": "Du premier cours au permis définitif",
+  "oscope": "Connaître les étapes de la formation à la conduite, le rôle des leçons et des courses privées, les règles du permis à l’essai et de la formation complémentaire, ainsi que la responsabilité du détenteur.",
+  "tagline": "À la fin de ce chapitre, vous saurez ce que chaque étape de votre formation vous autorise, quels délais respecter pendant la période probatoire et quand vous pouvez confier votre véhicule.",
+  "intro": [
+   "Obtenir le permis de conduire est un parcours en plusieurs étapes : un cours de théorie, un examen théorique, un permis d’élève, des courses d’apprentissage, un examen pratique, puis un permis à l’essai avec une formation complémentaire, avant le permis définitif. À chaque étape, vous obtenez un droit précis, accompagné de conditions.",
+   "Ce chapitre vous aide à ne jamais confondre ces étapes. Il distingue ce que la loi impose (par exemple les 3 ans du permis à l’essai ou le délai de 12 mois de la formation complémentaire) de ce qui est recommandé (par exemple combiner leçons et courses privées). Il traite enfin de la responsabilité du détenteur, qui vous concerne dès que vous prêtez, partagez ou louez un véhicule.",
+   "Quand une règle de détail vous paraît incertaine ou peut avoir changé, la bonne attitude est de vérifier auprès de l’office de la circulation de votre canton ou de l’asa, plutôt que de vous fier à une rumeur."
+  ],
+  "keyIdea": "Chaque étape de la formation ouvre un droit limité : sachez toujours ce que votre permis actuel vous autorise et quels délais vous devez respecter.",
+  "memo": {
+   "code": "É–D–R",
+   "text": "Étape (où suis-je ?), Droit (que puis-je faire ?), Règle (quel délai, quelle condition ?) : trois questions à vous poser à chaque moment de votre formation."
+  },
+  "sources": [
+   {
+    "label": "asa · Catalogue des compétences (théorie de base, 2027)",
+    "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+   },
+   {
+    "label": "Fedlex · OAC",
+    "href": "https://www.fedlex.admin.ch/eli/cc/1976/2423_2423_2423/fr"
+   },
+   {
+    "label": "Fedlex · LCR",
+    "href": "https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr"
+   },
+   {
+    "label": "asa · Association des services des automobiles",
+    "href": "https://asa.ch"
+   },
+   {
+    "label": "BPA · Conseils de sécurité",
+    "href": "https://www.bfu.ch/fr"
+   }
+  ],
+  "sections": [
+   {
+    "id": "deroulement-formation",
+    "otitle": "Déroulement de la formation",
+    "title": "Quelles étapes mènent du premier cours au permis définitif ?",
+    "ogoal": "Situer chaque étape de la formation à la conduite et savoir ce qu’elle autorise et ce qu’elle exige.",
+    "question": "J’ai réussi l’examen théorique : puis-je déjà conduire seul ?",
+    "lead": [
+     "Le permis de conduire ne s’obtient pas en une fois. C’est un parcours en plusieurs étapes, et chaque étape ouvre un droit précis tout en imposant des conditions. Cette section vous donne la carte complète du parcours, pour que vous sachiez toujours où vous en êtes et ce que vous avez le droit de faire."
+    ],
+    "parts": [
+     {
+      "title": "Avant le volant : cours de théorie et examen théorique",
+      "body": [
+       "Dès 2027, un **cours de théorie de la circulation** devient obligatoire avant l’examen de théorie de base ; l’asa le rattache aux art. 13 et 18 OAC. Ce cours vous donne les bases des règles et des comportements attendus. D’autres conditions préalables existent, par exemple un contrôle de la vue et un cours de premiers secours : la liste exacte et à jour figure auprès de l’office de la circulation de votre canton.",
+       "L’**examen théorique** vérifie ensuite que vous connaissez les règles, les signaux et les comportements sûrs. Le réussir ne vous autorise pas encore à conduire seul. Il permet seulement d’obtenir le **permis d’élève conducteur**, la première autorisation de prendre le volant, et toujours sous conditions."
+      ]
+     },
+     {
+      "title": "Apprendre à conduire : permis d’élève, courses d’apprentissage, examen pratique",
+      "body": [
+       "Avec le permis d’élève, vous pouvez faire des **courses d’apprentissage**. Vous conduisez alors soit avec un moniteur de conduite professionnel, soit avec une personne accompagnante qui remplit les conditions légales (notamment d’âge et d’ancienneté du permis). Le véhicule porte la plaque « L ». Ce permis est limité dans le temps : vérifiez sa durée sur le document ou auprès de l’office cantonal.",
+       "Quand vous êtes prêt, vous passez l’**examen pratique** avec un expert de la circulation de l’office cantonal. L’expert vérifie que vous savez conduire de façon sûre, fluide et respectueuse des autres dans le trafic réel : en localité, hors localité et, selon le parcours, sur autoroute."
+      ]
+     },
+     {
+      "title": "Après l’examen : permis à l’essai, formation complémentaire, permis définitif",
+      "body": [
+       "Après l’examen pratique réussi, vous recevez un **permis de conduire à l’essai**, valable **3 ans**. C’est la période probatoire : vous conduisez seul, mais une infraction moyenne ou grave a des conséquences plus lourdes que pour un conducteur expérimenté.",
+       "Pendant cette période, vous suivez une **formation complémentaire obligatoire** d’une journée, dans les **12 mois** suivant l’examen pratique. Si la période probatoire se termine sans problème et que la formation complémentaire a été suivie, vous recevez le **permis de conduire définitif**."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Permis d’élève conducteur",
+      "def": "Autorisation provisoire d’apprendre à conduire, accompagné, après l’examen théorique réussi."
+     },
+     {
+      "term": "Course d’apprentissage",
+      "def": "Trajet effectué avec le permis d’élève, en présence d’un moniteur ou d’une personne accompagnante autorisée."
+     },
+     {
+      "term": "Permis à l’essai",
+      "def": "Permis délivré après l’examen pratique, valable 3 ans, pendant une période probatoire aux règles plus sévères."
+     },
+     {
+      "term": "Permis définitif",
+      "def": "Permis délivré à la fin d’une période probatoire réussie, formation complémentaire comprise."
+     }
+    ],
+    "method": [
+     "Repérez l’étape où vous vous trouvez aujourd’hui.",
+     "Lisez ce que cette étape vous autorise exactement à faire.",
+     "Vérifiez les conditions qui l’accompagnent (accompagnant, plaque « L », délais).",
+     "Notez les délais à respecter, en particulier les 12 mois de la formation complémentaire.",
+     "En cas de doute, contrôlez auprès de l’office de la circulation de votre canton."
+    ],
+    "example": {
+     "title": "Théorie réussie, mais pas encore autonome",
+     "scene": "Léa vient de réussir son examen théorique à Lausanne. Le soir même, un ami lui propose de rentrer seule à Morges avec la voiture de ses parents « pour fêter ça ».",
+     "reasoning": [
+      "L’examen théorique ouvre seulement l’accès au permis d’élève, et ce permis exige un accompagnement.",
+      "Rouler seule serait conduire sans le permis requis, avec des conséquences pénales et d’assurance.",
+      "La bonne suite est de planifier ses premières courses d’apprentissage avec un moniteur ou une personne accompagnante autorisée."
+     ],
+     "answer": "Non. Après l’examen théorique, Léa ne peut conduire qu’accompagnée, avec la plaque « L », dans le cadre de courses d’apprentissage."
+    },
+    "trap": "Le piège est de croire qu’un examen réussi donne déjà le droit de conduire seul. Chaque étape a son autorisation : la théorie mène au permis d’élève, l’examen pratique au permis à l’essai, la période probatoire réussie au permis définitif. Demandez-vous toujours : « Qu’est-ce que mon permis actuel m’autorise vraiment ? »",
+    "remember": "Chaque étape ouvre un droit limité : vous ne conduisez seul qu’après l’examen pratique réussi.",
+    "memo": {
+     "code": "C–T–E–P–E–F–D",
+     "text": "Cours, Théorie, Élève, Pratique, Essai, Formation complémentaire, Définitif : sept marches, dans l’ordre, sans en sauter aucune."
+    },
+    "law": "OAC ; OCTC (RS 741.512.2) ; LCR",
+    "source": {
+     "label": "asa · Catalogue des compétences (théorie de base, 2027)",
+     "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+    }
+   },
+   {
+    "id": "heures-et-courses",
+    "otitle": "Heures de conduite et courses d’entraînement",
+    "title": "À quoi servent les leçons avec un moniteur et les courses privées ?",
+    "ogoal": "Distinguer le rôle des leçons professionnelles et celui des courses d’entraînement privées, et les combiner utilement.",
+    "question": "Si je roule beaucoup avec mes parents, ai-je encore besoin d’un moniteur ?",
+    "lead": [
+     "Pour apprendre à conduire, deux types de pratique se complètent : les leçons avec un moniteur de conduite professionnel et les courses d’entraînement privées avec une personne accompagnante. Elles n’ont pas le même but. Cette section vous aide à tirer le meilleur de chacune."
+    ],
+    "parts": [
+     {
+      "title": "Les leçons professionnelles : apprendre juste",
+      "body": [
+       "Le moniteur de conduite est formé pour enseigner. Il vous apprend les gestes, l’observation et les décisions dans un ordre logique, du simple au complexe. Son véhicule est en général équipé de doubles commandes, ce qui permet d’aborder des situations exigeantes en sécurité.",
+       "Il n’existe pas de nombre d’heures identique pour tout le monde. **Le moniteur évalue votre besoin** selon vos progrès, vos points faibles et votre aisance dans le trafic. Il vous dit aussi quand vous êtes prêt pour l’examen pratique. Méfiez-vous des chiffres « standard » qui circulent : votre parcours est personnel."
+      ]
+     },
+     {
+      "title": "Les courses privées : répéter et consolider",
+      "body": [
+       "Les courses d’entraînement privées servent à **répéter** ce que vous avez appris avec le moniteur : démarrer en côte, s’insérer, gérer un giratoire, rouler sous la pluie ou de nuit. La répétition rend les gestes automatiques et libère votre attention pour l’observation du trafic.",
+       "La personne accompagnante n’est pas un moniteur. Elle peut avoir des habitudes différentes, voire de mauvaises habitudes. Si ce qu’elle vous conseille contredit ce que vous avez appris en leçon, demandez une explication à votre moniteur avant d’adopter une nouvelle façon de faire."
+      ]
+     },
+     {
+      "title": "Combiner les deux",
+      "body": [
+       "La combinaison la plus efficace alterne : une leçon pour apprendre une nouvelle compétence, puis des courses privées pour l’exercer, puis une nouvelle leçon pour corriger et avancer. Communiquez au moniteur ce que vous avez pratiqué et ce qui vous a posé problème.",
+       "Choisissez des trajets privés adaptés à votre niveau. Au début, préférez des routes calmes et des horaires peu chargés. Augmentez progressivement la difficulté, et n’abordez une situation nouvelle qu’après l’avoir travaillée avec le moniteur."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Moniteur de conduite",
+      "def": "Professionnel autorisé à enseigner la conduite, qui structure l’apprentissage et évalue vos progrès."
+     },
+     {
+      "term": "Personne accompagnante",
+      "def": "Conducteur privé qui remplit les conditions légales pour superviser des courses d’apprentissage."
+     },
+     {
+      "term": "Doubles commandes",
+      "def": "Pédales supplémentaires côté passager qui permettent au moniteur d’intervenir."
+     },
+     {
+      "term": "Automatisme",
+      "def": "Geste devenu si habituel qu’il demande peu d’attention, ce qui libère l’esprit pour observer."
+     }
+    ],
+    "method": [
+     "Apprenez chaque nouvelle compétence d’abord avec le moniteur.",
+     "Répétez-la ensuite lors de courses privées sur des trajets adaptés.",
+     "Notez ce qui a été difficile et rapportez-le au moniteur.",
+     "Clarifiez avec le moniteur toute consigne contradictoire.",
+     "Laissez le moniteur juger quand vous êtes prêt pour l’examen."
+    ],
+    "example": {
+     "title": "Le giratoire de Fribourg",
+     "scene": "Marc a travaillé les giratoires avec son moniteur. Le dimanche, il s’entraîne avec sa mère près de Fribourg. Elle lui dit de ne jamais clignoter en sortant d’un giratoire, « parce que tout le monde fait comme ça ».",
+     "reasoning": [
+      "Le conseil contredit ce que Marc a appris en leçon.",
+      "Une habitude répandue n’est pas forcément une règle correcte ni un comportement sûr.",
+      "Marc garde la consigne du moniteur et lui pose la question à la leçon suivante pour vérifier."
+     ],
+     "answer": "Les courses privées servent à répéter correctement ce qui a été appris. En cas de contradiction, Marc vérifie auprès de son moniteur plutôt que d’adopter l’habitude de l’accompagnant."
+    },
+    "trap": "Le piège est de remplacer les leçons par des courses privées pour économiser, ou de croire qu’un nombre d’heures fixe suffit. Rouler beaucoup sans corrections peut ancrer de mauvaises habitudes. Laissez le moniteur évaluer votre besoin réel.",
+    "remember": "Le moniteur vous apprend juste, les courses privées vous font répéter : il faut les deux.",
+    "memo": {
+     "code": "A–R–C",
+     "text": "Apprendre avec le moniteur, Répéter en privé, Corriger avec le moniteur — puis on recommence."
+    },
+    "law": "OAC",
+    "source": {
+     "label": "asa · Catalogue des compétences (théorie de base, 2027)",
+     "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+    }
+   },
+   {
+    "id": "permis-essai",
+    "otitle": "Permis de conduire à l’essai",
+    "title": "Que se passe-t-il pendant les 3 ans du permis à l’essai ?",
+    "ogoal": "Connaître la durée de la période probatoire et les conséquences d’une infraction moyenne ou grave pendant cette période.",
+    "question": "Une seule infraction grave pendant ma période probatoire peut-elle me coûter mon permis ?",
+    "lead": [
+     "Le permis à l’essai vous laisse conduire seul, mais sous surveillance renforcée. La loi part d’un constat simple : les premières années de conduite sont les plus risquées. Cette section explique ce que la période probatoire implique et pourquoi elle exige une conduite irréprochable."
+    ],
+    "parts": [
+     {
+      "title": "Trois ans pour faire ses preuves",
+      "body": [
+       "Le permis à l’essai est délivré après l’examen pratique réussi. Il est valable **3 ans**. Pendant ce temps, vous conduisez sans accompagnant, mais votre comportement est observé de plus près : les conséquences d’une infraction sont plus sévères que pour un titulaire du permis définitif.",
+       "Il ne s’agit pas d’une punition, mais d’une protection. Le manque d’expérience rend les erreurs d’appréciation plus fréquentes : vitesse mal adaptée, distance trop courte, distraction. La période probatoire vous pousse à construire de bonnes habitudes dès le début."
+      ]
+     },
+     {
+      "title": "Infraction moyenne ou grave : prolongation, puis annulation",
+      "body": [
+       "Si votre permis vous est **retiré** pour une **infraction moyenne ou grave** pendant la période probatoire, celle-ci est **prolongée d’un an**. Vous restez donc plus longtemps sous le régime du permis à l’essai, en plus de la période de retrait elle-même.",
+       "Si une **deuxième** infraction de ce type entraîne un retrait, le permis à l’essai est **annulé**. Vous perdez alors votre droit de conduire et devez reprendre un parcours de formation à des conditions strictes fixées par la loi ; renseignez-vous auprès de l’office cantonal pour connaître ces conditions."
+      ]
+     },
+     {
+      "title": "Restrictions éventuelles : se renseigner à la source",
+      "body": [
+       "Certaines règles visent plus strictement les nouveaux conducteurs, notamment en matière d’alcool au volant. Les détails peuvent évoluer : vérifiez les règles en vigueur auprès de l’asa, du BPA ou de l’office de la circulation de votre canton plutôt que de vous fier à ce que l’on entend autour de vous.",
+       "Le plus simple est d’adopter une ligne claire : ne jamais conduire après avoir bu ou consommé une substance qui altère vos capacités, respecter strictement les limitations et garder de grandes marges. Une conduite prudente vous protège à la fois de l’accident et de la perte du permis."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Période probatoire",
+      "def": "Les 3 ans pendant lesquels vous détenez le permis à l’essai."
+     },
+     {
+      "term": "Retrait du permis",
+      "def": "Mesure administrative qui vous interdit de conduire pendant une durée déterminée."
+     },
+     {
+      "term": "Prolongation",
+      "def": "Allongement d’un an de la période probatoire après un retrait pour infraction moyenne ou grave."
+     },
+     {
+      "term": "Annulation",
+      "def": "Fin du permis à l’essai après une deuxième infraction moyenne ou grave ; le droit de conduire est perdu."
+     }
+    ],
+    "method": [
+     "Notez la date de début de votre période probatoire.",
+     "Respectez strictement limitations, distances et règles d’aptitude.",
+     "Prévoyez de grandes marges pour compenser votre manque d’expérience.",
+     "Vérifiez auprès de l’asa ou de l’office cantonal les règles spéciales qui vous concernent.",
+     "Rappelez-vous qu’un premier retrait prolonge, et qu’un second annule."
+    ],
+    "example": {
+     "title": "La pression des copains à Sion",
+     "scene": "Noah a son permis à l’essai depuis un an. En sortant d’une fête à Sion, ses amis lui demandent de rouler vite sur la route cantonale pour arriver avant minuit.",
+     "reasoning": [
+      "Un excès de vitesse important peut constituer une infraction moyenne ou grave.",
+      "Un retrait prolongerait sa période probatoire d’un an ; un second entraînerait l’annulation du permis à l’essai.",
+      "Le risque d’accident et le risque pour son permis sont tous deux disproportionnés par rapport à quelques minutes gagnées."
+     ],
+     "answer": "Noah respecte les limitations. Il explique simplement que, pendant la période probatoire, une seule faute grave peut coûter très cher."
+    },
+    "trap": "Le piège est de penser que la première infraction « ne compte pas vraiment ». Un retrait pour infraction moyenne ou grave prolonge la période d’un an, et un second retrait de ce type annule le permis à l’essai. Il n’y a pas de droit à l’erreur sans conséquence.",
+    "remember": "Permis à l’essai : 3 ans ; un retrait prolonge d’un an, un second annule le permis.",
+    "memo": {
+     "code": "3 – +1 – 0",
+     "text": "Trois ans d’essai, plus un an après un premier retrait, zéro permis après le deuxième."
+    },
+    "law": "OAC ; LCR",
+    "source": {
+     "label": "Fedlex · OAC",
+     "href": "https://www.fedlex.admin.ch/eli/cc/1976/2423_2423_2423/fr"
+    }
+   },
+   {
+    "id": "formation-complementaire",
+    "otitle": "Formation complémentaire (CFC)",
+    "title": "Quand et pourquoi suivre la formation complémentaire ?",
+    "ogoal": "Connaître l’obligation de suivre la formation complémentaire d’une journée dans les 12 mois suivant l’examen pratique, et la conséquence d’un oubli.",
+    "question": "Que se passe-t-il si je n’ai pas suivi la formation complémentaire à temps ?",
+    "lead": [
+     "Après l’examen pratique, l’apprentissage continue. La formation complémentaire, que le catalogue de l’asa appelle « cours de formation continue CFC », est une étape obligatoire de la période probatoire. Cette section vous dit quand la suivre, ce qu’elle apporte et ce que vous risquez en la négligeant."
+    ],
+    "parts": [
+     {
+      "title": "Une journée, dans les 12 mois",
+      "body": [
+       "La formation complémentaire dure **une journée**. Vous devez la suivre **dans les 12 mois suivant l’examen pratique**. Elle est donnée par des organismes reconnus ; la liste se trouve auprès de l’office cantonal de la circulation ou de l’asa.",
+       "Si vous ne l’avez pas suivie dans ce délai, **le permis à l’essai perd sa validité**. Vous n’avez alors plus le droit de conduire. Ce n’est pas une formalité qu’on peut reporter sans conséquence : réservez votre place tôt, car les dates disponibles peuvent être limitées."
+      ]
+     },
+     {
+      "title": "Ce que la journée apporte",
+      "body": [
+       "Après quelques mois de conduite seul, vous avez acquis des habitudes. La formation complémentaire vous aide à les examiner : comment vous évaluez les risques, comment vous gérez la vitesse, les distances, la fatigue ou la distraction, et comment vous réagissez quand une situation devient critique.",
+       "Elle vous apprend aussi à reconnaître vos propres tendances, par exemple une confiance excessive. L’objectif n’est pas de devenir pilote, mais de conduire de façon plus prévoyante et plus économique, en gardant des marges de sécurité."
+      ]
+     },
+     {
+      "title": "Obligation, recommandation, choix personnel",
+      "body": [
+       "Il faut bien distinguer : la formation complémentaire est une **obligation légale** pendant la période probatoire. D’autres cours, par exemple des cours de perfectionnement facultatifs, sont des **recommandations** utiles, mais non exigées.",
+       "Votre choix personnel intervient sur la date et l’organisme, pas sur le principe. Le plus prudent est d’inscrire la date limite dans votre agenda dès le jour de l’examen pratique, puis de réserver rapidement."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Formation complémentaire",
+      "def": "Journée de cours obligatoire pendant la période probatoire, appelée « cours de formation continue CFC » dans le catalogue de l’asa."
+     },
+     {
+      "term": "Délai de 12 mois",
+      "def": "Temps maximal, compté depuis l’examen pratique, pour suivre la formation complémentaire."
+     },
+     {
+      "term": "Perte de validité",
+      "def": "Le permis à l’essai ne vous autorise plus à conduire."
+     },
+     {
+      "term": "Cours facultatif",
+      "def": "Formation recommandée mais non exigée par la loi."
+     }
+    ],
+    "method": [
+     "Notez la date de votre examen pratique.",
+     "Calculez la date limite des 12 mois et inscrivez-la dans votre agenda.",
+     "Choisissez un organisme reconnu et réservez tôt.",
+     "Conservez l’attestation de participation.",
+     "Ne conduisez plus si le délai est dépassé : renseignez-vous immédiatement auprès de l’office cantonal."
+    ],
+    "example": {
+     "title": "Le rappel oublié",
+     "scene": "Sara a réussi son examen pratique à Neuchâtel il y a dix mois. Elle n’a pas encore réservé la formation complémentaire, pensant « le faire après l’été ».",
+     "reasoning": [
+      "Le délai est de 12 mois depuis l’examen pratique : il ne lui reste que deux mois.",
+      "Si elle laisse passer le délai, son permis à l’essai perd sa validité et elle ne peut plus conduire.",
+      "Elle réserve sans attendre une date disponible auprès d’un organisme reconnu."
+     ],
+     "answer": "Sara doit réserver tout de suite. Sans formation complémentaire dans les 12 mois, son permis à l’essai ne serait plus valable."
+    },
+    "trap": "Le piège est de croire que la formation complémentaire peut être faite « n’importe quand pendant les 3 ans ». Le délai est de 12 mois après l’examen pratique, pas de 3 ans. Le dépasser rend le permis à l’essai invalide.",
+    "remember": "Une journée de formation complémentaire dans les 12 mois après l’examen pratique, sinon le permis à l’essai n’est plus valable.",
+    "memo": {
+     "code": "1 – 12",
+     "text": "Une journée, douze mois : le compte à rebours démarre le jour de l’examen pratique."
+    },
+    "law": "OAC",
+    "source": {
+     "label": "asa · Catalogue des compétences (théorie de base, 2027)",
+     "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+    }
+   },
+   {
+    "id": "responsabilite-detenteur",
+    "otitle": "Responsabilité du détenteur",
+    "title": "Prêter, partager ou louer une voiture : qui répond de quoi ?",
+    "ogoal": "Savoir ce dont le détenteur répond lorsqu’il confie son véhicule et ce que le conducteur doit vérifier lui-même.",
+    "question": "Puis-je prêter ma voiture à un ami qui n’a pas de permis valable, s’il promet de rouler prudemment ?",
+    "lead": [
+     "Le détenteur est la personne qui dispose du véhicule et au nom de laquelle il est immatriculé et assuré. Prêter sa voiture, la partager avec d’autres ou la louer ne fait pas disparaître ses responsabilités. Cette section vous montre ce que vous devez vérifier avant de confier un véhicule, ou avant d’en prendre un."
+    ],
+    "parts": [
+     {
+      "title": "Ce dont le détenteur répond",
+      "body": [
+       "Le détenteur répond de **l’état du véhicule** : freins, pneus, éclairage, direction et équipements doivent être conformes et en bon état de fonctionnement. Il répond aussi de **l’assurance** responsabilité civile, obligatoire, qui couvre les dommages causés à des tiers.",
+       "Il ne doit confier le véhicule **qu’à une personne titulaire du permis requis** pour cette catégorie **et apte à conduire**, c’est-à-dire ni sous l’influence de l’alcool, de drogues ou de médicaments qui altèrent les capacités, ni gravement fatiguée. La LCR fixe ces responsabilités ; en cas de doute sur un point précis, renseignez-vous auprès de votre assurance ou de l’office cantonal."
+      ]
+     },
+     {
+      "title": "Prêt et partage : vérifier avant de remettre les clés",
+      "body": [
+       "Avant de prêter votre voiture, demandez à voir le permis de la personne et assurez-vous qu’il est valable et correspond à la catégorie. Observez si elle est en état de conduire. Une promesse de « rouler prudemment » ne remplace pas un permis valable ni l’aptitude.",
+       "Si plusieurs personnes partagent un véhicule, par exemple dans une famille ou une colocation, convenez de qui contrôle l’état technique et signalez immédiatement tout défaut. Pour une course d’apprentissage, vérifiez en plus que l’élève a son permis d’élève et que l’accompagnant remplit les conditions."
+      ]
+     },
+     {
+      "title": "Location : le conducteur vérifie aussi",
+      "body": [
+       "En location, c’est en principe l’entreprise de location qui est détentrice : elle répond de l’état du véhicule et de l’assurance. Elle vérifie votre permis avant de vous remettre la voiture.",
+       "Le conducteur reste pourtant responsable de sa conduite et doit contrôler ce qu’il peut voir avant de partir : dégâts visibles, pneus, éclairage, témoins d’alerte. Prenez le temps de vous familiariser avec les commandes et les systèmes d’aide d’un véhicule inconnu ; ces aides ne vous dispensent jamais de votre responsabilité."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Détenteur",
+      "def": "Personne qui dispose du véhicule et au nom de laquelle il est immatriculé et assuré."
+     },
+     {
+      "term": "Assurance responsabilité civile",
+      "def": "Assurance obligatoire qui couvre les dommages causés à des tiers avec le véhicule."
+     },
+     {
+      "term": "Permis requis",
+      "def": "Permis valable de la catégorie qui correspond au véhicule conduit."
+     },
+     {
+      "term": "Aptitude à conduire",
+      "def": "État physique et psychique qui permet de conduire en sécurité au moment du trajet."
+     }
+    ],
+    "method": [
+     "Vérifiez que le véhicule est en bon état et assuré.",
+     "Contrôlez le permis de la personne : valable et de la bonne catégorie.",
+     "Observez si elle est apte à conduire à ce moment-là.",
+     "Refusez de remettre les clés si une seule condition manque.",
+     "Comme conducteur, faites un contrôle visuel avant de partir avec un véhicule emprunté ou loué."
+    ],
+    "example": {
+     "title": "Les clés après le match",
+     "scene": "Après un match de hockey à Bienne, votre cousin vous demande vos clés pour aller chercher des amis. Son permis lui a été retiré le mois dernier, et il a bu deux bières.",
+     "reasoning": [
+      "Votre cousin n’a pas de permis valable : vous ne pouvez pas lui confier le véhicule.",
+      "Il a consommé de l’alcool : son aptitude à conduire est en plus douteuse.",
+      "En lui prêtant la voiture, vous engageriez votre propre responsabilité de détenteur et mettriez d’autres personnes en danger."
+     ],
+     "answer": "Vous refusez et proposez une autre solution : un conducteur sobre et titulaire du permis, un taxi ou les transports publics."
+    },
+    "trap": "Le piège est de penser que, une fois les clés données, seul le conducteur est responsable. Le détenteur répond de l’état du véhicule, de l’assurance et du choix de la personne à qui il le confie. Si cette personne n’a pas de permis valable ou n’est pas apte, vous êtes aussi en faute.",
+    "remember": "Ne confiez votre véhicule qu’en bon état, assuré, à une personne titulaire du permis requis et apte à conduire.",
+    "memo": {
+     "code": "É–A–P–A",
+     "text": "État du véhicule, Assurance, Permis requis, Aptitude : quatre vérifications avant de remettre les clés."
+    },
+    "law": "LCR",
+    "source": {
+     "label": "Fedlex · LCR",
+     "href": "https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr"
+    }
+   }
+  ]
+ },
+ "questions": [
+  {
+   "id": "N46-FOR-01",
+   "chapter": "N46",
+   "section": "deroulement-formation",
+   "stem": "Dès 2027, que faut-il savoir sur le cours de théorie de la circulation ?",
+   "options": [
+    "Il doit être suivi avant l’examen de théorie de base.",
+    "Il remplace l’examen théorique.",
+    "Il est facultatif si l’on a déjà conduit à l’étranger."
+   ],
+   "answers": [
+    0
+   ],
+   "truth": "Le cours de théorie de la circulation est obligatoire avant l’examen de théorie de base dès 2027.",
+   "why": "Il prépare à l’examen, mais ne le remplace pas ; l’examen reste nécessaire.",
+   "trap": "Confondre un cours obligatoire avec une dispense d’examen.",
+   "action": "Inscrivez-vous au cours avant de réserver l’examen théorique.",
+   "memory": "Cours d’abord, examen ensuite."
+  },
+  {
+   "id": "N46-FOR-02",
+   "chapter": "N46",
+   "section": "deroulement-formation",
+   "stem": "Vous venez de réussir l’examen théorique. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Vous pouvez désormais conduire seul sur des routes peu fréquentées.",
+    "Vous pouvez demander le permis d’élève conducteur.",
+    "Vous ne pouvez conduire qu’accompagné, dans le cadre de courses d’apprentissage."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "L’examen théorique donne accès au permis d’élève, qui exige un accompagnement.",
+   "why": "Le permis d’élève sert à apprendre ; la conduite seule n’est possible qu’après l’examen pratique.",
+   "trap": "Croire qu’une route calme rend la conduite seule acceptable.",
+   "action": "Organisez vos courses avec un moniteur ou un accompagnant autorisé.",
+   "memory": "Théorie réussie = élève, pas conducteur."
+  },
+  {
+   "id": "N46-FOR-03",
+   "chapter": "N46",
+   "section": "deroulement-formation",
+   "stem": "Pendant une course d’apprentissage avec une personne accompagnante privée, qu’est-ce qui est exigé ?",
+   "options": [
+    "La plaque « L » est apposée sur le véhicule.",
+    "L’accompagnant peut être n’importe quel ami titulaire d’un permis depuis peu.",
+    "L’accompagnant doit remplir les conditions légales fixées pour ce rôle."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La course d’apprentissage se fait avec la plaque « L » et un accompagnant qui remplit les conditions légales.",
+   "why": "La loi fixe des conditions à l’accompagnant (notamment d’âge et d’ancienneté du permis) pour garantir une supervision compétente.",
+   "trap": "Penser que tout titulaire de permis peut accompagner.",
+   "action": "Vérifiez les conditions de l’accompagnant auprès de l’office cantonal avant de partir.",
+   "memory": "Plaque L + bon accompagnant."
+  },
+  {
+   "id": "N46-FOR-04",
+   "chapter": "N46",
+   "section": "deroulement-formation",
+   "stem": "Après l’examen pratique réussi, quel permis recevez-vous ?",
+   "options": [
+    "Le permis de conduire définitif.",
+    "Un permis de conduire à l’essai valable 3 ans.",
+    "Un deuxième permis d’élève."
+   ],
+   "answers": [
+    1
+   ],
+   "truth": "L’examen pratique réussi donne un permis à l’essai de 3 ans.",
+   "why": "Le permis définitif ne vient qu’après une période probatoire réussie et la formation complémentaire.",
+   "trap": "Sauter l’étape de la période probatoire.",
+   "action": "Notez la date de votre examen pratique : elle fait courir vos délais.",
+   "memory": "Pratique réussie = essai, pas définitif."
+  },
+  {
+   "id": "N46-FOR-05",
+   "chapter": "N46",
+   "section": "deroulement-formation",
+   "stem": "Quelles conditions mènent au permis définitif ?",
+   "options": [
+    "La période probatoire s’est terminée sans annulation du permis à l’essai.",
+    "La formation complémentaire obligatoire a été suivie.",
+    "Il suffit d’avoir parcouru un certain nombre de kilomètres."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Le permis définitif suppose une période probatoire réussie et la formation complémentaire suivie.",
+   "why": "Le kilométrage n’est pas un critère légal ; ce sont la période probatoire et la formation qui comptent.",
+   "trap": "Penser que l’expérience accumulée suffit sans les étapes formelles.",
+   "action": "Planifiez la formation complémentaire dès l’obtention du permis à l’essai.",
+   "memory": "Probatoire réussie + formation = définitif."
+  },
+  {
+   "id": "N46-FOR-06",
+   "chapter": "N46",
+   "section": "deroulement-formation",
+   "stem": "Qui fait passer l’examen pratique ?",
+   "options": [
+    "Le moniteur de conduite qui vous a formé.",
+    "Un expert de la circulation de l’office cantonal.",
+    "La personne qui vous a accompagné lors des courses privées."
+   ],
+   "answers": [
+    1
+   ],
+   "truth": "L’examen pratique est conduit par un expert de l’office cantonal de la circulation.",
+   "why": "L’évaluation doit être neutre et indépendante de la formation reçue.",
+   "trap": "Confondre la personne qui forme et celle qui évalue.",
+   "action": "Préparez-vous avec votre moniteur, puis présentez-vous à l’expert.",
+   "memory": "Le moniteur forme, l’expert juge."
+  },
+  {
+   "id": "N46-HEU-01",
+   "chapter": "N46",
+   "section": "heures-et-courses",
+   "stem": "Combien d’heures de leçons professionnelles faut-il prendre ?",
+   "options": [
+    "Le moniteur évalue le besoin selon vos progrès.",
+    "Un nombre d’heures fixe et identique est imposé à tous les élèves.",
+    "Le besoin varie d’une personne à l’autre."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Le nombre de leçons dépend de chaque élève et c’est le moniteur qui l’évalue.",
+   "why": "Les progrès, l’aisance et les points faibles diffèrent d’une personne à l’autre.",
+   "trap": "Se fier à un chiffre « standard » entendu ailleurs.",
+   "action": "Demandez régulièrement au moniteur où vous en êtes.",
+   "memory": "Mon besoin, évalué par mon moniteur."
+  },
+  {
+   "id": "N46-HEU-02",
+   "chapter": "N46",
+   "section": "heures-et-courses",
+   "stem": "Quel est le rôle principal des courses d’entraînement privées ?",
+   "options": [
+    "Répéter ce qui a été appris avec le moniteur.",
+    "Remplacer complètement les leçons professionnelles.",
+    "Découvrir seul des situations jamais travaillées, comme l’autoroute de nuit dès la première sortie."
+   ],
+   "answers": [
+    0
+   ],
+   "truth": "Les courses privées servent à consolider par la répétition.",
+   "why": "La nouvelle compétence s’apprend d’abord avec un professionnel ; la répétition la rend automatique.",
+   "trap": "Voir les courses privées comme un substitut bon marché.",
+   "action": "Choisissez des trajets privés adaptés à ce que vous maîtrisez déjà.",
+   "memory": "Privé = répéter."
+  },
+  {
+   "id": "N46-HEU-03",
+   "chapter": "N46",
+   "section": "heures-et-courses",
+   "stem": "Votre accompagnant vous donne un conseil contraire à ce que dit votre moniteur. Que faites-vous ?",
+   "options": [
+    "Vous adoptez le conseil de l’accompagnant puisqu’il conduit depuis longtemps.",
+    "Vous gardez la consigne apprise et demandez une explication au moniteur.",
+    "Vous signalez la contradiction au moniteur lors de la leçon suivante."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "En cas de contradiction, on clarifie avec le professionnel.",
+   "why": "L’expérience de l’accompagnant ne garantit pas que ses habitudes sont correctes ou sûres.",
+   "trap": "Confondre ancienneté et exactitude.",
+   "action": "Notez la question et posez-la à votre moniteur.",
+   "memory": "Doute ? Moniteur."
+  },
+  {
+   "id": "N46-HEU-04",
+   "chapter": "N46",
+   "section": "heures-et-courses",
+   "stem": "Pourquoi les véhicules d’auto-école ont-ils souvent des doubles commandes ?",
+   "options": [
+    "Pour permettre au moniteur d’intervenir si nécessaire.",
+    "Pour que l’élève puisse conduire sans regarder la route.",
+    "Pour aborder des situations exigeantes avec plus de sécurité."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Les doubles commandes permettent au moniteur d’intervenir et sécurisent l’apprentissage.",
+   "why": "Elles autorisent un apprentissage progressif dans le trafic réel avec un filet de sécurité.",
+   "trap": "Croire que les doubles commandes réduisent votre propre responsabilité d’observer.",
+   "action": "Conduisez comme si le moniteur n’allait pas intervenir.",
+   "memory": "Double commande = filet, pas pilote."
+  },
+  {
+   "id": "N46-HEU-05",
+   "chapter": "N46",
+   "section": "heures-et-courses",
+   "stem": "Au début de vos courses privées, quel choix est le plus judicieux ?",
+   "options": [
+    "Une route calme à une heure peu chargée.",
+    "Le centre-ville à l’heure de pointe pour progresser plus vite.",
+    "Une difficulté qui augmente progressivement."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La difficulté se construit pas à pas.",
+   "why": "Une surcharge trop tôt empêche d’apprendre et crée des situations dangereuses.",
+   "trap": "Vouloir « se jeter à l’eau » pour gagner du temps.",
+   "action": "Planifiez vos trajets privés du plus simple au plus complexe.",
+   "memory": "Simple d’abord, complexe ensuite."
+  },
+  {
+   "id": "N46-HEU-06",
+   "chapter": "N46",
+   "section": "heures-et-courses",
+   "stem": "Qui est le mieux placé pour dire si vous êtes prêt pour l’examen pratique ?",
+   "options": [
+    "Votre moniteur de conduite.",
+    "N’importe quel ami qui a son permis.",
+    "Vous seul, dès que vous vous sentez à l’aise sur un trajet connu."
+   ],
+   "answers": [
+    0
+   ],
+   "truth": "Le moniteur évalue si vous maîtrisez les compétences exigées.",
+   "why": "Se sentir à l’aise sur un trajet familier ne prouve pas qu’on maîtrise les situations variées de l’examen.",
+   "trap": "Surestimer sa préparation à partir de trajets connus.",
+   "action": "Demandez au moniteur un bilan avant de vous inscrire.",
+   "memory": "Le moniteur donne le feu vert."
+  },
+  {
+   "id": "N46-ESS-01",
+   "chapter": "N46",
+   "section": "permis-essai",
+   "stem": "Quelle est la durée normale de la période probatoire ?",
+   "options": [
+    "1 an.",
+    "3 ans.",
+    "5 ans."
+   ],
+   "answers": [
+    1
+   ],
+   "truth": "Le permis à l’essai est valable 3 ans.",
+   "why": "C’est la durée fixée pour la période probatoire, hors prolongation.",
+   "trap": "Confondre la durée de base avec la prolongation d’un an.",
+   "action": "Notez la date d’échéance de votre permis à l’essai.",
+   "memory": "Essai = 3 ans."
+  },
+  {
+   "id": "N46-ESS-02",
+   "chapter": "N46",
+   "section": "permis-essai",
+   "stem": "Pendant la période probatoire, votre permis est retiré pour une infraction grave. Qu’est-ce qui est vrai ?",
+   "options": [
+    "La période probatoire est prolongée d’un an.",
+    "La période probatoire est raccourcie pour compenser le retrait.",
+    "Vous ne pouvez pas conduire pendant la durée du retrait."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Un retrait pour infraction moyenne ou grave prolonge la période d’un an, et le retrait interdit de conduire.",
+   "why": "La loi veut prolonger la surveillance d’un conducteur qui a déjà commis une faute sérieuse.",
+   "trap": "Croire que le retrait « remplace » la prolongation.",
+   "action": "Évitez toute infraction pouvant mener à un retrait.",
+   "memory": "Un retrait = +1 an."
+  },
+  {
+   "id": "N46-ESS-03",
+   "chapter": "N46",
+   "section": "permis-essai",
+   "stem": "Que se passe-t-il en cas de deuxième retrait pour infraction moyenne ou grave pendant la période probatoire ?",
+   "options": [
+    "Le permis à l’essai est annulé.",
+    "La période est simplement prolongée d’un an de plus.",
+    "Le permis devient définitif après la durée du retrait."
+   ],
+   "answers": [
+    0
+   ],
+   "truth": "Une deuxième infraction de ce type entraîne l’annulation du permis à l’essai.",
+   "why": "Le système prévoit une seule seconde chance pendant la période probatoire.",
+   "trap": "Penser que les prolongations s’additionnent indéfiniment.",
+   "action": "Après un premier retrait, redoublez de prudence.",
+   "memory": "Deuxième retrait = annulation."
+  },
+  {
+   "id": "N46-ESS-04",
+   "chapter": "N46",
+   "section": "permis-essai",
+   "stem": "Pourquoi la loi impose-t-elle une période probatoire ?",
+   "options": [
+    "Parce que les débutants manquent encore d’expérience.",
+    "Pour inciter les nouveaux conducteurs à construire de bonnes habitudes.",
+    "Parce que les nouveaux conducteurs ont le droit de rouler plus vite."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "La période probatoire tient compte du manque d’expérience et encourage les bonnes habitudes.",
+   "why": "Les premières années sont celles où les erreurs d’appréciation sont les plus fréquentes.",
+   "trap": "Voir la période probatoire comme une simple formalité administrative.",
+   "action": "Conduisez avec de grandes marges pendant ces années.",
+   "memory": "Peu d’expérience, beaucoup de marge."
+  },
+  {
+   "id": "N46-ESS-05",
+   "chapter": "N46",
+   "section": "permis-essai",
+   "stem": "Vous voulez connaître les règles spéciales qui s’appliquent aux titulaires d’un permis à l’essai, par exemple pour l’alcool. Que faites-vous ?",
+   "options": [
+    "Vous vous fiez à ce que disent vos amis.",
+    "Vous vérifiez auprès de l’asa, du BPA ou de l’office cantonal.",
+    "Vous consultez une source officielle à jour."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "Les règles spéciales doivent être vérifiées à une source officielle et à jour.",
+   "why": "Les règles peuvent évoluer, et les informations entendues autour de soi sont souvent incomplètes.",
+   "trap": "Prendre une rumeur pour une règle.",
+   "action": "Consultez l’asa ou l’office cantonal avant de décider.",
+   "memory": "Source officielle, pas rumeur."
+  },
+  {
+   "id": "N46-ESS-06",
+   "chapter": "N46",
+   "section": "permis-essai",
+   "stem": "Avec un permis à l’essai, vous devez rentrer d’une soirée où vous avez bu de l’alcool. Quel comportement est le plus sûr ?",
+   "options": [
+    "Ne pas conduire et organiser un autre moyen de transport.",
+    "Conduire lentement sur des petites routes.",
+    "Conduire si vous vous sentez en forme."
+   ],
+   "answers": [
+    0
+   ],
+   "truth": "Ne pas conduire après avoir bu est la seule décision sûre, et elle protège aussi votre permis.",
+   "why": "L’alcool altère le jugement et les réflexes, même quand on se sent bien ; des règles plus strictes visent en outre les nouveaux conducteurs.",
+   "trap": "Croire qu’une route secondaire ou une vitesse réduite compense l’alcool.",
+   "action": "Prévoyez le retour avant la soirée : transport public, taxi, conducteur sobre.",
+   "memory": "Bu ? Pas de volant."
+  },
+  {
+   "id": "N46-CFC-01",
+   "chapter": "N46",
+   "section": "formation-complementaire",
+   "stem": "Dans quel délai faut-il suivre la formation complémentaire ?",
+   "options": [
+    "Dans les 12 mois suivant l’examen pratique.",
+    "Avant la fin des 3 ans de la période probatoire, sans délai plus court.",
+    "Avant l’examen théorique."
+   ],
+   "answers": [
+    0
+   ],
+   "truth": "La formation complémentaire doit être suivie dans les 12 mois suivant l’examen pratique.",
+   "why": "Le délai est fixé pour que la formation intervienne tôt dans l’expérience de conduite.",
+   "trap": "Confondre le délai de 12 mois avec la durée de 3 ans du permis à l’essai.",
+   "action": "Inscrivez la date limite dès le jour de l’examen pratique.",
+   "memory": "12 mois après la pratique."
+  },
+  {
+   "id": "N46-CFC-02",
+   "chapter": "N46",
+   "section": "formation-complementaire",
+   "stem": "Combien de temps dure la formation complémentaire obligatoire ?",
+   "options": [
+    "Une journée.",
+    "Une semaine complète.",
+    "Une heure en ligne."
+   ],
+   "answers": [
+    0
+   ],
+   "truth": "La formation complémentaire obligatoire dure une journée.",
+   "why": "C’est le format prévu pour la période probatoire.",
+   "trap": "Imaginer une formation plus longue ou un simple module en ligne.",
+   "action": "Réservez une journée entière dans votre agenda.",
+   "memory": "Une journée."
+  },
+  {
+   "id": "N46-CFC-03",
+   "chapter": "N46",
+   "section": "formation-complementaire",
+   "stem": "Vous dépassez le délai sans avoir suivi la formation complémentaire. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Le permis à l’essai perd sa validité.",
+    "Vous recevez seulement un rappel sans conséquence.",
+    "Vous n’avez plus le droit de conduire avec ce permis."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Sans formation complémentaire dans le délai, le permis à l’essai perd sa validité.",
+   "why": "L’obligation est légale ; son non-respect retire le droit de conduire.",
+   "trap": "Croire à une simple sanction symbolique.",
+   "action": "Ne conduisez plus et contactez immédiatement l’office cantonal.",
+   "memory": "Délai dépassé = permis invalide."
+  },
+  {
+   "id": "N46-CFC-04",
+   "chapter": "N46",
+   "section": "formation-complementaire",
+   "stem": "Comment le catalogue de l’asa nomme-t-il la formation complémentaire ?",
+   "options": [
+    "Cours de formation continue CFC.",
+    "Examen de contrôle final.",
+    "Cours de théorie de la circulation."
+   ],
+   "answers": [
+    0
+   ],
+   "truth": "Le catalogue l’appelle « cours de formation continue CFC ».",
+   "why": "Le cours de théorie de la circulation intervient avant l’examen théorique, pas pendant la période probatoire.",
+   "trap": "Confondre les différents cours du parcours.",
+   "action": "Repérez le bon intitulé lors de votre inscription.",
+   "memory": "CFC = après l’examen pratique."
+  },
+  {
+   "id": "N46-CFC-05",
+   "chapter": "N46",
+   "section": "formation-complementaire",
+   "stem": "Quelles affirmations décrivent correctement la formation complémentaire ?",
+   "options": [
+    "C’est une obligation légale pendant la période probatoire.",
+    "C’est une recommandation que l’on peut ignorer.",
+    "Elle aide à examiner ses habitudes de conduite et son évaluation des risques."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La formation complémentaire est obligatoire et porte sur l’évaluation des risques et les habitudes.",
+   "why": "Après quelques mois seul au volant, chacun a pris des habitudes qu’il est utile d’analyser.",
+   "trap": "La confondre avec un cours facultatif de perfectionnement.",
+   "action": "Abordez la journée comme une occasion d’améliorer votre conduite.",
+   "memory": "Obligatoire et utile."
+  },
+  {
+   "id": "N46-CFC-06",
+   "chapter": "N46",
+   "section": "formation-complementaire",
+   "stem": "Vous avez réussi l’examen pratique il y a onze mois et n’avez pas encore suivi la formation complémentaire. Que faites-vous ?",
+   "options": [
+    "Vous réservez immédiatement une date possible avant l’échéance.",
+    "Vous attendez la deuxième année, il reste du temps.",
+    "Vous vérifiez la date exacte de votre examen pour connaître l’échéance."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Il faut agir avant la fin des 12 mois, en connaissant la date limite exacte.",
+   "why": "Les places peuvent être limitées ; attendre risque de faire perdre la validité du permis.",
+   "trap": "Penser que la période probatoire de 3 ans laisse le temps.",
+   "action": "Réservez maintenant et gardez l’attestation.",
+   "memory": "Onze mois ? On réserve aujourd’hui."
+  },
+  {
+   "id": "N46-DET-01",
+   "chapter": "N46",
+   "section": "responsabilite-detenteur",
+   "stem": "De quoi le détenteur d’un véhicule répond-il ?",
+   "options": [
+    "De l’état du véhicule.",
+    "De l’assurance responsabilité civile du véhicule.",
+    "Uniquement du paiement des places de parc."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Le détenteur répond de l’état du véhicule et de son assurance.",
+   "why": "Ces deux éléments protègent les autres usagers contre les défauts techniques et leurs conséquences financières.",
+   "trap": "Réduire le rôle du détenteur à des aspects administratifs mineurs.",
+   "action": "Contrôlez régulièrement votre véhicule et votre couverture d’assurance.",
+   "memory": "Détenteur = état + assurance."
+  },
+  {
+   "id": "N46-DET-02",
+   "chapter": "N46",
+   "section": "responsabilite-detenteur",
+   "stem": "Un ami vous demande votre voiture. Son permis lui a été retiré. Que faites-vous ?",
+   "options": [
+    "Vous lui prêtez la voiture s’il promet de rouler lentement.",
+    "Vous refusez, car il n’a pas de permis valable.",
+    "Vous lui prêtez la voiture pour un trajet court seulement."
+   ],
+   "answers": [
+    1
+   ],
+   "truth": "On ne confie un véhicule qu’à une personne titulaire du permis requis.",
+   "why": "Sans permis valable, la personne n’a pas le droit de conduire, quelle que soit la distance.",
+   "trap": "Croire qu’un trajet court ou une promesse change la règle.",
+   "action": "Demandez toujours à voir le permis avant de prêter.",
+   "memory": "Pas de permis, pas de clés."
+  },
+  {
+   "id": "N46-DET-03",
+   "chapter": "N46",
+   "section": "responsabilite-detenteur",
+   "stem": "Une amie titulaire du permis requis veut emprunter votre voiture, mais elle a pris un médicament qui provoque une forte somnolence. Que faut-il retenir ?",
+   "options": [
+    "Son permis valable suffit, vous pouvez lui prêter la voiture.",
+    "Elle doit aussi être apte à conduire au moment du trajet.",
+    "Vous ne lui confiez pas la voiture tant qu’elle n’est pas en état de conduire."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "Le permis ne suffit pas : la personne doit être apte au moment de conduire.",
+   "why": "Un médicament qui provoque la somnolence peut rendre la conduite dangereuse.",
+   "trap": "Penser que le permis garantit l’aptitude à tout moment.",
+   "action": "Proposez une autre solution de transport.",
+   "memory": "Permis + aptitude."
+  },
+  {
+   "id": "N46-DET-04",
+   "chapter": "N46",
+   "section": "responsabilite-detenteur",
+   "stem": "Vous louez une voiture pour un week-end. Qu’est-ce qui est vrai ?",
+   "options": [
+    "L’entreprise de location est en principe la détentrice du véhicule.",
+    "Vous n’avez rien à contrôler, l’entreprise s’occupe de tout.",
+    "Vous contrôlez les dégâts visibles et les témoins d’alerte avant de partir."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "L’entreprise est détentrice, mais le conducteur fait aussi un contrôle avant de partir.",
+   "why": "Le conducteur reste responsable de sa conduite et de ce qu’il peut constater.",
+   "trap": "Croire que la location transfère toute la responsabilité à l’entreprise.",
+   "action": "Faites le tour du véhicule et familiarisez-vous avec les commandes.",
+   "memory": "Louée ? Contrôlée quand même."
+  },
+  {
+   "id": "N46-DET-05",
+   "chapter": "N46",
+   "section": "responsabilite-detenteur",
+   "stem": "Vous découvrez dans une voiture de location un système d’aide inconnu. Que faut-il comprendre ?",
+   "options": [
+    "Le système vous dispense de surveiller la circulation.",
+    "Vous restez responsable de la conduite.",
+    "Il est utile de comprendre son fonctionnement avant de partir."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "Les systèmes d’aide ne dispensent jamais le conducteur de sa responsabilité.",
+   "why": "Un système mal compris peut surprendre et détourner l’attention.",
+   "trap": "Faire une confiance aveugle à la technique.",
+   "action": "Lisez les indications ou demandez une explication au loueur.",
+   "memory": "L’aide aide, vous conduisez."
+  },
+  {
+   "id": "N46-DET-06",
+   "chapter": "N46",
+   "section": "responsabilite-detenteur",
+   "stem": "Votre famille partage une voiture. Le frein fait un bruit inhabituel depuis hier. Quelle attitude est correcte ?",
+   "options": [
+    "Signaler immédiatement le défaut aux autres utilisateurs.",
+    "Faire contrôler le véhicule avant de continuer à l’utiliser normalement.",
+    "Attendre le prochain service prévu dans six mois."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Un défaut de frein doit être signalé et contrôlé sans attendre.",
+   "why": "Le véhicule doit être en bon état de fonctionnement ; un frein défaillant met tout le monde en danger.",
+   "trap": "Supposer qu’un autre membre de la famille s’en occupera.",
+   "action": "Prévenez tout le monde et prenez rendez-vous au garage.",
+   "memory": "Défaut signalé, défaut réparé."
+  }
+ ]
+}

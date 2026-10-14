@@ -24,6 +24,7 @@ jobs:
           python3 tests/test_swissdriver.py
           python3 tests/test_evidence_gate.py
           python3 tests/test_coherence_matrix.py
+          python3 tests/test_programme.py
       - name: Install pinned browser tooling
         run: |
           python3 -m pip install -r requirements-dev.txt
@@ -32,6 +33,8 @@ jobs:
         run: python3 tests/browser_smoke.py
       - name: Scene geometry, observation layout and agent gesture
         run: python3 tests/scene_coherence.py
+      - name: Course history, back/forward navigation and exercises
+        run: python3 tests/learning_flow.py
       - name: All 75 decision paths through terminal outcome and replay
         run: python3 tests/decision_paths.py
       - name: Assemble complete edition and verify its distribution

@@ -1,0 +1,183 @@
+{
+ "chapterId": "O14",
+ "after": "feux",
+ "section": {
+  "id": "feux-pietons",
+  "otitle": "Phases, flèches et bouton pour piétons",
+  "title": "Lire chaque phase du feu, chaque flèche, et penser aux piétons",
+  "ogoal": "Connaître la séquence des feux en Suisse, comprendre la portée des flèches lumineuses et du feu jaune clignotant, et rester attentif aux piétons et cyclistes qui demandent ou terminent leur traversée.",
+  "question": "Le rouge et le jaune s’allument ensemble : puis-je déjà partir ?",
+  "lead": [
+   "Un feu de signalisation ne passe pas simplement du rouge au vert. En Suisse, il suit une séquence précise, et chaque phase vous demande une réaction différente. Cette section complète le chapitre sur les feux : elle détaille les phases, les flèches, le feu jaune clignotant et le cas des feux pour piétons commandés par un bouton."
+  ],
+  "parts": [
+   {
+    "title": "La séquence suisse : vert, jaune, rouge, rouge et jaune",
+    "body": [
+     "En Suisse, la séquence des feux est la suivante : **vert**, puis **jaune**, puis **rouge**, puis **rouge et jaune ensemble**, et de nouveau vert. Le **jaune seul** annonce le rouge : vous devez vous arrêter, sauf si vous êtes déjà si près que vous ne pourriez plus le faire sans danger, par exemple sans risquer un freinage d’urgence.",
+     "Le **rouge et jaune allumés ensemble** annoncent le vert. Ce n’est **pas encore** l’autorisation de passer : vous vous préparez, en engageant par exemple la première vitesse, mais vous restez arrêté jusqu’au vert. Partir sur le rouge et jaune, c’est partir au rouge, au moment même où des piétons ou des véhicules terminent leur passage."
+    ]
+   },
+   {
+    "title": "Flèches lumineuses et feu jaune clignotant",
+    "body": [
+     "Une **flèche lumineuse** ne vaut que pour la **direction qu’elle indique**. Une flèche verte vers la droite vous autorise à tourner à droite, pas à aller tout droit. Une flèche rouge vous interdit la direction qu’elle montre, même si un autre feu est vert pour une autre direction. Regardez donc le feu de **votre voie** et de **votre direction**, pas celui de la voisine.",
+     "Le **feu jaune clignotant** appelle à une **prudence particulière**. Il peut signaler un danger, par exemple des piétons ou des cyclistes qui traversent la route dans laquelle vous tournez. Lorsque les feux sont hors service ou clignotent en jaune, ce sont les signaux et les règles de priorité ordinaires qui s’appliquent : ralentissez et cherchez-les."
+    ]
+   },
+   {
+    "title": "Le bouton-poussoir pour piétons et cyclistes",
+    "body": [
+     "À certains passages, les piétons ou les cyclistes **appuient sur un bouton** pour demander leur phase verte. Pour vous, conducteur, rien ne change dans le principe : vous obéissez à **votre feu**. Lorsqu’il passe au rouge parce qu’un piéton a demandé à traverser, vous vous arrêtez, même si vous ne voyez encore personne sur la chaussée.",
+     "Lorsque votre feu redevient vert, la traversée n’est pas toujours terminée. Une personne âgée, un enfant ou une personne qui court au dernier moment peut encore être sur le passage. Le vert vous autorise à partir, mais **jamais** à mettre en danger un piéton **retardataire** : laissez-le finir sa traversée avant d’avancer."
+    ]
+   }
+  ],
+  "words": [
+   {
+    "term": "Rouge et jaune",
+    "def": "Phase où le rouge et le jaune s’allument ensemble : elle annonce le vert, mais interdit encore de passer."
+   },
+   {
+    "term": "Flèche lumineuse",
+    "def": "Feu en forme de flèche qui ne s’applique qu’à la direction indiquée."
+   },
+   {
+    "term": "Feu jaune clignotant",
+    "def": "Feu qui appelle à une prudence particulière ; lorsque les feux clignotent en jaune ou sont éteints, les signaux et règles de priorité ordinaires s’appliquent."
+   },
+   {
+    "term": "Bouton-poussoir",
+    "def": "Bouton qui permet à un piéton ou à un cycliste de demander sa phase verte."
+   }
+  ],
+  "method": [
+   "Repérez le feu qui concerne votre voie et votre direction.",
+   "Au jaune seul, arrêtez-vous si vous le pouvez sans danger.",
+   "Au rouge et jaune, préparez-vous mais restez arrêté jusqu’au vert.",
+   "Au vert, vérifiez encore que le passage pour piétons et le carrefour sont libres.",
+   "Au jaune clignotant, ralentissez et appliquez les signaux et règles de priorité ordinaires."
+  ],
+  "example": {
+   "title": "Le vert revient, la traversée continue",
+   "scene": "En ville, vous êtes arrêté au rouge devant un passage pour piétons équipé d’un bouton-poussoir. Une dame âgée avec un cabas a demandé sa phase et traverse lentement. Le rouge et le jaune s’allument, puis votre feu passe au vert alors qu’elle se trouve encore au milieu de votre voie.",
+   "reasoning": [
+    "Le rouge et jaune ne vous autorisait pas encore à partir : vous vous êtes seulement préparé.",
+    "Le vert vous donne le droit de partir, mais la dame est encore sur votre trajectoire.",
+    "Vous attendez qu’elle ait atteint le trottoir avant d’avancer, sans klaxonner ni la presser."
+   ],
+   "answer": "Vous restez arrêté jusqu’à ce que la dame ait fini de traverser. Le vert autorise le départ, il ne permet jamais de mettre un piéton en danger."
+  },
+  "trap": "Le piège est de démarrer dès que le jaune s’ajoute au rouge, ou dès que le vert s’allume, sans regarder le passage. Un autre piège est de suivre une flèche verte destinée à une autre voie. Regardez votre feu, attendez le vert, puis contrôlez encore le passage.",
+  "remember": "Rouge et jaune : je me prépare ; vert : je contrôle avant de partir ; flèche : seulement pour sa direction.",
+  "memo": {
+   "code": "V–J–R–RJ",
+   "text": "Vert, Jaune, Rouge, Rouge-Jaune : le rouge-jaune dit « bientôt », pas « maintenant »."
+  },
+  "law": "LCR ; OSR"
+ },
+ "questions": [
+  {
+   "id": "O14-FPI-01",
+   "chapter": "O14",
+   "section": "feux-pietons",
+   "stem": "Le rouge et le jaune s’allument ensemble à votre feu. Que signifie cette phase ?",
+   "options": [
+    "Elle annonce le passage au vert.",
+    "Vous pouvez déjà franchir la ligne d’arrêt.",
+    "Vous restez arrêté jusqu’au vert."
+   ],
+   "answers": [0, 2],
+   "truth": "Le rouge et jaune annonce le vert mais interdit encore de passer.",
+   "why": "Des piétons ou des véhicules peuvent encore terminer leur passage.",
+   "trap": "Considérer le jaune comme un feu de départ.",
+   "action": "Préparez-vous et attendez le vert.",
+   "memory": "Rouge-jaune : bientôt, pas maintenant."
+  },
+  {
+   "id": "O14-FPI-02",
+   "chapter": "O14",
+   "section": "feux-pietons",
+   "stem": "Quelle est la séquence des feux en Suisse ?",
+   "options": [
+    "Vert, jaune, rouge, puis rouge et jaune avant le vert.",
+    "Vert, rouge, puis directement vert.",
+    "Le jaune seul annonce le rouge."
+   ],
+   "answers": [0, 2],
+   "truth": "En Suisse, la séquence est vert, jaune, rouge, rouge et jaune, puis vert.",
+   "why": "Chaque phase prépare la suivante et vous laisse le temps de réagir.",
+   "trap": "Oublier la phase rouge et jaune.",
+   "action": "Associez à chaque phase sa réaction.",
+   "memory": "V–J–R–RJ."
+  },
+  {
+   "id": "O14-FPI-03",
+   "chapter": "O14",
+   "section": "feux-pietons",
+   "stem": "Vous êtes dans la voie de présélection tout droit. La voie de droite a une flèche verte vers la droite ; votre feu est rouge. Qu’est-ce qui est vrai ?",
+   "options": [
+    "La flèche verte ne concerne que la direction qu’elle indique.",
+    "Vous pouvez partir tout droit puisqu’un feu est vert.",
+    "Vous restez arrêté, car votre feu est rouge."
+   ],
+   "answers": [0, 2],
+   "truth": "Une flèche lumineuse ne vaut que pour sa direction.",
+   "why": "Chaque voie et chaque direction peuvent avoir leur propre phase.",
+   "trap": "Suivre le feu de la voie voisine.",
+   "action": "Regardez uniquement le feu de votre voie et de votre direction.",
+   "memory": "Ma voie, mon feu."
+  },
+  {
+   "id": "O14-FPI-04",
+   "chapter": "O14",
+   "section": "feux-pietons",
+   "stem": "Les feux d’un carrefour clignotent en jaune. Que faites-vous ?",
+   "options": [
+    "Vous redoublez de prudence.",
+    "Vous appliquez les signaux et règles de priorité ordinaires.",
+    "Vous passez sans ralentir, car aucun feu n’est rouge."
+   ],
+   "answers": [0, 1],
+   "truth": "Au jaune clignotant, la prudence s’impose et les règles de priorité ordinaires s’appliquent.",
+   "why": "Les feux ne règlent plus le passage ; ce sont les signaux et les règles générales qui comptent.",
+   "trap": "Interpréter l’absence de rouge comme une voie libre.",
+   "action": "Ralentissez et cherchez les signaux de priorité.",
+   "memory": "Jaune qui clignote : prudence et priorités."
+  },
+  {
+   "id": "O14-FPI-05",
+   "chapter": "O14",
+   "section": "feux-pietons",
+   "stem": "Votre feu passe au rouge parce qu’un piéton a appuyé sur le bouton du passage. Vous ne voyez encore personne sur la chaussée. Que faites-vous ?",
+   "options": [
+    "Vous vous arrêtez, car votre feu est rouge.",
+    "Vous passez, puisque personne ne traverse encore.",
+    "Vous respectez votre feu quelle que soit la raison du rouge."
+   ],
+   "answers": [0, 2],
+   "truth": "Le conducteur obéit à son feu, même si le piéton n’est pas encore engagé.",
+   "why": "Le piéton a demandé sa phase et va traverser en comptant sur votre arrêt.",
+   "trap": "Juger soi-même que le rouge est inutile.",
+   "action": "Arrêtez-vous avant la ligne d’arrêt.",
+   "memory": "Rouge demandé, rouge respecté."
+  },
+  {
+   "id": "O14-FPI-06",
+   "chapter": "O14",
+   "section": "feux-pietons",
+   "stem": "Votre feu passe au vert, mais un enfant est encore en train de traverser devant vous. Qu’est-ce qui est juste ?",
+   "options": [
+    "Le vert vous oblige à partir immédiatement.",
+    "Vous laissez l’enfant terminer sa traversée.",
+    "Le vert ne vous autorise jamais à mettre un piéton en danger."
+   ],
+   "answers": [1, 2],
+   "truth": "Le vert autorise le départ, mais pas au détriment d’un piéton encore engagé.",
+   "why": "La règle fondamentale interdit de mettre en danger un autre usager, surtout un enfant.",
+   "trap": "Démarrer dès le vert sans regarder le passage.",
+   "action": "Attendez que le passage soit libre avant d’avancer.",
+   "memory": "Vert + passage libre = je pars."
+  }
+ ]
+}

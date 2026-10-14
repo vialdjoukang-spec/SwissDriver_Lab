@@ -1,0 +1,183 @@
+{
+ "chapterId": "O52",
+ "after": "places",
+ "section": {
+  "id": "surface-charge",
+  "otitle": "Places debout et passagers sur la surface de charge",
+  "title": "Une personne, une place inscrite : pas de passager dans le coffre ni sur le pont",
+  "ogoal": "Savoir que le nombre de passagers est limité aux places inscrites dans le permis de circulation et que le transport de personnes debout ou sur une surface de charge reste une exception strictement encadrée.",
+  "question": "Il manque une place pour emmener un ami : peut-il voyager dans le coffre ou sur le pont d’une camionnette pour quelques centaines de mètres ?",
+  "lead": [
+   "Une voiture est conçue pour protéger ses occupants à des endroits précis : les sièges, avec leurs ceintures et leurs appuie-tête. Ailleurs, un passager n’a ni retenue ni protection. Cette section vous montre comment vérifier combien de personnes vous pouvez transporter et pourquoi la réponse ne dépend pas de la place libre que vous voyez dans l’habitacle ou sur le pont."
+  ],
+  "parts": [
+   {
+    "title": "Le permis de circulation fixe le nombre de places",
+    "body": [
+     "Le **nombre de places** d’un véhicule est inscrit dans son **permis de circulation**. C’est ce chiffre qui compte, et non le nombre de personnes qui pourraient s’y serrer. Chaque personne transportée, enfant compris, occupe une place inscrite. Vous ne pouvez donc pas emmener plus de passagers que de places, même pour un trajet très court.",
+     "Chaque passager est **assis** sur une place prévue à cet effet et **attaché** lorsqu’une ceinture existe. Un enfant utilise en plus le système de retenue adapté à sa taille. Deux personnes sur une même ceinture, ou un adulte tenant un enfant sur ses genoux, ne respectent pas ce principe et n’offrent aucune protection en cas de choc."
+    ]
+   },
+   {
+    "title": "Surface de charge et places debout : des exceptions, pas la règle",
+    "body": [
+     "La **surface de charge** est la partie du véhicule destinée aux marchandises : le coffre d’une voiture, l’espace de chargement d’une fourgonnette, le pont d’une camionnette ou une remorque. En principe, on n’y transporte **pas de personnes**. L’OCR ne prévoit que des **cas exceptionnels**, à des conditions strictes ; ils ne concernent pas le trajet ordinaire en voiture de tourisme.",
+     "Les **places debout** existent dans certains véhicules conçus pour cela, comme les bus de ligne, et elles sont alors prévues par la réglementation et le permis de circulation. Dans une voiture de catégorie B, aucun passager ne voyage debout. Si vous pensez être dans un cas particulier, vérifiez-le auprès de l’office cantonal des automobiles avant de partir : en cas de doute, la réponse est non."
+    ]
+   },
+   {
+    "title": "Pourquoi la règle est stricte",
+    "body": [
+     "Dans un coffre ou sur un pont, une personne n’est retenue par rien. Lors d’un freinage brusque ou d’un choc, elle est projetée contre les parois, contre les autres occupants ou hors du véhicule. Même à faible vitesse, en localité, les conséquences peuvent être très graves.",
+     "C’est vous, en tant que conducteur, qui décidez qui monte et où. Refuser de transporter une personne de trop n’est pas un manque de solidarité : c’est votre responsabilité. Faites deux trajets, appelez un second véhicule ou utilisez les transports publics."
+    ]
+   }
+  ],
+  "words": [
+   {
+    "term": "Permis de circulation",
+    "def": "Le document officiel du véhicule, qui indique notamment le nombre de places autorisées."
+   },
+   {
+    "term": "Place inscrite",
+    "def": "Une place assise prévue par le constructeur et mentionnée dans le permis de circulation."
+   },
+   {
+    "term": "Surface de charge",
+    "def": "La partie du véhicule réservée aux marchandises : coffre, espace de chargement, pont ou remorque."
+   },
+   {
+    "term": "Place debout",
+    "def": "Place prévue pour voyager debout, uniquement dans certains véhicules conçus pour cela, comme les bus de ligne."
+   }
+  ],
+  "method": [
+   "Comptez toutes les personnes à transporter, enfants compris.",
+   "Comparez ce nombre aux places inscrites dans le permis de circulation.",
+   "Installez chaque personne assise sur une vraie place et faites-la s’attacher.",
+   "Refusez tout passager dans le coffre, sur le pont ou debout dans une voiture.",
+   "S’il manque une place, organisez un autre moyen de transport."
+  ],
+  "example": {
+   "title": "Un ami de trop pour la fête du village",
+   "scene": "Votre voiture compte cinq places inscrites. À la sortie d’une fête, six personnes veulent rentrer avec vous au village voisin, à deux kilomètres. L’un d’eux propose de s’allonger dans le coffre.",
+   "reasoning": [
+    "Le permis de circulation indique cinq places : vous ne pouvez transporter que cinq personnes, vous compris.",
+    "Le coffre est une surface de charge : personne n’y est retenu ni protégé, même sur une courte distance.",
+    "Vous faites deux trajets, ou la sixième personne rentre autrement."
+   ],
+   "answer": "Vous refusez le passager dans le coffre. Cinq places inscrites, c’est cinq personnes au maximum, chacune assise et attachée."
+  },
+  "trap": "Le piège est de penser que la règle ne compte pas pour un trajet court ou à faible vitesse. Le danger d’un freinage brusque ne dépend pas de la distance. Ne vous fiez jamais à l’espace disponible : fiez-vous au nombre de places inscrites.",
+  "remember": "Une personne = une place inscrite, assise et attachée ; jamais dans le coffre ni sur une surface de charge sans exception prévue par l’OCR.",
+  "memo": {
+   "code": "1 = 1",
+   "text": "Une personne, une place. Et une place, c’est un siège avec une ceinture, pas un coffre ni un pont."
+  },
+  "law": "LCR ; OCR"
+ },
+ "questions": [
+  {
+   "id": "O52-SCH-01",
+   "chapter": "O52",
+   "section": "surface-charge",
+   "stem": "Comment savez-vous combien de personnes vous pouvez transporter dans votre voiture ?",
+   "options": [
+    "Par le nombre de places inscrites dans le permis de circulation.",
+    "Par le nombre de personnes qui tiennent dans l’habitacle.",
+    "Chaque enfant compte aussi comme une personne transportée."
+   ],
+   "answers": [0, 2],
+   "truth": "Le permis de circulation fixe le nombre de places, et chaque personne en occupe une.",
+   "why": "Seules les places prévues offrent un siège et une retenue.",
+   "trap": "Se fier à l’espace libre plutôt qu’au document.",
+   "action": "Comptez les occupants et comparez avec le permis de circulation.",
+   "memory": "Une personne, une place inscrite."
+  },
+  {
+   "id": "O52-SCH-02",
+   "chapter": "O52",
+   "section": "surface-charge",
+   "stem": "Un ami propose de voyager dans le coffre de votre voiture pour un trajet de deux kilomètres en localité. Qu’est-ce qui est vrai ?",
+   "options": [
+    "C’est admis si vous roulez lentement.",
+    "Le coffre n’est pas une place pour transporter une personne.",
+    "En cas de freinage brusque, il ne serait retenu par rien."
+   ],
+   "answers": [1, 2],
+   "truth": "Le coffre est une surface de charge, pas une place assise.",
+   "why": "Une personne non retenue est projetée lors d’un freinage ou d’un choc, même à faible vitesse.",
+   "trap": "Croire qu’un trajet court ou lent rend la chose acceptable.",
+   "action": "Refusez et organisez un second trajet.",
+   "memory": "Coffre = bagages, jamais passagers."
+  },
+  {
+   "id": "O52-SCH-03",
+   "chapter": "O52",
+   "section": "surface-charge",
+   "stem": "Que savez-vous du transport de personnes sur une surface de charge, par exemple le pont d’une camionnette ?",
+   "options": [
+    "En principe, on n’y transporte pas de personnes.",
+    "C’est toujours autorisé si les personnes se tiennent bien.",
+    "L’OCR ne l’admet que dans des cas exceptionnels, à des conditions strictes."
+   ],
+   "answers": [0, 2],
+   "truth": "Le transport de personnes sur une surface de charge reste une exception strictement encadrée.",
+   "why": "Une surface de charge ne protège pas les occupants ; seules des situations particulières prévues par l’OCR font exception.",
+   "trap": "Penser que se tenir suffit à se protéger.",
+   "action": "En cas de doute, renseignez-vous auprès de l’office cantonal et ne transportez personne.",
+   "memory": "Pont = marchandises."
+  },
+  {
+   "id": "O52-SCH-04",
+   "chapter": "O52",
+   "section": "surface-charge",
+   "stem": "Où peut-on voyager debout dans un véhicule ?",
+   "options": [
+    "Dans certains véhicules conçus pour cela, comme un bus de ligne.",
+    "Dans une voiture de tourisme, si tous les sièges sont occupés.",
+    "Dans une voiture de catégorie B, aucun passager ne voyage debout."
+   ],
+   "answers": [0, 2],
+   "truth": "Les places debout n’existent que dans des véhicules prévus pour cela.",
+   "why": "Une voiture de tourisme n’offre que des places assises.",
+   "trap": "Assimiler une voiture à un bus.",
+   "action": "Dans votre voiture, chaque passager est assis et attaché.",
+   "memory": "Debout : bus, pas voiture."
+  },
+  {
+   "id": "O52-SCH-05",
+   "chapter": "O52",
+   "section": "surface-charge",
+   "stem": "Votre voiture a cinq places inscrites. Vous voulez emmener cinq adultes en plus de vous. Que faites-vous ?",
+   "options": [
+    "Vous faites asseoir deux passagers sur une même place arrière.",
+    "Vous n’emmenez que quatre passagers.",
+    "Vous organisez un autre moyen de transport pour la personne en trop."
+   ],
+   "answers": [1, 2],
+   "truth": "Le conducteur occupe lui aussi une des places inscrites.",
+   "why": "Cinq places inscrites signifient cinq personnes au total, conducteur compris.",
+   "trap": "Oublier de se compter soi-même.",
+   "action": "Faites deux trajets ou proposez une autre solution.",
+   "memory": "Je compte aussi ma place."
+  },
+  {
+   "id": "O52-SCH-06",
+   "chapter": "O52",
+   "section": "surface-charge",
+   "stem": "Un parent veut voyager à l’arrière en tenant son jeune enfant sur ses genoux. Qu’est-ce qui est juste ?",
+   "options": [
+    "L’enfant doit occuper sa propre place avec un système de retenue adapté.",
+    "Les bras de l’adulte suffisent à retenir l’enfant en cas de choc.",
+    "Chaque passager est assis sur une place prévue et attaché lorsqu’une ceinture existe."
+   ],
+   "answers": [0, 2],
+   "truth": "Chaque personne, enfant compris, a sa propre place et sa propre retenue.",
+   "why": "Lors d’un choc, les forces sont bien trop grandes pour qu’un adulte puisse retenir un enfant.",
+   "trap": "Croire que tenir l’enfant le protège.",
+   "action": "Installez l’enfant dans son siège adapté avant de démarrer.",
+   "memory": "Genoux ≠ siège."
+  }
+ ]
+}

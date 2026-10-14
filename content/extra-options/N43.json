@@ -1,0 +1,66 @@
+{
+ "N43-MOT-01": {
+  "option": "Prouver aux passagers que l’on maîtrise les virages à grande vitesse.",
+  "why": "Chercher à impressionner est une motivation risquée, qui pousse à réduire volontairement les marges."
+ },
+ "N43-MOT-02": {
+  "option": "Parce qu’une bonne motivation dispense de respecter les limitations.",
+  "why": "Aucune motivation ne dispense des règles ; réfléchir à ses motivations sert justement à mieux les respecter."
+ },
+ "N43-MOT-03": {
+  "option": "Vous acceptez, car refuser serait manquer de solidarité.",
+  "why": "La fatigue augmente le risque d’accident ; la responsabilité de la conduite reste la vôtre, quelle que soit l’insistance."
+ },
+ "N43-MOT-05": {
+  "option": "Elle disparaît dès que l’on a obtenu son permis.",
+  "why": "La pression du groupe ne dépend pas du permis ; elle peut agir sur tout conducteur, à tout moment."
+ },
+ "N43-CMP-01": {
+  "option": "Vous observez plus calmement les autres usagers.",
+  "why": "La hâte tend à rendre l’observation plus brève et plus impatiente, pas plus calme."
+ },
+ "N43-CMP-02": {
+  "option": "Une qualité acquise une fois pour toutes avec le permis.",
+  "why": "La vigilance varie avec la fatigue, les émotions et l’état du moment ; elle n’est jamais acquise définitivement."
+ },
+ "N43-CMP-04": {
+  "option": "ne dépend que de l’âge du conducteur.",
+  "why": "Le goût du risque varie aussi selon le moment, les motivations et la présence de passagers."
+ },
+ "N43-CMP-06": {
+  "option": "Rouler plus vite aide à évacuer la tension sans danger.",
+  "why": "Une émotion forte réduit la concentration ; rouler plus vite ajoute un risque au lieu de l’évacuer."
+ },
+ "N43-RIS-01": {
+  "option": "Parce qu’elle améliore temporairement les réflexes.",
+  "why": "La frime n’améliore pas les réflexes ; elle pousse à rechercher le risque et à réduire les marges."
+ },
+ "N43-RIS-02": {
+  "option": "Écrire un message en roulant pour prévenir de votre retard.",
+  "why": "Écrire en roulant détourne le regard et l’attention de la route ; on prévient une fois arrêté dans un endroit sûr."
+ },
+ "N43-RIS-03": {
+  "option": "Lui faire des appels de phares répétés pour exprimer votre colère.",
+  "why": "Les signaux d’avertissement servent à prévenir un danger, pas à exprimer sa colère ; cela peut provoquer une escalade."
+ },
+ "N43-RIS-05": {
+  "option": "Vous démarrez fort au vert pour montrer qu’il ne vous impressionne pas.",
+  "why": "Répondre à la provocation, même brièvement, revient à accepter le défi et à prendre un risque inutile."
+ },
+ "N43-SEN-01": {
+  "option": "Rouler toujours à la vitesse maximale pour ne pas gêner le trafic.",
+  "why": "La vitesse maximale est un plafond ; le sens de la circulation exige d’adapter sa vitesse à la situation."
+ },
+ "N43-SEN-02": {
+  "option": "De faire passer la fluidité du trafic avant la sécurité des autres.",
+  "why": "La règle fondamentale vise à ne pas gêner ni mettre en danger les autres ; la fluidité ne justifie aucun danger."
+ },
+ "N43-SEN-03": {
+  "option": "Vous dépassez, puis vous vous rabattez vite si un véhicule apparaît.",
+  "why": "Commencer un dépassement sans voir la fin de la manœuvre crée un risque de collision frontale."
+ },
+ "N43-SEN-04": {
+  "option": "Suivre de près le véhicule qui précède pour profiter de son sillage.",
+  "why": "Sous forte pluie, la distance de freinage s’allonge ; il faut augmenter la distance, pas la réduire."
+ }
+}

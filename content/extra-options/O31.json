@@ -1,0 +1,146 @@
+{
+ "O31-R01": {
+  "option": "Le véhicule qui arrive au bout de la voie d’accélération.",
+  "why": "La fin de la voie d’accélération ne crée aucune priorité : l’autoroute reste prioritaire."
+ },
+ "O31-R03": {
+  "option": "Faire demi-tour par un passage dans la berme centrale.",
+  "why": "Le demi-tour est interdit sur l’autoroute ; il faut continuer jusqu’à la sortie suivante."
+ },
+ "O31-R04": {
+  "option": "Dès le panneau avancé, sur la voie de gauche.",
+  "why": "Freiner sur la voie principale gêne le flux ; la décélération se fait sur la voie de sortie."
+ },
+ "O31-R06": {
+  "option": "Oui, si les feux de détresse sont allumés.",
+  "why": "Les feux de détresse ne rendent pas permis un arrêt sans nécessité sur l’autoroute."
+ },
+ "O31-R09": {
+  "option": "Vous vous arrêtez avant la zone hachurée pour changer de voie.",
+  "why": "S’arrêter sur l’autoroute pour corriger un itinéraire crée un danger grave."
+ },
+ "O31-R10": {
+  "option": "Pour pouvoir rester sur la voie de gauche jusqu’à la sortie.",
+  "why": "Rester à gauche jusqu’au dernier moment impose des changements de voie tardifs."
+ },
+ "O31-R11": {
+  "option": "Freiner fortement pour s’arrêter sur la voie de droite.",
+  "why": "S’immobiliser dans une voie de circulation expose à une collision ; il faut rejoindre la BAU."
+ },
+ "O31-R12": {
+  "option": "Placer d’abord le triangle sur la voie de droite.",
+  "why": "Il ne faut jamais marcher sur une voie de circulation, même pour le triangle."
+ },
+ "O31-R13": {
+  "option": "Sur la bande d’arrêt d’urgence, devant le véhicule.",
+  "why": "La BAU reste exposée au trafic ; il faut attendre derrière la glissière."
+ },
+ "O31-R15": {
+  "option": "Elle dispense de porter le gilet de sécurité.",
+  "why": "La borne sert à alerter ; elle ne remplace aucune mesure de protection."
+ },
+ "O31-R18": {
+  "option": "Changer la roue rapidement avec les feux de détresse allumés.",
+  "why": "Les feux de détresse ne protègent pas une personne exposée côté trafic."
+ },
+ "O31-R19": {
+  "option": "Le pont offre toujours une zone d’attente protégée.",
+  "why": "Sur un pont, la glissière peut ne laisser aucun espace sûr derrière elle."
+ },
+ "O31-R21": {
+  "option": "Allumer les feux de brouillard arrière.",
+  "why": "Les feux de brouillard arrière éblouissent le suivant et ne sont pas prévus pour un tunnel sans brouillard."
+ },
+ "O31-R23": {
+  "option": "Oui si vous allumez les feux de détresse.",
+  "why": "Le demi-tour est interdit dans le tunnel, sauf instruction des autorités."
+ },
+ "O31-R24": {
+  "option": "Pour pouvoir redémarrer vite et faire demi-tour.",
+  "why": "Les clés restent pour que les secours déplacent le véhicule, pas pour un demi-tour."
+ },
+ "O31-R26": {
+  "option": "Un appel de phares vers les véhicules suivants.",
+  "why": "L’alerte passe par la borne d’appel d’urgence et les équipements du tunnel."
+ },
+ "O31-R27": {
+  "option": "Allumer les feux de route pour mieux voir.",
+  "why": "Les feux orange signalent un danger : il faut ralentir, pas éblouir les autres."
+ },
+ "O31-R29": {
+  "option": "Oui si personne n’est derrière vous.",
+  "why": "La marche arrière est interdite dans un tunnel, même sans véhicule derrière."
+ },
+ "O31-R31": {
+  "option": "Klaxonner pour que la file avance.",
+  "why": "Le klaxon ne libère pas l’espace après les rails ; il faut attendre avant le passage."
+ },
+ "O31-R32": {
+  "option": "Passer rapidement si la barrière est encore levée.",
+  "why": "Les feux rouges clignotants imposent l’arrêt, même si la barrière n’est pas encore baissée."
+ },
+ "O31-R33": {
+  "option": "Oui si le train a complètement disparu.",
+  "why": "Il faut attendre l’ouverture complète et l’extinction des signaux ; un second train peut arriver."
+ },
+ "O31-R35": {
+  "option": "Aucun, une seule ligne fonctionne à la fois.",
+  "why": "Sur plusieurs voies, un autre train peut circuler en même temps."
+ },
+ "O31-R36": {
+  "option": "Essayer longuement de redémarrer le moteur.",
+  "why": "La priorité est d’évacuer les occupants, pas de redémarrer le véhicule."
+ },
+ "O31-R38": {
+  "option": "Vous klaxonnez pour qu’il vous laisse passer.",
+  "why": "Les instructions d’une personne habilitée priment ; le klaxon n’y change rien."
+ },
+ "O31-R41": {
+  "option": "Vous klaxonnez pour que les voyageurs se pressent.",
+  "why": "Les voyageurs doivent pouvoir rejoindre le bord en sécurité ; il faut s’arrêter et attendre."
+ },
+ "O31-R42": {
+  "option": "Dépasser rapidement pour réduire le temps près du bus.",
+  "why": "Un piéton peut surgir devant le bus ; la vitesse doit être réduite."
+ },
+ "O31-R43": {
+  "option": "Klaxonner pour lui signaler votre présence.",
+  "why": "En localité, il faut faciliter le départ du bus, pas le retenir par un signal."
+ },
+ "O31-R47": {
+  "option": "Accélérer pour passer avant l’arrivée du bus.",
+  "why": "Près d’un arrêt fréquenté par des enfants, il faut réduire tôt la vitesse."
+ },
+ "O31-R48": {
+  "option": "Uniquement sur le trafic venant en sens inverse.",
+  "why": "Le danger principal vient des passagers masqués par le bus."
+ },
+ "O31-R49": {
+  "option": "Le tram peut toujours freiner sur une très courte distance.",
+  "why": "Un tram est lourd et sur rails : sa distance de freinage est longue."
+ },
+ "O31-R51": {
+  "option": "Pour pouvoir changer de voie au dernier moment.",
+  "why": "Le choix anticipé sert justement à éviter les changements tardifs."
+ },
+ "O31-R52": {
+  "option": "Uniquement la consommation du véhicule.",
+  "why": "La fin d’autoroute change la vitesse applicable et le type de dangers."
+ },
+ "O31-R54": {
+  "option": "Ralentir seulement après avoir dépassé le panneau.",
+  "why": "La vitesse prescrite doit être atteinte au plus tard au point d’application du signal."
+ },
+ "O31-R55": {
+  "option": "Les lignes qui vous paraissent les plus larges.",
+  "why": "Dans un chantier, le marquage jaune-orange prime sur les lignes blanches."
+ },
+ "O31-R56": {
+  "option": "Accélérer pour profiter de la fin de l’autoroute.",
+  "why": "L’entrée en localité impose de réduire la vitesse et d’élargir l’observation."
+ },
+ "O31-R57": {
+  "option": "Reculer jusqu’à la bifurcation.",
+  "why": "La marche arrière est interdite sur l’autoroute et ses bretelles."
+ }
+}

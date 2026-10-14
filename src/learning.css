@@ -1,0 +1,32 @@
+.lab-overlay{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:16px;background:#eaf4fc}
+.lab-overlay .panel{width:min(880px,100%)}
+.lab-overlay header b{display:block;font-size:22px}.lab-note{margin:4px 0 0;color:var(--ink2);font-size:15px}
+.lab-body{padding:18px 24px;overflow:auto;min-height:0;font-size:17px;line-height:1.6;color:var(--ink)}
+.lab-course-nav{display:flex;flex-wrap:wrap;gap:6px;padding:8px 20px;border-bottom:1px solid var(--line);background:#fff}
+.lab-course-nav button,.lab-row-actions button,.lab-tf button,.lab-train-row,.lab-history-plan{padding:7px 12px;font-size:15px}
+.lab-course-nav button:disabled,.lab-overlay button:disabled{opacity:.45;cursor:not-allowed}
+.lab-history{list-style:none;margin:0;padding:0}.lab-history li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding:10px 0;border-bottom:1px solid var(--line)}
+.lab-history small{display:block;color:var(--ink2);font-size:14px}.lab-row-actions{display:flex;flex-wrap:wrap;gap:6px}
+.lab-statements{padding-left:22px}.lab-statement{margin:0 0 14px}.lab-statement p{margin:0 0 6px}
+.lab-tf{display:flex;gap:8px}.lab-tf button{border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);font-weight:700;min-width:84px;justify-content:center}
+.lab-tf button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.lab-ok{display:block;color:var(--ok);font-weight:800}.lab-bad{display:block;color:var(--bad);font-weight:800;font-style:italic}
+.lab-diagram{margin:18px 0;padding:10px;border:1px solid var(--line);border-radius:12px;background:#fff}.lab-diagram svg{width:100%;height:auto;display:block}
+.lab-diagram figcaption{font-size:14px;color:var(--ink2);margin-top:6px}
+#plan header .lab-history-plan{margin-top:8px}
+@media (max-width:700px){.lab-overlay{padding:8px}.lab-body{padding:14px 16px}.lab-course-nav{padding:6px 10px}.lab-course-nav button{flex:1 1 45%}}
+.lab-tf button:disabled{opacity:.6}.lab-tf button[aria-pressed="true"]:disabled{opacity:1}
+.lab-sign-scene{margin:0 0 12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}.lab-sign-scene>svg{display:block;width:100%;height:auto;max-height:42dvh}
+.lab-choices{display:grid;gap:8px}.lab-choice{display:flex;gap:10px;align-items:center;width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);padding:10px 14px;font-size:16px;font-weight:600}
+.lab-choice kbd{min-width:26px;text-align:center;border:1px solid var(--line);border-radius:6px;padding:1px 6px;background:var(--sky)}
+.lab-choice.lab-right{border:3px solid var(--ok);background:#e8f6ee}.lab-choice.lab-wrong{border:3px solid var(--bad);background:#fdecee;font-style:italic}
+.lab-choice:disabled{opacity:1;cursor:default}
+.lab-qcm{list-style:none;padding:0}.lab-pick{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;border:2px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);padding:10px 14px;font-size:16px;font-weight:600}
+.lab-pick kbd{min-width:28px;text-align:center;border:1px solid var(--line);border-radius:6px;padding:1px 6px;background:var(--sky);font-weight:800}
+.lab-pick[aria-checked="true"]{border-color:var(--accent);background:#e3f0f8}.lab-pick[aria-checked="true"] kbd{background:var(--accent);color:#fff;border-color:var(--accent)}
+.lab-pick:disabled{opacity:1;cursor:default}.lab-why{display:block;color:var(--ink2);margin-top:2px}
+.lab-overlay .lab-pick:disabled,.lab-overlay .lab-choice:disabled,.lab-overlay .lab-tf button:disabled{opacity:1;color:var(--ink)}
+#labAction{position:fixed;left:50%;transform:translateX(-50%);bottom:96px;z-index:15;background:#fff;color:var(--ink);border:2px solid var(--accent);border-radius:12px;padding:8px 14px;font-size:16px;max-width:min(680px,calc(100vw - 24px));box-shadow:0 8px 24px -12px rgba(20,50,90,.5)}
+#labAction b{color:var(--accent);margin-right:6px}#labAction span{font-weight:800}
+body.lab-flash #stage::after{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 60%,rgba(255,255,220,.55),transparent 45%);animation:labFlash .3s steps(2) 3}
+@keyframes labFlash{50%{opacity:0}}

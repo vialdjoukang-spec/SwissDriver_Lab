@@ -1,0 +1,66 @@
+{
+ "N33-TSB-02": {
+  "option": "La hauteur des arbres au bord de la route.",
+  "why": "Les arbres font partie de la bordure ; la surface concerne le revêtement et ce qui s’y trouve."
+ },
+ "N33-TSB-03": {
+  "option": "La présence de piétons sur le trottoir.",
+  "why": "Les piétons sur le trottoir relèvent de la bordure ; le tracé décrit la forme de la route et la vue disponible."
+ },
+ "N33-TSB-04": {
+  "option": "Une chaussée forcément sèche grâce à la protection des arbres.",
+  "why": "L’ombre des arbres retarde au contraire le séchage et peut garder humidité ou gel."
+ },
+ "N33-TSB-06": {
+  "option": "La présence de nids de poule.",
+  "why": "Les nids de poule font partie de la surface, pas de la bordure."
+ },
+ "N33-VIT-01": {
+  "option": "Suivre la vitesse des autres véhicules, quelle que soit la visibilité.",
+  "why": "Votre vitesse doit vous permettre de vous arrêter dans la distance visible, indépendamment du rythme des autres."
+ },
+ "N33-VIT-02": {
+  "option": "Vous gardez votre vitesse, puisque la route paraît libre.",
+  "why": "Un virage sans visibilité peut cacher un véhicule ou un obstacle ; il faut ralentir avant la courbe."
+ },
+ "N33-VIT-04": {
+  "option": "Les haies hautes améliorent la visibilité sur les accès.",
+  "why": "Les haies hautes masquent les accès ; elles réduisent la visibilité au lieu de l’améliorer."
+ },
+ "N33-VIT-06": {
+  "option": "À gauche, pour mieux voir arriver les véhicules d’en face.",
+  "why": "On circule à droite ; se placer à gauche crée un risque de collision frontale."
+ },
+ "N33-STR-01": {
+  "option": "Compter sur la navigation pour découvrir en route l’état du col.",
+  "why": "L’état du col et la météo se vérifient avant le départ, pour pouvoir changer de plan à temps."
+ },
+ "N33-STR-02": {
+  "option": "Suivre de près un conducteur local pour profiter de son rythme.",
+  "why": "Suivre de près réduit la distance de sécurité et impose un rythme qui ne correspond pas à votre expérience."
+ },
+ "N33-STR-03": {
+  "option": "Se persuader qu’aucune difficulté ne se présentera.",
+  "why": "La préparation mentale consiste à imaginer les difficultés pour s’y préparer, pas à les nier."
+ },
+ "N33-STR-05": {
+  "option": "Vous la gardez identique à celle d’une route sèche.",
+  "why": "Sur route mouillée, la distance de freinage s’allonge ; la distance de suivi doit augmenter."
+ },
+ "N33-RSP-01": {
+  "option": "Le véhicule qui roule le plus vite.",
+  "why": "La vitesse ne donne aucune priorité ; lors d’un croisement difficile en montagne, le véhicule montant est prioritaire."
+ },
+ "N33-RSP-02": {
+  "option": "Vous continuez en serrant à droite pour forcer le passage.",
+  "why": "Forcer le passage dans un croisement difficile met en danger ; le véhicule descendant doit s’arrêter et, au besoin, reculer."
+ },
+ "N33-RSP-03": {
+  "option": "En coupant le moteur pour économiser les freins.",
+  "why": "Moteur coupé, le frein moteur disparaît et l’assistance au freinage peut faiblir, ce qui aggrave l’échauffement des freins."
+ },
+ "N33-RSP-06": {
+  "option": "Une priorité générale des voitures sur les engins agricoles.",
+  "why": "Aucune règle ne donne la priorité aux voitures sur les engins agricoles ; il faut s’attendre à les croiser et s’adapter."
+ }
+}

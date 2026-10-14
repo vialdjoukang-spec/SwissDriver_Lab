@@ -1,0 +1,122 @@
+{
+ "D14-O44-AMENDES-01": {
+  "option": "Dans le Code pénal suisse",
+  "why": "Les contraventions de la procédure de l’amende d’ordre et leurs montants figurent dans les annexes de l’OAO."
+ },
+ "D14-O44-AMENDES-02": {
+  "option": "Oui, si l’agent de police l’estime équitable",
+  "why": "Seules les infractions listées peuvent être réglées par amende d’ordre, au montant prévu."
+ },
+ "D14-O44-AMENDES-03": {
+  "option": "Ils sont adaptés au revenu du conducteur",
+  "why": "Les amendes d’ordre sont des montants fixes qui ne tiennent pas compte de la situation personnelle."
+ },
+ "D14-O44-AMENDES-06": {
+  "option": "Une peine pécuniaire avec sursis obligatoire",
+  "why": "L’art. 90 al. 1 LCR prévoit une amende pour la violation simple des règles de circulation."
+ },
+ "D14-O44-AMENDES-07": {
+  "option": "Parce que les montants changent d’un canton à l’autre",
+  "why": "Les montants sont fixés par le droit fédéral ; la difficulté est d’identifier l’infraction exacte."
+ },
+ "D14-O44-AMENDES-08": {
+  "option": "Non, la deuxième infraction absorbe toujours la première",
+  "why": "L’OAO prévoit des règles de concours permettant un cumul, avec certaines exceptions."
+ },
+ "D14-O44-RETRAIT-01": {
+  "option": "Un retrait d’un mois",
+  "why": "Une première infraction légère sans mesure dans les deux ans précédents entraîne normalement un avertissement."
+ },
+ "D14-O44-RETRAIT-05": {
+  "option": "Une mise en danger grave et une faute bénigne",
+  "why": "L’infraction légère suppose à la fois une mise en danger légère et une faute bénigne."
+ },
+ "D14-O44-RETRAIT-06": {
+  "option": "Une simple contravention réglée par amende d’ordre",
+  "why": "L’infraction moyennement grave se caractérise par un danger créé pour autrui ou le risque pris."
+ },
+ "D14-O44-RETRAIT-07": {
+  "option": "Une infraction légère commise pendant la période probatoire",
+  "why": "La période probatoire ne change pas la qualification ; l’infraction grave suppose un sérieux danger."
+ },
+ "D14-O44-RETRAIT-09": {
+  "option": "Oui, si le conducteur s’engage à ne conduire que pour son travail",
+  "why": "Le besoin professionnel est pris en compte, mais ne permet en principe pas de descendre sous le minimum légal."
+ },
+ "D14-O44-RETRAIT-10": {
+  "option": "Montant de l’amende pénale uniquement",
+  "why": "La mesure administrative dépend de la gravité, des antécédents et des durées minimales, pas de l’amende."
+ },
+ "D14-O44-PENAL-01": {
+  "option": "Art. 16c",
+  "why": "L’art. 16c LCR traite des infractions graves sur le plan administratif, pas de la règle pénale générale."
+ },
+ "D14-O44-PENAL-02": {
+  "option": "Une amende d’ordre au montant doublé",
+  "why": "Une violation grave relève d’une peine privative de liberté de trois ans au plus ou d’une peine pécuniaire."
+ },
+ "D14-O44-PENAL-04": {
+  "option": "Oui, si la peine est payée dans les délais",
+  "why": "La peine pénale et la mesure administrative sont deux voies distinctes qui peuvent coexister."
+ },
+ "D14-O44-PENAL-05": {
+  "option": "« Quelle amende ? » uniquement",
+  "why": "Il faut distinguer la question de la peine et celle de la mesure sur le permis."
+ },
+ "D14-O44-PENAL-06": {
+  "option": "Une peine privative de liberté de trois ans au plus",
+  "why": "Cette peine vise la violation grave ; la violation simple de l’art. 90 al. 1 est punie de l’amende."
+ },
+ "D14-O44-PENAL-09": {
+  "option": "Oui, le juge pénal fixe aussi la durée du retrait",
+  "why": "Le retrait de permis relève de l’autorité administrative, pas du juge pénal."
+ },
+ "D14-O44-ALCOOLDROGUES-01": {
+  "option": "Seulement en cas de récidive",
+  "why": "La conduite avec un taux qualifié est une infraction grave dès la première fois."
+ },
+ "D14-O44-ALCOOLDROGUES-02": {
+  "option": "Seulement si le médicament est illégal",
+  "why": "Un médicament légal peut aussi rendre incapable de conduire et constituer une infraction grave."
+ },
+ "D14-O44-ALCOOLDROGUES-03": {
+  "option": "Non, seul un taux mesuré peut constituer une infraction",
+  "why": "Se dérober intentionnellement au contrôle est en soi un comportement grave selon l’art. 16c."
+ },
+ "D14-O44-ALCOOLDROGUES-06": {
+  "option": "Oui, si le médicament a été prescrit par un médecin",
+  "why": "Une prescription ne rend pas apte ; une forte somnolence exclut la conduite."
+ },
+ "D14-O44-ALCOOLDROGUES-08": {
+  "option": "Non, c’est une infraction moyennement grave",
+  "why": "Conduire malgré un retrait figure parmi les infractions graves de l’art. 16c."
+ },
+ "D14-O44-ALCOOLDROGUES-09": {
+  "option": "Non, seulement si la victime est décédée",
+  "why": "L’art. 16c vise la fuite après avoir blessé ou tué une personne."
+ },
+ "D14-O44-PROCEDURE-01": {
+  "option": "La durée de retrait souhaitée par l’assurance",
+  "why": "Il faut d’abord établir les faits et la règle violée ; l’assurance ne décide pas des sanctions."
+ },
+ "D14-O44-PROCEDURE-03": {
+  "option": "Le nombre de kilomètres parcourus dans l’année uniquement",
+  "why": "La loi vise l’atteinte à la sécurité, la faute, les antécédents et la nécessité professionnelle de conduire."
+ },
+ "D14-O44-PROCEDURE-04": {
+  "option": "Choisir toujours la durée minimale légale",
+  "why": "Sans gravité ni antécédents, aucune durée ne peut être déterminée, pas même la minimale."
+ },
+ "D14-O44-PROCEDURE-05": {
+  "option": "Non, c’est le juge pénal qui fixe la durée du retrait",
+  "why": "La mesure sur le permis relève de l’autorité administrative compétente, pas du juge pénal."
+ },
+ "D14-O44-PROCEDURE-06": {
+  "option": "Oui, l’avertissement est une amende avec sursis",
+  "why": "L’avertissement est une mesure administrative, distincte d’une sanction pénale."
+ },
+ "D14-O44-PROCEDURE-07": {
+  "option": "Oui, si les deux conducteurs se sont mis d’accord",
+  "why": "Un accord entre conducteurs ne change pas le danger créé ni la faute commise."
+ }
+}

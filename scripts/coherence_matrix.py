@@ -30,6 +30,10 @@ def load_source():
     return data, scenarios
 
 
+def observed_ok(branch):
+    return bool(branch and branch.get('passed'))
+
+
 def motion(branch):
     trail = [t for t in branch.get('trail', []) if isinstance(t.get('s'), (int, float))]
     if not trail:
@@ -39,7 +43,32 @@ def motion(branch):
             'firstS': round(trail[0]['s'], 2), 'lastS': round(trail[-1]['s'], 2),
             'maxSpeedMs': round(max(t['v'] for t in trail), 2),
             'lateralRangeM': round(max(xs) - min(xs), 2),
+            'maxLaneOffsetM': round(max(abs(t.get('lat') or 0) for t in trail), 2),
             'pullManoeuvre': any(t.get('pulling') for t in trail)}
+
+
+def gestures(texts):
+    code = ("const g=require('./src/gestures.js');const t=JSON.parse(require('fs').readFileSync(0,'utf8'));"
+            "process.stdout.write(JSON.stringify(t.map(x=>g.classify(x))));")
+    return json.loads(subprocess.check_output(['node', '-e', code], input=json.dumps(texts), cwd=ROOT, text=True))
+
+
+def observed_action(gesture, m):
+    # Only measured facts or explicitly limited representations; nothing is ticked as coherent here.
+    if not gesture or not m:
+        return None, None
+    g = gesture['id']
+    if g == 'left':
+        return (f"décalage latéral mesuré {m['maxLaneOffsetM']} m hors de l’axe de la voie", 'observed') if m['maxLaneOffsetM'] >= 0.5 else (None, 'missing')
+    if g == 'reverse':
+        return (f"recul mesuré {round(m['firstS'] - m['lastS'], 2)} m", 'observed') if m['lastS'] < m['firstS'] - 0.3 else (None, 'missing')
+    if g == 'hard':
+        return f"vitesse maximale mesurée {m['maxSpeedMs']} m/s", 'observed'
+    if g in ('blink-left', 'blink-right'):
+        return 'clignotant du côté annoncé allumé au début de la trajectoire (non mesuré par le rapport)', 'limited'
+    if g in ('stop-lane', 'hand', 'half'):
+        return f"progression mesurée {round(m['lastS'] - m['firstS'], 2)} m", 'observed'
+    return 'représenté par un son ou un signal visuel et une légende, sans animation du conducteur', 'limited'
 
 
 def build():
@@ -48,6 +77,8 @@ def build():
     branches = {(b['scenarioId'], b['choiceIndex']): b for b in (report or {}).get('branches', [])}
     titles = {(c['id'], s['id']): s['otitle'] for c in data['chapters'] for s in c['sections']}
     rows = []
+    texts = [c['t'] for secs in scenarios.values() for items in secs.values() for sc in items for c in sc['choices']]
+    gesture_list = iter(gestures(texts))
     for chapter, sections in scenarios.items():
         for section, items in sections.items():
             for sc in items:
@@ -57,6 +88,10 @@ def build():
                     branch = branches.get((sc['id'], index))
                     observed = bool(branch and branch.get('passed'))
                     scene = (branch or {}).get('scene') or {}
+                    gesture = next(gesture_list)
+                    gesture = None if correct else gesture
+                    measured = motion(branch) if branch else None
+                    seen, kind = observed_action(gesture, measured) if observed_ok(branch) else (None, None)
                     rows.append({
                         'ruleId': f'{chapter}/{section}', 'ruleTitle': titles[(chapter, section)],
                         'scenarioId': sc['id'], 'scenarioTitle': sc['title'], 'sceneKind': sc['kind'],
@@ -64,8 +99,9 @@ def build():
                         'announcedAction': choice['t'].translate(PLAIN),
                         'engineAct': choice['act'],
                         'engineActSharedInScenario': acts.count(choice['act']) > 1,
-                        'observedAction': None,
-                        'observedMotion': motion(branch) if branch else None,
+                        'gesture': gesture['id'] if gesture else None,
+                        'observedAction': seen,
+                        'observedMotion': measured,
                         'objects': {'light': scene.get('light'), 'signs': scene.get('signs'),
                                     'actors': [a['kind'] + (':' + a['gesture'] if a.get('gesture') else '')
                                                for a in scene.get('actors', [])]} if scene else None,
@@ -78,7 +114,7 @@ def build():
                                      if observed else None),
                         'regulatorySource': None,
                         'regulatorySourceStatus': 'a sourcer sur Fedlex/OFROU ; aucun article retenu',
-                        'status': 'issue_terminale_verifiee' if observed else 'non_audite',
+                        'status': ('limite_signalee' if kind in ('limited', 'missing') else 'issue_terminale_verifiee') if observed else 'non_audite',
                     })
     return {
         'schema': 'swissdriver.coherence-priorites/1',

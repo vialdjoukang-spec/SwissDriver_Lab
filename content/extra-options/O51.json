@@ -1,0 +1,242 @@
+{
+ "D15-O51-REGLAGES-01": {
+  "option": "Au premier arrêt à un feu rouge",
+  "why": "Le siège se règle avant de rouler, pas en circulation, même à l’arrêt momentané."
+ },
+ "D15-O51-REGLAGES-02": {
+  "option": "Être le plus près possible du volant, genoux contre la planche de bord",
+  "why": "Trop près, les genoux gênent les pédales et le volant et augmentent le risque de blessure."
+ },
+ "D15-O51-REGLAGES-03": {
+  "option": "Tenir le volant les bras complètement tendus",
+  "why": "Bras tendus, on ne peut plus tourner le volant sans décoller les épaules du dossier."
+ },
+ "D15-O51-REGLAGES-06": {
+  "option": "Oui, si le rétroviseur est de type bombé",
+  "why": "Même un miroir bombé laisse un angle mort ; le regard par-dessus l’épaule reste nécessaire."
+ },
+ "D15-O51-REGLAGES-07": {
+  "option": "Ceinture, siège, rétroviseurs, appuie-tête",
+  "why": "La ceinture se boucle en dernier, une fois siège et appuie-tête réglés."
+ },
+ "D15-O51-REGLAGES-09": {
+  "option": "Elle règle seulement le siège et garde les miroirs tels quels",
+  "why": "Les rétroviseurs dépendent de la position des yeux et doivent aussi être adaptés."
+ },
+ "D15-O51-ECLAIRAGE-01": {
+  "option": "Les feux de route, même en croisant d’autres usagers",
+  "why": "Les feux de route éblouissent et doivent être éteints au croisement."
+ },
+ "D15-O51-ECLAIRAGE-03": {
+  "option": "Dès que la chaussée est mouillée",
+  "why": "Une chaussée mouillée ne suffit pas : il faut une visibilité considérablement réduite."
+ },
+ "D15-O51-ECLAIRAGE-05": {
+  "option": "Vous les gardez seulement dans les virages",
+  "why": "Même en virage, les feux de route éblouissent le conducteur suivi par ses rétroviseurs."
+ },
+ "D15-O51-ECLAIRAGE-06": {
+  "option": "Allumer les feux de brouillard arrière",
+  "why": "Ces feux ne sont admis qu’en cas de visibilité considérablement réduite."
+ },
+ "D15-O51-ECLAIRAGE-08": {
+  "option": "Rouler en feux de route à la place",
+  "why": "Les feux de route éblouissent et ne remplacent pas un feu de croisement défectueux."
+ },
+ "D15-O51-ECLAIRAGE-09": {
+  "option": "Les feux de croisement sont défectueux",
+  "why": "Le témoin bleu confirme l’activation des feux de route, pas un défaut."
+ },
+ "D15-O51-COMMANDES-01": {
+  "option": "Parce qu’ils ne peuvent être réglés qu’en atelier",
+  "why": "Leur commande est au poste de conduite ; il faut la connaître pour l’actionner sans chercher."
+ },
+ "D15-O51-COMMANDES-02": {
+  "option": "Essuyer le pare-brise avec la main en roulant",
+  "why": "Cela détourne l’attention et une main du volant ; le désembuage est la bonne réponse."
+ },
+ "D15-O51-COMMANDES-04": {
+  "option": "Radio, chargeur de téléphone et éclairage intérieur",
+  "why": "Ces commandes sont secondaires ; les fonctions de visibilité et de signalisation priment."
+ },
+ "D15-O51-COMMANDES-05": {
+  "option": "Oui, si l’on garde une main sur le volant",
+  "why": "Le problème est le regard hors de la route, pas seulement la main sur le volant."
+ },
+ "D15-O51-COMMANDES-08": {
+  "option": "Pour pouvoir stationner brièvement en double file",
+  "why": "Les feux de détresse signalent un danger et n’autorisent aucun stationnement interdit."
+ },
+ "D15-O51-COMMANDES-09": {
+  "option": "Ralentir fortement sur la voie pour finir le réglage",
+  "why": "Freiner sans raison crée un danger pour les suivants ; le réglage doit attendre."
+ },
+ "D15-O51-VOYANTS-03": {
+  "option": "Que le véhicule est en parfait état",
+  "why": "Un voyant orange signale au contraire un point à vérifier."
+ },
+ "D15-O51-VOYANTS-04": {
+  "option": "Un défaut à faire vérifier rapidement",
+  "why": "Le vert confirme en général qu’une fonction est activée, pas un défaut."
+ },
+ "D15-O51-VOYANTS-05": {
+  "option": "Poursuivre normalement, le voyant s’éteindra en roulant",
+  "why": "Un voyant de frein persistant doit être expliqué avant de continuer normalement."
+ },
+ "D15-O51-VOYANTS-07": {
+  "option": "Oui, il signale une surchauffe des phares",
+  "why": "Le témoin bleu confirme seulement que les feux de route sont allumés."
+ },
+ "D15-O51-VOYANTS-08": {
+  "option": "Continuer jusqu’au garage, puis interpréter le symbole",
+  "why": "Il faut d’abord sécuriser et interpréter, avant de décider si l’on peut continuer."
+ },
+ "D15-O51-VOYANTS-09": {
+  "option": "Accélérer pour réchauffer les pneus",
+  "why": "Cela augmente les contraintes alors qu’il faut les réduire et contrôler les pressions."
+ },
+ "D15-O51-FREINS-01": {
+  "option": "Continuer en freinant simplement plus tôt",
+  "why": "Une pédale soudain molle signale un défaut du système qu’il faut faire contrôler."
+ },
+ "D15-O51-FREINS-02": {
+  "option": "Freiner automatiquement à la place du conducteur",
+  "why": "L’ABS n’agit que pendant un freinage du conducteur ; il empêche le blocage des roues."
+ },
+ "D15-O51-FREINS-03": {
+  "option": "Relâcher la pédale dès que la vibration se fait sentir",
+  "why": "La vibration est normale avec l’ABS ; relâcher allonge le freinage."
+ },
+ "D15-O51-FREINS-04": {
+  "option": "Oui, car l’ABS raccourcit toujours la distance d’arrêt",
+  "why": "L’ABS aide à diriger mais ne garantit pas une distance d’arrêt plus courte."
+ },
+ "D15-O51-FREINS-08": {
+  "option": "Un rétroviseur bien réglé",
+  "why": "Le réglage du rétroviseur n’a aucun effet sur la distance de freinage."
+ },
+ "D15-O51-FREINS-09": {
+  "option": "Continuer en freinant moins fort",
+  "why": "Un témoin rouge de frein impose de s’arrêter en sécurité et d’en vérifier la cause."
+ },
+ "D15-O51-PNEUS-01": {
+  "option": "Aucune, seul l’aspect visuel compte",
+  "why": "La loi fixe une profondeur minimale de 1,6 mm."
+ },
+ "D15-O51-PNEUS-04": {
+  "option": "Oui, dès la première chute de neige",
+  "why": "Il n’y a pas d’obligation générale ; le véhicule doit toutefois être équipé selon les conditions."
+ },
+ "D15-O51-PNEUS-06": {
+  "option": "Oui, si la pression est correcte",
+  "why": "Une pression correcte ne compense pas un dommage structurel comme une hernie."
+ },
+ "D15-O51-PNEUS-07": {
+  "option": "Sur le flanc du pneu, à la valeur maximale indiquée",
+  "why": "La valeur du flanc est un maximum du pneu, pas la pression prescrite pour le véhicule."
+ },
+ "D15-O51-PNEUS-08": {
+  "option": "Elle réduit l’usure des pneus dans tous les cas",
+  "why": "Une pression trop basse use et échauffe au contraire davantage le pneu."
+ },
+ "D15-O51-PNEUS-09": {
+  "option": "Uniquement la date d’achat du pneu",
+  "why": "La date d’achat ne dit rien du profil ni de l’adaptation du pneu à la neige."
+ },
+ "D15-O51-PROPRETE-01": {
+  "option": "Oui, si les essuie-glaces fonctionnent",
+  "why": "Les essuie-glaces ne remplacent pas le dégagement complet de la vision nécessaire."
+ },
+ "D15-O51-PROPRETE-02": {
+  "option": "Elle fond toujours avant de devenir dangereuse",
+  "why": "La neige du toit peut glisser sur le pare-brise ou tomber sur d’autres usagers dès le départ."
+ },
+ "D15-O51-PROPRETE-03": {
+  "option": "La nettoyer seulement avant un contrôle de police",
+  "why": "La plaque doit rester lisible en tout temps."
+ },
+ "D15-O51-PROPRETE-05": {
+  "option": "Pour ne plus devoir regarder par-dessus l’épaule",
+  "why": "Des miroirs propres n’éliminent pas l’angle mort ; le contrôle latéral reste nécessaire."
+ },
+ "D15-O51-PROPRETE-06": {
+  "option": "Gratter seulement la zone devant le conducteur",
+  "why": "La vision nécessaire doit être largement dégagée, pas seulement un hublot."
+ },
+ "D15-O51-PROPRETE-07": {
+  "option": "Fonctionner avec de l’eau pure en toutes saisons",
+  "why": "L’eau pure peut geler ; il faut un liquide adapté à l’hiver."
+ },
+ "D15-O51-CONFORMITE-01": {
+  "option": "Assuré, même s’il présente des défauts techniques",
+  "why": "L’assurance ne remplace pas l’exigence d’un véhicule en parfait état de fonctionnement."
+ },
+ "D15-O51-CONFORMITE-02": {
+  "option": "Faire le trajet avec les feux de détresse allumés",
+  "why": "Les feux de détresse ne corrigent pas un défaut sérieux de direction."
+ },
+ "D15-O51-CONFORMITE-03": {
+  "option": "Oui, si le véhicule a passé l’expertise récemment",
+  "why": "Une expertise passée ne rend pas conforme une modification qui masque un feu."
+ },
+ "D15-O51-CONFORMITE-05": {
+  "option": "Rouler uniquement avec les feux de route",
+  "why": "Les feux de route éblouissent et ne remplacent pas un feu de croisement défectueux."
+ },
+ "D15-O51-CONFORMITE-06": {
+  "option": "Rouler seulement de jour jusqu’à la prochaine expertise",
+  "why": "Le défaut gêne la vision dès maintenant et doit être traité avant de rouler normalement."
+ },
+ "D15-O51-CONFORMITE-08": {
+  "option": "Rouler à vitesse réduite jusqu’à la fin de la semaine",
+  "why": "Un pneu qui montre sa toile peut éclater ; il doit être remplacé avant de continuer."
+ },
+ "D15-O51-DIMENSIONS-01": {
+  "option": "La hauteur indiquée pour le coffre seul",
+  "why": "C’est la hauteur totale du véhicule chargé qui compte face à une limitation."
+ },
+ "D15-O51-DIMENSIONS-02": {
+  "option": "Elle n’a d’effet que sur la consommation",
+  "why": "La charge influence aussi freinage, stabilité et pneus."
+ },
+ "D15-O51-DIMENSIONS-03": {
+  "option": "Dans le permis de conduire du conducteur",
+  "why": "Le permis de conduire concerne la personne ; les masses figurent dans le permis de circulation."
+ },
+ "D15-O51-DIMENSIONS-04": {
+  "option": "Passer, car une marge est toujours prévue",
+  "why": "On ne peut pas compter sur une marge : le véhicule dépasse la hauteur signalée."
+ },
+ "D15-O51-DIMENSIONS-07": {
+  "option": "Oui, si la remorque est plus étroite que la voiture",
+  "why": "Une remorque étroite peut être plus haute ou allonger l’ensemble ; c’est l’ensemble qui compte."
+ },
+ "D15-O51-DIMENSIONS-08": {
+  "option": "S’engager en comptant sur la souplesse de la barre",
+  "why": "La barre signale une limite ; il faut connaître sa hauteur avant de s’engager."
+ },
+ "D15-O51-ALERTE_PANNE-02": {
+  "option": "Juste derrière le véhicule",
+  "why": "Posé trop près, le triangle ne laisse pas aux autres le temps de réagir."
+ },
+ "D15-O51-ALERTE_PANNE-03": {
+  "option": "Directement contre le pare-chocs arrière",
+  "why": "Le triangle doit être placé assez loin pour annoncer le danger à temps."
+ },
+ "D15-O51-ALERTE_PANNE-04": {
+  "option": "Appeler d’abord l’assurance depuis le véhicule",
+  "why": "La priorité est de sécuriser les personnes et d’éviter le suraccident."
+ },
+ "D15-O51-ALERTE_PANNE-05": {
+  "option": "Pour annoncer un changement de voie sur autoroute",
+  "why": "Le changement de voie s’annonce avec le clignotant, pas avec les feux de détresse."
+ },
+ "D15-O51-ALERTE_PANNE-06": {
+  "option": "Assis dans le véhicule, ceinture bouclée",
+  "why": "Sur autoroute, rester dans le véhicule expose au suraccident ; il faut se mettre à l’abri."
+ },
+ "D15-O51-ALERTE_PANNE-08": {
+  "option": "Pour que la dépanneuse trouve plus facilement le véhicule",
+  "why": "Le triangle avertit les usagers qui approchent du danger, il n’est pas destiné au dépanneur."
+ }
+}

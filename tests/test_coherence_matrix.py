@@ -37,5 +37,13 @@ class CoherenceMatrixTests(unittest.TestCase):
         self.assertLessEqual(len(shas), 1)
         if shas:
             self.assertEqual(shas, {MATRIX['decisionReportHtmlSha256']})
+    def test_05_announced_movements_are_measured(self):
+        # A wrong answer announcing a lateral shift or reversing must show that movement.
+        for r in MATRIX['rows']:
+            if r.get('gesture') in ('left', 'reverse') and r['evidence']:
+                self.assertTrue(r['observedAction'], (r['scenarioId'], r['choiceIndex']))
+                self.assertNotEqual(r['status'], 'limite_signalee', (r['scenarioId'], r['choiceIndex']))
+        gestures = [r for r in MATRIX['rows'] if r.get('gesture')]
+        self.assertGreaterEqual(len(gestures), 20)
 if __name__ == '__main__':
     unittest.main(verbosity=2)

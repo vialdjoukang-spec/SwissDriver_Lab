@@ -1,0 +1,183 @@
+{
+ "chapterId": "O45",
+ "after": "recours",
+ "section": {
+  "id": "negligence-grave",
+  "otitle": "Recours de l’assureur : négligence grave, alcool et drogues",
+  "title": "L’assurance paie la victime, mais vous pouvez devoir rembourser",
+  "ogoal": "Comprendre que l’assureur responsabilité civile indemnise d’abord la victime, puis peut se retourner contre le conducteur en cas de faute grave, d’ébriété ou de conduite sous l’effet de drogues, avec des conséquences financières qui peuvent être lourdes.",
+  "question": "J’ai bu avant de conduire et causé un accident : mon assurance RC paie-t-elle tout, comme d’habitude ?",
+  "lead": [
+   "L’assurance responsabilité civile (RC) obligatoire protège d’abord les victimes. Mais elle ne protège pas sans condition le conducteur qui a commis une faute grave. Cette section complète le chapitre sur le recours : elle montre quand l’assureur peut se retourner contre vous et pourquoi l’alcool, les drogues et la négligence grave peuvent vous coûter très cher, longtemps après l’accident."
+  ],
+  "parts": [
+   {
+    "title": "D’abord la victime, ensuite le compte avec le conducteur",
+    "body": [
+     "Après un accident, la victime peut s’adresser directement à l’assureur RC du véhicule responsable, qui l’**indemnise**. Elle n’a pas à attendre que l’assureur et son assuré règlent leurs différends. Même si le conducteur était ivre ou drogué, la victime est en principe indemnisée.",
+     "Une fois la victime payée, l’assureur examine le comportement de son assuré. S’il constate une **faute grave**, il peut exercer un **recours** : il réclame au conducteur ou au détenteur tout ou partie de ce qu’il a versé. Ce recours est une étape séparée, entre l’assureur et son assuré."
+    ]
+   },
+   {
+    "title": "Alcool, drogues et négligence grave : les cas typiques",
+    "body": [
+     "La loi prévoit expressément un recours de l’assureur lorsque l’accident a été causé en **état d’ébriété** ou d’**incapacité de conduire**, par exemple sous l’effet de **drogues**. Il en va de même pour certains excès de vitesse particulièrement graves. La **négligence grave**, c’est-à-dire le non-respect d’une règle de prudence élémentaire que toute personne raisonnable aurait respectée, peut aussi conduire à un recours, selon la loi et le contrat.",
+     "Le montant réclamé dépend notamment de la gravité de la faute et des circonstances. Il n’existe pas de pourcentage unique que vous puissiez retenir. Retenez plutôt ceci : quand des personnes sont gravement blessées, les sommes en jeu peuvent être **très élevées** et peser sur votre budget pendant des années. Pour le détail, lisez votre contrat et renseignez-vous auprès de votre assureur."
+    ]
+   },
+   {
+    "title": "Les autres conséquences s’ajoutent",
+    "body": [
+     "Le recours de l’assureur ne remplace pas les autres conséquences. Le conducteur fautif s’expose aussi à une **procédure pénale** et à une **mesure administrative**, comme un retrait de permis. Les assurances facultatives, par exemple une casco, peuvent en outre réduire leurs prestations en cas de faute grave, selon le contrat.",
+     "La seule protection fiable est donc la prévention : ne conduisez pas après avoir bu de l’alcool ou consommé des drogues, et ne prenez pas le volant si vous n’êtes pas en état. Organisez votre retour avant de sortir : conducteur sobre désigné, transports publics, taxi ou nuit sur place."
+    ]
+   }
+  ],
+  "words": [
+   {
+    "term": "Recours de l’assureur",
+    "def": "Le droit de l’assureur, après avoir indemnisé la victime, de réclamer tout ou partie de cette somme au conducteur ou au détenteur responsable."
+   },
+   {
+    "term": "Négligence grave",
+    "def": "Le non-respect d’une règle de prudence élémentaire que toute personne raisonnable aurait respectée dans la même situation."
+   },
+   {
+    "term": "Incapacité de conduire",
+    "def": "L’état d’une personne qui ne peut pas conduire en sécurité, par exemple à cause de l’alcool, de drogues, de médicaments ou d’une grande fatigue."
+   },
+   {
+    "term": "Action directe",
+    "def": "Le droit de la victime de réclamer son indemnisation directement à l’assureur RC du responsable."
+   }
+  ],
+  "method": [
+   "Commencez par la victime : elle est indemnisée par l’assureur RC.",
+   "Examinez ensuite le comportement du conducteur : y a-t-il ébriété, drogues ou faute grave ?",
+   "Si oui, prévoyez un recours possible de l’assureur contre le conducteur.",
+   "Ajoutez les autres conséquences : procédure pénale, mesure administrative, prestations réduites des assurances facultatives.",
+   "Retenez la prévention : pas d’alcool ni de drogue au volant."
+  ],
+  "example": {
+   "title": "La soirée qui coûte des années",
+   "scene": "Après une soirée, Julien prend le volant alors qu’il a bu plusieurs verres. Sur une route hors localité, il manque un virage et blesse grièvement un cycliste.",
+   "reasoning": [
+    "Le cycliste est indemnisé par l’assureur RC du véhicule, sans attendre la suite.",
+    "Comme l’accident a été causé en état d’ébriété, l’assureur se retourne ensuite contre Julien pour lui réclamer une partie de ce qu’il a payé.",
+    "Julien fait en plus face à une procédure pénale et à un retrait de permis."
+   ],
+   "answer": "La victime est protégée, mais Julien supporte lui-même une partie importante des conséquences financières, en plus des sanctions pénales et administratives."
+  },
+  "trap": "Le piège est de croire que l’assurance RC « couvre tout » quoi qu’il arrive. Elle couvre la victime, oui ; mais en cas d’ébriété, de drogues ou de faute grave, l’assureur peut vous demander de rembourser. Ne comptez jamais sur l’assurance pour effacer une décision de conduire en mauvais état.",
+  "remember": "L’assureur RC paie la victime, puis peut se retourner contre le conducteur fautif en cas d’ébriété, de drogues ou de faute grave.",
+  "memo": {
+   "code": "P–P–R",
+   "text": "Payer la victime, Puis Recours contre le fautif : l’assurance ne vous couvre pas contre votre propre faute grave."
+  },
+  "law": "LCR"
+ },
+ "questions": [
+  {
+   "id": "O45-NGR-01",
+   "chapter": "O45",
+   "section": "negligence-grave",
+   "stem": "Un conducteur ivre cause un accident. Que se passe-t-il pour la victime ?",
+   "options": [
+    "Elle est en principe indemnisée par l’assureur RC du véhicule responsable.",
+    "Elle doit attendre que l’assureur et le conducteur aient réglé leur conflit.",
+    "Elle peut s’adresser directement à l’assureur RC du responsable."
+   ],
+   "answers": [0, 2],
+   "truth": "La protection de la victime ne dépend pas du recours entre l’assureur et son assuré.",
+   "why": "L’assurance RC obligatoire sert d’abord à garantir l’indemnisation des victimes.",
+   "trap": "Croire que la faute du conducteur prive la victime d’indemnisation.",
+   "action": "Distinguez l’indemnisation de la victime et le recours contre le conducteur.",
+   "memory": "La victime d’abord."
+  },
+  {
+   "id": "O45-NGR-02",
+   "chapter": "O45",
+   "section": "negligence-grave",
+   "stem": "Dans quels cas l’assureur RC peut-il se retourner contre le conducteur après avoir payé la victime ?",
+   "options": [
+    "Lorsque l’accident a été causé en état d’ébriété.",
+    "Lorsque le conducteur était sous l’effet de drogues et incapable de conduire.",
+    "Dans tous les accidents, même sans aucune faute du conducteur."
+   ],
+   "answers": [0, 1],
+   "truth": "Le recours vise les fautes graves, notamment l’ébriété et l’incapacité de conduire.",
+   "why": "La loi prévoit expressément un recours dans ces situations.",
+   "trap": "Croire que tout accident entraîne un recours.",
+   "action": "Ne prenez jamais le volant après alcool ou drogues.",
+   "memory": "Alcool, drogue : recours."
+  },
+  {
+   "id": "O45-NGR-03",
+   "chapter": "O45",
+   "section": "negligence-grave",
+   "stem": "Qu’est-ce que la négligence grave ?",
+   "options": [
+    "Le non-respect d’une règle de prudence élémentaire que toute personne raisonnable aurait respectée.",
+    "Une petite inattention que chacun peut commettre et qui n’a aucune conséquence pour l’assurance dans aucun cas.",
+    "Un comportement qui peut conduire l’assureur à réclamer une partie de ses prestations, selon la loi et le contrat."
+   ],
+   "answers": [0, 2],
+   "truth": "La négligence grave est une violation d’une règle de prudence élémentaire et peut entraîner un recours.",
+   "why": "L’assureur n’a pas à supporter seul les conséquences d’une faute grossière de son assuré.",
+   "trap": "Assimiler toute faute à une simple inattention.",
+   "action": "Respectez les règles de prudence de base en toute situation.",
+   "memory": "Faute grossière, facture possible."
+  },
+  {
+   "id": "O45-NGR-04",
+   "chapter": "O45",
+   "section": "negligence-grave",
+   "stem": "Que savez-vous du montant d’un recours de l’assureur ?",
+   "options": [
+    "Il dépend notamment de la gravité de la faute et des circonstances.",
+    "Il est toujours limité à un petit montant fixe.",
+    "Il peut être très élevé lorsque des personnes ont été gravement blessées."
+   ],
+   "answers": [0, 2],
+   "truth": "Le montant du recours varie selon la faute et peut être très lourd.",
+   "why": "Les dommages corporels graves peuvent coûter des sommes importantes.",
+   "trap": "Croire à un plafond bas et fixe.",
+   "action": "Lisez votre contrat et renseignez-vous auprès de votre assureur.",
+   "memory": "Faute grave, coût grave."
+  },
+  {
+   "id": "O45-NGR-05",
+   "chapter": "O45",
+   "section": "negligence-grave",
+   "stem": "Un conducteur a causé un accident sous l’effet de drogues. Quelles conséquences peuvent s’ajouter au recours de l’assureur ?",
+   "options": [
+    "Une procédure pénale.",
+    "Une mesure administrative, comme un retrait de permis.",
+    "Aucune, car le recours remplace toutes les autres sanctions."
+   ],
+   "answers": [0, 1],
+   "truth": "Le recours de l’assureur s’ajoute aux conséquences pénales et administratives.",
+   "why": "Ce sont trois procédures distinctes, avec des buts différents.",
+   "trap": "Croire qu’on ne paie qu’une seule fois.",
+   "action": "Comptez toutes les conséquences avant de prendre un risque.",
+   "memory": "Assurance, justice, permis : trois factures."
+  },
+  {
+   "id": "O45-NGR-06",
+   "chapter": "O45",
+   "section": "negligence-grave",
+   "stem": "Vous allez à une fête où vous prévoyez de boire de l’alcool. Quelle décision vous protège réellement ?",
+   "options": [
+    "Compter sur l’assurance RC pour couvrir un éventuel accident.",
+    "Organiser votre retour à l’avance : conducteur sobre, transports publics ou taxi.",
+    "Ne pas conduire après avoir bu."
+   ],
+   "answers": [1, 2],
+   "truth": "La seule protection fiable est de ne pas conduire en état d’ébriété.",
+   "why": "L’assurance indemnise la victime mais peut se retourner contre vous.",
+   "trap": "Considérer l’assurance comme un filet de sécurité personnel.",
+   "action": "Planifiez le retour avant le premier verre.",
+   "memory": "Je bois, je ne conduis pas."
+  }
+ ]
+}

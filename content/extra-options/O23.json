@@ -1,0 +1,170 @@
+{
+ "O23-R01": {
+  "option": "Vous accélérez pour passer avant la voiture.",
+  "why": "Celui dont le côté est obstrué doit céder ; accélérer crée un conflit frontal."
+ },
+ "O23-R02": {
+  "option": "Chacune se rapproche de l’axe pour mieux voir.",
+  "why": "Se rapprocher de l’axe réduit la marge latérale lors du croisement."
+ },
+ "O23-R03": {
+  "option": "Le véhicule le plus rapide.",
+  "why": "La priorité de passage dépend de la catégorie du véhicule, pas de sa vitesse."
+ },
+ "O23-R07": {
+  "option": "Rouler au milieu de la chaussée pour mieux voir.",
+  "why": "Occuper le milieu empiète sur la moitié dont le véhicule opposé a besoin."
+ },
+ "O23-R08": {
+  "option": "Klaxonner pour qu’il se serre contre l’obstacle.",
+  "why": "Le klaxon ne crée pas d’espace ; il faut ralentir ou s’arrêter."
+ },
+ "O23-R09": {
+  "option": "Vous klaxonnez pour qu’il recule malgré tout.",
+  "why": "Votre priorité ne justifie pas d’imposer une manœuvre impossible à l’autre."
+ },
+ "O23-R11": {
+  "option": "Klaxonner et maintenir votre vitesse.",
+  "why": "Le klaxon n’arrête ni l’objet ni le danger ; il faut freiner en gardant la trajectoire."
+ },
+ "O23-R12": {
+  "option": "Klaxonner d’abord puis freiner.",
+  "why": "Chaque instant perdu avant le freinage augmente la vitesse d’impact."
+ },
+ "O23-R13": {
+  "option": "Vers le rétroviseur intérieur pendant toute la manœuvre.",
+  "why": "Le regard doit guider la trajectoire vers l’espace libre devant."
+ },
+ "O23-R14": {
+  "option": "Rouler plus près du bord droit à vitesse inchangée.",
+  "why": "Sans réduction de vitesse, la marge d’arrêt sur chaussée mouillée reste insuffisante."
+ },
+ "O23-R16": {
+  "option": "Accélérer pour augmenter la distance avec le suiveur.",
+  "why": "Accélérer vers un danger réduit votre marge devant vous."
+ },
+ "O23-R19": {
+  "option": "Toujours braquer avant de freiner.",
+  "why": "Un braquage réflexe sans contrôle peut créer un second danger."
+ },
+ "O23-R21": {
+  "option": "Le dépassement par la droite en zigzaguant entre les files.",
+  "why": "Déboîter à droite pour dépasser puis se rabattre reste interdit."
+ },
+ "O23-R24": {
+  "option": "Vous klaxonnez pour avertir le piéton de votre passage.",
+  "why": "Il est interdit de devancer par la droite un véhicule arrêté devant un passage piéton."
+ },
+ "O23-R26": {
+  "option": "Le conducteur qui se trouve derrière vous dans votre file.",
+  "why": "C’est celui qui change de voie qui doit vérifier l’intervalle."
+ },
+ "O23-R28": {
+  "option": "Le cycle doit rouler sur le trottoir pour laisser la voie.",
+  "why": "Le trottoir n’est pas destiné aux cycles ; la voiture et le cycle partagent la voie."
+ },
+ "O23-R29": {
+  "option": "Parce que la loi interdit toute circulation côte à côte.",
+  "why": "La circulation en files parallèles est permise ; le risque vient des angles morts et de l’absence d’échappatoire."
+ },
+ "O23-R30": {
+  "option": "Changer de file dès le démarrage pour gagner une place.",
+  "why": "Un changement de file au démarrage surprend le voisin et provoque des conflits."
+ },
+ "O23-R32": {
+  "option": "La conserver identique car l’ABS compense.",
+  "why": "L’ABS ne compense pas la perte d’adhérence ; la distance doit augmenter."
+ },
+ "O23-R33": {
+  "option": "Elle permet de gagner du temps sans risque particulier.",
+  "why": "Suivre de trop près supprime la marge d’arrêt et peut constituer une violation grave."
+ },
+ "O23-R36": {
+  "option": "Avancer jusqu’au milieu pour être prêt à repartir.",
+  "why": "S’engager sans pouvoir dégager bloque le trafic transversal."
+ },
+ "O23-R37": {
+  "option": "Une distance plus courte grâce à l’adhérence du poids.",
+  "why": "La charge allonge le freinage ; la distance doit plutôt augmenter."
+ },
+ "O23-R38": {
+  "option": "Elle n’est exigée que sur autoroute.",
+  "why": "La distance suffisante est exigée sur toutes les routes."
+ },
+ "O23-R39": {
+  "option": "Sur le compteur de vitesse.",
+  "why": "Regarder le compteur n’apporte aucune information sur ce qui se passe plus loin dans la file."
+ },
+ "O23-R41": {
+  "option": "Par le côté où la voie est la plus large.",
+  "why": "Le dépassement s’effectue normalement par la gauche, pas selon la largeur."
+ },
+ "O23-R42": {
+  "option": "Que le conducteur devant vous vous a fait signe de passer.",
+  "why": "Un signe d’un autre conducteur ne garantit pas que la voie est libre."
+ },
+ "O23-R44": {
+  "option": "Oui, s’il vous fait signe de passer.",
+  "why": "Un signe ne lève pas l’interdiction de dépasser devant un obstacle."
+ },
+ "O23-R46": {
+  "option": "Vous pouvez dépasser si vous klaxonnez.",
+  "why": "Le dépassement d’un véhicule arrêté devant un passage piéton est interdit, klaxon ou non."
+ },
+ "O23-R48": {
+  "option": "Oui, si la limitation de vitesse n’est pas atteinte.",
+  "why": "Le véhicule dépassé ne doit pas accélérer, quelle que soit la limitation."
+ },
+ "O23-R50": {
+  "option": "Vous klaxonnez pour qu’il se serre à droite.",
+  "why": "Le klaxon ne crée pas la marge latérale nécessaire ; il faut attendre."
+ },
+ "O23-R51": {
+  "option": "Uniquement les manœuvres en marche arrière.",
+  "why": "La LCR cite le croisement, le dépassement, la circulation côte à côte et les véhicules qui se suivent."
+ },
+ "O23-R53": {
+  "option": "Klaxonner longuement pour qu’il se range.",
+  "why": "Un klaxon peut surprendre un cycliste hésitant et le déséquilibrer."
+ },
+ "O23-R54": {
+  "option": "Klaxonner pour qu’il s’écarte de la chaussée.",
+  "why": "C’est au conducteur de garder la distance ; le klaxon ne la remplace pas."
+ },
+ "O23-R55": {
+  "option": "Il reste identique quelle que soit l’allure.",
+  "why": "À vitesse plus élevée, le temps de correction diminue et la marge nécessaire augmente."
+ },
+ "O23-R56": {
+  "option": "Allumer les feux de route pour mieux voir.",
+  "why": "Dans le brouillard, les feux de route sont réfléchis et éblouissent le conducteur."
+ },
+ "O23-R60": {
+  "option": "Compter sur le fait que l’autre usager s’écartera.",
+  "why": "Si l’usager doit modifier sa trajectoire, la marge est insuffisante."
+ },
+ "O23-R61": {
+  "option": "Utiliser le klaxon pour annoncer le virage.",
+  "why": "Le changement de direction s’annonce avec l’indicateur, pas avec le klaxon."
+ },
+ "O23-R62": {
+  "option": "Il vous dispense de contrôler l’angle mort.",
+  "why": "Le clignotant annonce une intention ; les contrôles restent obligatoires."
+ },
+ "O23-R63": {
+  "option": "Oui, si le conducteur paraît distrait.",
+  "why": "Sans exigence de sécurité, l’avertisseur sonore n’est pas admis."
+ },
+ "O23-R66": {
+  "option": "Les feux de route allumés en continu.",
+  "why": "Des feux de route permanents éblouissent les autres ; l’avertissement optique est bref."
+ },
+ "O23-R67": {
+  "option": "Pour stationner brièvement en double file.",
+  "why": "Les feux de danger ne légitiment pas un stationnement interdit."
+ },
+ "O23-R69": {
+  "option": "La priorité sur les véhicules venant en sens inverse.",
+  "why": "Le klaxon ne donne aucune priorité sur le trafic opposé."
+ }
+}

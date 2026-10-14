@@ -1,0 +1,146 @@
+{
+ "O42-E01": {
+  "option": "Klaxonner et maintenir votre allure.",
+  "why": "Le ballon annonce un enfant possible ; le klaxon ne remplace pas une réduction de vitesse."
+ },
+ "O42-E02": {
+  "option": "Qu’ils resteront sur le trottoir grâce à la surveillance d’un adulte.",
+  "why": "La présence d’un adulte ne garantit pas qu’aucun enfant ne s’élancera sur la chaussée."
+ },
+ "O42-E03": {
+  "option": "Il a compris votre vitesse et attendra votre passage.",
+  "why": "Un enfant évalue souvent mal la vitesse et la distance ; le contact visuel ne garantit rien."
+ },
+ "O42-E05": {
+  "option": "Vous pouvez garder l’allure tant qu’ils ne sont pas sur la chaussée.",
+  "why": "Le jeu peut déborder à tout instant ; la vitesse doit déjà permettre un arrêt très court."
+ },
+ "O42-E07": {
+  "option": "Vous klaxonnez pour lui indiquer d’attendre.",
+  "why": "Un enfant qui manifeste l’intention de traverser doit pouvoir le faire ; vous devez vous arrêter."
+ },
+ "O42-E09": {
+  "option": "Oui, s’il est donné assez tôt et assez fort.",
+  "why": "Un avertissement sonore peut surprendre et ne remplace jamais une marge de freinage."
+ },
+ "O42-H01": {
+  "option": "Lui faire un appel de phares pour lui signaler qu’elle peut traverser.",
+  "why": "Une personne malvoyante ne perçoit pas ce signal ; il faut ralentir tôt et s’arrêter nettement."
+ },
+ "O42-H02": {
+  "option": "Passer rapidement avant que le binôme ne s’engage.",
+  "why": "Il faut au contraire leur laisser l’espace et le temps nécessaires sans couper leur trajectoire."
+ },
+ "O42-H03": {
+  "option": "Klaxonner pour l’avertir de votre arrivée.",
+  "why": "Le signal peut surprendre la personne ; il faut lui laisser du temps et un espace suffisant."
+ },
+ "O42-H04": {
+  "option": "Klaxonner plus longuement jusqu’à ce qu’il réagisse.",
+  "why": "Si la personne n’entend pas, insister au klaxon est inutile ; il faut ralentir et se rendre visible."
+ },
+ "O42-H06": {
+  "option": "Passer près d’elle tant qu’elle n’est pas sur la chaussée.",
+  "why": "Un comportement hésitant annonce un mouvement imprévisible ; il faut davantage d’espace."
+ },
+ "O42-H08": {
+  "option": "Parce que le contact visuel n’est exigé qu’aux passages réglés par des feux.",
+  "why": "Le contact visuel n’est nulle part une condition ; la prudence repose sur la situation observée."
+ },
+ "O42-S01": {
+  "option": "Vous klaxonnez brièvement pour lui signaler que le feu a changé.",
+  "why": "Le feu vert ne vous autorise pas à presser un piéton encore sur la chaussée ; vous restez arrêté."
+ },
+ "O42-S02": {
+  "option": "Attendre qu’elle pose le pied sur la chaussée avant de ralentir.",
+  "why": "Ralentir à ce moment-là est trop tard ; il faut réduire dès que son intention reste incertaine."
+ },
+ "O42-S03": {
+  "option": "Que les personnes âgées traversent seulement une fois le bus reparti.",
+  "why": "Rien ne garantit ce comportement ; une traversée devant ou derrière le bus reste possible."
+ },
+ "O42-S04": {
+  "option": "Allumer les feux de route malgré les véhicules venant en face.",
+  "why": "Éblouir les usagers venant en face est interdit et crée un nouveau danger ; il faut réduire la vitesse."
+ },
+ "O42-S06": {
+  "option": "Lui laisser le temps nécessaire pour terminer sa traversée.",
+  "why": "C’est au contraire le comportement attendu, et non une chose à éviter."
+ },
+ "O42-S08": {
+  "option": "Repartir lentement en la contournant par l’arrière.",
+  "why": "Sa décision n’est pas encore claire ; il faut maintenir l’arrêt car elle peut changer de direction."
+ },
+ "O42-P01": {
+  "option": "Passer si vous arrivez avant qu’il ait posé le pied sur la chaussée.",
+  "why": "Le piéton qui manifeste son intention de traverser a la priorité ; vous devez lui céder le passage."
+ },
+ "O42-P02": {
+  "option": "Vous klaxonnez pour qu’il accélère sa traversée.",
+  "why": "Un piéton engagé a la priorité ; vous vous arrêtez sans le presser."
+ },
+ "O42-P04": {
+  "option": "Seule la moitié la plus proche du trottoir de départ est protégée.",
+  "why": "Chaque moitié est une traversée distincte, où le piéton peut aussi bénéficier de la priorité."
+ },
+ "O42-P06": {
+  "option": "Vous pouvez le dépasser à vitesse constante puisque votre voie est libre.",
+  "why": "Le véhicule arrêté peut masquer un piéton ; passer sans réduire ne laisse aucune marge."
+ },
+ "O42-P07": {
+  "option": "Que le premier piéton a atteint le trottoir d’en face.",
+  "why": "Il faut attendre que le dernier membre du groupe ait quitté votre trajectoire."
+ },
+ "O42-P08": {
+  "option": "Uniquement les intersections signalées.",
+  "why": "Les espaces entre véhicules stationnés et les portières peuvent cacher des piétons partout dans la rue."
+ },
+ "O42-C01": {
+  "option": "Accélérer pour tourner avant qu’il arrive à votre hauteur.",
+  "why": "Le cycliste en ligne droite sur la bande a la priorité ; il faut contrôler l’angle mort et lui céder."
+ },
+ "O42-C02": {
+  "option": "Klaxonner pour avertir les cyclistes puis traverser.",
+  "why": "Avertir ne dispense pas de céder le passage aux cyclistes circulant sur la piste."
+ },
+ "O42-C03": {
+  "option": "Entrouvrir la portière pour voir si un cycliste arrive.",
+  "why": "Une portière entrouverte forme déjà un obstacle ; il faut contrôler avant d’ouvrir."
+ },
+ "O42-C04": {
+  "option": "Parce que c’est au cycliste de s’écarter pour laisser la marge.",
+  "why": "C’est au conducteur qui dépasse de garantir une distance latérale suffisante."
+ },
+ "O42-C06": {
+  "option": "Klaxonner pour qu’il se range sur la droite.",
+  "why": "Sa position est légitime dans le giratoire ; vous restez derrière jusqu’à une sortie sûre."
+ },
+ "O42-C08": {
+  "option": "Vous avancez sur le trottoir en klaxonnant pour qu’il vous laisse passer.",
+  "why": "En traversant le trottoir, vous devez céder le passage à ceux qui l’utilisent, y compris cet enfant à vélo."
+ },
+ "O42-N01": {
+  "option": "Supposer qu’il freinera parce qu’il vous a vu.",
+  "why": "Rien ne garantit qu’il vous ait vu ni qu’il puisse freiner à temps ; sa vitesse est souvent sous-estimée."
+ },
+ "O42-N03": {
+  "option": "C’est autorisé si le passager porte un casque.",
+  "why": "Le transport d’un passager reste interdit, quel que soit l’équipement porté."
+ },
+ "O42-N04": {
+  "option": "Elle obtient la priorité d’un piéton dès qu’elle roule sur le passage.",
+  "why": "Un usager qui reste sur son engin n’acquiert pas automatiquement la priorité du piéton."
+ },
+ "O42-N05": {
+  "option": "Compter sur son éclairage pour la repérer à temps.",
+  "why": "L’engin peut être peu ou mal éclairé ; il faut élargir le balayage et réduire."
+ },
+ "O42-N07": {
+  "option": "Des piétons uniquement, car la plaque concerne seulement le stationnement.",
+  "why": "La plaque complémentaire admet la circulation des cycles ; il faut prévoir des usagers plus rapides."
+ },
+ "O42-N09": {
+  "option": "Son moteur électrique émet un bruit qui renseigne sur sa vitesse.",
+  "why": "Un e-bike est presque silencieux ; le bruit ne permet pas d’évaluer son approche."
+ }
+}

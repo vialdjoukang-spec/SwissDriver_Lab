@@ -1,0 +1,66 @@
+{
+ "N26-PHY-01": {
+  "option": "La distance de freinage double simplement.",
+  "why": "La distance de freinage croît avec le carré de la vitesse : environ quatre fois plus longue à vitesse double."
+ },
+ "N26-PHY-02": {
+  "option": "Le seul mouvement du volant, quel que soit l’état de la chaussée.",
+  "why": "Le volant oriente les roues, mais sans adhérence les pneus ne peuvent pas fournir la force de guidage."
+ },
+ "N26-PHY-04": {
+  "option": "Des pneus en bon état et correctement gonflés.",
+  "why": "Des pneus en bon état et bien gonflés préservent l’adhérence ; ils ne la réduisent pas."
+ },
+ "N26-PHY-06": {
+  "option": "Ils permettent de freiner plus tard en toutes circonstances.",
+  "why": "Les aides ne créent pas d’adhérence supplémentaire ; la distance de freinage dépend toujours de la vitesse et de la surface."
+ },
+ "N26-PHA-01": {
+  "option": "Freiner, annoncer, accélérer, braquer.",
+  "why": "Il faut d’abord repérer et annoncer, puis freiner avant de braquer, et n’accélérer qu’en sortie."
+ },
+ "N26-PHA-02": {
+  "option": "Une fois sorti du virage.",
+  "why": "Ralentir en sortie est trop tard : la vitesse doit être adaptée avant d’entrer dans la courbe."
+ },
+ "N26-PHA-04": {
+  "option": "Sur le compteur, pour contrôler votre vitesse.",
+  "why": "Pendant le braquage, le regard doit porter vers la sortie du virage, pas sur le tableau de bord."
+ },
+ "N26-PHA-06": {
+  "option": "Rouler au milieu de la chaussée pour garder de la marge des deux côtés.",
+  "why": "Rouler au milieu empiète sur la voie opposée dans un virage sans visibilité ; il faut rester sur sa voie."
+ },
+ "N26-MAR-01": {
+  "option": "C’est une limite qui ne s’applique que par temps sec.",
+  "why": "La vitesse maximale reste un plafond par tous les temps ; sur route mouillée, il faut souvent rouler plus lentement encore."
+ },
+ "N26-MAR-02": {
+  "option": "Une distance minimale fixée par la loi pour chaque vitesse.",
+  "why": "La marge personnelle est une réserve que vous choisissez vous-même, pas une valeur légale."
+ },
+ "N26-MAR-04": {
+  "option": "Votre temps de réaction devient plus court.",
+  "why": "La fatigue allonge le temps de réaction ; votre marge doit donc augmenter."
+ },
+ "N26-MAR-05": {
+  "option": "Uniquement par les systèmes d’aide de la voiture.",
+  "why": "Les aides ne choisissent ni votre vitesse ni vos distances ; la marge se décide par votre conduite."
+ },
+ "N26-MOT-01": {
+  "option": "Elle se penche vers l’extérieur du virage.",
+  "why": "Une moto s’incline vers l’intérieur du virage pour équilibrer la force qui la pousse vers l’extérieur."
+ },
+ "N26-MOT-02": {
+  "option": "Sur la ligne médiane, juste devant la moto.",
+  "why": "Regarder près de la roue fait perdre l’anticipation ; le regard doit porter loin, vers la sortie du virage."
+ },
+ "N26-MOT-04": {
+  "option": "Des vêtements de sport légers suffisent pour les courts trajets.",
+  "why": "Une chute peut survenir à tout moment ; des vêtements légers ne protègent pas contre l’abrasion et les chocs."
+ },
+ "N26-MOT-05": {
+  "option": "Vous accélérez pour croiser la moto avant l’épingle.",
+  "why": "Accélérer à l’approche d’une épingle réduit votre marge et peut vous faire sortir de votre voie."
+ }
+}

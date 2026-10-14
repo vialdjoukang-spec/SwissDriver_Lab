@@ -1,0 +1,114 @@
+{
+ "O54-PSP-01": {
+  "option": "Elles dispensent le véhicule de l’assurance responsabilité civile.",
+  "why": "Un véhicule muni de plaques à court terme doit lui aussi être couvert par une assurance RC."
+ },
+ "O54-PSP-02": {
+  "option": "Elles sont attribuées à tout particulier qui en fait la demande.",
+  "why": "Les plaques professionnelles sont réservées aux entreprises de la branche automobile."
+ },
+ "O54-PSP-04": {
+  "option": "Vous pouvez encore rouler si vous restez dans votre canton.",
+  "why": "Des plaques expirées ne permettent plus de circuler nulle part, quel que soit le canton."
+ },
+ "O52-SCH-01": {
+  "option": "Les jeunes enfants ne comptent pas dans le nombre de personnes transportées.",
+  "why": "Chaque enfant occupe une place et compte comme une personne transportée."
+ },
+ "O52-SCH-02": {
+  "option": "C’est admis si le hayon reste bien fermé.",
+  "why": "Le coffre n’est pas une place assise ; fermer le hayon ne change rien."
+ },
+ "O52-SCH-06": {
+  "option": "C’est admis si l’adulte est lui-même attaché.",
+  "why": "La ceinture de l’adulte ne retient pas l’enfant, qui doit avoir sa propre place et sa propre retenue."
+ },
+ "O31-BUS-01": {
+  "option": "Vous klaxonnez pour lui signaler que vous passez d’abord.",
+  "why": "En localité, on facilite le départ du bus au lieu de chercher à passer avant lui."
+ },
+ "O31-BUS-02": {
+  "option": "Vous accélérez pour rester le moins longtemps possible à côté du bus.",
+  "why": "Près d’un bus arrêté, il faut rouler assez lentement pour s’arrêter immédiatement."
+ },
+ "O31-BUS-03": {
+  "option": "Vous klaxonnez pour que les voyageurs dégagent la chaussée.",
+  "why": "On attend que les voyageurs aient quitté la chaussée ; le klaxon ne donne aucun droit de passer."
+ },
+ "O44-RTP-01": {
+  "option": "Une amende d’ordre infligée sur place par la police.",
+  "why": "Le retrait préventif est une mesure administrative sur le permis, pas une amende d’ordre."
+ },
+ "O44-RTP-04": {
+  "option": "Dès qu’il en fait la demande écrite à l’autorité.",
+  "why": "Une simple demande ne suffit pas : il doit prouver que la cause de l’inaptitude a disparu."
+ },
+ "O44-RTP-05": {
+  "option": "Vous pouvez encore conduire pour vous rendre au travail.",
+  "why": "Pendant le retrait préventif, toute conduite est interdite, trajets professionnels compris."
+ },
+ "O43-CAT-01": {
+  "option": "Aucune limite de places, tant que la masse totale est respectée.",
+  "why": "La catégorie B limite aussi le nombre de places à 8 en plus du conducteur."
+ },
+ "O43-CAT-02": {
+  "option": "Oui, si vous le conduisez sans passagers.",
+  "why": "La catégorie dépend des places du véhicule, pas du nombre de personnes à bord."
+ },
+ "O43-CAT-03": {
+  "option": "Sur la plaque de contrôle du véhicule.",
+  "why": "La plaque identifie le détenteur ; la masse totale figure dans le permis de circulation."
+ },
+ "O43-CAT-05": {
+  "option": "Les motocycles légers.",
+  "why": "Les motocycles légers relèvent de la catégorie A1, non de la B1."
+ },
+ "O14-FPI-01": {
+  "option": "Vous pouvez partir si le carrefour est libre.",
+  "why": "Le rouge et jaune interdit encore de franchir la ligne d’arrêt, même carrefour libre."
+ },
+ "O14-FPI-02": {
+  "option": "Le jaune clignotant précède normalement le passage au vert.",
+  "why": "Le vert est annoncé par le rouge et jaune ; le jaune clignotant n’est pas une phase de la séquence."
+ },
+ "O14-FPI-04": {
+  "option": "Vous vous arrêtez systématiquement comme à un feu rouge.",
+  "why": "Le jaune clignotant n’impose pas l’arrêt : on applique les signaux et priorités ordinaires."
+ },
+ "O14-FPI-05": {
+  "option": "Vous passez lentement en klaxonnant pour avertir le piéton.",
+  "why": "Un feu rouge impose l’arrêt, quelle que soit la raison pour laquelle il s’est allumé."
+ },
+ "O45-NGR-01": {
+  "option": "Elle n’est indemnisée que si le conducteur ivre est solvable.",
+  "why": "L’assureur RC indemnise la victime, indépendamment de la solvabilité du conducteur."
+ },
+ "O45-NGR-02": {
+  "option": "Uniquement lorsque la victime en fait la demande.",
+  "why": "Le recours dépend de la faute grave du conducteur, pas d’une demande de la victime."
+ },
+ "O45-NGR-04": {
+  "option": "Il est entièrement pris en charge par l’assurance casco.",
+  "why": "La casco couvre des dégâts au propre véhicule ; elle ne paie pas le recours de l’assureur RC."
+ },
+ "O45-NGR-06": {
+  "option": "Boire un café fort avant de reprendre le volant.",
+  "why": "Le café ne fait pas baisser l’alcoolémie ni ne rétablit l’aptitude à conduire."
+ },
+ "O32-EXC-02": {
+  "option": "Elle ne s’applique que lorsque des ouvriers sont présents.",
+  "why": "La signalisation de chantier s’applique tant qu’elle est en place, ouvriers présents ou non."
+ },
+ "O32-EXC-03": {
+  "option": "Vous contournez la barrière si la route paraît praticable.",
+  "why": "Une route fermée ne doit pas être empruntée, même si elle semble praticable."
+ },
+ "O32-EXC-04": {
+  "option": "Vous allumez les feux de route pour mieux voir le trafic en sens inverse.",
+  "why": "Les feux de route éblouiraient les conducteurs qui viennent en sens inverse juste à côté."
+ },
+ "O32-EXC-05": {
+  "option": "Vous suivez de près le véhicule devant vous pour ne pas vous perdre.",
+  "why": "Suivre de près réduit la distance de sécurité, d’autant plus sur des routes inconnues."
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "O32-R01": {
+  "option": "Rouler à 80 km/h puisque la route est hors localité.",
+  "why": "La limite générale est un maximum ; la vitesse doit permettre l’arrêt dans les 45 mètres visibles."
+ },
+ "O32-R02": {
+  "option": "Rouler au milieu de la chaussée pour voir plus loin.",
+  "why": "Occuper le milieu empiète sur la moitié nécessaire au véhicule opposé."
+ },
+ "O32-R03": {
+  "option": "Feux de position uniquement.",
+  "why": "Les feux de position ne suffisent pas à circuler ; il faut au moins les feux de croisement."
+ },
+ "O32-R04": {
+  "option": "Faire un appel de phares pour l’avertir.",
+  "why": "Un appel de phares éblouit davantage ; il faut passer aux feux de croisement."
+ },
+ "O32-R05": {
+  "option": "Rouler plus près du véhicule précédent pour se guider.",
+  "why": "Réduire la distance n’améliore pas la vue à travers un pare-brise sale."
+ },
+ "O32-R09": {
+  "option": "Allumer les feux de brouillard arrière pour compenser.",
+  "why": "Les feux de brouillard arrière n’éclairent pas la route devant et éblouissent le suivant."
+ },
+ "O32-R11": {
+  "option": "Accélérer pour évacuer l’eau des pneus.",
+  "why": "Une vitesse plus élevée augmente le risque d’aquaplanage."
+ },
+ "O32-R14": {
+  "option": "Rouler près du véhicule précédent pour suivre ses traces.",
+  "why": "Sur neige, la distance de freinage s’allonge : il faut nettement augmenter la distance."
+ },
+ "O32-R15": {
+  "option": "Freiner fortement dans la zone de gravillons.",
+  "why": "Un freinage fort sur gravillons peut faire glisser le véhicule ; il faut ralentir avant."
+ },
+ "O32-R16": {
+  "option": "Le virage sera plus adhérent que la ligne droite.",
+  "why": "Feuilles humides et boue rendent le virage très glissant."
+ },
+ "O32-R17": {
+  "option": "Freiner brusquement au milieu de la flaque.",
+  "why": "Un freinage brusque dans l’eau peut provoquer une perte de contrôle ; il faut ralentir avant."
+ },
+ "O32-R18": {
+  "option": "Passer au point mort dans les virages.",
+  "why": "Le point mort supprime le frein moteur, utile sur une descente verglacée."
+ },
+ "O32-R21": {
+  "option": "Respecter 80 km/h seulement si la police est présente.",
+  "why": "Un signal lumineux de limitation est obligatoire en tout temps."
+ },
+ "O32-R22": {
+  "option": "La voie est réservée aux véhicules rapides.",
+  "why": "La croix rouge signifie que la voie est fermée."
+ },
+ "O32-R24": {
+  "option": "La voie est réservée aux véhicules de secours.",
+  "why": "La flèche verte ouvre la voie à la circulation générale."
+ },
+ "O32-R25": {
+  "option": "Dès qu’un bouchon est annoncé à la radio.",
+  "why": "Le R-BAU n’est utilisable que lorsque la signalisation l’ouvre."
+ },
+ "O32-R28": {
+  "option": "Uniquement aux poids lourds.",
+  "why": "Un signal placé au-dessus d’une voie s’applique à tous les usagers de cette voie."
+ },
+ "O32-R30": {
+  "option": "Klaxonner pour signaler à l’agent la flèche verte.",
+  "why": "Les ordres d’un agent priment sur la signalisation lumineuse."
+ },
+ "O32-R31": {
+  "option": "Les lignes que suit le véhicule précédent.",
+  "why": "Le marquage jaune-orange du chantier prime ; le véhicule précédent peut se tromper."
+ },
+ "O32-R32": {
+  "option": "Vous accélérez puisque le chantier paraît inactif.",
+  "why": "La limitation de chantier s’applique même sans ouvrier visible."
+ },
+ "O32-R33": {
+  "option": "Pour pouvoir dépasser par la droite plus facilement.",
+  "why": "La distance sert à compenser les voies étroites et les freinages soudains."
+ },
+ "O32-R36": {
+  "option": "Klaxonner pour avertir les ouvriers et garder l’allure.",
+  "why": "Le klaxon ne remplace pas la réduction de vitesse près d’une zone masquée."
+ },
+ "O32-R38": {
+  "option": "Avancer lentement jusqu’au milieu de la zone étroite.",
+  "why": "Au rouge, il faut s’arrêter avant la zone pour ne pas bloquer le sens opposé."
+ },
+ "O32-R39": {
+  "option": "Accélérer pour passer avant qu’il ne s’insère.",
+  "why": "Accélérer près d’un camion lent qui s’insère augmente le risque de collision."
+ },
+ "O32-R41": {
+  "option": "Entre la voie de droite et la bande d’arrêt d’urgence.",
+  "why": "Le couloir se forme entre la voie la plus à gauche et la voie suivante."
+ },
+ "O32-R42": {
+  "option": "Seulement lorsque tous les véhicules sont immobilisés.",
+  "why": "Une fois les véhicules serrés et arrêtés, il est trop tard pour former le couloir."
+ },
+ "O32-R43": {
+  "option": "Les deux voies se serrent à droite.",
+  "why": "Sur deux voies, la voie gauche se serre à gauche et la voie droite à droite."
+ },
+ "O32-R44": {
+  "option": "Elles se décalent toutes vers la gauche.",
+  "why": "Seule la voie de gauche se décale à gauche ; les autres vont à droite."
+ },
+ "O32-R45": {
+  "option": "Oui, à faible vitesse avec les feux de détresse.",
+  "why": "Le couloir de secours est réservé aux secours et aux véhicules autorisés."
+ },
+ "O32-R49": {
+  "option": "Oui, si vous mettez les feux de détresse.",
+  "why": "Les feux de détresse n’autorisent pas à bloquer l’intersection."
+ },
+ "O32-R51": {
+  "option": "Accélérer pour passer avant le rouge.",
+  "why": "Accélérer vers un feu qui passe au rouge est dangereux et gaspille de l’énergie."
+ },
+ "O32-R52": {
+  "option": "Le rapport le plus bas possible.",
+  "why": "Un rapport trop bas fait tourner le moteur à haut régime et augmente la consommation."
+ },
+ "O32-R53": {
+  "option": "Monter chaque rapport jusqu’au régime maximal.",
+  "why": "Pousser le moteur au régime maximal augmente la consommation et le bruit."
+ },
+ "O32-R55": {
+  "option": "Donner des coups d’accélérateur pour garder le moteur chaud.",
+  "why": "Faire tourner le moteur à vide sans nécessité augmente consommation et bruit."
+ },
+ "O32-R57": {
+  "option": "Une pression plus basse améliore toujours la consommation.",
+  "why": "Une pression trop basse augmente la résistance au roulement et dégrade le freinage."
+ },
+ "O32-R59": {
+  "option": "Faire chauffer le moteur à l’arrêt avant de partir.",
+  "why": "Laisser tourner le moteur à l’arrêt pour le chauffer consomme inutilement et fait du bruit."
+ }
+}

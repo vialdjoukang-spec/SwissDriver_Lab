@@ -1,0 +1,183 @@
+{
+ "chapterId": "O44",
+ "after": "retrait",
+ "section": {
+  "id": "retrait-preventif",
+  "otitle": "Retrait à titre préventif, d’admonestation et de sécurité",
+  "title": "Trois retraits, trois raisons différentes",
+  "ogoal": "Distinguer le retrait préventif, le retrait d’admonestation et le retrait de sécurité, comprendre leur but et leur lien avec le permis à l’essai.",
+  "question": "Mon permis est retiré avant même que l’affaire soit jugée : est-ce une sanction ou autre chose ?",
+  "lead": [
+   "Le mot « retrait » recouvre plusieurs mesures qui n’ont pas le même but. L’une punit une infraction, une autre protège la circulation contre un conducteur qui n’est plus apte, une troisième agit en urgence pendant que l’on clarifie la situation. Cette section vous aide à les distinguer, car leurs conditions et leur fin sont différentes."
+  ],
+  "parts": [
+   {
+    "title": "Le retrait d’admonestation : la réponse à une infraction",
+    "body": [
+     "Le **retrait d’admonestation** sanctionne une **infraction** aux règles de la circulation. Il vise à faire comprendre la faute et à éviter qu’elle se reproduise. La loi distingue les infractions légères, moyennement graves et graves : une infraction légère peut ne donner lieu qu’à un avertissement, tandis que la durée d’un retrait dépend de la gravité et des antécédents du conducteur, avec des durées minimales fixées par la loi.",
+     "Ce retrait a une **durée déterminée** : à la fin de celle-ci, le conducteur retrouve en principe son permis. Il s’ajoute à la procédure pénale (amende ou autre peine), qui est menée séparément par la justice. Pour les durées exactes, référez-vous à la LCR ou à l’office cantonal des automobiles."
+    ]
+   },
+   {
+    "title": "Le retrait de sécurité : quand l’aptitude manque",
+    "body": [
+     "Le **retrait de sécurité** ne punit pas un comportement ponctuel : il protège les autres lorsque le conducteur **n’est plus apte** à conduire. Les causes peuvent être une maladie qui empêche de conduire en sécurité, une **dépendance** à l’alcool, aux drogues ou à des médicaments, ou des **traits de caractère** qui laissent craindre que la personne ne respectera pas les règles.",
+     "Ce retrait dure **tant que l’inaptitude existe**. Le permis n’est restitué que si le conducteur prouve que la cause a disparu, par exemple au moyen d’une expertise médicale ou d’une abstinence contrôlée. Les conditions précises sont fixées par l’autorité cantonale au cas par cas."
+    ]
+   },
+   {
+    "title": "Le retrait préventif : une mesure provisoire en cas de doute sérieux",
+    "body": [
+     "Le **retrait à titre préventif** intervient lorsqu’il existe des **doutes sérieux** sur l’aptitude à conduire, par exemple après un événement grave ou des indices de dépendance. L’autorité retire le permis **provisoirement**, sans attendre la fin de l’enquête, parce qu’il serait trop dangereux de laisser la personne conduire pendant la clarification.",
+     "Ce n’est pas encore une décision définitive : il s’agit d’une **mesure d’attente**. Une fois les faits clarifiés, par exemple par une expertise, l’autorité décide de la suite : restitution du permis, retrait d’admonestation ou retrait de sécurité. Pendant ce temps, conduire reste interdit."
+    ]
+   }
+  ],
+  "words": [
+   {
+    "term": "Retrait d’admonestation",
+    "def": "Retrait de durée déterminée qui sanctionne une infraction aux règles de la circulation."
+   },
+   {
+    "term": "Retrait de sécurité",
+    "def": "Retrait qui dure tant que le conducteur n’est pas apte à conduire, par exemple en raison d’une maladie ou d’une dépendance."
+   },
+   {
+    "term": "Retrait préventif",
+    "def": "Retrait provisoire décidé en cas de doutes sérieux sur l’aptitude, en attendant que la situation soit clarifiée."
+   },
+   {
+    "term": "Aptitude à conduire",
+    "def": "La capacité durable, physique et psychique, de conduire un véhicule en sécurité."
+   }
+  ],
+  "method": [
+   "Demandez-vous d’abord pourquoi le permis est retiré : infraction, inaptitude ou doute sérieux.",
+   "Infraction : pensez retrait d’admonestation, de durée déterminée.",
+   "Inaptitude : pensez retrait de sécurité, qui dure tant que la cause existe.",
+   "Doute sérieux en attente de clarification : pensez retrait préventif, provisoire.",
+   "Si vous avez un permis à l’essai, vérifiez aussi les effets sur la période probatoire."
+  ],
+  "example": {
+   "title": "Trois conducteurs, trois retraits",
+   "scene": "Léa a commis un excès de vitesse moyennement grave sur une route hors localité. Marc est dépendant à l’alcool, selon une expertise. Sami a été contrôlé avec des indices sérieux de consommation régulière de drogue ; une expertise est ordonnée.",
+   "reasoning": [
+    "Léa a commis une infraction : elle reçoit un retrait d’admonestation de durée déterminée.",
+    "Marc n’est pas apte à conduire : il subit un retrait de sécurité, qui dure jusqu’à ce qu’il prouve que sa dépendance est surmontée.",
+    "Pour Sami, l’aptitude est sérieusement mise en doute : son permis peut être retiré à titre préventif en attendant le résultat de l’expertise."
+   ],
+   "answer": "Le même mot « retrait » cache trois mesures : sanction pour Léa, protection durable pour Marc, mesure d’attente pour Sami."
+  },
+  "trap": "Le piège est de croire qu’un retrait préventif est une punition décidée « trop tôt ». Il ne juge pas l’infraction : il protège la circulation pendant que l’on vérifie si vous êtes apte. Ne confondez pas non plus retrait de sécurité et retrait d’admonestation : le premier ne prend pas fin à une date fixe, mais quand l’aptitude est prouvée.",
+  "remember": "Admonestation = sanction d’une infraction ; sécurité = inaptitude ; préventif = provisoire en attendant de clarifier un doute sérieux.",
+  "memo": {
+   "code": "A–S–P",
+   "text": "Admonestation : j’ai fauté. Sécurité : je ne suis pas apte. Préventif : on vérifie si je suis apte."
+  },
+  "law": "LCR"
+ },
+ "questions": [
+  {
+   "id": "O44-RTP-01",
+   "chapter": "O44",
+   "section": "retrait-preventif",
+   "stem": "Qu’est-ce qu’un retrait de permis à titre préventif ?",
+   "options": [
+    "Une mesure provisoire en cas de doutes sérieux sur l’aptitude à conduire.",
+    "Une sanction définitive prononcée à la fin de l’enquête.",
+    "Une mesure qui s’applique en attendant que la situation soit clarifiée."
+   ],
+   "answers": [0, 2],
+   "truth": "Le retrait préventif est une mesure d’attente liée à un doute sérieux sur l’aptitude.",
+   "why": "Il serait trop dangereux de laisser conduire la personne pendant la clarification.",
+   "trap": "Le confondre avec une sanction définitive.",
+   "action": "Ne conduisez pas tant que l’autorité n’a pas statué.",
+   "memory": "Préventif = provisoire."
+  },
+  {
+   "id": "O44-RTP-02",
+   "chapter": "O44",
+   "section": "retrait-preventif",
+   "stem": "Que savez-vous du retrait d’admonestation ?",
+   "options": [
+    "Il sanctionne une infraction aux règles de la circulation.",
+    "Sa durée dépend notamment de la gravité de l’infraction et des antécédents.",
+    "Il dure tant que le conducteur n’a pas prouvé son aptitude."
+   ],
+   "answers": [0, 1],
+   "truth": "Le retrait d’admonestation est une sanction de durée déterminée.",
+   "why": "Il répond à une faute précise, en tenant compte de sa gravité et de l’historique du conducteur.",
+   "trap": "Le confondre avec le retrait de sécurité, lié à l’inaptitude.",
+   "action": "Identifiez la gravité de l’infraction et les antécédents.",
+   "memory": "Admonestation : j’ai fauté."
+  },
+  {
+   "id": "O44-RTP-03",
+   "chapter": "O44",
+   "section": "retrait-preventif",
+   "stem": "Dans quels cas un retrait de sécurité peut-il être prononcé ?",
+   "options": [
+    "En cas de dépendance à l’alcool ou aux drogues.",
+    "En cas de maladie qui empêche de conduire en sécurité.",
+    "Uniquement en cas de stationnement interdit répété."
+   ],
+   "answers": [0, 1],
+   "truth": "Le retrait de sécurité répond à une inaptitude à conduire.",
+   "why": "Il protège la circulation contre un conducteur qui n’est plus capable de conduire sûrement.",
+   "trap": "Croire qu’il punit une infraction ponctuelle.",
+   "action": "Distinguez faute ponctuelle et inaptitude durable.",
+   "memory": "Sécurité : je ne suis pas apte."
+  },
+  {
+   "id": "O44-RTP-04",
+   "chapter": "O44",
+   "section": "retrait-preventif",
+   "stem": "Quand un conducteur qui a subi un retrait de sécurité pour dépendance peut-il récupérer son permis ?",
+   "options": [
+    "Automatiquement après une durée fixe, quelle que soit sa situation.",
+    "Lorsqu’il prouve que la cause de son inaptitude a disparu.",
+    "Par exemple après une expertise et une abstinence contrôlée, selon les exigences de l’autorité."
+   ],
+   "answers": [1, 2],
+   "truth": "Le retrait de sécurité dure tant que l’inaptitude existe.",
+   "why": "Le permis n’est restitué qu’une fois l’aptitude à nouveau démontrée.",
+   "trap": "Croire qu’il suffit d’attendre une date.",
+   "action": "Renseignez-vous auprès de l’office cantonal sur les preuves exigées.",
+   "memory": "Aptitude prouvée, permis rendu."
+  },
+  {
+   "id": "O44-RTP-05",
+   "chapter": "O44",
+   "section": "retrait-preventif",
+   "stem": "Votre permis vous a été retiré à titre préventif. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Vous pouvez continuer à conduire jusqu’à la décision définitive.",
+    "Vous n’avez pas le droit de conduire pendant le retrait préventif.",
+    "L’autorité décidera de la suite une fois la situation clarifiée."
+   ],
+   "answers": [1, 2],
+   "truth": "Le retrait préventif interdit de conduire pendant la clarification.",
+   "why": "Il protège la circulation tant que le doute sérieux sur l’aptitude n’est pas levé.",
+   "trap": "Penser qu’une mesure provisoire n’a pas d’effet immédiat.",
+   "action": "Laissez la voiture et participez à la clarification demandée.",
+   "memory": "Provisoire, mais immédiat."
+  },
+  {
+   "id": "O44-RTP-06",
+   "chapter": "O44",
+   "section": "retrait-preventif",
+   "stem": "Vous avez un permis à l’essai. Votre permis est retiré pour une infraction moyennement grave. Quelle conséquence s’ajoute ?",
+   "options": [
+    "La période probatoire est prolongée d’un an.",
+    "La période probatoire est supprimée et le permis devient définitif.",
+    "Une deuxième infraction de ce type pendant la période probatoire entraîne l’annulation du permis à l’essai."
+   ],
+   "answers": [0, 2],
+   "truth": "Un retrait pour infraction moyenne ou grave prolonge la période probatoire d’un an ; une deuxième entraîne l’annulation.",
+   "why": "Le permis à l’essai sert à vérifier qu’un nouveau conducteur respecte les règles sur la durée.",
+   "trap": "Croire que la prolongation remplace le retrait.",
+   "action": "Considérez chaque infraction pendant la période probatoire comme un risque pour votre permis.",
+   "memory": "Une fois : plus un an. Deux fois : annulé."
+  }
+ ]
+}

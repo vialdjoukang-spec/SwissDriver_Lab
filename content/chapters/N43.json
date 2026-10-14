@@ -1,0 +1,834 @@
+{
+ "chapter": {
+  "id": "N43",
+  "official": "4.3",
+  "group": "G4",
+  "color": "#9a2f5b",
+  "otitle": "Motivations à conduire et développement du sens de la circulation",
+  "title": "Pourquoi vous conduisez, et comment cela change votre conduite",
+  "oscope": "Réfléchir à ses motivations, comprendre leur influence sur le comportement et les capacités, reconnaître les motivations risquées et développer une conscience de la sécurité qui passe avant les envies personnelles.",
+  "tagline": "À la fin de ce chapitre, vous saurez reconnaître ce qui vous pousse à conduire, repérer quand une motivation met en danger votre conduite, et choisir la sécurité même quand elle coûte du temps ou du confort.",
+  "intro": [
+   "Chaque personne a ses raisons de conduire : la liberté, le besoin de se rendre au travail, le plaisir ou parfois l’envie de se montrer. Ces raisons, appelées **motivations**, ne disparaissent pas quand vous démarrez. Elles influencent la vitesse que vous choisissez, les risques que vous acceptez et l’attention que vous portez à la route.",
+   "Ce chapitre vous aide d’abord à nommer vos propres motivations, puis à comprendre comment elles agissent sur votre conduite. Il présente ensuite les motivations les plus souvent liées à des situations dangereuses : la frime, la pression du temps et les émotions fortes.",
+   "Enfin, il montre comment passer du simple respect des règles à un véritable sens de la circulation, où la sécurité de tous passe avant vos envies personnelles. Ce chapitre est théorique : il ne comporte pas de simulation de conduite, mais ses exemples s’appuient sur des situations réelles de la circulation suisse."
+  ],
+  "keyIdea": "Vos motivations ne doivent jamais décider à votre place : quand elles poussent au risque, la sécurité passe avant elles.",
+  "memo": {
+   "code": "C–R–S",
+   "text": "Trois réflexes : Connaître ses motivations, Repérer celles qui poussent au risque, choisir la Sécurité avant tout."
+  },
+  "sources": [
+   {
+    "label": "asa · Catalogue des compétences (théorie de base, 2026)",
+    "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+   },
+   {
+    "label": "Fedlex · LCR",
+    "href": "https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr"
+   },
+   {
+    "label": "BPA · Conseils de prévention",
+    "href": "https://www.bfu.ch/fr"
+   }
+  ],
+  "sections": [
+   {
+    "id": "propres-motivations",
+    "otitle": "Réfléchir à ses motivations",
+    "title": "Pourquoi voulez-vous conduire ?",
+    "ogoal": "Nommer honnêtement les raisons qui vous poussent à conduire, afin de savoir lesquelles peuvent influencer vos décisions au volant.",
+    "question": "Si je conduis surtout pour impressionner mes amis, est-ce que cela change ma façon de rouler ?",
+    "lead": [
+     "Avant d’apprendre à manier une voiture, il est utile de vous demander **pourquoi** vous voulez conduire. Vos raisons, qu’on appelle des motivations, accompagnent chacun de vos trajets et influencent vos choix sans que vous vous en rendiez toujours compte."
+    ],
+    "parts": [
+     {
+      "title": "Des raisons utiles et légitimes",
+      "body": [
+       "La plupart des motivations sont parfaitement normales. La **liberté** : partir quand vous voulez, sans dépendre d’un horaire. L’**accessibilité** : atteindre un lieu de travail, un village de montagne ou un magasin mal desservi par les transports publics. Le **gain de temps** : un trajet plus direct qu’en train et bus pour certaines destinations.",
+       "Le **plaisir** fait aussi partie du tableau : beaucoup de personnes aiment conduire, découvrir une route ou voyager avec des proches. Il n’y a rien de honteux à cela. L’important est de savoir que ces envies existent, car une envie forte peut pousser à prendre un raccourci dans ses décisions."
+      ]
+     },
+     {
+      "title": "Les motivations qui viennent des autres",
+      "body": [
+       "Certaines raisons ne viennent pas de vous, mais de votre entourage. La **pression du groupe** en est l’exemple typique : des amis qui attendent que vous les ameniez à une fête, qui trouvent « nul » de rouler lentement ou qui vous poussent à prendre la voiture alors que vous êtes fatigué.",
+       "Ces attentes sont souvent implicites : personne ne vous oblige ouvertement, mais vous sentez que vous devriez dire oui. Les reconnaître vous permet de garder la décision en main. Vous seul êtes responsable de la conduite, quels que soient les passagers à bord."
+      ]
+     },
+     {
+      "title": "Se connaître pour mieux décider",
+      "body": [
+       "Réfléchir à ses motivations n’est pas un exercice théorique. Si vous savez que vous détestez être en retard, vous saurez aussi que vous risquez de rouler plus vite lorsque l’heure tourne. Si vous savez que vous aimez la sensation d’accélération, vous saurez repérer le moment où cette envie prend le dessus.",
+       "Le but n’est pas de supprimer vos motivations, mais de les **connaître** pour qu’elles ne décident pas à votre place. Une personne qui se connaît peut prévoir ses moments de faiblesse et s’organiser à l’avance : partir plus tôt, refuser poliment, ou laisser la voiture au garage."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Motivation",
+      "def": "Raison, besoin ou envie qui vous pousse à agir, ici à conduire ou à conduire d’une certaine manière."
+     },
+     {
+      "term": "Accessibilité",
+      "def": "Facilité avec laquelle on peut atteindre un lieu. Une zone mal desservie par les transports publics est peu accessible sans voiture."
+     },
+     {
+      "term": "Pression du groupe",
+      "def": "Influence, ouverte ou discrète, que l’entourage exerce pour vous pousser à faire comme les autres ou comme ils le souhaitent."
+     },
+     {
+      "term": "Implicite",
+      "def": "Qui n’est pas dit clairement, mais que l’on comprend ou que l’on ressent quand même."
+     }
+    ],
+    "method": [
+     "Notez les trois raisons principales pour lesquelles vous voulez conduire.",
+     "Distinguez celles qui viennent de vous et celles qui viennent de votre entourage.",
+     "Repérez quelle raison pourrait vous pousser à prendre plus de risques.",
+     "Prévoyez à l’avance une réponse ou une organisation pour ces situations."
+    ],
+    "example": {
+     "title": "La soirée à Bulle",
+     "scene": "Vous avez obtenu votre permis il y a peu. Des amis vous demandent de les conduire à une fête à Bulle, puis de les ramener vers 2 heures du matin. Vous êtes fier qu’on compte sur vous, mais vous travaillez tôt le lendemain.",
+     "reasoning": [
+      "Votre motivation est double : rendre service, et peut-être aussi montrer que vous êtes « celui qui a la voiture ».",
+      "Cette envie de faire plaisir peut vous faire oublier la fatigue du retour de nuit et la pression des passagers pendant le trajet.",
+      "En identifiant cette motivation à l’avance, vous pouvez poser vos conditions : heure de départ fixe, pas d’alcool pour vous, ou proposer une autre solution de retour."
+     ],
+     "answer": "Rendre service est une bonne raison, mais elle ne doit pas vous faire accepter une conduite fatigué ou sous pression. Vous fixez vos conditions avant de partir, ou vous refusez."
+    },
+    "trap": "Le piège est de croire que seules les « mauvaises » motivations comptent. Une raison honorable, comme rendre service ou ne pas faire attendre quelqu’un, peut elle aussi vous pousser à conduire alors que vous ne devriez pas, ou à rouler trop vite. Regardez toutes vos motivations, pas seulement celles qui semblent suspectes.",
+    "remember": "Connaître vos motivations vous permet de garder la décision, au lieu de la laisser à vos envies ou à votre entourage.",
+    "memo": {
+     "code": "L–A–P–T–G",
+     "text": "Les cinq grandes motivations : Liberté, Accessibilité, Plaisir, Temps gagné, Groupe. Pour chacune, demandez-vous : « peut-elle me pousser à prendre un risque ? »"
+    },
+    "law": "Plan d’enseignement OCTC, bloc 1",
+    "source": {
+     "label": "asa · Catalogue des compétences (théorie de base, 2026)",
+     "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+    }
+   },
+   {
+    "id": "motivations-comportement",
+    "otitle": "Motivations, comportement et capacités",
+    "title": "Comment vos motivations agissent sur votre conduite",
+    "ogoal": "Comprendre que vos motivations modifient votre vitesse, votre goût du risque, votre concentration et votre vigilance.",
+    "question": "Si je suis pressé, est-ce que je conduis vraiment moins bien, ou seulement plus vite ?",
+    "lead": [
+     "Une motivation ne reste pas dans votre tête : elle se traduit en actes. Elle peut changer la vitesse que vous choisissez, les risques que vous acceptez, et même la qualité de votre attention. Cette section montre comment ce lien fonctionne."
+    ],
+    "parts": [
+     {
+      "title": "Vitesse et goût du risque",
+      "body": [
+       "Lorsque vous êtes pressé, énervé ou que vous voulez impressionner, vous avez tendance à choisir une vitesse plus élevée et à accepter des manœuvres plus serrées : un dépassement juste, un feu orange « tiré », une distance plus courte avec le véhicule qui précède.",
+       "Le **goût du risque**, c’est-à-dire l’attrait pour les situations incertaines ou excitantes, varie d’une personne à l’autre et d’un jour à l’autre. Une même personne peut être prudente le dimanche matin et prendre des risques le vendredi soir, simplement parce que ses motivations ne sont pas les mêmes."
+      ]
+     },
+     {
+      "title": "Concentration et vigilance",
+      "body": [
+       "Vos motivations influencent aussi vos **capacités**. La **concentration** est votre capacité à rester fixé sur la tâche de conduite. La **vigilance** est votre état d’éveil et votre capacité à détecter rapidement un danger. Un esprit occupé par un rendez-vous manqué, une dispute ou l’envie de se montrer voit moins bien ce qui se passe sur la route.",
+       "Concrètement, vous risquez de remarquer plus tard un piéton qui s’approche d’un passage, un panneau de limitation ou un véhicule qui freine. Ce retard dans la perception réduit le temps dont vous disposez pour réagir, alors que la vitesse plus élevée exige justement plus de temps et de distance."
+      ]
+     },
+     {
+      "title": "Un effet qui se cumule",
+      "body": [
+       "Le danger vient souvent de la combinaison : vous roulez plus vite **et** vous voyez plus tard. Ces deux effets se renforcent. La distance nécessaire pour vous arrêter augmente, tandis que le moment où vous détectez le danger recule.",
+       "C’est pourquoi il est important de reconnaître en vous les signes d’une motivation qui prend le dessus : regarder souvent l’heure, s’agacer contre les autres, chercher à doubler à tout prix. Dès que vous les remarquez, ralentissez volontairement et recentrez-vous sur la route."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Goût du risque",
+      "def": "Attrait plus ou moins fort pour les situations incertaines ou excitantes. Il varie selon la personne et selon le moment."
+     },
+     {
+      "term": "Concentration",
+      "def": "Capacité à garder son attention sur une seule tâche, ici la conduite, sans se laisser distraire."
+     },
+     {
+      "term": "Vigilance",
+      "def": "État d’éveil qui permet de remarquer rapidement un changement ou un danger dans l’environnement."
+     },
+     {
+      "term": "Capacités",
+      "def": "Ce dont vous êtes capable à un moment donné pour percevoir, décider et agir. Elles varient avec votre état et vos émotions."
+     }
+    ],
+    "method": [
+     "Repérez quelle motivation domine au moment de partir.",
+     "Demandez-vous si elle vous pousse à rouler plus vite ou plus serré.",
+     "Vérifiez si votre esprit est vraiment disponible pour la route.",
+     "Ralentissez volontairement dès que vous remarquez un signe d’agacement ou de précipitation.",
+     "Recentrez votre regard loin devant et sur les côtés."
+    ],
+    "example": {
+     "title": "En retard pour l’entretien",
+     "scene": "Vous roulez en localité à Yverdon-les-Bains pour un entretien d’embauche. Vous avez dix minutes de retard. Vous regardez sans cesse l’horloge du tableau de bord. Devant vous, un bus s’arrête à un arrêt, et des gens attendent près d’un passage pour piétons.",
+     "reasoning": [
+      "La pression du temps vous pousse à vouloir contourner le bus rapidement.",
+      "Votre attention est en partie sur l’heure : vous risquez de ne pas voir un piéton qui traverse devant le bus.",
+      "Le gain de temps serait de quelques secondes, alors que le risque concerne la vie d’une personne."
+     ],
+     "answer": "Vous reconnaissez que votre motivation réduit votre vigilance. Vous ralentissez, observez le passage et l’avant du bus, et acceptez d’arriver un peu plus tard."
+    },
+    "trap": "Le piège est de penser qu’être pressé change seulement la vitesse. En réalité, la précipitation réduit aussi votre attention : vous roulez plus vite tout en voyant moins bien. Ne comptez pas sur vos réflexes pour compenser.",
+    "remember": "Une motivation forte peut augmenter votre vitesse et diminuer votre attention en même temps : c’est ce cumul qui est dangereux.",
+    "memo": {
+     "code": "V–R–C–V",
+     "text": "Ce que vos motivations touchent : Vitesse, Risque accepté, Concentration, Vigilance. Si l’un des quatre bouge, vérifiez les trois autres."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 1",
+    "source": {
+     "label": "asa · Catalogue des compétences (théorie de base, 2026)",
+     "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+    }
+   },
+   {
+    "id": "motivations-risquees",
+    "otitle": "Motivations typiques et risquées",
+    "title": "Frime, temps qui presse, émotions : les motivations à surveiller",
+    "ogoal": "Reconnaître les motivations qui mènent le plus souvent à une conduite dangereuse et savoir comment les désamorcer.",
+    "question": "Comment savoir si je conduis pour me déplacer ou pour autre chose ?",
+    "lead": [
+     "Certaines motivations reviennent très souvent lorsque l’on analyse des situations dangereuses. Elles n’ont rien à voir avec le besoin de se déplacer : elles concernent l’image de soi, la gestion du temps ou les émotions. Les connaître permet de les reconnaître en vous."
+    ],
+    "parts": [
+     {
+      "title": "La frime et la recherche de reconnaissance",
+      "body": [
+       "La **frime**, c’est vouloir se montrer : faire crisser les pneus, accélérer fort à la sortie d’un giratoire, rouler vite devant des amis ou défier un autre conducteur. La voiture devient alors un moyen d’obtenir l’admiration, et non plus un moyen de transport.",
+       "Ce type de comportement se produit souvent avec des passagers du même âge, ou lorsqu’on se sent observé. Il pousse à réduire volontairement les marges de sécurité, précisément pour impressionner. C’est donc l’une des motivations les plus dangereuses, car le risque y est recherché."
+      ]
+     },
+     {
+      "title": "La pression du temps",
+      "body": [
+       "Être en retard, vouloir « rattraper » du temps perdu dans un bouchon ou enchaîner trop de rendez-vous crée une **pression du temps**. On roule alors plus vite, on suit de trop près, on s’engage dans des créneaux trop courts.",
+       "Pourtant, sur la plupart des trajets, le temps réellement gagné en roulant plus vite est faible, surtout en localité où les feux, les giratoires et le trafic imposent leur rythme. Le meilleur remède à la pression du temps est l’organisation : partir plus tôt, prévoir une marge, prévenir de son retard une fois arrêté."
+      ]
+     },
+     {
+      "title": "Les émotions au volant",
+      "body": [
+       "La colère, la frustration, la tristesse, mais aussi l’euphorie, par exemple après une bonne nouvelle, modifient la conduite. La colère pousse à « punir » un autre usager en le collant ou en lui coupant la route. La tristesse ou l’euphorie occupent l’esprit et réduisent l’attention.",
+       "Une émotion forte n’est pas une faute en soi, mais conduire sous son influence sans s’en rendre compte en est une source de danger. Apprenez à repérer vos réactions : serrer le volant, parler seul contre les autres, accélérer brusquement. Lorsque vous les remarquez, augmentez la distance, ralentissez, et si nécessaire arrêtez-vous dans un endroit sûr."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Frime",
+      "def": "Fait de chercher à se montrer ou à impressionner les autres, ici par sa manière de conduire."
+     },
+     {
+      "term": "Pression du temps",
+      "def": "Sentiment de devoir aller plus vite parce que l’on est en retard ou que l’on a trop de choses à faire."
+     },
+     {
+      "term": "Euphorie",
+      "def": "Sentiment de joie très intense, qui peut aussi détourner l’attention et rendre trop sûr de soi."
+     },
+     {
+      "term": "Marge de sécurité",
+      "def": "Espace et temps que vous gardez en réserve pour pouvoir réagir à un imprévu."
+     }
+    ],
+    "method": [
+     "Demandez-vous si vous conduisez pour vous déplacer ou pour une autre raison.",
+     "Repérez si vous êtes observé, pressé ou sous le coup d’une émotion.",
+     "Refusez toute manœuvre dont le but est d’impressionner.",
+     "Organisez vos trajets pour ne pas dépendre de quelques minutes.",
+     "Arrêtez-vous dans un endroit sûr si une émotion devient trop forte."
+    ],
+    "example": {
+     "title": "Le défi au feu rouge",
+     "scene": "Vous attendez à un feu rouge en sortie de Sion avec trois amis à bord. Une voiture s’arrête à côté de vous ; son conducteur fait vrombir son moteur en vous regardant. Vos amis rient et vous encouragent à « lui montrer ».",
+     "reasoning": [
+      "Votre motivation n’est plus de vous déplacer, mais de répondre à un défi : c’est de la frime, renforcée par la pression du groupe.",
+      "Une accélération brutale vous ferait entrer dans le carrefour suivant à une vitesse inadaptée, avec une attention tournée vers l’autre voiture plutôt que vers la route.",
+      "Refuser le défi ne vous coûte rien ; l’accepter peut coûter un accident grave, une infraction grave et votre permis."
+     ],
+     "answer": "Vous démarrez normalement au vert et laissez l’autre conducteur partir. Vous pouvez dire simplement à vos amis que vous ne jouez pas à ça avec la voiture."
+    },
+    "trap": "Le piège est de croire qu’on maîtrise la situation parce qu’on « connaît la route » ou qu’on a « juste accéléré un peu ». Dans la frime, le risque est recherché volontairement : la marge de sécurité est réduite exprès. Aucune maîtrise ne compense une marge que l’on a soi-même supprimée.",
+    "remember": "Frime, retard et émotions fortes : trois signaux qui doivent vous faire ralentir, jamais accélérer.",
+    "memo": {
+     "code": "F–T–E",
+     "text": "Les trois motivations à surveiller : Frime, Temps qui presse, Émotions. Quand l’une apparaît, une seule réponse : je relâche l’accélérateur."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 1",
+    "source": {
+     "label": "BPA · Conseils de prévention",
+     "href": "https://www.bfu.ch/fr"
+    }
+   },
+   {
+    "id": "sens-circulation",
+    "otitle": "Développer le sens de la circulation",
+    "title": "Du respect des règles à une vraie conscience de la sécurité",
+    "ogoal": "Comprendre que le but n’est pas seulement d’obéir aux règles, mais d’intégrer la sécurité comme priorité, avant vos motivations personnelles.",
+    "question": "Si je respecte toutes les règles, est-ce que j’ai fait tout ce qu’on attend de moi ?",
+    "lead": [
+     "Au début, on respecte les règles parce qu’elles existent et parce qu’on craint d’être sanctionné. Peu à peu, l’objectif est de comprendre **pourquoi** elles existent et d’agir pour la sécurité même là où aucune règle précise ne vous dit quoi faire. C’est ce qu’on appelle le sens de la circulation."
+    ],
+    "parts": [
+     {
+      "title": "De l’obéissance à la compréhension",
+      "body": [
+       "Le premier niveau, c’est l’**obéissance** : vous respectez la limitation parce qu’il y a un panneau, et vous vous arrêtez au feu rouge parce que c’est interdit de passer. C’est indispensable, mais cela ne suffit pas, car aucune règle ne peut prévoir toutes les situations.",
+       "Le niveau suivant, c’est la **compréhension** : vous savez que la limitation devant une école protège des enfants imprévisibles, que la distance sert à vous laisser le temps de freiner. Quand vous comprenez le but d’une règle, vous pouvez l’appliquer intelligemment, et aller plus loin qu’elle lorsque la situation l’exige."
+      ]
+     },
+     {
+      "title": "La règle fondamentale comme boussole",
+      "body": [
+       "La loi sur la circulation routière contient une règle qui résume cette idée : chacun doit se comporter de manière à ne pas gêner ni mettre en danger les autres usagers (LCR art. 26). Elle demande aussi une prudence particulière lorsque des indices montrent qu’un usager va mal se comporter, et envers les enfants, les personnes âgées ou les personnes qui semblent inattentives.",
+       "Cette règle s’applique **partout et tout le temps**, même là où aucun panneau ne donne d’indication. Elle fait de la sécurité un devoir général, pas seulement le respect d’une liste d’interdictions. C’est elle qui transforme l’obéissance en **conscience profonde de la sécurité**."
+      ]
+     },
+     {
+      "title": "La sécurité avant vos motivations",
+      "body": [
+       "Avoir le sens de la circulation, c’est accepter que la sécurité passe **avant** vos motivations personnelles : votre envie d’arriver vite, votre confort ou votre plaisir. Cela peut signifier rester derrière un tracteur sur une route sinueuse, renoncer à une place de parc mal placée, ou rouler en dessous de la limite par mauvais temps.",
+       "Ce choix a un prix : quelques minutes de plus, un peu moins de confort. Mais c’est un prix faible en comparaison des conséquences d’un accident. Un conducteur qui a développé ce sens n’a pas besoin d’un panneau ou d’un contrôle de police pour choisir l’option sûre : il le fait parce qu’il a compris que c’est la seule raisonnable."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Sens de la circulation",
+      "def": "Attitude qui consiste à agir pour la sécurité de tous, en comprenant le but des règles, et pas seulement par crainte d’une sanction."
+     },
+     {
+      "term": "Obéissance",
+      "def": "Respect d’une règle parce qu’elle existe ou parce qu’on craint d’être puni, sans forcément en comprendre la raison."
+     },
+     {
+      "term": "Règle fondamentale",
+      "def": "Règle de la LCR (art. 26) qui oblige chacun à se comporter de manière à ne pas gêner ni mettre en danger les autres."
+     },
+     {
+      "term": "Conscience de la sécurité",
+      "def": "Le fait d’avoir intégré la sécurité comme priorité personnelle, au point de la choisir même sans contrôle ni règle précise."
+     }
+    ],
+    "method": [
+     "Pour chaque règle, demandez-vous qui elle protège et contre quel danger.",
+     "Cherchez les situations où aucune règle précise ne vous guide.",
+     "Appliquez alors la règle fondamentale : ne gêner ni mettre en danger personne.",
+     "Acceptez de perdre du temps ou du confort quand la sécurité l’exige."
+    ],
+    "example": {
+     "title": "Derrière le tracteur dans le Jura",
+     "scene": "Hors localité, sur une route sinueuse du Jura, vous suivez un tracteur à faible vitesse depuis plusieurs kilomètres. Aucune ligne ne vous interdit de dépasser à cet endroit, mais un virage masque la circulation venant en face.",
+     "reasoning": [
+      "Du point de vue de l’obéissance, rien ne vous l’interdit formellement : il n’y a pas de ligne continue.",
+      "Du point de vue de la sécurité, vous ne pouvez pas vérifier que la voie opposée restera libre pendant toute la manœuvre.",
+      "Votre motivation (gagner du temps, ne plus être gêné) ne pèse rien face au risque d’une collision frontale."
+     ],
+     "answer": "Vous restez derrière le tracteur à une distance qui vous laisse voir, et vous attendez un tronçon dégagé avec une visibilité suffisante. La sécurité prime sur votre envie d’avancer."
+    },
+    "trap": "Le piège est de raisonner uniquement en termes d’interdit : « ce n’est pas interdit, donc je peux ». L’absence d’interdiction ne signifie pas que la manœuvre est sûre. La règle fondamentale vous oblige à éviter tout danger prévisible, même là où aucun panneau ne le précise.",
+    "remember": "Pas interdit ne veut pas dire sûr : la sécurité passe avant votre vitesse, votre confort et vos envies.",
+    "memo": {
+     "code": "O–C–C",
+     "text": "Les trois étapes du sens de la circulation : Obéir (je respecte la règle), Comprendre (je sais pourquoi elle existe), Choisir la sécurité (même sans règle ni contrôle)."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 1 ; LCR art. 26",
+    "source": {
+     "label": "Fedlex · LCR art. 26",
+     "href": "https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr"
+    }
+   }
+  ]
+ },
+ "questions": [
+  {
+   "id": "N43-MOT-01",
+   "chapter": "N43",
+   "section": "propres-motivations",
+   "stem": "Laquelle de ces raisons de conduire est une motivation tout à fait légitime ?",
+   "options": [
+    "Pouvoir rejoindre un lieu de travail mal desservi par les transports publics.",
+    "Montrer à ses amis que l’on ose rouler plus vite que les autres.",
+    "Gagner du temps sur un trajet qui serait très long en transports publics."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "L’accessibilité et le gain de temps sont des motivations normales.",
+   "why": "Elles répondent à un besoin réel de déplacement, sans exiger de prendre des risques.",
+   "trap": "Confondre plaisir d’impressionner et besoin de mobilité.",
+   "action": "Identifiez vos raisons utiles et gardez-les séparées de l’envie de vous montrer.",
+   "memory": "Besoin de bouger : oui. Besoin de briller : non."
+  },
+  {
+   "id": "N43-MOT-02",
+   "chapter": "N43",
+   "section": "propres-motivations",
+   "stem": "Pourquoi est-il utile de réfléchir à ses propres motivations avant de conduire ?",
+   "options": [
+    "Parce qu’elles peuvent influencer vos décisions sans que vous vous en rendiez compte.",
+    "Parce que la loi exige de déclarer ses motivations lors de la demande de permis.",
+    "Parce que les connaître permet de prévoir les situations où vous serez tenté de prendre un risque."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Connaître ses motivations aide à anticiper ses propres faiblesses.",
+   "why": "Une motivation agit souvent en arrière-plan : la nommer permet de la contrôler.",
+   "trap": "Croire qu’il s’agit d’une formalité administrative.",
+   "action": "Faites la liste de vos raisons et repérez celles qui pourraient vous pousser à accélérer.",
+   "memory": "Je me connais, je décide."
+  },
+  {
+   "id": "N43-MOT-03",
+   "chapter": "N43",
+   "section": "propres-motivations",
+   "stem": "Des amis insistent pour que vous les rameniez d’une fête alors que vous êtes très fatigué. Qu’est-ce qui est juste ?",
+   "options": [
+    "Il s’agit d’une forme de pression du groupe.",
+    "Les passagers partagent la responsabilité de la conduite avec vous, vous pouvez donc accepter.",
+    "Vous pouvez refuser : c’est vous qui êtes responsable de la conduite."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La décision de conduire et la responsabilité restent celles du conducteur.",
+   "why": "La fatigue diminue l’attention et les réflexes ; céder à la pression du groupe ne change rien à ce danger.",
+   "trap": "Penser que l’insistance des autres vous décharge de votre responsabilité.",
+   "action": "Refusez poliment et proposez une autre solution de retour.",
+   "memory": "Leur envie ne remplace pas mon état."
+  },
+  {
+   "id": "N43-MOT-04",
+   "chapter": "N43",
+   "section": "propres-motivations",
+   "stem": "Le plaisir de conduire…",
+   "options": [
+    "est une motivation interdite qu’il faut faire disparaître.",
+    "est une motivation normale, à condition qu’elle ne prenne pas le dessus sur la sécurité.",
+    "peut pousser à rechercher des sensations, comme l’accélération, qu’il faut savoir repérer."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "Le plaisir est légitime, mais il doit rester sous contrôle.",
+   "why": "Aimer conduire n’est pas un problème ; rechercher des sensations fortes sur la route en est un.",
+   "trap": "Croire qu’il faut soit tout s’interdire, soit tout s’autoriser.",
+   "action": "Profitez du trajet, mais gardez vos marges de sécurité intactes.",
+   "memory": "Plaisir oui, sensations fortes non."
+  },
+  {
+   "id": "N43-MOT-05",
+   "chapter": "N43",
+   "section": "propres-motivations",
+   "stem": "Qu’est-ce qui caractérise souvent la pression du groupe ?",
+   "options": [
+    "Elle est parfois implicite : personne ne vous oblige ouvertement, mais vous ressentez une attente.",
+    "Elle ne concerne que les conducteurs professionnels.",
+    "Elle peut vous pousser à conduire autrement que vous ne le feriez seul."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La pression du groupe peut être discrète et modifier votre conduite.",
+   "why": "Les remarques, les regards ou les attentes des passagers influencent la vitesse et les choix de conduite.",
+   "trap": "Penser qu’il n’y a pression que lorsque quelqu’un donne un ordre.",
+   "action": "Repérez ces attentes et rappelez-vous que c’est vous qui conduisez.",
+   "memory": "Personne ne dit rien ? Ça peut quand même peser."
+  },
+  {
+   "id": "N43-MOT-06",
+   "chapter": "N43",
+   "section": "propres-motivations",
+   "stem": "Vous savez que vous détestez arriver en retard. Quelle conclusion utile pouvez-vous en tirer ?",
+   "options": [
+    "Vous risquez de rouler plus vite quand l’heure tourne.",
+    "Partir plus tôt est une bonne manière de neutraliser cette motivation.",
+    "Ce trait de caractère n’a aucun lien avec votre façon de conduire."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Connaître une motivation permet de s’organiser pour qu’elle ne pousse pas au risque.",
+   "why": "La peur du retard crée une pression du temps qui pousse à accélérer et à prendre des risques.",
+   "trap": "Croire que son caractère reste à la maison quand on prend le volant.",
+   "action": "Prévoyez une marge de temps avant chaque trajet important.",
+   "memory": "Partir tôt, rouler calme."
+  },
+  {
+   "id": "N43-CMP-01",
+   "chapter": "N43",
+   "section": "motivations-comportement",
+   "stem": "Vous êtes très pressé. Quels effets cela peut-il avoir sur votre conduite ?",
+   "options": [
+    "Vous avez tendance à choisir une vitesse plus élevée.",
+    "Votre attention est améliorée, car vous êtes plus motivé.",
+    "Vous acceptez plus facilement des manœuvres serrées, comme un dépassement juste."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La pression du temps augmente la vitesse et le risque accepté.",
+   "why": "L’envie d’arriver vite fait paraître acceptables des marges plus faibles.",
+   "trap": "Croire que la motivation rend automatiquement plus attentif.",
+   "action": "Quand vous êtes pressé, ralentissez volontairement et gardez vos distances.",
+   "memory": "Pressé = prudence renforcée."
+  },
+  {
+   "id": "N43-CMP-02",
+   "chapter": "N43",
+   "section": "motivations-comportement",
+   "stem": "Qu’est-ce que la vigilance au volant ?",
+   "options": [
+    "Un état d’éveil qui permet de remarquer rapidement un danger.",
+    "Une capacité qui reste identique quels que soient vos émotions et votre état.",
+    "Une capacité qui peut diminuer lorsque votre esprit est occupé par autre chose."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La vigilance dépend de votre état et de ce qui occupe votre esprit.",
+   "why": "Les soucis, les émotions et les distractions réduisent la capacité à détecter un danger.",
+   "trap": "Penser que la vigilance est fixe chez une personne.",
+   "action": "Avant de partir, vérifiez que votre esprit est disponible pour la route.",
+   "memory": "Esprit ailleurs, danger vu plus tard."
+  },
+  {
+   "id": "N43-CMP-03",
+   "chapter": "N43",
+   "section": "motivations-comportement",
+   "stem": "Pourquoi la combinaison « vitesse plus élevée + attention réduite » est-elle particulièrement dangereuse ?",
+   "options": [
+    "Parce que vous détectez le danger plus tard alors qu’il vous faut plus de distance pour vous arrêter.",
+    "Parce que les deux effets s’annulent l’un l’autre.",
+    "Parce que le temps disponible pour réagir diminue des deux côtés."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Les deux effets se cumulent et réduisent fortement votre marge.",
+   "why": "Plus vous roulez vite, plus la distance d’arrêt augmente ; moins vous êtes attentif, plus vous réagissez tard.",
+   "trap": "Croire que de bons réflexes compensent un manque d’attention.",
+   "action": "Réduisez la vitesse dès que votre attention n’est pas complète.",
+   "memory": "Plus vite + moins attentif = marge écrasée."
+  },
+  {
+   "id": "N43-CMP-04",
+   "chapter": "N43",
+   "section": "motivations-comportement",
+   "stem": "Le goût du risque d’une personne…",
+   "options": [
+    "est toujours le même, quel que soit le jour ou la situation.",
+    "peut varier selon le moment et les motivations du jour.",
+    "peut être renforcé par la présence de passagers que l’on veut impressionner."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "Le goût du risque change selon la situation et l’entourage.",
+   "why": "Une même personne peut être prudente un jour et prendre des risques un autre jour, selon ce qui la motive.",
+   "trap": "Se croire prudent « par nature » et donc à l’abri.",
+   "action": "Surveillez votre comportement surtout dans les situations où vous savez être tenté.",
+   "memory": "Prudent hier ne garantit pas prudent ce soir."
+  },
+  {
+   "id": "N43-CMP-05",
+   "chapter": "N43",
+   "section": "motivations-comportement",
+   "stem": "Quel signe montre qu’une motivation est en train de prendre le dessus sur votre conduite ?",
+   "options": [
+    "Vous regardez souvent l’heure et vous vous agacez contre les autres usagers.",
+    "Vous cherchez à dépasser à tout prix.",
+    "Vous gardez une distance suffisante et une vitesse stable."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "L’agacement, la précipitation et l’envie de dépasser sont des signaux d’alerte.",
+   "why": "Ces comportements montrent que votre objectif personnel passe avant la lecture de la route.",
+   "trap": "Ne remarquer ces signes qu’après un incident.",
+   "action": "Dès qu’un de ces signes apparaît, levez le pied et recentrez-vous.",
+   "memory": "Je m’agace ? Je ralentis."
+  },
+  {
+   "id": "N43-CMP-06",
+   "chapter": "N43",
+   "section": "motivations-comportement",
+   "stem": "Vous venez d’avoir une dispute au téléphone juste avant de partir. Qu’est-ce qui est juste ?",
+   "options": [
+    "Votre concentration risque d’être réduite pendant le trajet.",
+    "L’émotion disparaît dès que vous démarrez le moteur.",
+    "Il peut être sage d’attendre quelques minutes avant de partir."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Une émotion forte occupe l’esprit et réduit la concentration.",
+   "why": "Les pensées liées à la dispute détournent votre attention de la route.",
+   "trap": "Croire que l’on se calme automatiquement en conduisant.",
+   "action": "Prenez le temps de vous calmer avant de prendre le volant.",
+   "memory": "Émotion forte : je respire avant de rouler."
+  },
+  {
+   "id": "N43-RIS-01",
+   "chapter": "N43",
+   "section": "motivations-risquees",
+   "stem": "Pourquoi la frime au volant est-elle une motivation particulièrement dangereuse ?",
+   "options": [
+    "Parce que le risque y est recherché volontairement pour impressionner.",
+    "Parce qu’elle pousse à réduire exprès les marges de sécurité.",
+    "Parce qu’elle n’apparaît que chez les conducteurs expérimentés."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Dans la frime, réduire la marge fait partie du but recherché.",
+   "why": "Le conducteur cherche l’admiration en montrant qu’il ose ce que les autres n’osent pas.",
+   "trap": "Penser que la frime est un jeu sans conséquence.",
+   "action": "Refusez toute manœuvre dont le but est d’être vu.",
+   "memory": "Rouler pour être vu, c’est rouler pour le risque."
+  },
+  {
+   "id": "N43-RIS-02",
+   "chapter": "N43",
+   "section": "motivations-risquees",
+   "stem": "Vous êtes en retard. Quelle est la meilleure manière de gérer cette pression du temps ?",
+   "options": [
+    "Accepter d’arriver plus tard et prévenir une fois arrêté dans un endroit sûr.",
+    "Raccourcir la distance avec le véhicule qui précède pour gagner quelques secondes.",
+    "Mieux organiser vos prochains trajets en prévoyant une marge de temps."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "L’organisation, pas la vitesse, est la réponse à la pression du temps.",
+   "why": "Le temps gagné en roulant plus vite est souvent faible, alors que le risque augmente nettement.",
+   "trap": "Croire que rouler plus vite permet de rattraper beaucoup de temps.",
+   "action": "Partez plus tôt et prévenez de votre retard sans téléphoner en roulant.",
+   "memory": "Retard ? Je préviens, je ne fonce pas."
+  },
+  {
+   "id": "N43-RIS-03",
+   "chapter": "N43",
+   "section": "motivations-risquees",
+   "stem": "Un automobiliste vous a coupé la route. Vous êtes en colère. Qu’est-ce qui est juste ?",
+   "options": [
+    "Le suivre de près pour lui montrer qu’il a eu tort est une réaction acceptable.",
+    "La colère peut vous pousser à des comportements dangereux, comme coller ou couper la route.",
+    "Augmenter la distance et ralentir aide à retrouver le calme."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "La colère pousse à « punir » ; la bonne réponse est de prendre de la distance.",
+   "why": "Une réaction de vengeance crée un nouveau danger, pour vous comme pour les autres.",
+   "trap": "Croire qu’il faut « donner une leçon » à l’autre.",
+   "action": "Laissez de l’espace, respirez et concentrez-vous sur votre propre trajet.",
+   "memory": "En colère ? Je laisse filer."
+  },
+  {
+   "id": "N43-RIS-04",
+   "chapter": "N43",
+   "section": "motivations-risquees",
+   "stem": "Vous venez d’apprendre une excellente nouvelle et vous êtes euphorique. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Une émotion positive peut aussi détourner votre attention de la route.",
+    "Seules les émotions négatives influencent la conduite.",
+    "L’euphorie peut vous rendre trop sûr de vous."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Les émotions positives et négatives peuvent toutes réduire la vigilance.",
+   "why": "Un esprit occupé par la joie pense à autre chose qu’à la circulation et peut sous-estimer les risques.",
+   "trap": "Croire que la bonne humeur protège.",
+   "action": "Prenez un moment avant de partir et restez attentif aux signes de distraction.",
+   "memory": "Joie ou colère : l’esprit est ailleurs."
+  },
+  {
+   "id": "N43-RIS-05",
+   "chapter": "N43",
+   "section": "motivations-risquees",
+   "stem": "À un feu, un autre conducteur vous provoque et vos passagers vous encouragent à le défier. Que faites-vous ?",
+   "options": [
+    "Vous démarrez normalement et laissez l’autre partir.",
+    "Vous acceptez le défi seulement si la route paraît dégagée.",
+    "Vous reconnaissez un mélange de frime et de pression du groupe."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Refuser un défi est toujours la seule réponse sûre.",
+   "why": "Une accélération brutale pour gagner un « duel » fait entrer dans la suite du trajet à une vitesse inadaptée.",
+   "trap": "Penser qu’une route dégagée rend le défi sans danger.",
+   "action": "Démarrez calmement et ignorez la provocation.",
+   "memory": "Défi lancé, défi ignoré."
+  },
+  {
+   "id": "N43-RIS-06",
+   "chapter": "N43",
+   "section": "motivations-risquees",
+   "stem": "Quels signes peuvent indiquer qu’une émotion influence votre conduite ?",
+   "options": [
+    "Vous serrez fort le volant et accélérez brusquement.",
+    "Vous gardez un regard large et une vitesse adaptée.",
+    "Vous parlez contre les autres usagers à voix haute."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Tension physique, gestes brusques et commentaires agressifs sont des signes d’alerte.",
+   "why": "Ces réactions montrent que l’émotion guide votre conduite plutôt que la lecture de la route.",
+   "trap": "Ne pas remarquer ses propres signes, faute de s’observer.",
+   "action": "Si vous les remarquez, ralentissez et arrêtez-vous si nécessaire dans un endroit sûr.",
+   "memory": "Je serre, je râle : je ralentis."
+  },
+  {
+   "id": "N43-SEN-01",
+   "chapter": "N43",
+   "section": "sens-circulation",
+   "stem": "Qu’est-ce qui caractérise le « sens de la circulation » ?",
+   "options": [
+    "Comprendre le but des règles et agir pour la sécurité même sans contrôle.",
+    "Respecter les règles uniquement lorsqu’un contrôle de police est possible.",
+    "Faire passer la sécurité avant ses motivations personnelles."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Le sens de la circulation va au-delà de la simple obéissance.",
+   "why": "Il repose sur la compréhension des règles et sur la priorité donnée à la sécurité de tous.",
+   "trap": "Croire que l’objectif est seulement d’éviter les amendes.",
+   "action": "Demandez-vous à chaque règle qui elle protège.",
+   "memory": "Obéir, comprendre, choisir la sécurité."
+  },
+  {
+   "id": "N43-SEN-02",
+   "chapter": "N43",
+   "section": "sens-circulation",
+   "stem": "Que demande la règle fondamentale de la LCR (art. 26) ?",
+   "options": [
+    "De se comporter de manière à ne pas gêner ni mettre en danger les autres usagers.",
+    "De respecter uniquement les panneaux, sans autre obligation.",
+    "D’être particulièrement prudent envers les enfants et les personnes âgées."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La règle fondamentale impose un devoir général de prudence.",
+   "why": "Elle s’applique partout, y compris là où aucun panneau ne donne d’indication, et exige une attention accrue envers les usagers vulnérables.",
+   "trap": "Penser que la loi se limite à la signalisation.",
+   "action": "Appliquez cette règle comme boussole dans toutes les situations.",
+   "memory": "Ni gêner, ni mettre en danger."
+  },
+  {
+   "id": "N43-SEN-03",
+   "chapter": "N43",
+   "section": "sens-circulation",
+   "stem": "Sur une route sans ligne continue, un virage masque la circulation en face. Vous suivez un véhicule lent. Qu’est-ce qui est juste ?",
+   "options": [
+    "Puisque rien n’interdit le dépassement, vous pouvez dépasser.",
+    "L’absence d’interdiction ne signifie pas que la manœuvre est sûre.",
+    "Vous attendez une visibilité suffisante pour toute la manœuvre."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "Pas interdit ne veut pas dire sûr.",
+   "why": "Sans visibilité, vous ne pouvez pas vérifier que la voie opposée restera libre.",
+   "trap": "Raisonner seulement en termes d’interdit.",
+   "action": "Restez derrière et attendez un tronçon dégagé.",
+   "memory": "Pas de vue, pas de dépassement."
+  },
+  {
+   "id": "N43-SEN-04",
+   "chapter": "N43",
+   "section": "sens-circulation",
+   "stem": "Il pleut fortement sur l’autoroute et la visibilité est réduite. Qu’est-ce qui montre un bon sens de la circulation ?",
+   "options": [
+    "Rouler en dessous de la limite si la situation l’exige.",
+    "Garder la vitesse maximale autorisée, puisqu’elle est légale.",
+    "Accepter d’arriver plus tard pour garder une marge de sécurité."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La limite est un plafond ; la sécurité peut exiger d’aller moins vite.",
+   "why": "La pluie allonge la distance de freinage et réduit la visibilité : la vitesse doit s’adapter.",
+   "trap": "Confondre vitesse autorisée et vitesse adaptée.",
+   "action": "Réduisez la vitesse et augmentez la distance.",
+   "memory": "Légal n’est pas forcément adapté."
+  },
+  {
+   "id": "N43-SEN-05",
+   "chapter": "N43",
+   "section": "sens-circulation",
+   "stem": "Pourquoi l’obéissance aux règles ne suffit-elle pas à elle seule ?",
+   "options": [
+    "Parce qu’aucune règle ne peut prévoir toutes les situations de la route.",
+    "Parce que les règles de circulation sont facultatives.",
+    "Parce qu’il faut aussi savoir agir pour la sécurité là où aucune règle précise ne guide."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Les règles couvrent beaucoup de situations, mais pas toutes.",
+   "why": "Comprendre leur but permet de bien réagir dans les situations imprévues.",
+   "trap": "Penser que comprendre les règles permet de les ignorer.",
+   "action": "Respectez les règles et appliquez leur esprit quand elles se taisent.",
+   "memory": "La règle guide, la conscience complète."
+  },
+  {
+   "id": "N43-SEN-06",
+   "chapter": "N43",
+   "section": "sens-circulation",
+   "stem": "Faire passer la sécurité avant ses motivations personnelles peut signifier…",
+   "options": [
+    "renoncer à une place de parc mal placée qui gêne la visibilité.",
+    "accepter quelques minutes de retard plutôt qu’un dépassement risqué.",
+    "garder sa vitesse pour ne pas perdre de temps, même si un enfant est au bord de la route."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "La sécurité peut coûter du temps ou du confort, et c’est un prix acceptable.",
+   "why": "Un peu de retard ou d’inconfort est sans commune mesure avec les conséquences d’un accident.",
+   "trap": "Croire que la sécurité ne doit jamais rien coûter.",
+   "action": "Quand la sécurité l’exige, choisissez l’option la plus prudente sans hésiter.",
+   "memory": "Sécurité d’abord, confort ensuite."
+  }
+ ]
+}

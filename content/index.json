@@ -1,0 +1,119 @@
+{
+ "schema": "swissdriver.curriculum-extension/1",
+ "source": {
+  "label": "asa · Catalogue des compétences d’action et des objectifs d’apprentissage pour l’examen de la théorie de base (juillet 2026)",
+  "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf",
+  "effective": "2027-01-01",
+  "checked": "2026-10-14"
+ },
+ "official": {
+  "O11": "1.1",
+  "O12": "1.2",
+  "O13": "1.3",
+  "O14": "1.4",
+  "O21": "2.1",
+  "O22": "2.2",
+  "O23": "2.3",
+  "O31": "3.1",
+  "O32": "3.2",
+  "O41": "4.1",
+  "O42": "4.2",
+  "O43": "4.4",
+  "O44": "4.5",
+  "O45": "4.9",
+  "O51": "5.1",
+  "O52": "5.2",
+  "O53": "5.3",
+  "O54": "5.4",
+  "U25": "6"
+ },
+ "groupTitles": {
+  "G4": "Conductrices et conducteurs",
+  "G6": "Systèmes d’aide à la conduite et d’automatisation"
+ },
+ "groupOrder": {
+  "G2": [
+   "O21",
+   "O22",
+   "O23",
+   "N24",
+   "N25",
+   "N26"
+  ],
+  "G3": [
+   "O31",
+   "O32",
+   "N33"
+  ],
+  "G4": [
+   "O41",
+   "O42",
+   "N43",
+   "O43",
+   "O44",
+   "N46",
+   "N47",
+   "N48",
+   "O45"
+  ]
+ },
+ "chapters": [
+  "content/chapters/N24.json",
+  "content/chapters/N25.json",
+  "content/chapters/N26.json",
+  "content/chapters/N33.json",
+  "content/chapters/N43.json",
+  "content/chapters/N46.json",
+  "content/chapters/N47.json",
+  "content/chapters/N48.json"
+ ],
+ "sections": [
+  "content/sections/O13-agents-auxiliaires.json",
+  "content/sections/O14-orientation.json",
+  "content/sections/O43-moto-base.json",
+  "content/sections/U25-systemes.json",
+  "content/sections/O54-plaques-speciales.json",
+  "content/sections/O52-surface-charge.json",
+  "content/sections/O31-bus-arret.json",
+  "content/sections/O44-retrait-preventif.json",
+  "content/sections/O43-categories.json",
+  "content/sections/O14-feux-pietons.json",
+  "content/sections/O45-negligence-grave.json",
+  "content/sections/O32-situations-exceptionnelles.json",
+  "content/sections/O13-familles-signaux.json"
+ ],
+ "questions": [
+  "content/questions/U25-extra.json"
+ ],
+ "extraOptions": [
+  "content/extra-options/N24.json",
+  "content/extra-options/N25.json",
+  "content/extra-options/N26.json",
+  "content/extra-options/N33.json",
+  "content/extra-options/N43.json",
+  "content/extra-options/N46.json",
+  "content/extra-options/N47.json",
+  "content/extra-options/N48.json",
+  "content/extra-options/O11.json",
+  "content/extra-options/O12.json",
+  "content/extra-options/O13.json",
+  "content/extra-options/O14.json",
+  "content/extra-options/O21.json",
+  "content/extra-options/O22.json",
+  "content/extra-options/O23.json",
+  "content/extra-options/O31.json",
+  "content/extra-options/O32.json",
+  "content/extra-options/O41.json",
+  "content/extra-options/O42.json",
+  "content/extra-options/O43.json",
+  "content/extra-options/O44.json",
+  "content/extra-options/O45.json",
+  "content/extra-options/O51.json",
+  "content/extra-options/O52.json",
+  "content/extra-options/O53.json",
+  "content/extra-options/O54.json",
+  "content/extra-options/SECTIONS1.json",
+  "content/extra-options/SECTIONS2.json",
+  "content/extra-options/U25.json"
+ ]
+}

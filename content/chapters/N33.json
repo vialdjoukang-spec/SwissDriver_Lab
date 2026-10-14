@@ -1,0 +1,364 @@
+{
+ "chapter": {
+  "id": "N33",
+  "official": "3.3",
+  "group": "G3",
+  "otitle": "Analyse TSB pour les tronçons routiers",
+  "title": "Lire la route avant de la rouler",
+  "oscope": "Analyser un tronçon selon son tracé, sa surface et sa bordure, en déduire vitesse et trajectoire, préparer ses trajets et maîtriser les routes de montagne, rurales et forestières.",
+  "tagline": "À la fin de ce chapitre, vous saurez décomposer n’importe quel tronçon en trois questions simples et en tirer votre vitesse, votre position et votre stratégie.",
+  "intro": [
+   "Chaque tronçon de route vous donne des informations avant même que vous y soyez. Sa forme, l’état de son revêtement et ce qui se trouve sur ses côtés annoncent les dangers possibles. Le plan d’enseignement OCTC regroupe ces informations dans l’**analyse TSB** : **T**racé, **S**urface, **B**ordure.",
+   "L’analyse TSB est une méthode pédagogique. Elle ne remplace aucune règle, mais elle vous aide à respecter l’obligation légale d’adapter votre vitesse aux circonstances (LCR) et à choisir une position correcte sur la chaussée. Elle vous permet de passer de « je vois une route » à « je sais comment la rouler ».",
+   "Ce chapitre avance en quatre étapes : faire l’analyse, en déduire vitesse et trajectoire, adopter des stratégies de sécurité dès la préparation du trajet, puis appliquer le tout aux routes particulières que l’on trouve partout en Suisse : routes de montagne, cols, chemins ruraux et forestiers."
+  ],
+  "keyIdea": "Ce que la route vous montre maintenant décide de votre vitesse et de votre position dans quelques secondes.",
+  "memo": {
+   "code": "T–S–B",
+   "text": "Tracé, Surface, Bordure : trois questions à vous poser devant chaque tronçon. « Où va la route ? Sur quoi je roule ? Qu’y a-t-il à côté ? »"
+  },
+  "color": "#8a5a12",
+  "law": "Plan d'enseignement OCTC, bloc 4 ; LCR ; OCR",
+  "sources": [
+   {
+    "label": "asa · Catalogue des compétences (théorie de base)",
+    "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+   },
+   {
+    "label": "Fedlex · LCR",
+    "href": "https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr"
+   },
+   {
+    "label": "Fedlex · OCR",
+    "href": "https://www.fedlex.admin.ch/eli/cc/1962/1364_1409_1420/fr"
+   },
+   {
+    "label": "BPA · Conseils de prévention",
+    "href": "https://www.bfu.ch/fr"
+   }
+  ],
+  "sections": [
+   {
+    "id": "analyse-tsb",
+    "otitle": "L’analyse TSB",
+    "title": "Tracé, surface, bordure : que faut-il regarder ?",
+    "ogoal": "Décomposer un tronçon routier selon son tracé, sa surface et sa bordure afin d’en repérer les dangers.",
+    "question": "Comment savoir, avant d’y arriver, qu’un tronçon de route demande plus de prudence ?",
+    "lead": [
+     "L’analyse TSB organise votre regard. Au lieu de tout voir en même temps, vous posez trois questions dans l’ordre. Cette section vous montre quoi chercher pour chacune."
+    ],
+    "parts": [
+     {
+      "title": "T comme tracé : où va la route ?",
+      "body": [
+       "Le **tracé** est la forme de la route : ligne droite, courbe, virage qui se resserre, montée, descente, sommet de côte, creux, rétrécissement, croisement. Les panneaux de danger, les balises, la ligne médiane, les poteaux et les rangées d’arbres vous aident à deviner ce tracé avant de le voir entièrement.",
+       "Le tracé vous dit surtout **jusqu’où vous voyez**. Un sommet de côte ou une courbe bordée d’une forêt cachent la suite. Là où la vue s’arrête, un obstacle peut se trouver, et vous devez pouvoir vous arrêter avant lui."
+      ]
+     },
+     {
+      "title": "S comme surface : sur quoi je roule ?",
+      "body": [
+       "La **surface** est l’état du revêtement : sec ou humide, propre ou sale, lisse ou abîmé. Cherchez les **nids de poule**, les **gravillons**, les **feuilles** (surtout mouillées), les traces de boue laissées par des machines agricoles, les flaques, les plaques de neige ou de verglas à l’ombre, ainsi que les marquages et plaques d’égout glissants quand ils sont mouillés.",
+       "Chacun de ces éléments réduit l’adhérence ou peut déstabiliser le véhicule. Un revêtement qui brille peut indiquer de l’eau ou du gel. Une zone d’ombre en forêt reste humide plus longtemps qu’une zone ensoleillée."
+      ]
+     },
+     {
+      "title": "B comme bordure : qu’y a-t-il à côté ?",
+      "body": [
+       "La **bordure** comprend tout ce qui se trouve le long de la chaussée : trottoirs, bandes cyclables, accotements, fossés, glissières, murs, haies, entrées de fermes, arrêts de bus, places de jeux, parkings, lisières de forêt. Elle vous dit d’où quelqu’un pourrait surgir et s’il existe une échappatoire.",
+       "Une bordure fermée (mur, haie haute) cache les piétons, les enfants et les véhicules qui débouchent. Une lisière de forêt signale un risque de gibier. Un accotement meuble ou un fossé profond ne pardonne pas un écart de trajectoire."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Tracé",
+      "def": "La forme de la route en plan et en profil : courbes, pentes, sommets, rétrécissements."
+     },
+     {
+      "term": "Surface",
+      "def": "L’état du revêtement : humidité, saleté, gravillons, feuilles, nids de poule, gel."
+     },
+     {
+      "term": "Bordure",
+      "def": "Tout ce qui longe la chaussée : trottoirs, fossés, murs, haies, accès, lisières."
+     },
+     {
+      "term": "Nid de poule",
+      "def": "Trou dans le revêtement qui peut endommager une roue ou faire dévier le véhicule."
+     }
+    ],
+    "method": [
+     "Regardez loin et identifiez le tracé : courbe, pente, sommet, rétrécissement.",
+     "Repérez jusqu’où vous voyez réellement.",
+     "Examinez la surface : humidité, gravillons, feuilles, trous, gel.",
+     "Balayez la bordure : accès, murs, haies, lisières, trottoirs.",
+     "Résumez en une phrase le danger principal du tronçon."
+    ],
+    "example": {
+     "title": "Une route de campagne en automne",
+     "scene": "Vous roulez hors localité près d’Yverdon. Devant vous, la route descend vers un petit pont, puis remonte en courbe à droite le long d’une forêt. Le revêtement est humide et des feuilles se sont accumulées au bord.",
+     "reasoning": [
+      "Tracé : descente, pont, puis courbe montante ; la forêt masque la suite de la courbe.",
+      "Surface : humidité et feuilles, donc adhérence réduite, surtout à l’ombre près du pont.",
+      "Bordure : la lisière de forêt annonce un risque de gibier et ne laisse aucune échappatoire."
+     ],
+     "answer": "Le danger principal est une adhérence réduite dans une courbe sans visibilité. Vous ralentissez avant le pont et abordez la courbe avec une grande réserve."
+    },
+    "trap": "Le piège est de ne regarder que le tracé. Une ligne droite peut être très dangereuse à cause d’une surface gravillonnée ou d’une bordure pleine d’accès. Passez toujours les trois lettres en revue.",
+    "remember": "Tracé, surface, bordure : trois questions, à chaque tronçon.",
+    "memo": {
+     "code": "Où – Sur quoi – À côté",
+     "text": "Où va la route ? Sur quoi je roule ? Qu’y a-t-il à côté ?"
+    },
+    "law": "Plan d'enseignement OCTC, bloc 4 ; LCR"
+   },
+   {
+    "id": "vitesse-trajectoire",
+    "otitle": "Déduire vitesse et trajectoire",
+    "title": "Comment transformer l’analyse en vitesse et en position sur la route ?",
+    "ogoal": "Tirer de l’analyse TSB une vitesse adaptée et une trajectoire sûre sur sa voie.",
+    "question": "J’ai repéré les dangers : comment cela change-t-il ma façon de conduire ?",
+    "lead": [
+     "Une analyse ne sert à rien si elle ne change pas votre conduite. Cette section relie chaque lettre de TSB à une décision concrète : la vitesse et la position du véhicule."
+    ],
+    "parts": [
+     {
+      "title": "Choisir la vitesse",
+      "body": [
+       "La règle de base est simple : vous devez pouvoir vous arrêter dans la distance que vous voyez libre devant vous. Sur une route étroite où le croisement est difficile, il faut même pouvoir s’arrêter sur la moitié de cette distance, car un véhicule peut arriver en face. Le tracé indique la distance visible ; la surface indique combien de distance vous faudra pour vous arrêter.",
+       "La bordure ajoute la question du surgissement : plus il y a d’accès, d’enfants possibles ou de lisières, plus vous réduisez et vous préparez le frein. La vitesse choisie résulte de la combinaison des trois, jamais d’une seule. La vitesse maximale signalée reste un plafond."
+      ]
+     },
+     {
+      "title": "Choisir la trajectoire",
+      "body": [
+       "En Suisse, vous circulez à droite, sur votre voie. Dans les courbes, vous ne coupez pas le virage, même si la route semble vide : la partie gauche peut être occupée derrière la courbe. Sur une route sans ligne médiane, vous restez suffisamment à droite pour permettre le croisement.",
+       "La surface peut vous amener à ajuster légèrement votre position à l’intérieur de votre voie, par exemple pour éviter un nid de poule ou une bande de gravillons, à condition de ne gêner personne et d’avoir contrôlé. La bordure joue aussi : vous gardez une distance latérale suffisante avec les piétons, les cyclistes et les obstacles fixes."
+      ]
+     },
+     {
+      "title": "Anticiper le changement",
+      "body": [
+       "Les conditions changent le long d’un même trajet : soleil puis ombre, bitume propre puis boue de chantier, route large puis rétrécissement. Refaites l’analyse à chaque changement visible et adaptez vitesse et position **avant** d’arriver sur le nouveau tronçon.",
+       "Un écart brusque pour éviter un trou au dernier moment est dangereux, surtout si un cycliste ou un véhicule vous suit ou vous dépasse. Mieux vaut avoir repéré le trou tôt, ralenti, et choisi calmement votre ligne."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Distance de visibilité",
+      "def": "La longueur de route que vous voyez libre devant vous."
+     },
+     {
+      "term": "Vitesse adaptée",
+      "def": "Vitesse qui tient compte de la route, de la visibilité, de la surface et du trafic ; exigée par la LCR."
+     },
+     {
+      "term": "Position sur la voie",
+      "def": "L’endroit où vous placez le véhicule à l’intérieur de votre voie."
+     }
+    ],
+    "method": [
+     "Estimez la distance visible à partir du tracé.",
+     "Estimez votre distance d’arrêt à partir de la surface.",
+     "Réduisez la vitesse si la bordure annonce un surgissement possible.",
+     "Restez sur votre voie et ne coupez jamais un virage sans visibilité.",
+     "Refaites l’analyse à chaque changement de tronçon."
+    ],
+    "example": {
+     "title": "Gravillons dans une courbe",
+     "scene": "Sur une route cantonale vaudoise, un panneau signale des gravillons. Juste après, la route tourne à gauche entre deux haies hautes. Un cycliste roule devant vous.",
+     "reasoning": [
+      "Tracé : courbe à gauche, visibilité limitée par les haies.",
+      "Surface : gravillons, adhérence réduite et distance de freinage plus longue ; projections possibles vers le cycliste.",
+      "Bordure : haies hautes, aucun dégagement ; dépasser le cycliste ici serait impossible en sécurité."
+     ],
+     "answer": "Vous ralentissez nettement, restez derrière le cycliste avec une bonne distance, gardez votre voie dans la courbe et attendez un tronçon dégagé pour envisager un dépassement."
+    },
+    "trap": "Le piège est de « faire l’analyse » mentalement sans rien changer à sa conduite. Si vos pieds et vos mains ne réagissent pas, l’analyse n’a servi à rien. Chaque danger repéré doit modifier la vitesse, la position ou la distance.",
+    "remember": "Je dois pouvoir m’arrêter dans ce que je vois, en restant sur ma voie.",
+    "memo": {
+     "code": "Voir → Freiner → Placer",
+     "text": "Ce que je vois fixe ma distance, la surface fixe mon freinage, le tout fixe ma vitesse et ma place."
+    },
+    "law": "Plan d'enseignement OCTC, bloc 4 ; LCR ; OCR"
+   },
+   {
+    "id": "strategies-securite",
+    "otitle": "Stratégies de sécurité",
+    "title": "Comment se préparer avant et pendant un trajet difficile ?",
+    "ogoal": "Appliquer des stratégies de sécurité liées à l’itinéraire, à la préparation mentale, à la vitesse et aux distances.",
+    "question": "Peut-on réduire les risques d’un trajet avant même de démarrer ?",
+    "lead": [
+     "La sécurité ne commence pas au premier virage. Elle commence à la maison, en choisissant l’itinéraire et en vous préparant. Cette section vous donne trois stratégies qui se complètent."
+    ],
+    "parts": [
+     {
+      "title": "Choisir et connaître son itinéraire",
+      "body": [
+       "Avant un trajet inhabituel, regardez la carte : routes de montagne, cols, routes étroites, chantiers, fermetures saisonnières. Informez-vous sur la météo et l’état des routes. En hiver, certains cols sont fermés ou exigent un équipement adapté ; renseignez-vous auprès des sources officielles du canton ou de l’OFROU.",
+       "Si l’itinéraire dépasse votre expérience actuelle, choisissez une alternative plus simple, partez plus tôt ou faites-vous accompagner. Choisir une route adaptée à votre niveau est une décision de sécurité, pas un manque de courage."
+      ]
+     },
+     {
+      "title": "Se préparer mentalement",
+      "body": [
+       "La préparation mentale consiste à se représenter les difficultés à l’avance : « il y aura des épingles, des croisements serrés, peut-être des cyclistes en montée ». Ainsi, ces situations ne vous surprennent pas. Prévoyez aussi des pauses et assez de temps : la hâte pousse à réduire les marges.",
+       "Pendant le trajet, restez concentré : pas de téléphone à la main, navigation programmée avant le départ, musique à un niveau qui laisse entendre ce qui se passe autour. Si vous vous sentez tendu ou fatigué, arrêtez-vous à un endroit sûr."
+      ]
+     },
+     {
+      "title": "Vitesse et distances comme réserve",
+      "body": [
+       "Les deux leviers les plus efficaces restent la vitesse et les distances. Une vitesse plus basse raccourcit fortement la distance de freinage. Une distance plus grande avec le véhicule qui précède vous donne du temps pour réagir et pour voir plus loin, ce qui améliore votre analyse TSB.",
+       "Sur route mouillée, sale ou sinueuse, augmentez la distance avec le véhicule qui précède. Laissez aussi de l’espace latéral aux cyclistes et aux piétons. Ces réserves ne coûtent presque rien en temps de trajet et vous offrent une solution quand l’imprévu arrive."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Itinéraire",
+      "def": "Le chemin choisi pour aller d’un point à un autre."
+     },
+     {
+      "term": "Préparation mentale",
+      "def": "Se représenter à l’avance les difficultés du trajet pour ne pas être surpris."
+     },
+     {
+      "term": "Distance de sécurité",
+      "def": "Espace laissé devant soi pour pouvoir réagir et s’arrêter si le véhicule qui précède freine."
+     }
+    ],
+    "method": [
+     "Consultez la carte, la météo et l’état des routes avant de partir.",
+     "Choisissez un itinéraire compatible avec votre expérience.",
+     "Programmez la navigation et rangez le téléphone avant de démarrer.",
+     "Prévoyez du temps et des pauses.",
+     "Gardez vitesse modérée et grandes distances sur les tronçons difficiles."
+    ],
+    "example": {
+     "title": "Premier passage de col",
+     "scene": "Vous avez votre permis depuis peu et voulez rejoindre le Tessin depuis Uri un samedi d’octobre. Vous hésitez entre le col du Gothard et le tunnel autoroutier.",
+     "reasoning": [
+      "Itinéraire : vous vérifiez si le col est ouvert et quelles conditions sont annoncées en altitude ce jour-là.",
+      "Préparation : si vous choisissez le col, vous vous attendez à des épingles, à des cyclistes et à des motos, et vous prévoyez du temps.",
+      "Vitesse et distances : vous décidez à l’avance de rouler avec une large réserve et de laisser passer les plus pressés."
+     ],
+     "answer": "Votre choix repose sur votre expérience et sur les conditions du jour ; quel que soit l’itinéraire, vous partez préparé, sans hâte, avec des réserves de vitesse et de distance."
+    },
+    "trap": "Le piège est de partir « à l’improviste » sur une route exigeante et de découvrir les difficultés au volant. La préparation transforme les surprises en situations attendues.",
+    "remember": "Un trajet sûr se prépare : itinéraire choisi, tête prête, vitesse et distances en réserve.",
+    "memo": {
+     "code": "I–T–V",
+     "text": "Itinéraire, Tête, Vitesse et distances : trois réserves à prévoir avant chaque trajet difficile."
+    },
+    "law": "Plan d'enseignement OCTC, bloc 4 ; LCR"
+   },
+   {
+    "id": "routes-speciales",
+    "otitle": "Types de routes spéciaux",
+    "title": "Routes de montagne, cols, chemins ruraux et forestiers : quelles particularités ?",
+    "ogoal": "Reconnaître les difficultés des routes de montagne, des cols et des chemins ruraux ou forestiers, et appliquer les règles de croisement en montagne.",
+    "question": "Sur une route de montagne trop étroite pour se croiser, qui doit céder le passage ?",
+    "lead": [
+     "La Suisse compte beaucoup de routes étroites, raides et sinueuses. Elles demandent une analyse TSB très attentive et obéissent à des règles particulières de croisement. Cette section vous les présente."
+    ],
+    "parts": [
+     {
+      "title": "Routes de montagne et cols",
+      "body": [
+       "Sur une route de montagne, le tracé est fait de pentes fortes, d’épingles et de passages étroits. La surface peut changer vite avec l’altitude : humidité, gravillons, chutes de pierres, neige ou gel à l’ombre même au printemps ou en automne. La bordure est souvent un rocher d’un côté et un vide de l’autre.",
+       "En descente, utilisez le frein moteur en choisissant un rapport inférieur, plutôt que de freiner longuement avec les freins de service, qui risquent de chauffer et de perdre de leur efficacité. En montée, gardez un rapport qui permet de conserver une vitesse régulière. Dans les épingles, attendez-vous à des véhicules longs qui ont besoin de toute la largeur."
+      ]
+     },
+     {
+      "title": "Croiser en montagne",
+      "body": [
+       "Lorsque le croisement est difficile sur une route de montagne ou en forte pente, l’OCR donne la priorité au **véhicule montant**. Le véhicule descendant doit s’arrêter à temps et, si nécessaire, faire marche arrière jusqu’à une place d’évitement, sauf si le véhicule montant se trouve plus près d’une telle place.",
+       "Sur les routes signalées comme routes postales de montagne, il faut en outre suivre les indications des conducteurs des cars postaux. Dans tous les cas, roulez à une vitesse qui vous permet de vous arrêter rapidement, repérez à l’avance les places d’évitement et communiquez clairement avec l’autre conducteur."
+      ]
+     },
+     {
+      "title": "Chemins ruraux et forestiers",
+      "body": [
+       "Les chemins agricoles et forestiers sont étroits, souvent non goudronnés ou couverts de boue, de gravier et de feuilles. Ils sont fréquentés par des tracteurs, des machines forestières, des promeneurs, des cyclistes et des cavaliers. Beaucoup sont interdits à la circulation des véhicules automobiles par un signal, parfois avec une exception pour le service agricole ou forestier : respectez cette signalisation.",
+       "Lorsque vous y êtes autorisé, roulez très lentement, prêt à vous arrêter, et attendez-vous à un usager derrière chaque courbe ou bosquet. Les bordures sont meubles et les fossés proches : un écart peut suffire à immobiliser le véhicule."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Véhicule montant",
+      "def": "Le véhicule qui roule dans le sens de la montée ; il est prioritaire quand le croisement est difficile en montagne."
+     },
+     {
+      "term": "Place d’évitement",
+      "def": "Élargissement de la route qui permet à deux véhicules de se croiser."
+     },
+     {
+      "term": "Frein moteur",
+      "def": "Ralentissement obtenu en roulant sur un rapport inférieur, sans solliciter fortement les freins."
+     },
+     {
+      "term": "Route postale de montagne",
+      "def": "Route de montagne signalée comme telle, sur laquelle les indications des conducteurs de cars postaux doivent être suivies."
+     }
+    ],
+    "method": [
+     "Informez-vous sur l’ouverture et l’état du col avant de partir.",
+     "En descente, engagez un rapport inférieur pour utiliser le frein moteur.",
+     "Repérez à l’avance les places d’évitement.",
+     "En descendant, arrêtez-vous à temps pour laisser passer le véhicule montant.",
+     "Respectez les signaux d’interdiction sur les chemins ruraux et forestiers."
+    ],
+    "example": {
+     "title": "Croisement sur une route d’alpage",
+     "scene": "Vous descendez une route étroite d’alpage en Valais. Dans un passage où deux voitures ne peuvent pas se croiser, une voiture arrive en montant. Une place d’évitement se trouve à quelques mètres derrière vous.",
+     "reasoning": [
+      "Le croisement est difficile et vous êtes le véhicule descendant : la priorité revient au véhicule montant.",
+      "Vous vous arrêtez à temps, sans forcer le passage.",
+      "La place d’évitement étant derrière vous et plus proche de vous, vous reculez prudemment jusqu’à elle pour laisser passer l’autre voiture."
+     ],
+     "answer": "Vous cédez le passage au véhicule montant et reculez jusqu’à la place d’évitement, en contrôlant derrière vous."
+    },
+    "trap": "Le piège est de croire que celui qui descend a la priorité parce qu’il « a de l’élan », ou de forcer le passage en frôlant le vide. En montagne, c’est le véhicule montant qui est prioritaire lorsque le croisement est difficile, et la patience évite les accrochages.",
+    "remember": "En montagne, quand on ne peut pas se croiser, celui qui monte passe ; celui qui descend s’arrête.",
+    "memo": {
+     "code": "Monte passe, descend attend",
+     "text": "Le véhicule qui monte garde son élan ; celui qui descend s’arrête et, si besoin, recule jusqu’à la place d’évitement."
+    },
+    "law": "Plan d'enseignement OCTC, bloc 4 ; OCR ; OSR"
+   }
+  ]
+ },
+ "questions": [
+  {"id": "N33-TSB-01", "chapter": "N33", "section": "analyse-tsb", "stem": "Que signifient les trois lettres de l’analyse TSB ?", "options": ["Tracé, surface, bordure.", "Trafic, signalisation, bruit.", "Temps, sécurité, bifurcation."], "answers": [0], "truth": "TSB = tracé, surface, bordure.", "why": "Ce sont les trois composantes d’un tronçon routier à analyser.", "trap": "Confondre l’analyse du tronçon avec l’analyse des usagers.", "action": "Posez les trois questions devant chaque nouveau tronçon.", "memory": "Où – Sur quoi – À côté."},
+  {"id": "N33-TSB-02", "chapter": "N33", "section": "analyse-tsb", "stem": "Quels éléments font partie de la surface de la route ?", "options": ["Des gravillons sur le revêtement.", "Un mur qui longe la chaussée.", "Des nids de poule."], "answers": [0, 2], "truth": "Gravillons et nids de poule concernent le revêtement, donc la surface.", "why": "Le mur se trouve à côté de la chaussée : il fait partie de la bordure.", "trap": "Mélanger surface et bordure.", "action": "Regardez le revêtement lui-même pour juger la surface.", "memory": "Surface = sous les roues."},
+  {"id": "N33-TSB-03", "chapter": "N33", "section": "analyse-tsb", "stem": "Que vous apprend surtout l’analyse du tracé ?", "options": ["Jusqu’où vous voyez la route libre.", "Si la chaussée est mouillée.", "S’il y a une courbe, un sommet de côte ou un rétrécissement."], "answers": [0, 2], "truth": "Le tracé décrit la forme de la route et donc la visibilité.", "why": "Courbes et sommets limitent la distance que vous voyez.", "trap": "Ne voir dans le tracé qu’une question de virages.", "action": "Identifiez où votre vue s’arrête.", "memory": "Tracé = où va la route."},
+  {"id": "N33-TSB-04", "chapter": "N33", "section": "analyse-tsb", "stem": "Une forêt longe la route d’un côté. Qu’est-ce que cette bordure peut annoncer ?", "options": ["Un risque de gibier traversant.", "Une adhérence forcément meilleure.", "Des zones d’ombre où le revêtement reste humide ou gelé plus longtemps."], "answers": [0, 2], "truth": "Une lisière annonce gibier et zones d’ombre.", "why": "Les animaux sortent des bois et l’ombre retarde le séchage.", "trap": "Ignorer la bordure parce que la route est droite.", "action": "Ralentissez et surveillez les côtés le long des forêts.", "memory": "Forêt = gibier et ombre."},
+  {"id": "N33-TSB-05", "chapter": "N33", "section": "analyse-tsb", "stem": "Des feuilles mouillées recouvrent une partie de la chaussée. Qu’est-ce qui est vrai ?", "options": ["Elles réduisent l’adhérence.", "Elles n’ont d’effet qu’à moto.", "Elles peuvent allonger la distance de freinage."], "answers": [0, 2], "truth": "Les feuilles mouillées rendent la surface glissante pour tous les véhicules.", "why": "Elles forment une couche entre le pneu et le revêtement.", "trap": "Les considérer comme un simple décor d’automne.", "action": "Réduisez la vitesse et évitez les freinages brusques.", "memory": "Feuilles mouillées = glissant."},
+  {"id": "N33-TSB-06", "chapter": "N33", "section": "analyse-tsb", "stem": "Quels éléments font partie de la bordure ?", "options": ["Les entrées de fermes et de garages.", "Les trottoirs et bandes cyclables.", "Le degré d’humidité du revêtement."], "answers": [0, 1], "truth": "La bordure comprend tout ce qui longe la chaussée.", "why": "L’humidité concerne la surface, pas la bordure.", "trap": "Ne pas repérer les accès d’où un véhicule peut sortir.", "action": "Balayez les deux côtés de la route.", "memory": "Bordure = ce qui est à côté."},
+  {"id": "N33-TSB-07", "chapter": "N33", "section": "analyse-tsb", "stem": "Une ligne droite est parfaitement dégagée. Faut-il encore faire l’analyse TSB ?", "options": ["Oui, la surface et la bordure peuvent présenter des dangers.", "Non, l’analyse ne concerne que les virages.", "Oui, car des accès ou des gravillons peuvent s’y trouver."], "answers": [0, 2], "truth": "Les trois lettres s’appliquent à tout tronçon.", "why": "Un tracé simple ne garantit ni une bonne surface ni une bordure sûre.", "trap": "Réduire l’analyse au tracé.", "action": "Passez les trois lettres en revue même en ligne droite.", "memory": "T, S et B, toujours."},
+  {"id": "N33-VIT-01", "chapter": "N33", "section": "vitesse-trajectoire", "stem": "Selon quelle règle de base choisissez-vous votre vitesse ?", "options": ["Pouvoir vous arrêter dans la distance que vous voyez libre.", "Rouler à la vitesse maximale signalée si la route est sèche.", "Adapter la vitesse au tracé, à la surface et à la bordure."], "answers": [0, 2], "truth": "La vitesse doit permettre l’arrêt dans la distance visible et tenir compte des trois lettres.", "why": "La LCR exige une vitesse adaptée aux circonstances.", "trap": "Prendre la limite signalée comme objectif.", "action": "Comparez distance visible et distance d’arrêt.", "memory": "Je m’arrête dans ce que je vois."},
+  {"id": "N33-VIT-02", "chapter": "N33", "section": "vitesse-trajectoire", "stem": "Vous abordez un virage à gauche sans visibilité sur une route sans circulation apparente. Que faites-vous ?", "options": ["Vous coupez le virage puisque personne n’arrive.", "Vous restez sur votre voie.", "Vous réduisez la vitesse avant la courbe."], "answers": [1, 2], "truth": "On garde sa voie et on ralentit avant une courbe sans visibilité.", "why": "Un véhicule peut arriver en face derrière la courbe.", "trap": "Croire que ce que l’on ne voit pas n’existe pas.", "action": "Serrez votre voie et préparez-vous à freiner.", "memory": "Pas de vue, pas de coupe."},
+  {"id": "N33-VIT-03", "chapter": "N33", "section": "vitesse-trajectoire", "stem": "Vous repérez tôt un nid de poule dans votre voie. Quelle réaction est adaptée ?", "options": ["Ralentir et ajuster calmement votre position dans votre voie après contrôle.", "Faire un écart brusque au dernier moment.", "Accélérer pour passer par-dessus plus vite."], "answers": [0], "truth": "Un obstacle repéré tôt se contourne calmement et sans gêner personne.", "why": "Un écart brusque peut surprendre un usager qui vous suit ou vous dépasse.", "trap": "Découvrir l’obstacle trop tard et réagir violemment.", "action": "Regardez loin, contrôlez les rétroviseurs, ralentissez.", "memory": "Vu tôt, évité calmement."},
+  {"id": "N33-VIT-04", "chapter": "N33", "section": "vitesse-trajectoire", "stem": "La bordure présente de nombreux accès de fermes et des haies hautes. Qu’en déduisez-vous ?", "options": ["Un véhicule ou un piéton peut surgir sans être vu.", "Vous pouvez garder votre vitesse puisque vous êtes prioritaire.", "Il faut réduire la vitesse et être prêt à freiner."], "answers": [0, 2], "truth": "Une bordure masquée augmente le risque de surgissement.", "why": "Les haies cachent ce qui arrive des accès.", "trap": "Compter uniquement sur sa priorité.", "action": "Réduisez et couvrez le frein.", "memory": "Bordure cachée, pied prêt."},
+  {"id": "N33-VIT-05", "chapter": "N33", "section": "vitesse-trajectoire", "stem": "En passant d’une portion ensoleillée à une portion ombragée en hiver, que faites-vous ?", "options": ["Vous refaites l’analyse de la surface.", "Vous adaptez votre vitesse avant d’entrer dans l’ombre.", "Vous conservez votre vitesse, la route étant la même."], "answers": [0, 1], "truth": "Un changement visible de tronçon impose une nouvelle analyse.", "why": "Le revêtement peut rester gelé ou humide à l’ombre.", "trap": "Croire que l’état de la route est uniforme sur tout le trajet.", "action": "Ralentissez avant la zone d’ombre.", "memory": "Changement de décor, nouvelle analyse."},
+  {"id": "N33-VIT-06", "chapter": "N33", "section": "vitesse-trajectoire", "stem": "Sur une route étroite sans ligne médiane, où vous placez-vous ?", "options": ["Au milieu de la chaussée pour garder de la marge des deux côtés.", "Suffisamment à droite pour permettre le croisement.", "En tenant compte des piétons et cyclistes sur le bord."], "answers": [1, 2], "truth": "On circule à droite en laissant de la place pour croiser, tout en respectant les usagers du bord.", "why": "Un véhicule peut arriver en face à tout moment.", "trap": "Rouler au milieu parce qu’il n’y a pas de ligne.", "action": "Tenez votre droite et ralentissez avant les passages étroits.", "memory": "Pas de ligne, je tiens ma droite."},
+  {"id": "N33-VIT-07", "chapter": "N33", "section": "vitesse-trajectoire", "stem": "Vous avez repéré des gravillons et une courbe sans visibilité, mais vous ne changez rien à votre conduite. Qu’est-ce qui est vrai ?", "options": ["Votre analyse n’a eu aucun effet utile.", "Chaque danger repéré devrait modifier vitesse, position ou distance.", "Repérer suffit, il n’est pas nécessaire d’agir."], "answers": [0, 1], "truth": "L’analyse doit se traduire en décisions concrètes.", "why": "C’est le changement de conduite qui réduit le risque, pas l’observation seule.", "trap": "Observer sans agir.", "action": "Associez à chaque danger une action.", "memory": "Je vois, donc j’agis."},
+  {"id": "N33-STR-01", "chapter": "N33", "section": "strategies-securite", "stem": "Avant un trajet inhabituel en montagne, quelles préparations sont utiles ?", "options": ["Consulter la météo et l’état des routes.", "Vérifier si le col est ouvert.", "Partir au dernier moment pour éviter le trafic."], "answers": [0, 1], "truth": "S’informer avant de partir fait partie de la sécurité.", "why": "Les conditions en altitude et l’ouverture des cols peuvent changer.", "trap": "Découvrir la fermeture ou la neige sur place.", "action": "Consultez les sources officielles avant le départ.", "memory": "Je m’informe, puis je pars."},
+  {"id": "N33-STR-02", "chapter": "N33", "section": "strategies-securite", "stem": "Votre itinéraire prévu dépasse votre expérience actuelle. Que pouvez-vous faire ?", "options": ["Choisir un itinéraire plus simple.", "Vous faire accompagner ou partir avec plus de temps.", "Rouler plus vite pour réduire le temps passé sur la route difficile."], "answers": [0, 1], "truth": "Adapter l’itinéraire ou les conditions à son niveau est une stratégie de sécurité.", "why": "Rouler plus vite augmente le risque au lieu de le réduire.", "trap": "Vouloir prouver qu’on est capable.", "action": "Choisissez la route qui correspond à votre niveau.", "memory": "Ma route à mon niveau."},
+  {"id": "N33-STR-03", "chapter": "N33", "section": "strategies-securite", "stem": "Qu’est-ce que la préparation mentale avant un trajet difficile ?", "options": ["Se représenter à l’avance les difficultés attendues.", "Éviter de penser au trajet pour rester détendu.", "Prévoir du temps et des pauses."], "answers": [0, 2], "truth": "Anticiper mentalement et prévoir du temps évite les surprises et la hâte.", "why": "Une situation attendue se gère mieux qu’une situation imprévue.", "trap": "Partir pressé et sans plan.", "action": "Listez mentalement les difficultés et prévoyez une marge horaire.", "memory": "Prévu, donc maîtrisé."},
+  {"id": "N33-STR-04", "chapter": "N33", "section": "strategies-securite", "stem": "Comment gérez-vous la navigation et le téléphone sur un trajet exigeant ?", "options": ["Vous programmez la navigation avant de démarrer.", "Vous tapez l’adresse en roulant dans une ligne droite.", "Vous gardez le téléphone hors de vos mains pendant la conduite."], "answers": [0, 2], "truth": "Préparer la navigation et ne pas manipuler le téléphone préserve l’attention.", "why": "Même un bref regard sur un écran réduit l’observation de la route.", "trap": "Croire qu’une ligne droite autorise la distraction.", "action": "Réglez tout à l’arrêt avant de partir.", "memory": "Tout réglé avant de rouler."},
+  {"id": "N33-STR-05", "chapter": "N33", "section": "strategies-securite", "stem": "Sur une route mouillée et sinueuse, que faites-vous de votre distance avec le véhicule qui précède ?", "options": ["Vous l’augmentez.", "Vous la réduisez pour mieux voir ses feux.", "Vous la gardez grande pour avoir le temps de réagir."], "answers": [0, 2], "truth": "Une distance plus grande donne du temps et de la visibilité.", "why": "La distance de freinage s’allonge sur route mouillée.", "trap": "Coller au véhicule qui précède pour le suivre dans les courbes.", "action": "Laissez un intervalle nettement plus grand que d’habitude.", "memory": "Route difficile, distance agrandie."},
+  {"id": "N33-STR-06", "chapter": "N33", "section": "strategies-securite", "stem": "Vous vous sentez tendu et fatigué au milieu d’un trajet de montagne. Que faites-vous ?", "options": ["Vous vous arrêtez à un endroit sûr pour faire une pause.", "Vous accélérez pour arriver plus vite.", "Vous continuez sans changer votre conduite."], "answers": [0], "truth": "Une pause rétablit votre attention et votre marge.", "why": "Fatigue et tension réduisent vos capacités de réaction.", "trap": "Vouloir terminer le trajet à tout prix.", "action": "Repérez une place sûre et arrêtez-vous.", "memory": "Fatigué ? Je m’arrête."},
+  {"id": "N33-RSP-01", "chapter": "N33", "section": "routes-speciales", "stem": "Sur une route de montagne, le croisement est difficile. Qui a la priorité ?", "options": ["Le véhicule montant.", "Le véhicule descendant.", "Celui qui arrive le premier au passage étroit."], "answers": [0], "truth": "Le véhicule montant est prioritaire lorsque le croisement est difficile.", "why": "L’OCR prévoit que le véhicule descendant s’arrête à temps.", "trap": "Croire que celui qui descend a l’avantage de l’élan.", "action": "En descente, préparez-vous à vous arrêter.", "memory": "Monte passe, descend attend."},
+  {"id": "N33-RSP-02", "chapter": "N33", "section": "routes-speciales", "stem": "Vous descendez et une place d’évitement se trouve juste derrière vous, plus proche de vous que du véhicule montant. Que faites-vous ?", "options": ["Vous vous arrêtez à temps.", "Vous reculez prudemment jusqu’à la place d’évitement si nécessaire.", "Vous attendez que le véhicule montant recule."], "answers": [0, 1], "truth": "Le descendant s’arrête et recule si nécessaire, sauf si le montant est plus proche d’une place.", "why": "C’est la règle de croisement en montagne de l’OCR.", "trap": "Exiger que le véhicule montant fasse la manœuvre.", "action": "Contrôlez derrière vous et reculez lentement.", "memory": "Je descends, je recule si besoin."},
+  {"id": "N33-RSP-03", "chapter": "N33", "section": "routes-speciales", "stem": "Comment limiter l’échauffement des freins dans une longue descente de col ?", "options": ["En engageant un rapport inférieur pour utiliser le frein moteur.", "En freinant en permanence avec la pédale de frein.", "En roulant au point mort pour soulager le moteur."], "answers": [0], "truth": "Le frein moteur ménage les freins de service en descente.", "why": "Des freins sollicités longtemps chauffent et perdent de leur efficacité.", "trap": "Rouler au point mort, ce qui supprime le frein moteur.", "action": "Choisissez avant la descente un rapport qui retient le véhicule.", "memory": "Descente longue, rapport court."},
+  {"id": "N33-RSP-04", "chapter": "N33", "section": "routes-speciales", "stem": "Sur une route signalée comme route postale de montagne, qu’est-ce qui s’applique en plus ?", "options": ["Vous suivez les indications des conducteurs de cars postaux.", "Les cars postaux doivent toujours reculer pour vous laisser passer.", "Vous restez prêt à vous arrêter dans les passages étroits."], "answers": [0, 2], "truth": "Sur ces routes, les indications des conducteurs de cars postaux doivent être suivies.", "why": "Ces véhicules longs ont besoin de place et connaissent les points de croisement.", "trap": "Vouloir imposer son passage à un car postal.", "action": "Observez les signes du chauffeur et repérez les places d’évitement.", "memory": "Car postal : je suis ses indications."},
+  {"id": "N33-RSP-05", "chapter": "N33", "section": "routes-speciales", "stem": "Un chemin forestier est signalé par une interdiction de circuler aux voitures, avec une exception pour le service forestier. Pouvez-vous l’emprunter pour une promenade ?", "options": ["Oui, si le chemin semble praticable.", "Non, l’interdiction s’applique à vous.", "Oui, si vous roulez très lentement."], "answers": [1], "truth": "L’exception ne vaut que pour les ayants droit mentionnés.", "why": "Le signal d’interdiction s’applique à tous les autres conducteurs.", "trap": "Croire qu’une conduite prudente remplace l’autorisation.", "action": "Garez-vous à un endroit autorisé et continuez à pied.", "memory": "Interdit, sauf pour ceux qui sont nommés."},
+  {"id": "N33-RSP-06", "chapter": "N33", "section": "routes-speciales", "stem": "Sur un chemin rural où la circulation est autorisée, quels dangers devez-vous attendre ?", "options": ["Des tracteurs et machines agricoles.", "Une surface boueuse ou gravillonnée.", "Une absence totale d’autres usagers."], "answers": [0, 1], "truth": "Les chemins ruraux sont partagés avec des machines et ont souvent une surface changeante.", "why": "Ils servent à l’agriculture, aux promeneurs, cyclistes et cavaliers.", "trap": "Penser qu’un chemin isolé est toujours vide.", "action": "Roulez très lentement et soyez prêt à vous arrêter.", "memory": "Chemin rural : tracteur et boue."},
+  {"id": "N33-RSP-07", "chapter": "N33", "section": "routes-speciales", "stem": "En automne, sur une route de col ombragée, qu’est-ce qui est vrai ?", "options": ["Du gel peut subsister à l’ombre même quand le reste est sec.", "L’altitude n’a aucune influence sur l’état de la surface.", "Des gravillons ou des pierres peuvent se trouver sur la chaussée."], "answers": [0, 2], "truth": "En montagne, la surface peut changer vite avec l’ombre, l’altitude et les chutes de pierres.", "why": "Les températures baissent avec l’altitude et l’ombre empêche le séchage.", "trap": "Juger toute la route d’après la vallée ensoleillée.", "action": "Refaites l’analyse de la surface à chaque changement d’exposition.", "memory": "Col à l’ombre : gel possible."}
+ ]
+}

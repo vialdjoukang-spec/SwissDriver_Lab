@@ -1,0 +1,368 @@
+{
+ "chapter": {
+  "id": "N26",
+  "official": "2.6",
+  "group": "G2",
+  "otitle": "Dynamique de conduite : modèle des phases de virage",
+  "title": "Prendre un virage en gardant la maîtrise",
+  "oscope": "Comprendre les forces qui agissent sur le véhicule, appliquer les quatre phases du virage, conserver une marge personnelle et connaître les particularités de la moto.",
+  "tagline": "À la fin de ce chapitre, vous saurez expliquer pourquoi la vitesse décide de tout dans un virage, et vous saurez préparer chaque courbe en quatre phases, avec de la réserve.",
+  "intro": [
+   "Un virage n’est pas une simple ligne courbe. Dès que le véhicule tourne, des forces le poussent vers l’extérieur, et seuls les pneus, par leur **adhérence** sur la route, le retiennent sur sa trajectoire. Cette adhérence a une limite. Si vous la dépassez, le véhicule ne suit plus la direction que vous donnez au volant.",
+   "La bonne nouvelle, c’est que cette limite se gère surtout **avant** le virage. Le plan d’enseignement OCTC propose pour cela un modèle en quatre phases : annoncer, freiner, braquer, accélérer. C’est une méthode pédagogique : elle vous aide à respecter l’obligation légale de l’art. 32 LCR, qui demande d’adapter la vitesse aux circonstances, notamment à la route et à la visibilité.",
+   "Ce chapitre suit le chemin d’un conducteur qui approche d’une courbe hors localité : comprendre les forces, préparer la vitesse, garder une réserve personnelle, puis observer ce qui change lorsqu’on roule à moto."
+  ],
+  "keyIdea": "La vitesse d’un virage se choisit avant d’y entrer : ce que vous n’avez pas freiné en ligne droite, vous le paierez en adhérence dans la courbe.",
+  "memo": {
+   "code": "A–F–B–A",
+   "text": "Annoncer, Freiner, Braquer, Accélérer : les quatre phases dans l’ordre où vous les vivez. Retenez « Avant Freiner, Braquer Après », ou simplement : tout ce qui ralentit se fait avant de tourner."
+  },
+  "color": "#7a3e9d",
+  "law": "Plan d'enseignement OCTC, bloc 4 ; LCR art. 32 (vitesse adaptée)",
+  "sources": [
+   {
+    "label": "asa · Catalogue des compétences (théorie de base)",
+    "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+   },
+   {
+    "label": "Fedlex · LCR",
+    "href": "https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr"
+   },
+   {
+    "label": "Fedlex · OCR",
+    "href": "https://www.fedlex.admin.ch/eli/cc/1962/1364_1409_1420/fr"
+   },
+   {
+    "label": "BPA · Conseils de prévention",
+    "href": "https://www.bfu.ch/fr"
+   }
+  ],
+  "sections": [
+   {
+    "id": "principes-physiques",
+    "otitle": "Principes physiques",
+    "title": "Quelles forces poussent la voiture hors du virage ?",
+    "ogoal": "Expliquer le rôle de la force centrifuge, de la force de guidage latéral et de l’adhérence, ainsi que l’effet de la vitesse sur ces forces et sur la distance d’arrêt.",
+    "question": "Pourquoi un virage pris un peu trop vite peut-il soudain devenir impossible à tenir ?",
+    "lead": [
+     "Avant de parler de technique, il faut comprendre ce qui se passe entre vos pneus et la route. Cette section vous donne les notions de base, sans formules, pour juger un virage avec bon sens."
+    ],
+    "parts": [
+     {
+      "title": "Force centrifuge et force de guidage latéral",
+      "body": [
+       "Quand vous tournez, votre véhicule « veut » continuer tout droit. Vous le ressentez comme une poussée vers l’extérieur du virage : c’est ce qu’on appelle la **force centrifuge**. Elle augmente quand la vitesse augmente et quand le virage se resserre, c’est-à-dire quand son rayon devient plus petit.",
+       "Pour rester sur la trajectoire, les pneus doivent produire une force opposée, dirigée vers l’intérieur : la **force de guidage latéral**. Elle naît du frottement entre le caoutchouc et le revêtement. Tant que les pneus peuvent fournir cette force, la voiture suit le volant. Quand ils ne le peuvent plus, elle glisse vers l’extérieur."
+      ]
+     },
+     {
+      "title": "L’adhérence et sa limite",
+      "body": [
+       "L’**adhérence** est la capacité des pneus à « accrocher » la route. Elle n’est pas fixe : elle baisse sur route mouillée, enneigée, verglacée, sur des gravillons ou des feuilles, et avec des pneus usés ou mal gonflés. Une même courbe peut donc être facile par temps sec et dangereuse sous la pluie, à vitesse égale.",
+       "L’adhérence disponible se partage entre freiner, accélérer et tourner. Si vous freinez fort en plein virage, vous consommez une partie de l’adhérence qui servait à tourner. C’est pourquoi on ralentit **avant** la courbe : on laisse ainsi toute l’adhérence au guidage latéral. Au-delà de la **limite d’adhérence**, le conducteur perd la maîtrise, et aucun système d’aide ne peut repousser les lois physiques."
+      ]
+     },
+     {
+      "title": "Vitesse, rayon et distance d’arrêt",
+      "body": [
+       "La vitesse a un effet plus fort qu’on ne l’imagine. Si vous doublez la vitesse, la force centrifuge dans un même virage devient environ **quatre fois** plus grande, et la distance de freinage aussi. La distance parcourue pendant le temps de réaction, elle, double simplement. La distance d’arrêt, qui additionne les deux, augmente donc beaucoup plus vite que la vitesse.",
+       "Concrètement : un virage serré, une visibilité courte derrière la courbe ou une route humide exigent une vitesse nettement plus basse. Les valeurs exactes dépendent du véhicule et des conditions ; le BPA et votre moniteur peuvent vous donner des repères. Ce qu’il faut retenir, c’est le sens de la relation : un peu plus vite, c’est beaucoup plus de force et beaucoup plus de distance."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Force centrifuge",
+      "def": "Poussée ressentie vers l’extérieur d’un virage ; elle grandit avec la vitesse et quand le virage se resserre."
+     },
+     {
+      "term": "Force de guidage latéral",
+      "def": "Force que les pneus exercent vers l’intérieur du virage pour maintenir le véhicule sur sa trajectoire."
+     },
+     {
+      "term": "Adhérence",
+      "def": "Capacité des pneus à accrocher le revêtement ; elle dépend des pneus, de la route et de la météo."
+     },
+     {
+      "term": "Distance d’arrêt",
+      "def": "Distance de réaction plus distance de freinage : tout le chemin parcouru entre le moment où vous voyez le danger et l’arrêt complet."
+     }
+    ],
+    "method": [
+     "Observez le rayon du virage : plus il se resserre, plus la force vers l’extérieur augmente.",
+     "Évaluez l’adhérence : revêtement sec, mouillé, sale, gravillonné ou gelé.",
+     "Estimez la distance visible et comparez-la à votre distance d’arrêt.",
+     "Choisissez une vitesse qui vous permet de vous arrêter dans la partie visible.",
+     "Ralentissez avant la courbe pour laisser l’adhérence au guidage du véhicule."
+    ],
+    "example": {
+     "title": "La même courbe, deux météos",
+     "scene": "Vous roulez hors localité entre Bulle et Charmey. Vous connaissez une courbe à droite que vous prenez sans difficulté par beau temps. Aujourd’hui, il pleut et des feuilles mortes couvrent le bord de la chaussée.",
+     "reasoning": [
+      "Le rayon du virage n’a pas changé, donc la force centrifuge à une vitesse donnée reste la même.",
+      "En revanche, l’eau et les feuilles réduisent l’adhérence : les pneus peuvent fournir moins de force de guidage latéral.",
+      "Votre distance de freinage s’allonge aussi sur route mouillée, alors que la visibilité derrière la courbe reste limitée."
+     ],
+     "answer": "Vous ralentissez davantage que d’habitude, avant la courbe, pour que la force demandée reste bien en dessous de ce que les pneus peuvent fournir aujourd’hui."
+    },
+    "trap": "Le piège est de se fier à l’habitude : « je passe toujours ici à cette vitesse ». L’adhérence change avec la météo, la saison et l’état des pneus, alors que votre mémoire ne change pas. Jugez la courbe d’aujourd’hui, pas celle d’hier.",
+    "remember": "Vitesse doublée, force et distance de freinage environ quadruplées : dans un virage, chaque km/h compte.",
+    "memo": {
+     "code": "×2 → ×4",
+     "text": "Deux fois plus vite, environ quatre fois plus de force vers l’extérieur et quatre fois plus de distance de freinage."
+    },
+    "law": "Plan d'enseignement OCTC, bloc 4 ; LCR art. 32 (vitesse adaptée)"
+   },
+   {
+    "id": "phases-virage",
+    "otitle": "Les 4 phases du virage",
+    "title": "Annoncer, freiner, braquer, accélérer : dans quel ordre et pourquoi ?",
+    "ogoal": "Appliquer les quatre phases du virage et comprendre l’effet de chacune sur la vitesse et la trajectoire.",
+    "question": "À quel moment faut-il freiner pour un virage : avant, pendant ou après ?",
+    "lead": [
+     "Le modèle des phases de virage découpe une courbe en quatre moments simples. Chacun a un but précis. Si vous les enchaînez dans l’ordre, la voiture reste calme et prévisible."
+    ],
+    "parts": [
+     {
+      "title": "Phase 1 et 2 : annoncer, puis freiner en ligne droite",
+      "body": [
+       "**Annoncer / informer**, c’est d’abord vous informer vous-même : panneau de virage, balises, ligne qui se courbe, rangée d’arbres ou de poteaux qui tourne. C’est aussi informer les autres si vous changez de direction, par exemple avec l’indicateur à une bifurcation. Plus vous lisez tôt le virage, plus vous avez de temps.",
+       "**Freiner / décélérer**, c’est amener la voiture à la vitesse d’entrée choisie, tant que les roues sont encore droites. Selon la situation, il suffit de lever le pied ou il faut freiner nettement, et rétrograder si nécessaire. À la fin de cette phase, la vitesse est déjà la bonne : vous n’avez plus besoin de freiner dans la courbe."
+      ]
+     },
+     {
+      "title": "Phase 3 : braquer et suivre la courbe",
+      "body": [
+       "**Braquer**, c’est tourner le volant de façon souple et régulière pour suivre la courbe, en restant sur votre voie. Votre regard se porte loin, vers l’endroit où vous voulez aller, et pas sur le bord ou sur l’obstacle : les mains suivent souvent le regard.",
+       "Pendant cette phase, la vitesse reste stable. Un coup de frein brusque ou un mouvement de volant saccadé déstabilise la voiture et consomme de l’adhérence. Si vous constatez malgré tout que vous êtes trop rapide, freinez avec mesure et sans à-coup plutôt que de braquer davantage."
+      ]
+     },
+     {
+      "title": "Phase 4 : accélérer à la sortie",
+      "body": [
+       "**Accélérer** commence quand vous voyez la sortie du virage et que vous pouvez redresser le volant. Vous accélérez progressivement à mesure que les roues reviennent en ligne droite. L’accélération douce stabilise la voiture et la ramène à une vitesse adaptée à la suite de la route.",
+       "Accélérer trop tôt ou trop fort, alors que la voiture tourne encore, pousse le véhicule vers l’extérieur. La règle est simple : plus le volant est braqué, plus le pied droit reste doux."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Vitesse d’entrée",
+      "def": "Vitesse à laquelle vous abordez la courbe ; elle se règle entièrement pendant la phase de freinage."
+     },
+     {
+      "term": "Braquer",
+      "def": "Tourner le volant pour orienter les roues avant dans la direction du virage."
+     },
+     {
+      "term": "Trajectoire",
+      "def": "Le chemin suivi par le véhicule sur la chaussée, à l’intérieur de sa voie."
+     },
+     {
+      "term": "Point de sortie",
+      "def": "Endroit où la courbe se termine et où vous pouvez redresser le volant et réaccélérer."
+     }
+    ],
+    "method": [
+     "Repérez le virage tôt grâce aux panneaux, balises et repères du paysage.",
+     "Ralentissez jusqu’à la vitesse d’entrée pendant que les roues sont encore droites.",
+     "Braquez souplement en regardant vers la sortie, sans freiner fort.",
+     "Gardez votre voie et une vitesse stable dans la courbe.",
+     "Réaccélérez progressivement lorsque vous redressez le volant."
+    ],
+    "example": {
+     "title": "Courbe à gauche sur route cantonale",
+     "scene": "Vous roulez sur une route cantonale dans le Jura. Un panneau annonce un virage à gauche, la ligne médiane se courbe et la forêt cache la suite de la route.",
+     "reasoning": [
+      "Annoncer : le panneau et la ligne vous informent ; la forêt vous dit que vous ne verrez pas loin dans la courbe.",
+      "Freiner : vous ralentissez en ligne droite jusqu’à une vitesse qui vous permet de vous arrêter dans la partie visible.",
+      "Braquer puis accélérer : vous suivez la courbe sans couper la ligne médiane, regard vers la sortie, et vous réaccélérez doucement quand la route se redresse."
+     ],
+     "answer": "Toute la réduction de vitesse se fait avant la courbe ; dans la courbe vous gardez votre voie à vitesse stable ; vous accélérez seulement à la sortie."
+    },
+    "trap": "Le piège typique est d’entrer trop vite puis de freiner fort en plein virage. La voiture plonge, l’adhérence pour tourner diminue et la trajectoire s’élargit. Évitez-le en terminant le freinage avant de braquer.",
+    "remember": "On freine droit, on tourne calme, on accélère en sortant.",
+    "memo": {
+     "code": "Droit – Rond – Droit",
+     "text": "Roues droites : je freine. Roues tournées : je tiens. Roues qui se redressent : j’accélère."
+    },
+    "law": "Plan d'enseignement OCTC, bloc 4 ; LCR art. 32 (vitesse adaptée)"
+   },
+   {
+    "id": "marge-securite",
+    "otitle": "Marge de sécurité personnelle",
+    "title": "Pourquoi rouler volontairement en dessous des limites ?",
+    "ogoal": "Choisir délibérément une conduite qui laisse une réserve entre ses propres capacités, celles du véhicule et la limite physique ou légale.",
+    "question": "Si la voiture peut passer ce virage plus vite, pourquoi ne pas le faire ?",
+    "lead": [
+     "Rouler à la limite, même sans la dépasser, ne laisse aucune place à l’imprévu. Cette section vous montre comment garder une réserve personnelle, et pourquoi c’est une décision que vous prenez à l’avance."
+    ],
+    "parts": [
+     {
+      "title": "Trois limites, une seule réserve",
+      "body": [
+       "Dans un virage, trois limites se superposent : la limite légale (la vitesse maximale signalée), la limite physique (l’adhérence) et votre limite personnelle (votre expérience, votre fatigue, votre capacité à réagir). La plus basse des trois décide. Pour un débutant, c’est souvent la limite personnelle.",
+       "La **marge de sécurité** est l’écart que vous laissez volontairement entre votre conduite et la plus basse de ces limites. Elle vous permet d’absorber une surprise : une plaque d’eau, un cycliste derrière la courbe, un véhicule qui coupe le virage en face."
+      ]
+     },
+     {
+      "title": "Une décision prise avant, pas pendant",
+      "body": [
+       "La marge ne se crée pas au dernier moment. Elle se décide en choisissant votre vitesse d’approche, votre distance avec le véhicule qui précède et votre position sur la voie. Une fois dans la courbe, il est trop tard pour en ajouter beaucoup.",
+       "La vitesse maximale signalée n’est pas un objectif : c’est un plafond. L’art. 32 LCR exige d’adapter la vitesse aux circonstances. Rouler en dessous de la limite parce que la route est mouillée, que la visibilité est courte ou que vous êtes fatigué n’est pas une faiblesse : c’est exactement ce que la loi attend."
+      ]
+     },
+     {
+      "title": "Ne pas se laisser pousser",
+      "body": [
+       "Un véhicule qui vous suit de près, l’envie d’arriver à l’heure ou l’exemple d’un autre conducteur peuvent vous pousser à rouler plus vite que votre marge ne le permet. Ces pressions ne changent rien à l’adhérence ni à votre distance d’arrêt.",
+       "Gardez votre rythme, restez prévisible et, si quelqu’un veut absolument passer, facilitez-lui la manœuvre à un endroit sûr. Votre réserve vous protège vous, vos passagers et les autres usagers."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Marge de sécurité",
+      "def": "Réserve volontaire entre votre conduite et la limite la plus basse (légale, physique ou personnelle)."
+     },
+     {
+      "term": "Limite personnelle",
+      "def": "Ce que vous êtes capable de maîtriser aujourd’hui, selon votre expérience, votre état et votre attention."
+     },
+     {
+      "term": "Vitesse maximale signalée",
+      "def": "Plafond légal ; elle n’indique pas la vitesse sûre dans chaque situation."
+     }
+    ],
+    "method": [
+     "Identifiez la plus basse des trois limites : légale, physique, personnelle.",
+     "Choisissez une vitesse nettement en dessous de cette limite.",
+     "Augmentez la distance avec le véhicule qui précède dans les courbes.",
+     "Ignorez la pression des autres et gardez votre rythme.",
+     "Réévaluez votre marge dès que la météo, la route ou votre état changent."
+    ],
+    "example": {
+     "title": "Un suiveur pressé",
+     "scene": "Vous montez une route sinueuse hors localité. Il commence à pleuvoir. Une voiture vous suit de très près et son conducteur semble impatient.",
+     "reasoning": [
+      "La pluie abaisse la limite physique ; la présence d’un suiveur pressé ne la relève pas.",
+      "Accélérer pour lui faire plaisir réduirait votre marge exactement au moment où elle devient plus nécessaire.",
+      "Vous gardez votre vitesse adaptée et, dès qu’une place sûre se présente, vous facilitez son dépassement."
+     ],
+     "answer": "Vous conservez votre marge. La décision de vitesse vous appartient et doit correspondre aux conditions, pas à l’impatience d’un autre."
+    },
+    "trap": "Le piège est de penser que « tant que je respecte la limite, je suis en sécurité ». La limite légale ne connaît ni la pluie ni votre fatigue. Votre marge, elle, doit en tenir compte.",
+    "remember": "La limite est un plafond ; la réserve, c’est vous qui la choisissez.",
+    "memo": {
+     "code": "L–P–P",
+     "text": "Légale, Physique, Personnelle : la plus basse décide, et vous roulez encore en dessous."
+    },
+    "law": "Plan d'enseignement OCTC, bloc 4 ; LCR art. 32 (vitesse adaptée)"
+   },
+   {
+    "id": "virage-moto",
+    "otitle": "Particularités moto",
+    "title": "Qu’est-ce qui change dans un virage à moto ?",
+    "ogoal": "Connaître le rôle de l’inclinaison, du regard et de l’équipement de protection pour les motocyclistes, et en tenir compte comme automobiliste.",
+    "question": "Pourquoi un motocycliste ne peut-il pas freiner fort au milieu d’un virage comme il le ferait en ligne droite ?",
+    "lead": [
+     "Même si vous préparez le permis B, vous croiserez des motos dans chaque virage de col. Comprendre leur façon de tourner vous aide à anticiper leurs trajectoires, et c’est une base si vous passez un jour aux catégories A1 ou A."
+    ],
+    "parts": [
+     {
+      "title": "Tourner en s’inclinant",
+      "body": [
+       "Une moto ne tourne pas seulement avec le guidon : elle s’**incline** vers l’intérieur du virage. Plus la vitesse est élevée ou le virage serré, plus l’inclinaison nécessaire est grande. L’adhérence de deux petites surfaces de pneu doit alors tenir à la fois le poids et la force vers l’extérieur.",
+       "Freiner fort pendant l’inclinaison demande au pneu plus que ce qu’il peut donner, et la moto a tendance à se redresser et à élargir sa trajectoire. Les phases du virage sont donc encore plus importantes à moto : freiner avant, en étant droit, puis s’incliner. Les gravillons, les marquages mouillés et les plaques d’égout sont particulièrement dangereux en inclinaison."
+      ]
+     },
+     {
+      "title": "Le regard guide la moto",
+      "body": [
+       "À moto, la trajectoire suit fortement le regard. Le motocycliste tourne la tête et regarde vers la sortie du virage, loin devant, et non vers le bord de la route ou un obstacle qu’il veut éviter. Fixer un obstacle augmente le risque d’aller droit dessus.",
+       "Pour vous, automobiliste, cela signifie qu’une moto peut occuper une partie différente de la voie selon le virage, et que la moto en face peut s’approcher de la ligne médiane en s’inclinant. Restez bien sur votre voie et ne coupez pas les virages à gauche."
+      ]
+     },
+     {
+      "title": "L’équipement protège ce que la carrosserie ne protège pas",
+      "body": [
+       "Le motocycliste n’a pas de carrosserie. Le **casque** est obligatoire. Les gants, une veste et un pantalon de protection et des bottes ne sont pas tous exigés par la loi, mais ils sont vivement recommandés par le BPA, car ils réduisent fortement les blessures en cas de chute.",
+       "Pour les catégories A et A1, une instruction pratique de base de 12 heures est exigée : elle permet d’apprendre ces techniques encadré, avant de rouler seul. Comme automobiliste, retenez qu’une moto est plus étroite, donc plus facile à ne pas voir, et que sa vitesse est souvent difficile à estimer."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Inclinaison",
+      "def": "Penchement de la moto vers l’intérieur du virage, qui lui permet de tourner."
+     },
+     {
+      "term": "Regard directeur",
+      "def": "Technique qui consiste à regarder là où l’on veut aller, vers la sortie du virage."
+     },
+     {
+      "term": "Équipement de protection",
+      "def": "Casque, gants, vêtements et bottes adaptés ; le casque est obligatoire, le reste fortement recommandé."
+     },
+     {
+      "term": "Instruction pratique de base",
+      "def": "Formation pratique de 12 heures exigée pour les catégories A et A1."
+     }
+    ],
+    "method": [
+     "Freinez avant le virage, moto encore droite.",
+     "Regardez loin vers la sortie de la courbe.",
+     "Inclinez-vous progressivement et gardez une vitesse stable.",
+     "Évitez gravillons, marquages et plaques mouillées en inclinaison.",
+     "Équipez-vous complètement avant chaque trajet, même court."
+    ],
+    "example": {
+     "title": "Un col en été",
+     "scene": "Vous montez en voiture la route du col du Pillon un dimanche d’été. Dans une épingle à droite, un groupe de motos arrive en face en descendant.",
+     "reasoning": [
+      "Les motos s’inclinent dans le virage ; leur corps et leur casque peuvent se rapprocher de la ligne médiane.",
+      "Si vous coupez le virage, l’espace qui leur reste se réduit justement là où elles ne peuvent pas freiner fort.",
+      "Vous ralentissez avant l’épingle, vous restez bien sur votre voie et vous laissez de la place."
+     ],
+     "answer": "Vous préparez le virage tôt et vous gardez strictement votre voie, en sachant qu’une moto inclinée a peu de marge pour corriger sa trajectoire."
+    },
+    "trap": "Le piège est de croire qu’une moto, plus légère et plus agile, peut toujours s’arrêter ou s’écarter vite. En inclinaison, c’est l’inverse : freiner ou changer de ligne est délicat. Laissez-lui de l’espace.",
+    "remember": "À moto : on freine droit, on regarde la sortie, on s’équipe toujours.",
+    "memo": {
+     "code": "D–R–E",
+     "text": "Droit pour freiner, Regard vers la sortie, Équipement complet."
+    },
+    "law": "Plan d'enseignement OCTC, bloc 4 ; OCR ; OAC"
+   }
+  ]
+ },
+ "questions": [
+  {"id": "N26-PHY-01", "chapter": "N26", "section": "principes-physiques", "stem": "Vous doublez votre vitesse à l’approche d’un même virage. Qu’est-ce qui est exact ?", "options": ["La force qui pousse vers l’extérieur devient environ quatre fois plus grande.", "La force qui pousse vers l’extérieur double simplement.", "La distance de freinage devient environ quatre fois plus longue."], "answers": [0, 2], "truth": "Vitesse doublée : force centrifuge et distance de freinage environ quadruplées.", "why": "Ces deux grandeurs augmentent avec le carré de la vitesse.", "trap": "Croire que tout augmente au même rythme que la vitesse.", "action": "Réduisez nettement la vitesse avant les courbes.", "memory": "×2 → ×4."},
+  {"id": "N26-PHY-02", "chapter": "N26", "section": "principes-physiques", "stem": "Qu’est-ce qui maintient la voiture sur sa trajectoire dans un virage ?", "options": ["La force de guidage latéral fournie par les pneus.", "Le poids de la voiture, quelle que soit l’adhérence.", "L’adhérence entre les pneus et le revêtement."], "answers": [0, 2], "truth": "Les pneus, grâce à l’adhérence, produisent la force qui retient la voiture vers l’intérieur.", "why": "Sans adhérence, aucune force de guidage ne peut s’opposer à la poussée vers l’extérieur.", "trap": "Penser qu’une voiture lourde « colle » forcément à la route.", "action": "Vérifiez l’état de vos pneus et l’état de la route.", "memory": "Pas d’adhérence, pas de guidage."},
+  {"id": "N26-PHY-03", "chapter": "N26", "section": "principes-physiques", "stem": "À vitesse égale, quand la force centrifuge est-elle la plus forte ?", "options": ["Dans un virage serré, à petit rayon.", "Dans une courbe large, à grand rayon.", "Elle est identique dans tous les virages."], "answers": [0], "truth": "Plus le rayon est petit, plus la force vers l’extérieur est grande à vitesse égale.", "why": "La voiture doit changer de direction plus brusquement dans un virage serré.", "trap": "Ne regarder que la vitesse et oublier la forme du virage.", "action": "Ralentissez davantage quand le virage se resserre.", "memory": "Virage serré, vitesse réduite."},
+  {"id": "N26-PHY-04", "chapter": "N26", "section": "principes-physiques", "stem": "Quelles situations réduisent l’adhérence disponible ?", "options": ["Des feuilles mouillées sur la chaussée.", "Un revêtement sec et propre.", "Des pneus usés."], "answers": [0, 2], "truth": "Feuilles mouillées et pneus usés diminuent l’adhérence.", "why": "L’adhérence dépend à la fois de la surface de la route et de l’état des pneus.", "trap": "Ne penser qu’à la neige et au verglas.", "action": "Adaptez votre vitesse dès que la surface ou les pneus sont moins bons.", "memory": "Route sale ou pneu usé = moins d’accroche."},
+  {"id": "N26-PHY-05", "chapter": "N26", "section": "principes-physiques", "stem": "Pourquoi est-il défavorable de freiner fort au milieu d’un virage ?", "options": ["Le freinage consomme une partie de l’adhérence nécessaire pour tourner.", "Le freinage augmente l’adhérence disponible pour tourner.", "La voiture risque de ne plus suivre la trajectoire voulue."], "answers": [0, 2], "truth": "L’adhérence se partage entre freiner et tourner.", "why": "Ce qui est utilisé pour freiner n’est plus disponible pour le guidage latéral.", "trap": "Croire qu’un frein puissant règle tout, même en courbe.", "action": "Terminez le freinage avant de braquer.", "memory": "Freiner ou tourner : l’adhérence ne se double pas."},
+  {"id": "N26-PHY-06", "chapter": "N26", "section": "principes-physiques", "stem": "Votre voiture dispose de systèmes d’aide à la stabilité. Qu’est-ce qui est vrai ?", "options": ["Ils peuvent aider, mais ne repoussent pas la limite d’adhérence.", "Ils vous permettent de prendre les virages plus vite sans risque.", "Vous restez responsable du choix de la vitesse."], "answers": [0, 2], "truth": "Les systèmes d’aide ne changent pas les lois physiques ni votre responsabilité.", "why": "Au-delà de l’adhérence disponible, aucun système ne peut maintenir la trajectoire.", "trap": "Compter sur l’électronique pour compenser une vitesse excessive.", "action": "Choisissez votre vitesse comme si le système n’existait pas.", "memory": "L’aide aide, le conducteur décide."},
+  {"id": "N26-PHY-07", "chapter": "N26", "section": "principes-physiques", "stem": "Vous doublez votre vitesse. Comment évolue la distance parcourue pendant votre temps de réaction ?", "options": ["Elle double.", "Elle quadruple.", "Elle reste la même."], "answers": [0], "truth": "La distance de réaction augmente dans la même proportion que la vitesse.", "why": "Pendant la réaction, la voiture roule encore à vitesse constante.", "trap": "Confondre distance de réaction et distance de freinage.", "action": "Ajoutez toujours la réaction au freinage pour estimer l’arrêt.", "memory": "Réaction ×2, freinage ×4."},
+  {"id": "N26-PHA-01", "chapter": "N26", "section": "phases-virage", "stem": "Dans quel ordre se suivent les phases du virage ?", "options": ["Annoncer, freiner, braquer, accélérer.", "Braquer, freiner, annoncer, accélérer.", "Accélérer, braquer, freiner, annoncer."], "answers": [0], "truth": "On s’informe, on ralentit, on tourne, puis on réaccélère.", "why": "Chaque phase prépare la suivante : la vitesse est réglée avant que les roues tournent.", "trap": "Tourner d’abord et ralentir ensuite.", "action": "Récitez l’ordre avant chaque courbe au début de votre apprentissage.", "memory": "A–F–B–A."},
+  {"id": "N26-PHA-02", "chapter": "N26", "section": "phases-virage", "stem": "Quand la réduction de vitesse doit-elle être terminée ?", "options": ["Avant de braquer, roues encore droites.", "Au milieu du virage.", "Avant d’entrer dans la courbe."], "answers": [0, 2], "truth": "La vitesse d’entrée est atteinte avant la courbe, en ligne droite.", "why": "L’adhérence reste alors entièrement disponible pour tourner.", "trap": "Garder du freinage « pour plus tard » dans la courbe.", "action": "Freinez tôt et franchement en ligne droite.", "memory": "Je freine droit."},
+  {"id": "N26-PHA-03", "chapter": "N26", "section": "phases-virage", "stem": "Que comprend la phase « annoncer / informer » ?", "options": ["Repérer le virage grâce aux panneaux, balises et repères du paysage.", "Accélérer pour arriver plus vite à la courbe.", "Signaler un changement de direction aux autres usagers lorsque c’est nécessaire."], "answers": [0, 2], "truth": "Annoncer, c’est s’informer soi-même et informer les autres.", "why": "Plus le virage est repéré tôt, plus vous avez de temps pour régler la vitesse.", "trap": "Découvrir la courbe au dernier moment.", "action": "Regardez loin et utilisez l’indicateur si vous changez de direction.", "memory": "Voir tôt, dire tôt."},
+  {"id": "N26-PHA-04", "chapter": "N26", "section": "phases-virage", "stem": "Pendant la phase « braquer », où portez-vous votre regard ?", "options": ["Loin, vers la sortie du virage.", "Sur le bord droit de la chaussée, juste devant le capot.", "Vers l’endroit où vous voulez aller."], "answers": [0, 2], "truth": "Le regard porte vers la sortie, là où l’on veut aller.", "why": "Les mains suivent le regard, et un regard lointain laisse le temps de voir un obstacle.", "trap": "Fixer le bord ou l’obstacle, ce qui attire la voiture vers lui.", "action": "Tournez la tête vers la sortie dès l’entrée dans la courbe.", "memory": "Je regarde où je vais."},
+  {"id": "N26-PHA-05", "chapter": "N26", "section": "phases-virage", "stem": "Quand recommencez-vous à accélérer dans un virage ?", "options": ["Quand vous voyez la sortie et que vous redressez le volant.", "Dès l’entrée, pour stabiliser la voiture le plus tôt possible.", "Progressivement, à mesure que les roues reviennent droites."], "answers": [0, 2], "truth": "L’accélération accompagne le retour des roues en ligne droite.", "why": "Accélérer fort pendant que la voiture tourne la pousse vers l’extérieur.", "trap": "Réaccélérer trop tôt, volant encore très braqué.", "action": "Dosez l’accélérateur en fonction du volant.", "memory": "Volant braqué, pied doux."},
+  {"id": "N26-PHA-06", "chapter": "N26", "section": "phases-virage", "stem": "Dans un virage à gauche sans visibilité, qu’est-ce qui est correct ?", "options": ["Rester sur votre voie sans couper la ligne médiane.", "Couper le virage pour adoucir la trajectoire.", "Choisir une vitesse qui permet de s’arrêter dans la partie visible."], "answers": [0, 2], "truth": "On garde sa voie et une vitesse permettant l’arrêt dans la distance visible.", "why": "Un véhicule peut surgir en face derrière la courbe.", "trap": "Couper le virage parce que la route semble vide.", "action": "Restez à droite de la ligne et ralentissez avant la courbe.", "memory": "Je ne vois pas, je ne coupe pas."},
+  {"id": "N26-PHA-07", "chapter": "N26", "section": "phases-virage", "stem": "Vous constatez en pleine courbe que vous êtes un peu trop rapide. Quelle réaction est la plus sûre ?", "options": ["Freiner avec mesure, sans à-coup.", "Donner un coup de volant brusque vers l’intérieur.", "Accélérer fortement pour sortir plus vite du virage."], "answers": [0], "truth": "Une correction douce de la vitesse est préférable aux gestes brusques.", "why": "Les à-coups déstabilisent la voiture et consomment l’adhérence restante.", "trap": "Réagir par un geste violent au volant ou à l’accélérateur.", "action": "Restez calme, regardez la sortie, freinez progressivement si nécessaire.", "memory": "Erreur en courbe : douceur."},
+  {"id": "N26-MAR-01", "chapter": "N26", "section": "marge-securite", "stem": "La vitesse maximale signalée est de 80 km/h sur une route sinueuse mouillée. Que signifie cette limite ?", "options": ["C’est un plafond, pas une vitesse conseillée.", "C’est la vitesse à atteindre dès que possible.", "Il peut être nécessaire de rouler nettement moins vite."], "answers": [0, 2], "truth": "La limite légale est un maximum ; la vitesse doit être adaptée aux circonstances.", "why": "L’art. 32 LCR demande d’adapter la vitesse à la route, à la visibilité et aux conditions.", "trap": "Se croire en sécurité tant qu’on ne dépasse pas la limite.", "action": "Réduisez selon la pluie, les courbes et la visibilité.", "memory": "Limite légale ≠ vitesse sûre."},
+  {"id": "N26-MAR-02", "chapter": "N26", "section": "marge-securite", "stem": "Qu’est-ce que la marge de sécurité personnelle ?", "options": ["Une réserve volontaire entre votre conduite et la limite la plus basse.", "Une tolérance légale qui permet de dépasser un peu la vitesse maximale.", "Un espace qui vous permet de réagir à une surprise."], "answers": [0, 2], "truth": "La marge est une réserve que vous choisissez pour absorber l’imprévu.", "why": "Rouler à la limite ne laisse aucune place à une erreur ou à un événement inattendu.", "trap": "Confondre marge de sécurité et tolérance de mesure.", "action": "Roulez délibérément en dessous de ce que vous pourriez faire.", "memory": "La réserve, c’est moi qui la crée."},
+  {"id": "N26-MAR-03", "chapter": "N26", "section": "marge-securite", "stem": "Un véhicule vous suit de très près sur une route de virages. Quelle attitude est correcte ?", "options": ["Accélérer pour ne pas le gêner.", "Garder votre vitesse adaptée.", "Faciliter son dépassement à un endroit sûr, si nécessaire."], "answers": [1, 2], "truth": "La pression d’un suiveur ne change ni l’adhérence ni votre distance d’arrêt.", "why": "Accélérer réduirait votre marge sans rendre la route plus sûre.", "trap": "Se laisser imposer le rythme d’un autre conducteur.", "action": "Restez calme et prévisible, laissez passer quand c’est sûr.", "memory": "Mon rythme, pas le sien."},
+  {"id": "N26-MAR-04", "chapter": "N26", "section": "marge-securite", "stem": "Vous êtes fatigué après une longue journée. Qu’est-ce qui en découle pour votre marge ?", "options": ["Votre limite personnelle est plus basse.", "Votre marge peut rester la même, puisque la route n’a pas changé.", "Vous devez rouler plus prudemment, voire renoncer à conduire."], "answers": [0, 2], "truth": "La fatigue abaisse votre capacité de réaction et donc votre limite personnelle.", "why": "La marge se calcule à partir de la plus basse des limites, y compris la vôtre.", "trap": "Ne tenir compte que de la route et du véhicule.", "action": "Faites une pause ou ne prenez pas le volant si vous êtes trop fatigué.", "memory": "Moi fatigué, marge réduite."},
+  {"id": "N26-MAR-05", "chapter": "N26", "section": "marge-securite", "stem": "Quand votre marge de sécurité se décide-t-elle principalement ?", "options": ["Avant la situation, par le choix de la vitesse et des distances.", "Seulement au moment où un danger apparaît.", "Par votre position sur la voie et votre vitesse d’approche."], "answers": [0, 2], "truth": "La marge se prépare avant la courbe ou le danger.", "why": "Une fois dans la situation, il reste peu de moyens pour gagner de la réserve.", "trap": "Croire qu’on pourra toujours corriger au dernier moment.", "action": "Préparez vitesse, distance et position à l’avance.", "memory": "La marge se prépare."},
+  {"id": "N26-MAR-06", "chapter": "N26", "section": "marge-securite", "stem": "Trois limites s’appliquent dans un virage : légale, physique et personnelle. Laquelle décide de votre vitesse ?", "options": ["Toujours la limite légale.", "La plus basse des trois.", "Toujours la limite physique de la voiture."], "answers": [1], "truth": "La limite la plus basse décide, et vous roulez encore en dessous.", "why": "Dépasser n’importe laquelle de ces limites peut suffire à perdre la maîtrise ou à enfreindre la loi.", "trap": "Ne regarder qu’une seule limite.", "action": "Comparez les trois et gardez une réserve sous la plus basse.", "memory": "L–P–P : la plus basse gagne."},
+  {"id": "N26-MOT-01", "chapter": "N26", "section": "virage-moto", "stem": "Comment une moto tourne-t-elle dans un virage ?", "options": ["Elle s’incline vers l’intérieur du virage.", "Elle reste droite et tourne seulement grâce au guidon, comme une voiture.", "Son inclinaison augmente avec la vitesse et le resserrement du virage."], "answers": [0, 2], "truth": "La moto tourne en s’inclinant, d’autant plus que la vitesse est élevée ou le virage serré.", "why": "L’inclinaison permet d’équilibrer la poussée vers l’extérieur.", "trap": "Imaginer la moto comme une petite voiture.", "action": "Comme automobiliste, laissez de l’espace aux motos dans les courbes.", "memory": "Moto qui tourne = moto qui penche."},
+  {"id": "N26-MOT-02", "chapter": "N26", "section": "virage-moto", "stem": "À moto, où le conducteur doit-il regarder dans un virage ?", "options": ["Vers la sortie du virage, loin devant.", "Fixement sur l’obstacle qu’il veut éviter.", "Sur la roue avant."], "answers": [0], "truth": "Le regard porte vers la sortie : la moto suit le regard.", "why": "Fixer un obstacle augmente le risque de se diriger vers lui.", "trap": "Regarder le danger au lieu de l’échappatoire.", "action": "Tournez la tête vers la sortie avant de vous incliner.", "memory": "Regard loin, moto juste."},
+  {"id": "N26-MOT-03", "chapter": "N26", "section": "virage-moto", "stem": "Pourquoi un freinage fort en inclinaison est-il dangereux à moto ?", "options": ["Le pneu ne peut pas fournir à la fois un fort freinage et le guidage en courbe.", "Il rend la moto plus stable dans le virage.", "La moto a tendance à se redresser et à élargir sa trajectoire."], "answers": [0, 2], "truth": "En inclinaison, l’adhérence disponible pour freiner est réduite.", "why": "L’adhérence se partage entre tenir la courbe et freiner.", "trap": "Croire qu’une moto légère s’arrête toujours facilement.", "action": "Freinez avant le virage, moto droite.", "memory": "Freiner droit, pencher après."},
+  {"id": "N26-MOT-04", "chapter": "N26", "section": "virage-moto", "stem": "Concernant l’équipement du motocycliste, qu’est-ce qui est exact ?", "options": ["Le casque est obligatoire.", "Gants, vêtements de protection et bottes sont vivement recommandés.", "Le casque peut être remplacé par une veste rembourrée."], "answers": [0, 1], "truth": "Casque obligatoire ; le reste de l’équipement est fortement recommandé.", "why": "Sans carrosserie, l’équipement est la seule protection en cas de chute.", "trap": "Confondre ce qui est recommandé et ce qui est obligatoire, ou penser que l’un remplace l’autre.", "action": "Équipez-vous complètement, même pour un trajet court.", "memory": "Casque obligé, le reste conseillé."},
+  {"id": "N26-MOT-05", "chapter": "N26", "section": "virage-moto", "stem": "Une moto arrive en face dans une épingle. Que faites-vous en voiture ?", "options": ["Vous restez strictement sur votre voie.", "Vous coupez l’épingle pour la passer plus vite.", "Vous tenez compte du fait que la moto inclinée peut s’approcher de la ligne médiane."], "answers": [0, 2], "truth": "Garder sa voie laisse à la moto l’espace dont elle a besoin.", "why": "Une moto inclinée a peu de marge pour corriger sa trajectoire.", "trap": "Penser qu’une moto agile s’écartera toujours.", "action": "Ralentissez avant l’épingle et serrez votre voie.", "memory": "Moto en face : je garde ma voie."},
+  {"id": "N26-MOT-06", "chapter": "N26", "section": "virage-moto", "stem": "Quels éléments de la chaussée sont particulièrement dangereux pour une moto inclinée ?", "options": ["Les gravillons.", "Les marquages et plaques d’égout mouillés.", "Un revêtement sec, propre et régulier."], "answers": [0, 1], "truth": "Gravillons et surfaces lisses mouillées réduisent fortement l’adhérence.", "why": "La petite surface de contact du pneu moto réagit fortement à un changement de surface.", "trap": "Ne regarder que la courbe et oublier la surface.", "action": "Repérez la surface avant de vous incliner.", "memory": "Gravier ou peinture mouillée : prudence."},
+  {"id": "N26-MOT-07", "chapter": "N26", "section": "virage-moto", "stem": "Pour les catégories A et A1, qu’est-ce qui est exigé avant de rouler seul ?", "options": ["Une instruction pratique de base de 12 heures.", "Aucune formation pratique, la théorie suffit.", "Une formation pratique encadrée."], "answers": [0, 2], "truth": "Une instruction pratique de base de 12 heures est exigée pour A et A1.", "why": "Les techniques propres à la moto, comme l’inclinaison et le regard, s’apprennent encadré.", "trap": "Croire que l’examen théorique suffit pour maîtriser une moto.", "action": "Planifiez l’instruction de base avant de rouler seul.", "memory": "Moto : 12 heures de base."}
+ ]
+}

@@ -1,0 +1,162 @@
+{
+ "O13-D01": {
+  "option": "Au choix, à droite ou à gauche de l’îlot.",
+  "why": "Le signal 2.32 impose la droite ; il ne laisse aucun choix de côté."
+ },
+ "O13-D02": {
+  "option": "Vous pouvez contourner par la gauche si la voie est libre.",
+  "why": "Le signal 2.34 impose de contourner l’obstacle par la droite, même si la gauche paraît libre."
+ },
+ "O13-D03": {
+  "option": "Faire demi-tour si la route est libre.",
+  "why": "Le signal 2.36 impose de continuer tout droit et exclut tout changement de direction."
+ },
+ "O13-D04": {
+  "option": "Le signal 2.37 s’applique uniquement aux poids lourds.",
+  "why": "Sans plaque limitant sa portée, le signal 2.37 s’applique à tous les conducteurs."
+ },
+ "O13-D08": {
+  "option": "Vous pouvez tourner à gauche directement en coupant l’anneau.",
+  "why": "Le signal 2.41.1 impose de suivre le sens giratoire indiqué."
+ },
+ "O13-D10": {
+  "option": "Les cyclistes peuvent toujours circuler en sens inverse.",
+  "why": "Le contresens cycliste n’est admis que s’il est signalé, par exemple par 4.08.1."
+ },
+ "O13-D12": {
+  "option": "Tourner à gauche si vous mettez le clignotant à temps.",
+  "why": "Le clignotant n’autorise pas un mouvement interdit par le signal de direction obligatoire."
+ },
+ "O13-D13": {
+  "option": "Vous passez à droite si le chantier est à l’arrêt.",
+  "why": "Le côté imposé par le signal reste obligatoire, que le chantier soit actif ou non."
+ },
+ "O13-I01": {
+  "option": "Ils sont toujours de forme triangulaire.",
+  "why": "La forme triangulaire caractérise les signaux de danger, non les signaux d’indication."
+ },
+ "O13-I02": {
+  "option": "À la fin du parcours concerné.",
+  "why": "Le signal est normalement placé au début du parcours auquel l’indication se rapporte."
+ },
+ "O13-I04": {
+  "option": "Il autorise les cycles à y circuler.",
+  "why": "L’autoroute est réservée aux véhicules automobiles admis ; les cycles y sont exclus."
+ },
+ "O13-I05": {
+  "option": "Les règles de l’autoroute continuent jusqu’à la prochaine localité.",
+  "why": "Le régime spécial de l’autoroute cesse au signal 4.02."
+ },
+ "O13-I08": {
+  "option": "Il interdit l’accès à tous les véhicules privés.",
+  "why": "Le signal 4.14 demande des égards particuliers ; ce n’est pas une interdiction d’accès."
+ },
+ "O13-I11": {
+  "option": "À faire demi-tour lorsqu’on a manqué une sortie.",
+  "why": "La voie de détresse est réservée aux véhicules dont le freinage est défaillant."
+ },
+ "O13-I12": {
+  "option": "Ralentir seulement si un piéton est déjà sur la chaussée.",
+  "why": "Il faut rechercher les piétons qui veulent traverser et adapter l’allure avant qu’ils s’engagent."
+ },
+ "O13-I13": {
+  "option": "La route est réservée aux riverains.",
+  "why": "Le signal Impasse indique l’absence d’issue, sans restreindre l’accès."
+ },
+ "O13-P02": {
+  "option": "Le parcage est illimité si le disque est apposé.",
+  "why": "La plaque limite le parcage à trente minutes, avec ou sans disque."
+ },
+ "O13-P04": {
+  "option": "Avancer le disque pour obtenir une nouvelle durée.",
+  "why": "Modifier le disque sans quitter la place est interdit."
+ },
+ "O13-P05": {
+  "option": "Uniquement le samedi.",
+  "why": "Sans autre indication, la zone bleue s’applique les jours ouvrables de 8 h à 19 h."
+ },
+ "O13-P07": {
+  "option": "Placer la flèche sur l’heure à laquelle vous pensez repartir.",
+  "why": "La flèche indique l’heure d’arrivée, non l’heure de départ prévue."
+ },
+ "O13-P08": {
+  "option": "Oui, si vous êtes revenu vérifier le véhicule.",
+  "why": "Revenir au véhicule ne permet pas de modifier le disque tant qu’il n’a pas quitté la place."
+ },
+ "O13-P09": {
+  "option": "Sur la plage arrière pour le protéger du soleil.",
+  "why": "Le disque doit être bien visible derrière le pare-brise."
+ },
+ "O13-P11": {
+  "option": "Le jeter une fois le paiement effectué.",
+  "why": "Le ticket exigé doit rester visible dans le véhicule pour permettre le contrôle."
+ },
+ "O13-P13": {
+  "option": "Il autorise le parcage sur toute la distance qui précède le parking.",
+  "why": "Le panneau de direction guide vers le parking ; il ne crée aucune place en chemin."
+ },
+ "O13-R01": {
+  "option": "La voie est réservée aux véhicules d’urgence.",
+  "why": "La flèche verte ouvre la voie à la circulation ordinaire."
+ },
+ "O13-R02": {
+  "option": "Rester sur la voie jusqu’à l’apparition d’une croix rouge.",
+  "why": "La flèche jaune diagonale commande déjà de quitter la voie dès que possible."
+ },
+ "O13-R03": {
+  "option": "La voie est réservée aux bus pendant la fermeture.",
+  "why": "La croix rouge ferme la voie à tous les véhicules ; elle ne la réserve à personne."
+ },
+ "O13-R04": {
+  "option": "À la voie située à gauche du signal.",
+  "why": "Chaque signal suspendu se rapporte à la voie située directement au-dessous."
+ },
+ "O13-R06": {
+  "option": "Dès qu’un autre véhicule l’emprunte devant vous.",
+  "why": "L’exemple d’un autre conducteur ne remplace pas l’ouverture explicite par une flèche verte."
+ },
+ "O13-R08": {
+  "option": "Un arrêt obligatoire comme au feu rouge.",
+  "why": "Le jaune clignotant appelle à la prudence ; il n’impose pas l’arrêt."
+ },
+ "O13-R09": {
+  "option": "Aux cyclistes qui attendent au feu.",
+  "why": "Les signaux blancs spéciaux sont destinés aux transports publics de ligne."
+ },
+ "O13-R11": {
+  "option": "Uniquement la nuit lorsque le trafic est faible.",
+  "why": "L’exception dépend de la plaque 5.18, non de l’heure ni du trafic."
+ },
+ "O13-C01": {
+  "option": "Oui, si aucun résident ne cherche de place.",
+  "why": "La réservation au groupe indiqué vaut même lorsque des places sont libres."
+ },
+ "O13-C02": {
+  "option": "Les deux plaques signalent la fin de la règle.",
+  "why": "La plaque de distance situe le début de la règle et la plaque de longueur son étendue."
+ },
+ "O13-C04": {
+  "option": "La prescription s’arrête automatiquement au premier virage.",
+  "why": "Un virage ne met pas fin à une prescription annoncée sur deux kilomètres."
+ },
+ "O13-C05": {
+  "option": "Vous pouvez l’ignorer, car vous n’avez pas vu le signal initial.",
+  "why": "Le rappel sert justement à informer l’usager entrant que la prescription s’applique."
+ },
+ "O13-C06": {
+  "option": "Oui, si les feux de détresse sont allumés.",
+  "why": "Les feux de détresse ne lèvent pas l’interdiction de s’arrêter entre le début et la fin."
+ },
+ "O13-C08": {
+  "option": "La plaque n’a aucun effet sans le mot « Excepté ».",
+  "why": "Le symbole seul limite l’application du signal à la catégorie représentée."
+ },
+ "O13-C11": {
+  "option": "La voie est réservée aux bus toute la journée.",
+  "why": "La plaque « 7–9 h » limite la réservation à cette plage horaire."
+ },
+ "O13-C12": {
+  "option": "Le marquage n’a de valeur que s’il est accompagné d’une barrière.",
+  "why": "Le marquage au sol fait partie de la signalisation et réserve la case à lui seul."
+ }
+}
