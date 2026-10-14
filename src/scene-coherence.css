@@ -1,0 +1,12 @@
+/* Observation mode reserves real canvas space; the question never covers it. */
+#labObserve{position:fixed;left:14px;top:14px;z-index:12;max-width:min(650px,calc(100vw - 480px));padding:12px 14px;border:1px solid #adc5d5;border-radius:14px;background:#fff;color:#173043}
+#labObserve strong{font-size:18px;display:block}.lab-observe-note{font-size:14px;display:block;color:#3b5669;margin:2px 0 9px}
+.lab-view-actions,#labObserveTargets{display:flex;gap:6px;flex-wrap:wrap}#labObserveTargets{margin-top:7px}#labObserve button{border:1px solid #abc6d8;border-radius:8px;background:#f3f9fd;color:#173043;padding:7px 10px;font-weight:700;min-height:40px;font-size:15px!important}#labObserve button[aria-pressed=true]{background:#dcefe7;border-color:#236344;color:#174b34}
+#labSceneCaption{position:fixed;left:14px;bottom:16px;z-index:12;background:#fff;border:1px solid #abc6d8;border-radius:9px;padding:8px 12px;font-weight:700}
+body.lab-observing #hud,body.lab-observing #obj,body.lab-observing #dash,body.lab-observing #keys,body.lab-observing #minimap,body.lab-observing #labTouch{display:none!important}
+body.lab-observing #decide{top:14px;bottom:14px;right:12px;width:min(430px,39vw);max-height:none;margin:0}
+@media(max-width:760px){
+ #labObserve{left:8px;top:8px;max-width:calc(100vw - 16px);padding:8px 10px}#labObserve strong{font-size:16px}.lab-observe-note{font-size:12px;margin-bottom:4px}#labObserveTargets{display:flex;flex-wrap:nowrap;max-width:calc(100vw - 38px);overflow:auto}#labObserveTargets button{flex:none}
+ #labObserve button{min-height:36px;font-size:14px!important;padding:5px 8px}#labSceneCaption{top:calc(46dvh - 39px);bottom:auto;left:8px;padding:5px 8px;font-size:13px}
+ body.lab-observing #decide{top:calc(46dvh + 8px);bottom:8px;right:8px;width:calc(100vw - 16px);padding:14px;max-height:none}.lab-observing .dscene{font-size:16px;line-height:1.45}.lab-observing .dtitle{font-size:20px!important}
+}
