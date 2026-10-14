@@ -1,0 +1,48 @@
+name: SwissDriver quality
+on:
+  push:
+    branches: [feat/integration-atkinson-audit-runtime]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: swissdriver-quality-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Inspect source without modifying it
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, hashlib
+          s = Path('Permis_GT_Rossa.html').read_text()
+          out = Path('audit-output'); out.mkdir(exist_ok=True)
+          clean = re.sub(r'data:[^\s\"\']{300,}', '[EMBEDDED_ASSET]', s)
+          (out/'source-readable.html').write_text(clean)
+          print('SOURCE_SHA256', hashlib.sha256(s.encode()).hexdigest())
+          print('SOURCE_LINES', len(s.splitlines()))
+          for i, script in enumerate(re.findall(r'<script\b[^>]*>(.*?)</script>', clean, flags=re.S|re.I)):
+              (out/f'script-{i}.js').write_text(script)
+              print('SCRIPT', i, 'CHARS', len(script), 'START', script[:160])
+          PY
+      - name: Run project tests when present
+        run: |
+          if [ -f tests/test_swissdriver.py ]; then python3 tests/test_swissdriver.py; fi
+      - name: Save inspectable source and test evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: swissdriver-source-and-tests
+          path: |
+            Permis_GT_Rossa.html
+            audit-output/
+            test-results/
+          retention-days: 7
+          if-no-files-found: error
