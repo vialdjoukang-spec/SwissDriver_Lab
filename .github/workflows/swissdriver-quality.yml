@@ -1,0 +1,42 @@
+name: SwissDriver quality
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: swissdriver-quality-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Source integrity, build and course-scene contract
+        run: python3 tests/test_swissdriver.py
+      - name: Install pinned browser test tooling
+        run: |
+          python3 -m pip install playwright==1.56.0
+          python3 -m playwright install --with-deps chromium
+      - name: Real Chromium and WebGL smoke tests
+        run: python3 tests/browser_smoke.py
+      - name: Save build, source modules and test evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: swissdriver-build-and-evidence
+          path: |
+            Permis_GT_Rossa.html
+            dist/
+            test-results/
+            src/
+            scripts/
+            tests/
+            docs/
+            index.html
+            swissdriver-modern.css
+          retention-days: 7
+          if-no-files-found: error
