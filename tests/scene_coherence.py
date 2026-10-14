@@ -3,7 +3,7 @@ These checks do not certify every trajectory or the entire driving curriculum.
 """
 from pathlib import Path
 from functools import partial
-import http.server,threading,json,os,traceback
+import http.server,threading,json,os,traceback,hashlib
 from playwright.sync_api import sync_playwright
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'test-results';OUT.mkdir(exist_ok=True)
 os.environ['PW_TEST_SCREENSHOT_NO_FONTS_READY']='1'
@@ -11,9 +11,13 @@ class Quiet(http.server.SimpleHTTPRequestHandler):
     def log_message(self,*args):pass
 server=http.server.ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(ROOT)))
 threading.Thread(target=server.serve_forever,daemon=True).start()
+completed=False
+def html_sha256():
+    # Binds this report to the standalone HTML it exercised.
+    return hashlib.sha256((ROOT/'dist/SwissDriver_Lab.html').read_bytes()).hexdigest()
 checks=[];errors=[]
 def save():
-    (OUT/'scene-coherence-results.json').write_text(json.dumps({'checks':checks,'errors':errors,'scope':'Geometry, selected camera views and gesture; not exhaustive legal/trajectory validation'},ensure_ascii=False,indent=2))
+    (OUT/'scene-coherence-results.json').write_text(json.dumps({'checks':checks,'errors':errors,'scope':'Geometry, selected camera views and gesture; not exhaustive legal/trajectory validation','htmlSha256':html_sha256(),'completed':completed},ensure_ascii=False,indent=2))
 def check(name,passed,details=None):
     checks.append({'test':name,'passed':bool(passed),'details':details});save();print(name,passed,flush=True);assert passed,name
 with sync_playwright() as p:
@@ -67,6 +71,7 @@ with sync_playwright() as p:
         check('mobile_canvas_at_least_40pct_height',rects['canvas']['height']>=844*.4)
         page.screenshot(path=str(OUT/'scene-mobile.png'),timeout=90000)
         check('no_javascript_errors',not errors,errors)
+        completed=True
     except Exception:
         print(traceback.format_exc(),flush=True)
         try:page.screenshot(path=str(OUT/'scene-failure.png'),timeout=15000)

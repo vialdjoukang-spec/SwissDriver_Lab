@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 tests/*)",
+      "Bash(python3 scripts/*)",
+      "Bash(python3 -m pip install -r requirements-dev.txt)",
+      "Bash(.venv/bin/python *)",
+      "Bash(node scripts/*)",
+      "Bash(npm run *)",
+      "Bash(npm test)",
+      "Bash(sha256sum *)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git fetch*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push -u origin claude/*)",
+      "mcp__github__pull_request_read",
+      "mcp__github__get_job_logs",
+      "mcp__github__actions_get",
+      "mcp__github__actions_list",
+      "mcp__github__get_check_run",
+      "mcp__github__issue_read",
+      "mcp__github__list_releases",
+      "mcp__github__get_release_by_tag",
+      "mcp__github__get_file_contents"
+    ]
+  }
+}

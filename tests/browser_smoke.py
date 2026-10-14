@@ -3,7 +3,7 @@ Scene construction checks do not certify every full trajectory or Swiss law.
 """
 from pathlib import Path
 from functools import partial
-import http.server,threading,json,os,traceback
+import http.server,threading,json,os,traceback,hashlib
 from playwright.sync_api import sync_playwright
 os.environ['PW_TEST_SCREENSHOT_NO_FONTS_READY']='1'
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'test-results';OUT.mkdir(exist_ok=True)
@@ -11,9 +11,13 @@ class QuietHandler(http.server.SimpleHTTPRequestHandler):
     def log_message(self,*args):pass
 server=http.server.ThreadingHTTPServer(('127.0.0.1',0),partial(QuietHandler,directory=str(ROOT)))
 threading.Thread(target=server.serve_forever,daemon=True).start()
+completed=False
+def html_sha256():
+    # Binds this report to the standalone HTML it exercised.
+    return hashlib.sha256((ROOT/'dist/SwissDriver_Lab.html').read_bytes()).hexdigest()
 results=[];errors=[]
 def save_progress():
-    (OUT/'browser-results.json').write_text(json.dumps({'tests':results,'javascriptErrors':errors,'scope':'Chromium/WebGL initialization, real scene construction, selected transitions and static render captures; not an exhaustive driving/legal audit'},ensure_ascii=False,indent=2))
+    (OUT/'browser-results.json').write_text(json.dumps({'tests':results,'javascriptErrors':errors,'scope':'Chromium/WebGL initialization, real scene construction, selected transitions and static render captures; not an exhaustive driving/legal audit','htmlSha256':html_sha256(),'completed':completed},ensure_ascii=False,indent=2))
 def check(name,condition,details=None):
     results.append({'test':name,'passed':bool(condition),'details':details});print(name,condition,flush=True)
     save_progress();assert condition,name
@@ -103,6 +107,7 @@ with sync_playwright() as p:
         page.goto((ROOT/'dist/SwissDriver_Lab.html').as_uri(),wait_until='domcontentloaded',timeout=120000)
         page.wait_for_function('window.SwissDriverLab && window.__G',timeout=120000)
         check('standalone_offline_boot',page.locator('#startBtn').is_visible() and not errors,errors)
+        completed=True
     except Exception:
         print(traceback.format_exc(),flush=True)
         try:page.screenshot(path=str(OUT/'failure.png'),timeout=10000)

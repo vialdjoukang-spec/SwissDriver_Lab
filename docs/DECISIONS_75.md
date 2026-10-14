@@ -13,7 +13,12 @@ Le moteur historique réaccélérait après le passage de l'ambulance même lors
 Le test vérifie aussi la marge devant la ligne rouge et l'absence de verts simultanés sur les deux directions conflictuelles.
 
 ## Statut
-En validation sur la PR #5. Ne pas annoncer 75 réussites avant lecture du rapport effectif `test-results/decision-paths-results.json`.
+- Commit `b5a07df` (PR #5) : 75/75 consigné par le workflow 38595698490 ; reproduit localement le 14.10.2026 sur le même commit (HTML `b72d5d25…`).
+- Depuis la PR de relais (issue #6), `scripts/evidence.py` exige ce rapport complet, réussi et lié à l'empreinte du HTML livré avant tout packaging strict ou déploiement Pages.
+- Un résultat ne vaut que pour le commit et le HTML qu'il nomme ; relire `test-results/decision-paths-results.json` avant toute annonce.
+
+## Matrice de cohérence
+`docs/COHERENCE_PRIORITES.json`, généré par `scripts/coherence_matrix.py` : 75 lignes action annoncée → `act` moteur → mouvement mesuré → objets → issue → preuve → source. Aucune ligne n'est déclarée cohérente : geste et source réglementaire restent à auditer.
 
 ## Limites
 Le test vérifie le contrat de réponses déjà stocké, pas son exactitude juridique. Il ne couvre pas l'approche manuelle complète, la fidélité de chaque animation de mauvaise réponse, tous les espaces de collision, l'exactitude visuelle exhaustive ni les appareils/navigateurs autres que Chromium. Certaines alternatives utilisent encore une animation générique : ce point reste distinct des issues terminales testées.

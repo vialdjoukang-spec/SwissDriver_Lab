@@ -22,6 +22,8 @@ jobs:
         run: |
           rm -rf test-results dist release
           python3 tests/test_swissdriver.py
+          python3 tests/test_evidence_gate.py
+          python3 tests/test_coherence_matrix.py
       - name: Install pinned browser tooling
         run: |
           python3 -m pip install -r requirements-dev.txt
