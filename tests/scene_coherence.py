@@ -34,7 +34,7 @@ with sync_playwright() as p:
         check('p4_direction_plate_is_present',any(s['type']=='plateLeft' for s in p4['signs']))
         for id in ['h2','h3','p3','p4']:
             r=next(r for r in rows if r['scenarioId']==id);m=r['markingBounds']
-            check(id+'_line_stays_in_approach_lane',m and m['minCenterX']>=0 and m['maxCenterX']<=3.5,m)
+            check(id+'_line_stays_in_approach_lane',m and m['minX']>=0 and m['maxX']<=3.5,m)
             check(id+'_yield_faces_driver',any(s['type']=='yield' and s['facingApproach'] for s in r['signs']))
         page.evaluate("SwissDriverScene.test.prepare('h1')")
         page.wait_for_function('SwissDriverScene.test.gestureState()!==null',timeout=90000)
@@ -47,6 +47,8 @@ with sync_playwright() as p:
         rects=page.evaluate("({canvas:document.querySelector('#stage canvas').getBoundingClientRect().toJSON(),question:document.querySelector('#decide').getBoundingClientRect().toJSON()})")
         check('desktop_question_does_not_cover_canvas',rects['canvas']['right']<=rects['question']['left'],rects)
         check('stale_objective_hidden',not page.locator('#obj').is_visible())
+        check('overview_camera_above_avenue',page.evaluate('Math.abs(SwissDriverLab.test.camera.position.x)<3.5'))
+        check('actual_traffic_light_can_be_inspected',page.locator('[data-landmark="traffic-light"]').count()==1)
         page.locator('[data-landmark="agent"]').click();page.screenshot(path=str(OUT/'scene-agent-closeup.png'),timeout=90000)
         check('agent_focus_caption',page.locator('#labSceneCaption').inner_text()=='Agent de police')
         page.locator('#labDriverView').click();check('driver_view_hides_car_body',page.evaluate('SwissDriverLab.test.player.visible') is False)

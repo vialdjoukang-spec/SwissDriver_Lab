@@ -14,7 +14,7 @@
   rp=function(x,z,width){
     // The legacy caller used a 5 m line offset 1 m into the kerb. Keep it in
     // the player's lane. This does not certify the exact official road marking.
-    const mesh=nativeMark(Math.abs(x-(He+1))<.01?He:x,z,width??3.2);
+    const mesh=nativeMark(Math.abs(x-(He+1))<.01?He:x,z,width??3.0);
     mesh.userData.labMark='yield-line';return mesh;
   };
   // The approach is explicitly the THIN branch in this scenario. A priority
@@ -32,14 +32,21 @@
   function gesture(mesh,time){
     let rig=mesh.userData.labRig;
     if(!rig){
-      rig={};mesh.traverse(n=>{if(n.isBone&&['RightArm','RightForeArm','RightHand'].includes(n.name))rig[n.name]=n;});
+      rig={};mesh.traverse(n=>{if(n.isBone&&['RightArm','RightForeArm','RightHand','LeftArm','LeftForeArm','LeftHand'].includes(n.name))rig[n.name]=n;});
       mesh.userData.labRig=rig;
     }
     if(!rig.RightArm||!rig.RightForeArm||!rig.RightHand)return false;
+    mesh.rotation.y=Math.atan2(O.x-mesh.position.x,O.z-mesh.position.z);
     mesh.updateMatrixWorld(true);
-    const elbow=mesh.localToWorld(dt(-.40,1.30,.35));
-    const hand=mesh.localToWorld(dt(-.28,1.35+.08*Math.sin(time*3.2),.68+.16*Math.cos(time*3.2)));
-    aim(rig.RightArm,rig.RightForeArm,elbow);aim(rig.RightForeArm,rig.RightHand,hand);
+    const forward=dt(O.x-mesh.position.x,0,O.z-mesh.position.z).normalize();
+    const shoulder=point(rig.RightArm);
+    aim(rig.RightArm,rig.RightForeArm,shoulder.clone().addScaledVector(forward,.24).add(dt(0,-.13,0)));
+    const elbow=point(rig.RightForeArm);
+    aim(rig.RightForeArm,rig.RightHand,elbow.clone().addScaledVector(forward,.12+.10*Math.cos(time*3.2)).add(dt(0,.19+.06*Math.sin(time*3.2),0)));
+    if(rig.LeftArm&&rig.LeftForeArm&&rig.LeftHand){
+      aim(rig.LeftArm,rig.LeftForeArm,point(rig.LeftArm).add(dt(.02,-.28,0)));
+      aim(rig.LeftForeArm,rig.LeftHand,point(rig.LeftForeArm).add(dt(0,-.24,.03)));
+    }
     mesh.userData.labGesture='beckon';return true;
   }
   const nativePose=gp;
@@ -64,6 +71,15 @@
           replacement.position.copy(old.position);replacement.rotation.copy(old.rotation);
           Ut.remove(old);Ut.add(replacement);agent.mesh=replacement;
         }
+        if(!agent.mesh.userData.labUniform){
+          agent.mesh.traverse(node=>{
+            if(/Headwear/.test(node.name))node.visible=false;
+            if(node.isMesh&&/Outfit_(Top|Bottom|Footwear)/.test(node.name)){
+              node.material=node.material.clone();node.material.color.set(/Top/.test(node.name)?'#d4e84b':'#172b3c');
+            }
+          });
+          agent.mesh.userData.labUniform=true;
+        }
         agent.mesh.userData.wave=true;gesture(agent.mesh,performance.now()/1000);
       };
       equip();oM.then(equip);
@@ -87,6 +103,9 @@
     const result=[];
     const agent=scene.actors.find(a=>a.kind==='agent');
     if(agent)result.push({key:'agent',label:'Agent de police',mesh:agent.mesh,dy:1.25});
+    const road=[...or.values()].find(chunk=>chunk.userData.i===0&&chunk.userData.j===Math.round(scene.it.z/Oe));
+    const light=road?.userData.lights?.av?.red;
+    if(light&&scene.light!==null)result.push({key:'traffic-light',label:'Feu de votre voie',mesh:light,dy:0});
     scene.props.traverse(mesh=>{
       const kind=mesh.userData.labSign;
       if(kind&&kind!=='stopText'&&kind!=='plateLeft')result.push({key:'sign-'+mesh.uuid,label:labels[kind]||kind,mesh,dy:(mesh.userData.top||2.8)-.4});
@@ -132,7 +151,7 @@
     }else if(target){
       const look=point(target.mesh,target.dy);
       const side=target.key.startsWith('sign-')?0:2;
-      const distance=target.key==='agent'?4.3:target.key.startsWith('sign-')?3.7:8;
+      const distance=target.key==='agent'?4.3:target.key.startsWith('sign-')||target.key==='traffic-light'?3.7:8;
       na.position.copy(look).add(dt(side,1.0,distance));na.lookAt(look);Dt.visible=true;caption.textContent=target.label;
     }else{
       // All coordinates come from this actual scene. Do not aim at an old
@@ -142,7 +161,7 @@
       points.forEach(p=>{min.x=Math.min(min.x,p.x);min.z=Math.min(min.z,p.z);max.x=Math.max(max.x,p.x);max.z=Math.max(max.z,p.z);});
       const look=dt((min.x+max.x)/2,.4,(min.z+max.z)/2);
       const radius=Math.max(17,(max.x-min.x)*.7,(max.z-min.z)*.65)*Math.max(1,1/na.aspect);
-      na.position.copy(look).add(dt(radius*.45,radius*.65,radius));na.lookAt(look);Dt.visible=true;caption.textContent='Vue d’ensemble de la situation';
+      na.position.set(0,look.y+radius*.8,look.z+radius*1.25);na.lookAt(look);Dt.visible=true;caption.textContent='Vue d’ensemble de la situation';
     }
     na.updateMatrixWorld(true);caption.hidden=false;
   }
@@ -168,12 +187,17 @@
         const facing=dt(0,0,1).applyQuaternion(mesh.getWorldQuaternion(mesh.quaternion.clone()));
         signs.push({type:mesh.userData.labSign,x:pos.x,y:pos.y,z:pos.z,facingApproach:facing.dot(approach)>0});
       }
-      if(mesh.userData.labMark){const xs=[];mesh.children.forEach(n=>xs.push(n.position.x));markingBounds={minCenterX:Math.min(...xs),maxCenterX:Math.max(...xs)};}
+      if(mesh.userData.labMark){
+        const xs=[];mesh.traverse(n=>{
+          if(!n.geometry)return;n.geometry.computeBoundingBox();const b=n.geometry.boundingBox;
+          for(const x of [b.min.x,b.max.x])for(const y of [b.min.y,b.max.y])for(const z of [b.min.z,b.max.z])xs.push(n.localToWorld(dt(x,y,z)).x);
+        });markingBounds={minX:Math.min(...xs),maxX:Math.max(...xs)};
+      }
     });
     return {scenarioId:scene.sc.id,ruleId:scene.it.c.id+'/'+scene.it.s.id,kind:scene.sc.kind,light:scene.light,
       signs,markingBounds,actors:scene.actors.map(a=>({kind:a.kind,queue:!!a.queue,x:a.mesh.position.x,z:a.mesh.position.z,gesture:a.mesh.userData.labGesture||null})),pathLength:scene.pPath.len};
   }
-  const api={version:VERSION,inspectCurrent:()=>Ie?inspect(Ie):null,focus:select};
+  const api={version:VERSION,inspectCurrent:()=>Ie?inspect(Ie):null,focus:select,isDriverView:()=>At==='decide'&&focusKey==='driver'};
   if(window.__SWISSDRIVER_TEST__)api.test={
     prepare:id=>{
       const item=byId.get(id);if(!item)throw Error('Scénario absent : '+id);
