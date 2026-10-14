@@ -1,6 +1,9 @@
 # Historique
 
-## Non publié — PR de relais (issue #6, base PR #5)
+## 0.4.0-preview.1 — 14 octobre 2026
+Inclut la PR #5 (75 branches de Priorités, arrêt t3 au rouge) et la PR #7 ci-dessous.
+
+### PR #7 — relais (issue #6)
 Verrou des preuves : le packaging strict et Pages exigent les rapports navigateur, scène et 75 branches complets, réussis et liés à l'empreinte du HTML livré. Pages déploie seulement l'édition d'un run qualité réussi du même commit. Matrice `docs/COHERENCE_PRIORITES.json` initialisée (75 lignes, aucune déclarée cohérente). Aucun changement du simulateur ; HTML autonome identique (`b72d5d25…`).
 
 ## 0.3.0-preview.1 — 14 octobre 2026
