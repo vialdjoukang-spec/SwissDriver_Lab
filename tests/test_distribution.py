@@ -21,7 +21,10 @@ class DistributionTests(unittest.TestCase):
                      'src/engine-bridge.js', 'src/scene-coherence.js', 'src/scene-coherence.css',
                      'src/sedan.js', 'swissdriver-modern.css', 'Permis_GT_Rossa.html',
                      'scripts/build.cjs', 'scripts/serve.cjs', 'scripts/package.py',
-                     'tests/browser_smoke.py', 'tests/scene_coherence.py', 'START_HERE.md',
+                     'tests/browser_smoke.py', 'tests/scene_coherence.py',
+                     'tests/decision_paths.py', 'tests/test_evidence_gate.py', 'tests/test_coherence_matrix.py',
+                     'scripts/evidence.py', 'scripts/coherence_matrix.py', 'src/decision-safety.js',
+                     'docs/COHERENCE_PRIORITES.json', 'docs/DECISIONS_75.md', '.github/workflows/pages.yml', 'START_HERE.md',
                      'docs/EDITER.md', 'docs/ETAT_ET_RESTE.md', 'AGENTS.md',
                      '.github/workflows/swissdriver-quality.yml']:
             self.assertIn(PREFIX + name, self.names)

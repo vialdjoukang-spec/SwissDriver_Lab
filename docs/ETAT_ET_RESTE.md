@@ -31,7 +31,7 @@ Le moteur, ses ressources embarquées, la berline, les cours consultables, le pr
 ## Travaux, dans l'ordre de priorité
 | Priorité | Travail restant | Critère d'achèvement |
 |---|---|---|
-| P0 | Vérifier toutes les décisions et trajectoires de Priorités | 25 situations × 3 choix = 75 branches testées jusqu'au résultat, avec objets, positions et explications cohérents ; pas seulement la construction des scènes. |
+| P0 | Vérifier toutes les décisions et trajectoires de Priorités | Fait : 75 issues terminales et rejeux (PR #5). Reste (issue #6) : geste réel conforme à chaque réponse, approches manuelles, contacts ; suivi dans `docs/COHERENCE_PRIORITES.json`, 40 lignes partagent un `act` générique dans leur situation. |
 | P0 | Vérifier le contenu routier suisse | Chaque règle rattachée à une source officielle datée, contradictions corrigées, validation par une personne compétente. |
 | P1 | Créer les exercices des 18 autres chapitres | Matrice cours → règle → exercice approprié → environnement → évaluation complète ; scènes 3D quand pertinentes, autres exercices interactifs sinon. |
 | P1 | Évaluer la conduite réellement effectuée | Événements mesurés : arrêt, priorité, vitesse, trajectoire, collision et clignotant ; séparer trajectoires assistées et actions manuelles. |
@@ -41,6 +41,6 @@ Le moteur, ses ressources embarquées, la berline, les cours consultables, le pr
 | P2 | Documenter les actifs et déployer le site | Provenance des modèles/médias, licences vérifiées ; activation Pages et contrôle de l'URL réellement publiée. |
 
 ## Ce que les tests prouvent — et ne prouvent pas
-Les lots fusionnés totalisent 8 tests structurels, 20 contrôles navigateur et 24 contrôles des scènes, réussis lors de leur vérification. La livraison relance ces suites et ajoute 6 contrôles de distribution. Les résultats effectifs et captures de chaque édition sont joints à sa release ; un résultat de test concerne le commit indiqué, pas toute modification future.
+Les lots fusionnés totalisent 8 tests structurels, 20 contrôles navigateur et 24 contrôles des scènes, réussis lors de leur vérification. La PR #5 (non fusionnée) ajoute 75 branches décisionnelles ; la PR de relais ajoute le verrou des preuves (9 tests) et le contrat de la matrice (4 tests). La livraison relance ces suites et ajoute 6 contrôles de distribution ; chaque rapport porte l'empreinte du HTML testé. Les résultats effectifs et captures de chaque édition sont joints à sa release ; un résultat de test concerne le commit indiqué, pas toute modification future.
 
 Les tests instrumentés utilisent des rendus ponctuels. Ils ne constituent pas un benchmark de fluidité. La construction des 25 scènes ne prouve pas l'exactitude de leurs 75 branches. L'agent et la ville restent pédagogiques, non des reproductions réglementaires ou géographiques certifiées. Le projet n'est ni une auto-école homologuée ni un certificat de capacité à conduire.

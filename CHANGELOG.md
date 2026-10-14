@@ -1,5 +1,8 @@
 # Historique
 
+## Non publié — PR de relais (issue #6, base PR #5)
+Verrou des preuves : le packaging strict et Pages exigent les rapports navigateur, scène et 75 branches complets, réussis et liés à l'empreinte du HTML livré. Pages déploie seulement l'édition d'un run qualité réussi du même commit. Matrice `docs/COHERENCE_PRIORITES.json` initialisée (75 lignes, aucune déclarée cohérente). Aucun changement du simulateur ; HTML autonome identique (`b72d5d25…`).
+
 ## 0.3.0-preview.1 — 14 octobre 2026
 Édition reproductible et modifiable : fichier autonome, ZIP avec sources et preuves, manifeste SHA-256, inventaire calculé des chapitres, serveur local, guide d'édition et consignes de reprise. Publication de release conditionnée aux tests. Workflow Pages prêt à déclencher après configuration. Aucune nouvelle scène ni nouvelle règle routière ajoutée dans ce lot.
 

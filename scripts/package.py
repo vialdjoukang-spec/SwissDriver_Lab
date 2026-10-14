@@ -1,7 +1,9 @@
 """Build a complete, deterministic source/runtime/evidence archive. No fonts/secrets."""
 from pathlib import Path
-import argparse, hashlib, json, subprocess, zipfile
+import argparse, hashlib, json, subprocess, sys, zipfile
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'scripts'))
+from evidence import validate as validate_evidence  # noqa: E402
 EXPECTED = '58ec2197dd14b8e8895cb83d134a2b598213b7f3d03b221fbf39f8e74258335a'
 
 def sha(data):
@@ -47,22 +49,10 @@ def package(require_evidence=False):
         for p in sorted((ROOT / folder).glob('**/*')):
             if p.is_file() and p.suffix in suffixes and '__pycache__' not in p.parts:
                 files[p.relative_to(ROOT).as_posix()] = p.read_bytes()
-    evidence = []
-    for name, key, error_key in [('browser-results.json', 'tests', 'javascriptErrors'),
-                                  ('scene-coherence-results.json', 'checks', 'errors')]:
-        p = ROOT / 'test-results' / name
-        if not p.exists():
-            if require_evidence:
-                raise ValueError('Rapport navigateur absent : ' + name)
-            continue
-        report = json.loads(p.read_text())
-        checks = report.get(key, [])
-        passed = bool(checks) and all(c.get('passed') is True for c in checks) and not report.get(error_key)
-        if require_evidence and not passed:
-            raise ValueError('Rapport navigateur en echec : ' + name)
-        evidence.append({'file': 'test-results/' + name, 'checks': len(checks), 'allPassed': passed,
-                         'scope': report.get('scope'), 'sha256': sha(p.read_bytes())})
-    files['dist/SwissDriver_Lab.html'] = (ROOT / 'dist/SwissDriver_Lab.html').read_bytes()
+    html = (ROOT / 'dist/SwissDriver_Lab.html').read_bytes()
+    # Every report, including the 75 decision branches, must name this exact HTML.
+    evidence = validate_evidence(ROOT / 'test-results', html, require=require_evidence)
+    files['dist/SwissDriver_Lab.html'] = html
     inventory = {'totals': totals, 'chapters': catalogue, 'scope': 'Stored content and scene availability, not legal certification.'}
     files['curriculum-status.json'] = json_bytes(inventory)
     version = json.loads((ROOT / 'package.json').read_text())['version']
@@ -98,7 +88,7 @@ Le ZIP comprend les modules, le moteur historique avec ses ressources, les scrip
 
 Perimetre : {totals['chapters']} chapitres et {totals['sections']} sous-chapitres stockes ; {totals['simulatedChapters']} chapitre simule, {totals['simulatedSections']} sous-chapitres et {totals['scenarios']} situations. Les autres chapitres ne sont pas des scenes jouables. Voir **docs/ETAT_ET_RESTE.md**.
 
-Rapports navigateur : {sum(e['checks'] for e in evidence)} controles dans les rapports joints. La publication est conditionnee aux tests de structure, navigateur, scene et distribution. Les tests instrumentes ne certifient pas toutes les trajectoires, la fluidite ni le droit routier suisse.
+Rapports navigateur : {sum(e.get('checks', 0) for e in evidence)} controles et {sum(e.get('branches', 0) for e in evidence)} branches decisionnelles, lies a l'empreinte du HTML livre. La publication est conditionnee aux tests de structure, navigateur, scene, des 75 branches et de distribution. Les tests instrumentes ne certifient pas toutes les trajectoires, la fluidite ni le droit routier suisse.
 
 La release n'active pas GitHub Pages. Workflow de deploiement manuel fourni apres activation dans les parametres du depot.
 '''

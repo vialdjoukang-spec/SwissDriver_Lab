@@ -1,0 +1,3756 @@
+{
+ "schema": "swissdriver.coherence-priorites/1",
+ "scope": "Matrice cours -> regle -> action annoncee -> action reelle -> consequence pour O11. Initialisation : aucune ligne n’est declaree coherente ; observedAction et regulatorySource restent vides tant qu’un audit visuel et une source officielle datee ne les justifient pas.",
+ "statuses": {
+  "non_audite": "Aucune observation du geste ; seul le contrat stocke est connu.",
+  "issue_terminale_verifiee": "Issue terminale et rejeu observes ; geste, contacts et source non audites.",
+  "limite_signalee": "Ecart entre action annoncee et comportement simule, documente comme limite.",
+  "coherent_observe": "Geste observe identique a l’annonce, sans contact imprevu, source officielle datee."
+ },
+ "sourceHtmlSha256": "58ec2197dd14b8e8895cb83d134a2b598213b7f3d03b221fbf39f8e74258335a",
+ "decisionReportHtmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+ "totals": {
+  "rows": 75,
+  "byStatus": {
+   "non_audite": 0,
+   "issue_terminale_verifiee": 75,
+   "limite_signalee": 0,
+   "coherent_observe": 0
+  },
+  "rowsWithSharedEngineAct": 40
+ },
+ "rows": [
+  {
+   "ruleId": "O11/hierarchie",
+   "ruleTitle": "Hiérarchie des règles de priorité",
+   "scenarioId": "h1",
+   "scenarioTitle": "Un agent au carrefour",
+   "sceneKind": "agent",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je reste arrêté : le feu est rouge.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 60.85,
+    "lastS": 66.69,
+    "maxSpeedMs": 3.99,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "red",
+    "signs": [],
+    "actors": [
+     "agent:beckon",
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Suivre le geste de l’agent et avancer prudemment.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/hierarchie",
+   "ruleTitle": "Hiérarchie des règles de priorité",
+   "scenarioId": "h1",
+   "scenarioTitle": "Un agent au carrefour",
+   "sceneKind": "agent",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "J’avance prudemment, comme l’agent l’indique.",
+   "engineAct": "go",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.44,
+    "lastS": 102.35,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "red",
+    "signs": [],
+    "actors": [
+     "agent:beckon",
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Suivre le geste de l’agent et avancer prudemment.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/hierarchie",
+   "ruleTitle": "Hiérarchie des règles de priorité",
+   "scenarioId": "h1",
+   "scenarioTitle": "Un agent au carrefour",
+   "sceneKind": "agent",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "J’accélère fort pour libérer vite le carrefour.",
+   "engineAct": "rush",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 64.39,
+    "lastS": 74.61,
+    "maxSpeedMs": 12.18,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "red",
+    "signs": [],
+    "actors": [
+     "agent:beckon",
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Suivre le geste de l’agent et avancer prudemment.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/hierarchie",
+   "ruleTitle": "Hiérarchie des règles de priorité",
+   "scenarioId": "h2",
+   "scenarioTitle": "Feux éteints",
+   "sceneKind": "lightsOffYield",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je passe : la voiture vient de gauche, j’ai la priorité de droite.",
+   "engineAct": "go",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 78.93,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -209,
+      "facingApproach": false
+     },
+     {
+      "type": "yield",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -231.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Appliquer le panneau : céder le passage, même au véhicule de gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/hierarchie",
+   "ruleTitle": "Hiérarchie des règles de priorité",
+   "scenarioId": "h2",
+   "scenarioTitle": "Feux éteints",
+   "sceneKind": "lightsOffYield",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je cède le passage à la voiture, puis je passe.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.37,
+    "lastS": 101.75,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -209,
+      "facingApproach": false
+     },
+     {
+      "type": "yield",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -231.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Appliquer le panneau : céder le passage, même au véhicule de gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/hierarchie",
+   "ruleTitle": "Hiérarchie des règles de priorité",
+   "scenarioId": "h2",
+   "scenarioTitle": "Feux éteints",
+   "sceneKind": "lightsOffYield",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "J’attends que les feux se rallument.",
+   "engineAct": "info",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 60.46,
+    "lastS": 66.69,
+    "maxSpeedMs": 4.13,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -209,
+      "facingApproach": false
+     },
+     {
+      "type": "yield",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -231.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Appliquer le panneau : céder le passage, même au véhicule de gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/hierarchie",
+   "ruleTitle": "Hiérarchie des règles de priorité",
+   "scenarioId": "h3",
+   "scenarioTitle": "Le panneau change la règle",
+   "sceneKind": "yieldLeft",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je passe : celui de gauche doit me céder.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 78.93,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -289,
+      "facingApproach": false
+     },
+     {
+      "type": "yield",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -311.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder le passage à la voiture, même si elle vient de gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/hierarchie",
+   "ruleTitle": "Hiérarchie des règles de priorité",
+   "scenarioId": "h3",
+   "scenarioTitle": "Le panneau change la règle",
+   "sceneKind": "yieldLeft",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je ralentis et je lui cède le passage.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.37,
+    "lastS": 101.75,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -289,
+      "facingApproach": false
+     },
+     {
+      "type": "yield",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -311.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Céder le passage à la voiture, même si elle vient de gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/hierarchie",
+   "ruleTitle": "Hiérarchie des règles de priorité",
+   "scenarioId": "h3",
+   "scenarioTitle": "Le panneau change la règle",
+   "sceneKind": "yieldLeft",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je klaxonne pour qu’elle s’arrête.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 78.93,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -289,
+      "facingApproach": false
+     },
+     {
+      "type": "yield",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -311.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder le passage à la voiture, même si elle vient de gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/hierarchie",
+   "ruleTitle": "Hiérarchie des règles de priorité",
+   "scenarioId": "h4",
+   "scenarioTitle": "Vert, mais bouché",
+   "sceneKind": "blockedGreen",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "J’y vais : c’est vert.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 76.67,
+    "maxSpeedMs": 7.06,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "green",
+    "signs": [],
+    "actors": [
+     "queue",
+     "queue",
+     "queue",
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Attendre avant la ligne tant que vous ne pouvez pas ressortir du carrefour.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/hierarchie",
+   "ruleTitle": "Hiérarchie des règles de priorité",
+   "scenarioId": "h4",
+   "scenarioTitle": "Vert, mais bouché",
+   "sceneKind": "blockedGreen",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je reste avant la ligne jusqu’à ce que la sortie se libère.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.37,
+    "lastS": 103.44,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "green",
+    "signs": [],
+    "actors": [
+     "queue",
+     "queue",
+     "queue",
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Attendre avant la ligne tant que vous ne pouvez pas ressortir du carrefour.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/hierarchie",
+   "ruleTitle": "Hiérarchie des règles de priorité",
+   "scenarioId": "h4",
+   "scenarioTitle": "Vert, mais bouché",
+   "sceneKind": "blockedGreen",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je m’avance au milieu du carrefour pour être prêt.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 76.67,
+    "maxSpeedMs": 7.06,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "green",
+    "signs": [],
+    "actors": [
+     "queue",
+     "queue",
+     "queue",
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Attendre avant la ligne tant que vous ne pouvez pas ressortir du carrefour.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/intersections",
+   "ruleTitle": "Intersections et priorité de droite",
+   "scenarioId": "i1",
+   "scenarioTitle": "Personne ne règle le carrefour",
+   "sceneKind": "rightCar",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je passe : je suis sur la plus grande route.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 78.93,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -529,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder à la voiture qui vient de votre droite.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/intersections",
+   "ruleTitle": "Intersections et priorité de droite",
+   "scenarioId": "i1",
+   "scenarioTitle": "Personne ne règle le carrefour",
+   "sceneKind": "rightCar",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je lui cède le passage, puis je passe.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.37,
+    "lastS": 104.77,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -529,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Céder à la voiture qui vient de votre droite.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/intersections",
+   "ruleTitle": "Intersections et priorité de droite",
+   "scenarioId": "i1",
+   "scenarioTitle": "Personne ne règle le carrefour",
+   "sceneKind": "rightCar",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je fais un appel de phares et je passe.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 78.93,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -529,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder à la voiture qui vient de votre droite.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/intersections",
+   "ruleTitle": "Intersections et priorité de droite",
+   "scenarioId": "i2",
+   "scenarioTitle": "Arrivé le premier",
+   "sceneKind": "rightCarLate",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je passe : je suis arrivé le premier.",
+   "engineAct": "go",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 78.93,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -609,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "La laisser passer : elle vient de votre droite.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/intersections",
+   "ruleTitle": "Intersections et priorité de droite",
+   "scenarioId": "i2",
+   "scenarioTitle": "Arrivé le premier",
+   "sceneKind": "rightCarLate",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je la laisse passer, puis je passe.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.37,
+    "lastS": 103.13,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -609,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "La laisser passer : elle vient de votre droite.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/intersections",
+   "ruleTitle": "Intersections et priorité de droite",
+   "scenarioId": "i2",
+   "scenarioTitle": "Arrivé le premier",
+   "sceneKind": "rightCarLate",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je m’arrête et j’attends qu’elle me fasse signe.",
+   "engineAct": "info",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 60.46,
+    "lastS": 66.69,
+    "maxSpeedMs": 4.13,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -609,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "La laisser passer : elle vient de votre droite.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/intersections",
+   "ruleTitle": "Intersections et priorité de droite",
+   "scenarioId": "i3",
+   "scenarioTitle": "Tourner à gauche",
+   "sceneKind": "leftTurn",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je tourne tout de suite, j’ai mis mon clignotant.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 78.93,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 4.49,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -689,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder le passage à la voiture d’en face, puis tourner.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/intersections",
+   "ruleTitle": "Intersections et priorité de droite",
+   "scenarioId": "i3",
+   "scenarioTitle": "Tourner à gauche",
+   "sceneKind": "leftTurn",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je la laisse passer, puis je tourne.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.44,
+    "lastS": 99.31,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 24.87,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -689,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Céder le passage à la voiture d’en face, puis tourner.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/intersections",
+   "ruleTitle": "Intersections et priorité de droite",
+   "scenarioId": "i3",
+   "scenarioTitle": "Tourner à gauche",
+   "sceneKind": "leftTurn",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je tourne en accélérant pour passer avant elle.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 78.93,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 4.49,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -689,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder le passage à la voiture d’en face, puis tourner.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/intersections",
+   "ruleTitle": "Intersections et priorité de droite",
+   "scenarioId": "i4",
+   "scenarioTitle": "Ne pas bloquer le carrefour",
+   "sceneKind": "blockedQueue",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je m’engage : c’est mon tour.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 76.69,
+    "maxSpeedMs": 7.06,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -769,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "queue",
+     "queue",
+     "queue",
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Attendre avant le carrefour, jusqu’à pouvoir le traverser entièrement.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/intersections",
+   "ruleTitle": "Intersections et priorité de droite",
+   "scenarioId": "i4",
+   "scenarioTitle": "Ne pas bloquer le carrefour",
+   "sceneKind": "blockedQueue",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "J’attends avant le carrefour que la file avance.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.37,
+    "lastS": 103.44,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -769,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "queue",
+     "queue",
+     "queue",
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Attendre avant le carrefour, jusqu’à pouvoir le traverser entièrement.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/intersections",
+   "ruleTitle": "Intersections et priorité de droite",
+   "scenarioId": "i4",
+   "scenarioTitle": "Ne pas bloquer le carrefour",
+   "sceneKind": "blockedQueue",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je m’engage à moitié pour garder ma place.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 76.69,
+    "maxSpeedMs": 7.06,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -769,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "queue",
+     "queue",
+     "queue",
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Attendre avant le carrefour, jusqu’à pouvoir le traverser entièrement.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/giratoires",
+   "ruleTitle": "Ronds-points",
+   "scenarioId": "g1",
+   "scenarioTitle": "Entrer dans le rond-point",
+   "sceneKind": "roundEntry",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "J’entre : je viens de sa droite, j’ai la priorité.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 72.63,
+    "maxSpeedMs": 7.33,
+    "lateralRangeM": 2.18,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -929,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -950,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -5.6,
+      "y": 0.15,
+      "z": -970,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 9.5,
+      "y": 0.15,
+      "z": -964.6,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -9.5,
+      "y": 0.15,
+      "z": -955.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder à ceux qui sont déjà dans le rond-point et qui arrivent de gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/giratoires",
+   "ruleTitle": "Ronds-points",
+   "scenarioId": "g1",
+   "scenarioTitle": "Entrer dans le rond-point",
+   "sceneKind": "roundEntry",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je la laisse passer, puis j’entre.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.42,
+    "lastS": 107.92,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 2.57,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -929,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -950,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -5.6,
+      "y": 0.15,
+      "z": -970,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 9.5,
+      "y": 0.15,
+      "z": -964.6,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -9.5,
+      "y": 0.15,
+      "z": -955.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Céder à ceux qui sont déjà dans le rond-point et qui arrivent de gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/giratoires",
+   "ruleTitle": "Ronds-points",
+   "scenarioId": "g1",
+   "scenarioTitle": "Entrer dans le rond-point",
+   "sceneKind": "roundEntry",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je m’arrête dans le rond-point pour la laisser passer.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 72.63,
+    "maxSpeedMs": 7.33,
+    "lateralRangeM": 2.18,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -929,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -950,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -5.6,
+      "y": 0.15,
+      "z": -970,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 9.5,
+      "y": 0.15,
+      "z": -964.6,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -9.5,
+      "y": 0.15,
+      "z": -955.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder à ceux qui sont déjà dans le rond-point et qui arrivent de gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/giratoires",
+   "ruleTitle": "Ronds-points",
+   "scenarioId": "g2",
+   "scenarioTitle": "Le bon clignotant",
+   "sceneKind": "roundSignal",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Clignotant gauche en entrant, puis clignotant droit avant la sortie.",
+   "engineAct": "info",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 60.46,
+    "lastS": 67.27,
+    "maxSpeedMs": 4.56,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1009,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1030,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -5.6,
+      "y": 0.15,
+      "z": -1050,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 9.5,
+      "y": 0.15,
+      "z": -1044.6,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -9.5,
+      "y": 0.15,
+      "z": -1035.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": []
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Aucun clignotant en entrant ; clignotant droit juste après la sortie qui précède la vôtre.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/giratoires",
+   "ruleTitle": "Ronds-points",
+   "scenarioId": "g2",
+   "scenarioTitle": "Le bon clignotant",
+   "sceneKind": "roundSignal",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Pas de clignotant en entrant ; clignotant droit après la sortie qui précède la mienne.",
+   "engineAct": "go",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.44,
+    "lastS": 102.35,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 3.13,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1009,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1030,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -5.6,
+      "y": 0.15,
+      "z": -1050,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 9.5,
+      "y": 0.15,
+      "z": -1044.6,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -9.5,
+      "y": 0.15,
+      "z": -1035.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": []
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Aucun clignotant en entrant ; clignotant droit juste après la sortie qui précède la vôtre.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/giratoires",
+   "ruleTitle": "Ronds-points",
+   "scenarioId": "g2",
+   "scenarioTitle": "Le bon clignotant",
+   "sceneKind": "roundSignal",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Clignotant droit dès l’entrée et jusqu’à la sortie.",
+   "engineAct": "info",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 60.46,
+    "lastS": 67.27,
+    "maxSpeedMs": 4.56,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1009,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1030,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -5.6,
+      "y": 0.15,
+      "z": -1050,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 9.5,
+      "y": 0.15,
+      "z": -1044.6,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -9.5,
+      "y": 0.15,
+      "z": -1035.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": []
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Aucun clignotant en entrant ; clignotant droit juste après la sortie qui précède la vôtre.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/giratoires",
+   "ruleTitle": "Ronds-points",
+   "scenarioId": "g3",
+   "scenarioTitle": "Sortir du rond-point",
+   "sceneKind": "roundExitPed",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je sors : dans le rond-point, j’avais la priorité.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 79.93,
+    "lastS": 97.18,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 2.26,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1089,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1110,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -5.6,
+      "y": 0.15,
+      "z": -1130,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 9.5,
+      "y": 0.15,
+      "z": -1124.6,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -9.5,
+      "y": 0.15,
+      "z": -1115.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "ped",
+     "bike"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Contrôler à droite et l’angle mort, laisser passer cycliste et piéton, puis sortir.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/giratoires",
+   "ruleTitle": "Ronds-points",
+   "scenarioId": "g3",
+   "scenarioTitle": "Sortir du rond-point",
+   "sceneKind": "roundExitPed",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je contrôle à droite, je laisse passer le cycliste et le piéton, puis je sors.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 78.09,
+    "lastS": 103.67,
+    "maxSpeedMs": 6.97,
+    "lateralRangeM": 3.19,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1089,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1110,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -5.6,
+      "y": 0.15,
+      "z": -1130,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 9.5,
+      "y": 0.15,
+      "z": -1124.6,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -9.5,
+      "y": 0.15,
+      "z": -1115.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "ped",
+     "bike"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Contrôler à droite et l’angle mort, laisser passer cycliste et piéton, puis sortir.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/giratoires",
+   "ruleTitle": "Ronds-points",
+   "scenarioId": "g3",
+   "scenarioTitle": "Sortir du rond-point",
+   "sceneKind": "roundExitPed",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je klaxonne pour prévenir et je sors.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 79.93,
+    "lastS": 97.18,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 2.26,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1089,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1110,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -5.6,
+      "y": 0.15,
+      "z": -1130,
+      "facingApproach": false
+     },
+     {
+      "type": "round",
+      "x": 9.5,
+      "y": 0.15,
+      "z": -1124.6,
+      "facingApproach": true
+     },
+     {
+      "type": "round",
+      "x": -9.5,
+      "y": 0.15,
+      "z": -1115.4,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "ped",
+     "bike"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Contrôler à droite et l’angle mort, laisser passer cycliste et piéton, puis sortir.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/entrees-sorties",
+   "ruleTitle": "Entrées et sorties de véhicules",
+   "scenarioId": "e1",
+   "scenarioTitle": "Sortir d’une cour",
+   "sceneKind": "drivewayLeft",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je sors : elle vient de gauche, j’ai la priorité de droite.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 3.78,
+    "lastS": 18.42,
+    "maxSpeedMs": 7.42,
+    "lateralRangeM": 6.12,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder le passage à tous les usagers de l’avenue, quelle que soit leur direction.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/entrees-sorties",
+   "ruleTitle": "Entrées et sorties de véhicules",
+   "scenarioId": "e1",
+   "scenarioTitle": "Sortir d’une cour",
+   "sceneKind": "drivewayLeft",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je la laisse passer, puis je m’insère.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 0,
+    "lastS": 0,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 9.9,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Céder le passage à tous les usagers de l’avenue, quelle que soit leur direction.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/entrees-sorties",
+   "ruleTitle": "Entrées et sorties de véhicules",
+   "scenarioId": "e1",
+   "scenarioTitle": "Sortir d’une cour",
+   "sceneKind": "drivewayLeft",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je sors vite avant qu’elle arrive.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 0,
+    "lastS": 0,
+    "maxSpeedMs": 0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder le passage à tous les usagers de l’avenue, quelle que soit leur direction.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/entrees-sorties",
+   "ruleTitle": "Entrées et sorties de véhicules",
+   "scenarioId": "e2",
+   "scenarioTitle": "Le trottoir d’abord",
+   "sceneKind": "drivewayPed",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je regarde seulement la route et je sors.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 3.78,
+    "lastS": 21.03,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 6.12,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car",
+     "ped"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Laisser passer le piéton, puis contrôler cyclistes et véhicules des deux côtés.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/entrees-sorties",
+   "ruleTitle": "Entrées et sorties de véhicules",
+   "scenarioId": "e2",
+   "scenarioTitle": "Le trottoir d’abord",
+   "sceneKind": "drivewayPed",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je laisse passer le piéton, puis je contrôle la route dans les deux sens.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 0,
+    "lastS": 32.45,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 9.9,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car",
+     "ped"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Laisser passer le piéton, puis contrôler cyclistes et véhicules des deux côtés.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/entrees-sorties",
+   "ruleTitle": "Entrées et sorties de véhicules",
+   "scenarioId": "e2",
+   "scenarioTitle": "Le trottoir d’abord",
+   "sceneKind": "drivewayPed",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je klaxonne pour qu’il s’écarte.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 0,
+    "lastS": 0,
+    "maxSpeedMs": 0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car",
+     "ped"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Laisser passer le piéton, puis contrôler cyclistes et véhicules des deux côtés.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/entrees-sorties",
+   "ruleTitle": "Entrées et sorties de véhicules",
+   "scenarioId": "e3",
+   "scenarioTitle": "Une haie cache la vue",
+   "sceneKind": "drivewayHedge",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je sors normalement, je verrai bien.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 0,
+    "lastS": 0,
+    "maxSpeedMs": 0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Avancer très lentement pour laisser aux autres le temps de vous voir, et ne s’insérer que si personne ne doit freiner.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/entrees-sorties",
+   "ruleTitle": "Entrées et sorties de véhicules",
+   "scenarioId": "e3",
+   "scenarioTitle": "Une haie cache la vue",
+   "sceneKind": "drivewayHedge",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "J’avance très lentement, centimètre par centimètre, jusqu’à voir.",
+   "engineAct": "creep",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 0,
+    "lastS": 33.15,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 9.9,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Avancer très lentement pour laisser aux autres le temps de vous voir, et ne s’insérer que si personne ne doit freiner.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/entrees-sorties",
+   "ruleTitle": "Entrées et sorties de véhicules",
+   "scenarioId": "e3",
+   "scenarioTitle": "Une haie cache la vue",
+   "sceneKind": "drivewayHedge",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je klaxonne et je sors vite.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 0,
+    "lastS": 0,
+    "maxSpeedMs": 0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Avancer très lentement pour laisser aux autres le temps de vous voir, et ne s’insérer que si personne ne doit freiner.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/retrecissements",
+   "ruleTitle": "Rétrécissements",
+   "scenarioId": "r1",
+   "scenarioTitle": "Panneau de passage étroit",
+   "sceneKind": "narrowSign",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "J’entre : le panneau me donne la priorité.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 57.68,
+    "lastS": 65.72,
+    "maxSpeedMs": 7.19,
+    "lateralRangeM": 0.28,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [
+     {
+      "type": "narrowPrio",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1622,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Attendre qu’elle sorte : on n’entre pas si quelqu’un est déjà engagé.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/retrecissements",
+   "ruleTitle": "Rétrécissements",
+   "scenarioId": "r1",
+   "scenarioTitle": "Panneau de passage étroit",
+   "sceneKind": "narrowSign",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "J’attends qu’elle ait traversé, puis je passe.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 57.42,
+    "lastS": 99.28,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 1.5,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [
+     {
+      "type": "narrowPrio",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1622,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Attendre qu’elle sorte : on n’entre pas si quelqu’un est déjà engagé.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/retrecissements",
+   "ruleTitle": "Rétrécissements",
+   "scenarioId": "r1",
+   "scenarioTitle": "Panneau de passage étroit",
+   "sceneKind": "narrowSign",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je fais un appel de phares pour qu’elle recule.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 57.68,
+    "lastS": 65.72,
+    "maxSpeedMs": 7.19,
+    "lateralRangeM": 0.28,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [
+     {
+      "type": "narrowPrio",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -1622,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Attendre qu’elle sorte : on n’entre pas si quelqu’un est déjà engagé.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/retrecissements",
+   "ruleTitle": "Rétrécissements",
+   "scenarioId": "r2",
+   "scenarioTitle": "Obstacle sur ma voie",
+   "sceneKind": "narrowMine",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je la contourne tout de suite.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 57.68,
+    "lastS": 70.47,
+    "maxSpeedMs": 7.38,
+    "lateralRangeM": 2.33,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "S’arrêter un peu avant l’obstacle et laisser passer le trafic d’en face.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/retrecissements",
+   "ruleTitle": "Rétrécissements",
+   "scenarioId": "r2",
+   "scenarioTitle": "Obstacle sur ma voie",
+   "sceneKind": "narrowMine",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je m’arrête un peu avant l’obstacle et je laisse passer la voiture.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 57.44,
+    "lastS": 101.57,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 2.7,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "S’arrêter un peu avant l’obstacle et laisser passer le trafic d’en face.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/retrecissements",
+   "ruleTitle": "Rétrécissements",
+   "scenarioId": "r2",
+   "scenarioTitle": "Obstacle sur ma voie",
+   "sceneKind": "narrowMine",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je contourne en klaxonnant.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 57.68,
+    "lastS": 70.47,
+    "maxSpeedMs": 7.38,
+    "lateralRangeM": 2.33,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "S’arrêter un peu avant l’obstacle et laisser passer le trafic d’en face.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/retrecissements",
+   "ruleTitle": "Rétrécissements",
+   "scenarioId": "r3",
+   "scenarioTitle": "Obstacle en face",
+   "sceneKind": "narrowTheirs",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je m’arrête pour la laisser passer.",
+   "engineAct": "info",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 56.46,
+    "lastS": 63.77,
+    "maxSpeedMs": 4.73,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Continuer prudemment sur votre voie : c’est l’autre qui doit attendre.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/retrecissements",
+   "ruleTitle": "Rétrécissements",
+   "scenarioId": "r3",
+   "scenarioTitle": "Obstacle en face",
+   "sceneKind": "narrowTheirs",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je continue prudemment sur ma voie.",
+   "engineAct": "go",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 57.44,
+    "lastS": 98.35,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Continuer prudemment sur votre voie : c’est l’autre qui doit attendre.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/retrecissements",
+   "ruleTitle": "Rétrécissements",
+   "scenarioId": "r3",
+   "scenarioTitle": "Obstacle en face",
+   "sceneKind": "narrowTheirs",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je me décale à gauche pour l’aider.",
+   "engineAct": "info",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 56.46,
+    "lastS": 63.77,
+    "maxSpeedMs": 4.73,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Continuer prudemment sur votre voie : c’est l’autre qui doit attendre.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/retrecissements",
+   "ruleTitle": "Rétrécissements",
+   "scenarioId": "r4",
+   "scenarioTitle": "Face à un camion",
+   "sceneKind": "narrowTruck",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je m’arrête : un camion est prioritaire parce qu’il est grand.",
+   "engineAct": "info",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 56.46,
+    "lastS": 63.77,
+    "maxSpeedMs": 4.73,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Passer prudemment sur votre voie, avec une marge latérale suffisante.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/retrecissements",
+   "ruleTitle": "Rétrécissements",
+   "scenarioId": "r4",
+   "scenarioTitle": "Face à un camion",
+   "sceneKind": "narrowTruck",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je passe prudemment, en gardant une bonne marge sur le côté.",
+   "engineAct": "go",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 57.44,
+    "lastS": 98.35,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Passer prudemment sur votre voie, avec une marge latérale suffisante.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/retrecissements",
+   "ruleTitle": "Rétrécissements",
+   "scenarioId": "r4",
+   "scenarioTitle": "Face à un camion",
+   "sceneKind": "narrowTruck",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je passe vite en frôlant le camion.",
+   "engineAct": "rush",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 60.39,
+    "lastS": 70.61,
+    "maxSpeedMs": 12.18,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Passer prudemment sur votre voie, avec une marge latérale suffisante.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/routes",
+   "ruleTitle": "Routes principales et secondaires",
+   "scenarioId": "p1",
+   "scenarioTitle": "Sur la route principale",
+   "sceneKind": "mainGo",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je lui cède : elle vient de droite.",
+   "engineAct": "info",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 60.46,
+    "lastS": 66.69,
+    "maxSpeedMs": 4.13,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2049,
+      "facingApproach": false
+     },
+     {
+      "type": "main",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2054,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Continuer : sur la route principale, vous êtes prioritaire, même face à la droite.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/routes",
+   "ruleTitle": "Routes principales et secondaires",
+   "scenarioId": "p1",
+   "scenarioTitle": "Sur la route principale",
+   "sceneKind": "mainGo",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je continue, en restant attentif.",
+   "engineAct": "go",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.44,
+    "lastS": 102.35,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2049,
+      "facingApproach": false
+     },
+     {
+      "type": "main",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2054,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Continuer : sur la route principale, vous êtes prioritaire, même face à la droite.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/routes",
+   "ruleTitle": "Routes principales et secondaires",
+   "scenarioId": "p1",
+   "scenarioTitle": "Sur la route principale",
+   "sceneKind": "mainGo",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je m’arrête pour lui faire signe de passer.",
+   "engineAct": "info",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 60.46,
+    "lastS": 66.69,
+    "maxSpeedMs": 4.13,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2049,
+      "facingApproach": false
+     },
+     {
+      "type": "main",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2054,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Continuer : sur la route principale, vous êtes prioritaire, même face à la droite.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/routes",
+   "ruleTitle": "Routes principales et secondaires",
+   "scenarioId": "p2",
+   "scenarioTitle": "Fin de la route principale",
+   "sceneKind": "mainEnd",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je passe : je viens de la grande route.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 78.93,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2129,
+      "facingApproach": false
+     },
+     {
+      "type": "mainEnd",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2128,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder à droite : après le panneau de fin, la règle générale revient.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/routes",
+   "ruleTitle": "Routes principales et secondaires",
+   "scenarioId": "p2",
+   "scenarioTitle": "Fin de la route principale",
+   "sceneKind": "mainEnd",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je cède à la voiture de droite.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.37,
+    "lastS": 104.77,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2129,
+      "facingApproach": false
+     },
+     {
+      "type": "mainEnd",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2128,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Céder à droite : après le panneau de fin, la règle générale revient.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/routes",
+   "ruleTitle": "Routes principales et secondaires",
+   "scenarioId": "p2",
+   "scenarioTitle": "Fin de la route principale",
+   "sceneKind": "mainEnd",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je passe en accélérant.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 78.93,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2129,
+      "facingApproach": false
+     },
+     {
+      "type": "mainEnd",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2128,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder à droite : après le panneau de fin, la règle générale revient.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/routes",
+   "ruleTitle": "Routes principales et secondaires",
+   "scenarioId": "p3",
+   "scenarioTitle": "Rejoindre l’axe principal",
+   "sceneKind": "sideYield",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je passe : elle vient de ma gauche.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 78.93,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2209,
+      "facingApproach": false
+     },
+     {
+      "type": "yield",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2231.4,
+      "facingApproach": true
+     },
+     {
+      "type": "main",
+      "x": -6.2,
+      "y": 0.15,
+      "z": -2234,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder à tous les véhicules de l’axe principal, même venant de gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/routes",
+   "ruleTitle": "Routes principales et secondaires",
+   "scenarioId": "p3",
+   "scenarioTitle": "Rejoindre l’axe principal",
+   "sceneKind": "sideYield",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je lui cède le passage.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.37,
+    "lastS": 101.75,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2209,
+      "facingApproach": false
+     },
+     {
+      "type": "yield",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2231.4,
+      "facingApproach": true
+     },
+     {
+      "type": "main",
+      "x": -6.2,
+      "y": 0.15,
+      "z": -2234,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Céder à tous les véhicules de l’axe principal, même venant de gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/routes",
+   "ruleTitle": "Routes principales et secondaires",
+   "scenarioId": "p3",
+   "scenarioTitle": "Rejoindre l’axe principal",
+   "sceneKind": "sideYield",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je m’engage à moitié pour la forcer à ralentir.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 78.93,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2209,
+      "facingApproach": false
+     },
+     {
+      "type": "yield",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2231.4,
+      "facingApproach": true
+     },
+     {
+      "type": "main",
+      "x": -6.2,
+      "y": 0.15,
+      "z": -2234,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Céder à tous les véhicules de l’axe principal, même venant de gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/routes",
+   "ruleTitle": "Routes principales et secondaires",
+   "scenarioId": "p4",
+   "scenarioTitle": "La route principale tourne",
+   "sceneKind": "mainTurns",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je continue : la chaussée continue tout droit, je suis prioritaire.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 69.4,
+    "maxSpeedMs": 5.74,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2289,
+      "facingApproach": false
+     },
+     {
+      "type": "yield",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2311.4,
+      "facingApproach": true
+     },
+     {
+      "type": "plateLeft",
+      "x": 5.6,
+      "y": 1.99,
+      "z": -2311.34,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Suivre le dessin de la plaque : votre route est secondaire, vous cédez au véhicule du trait épais.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/routes",
+   "ruleTitle": "Routes principales et secondaires",
+   "scenarioId": "p4",
+   "scenarioTitle": "La route principale tourne",
+   "sceneKind": "mainTurns",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je cède à la voiture qui suit le tracé prioritaire.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.37,
+    "lastS": 99.95,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2289,
+      "facingApproach": false
+     },
+     {
+      "type": "yield",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2311.4,
+      "facingApproach": true
+     },
+     {
+      "type": "plateLeft",
+      "x": 5.6,
+      "y": 1.99,
+      "z": -2311.34,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Suivre le dessin de la plaque : votre route est secondaire, vous cédez au véhicule du trait épais.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/routes",
+   "ruleTitle": "Routes principales et secondaires",
+   "scenarioId": "p4",
+   "scenarioTitle": "La route principale tourne",
+   "sceneKind": "mainTurns",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "J’accélère pour passer avant elle.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 69.4,
+    "maxSpeedMs": 5.74,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2289,
+      "facingApproach": false
+     },
+     {
+      "type": "yield",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2311.4,
+      "facingApproach": true
+     },
+     {
+      "type": "plateLeft",
+      "x": 5.6,
+      "y": 1.99,
+      "z": -2311.34,
+      "facingApproach": true
+     }
+    ],
+    "actors": [
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Suivre le dessin de la plaque : votre route est secondaire, vous cédez au véhicule du trait épais.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/prioritaires-tram",
+   "ruleTitle": "Véhicules prioritaires et tramways",
+   "scenarioId": "t1",
+   "scenarioTitle": "Feu bleu et sirène",
+   "sceneKind": "ambulance",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je freine fort et je m’arrête au milieu de ma voie.",
+   "engineAct": "info",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 57.46,
+    "lastS": 64.87,
+    "maxSpeedMs": 4.73,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "amb"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Créer immédiatement un passage : clignotant, se serrer à droite, ralentir.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/prioritaires-tram",
+   "ruleTitle": "Véhicules prioritaires et tramways",
+   "scenarioId": "t1",
+   "scenarioTitle": "Feu bleu et sirène",
+   "sceneKind": "ambulance",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je mets le clignotant droit, je me serre à droite et je ralentis.",
+   "engineAct": "pull",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 57.74,
+    "lastS": 100.08,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 2.3,
+    "pullManoeuvre": true
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "amb"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Créer immédiatement un passage : clignotant, se serrer à droite, ralentir.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/prioritaires-tram",
+   "ruleTitle": "Véhicules prioritaires et tramways",
+   "scenarioId": "t1",
+   "scenarioTitle": "Feu bleu et sirène",
+   "sceneKind": "ambulance",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je continue normalement : elle me dépassera.",
+   "engineAct": "info",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 57.46,
+    "lastS": 64.87,
+    "maxSpeedMs": 4.73,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": null,
+    "signs": [],
+    "actors": [
+     "amb"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Créer immédiatement un passage : clignotant, se serrer à droite, ralentir.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/prioritaires-tram",
+   "ruleTitle": "Véhicules prioritaires et tramways",
+   "scenarioId": "t2",
+   "scenarioTitle": "Le tram tourne",
+   "sceneKind": "tramLeft",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je passe : il tourne à gauche, il doit me céder.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 74.47,
+    "maxSpeedMs": 7.38,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2609,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "tram"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Laisser passer le tram, même lorsqu’il tourne à gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/prioritaires-tram",
+   "ruleTitle": "Véhicules prioritaires et tramways",
+   "scenarioId": "t2",
+   "scenarioTitle": "Le tram tourne",
+   "sceneKind": "tramLeft",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je laisse passer le tram, puis je passe.",
+   "engineAct": "wait",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.37,
+    "lastS": 98.89,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2609,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "tram"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Laisser passer le tram, même lorsqu’il tourne à gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/prioritaires-tram",
+   "ruleTitle": "Véhicules prioritaires et tramways",
+   "scenarioId": "t2",
+   "scenarioTitle": "Le tram tourne",
+   "sceneKind": "tramLeft",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je klaxonne pour qu’il freine.",
+   "engineAct": "go",
+   "engineActSharedInScenario": true,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 61.68,
+    "lastS": 74.47,
+    "maxSpeedMs": 7.38,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "off",
+    "signs": [
+     {
+      "type": "stopText",
+      "x": 5.6,
+      "y": 0.15,
+      "z": -2609,
+      "facingApproach": false
+     }
+    ],
+    "actors": [
+     "tram"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Laisser passer le tram, même lorsqu’il tourne à gauche.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/prioritaires-tram",
+   "ruleTitle": "Véhicules prioritaires et tramways",
+   "scenarioId": "t3",
+   "scenarioTitle": "Sirène au feu rouge",
+   "sceneKind": "ambulanceRed",
+   "choiceIndex": 0,
+   "expectedCorrect": false,
+   "announcedAction": "Je franchis le feu rouge pour dégager.",
+   "engineAct": "go",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 67.93,
+    "lastS": 85.18,
+    "maxSpeedMs": 7.45,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "red",
+    "signs": [],
+    "actors": [
+     "amb",
+     "car",
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Libérer le passage de façon sûre : se serrer, sans franchir le feu au milieu du trafic.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/prioritaires-tram",
+   "ruleTitle": "Véhicules prioritaires et tramways",
+   "scenarioId": "t3",
+   "scenarioTitle": "Sirène au feu rouge",
+   "sceneKind": "ambulanceRed",
+   "choiceIndex": 1,
+   "expectedCorrect": true,
+   "announcedAction": "Je me serre à droite autant que possible, sans franchir le feu.",
+   "engineAct": "pull",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 64.25,
+    "lastS": 100.9,
+    "maxSpeedMs": 7.0,
+    "lateralRangeM": 2.3,
+    "pullManoeuvre": true
+   },
+   "objects": {
+    "light": "red",
+    "signs": [],
+    "actors": [
+     "amb",
+     "car",
+     "car"
+    ]
+   },
+   "expectedOutcome": "trajectoire menee a son terme, progression accordee",
+   "expectedBehaviour": "Libérer le passage de façon sûre : se serrer, sans franchir le feu au milieu du trafic.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-complete",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  },
+  {
+   "ruleId": "O11/prioritaires-tram",
+   "ruleTitle": "Véhicules prioritaires et tramways",
+   "scenarioId": "t3",
+   "scenarioTitle": "Sirène au feu rouge",
+   "sceneKind": "ambulanceRed",
+   "choiceIndex": 2,
+   "expectedCorrect": false,
+   "announcedAction": "Je recule pour lui laisser de la place.",
+   "engineAct": "info",
+   "engineActSharedInScenario": false,
+   "observedAction": null,
+   "observedMotion": {
+    "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
+    "firstS": 66.55,
+    "lastS": 68.79,
+    "maxSpeedMs": 3.26,
+    "lateralRangeM": 0.0,
+    "pullManoeuvre": false
+   },
+   "objects": {
+    "light": "red",
+    "signs": [],
+    "actors": [
+     "amb",
+     "car",
+     "car"
+    ]
+   },
+   "expectedOutcome": "explication (fait, attendu, raison), erreur comptee, rejeu de la meme situation",
+   "expectedBehaviour": "Libérer le passage de façon sûre : se serrer, sans franchir le feu au milieu du trafic.",
+   "evidence": {
+    "file": "test-results/decision-paths-results.json",
+    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "terminal": "scenario-feedback",
+    "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
+   },
+   "regulatorySource": null,
+   "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
+   "status": "issue_terminale_verifiee"
+  }
+ ]
+}
