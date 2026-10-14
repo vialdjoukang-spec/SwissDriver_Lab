@@ -1,4 +1,7 @@
 dist/
+release/
 test-results/
 audit-output/
 __pycache__/
+.venv/
+node_modules/
