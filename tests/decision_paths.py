@@ -1,16 +1,18 @@
-"""Run all 25 x 3 decision branches with Chromium and the real animation loop.
-The oracle freezes the existing answer/action contract, not legal correctness.
-Playwright Clock runs every animation callback; no position or result is forced
-once a decision is made. Rendering is disabled between observation frames.
+"""25 x 3 real decision paths, controlled clock, terminal outcome and replay.
+Answer/action expectations freeze the inherited contract, not Swiss law.
+No position, progress or outcome is forced after a decision. The native loop
+runs with a fixed 50 ms animation interval, within its production delta cap.
+Use DECISION_FRAME_MS=16 for the finer time-step variant.
 """
 from pathlib import Path
 from functools import partial
 import http.server, threading, json, os, traceback, hashlib, time
 from playwright.sync_api import sync_playwright
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'test-results'; OUT.mkdir(exist_ok=True)
+OUT=ROOT/'test-results';OUT.mkdir(exist_ok=True)
+FRAME_MS=int(os.environ.get('DECISION_FRAME_MS','50'))
+if FRAME_MS not in (16,50):raise ValueError('DECISION_FRAME_MS must be 16 or 50')
 os.environ['PW_TEST_SCREENSHOT_NO_FONTS_READY']='1'
-# Independently stored integration expectations for the inherited 25 scenarios.
 ORACLE={
  'h1':('agent','go'),'h2':('lightsOffYield','wait'),'h3':('yieldLeft','wait'),'h4':('blockedGreen','wait'),
  'i1':('rightCar','wait'),'i2':('rightCarLate','wait'),'i3':('leftTurn','wait'),'i4':('blockedQueue','wait'),
@@ -20,20 +22,21 @@ ORACLE={
  'p1':('mainGo','go'),'p2':('mainEnd','wait'),'p3':('sideYield','wait'),'p4':('mainTurns','wait'),
  't1':('ambulance','pull'),'t2':('tramLeft','wait'),'t3':('ambulanceRed','pull')}
 class Quiet(http.server.SimpleHTTPRequestHandler):
- def log_message(self,*args): pass
+ def log_message(self,*args):pass
 server=http.server.ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(ROOT)))
 threading.Thread(target=server.serve_forever,daemon=True).start()
-rows=[]; errors=[]; fatal=None
+rows=[];errors=[];fatal=None
 scope=('Real decision -> simulated trajectory -> terminal outcome -> wrong-answer replay. '
-       'Starts at the existing decision fixture, not a full manual approach. '
-       'Existing answer contract, not Swiss-law, collision-clearance or performance certification.')
+ 'Starts at the existing decision fixture, not a full manual approach. '
+ 'Existing answer contract; not Swiss-law, full collision-clearance or performance certification.')
 def save():
- payload={'scope':scope,'htmlSha256':hashlib.sha256((ROOT/'dist/SwissDriver_Lab.html').read_bytes()).hexdigest(),
-          'expectedBranches':75,'attemptedBranches':len(rows),'passedBranches':sum(r['passed'] for r in rows),
-          'allPassed':len(rows)==75 and all(r['passed'] for r in rows) and not errors and not fatal,
-          'errors':errors,'fatal':fatal,'branches':rows}
- (OUT/'decision-paths-results.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2))
- return payload
+ result={'scope':scope,'htmlSha256':hashlib.sha256((ROOT/'dist/SwissDriver_Lab.html').read_bytes()).hexdigest(),
+ 'fixedFrameMs':FRAME_MS,'expectedBranches':75,'attemptedBranches':len(rows),
+ 'passedBranches':sum(r['passed'] for r in rows),
+ 'allPassed':len(rows)==75 and all(r['passed'] for r in rows) and not errors and not fatal,
+ 'errors':errors,'fatal':fatal,'branches':rows}
+ (OUT/'decision-paths-results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
+ return result
 SAMPLE="""(()=>{const s=__G.SIT,p=__G.P;return {
  mode:__G.mode,scenario:s?.sc.id,phase:s?.phase,good:s?.good,waiting:!!s?.waiting,
  t:s?.rt,x:p.x,z:p.z,v:p.v,s:p.auto?.s,endS:s?.endS,target:p.auto?.target,
@@ -46,49 +49,56 @@ with sync_playwright() as pw:
  options={'headless':True,'args':['--no-sandbox','--enable-unsafe-swiftshader']}
  if os.getenv('CHROMIUM_EXECUTABLE'):options['executable_path']=os.environ['CHROMIUM_EXECUTABLE']
  browser=pw.chromium.launch(**options)
- page=browser.new_page(viewport={'width':960,'height':720})
- page.set_default_timeout(30000)
+ page=browser.new_page(viewport={'width':960,'height':720});page.set_default_timeout(30000)
  page.on('pageerror',lambda e:errors.append(str(e)))
  page.add_init_script('window.__SWISSDRIVER_TEST__=true;window.__NORENDER=true;')
- # Clock is installed before the application creates any timers/RAF callbacks.
- page.clock.install()
- started=time.monotonic()
+ page.clock.install();started=time.monotonic()
  try:
   page.goto(f'http://127.0.0.1:{server.server_port}/dist/SwissDriver_Lab.html',wait_until='domcontentloaded',timeout=120000)
   page.wait_for_function('window.SwissDriverScene && window.__G && __G.frames()>2',timeout=120000)
   page.clock.pause_at((page.evaluate('Date.now()')+100)/1000)
+  # Only the test's animation cadence changes; Tp, physics and EM stay native.
+  page.evaluate("""step=>{window.requestAnimationFrame=callback=>setTimeout(()=>callback(performance.now()),step);
+   window.cancelAnimationFrame=id=>clearTimeout(id);}""",FRAME_MS)
   page.evaluate("document.querySelector('#startBtn').click()")
-  page.evaluate("""window.__pathEvents=[];window.addEventListener('swissdriver:event',e=>{
-    const s=__G.SIT;window.__pathEvents.push({...e.detail,
-     geometry:{s:__G.P.auto?.s,endS:s?.endS,x:__G.P.x,z:__G.P.z}});
-  });""")
+  page.evaluate("""window.__pathEvents=[];window.__redAudit=null;
+   window.addEventListener('swissdriver:event',e=>{const s=__G.SIT;
+    window.__pathEvents.push({...e.detail,geometry:{s:__G.P.auto?.s,endS:s?.endS,x:__G.P.x,z:__G.P.z}});
+   });
+   function observeRed(){
+    const s=__G.SIT,a=window.__redAudit;
+    if(a&&s?.sc.id==='t3'&&s.good&&s.phase==='resolve'){
+     const g=window.SwissDriverSafety?.snapshot();
+     if(g){a.phases[g.phase]=true;
+      if(g.signals.avenue==='red')a.minRedMargin=Math.min(a.minRedMargin,g.frontMarginM);
+      if(g.signals.avenue==='green'&&g.signals.cross==='green')a.conflictingGreen=true;
+     }
+    }
+    requestAnimationFrame(observeRed);
+   }requestAnimationFrame(observeRed);""")
   actual=page.evaluate("__G.ITEMS.filter(i=>i.type==='sit').map(i=>({id:i.sc.id,kind:i.sc.kind,ok:i.sc.ok,act:i.sc.choices[i.sc.ok].act}))")
   assert len(actual)==25 and {r['id'] for r in actual}==set(ORACLE),'Scenario catalogue changed'
   for r in actual:assert r['ok']==1 and (r['kind'],r['act'])==ORACLE[r['id']],r
   for scenario_id in ORACLE:
-   # Incorrect alternatives first; then the successful branch, in the same app.
    for choice in (0,2,1):
     row={'scenarioId':scenario_id,'choiceIndex':choice,'expectedCorrect':choice==1,'passed':False}
     try:
-     page.evaluate('window.__pathEvents=[]')
+     page.evaluate('window.__pathEvents=[];window.__redAudit={phases:{},minRedMargin:1e6,conflictingGreen:false}')
      inspected=page.evaluate('(id)=>SwissDriverScene.test.prepare(id)',scenario_id)
      before=page.evaluate('({xp:__G.ST.xp,errors:__G.ST.errors,done:[...__G.ST.done],idx:__G.ST.idx})')
-     initial=page.evaluate(SAMPLE)
-     row['ruleId']=inspected['ruleId'];row['scene']=inspected
-     chosen=page.evaluate("""(choice)=>{
-       const d=__G.DEC(),index=d.order.indexOf(choice),answer=d.S.sc.choices[choice];
-       if(index<0)throw Error('Missing answer button');
-       const button=document.querySelector('.dchoices button[data-k="'+index+'"]');
-       const label=button.innerText;button.click();
-       return {label,act:answer.act,did:answer.did,should:d.S.sc.should,why:d.S.sc.why};
+     initial=page.evaluate(SAMPLE);row['ruleId']=inspected['ruleId'];row['scene']=inspected
+     chosen=page.evaluate("""choice=>{
+      const d=__G.DEC(),index=d.order.indexOf(choice),answer=d.S.sc.choices[choice];
+      if(index<0)throw Error('Missing answer button');
+      const button=document.querySelector('.dchoices button[data-k="'+index+'"]');
+      const label=button.innerText;button.click();
+      return {label,act:answer.act,did:answer.did,should:d.S.sc.should,why:d.S.sc.why};
      }""",choice)
      row['answer']=chosen;trail=[];terminal=None
      for step in range(90):
-      page.clock.run_for(1000)
-      state=page.evaluate(SAMPLE);trail.append(state)
+      page.clock.run_for(1000);state=page.evaluate(SAMPLE);trail.append(state)
       if not state['finite']:raise AssertionError('Non-finite position or speed')
-      if state['terminal']:
-       terminal=state['terminal'];break
+      if state['terminal']:terminal=state['terminal'];break
      row['simulationSecondsAdvanced']=len(trail);row['trail']=trail
      if not terminal:raise AssertionError('No terminal outcome after 90 simulated seconds')
      row['terminal']=terminal
@@ -105,6 +115,11 @@ with sync_playwright() as pw:
       assert scenario_id in after['done'] and after['done'].count(scenario_id)==1,'Missing or duplicated completion'
       assert after['errors']==before['errors'],'Correct decision counted as error'
       assert after['idx']>before['idx'],'Progression did not advance'
+      if scenario_id=='t3':
+       red=page.evaluate('window.__redAudit');row['redSignalAudit']=red
+       assert set(red['phases'])=={'red','all-red','green'},'Missing controlled red-to-green sequence'
+       assert red['minRedMargin']>=-.02,'Front crossed the red stop line'
+       assert not red['conflictingGreen'],'Both conflicting directions showed green'
      else:
       assert terminal['type']=='scenario-feedback' and page.evaluate('__G.mode')=='explain','Wrong answer lacked feedback'
       assert after['xp']==before['xp'] and after['done']==before['done'],'Wrong answer rewarded'
@@ -113,8 +128,7 @@ with sync_playwright() as pw:
       clean=lambda s:' '.join((s or '').replace('**','').split())
       assert clean(chosen['should']) in clean(feedback),'Expected-action explanation missing'
       assert clean(chosen['why']) in clean(feedback),'Causal explanation missing'
-      page.evaluate("document.querySelector('.ereplay').click()")
-      page.clock.run_for(250)
+      page.evaluate("document.querySelector('.ereplay').click()");page.clock.run_for(250)
       replay=page.evaluate("({mode:__G.mode,idx:__G.ST.idx,scenario:__G.SIT?.sc.id,shown:!document.querySelector('#explain').hidden})")
       row['replay']=replay
       assert replay['mode']=='drive' and replay['idx']==before['idx'] and not replay['shown'],'Replay failed'
@@ -129,5 +143,4 @@ with sync_playwright() as pw:
   fatal=traceback.format_exc();print(fatal,flush=True)
  finally:
   report=save();browser.close();server.shutdown()
-if not report['allPassed']:
- raise SystemExit('Decision-path audit failed: '+str(report['passedBranches'])+'/75 passed')
+if not report['allPassed']:raise SystemExit('Decision-path audit failed: '+str(report['passedBranches'])+'/75 passed')
