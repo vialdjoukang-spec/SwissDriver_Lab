@@ -2,6 +2,9 @@ name: SwissDriver quality
 on:
   pull_request:
     branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
 permissions:
   contents: read
 concurrency:
@@ -12,33 +15,67 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
           persist-credentials: false
       - name: Source integrity, build and course-scene contract
-        run: python3 tests/test_swissdriver.py
-      - name: Install pinned browser test tooling
         run: |
-          python3 -m pip install playwright==1.56.0
+          rm -rf test-results dist release
+          python3 tests/test_swissdriver.py
+      - name: Install pinned browser tooling
+        run: |
+          python3 -m pip install -r requirements-dev.txt
           python3 -m playwright install --with-deps chromium
       - name: Real Chromium and WebGL smoke tests
         run: python3 tests/browser_smoke.py
       - name: Scene geometry, observation layout and agent gesture
         run: python3 tests/scene_coherence.py
-      - name: Save build, source modules and test evidence
+      - name: Assemble complete edition and verify its distribution
+        run: |
+          python3 scripts/package.py --require-browser-evidence
+          python3 tests/test_distribution.py
+      - name: Save complete edition
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: swissdriver-edition
+          path: release/
+          retention-days: 30
+          if-no-files-found: error
+      - name: Save browser evidence even on failure
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: swissdriver-build-and-evidence
-          path: |
-            Permis_GT_Rossa.html
-            dist/
-            test-results/
-            src/
-            scripts/
-            tests/
-            docs/
-            index.html
-            swissdriver-modern.css
-          retention-days: 7
-          if-no-files-found: error
+          name: swissdriver-test-evidence
+          path: test-results/
+          retention-days: 30
+          if-no-files-found: warn
+  publish:
+    needs: inspect
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      actions: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Retrieve verified edition from this exact run
+        run: gh run download "$GITHUB_RUN_ID" --name swissdriver-edition --dir release
+      - name: Publish versioned prototype without overwriting an existing release
+        run: |
+          VERSION=$(python3 -c "import json; print(json.load(open('release/edition-manifest.json'))['version'])")
+          REVISION=$(python3 -c "import json; print(json.load(open('release/edition-manifest.json'))['sourceCommit'])")
+          test "$REVISION" = "$GITHUB_SHA"
+          TAG="v$VERSION"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "::notice::Release $TAG already exists and is preserved. Bump package.json for a new edition."
+            exit 0
+          fi
+          gh release create "$TAG" \
+            release/SwissDriver_Lab_Edition.zip release/SwissDriver_Lab.html \
+            release/edition-manifest.json release/curriculum-status.json release/SHA256SUMS.txt \
+            --target "$GITHUB_SHA" --prerelease --latest=false \
+            --title "SwissDriver Lab $VERSION — edition modifiable" \
+            --notes-file release/RELEASE_NOTES.md

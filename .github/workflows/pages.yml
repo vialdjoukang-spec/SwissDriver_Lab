@@ -1,0 +1,35 @@
+name: SwissDriver Pages
+# First select Settings > Pages > Source > GitHub Actions. This workflow
+# deliberately does not attempt to grant itself administrative permissions.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: swissdriver-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - name: Verify and build the standalone site
+        run: |
+          python3 tests/test_swissdriver.py
+          cp dist/SwissDriver_Lab.html dist/index.html
+          touch dist/.nojekyll
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
+        with:
+          path: dist
+      - name: Deploy the configured Pages site
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e

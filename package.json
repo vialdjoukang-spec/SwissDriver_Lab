@@ -1,0 +1,15 @@
+{
+  "name": "swissdriver-lab",
+  "version": "0.3.0-preview.1",
+  "private": true,
+  "description": "Edition modifiable du prototype SwissDriver Lab",
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "start": "node scripts/serve.cjs",
+    "test": "python3 tests/test_swissdriver.py",
+    "test:browser": "python3 tests/browser_smoke.py && python3 tests/scene_coherence.py",
+    "package": "node scripts/build.cjs && python3 scripts/package.py",
+    "test:distribution": "python3 tests/test_distribution.py"
+  }
+}

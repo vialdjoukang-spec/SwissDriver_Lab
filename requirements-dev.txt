@@ -1,0 +1,2 @@
+# Tests navigateur uniquement ; le jeu ne depend pas de Python.
+playwright==1.56.0
