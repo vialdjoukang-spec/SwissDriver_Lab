@@ -1,0 +1,33 @@
+/* SwissDriver Lab — thème clair Atkinson Hyperlegible Next.
+   Feuille à intégrer au point d'entrée une fois l'archive extraite. */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&display=swap');
+:root {
+  color-scheme: light;
+  --sw-bg: #f4f9fd;
+  --sw-surface: #ffffff;
+  --sw-surface-alt: #eaf3fa;
+  --sw-text: #15283a;
+  --sw-muted: #3f5366;
+  --sw-border: #b5c9d8;
+  --sw-primary: #115f86;
+  --sw-danger: #a20f25;
+  --sw-success: #17643b;
+  --sw-focus: #075fba;
+  font-family: 'Atkinson Hyperlegible Next','Atkinson Hyperlegible',Arial,sans-serif;
+  font-synthesis: none;
+}
+html { font-size: 100%; background:var(--sw-bg); }
+body { margin:0; min-width:320px; background:var(--sw-bg); color:var(--sw-text); font: 500 1rem/1.55 'Atkinson Hyperlegible Next','Atkinson Hyperlegible',Arial,sans-serif; }
+button,input,select,textarea { font:inherit; }
+button { cursor:pointer; min-height:44px; }
+a { color:var(--sw-primary); text-underline-offset:3px; }
+:focus-visible { outline:3px solid var(--sw-focus); outline-offset:3px; }
+.sw-panel { background:var(--sw-surface); border:1px solid var(--sw-border); border-radius:14px; padding:clamp(1rem,2vw,1.5rem); box-shadow:0 2px 15px #122f4812; }
+.sw-lesson-title { font-weight:800; letter-spacing:-.015em; line-height:1.2; }
+.sw-alert, .sw-critical { color:var(--sw-danger); font-style:italic; font-weight:800; }
+.sw-help { color:var(--sw-muted); }
+.sw-simulation-overlay { background:#ffffffed; color:var(--sw-text); border:2px solid var(--sw-border); backdrop-filter:none; }
+.sw-action { background:var(--sw-primary); color:white; border:0; border-radius:10px; padding:.65rem 1rem; font-weight:700; }
+.sw-action:hover { filter:brightness(.9); }
+.sw-action:disabled { opacity:.55; cursor:not-allowed; }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; scroll-behavior:auto!important; } }
