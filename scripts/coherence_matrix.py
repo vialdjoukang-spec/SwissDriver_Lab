@@ -43,6 +43,7 @@ def motion(branch):
             'firstS': round(trail[0]['s'], 2), 'lastS': round(trail[-1]['s'], 2),
             'maxSpeedMs': round(max(t['v'] for t in trail), 2),
             'lateralRangeM': round(max(xs) - min(xs), 2),
+            'maxLaneOffsetM': round(max(abs(t.get('lat') or 0) for t in trail), 2),
             'pullManoeuvre': any(t.get('pulling') for t in trail)}
 
 
@@ -52,13 +53,13 @@ def gestures(texts):
     return json.loads(subprocess.check_output(['node', '-e', code], input=json.dumps(texts), cwd=ROOT, text=True))
 
 
-def observed(gesture, m):
+def observed_action(gesture, m):
     # Only measured facts or explicitly limited representations; nothing is ticked as coherent here.
     if not gesture or not m:
         return None, None
     g = gesture['id']
     if g == 'left':
-        return (f"décalage latéral mesuré {m['lateralRangeM']} m", 'observed') if m['lateralRangeM'] >= 0.5 else (None, 'missing')
+        return (f"décalage latéral mesuré {m['maxLaneOffsetM']} m hors de l’axe de la voie", 'observed') if m['maxLaneOffsetM'] >= 0.5 else (None, 'missing')
     if g == 'reverse':
         return (f"recul mesuré {round(m['firstS'] - m['lastS'], 2)} m", 'observed') if m['lastS'] < m['firstS'] - 0.3 else (None, 'missing')
     if g == 'hard':
@@ -90,7 +91,7 @@ def build():
                     gesture = next(gesture_list)
                     gesture = None if correct else gesture
                     measured = motion(branch) if branch else None
-                    seen, kind = observed(gesture, measured) if observed_ok(branch) else (None, None)
+                    seen, kind = observed_action(gesture, measured) if observed_ok(branch) else (None, None)
                     rows.append({
                         'ruleId': f'{chapter}/{section}', 'ruleTitle': titles[(chapter, section)],
                         'scenarioId': sc['id'], 'scenarioTitle': sc['title'], 'sceneKind': sc['kind'],

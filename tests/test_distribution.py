@@ -39,7 +39,7 @@ class DistributionTests(unittest.TestCase):
             self.assertNotIn(Path(name).name, {'.env', 'credentials.json'})
     def test_04_coverage_and_original_are_truthful(self):
         c = self.manifest['coverage']
-        self.assertEqual((c['chapters'],c['sections'],c['simulatedChapters'],c['simulatedSections'],c['scenarios']), (19,120,1,7,25))
+        self.assertEqual((c['chapters'],c['sections'],c['simulatedChapters'],c['simulatedSections'],c['scenarios']), (27,166,1,7,25))
         self.assertEqual(self.manifest['originalSha256'], '58ec2197dd14b8e8895cb83d134a2b598213b7f3d03b221fbf39f8e74258335a')
     def test_05_html_matches_the_build(self):
         actual = self.archive.read(PREFIX + 'dist/SwissDriver_Lab.html')

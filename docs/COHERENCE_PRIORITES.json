@@ -8,13 +8,13 @@
   "coherent_observe": "Geste observe identique a l’annonce, sans contact imprevu, source officielle datee."
  },
  "sourceHtmlSha256": "58ec2197dd14b8e8895cb83d134a2b598213b7f3d03b221fbf39f8e74258335a",
- "decisionReportHtmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+ "decisionReportHtmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
  "totals": {
   "rows": 75,
   "byStatus": {
    "non_audite": 0,
-   "issue_terminale_verifiee": 75,
-   "limite_signalee": 0,
+   "issue_terminale_verifiee": 65,
+   "limite_signalee": 10,
    "coherent_observe": 0
   },
   "rowsWithSharedEngineAct": 40
@@ -31,13 +31,15 @@
    "announcedAction": "Je reste arrêté : le feu est rouge.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
-    "firstS": 60.85,
+    "firstS": 60.65,
     "lastS": 66.69,
-    "maxSpeedMs": 3.99,
+    "maxSpeedMs": 3.91,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -52,7 +54,7 @@
    "expectedBehaviour": "Suivre le geste de l’agent et avancer prudemment.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -71,6 +73,7 @@
    "announcedAction": "J’avance prudemment, comme l’agent l’indique.",
    "engineAct": "go",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -78,6 +81,7 @@
     "lastS": 102.35,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -92,7 +96,7 @@
    "expectedBehaviour": "Suivre le geste de l’agent et avancer prudemment.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -111,13 +115,15 @@
    "announcedAction": "J’accélère fort pour libérer vite le carrefour.",
    "engineAct": "rush",
    "engineActSharedInScenario": false,
-   "observedAction": null,
+   "gesture": "hard",
+   "observedAction": "vitesse maximale mesurée 12.18 m/s",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 64.39,
     "lastS": 74.61,
     "maxSpeedMs": 12.18,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -132,7 +138,7 @@
    "expectedBehaviour": "Suivre le geste de l’agent et avancer prudemment.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -151,6 +157,7 @@
    "announcedAction": "Je passe : la voiture vient de gauche, j’ai la priorité de droite.",
    "engineAct": "go",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -158,6 +165,7 @@
     "lastS": 78.93,
     "maxSpeedMs": 7.45,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -186,7 +194,7 @@
    "expectedBehaviour": "Appliquer le panneau : céder le passage, même au véhicule de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -205,6 +213,7 @@
    "announcedAction": "Je cède le passage à la voiture, puis je passe.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -212,6 +221,7 @@
     "lastS": 101.75,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -240,7 +250,7 @@
    "expectedBehaviour": "Appliquer le panneau : céder le passage, même au véhicule de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -259,6 +269,7 @@
    "announcedAction": "J’attends que les feux se rallument.",
    "engineAct": "info",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -266,6 +277,7 @@
     "lastS": 66.69,
     "maxSpeedMs": 4.13,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -294,7 +306,7 @@
    "expectedBehaviour": "Appliquer le panneau : céder le passage, même au véhicule de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -313,6 +325,7 @@
    "announcedAction": "Je passe : celui de gauche doit me céder.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -320,6 +333,7 @@
     "lastS": 78.93,
     "maxSpeedMs": 7.45,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -348,7 +362,7 @@
    "expectedBehaviour": "Céder le passage à la voiture, même si elle vient de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -367,6 +381,7 @@
    "announcedAction": "Je ralentis et je lui cède le passage.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -374,6 +389,7 @@
     "lastS": 101.75,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -402,7 +418,7 @@
    "expectedBehaviour": "Céder le passage à la voiture, même si elle vient de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -421,13 +437,15 @@
    "announcedAction": "Je klaxonne pour qu’elle s’arrête.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "horn",
+   "observedAction": "représenté par un son ou un signal visuel et une légende, sans animation du conducteur",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 61.68,
     "lastS": 78.93,
     "maxSpeedMs": 7.45,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -456,13 +474,13 @@
    "expectedBehaviour": "Céder le passage à la voiture, même si elle vient de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
    "regulatorySource": null,
    "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
-   "status": "issue_terminale_verifiee"
+   "status": "limite_signalee"
   },
   {
    "ruleId": "O11/hierarchie",
@@ -475,6 +493,7 @@
    "announcedAction": "J’y vais : c’est vert.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -482,6 +501,7 @@
     "lastS": 76.67,
     "maxSpeedMs": 7.06,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -498,7 +518,7 @@
    "expectedBehaviour": "Attendre avant la ligne tant que vous ne pouvez pas ressortir du carrefour.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -517,6 +537,7 @@
    "announcedAction": "Je reste avant la ligne jusqu’à ce que la sortie se libère.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -524,6 +545,7 @@
     "lastS": 103.44,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -540,7 +562,7 @@
    "expectedBehaviour": "Attendre avant la ligne tant que vous ne pouvez pas ressortir du carrefour.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -559,13 +581,15 @@
    "announcedAction": "Je m’avance au milieu du carrefour pour être prêt.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "half",
+   "observedAction": "progression mesurée 14.99 m",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 61.68,
     "lastS": 76.67,
     "maxSpeedMs": 7.06,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -582,7 +606,7 @@
    "expectedBehaviour": "Attendre avant la ligne tant que vous ne pouvez pas ressortir du carrefour.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -601,6 +625,7 @@
    "announcedAction": "Je passe : je suis sur la plus grande route.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -608,6 +633,7 @@
     "lastS": 78.93,
     "maxSpeedMs": 7.45,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -629,7 +655,7 @@
    "expectedBehaviour": "Céder à la voiture qui vient de votre droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -648,6 +674,7 @@
    "announcedAction": "Je lui cède le passage, puis je passe.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -655,6 +682,7 @@
     "lastS": 104.77,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -676,7 +704,7 @@
    "expectedBehaviour": "Céder à la voiture qui vient de votre droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -695,13 +723,15 @@
    "announcedAction": "Je fais un appel de phares et je passe.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "flash",
+   "observedAction": "représenté par un son ou un signal visuel et une légende, sans animation du conducteur",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 61.68,
     "lastS": 78.93,
     "maxSpeedMs": 7.45,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -723,13 +753,13 @@
    "expectedBehaviour": "Céder à la voiture qui vient de votre droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
    "regulatorySource": null,
    "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
-   "status": "issue_terminale_verifiee"
+   "status": "limite_signalee"
   },
   {
    "ruleId": "O11/intersections",
@@ -742,6 +772,7 @@
    "announcedAction": "Je passe : je suis arrivé le premier.",
    "engineAct": "go",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -749,6 +780,7 @@
     "lastS": 78.93,
     "maxSpeedMs": 7.45,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -770,7 +802,7 @@
    "expectedBehaviour": "La laisser passer : elle vient de votre droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -789,6 +821,7 @@
    "announcedAction": "Je la laisse passer, puis je passe.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -796,6 +829,7 @@
     "lastS": 103.13,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -817,7 +851,7 @@
    "expectedBehaviour": "La laisser passer : elle vient de votre droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -836,13 +870,15 @@
    "announcedAction": "Je m’arrête et j’attends qu’elle me fasse signe.",
    "engineAct": "info",
    "engineActSharedInScenario": false,
-   "observedAction": null,
+   "gesture": "hand",
+   "observedAction": "progression mesurée 0 m",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
-    "firstS": 60.46,
-    "lastS": 66.69,
-    "maxSpeedMs": 4.13,
+    "firstS": 58,
+    "lastS": 58,
+    "maxSpeedMs": 0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -864,7 +900,7 @@
    "expectedBehaviour": "La laisser passer : elle vient de votre droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -883,6 +919,7 @@
    "announcedAction": "Je tourne tout de suite, j’ai mis mon clignotant.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -890,6 +927,7 @@
     "lastS": 78.93,
     "maxSpeedMs": 7.45,
     "lateralRangeM": 4.49,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -911,7 +949,7 @@
    "expectedBehaviour": "Céder le passage à la voiture d’en face, puis tourner.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -930,6 +968,7 @@
    "announcedAction": "Je la laisse passer, puis je tourne.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -937,6 +976,7 @@
     "lastS": 99.31,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 24.87,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -958,7 +998,7 @@
    "expectedBehaviour": "Céder le passage à la voiture d’en face, puis tourner.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -977,13 +1017,15 @@
    "announcedAction": "Je tourne en accélérant pour passer avant elle.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "hard",
+   "observedAction": "vitesse maximale mesurée 11.34 m/s",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
-    "firstS": 61.68,
-    "lastS": 78.93,
-    "maxSpeedMs": 7.45,
-    "lateralRangeM": 4.49,
+    "firstS": 63.9,
+    "lastS": 74.47,
+    "maxSpeedMs": 11.34,
+    "lateralRangeM": 0.81,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1005,7 +1047,7 @@
    "expectedBehaviour": "Céder le passage à la voiture d’en face, puis tourner.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1024,6 +1066,7 @@
    "announcedAction": "Je m’engage : c’est mon tour.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -1031,6 +1074,7 @@
     "lastS": 76.69,
     "maxSpeedMs": 7.06,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1055,7 +1099,7 @@
    "expectedBehaviour": "Attendre avant le carrefour, jusqu’à pouvoir le traverser entièrement.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1074,6 +1118,7 @@
    "announcedAction": "J’attends avant le carrefour que la file avance.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -1081,6 +1126,7 @@
     "lastS": 103.44,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1105,7 +1151,7 @@
    "expectedBehaviour": "Attendre avant le carrefour, jusqu’à pouvoir le traverser entièrement.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1124,13 +1170,15 @@
    "announcedAction": "Je m’engage à moitié pour garder ma place.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "half",
+   "observedAction": "progression mesurée 15.01 m",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 61.68,
     "lastS": 76.69,
     "maxSpeedMs": 7.06,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1155,7 +1203,7 @@
    "expectedBehaviour": "Attendre avant le carrefour, jusqu’à pouvoir le traverser entièrement.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1174,6 +1222,7 @@
    "announcedAction": "J’entre : je viens de sa droite, j’ai la priorité.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -1181,6 +1230,7 @@
     "lastS": 72.63,
     "maxSpeedMs": 7.33,
     "lateralRangeM": 2.18,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1230,7 +1280,7 @@
    "expectedBehaviour": "Céder à ceux qui sont déjà dans le rond-point et qui arrivent de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1249,6 +1299,7 @@
    "announcedAction": "Je la laisse passer, puis j’entre.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -1256,6 +1307,7 @@
     "lastS": 107.92,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 2.57,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1305,7 +1357,7 @@
    "expectedBehaviour": "Céder à ceux qui sont déjà dans le rond-point et qui arrivent de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1324,13 +1376,15 @@
    "announcedAction": "Je m’arrête dans le rond-point pour la laisser passer.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "stop-lane",
+   "observedAction": "progression mesurée 0 m",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
-    "firstS": 61.68,
-    "lastS": 72.63,
-    "maxSpeedMs": 7.33,
-    "lateralRangeM": 2.18,
+    "firstS": 58,
+    "lastS": 58,
+    "maxSpeedMs": 0,
+    "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1380,7 +1434,7 @@
    "expectedBehaviour": "Céder à ceux qui sont déjà dans le rond-point et qui arrivent de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1399,13 +1453,15 @@
    "announcedAction": "Clignotant gauche en entrant, puis clignotant droit avant la sortie.",
    "engineAct": "info",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "blink-left",
+   "observedAction": "clignotant du côté annoncé allumé au début de la trajectoire (non mesuré par le rapport)",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 60.46,
     "lastS": 67.27,
     "maxSpeedMs": 4.56,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1453,13 +1509,13 @@
    "expectedBehaviour": "Aucun clignotant en entrant ; clignotant droit juste après la sortie qui précède la vôtre.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
    "regulatorySource": null,
    "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
-   "status": "issue_terminale_verifiee"
+   "status": "limite_signalee"
   },
   {
    "ruleId": "O11/giratoires",
@@ -1472,6 +1528,7 @@
    "announcedAction": "Pas de clignotant en entrant ; clignotant droit après la sortie qui précède la mienne.",
    "engineAct": "go",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -1479,6 +1536,7 @@
     "lastS": 102.35,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 3.13,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1526,7 +1584,7 @@
    "expectedBehaviour": "Aucun clignotant en entrant ; clignotant droit juste après la sortie qui précède la vôtre.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1545,13 +1603,15 @@
    "announcedAction": "Clignotant droit dès l’entrée et jusqu’à la sortie.",
    "engineAct": "info",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "blink-right",
+   "observedAction": "clignotant du côté annoncé allumé au début de la trajectoire (non mesuré par le rapport)",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 60.46,
     "lastS": 67.27,
     "maxSpeedMs": 4.56,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1599,13 +1659,13 @@
    "expectedBehaviour": "Aucun clignotant en entrant ; clignotant droit juste après la sortie qui précède la vôtre.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
    "regulatorySource": null,
    "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
-   "status": "issue_terminale_verifiee"
+   "status": "limite_signalee"
   },
   {
    "ruleId": "O11/giratoires",
@@ -1618,6 +1678,7 @@
    "announcedAction": "Je sors : dans le rond-point, j’avais la priorité.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -1625,6 +1686,7 @@
     "lastS": 97.18,
     "maxSpeedMs": 7.45,
     "lateralRangeM": 2.26,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1675,7 +1737,7 @@
    "expectedBehaviour": "Contrôler à droite et l’angle mort, laisser passer cycliste et piéton, puis sortir.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1694,6 +1756,7 @@
    "announcedAction": "Je contrôle à droite, je laisse passer le cycliste et le piéton, puis je sors.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -1701,6 +1764,7 @@
     "lastS": 103.67,
     "maxSpeedMs": 6.97,
     "lateralRangeM": 3.19,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1751,7 +1815,7 @@
    "expectedBehaviour": "Contrôler à droite et l’angle mort, laisser passer cycliste et piéton, puis sortir.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1770,13 +1834,15 @@
    "announcedAction": "Je klaxonne pour prévenir et je sors.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "horn",
+   "observedAction": "représenté par un son ou un signal visuel et une légende, sans animation du conducteur",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 79.93,
     "lastS": 97.18,
     "maxSpeedMs": 7.45,
     "lateralRangeM": 2.26,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1827,13 +1893,13 @@
    "expectedBehaviour": "Contrôler à droite et l’angle mort, laisser passer cycliste et piéton, puis sortir.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
    "regulatorySource": null,
    "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
-   "status": "issue_terminale_verifiee"
+   "status": "limite_signalee"
   },
   {
    "ruleId": "O11/entrees-sorties",
@@ -1846,6 +1912,7 @@
    "announcedAction": "Je sors : elle vient de gauche, j’ai la priorité de droite.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -1853,6 +1920,7 @@
     "lastS": 18.42,
     "maxSpeedMs": 7.42,
     "lateralRangeM": 6.12,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1866,7 +1934,7 @@
    "expectedBehaviour": "Céder le passage à tous les usagers de l’avenue, quelle que soit leur direction.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1885,6 +1953,7 @@
    "announcedAction": "Je la laisse passer, puis je m’insère.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -1892,6 +1961,7 @@
     "lastS": 0,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 9.9,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1905,7 +1975,7 @@
    "expectedBehaviour": "Céder le passage à tous les usagers de l’avenue, quelle que soit leur direction.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1924,13 +1994,15 @@
    "announcedAction": "Je sors vite avant qu’elle arrive.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "hard",
+   "observedAction": "vitesse maximale mesurée 0 m/s",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 0,
     "lastS": 0,
     "maxSpeedMs": 0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1944,7 +2016,7 @@
    "expectedBehaviour": "Céder le passage à tous les usagers de l’avenue, quelle que soit leur direction.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1963,6 +2035,7 @@
    "announcedAction": "Je regarde seulement la route et je sors.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -1970,6 +2043,7 @@
     "lastS": 21.03,
     "maxSpeedMs": 7.45,
     "lateralRangeM": 6.12,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -1984,7 +2058,7 @@
    "expectedBehaviour": "Laisser passer le piéton, puis contrôler cyclistes et véhicules des deux côtés.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2003,6 +2077,7 @@
    "announcedAction": "Je laisse passer le piéton, puis je contrôle la route dans les deux sens.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2010,6 +2085,7 @@
     "lastS": 32.45,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 9.9,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2024,7 +2100,7 @@
    "expectedBehaviour": "Laisser passer le piéton, puis contrôler cyclistes et véhicules des deux côtés.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2043,13 +2119,15 @@
    "announcedAction": "Je klaxonne pour qu’il s’écarte.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "horn",
+   "observedAction": "représenté par un son ou un signal visuel et une légende, sans animation du conducteur",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 0,
     "lastS": 0,
     "maxSpeedMs": 0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2064,13 +2142,13 @@
    "expectedBehaviour": "Laisser passer le piéton, puis contrôler cyclistes et véhicules des deux côtés.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
    "regulatorySource": null,
    "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
-   "status": "issue_terminale_verifiee"
+   "status": "limite_signalee"
   },
   {
    "ruleId": "O11/entrees-sorties",
@@ -2083,6 +2161,7 @@
    "announcedAction": "Je sors normalement, je verrai bien.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2090,6 +2169,7 @@
     "lastS": 0,
     "maxSpeedMs": 0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2103,7 +2183,7 @@
    "expectedBehaviour": "Avancer très lentement pour laisser aux autres le temps de vous voir, et ne s’insérer que si personne ne doit freiner.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2122,6 +2202,7 @@
    "announcedAction": "J’avance très lentement, centimètre par centimètre, jusqu’à voir.",
    "engineAct": "creep",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2129,6 +2210,7 @@
     "lastS": 33.15,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 9.9,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2142,7 +2224,7 @@
    "expectedBehaviour": "Avancer très lentement pour laisser aux autres le temps de vous voir, et ne s’insérer que si personne ne doit freiner.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2161,13 +2243,15 @@
    "announcedAction": "Je klaxonne et je sors vite.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "horn",
+   "observedAction": "représenté par un son ou un signal visuel et une légende, sans animation du conducteur",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 0,
     "lastS": 0,
     "maxSpeedMs": 0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2181,13 +2265,13 @@
    "expectedBehaviour": "Avancer très lentement pour laisser aux autres le temps de vous voir, et ne s’insérer que si personne ne doit freiner.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
    "regulatorySource": null,
    "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
-   "status": "issue_terminale_verifiee"
+   "status": "limite_signalee"
   },
   {
    "ruleId": "O11/retrecissements",
@@ -2200,6 +2284,7 @@
    "announcedAction": "J’entre : le panneau me donne la priorité.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2207,6 +2292,7 @@
     "lastS": 65.72,
     "maxSpeedMs": 7.19,
     "lateralRangeM": 0.28,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2228,7 +2314,7 @@
    "expectedBehaviour": "Attendre qu’elle sorte : on n’entre pas si quelqu’un est déjà engagé.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2247,6 +2333,7 @@
    "announcedAction": "J’attends qu’elle ait traversé, puis je passe.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2254,6 +2341,7 @@
     "lastS": 99.28,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 1.5,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2275,7 +2363,7 @@
    "expectedBehaviour": "Attendre qu’elle sorte : on n’entre pas si quelqu’un est déjà engagé.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2294,13 +2382,15 @@
    "announcedAction": "Je fais un appel de phares pour qu’elle recule.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "flash",
+   "observedAction": "représenté par un son ou un signal visuel et une légende, sans animation du conducteur",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 57.68,
     "lastS": 65.72,
     "maxSpeedMs": 7.19,
     "lateralRangeM": 0.28,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2322,13 +2412,13 @@
    "expectedBehaviour": "Attendre qu’elle sorte : on n’entre pas si quelqu’un est déjà engagé.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
    "regulatorySource": null,
    "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
-   "status": "issue_terminale_verifiee"
+   "status": "limite_signalee"
   },
   {
    "ruleId": "O11/retrecissements",
@@ -2341,6 +2431,7 @@
    "announcedAction": "Je la contourne tout de suite.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2348,6 +2439,7 @@
     "lastS": 70.47,
     "maxSpeedMs": 7.38,
     "lateralRangeM": 2.33,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2361,7 +2453,7 @@
    "expectedBehaviour": "S’arrêter un peu avant l’obstacle et laisser passer le trafic d’en face.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2380,6 +2472,7 @@
    "announcedAction": "Je m’arrête un peu avant l’obstacle et je laisse passer la voiture.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2387,6 +2480,7 @@
     "lastS": 101.57,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 2.7,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2400,7 +2494,7 @@
    "expectedBehaviour": "S’arrêter un peu avant l’obstacle et laisser passer le trafic d’en face.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2419,13 +2513,15 @@
    "announcedAction": "Je contourne en klaxonnant.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "horn",
+   "observedAction": "représenté par un son ou un signal visuel et une légende, sans animation du conducteur",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 57.68,
     "lastS": 70.47,
     "maxSpeedMs": 7.38,
     "lateralRangeM": 2.33,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2439,13 +2535,13 @@
    "expectedBehaviour": "S’arrêter un peu avant l’obstacle et laisser passer le trafic d’en face.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
    "regulatorySource": null,
    "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
-   "status": "issue_terminale_verifiee"
+   "status": "limite_signalee"
   },
   {
    "ruleId": "O11/retrecissements",
@@ -2458,6 +2554,7 @@
    "announcedAction": "Je m’arrête pour la laisser passer.",
    "engineAct": "info",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2465,6 +2562,7 @@
     "lastS": 63.77,
     "maxSpeedMs": 4.73,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2478,7 +2576,7 @@
    "expectedBehaviour": "Continuer prudemment sur votre voie : c’est l’autre qui doit attendre.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2497,6 +2595,7 @@
    "announcedAction": "Je continue prudemment sur ma voie.",
    "engineAct": "go",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2504,6 +2603,7 @@
     "lastS": 98.35,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2517,7 +2617,7 @@
    "expectedBehaviour": "Continuer prudemment sur votre voie : c’est l’autre qui doit attendre.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2536,13 +2636,15 @@
    "announcedAction": "Je me décale à gauche pour l’aider.",
    "engineAct": "info",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "left",
+   "observedAction": "décalage latéral mesuré 1.6 m hors de l’axe de la voie",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 56.46,
     "lastS": 63.77,
     "maxSpeedMs": 4.73,
-    "lateralRangeM": 0.0,
+    "lateralRangeM": 0.46,
+    "maxLaneOffsetM": 1.6,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2556,7 +2658,7 @@
    "expectedBehaviour": "Continuer prudemment sur votre voie : c’est l’autre qui doit attendre.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2575,6 +2677,7 @@
    "announcedAction": "Je m’arrête : un camion est prioritaire parce qu’il est grand.",
    "engineAct": "info",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2582,6 +2685,7 @@
     "lastS": 63.77,
     "maxSpeedMs": 4.73,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2595,7 +2699,7 @@
    "expectedBehaviour": "Passer prudemment sur votre voie, avec une marge latérale suffisante.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2614,6 +2718,7 @@
    "announcedAction": "Je passe prudemment, en gardant une bonne marge sur le côté.",
    "engineAct": "go",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2621,6 +2726,7 @@
     "lastS": 98.35,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2634,7 +2740,7 @@
    "expectedBehaviour": "Passer prudemment sur votre voie, avec une marge latérale suffisante.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2653,13 +2759,15 @@
    "announcedAction": "Je passe vite en frôlant le camion.",
    "engineAct": "rush",
    "engineActSharedInScenario": false,
-   "observedAction": null,
+   "gesture": "hard",
+   "observedAction": "vitesse maximale mesurée 12.18 m/s",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 60.39,
     "lastS": 70.61,
     "maxSpeedMs": 12.18,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2673,7 +2781,7 @@
    "expectedBehaviour": "Passer prudemment sur votre voie, avec une marge latérale suffisante.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2692,6 +2800,7 @@
    "announcedAction": "Je lui cède : elle vient de droite.",
    "engineAct": "info",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2699,6 +2808,7 @@
     "lastS": 66.69,
     "maxSpeedMs": 4.13,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2727,7 +2837,7 @@
    "expectedBehaviour": "Continuer : sur la route principale, vous êtes prioritaire, même face à la droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2746,6 +2856,7 @@
    "announcedAction": "Je continue, en restant attentif.",
    "engineAct": "go",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2753,6 +2864,7 @@
     "lastS": 102.35,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2781,7 +2893,7 @@
    "expectedBehaviour": "Continuer : sur la route principale, vous êtes prioritaire, même face à la droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2800,13 +2912,15 @@
    "announcedAction": "Je m’arrête pour lui faire signe de passer.",
    "engineAct": "info",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "hand",
+   "observedAction": "progression mesurée 0 m",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
-    "firstS": 60.46,
-    "lastS": 66.69,
-    "maxSpeedMs": 4.13,
+    "firstS": 58,
+    "lastS": 58,
+    "maxSpeedMs": 0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2835,7 +2949,7 @@
    "expectedBehaviour": "Continuer : sur la route principale, vous êtes prioritaire, même face à la droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2854,6 +2968,7 @@
    "announcedAction": "Je passe : je viens de la grande route.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2861,6 +2976,7 @@
     "lastS": 78.93,
     "maxSpeedMs": 7.45,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2889,7 +3005,7 @@
    "expectedBehaviour": "Céder à droite : après le panneau de fin, la règle générale revient.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2908,6 +3024,7 @@
    "announcedAction": "Je cède à la voiture de droite.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -2915,6 +3032,7 @@
     "lastS": 104.77,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2943,7 +3061,7 @@
    "expectedBehaviour": "Céder à droite : après le panneau de fin, la règle générale revient.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2962,13 +3080,15 @@
    "announcedAction": "Je passe en accélérant.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "hard",
+   "observedAction": "vitesse maximale mesurée 11.92 m/s",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
-    "firstS": 61.68,
-    "lastS": 78.93,
-    "maxSpeedMs": 7.45,
+    "firstS": 63.9,
+    "lastS": 91.48,
+    "maxSpeedMs": 11.92,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -2997,7 +3117,7 @@
    "expectedBehaviour": "Céder à droite : après le panneau de fin, la règle générale revient.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3016,6 +3136,7 @@
    "announcedAction": "Je passe : elle vient de ma gauche.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -3023,6 +3144,7 @@
     "lastS": 78.93,
     "maxSpeedMs": 7.45,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -3058,7 +3180,7 @@
    "expectedBehaviour": "Céder à tous les véhicules de l’axe principal, même venant de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3077,6 +3199,7 @@
    "announcedAction": "Je lui cède le passage.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -3084,6 +3207,7 @@
     "lastS": 101.75,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -3119,7 +3243,7 @@
    "expectedBehaviour": "Céder à tous les véhicules de l’axe principal, même venant de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3138,13 +3262,15 @@
    "announcedAction": "Je m’engage à moitié pour la forcer à ralentir.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "half",
+   "observedAction": "progression mesurée 8.94 m",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 61.68,
-    "lastS": 78.93,
-    "maxSpeedMs": 7.45,
+    "lastS": 70.62,
+    "maxSpeedMs": 5.74,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -3180,7 +3306,7 @@
    "expectedBehaviour": "Céder à tous les véhicules de l’axe principal, même venant de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3199,6 +3325,7 @@
    "announcedAction": "Je continue : la chaussée continue tout droit, je suis prioritaire.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -3206,6 +3333,7 @@
     "lastS": 69.4,
     "maxSpeedMs": 5.74,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -3241,7 +3369,7 @@
    "expectedBehaviour": "Suivre le dessin de la plaque : votre route est secondaire, vous cédez au véhicule du trait épais.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3260,6 +3388,7 @@
    "announcedAction": "Je cède à la voiture qui suit le tracé prioritaire.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -3267,6 +3396,7 @@
     "lastS": 99.95,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -3302,7 +3432,7 @@
    "expectedBehaviour": "Suivre le dessin de la plaque : votre route est secondaire, vous cédez au véhicule du trait épais.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3321,13 +3451,15 @@
    "announcedAction": "J’accélère pour passer avant elle.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "hard",
+   "observedAction": "vitesse maximale mesurée 9.19 m/s",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
-    "firstS": 61.68,
-    "lastS": 69.4,
-    "maxSpeedMs": 5.74,
+    "firstS": 63.9,
+    "lastS": 70.08,
+    "maxSpeedMs": 9.19,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -3363,7 +3495,7 @@
    "expectedBehaviour": "Suivre le dessin de la plaque : votre route est secondaire, vous cédez au véhicule du trait épais.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3382,13 +3514,15 @@
    "announcedAction": "Je freine fort et je m’arrête au milieu de ma voie.",
    "engineAct": "info",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "stop-lane",
+   "observedAction": "progression mesurée 0 m",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
-    "firstS": 57.46,
-    "lastS": 64.87,
-    "maxSpeedMs": 4.73,
+    "firstS": 55,
+    "lastS": 55,
+    "maxSpeedMs": 0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -3402,7 +3536,7 @@
    "expectedBehaviour": "Créer immédiatement un passage : clignotant, se serrer à droite, ralentir.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3421,6 +3555,7 @@
    "announcedAction": "Je mets le clignotant droit, je me serre à droite et je ralentis.",
    "engineAct": "pull",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -3428,6 +3563,7 @@
     "lastS": 100.08,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 2.3,
+    "maxLaneOffsetM": 2.3,
     "pullManoeuvre": true
    },
    "objects": {
@@ -3441,7 +3577,7 @@
    "expectedBehaviour": "Créer immédiatement un passage : clignotant, se serrer à droite, ralentir.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3460,6 +3596,7 @@
    "announcedAction": "Je continue normalement : elle me dépassera.",
    "engineAct": "info",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -3467,6 +3604,7 @@
     "lastS": 64.87,
     "maxSpeedMs": 4.73,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -3480,7 +3618,7 @@
    "expectedBehaviour": "Créer immédiatement un passage : clignotant, se serrer à droite, ralentir.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3499,6 +3637,7 @@
    "announcedAction": "Je passe : il tourne à gauche, il doit me céder.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -3506,6 +3645,7 @@
     "lastS": 74.47,
     "maxSpeedMs": 7.38,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -3527,7 +3667,7 @@
    "expectedBehaviour": "Laisser passer le tram, même lorsqu’il tourne à gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3546,6 +3686,7 @@
    "announcedAction": "Je laisse passer le tram, puis je passe.",
    "engineAct": "wait",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -3553,6 +3694,7 @@
     "lastS": 98.89,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -3574,7 +3716,7 @@
    "expectedBehaviour": "Laisser passer le tram, même lorsqu’il tourne à gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3593,13 +3735,15 @@
    "announcedAction": "Je klaxonne pour qu’il freine.",
    "engineAct": "go",
    "engineActSharedInScenario": true,
-   "observedAction": null,
+   "gesture": "horn",
+   "observedAction": "représenté par un son ou un signal visuel et une légende, sans animation du conducteur",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 61.68,
     "lastS": 74.47,
     "maxSpeedMs": 7.38,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -3621,13 +3765,13 @@
    "expectedBehaviour": "Laisser passer le tram, même lorsqu’il tourne à gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
    "regulatorySource": null,
    "regulatorySourceStatus": "a sourcer sur Fedlex/OFROU ; aucun article retenu",
-   "status": "issue_terminale_verifiee"
+   "status": "limite_signalee"
   },
   {
    "ruleId": "O11/prioritaires-tram",
@@ -3640,6 +3784,7 @@
    "announcedAction": "Je franchis le feu rouge pour dégager.",
    "engineAct": "go",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -3647,6 +3792,7 @@
     "lastS": 85.18,
     "maxSpeedMs": 7.45,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -3662,7 +3808,7 @@
    "expectedBehaviour": "Libérer le passage de façon sûre : se serrer, sans franchir le feu au milieu du trafic.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3681,6 +3827,7 @@
    "announcedAction": "Je me serre à droite autant que possible, sans franchir le feu.",
    "engineAct": "pull",
    "engineActSharedInScenario": false,
+   "gesture": null,
    "observedAction": null,
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
@@ -3688,6 +3835,7 @@
     "lastS": 100.9,
     "maxSpeedMs": 7.0,
     "lateralRangeM": 2.3,
+    "maxLaneOffsetM": 2.3,
     "pullManoeuvre": true
    },
    "objects": {
@@ -3703,7 +3851,7 @@
    "expectedBehaviour": "Libérer le passage de façon sûre : se serrer, sans franchir le feu au milieu du trafic.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3722,13 +3870,15 @@
    "announcedAction": "Je recule pour lui laisser de la place.",
    "engineAct": "info",
    "engineActSharedInScenario": false,
-   "observedAction": null,
+   "gesture": "reverse",
+   "observedAction": "recul mesuré 1.54 m",
    "observedMotion": {
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
-    "firstS": 66.55,
-    "lastS": 68.79,
-    "maxSpeedMs": 3.26,
+    "firstS": 63.81,
+    "lastS": 62.27,
+    "maxSpeedMs": 0,
     "lateralRangeM": 0.0,
+    "maxLaneOffsetM": 0,
     "pullManoeuvre": false
    },
    "objects": {
@@ -3744,7 +3894,7 @@
    "expectedBehaviour": "Libérer le passage de façon sûre : se serrer, sans franchir le feu au milieu du trafic.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "b72d5d251728d391e1d99ad9fb3d6c385d914a0d8881d825c3d725dde5695d66",
+    "htmlSha256": "7bd25ffc25b9489483f9d40841dcb5105dac603e7e736940c0be4f5ac53810c1",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
