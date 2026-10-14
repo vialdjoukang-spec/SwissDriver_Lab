@@ -23,6 +23,8 @@ jobs:
           python3 -m playwright install --with-deps chromium
       - name: Real Chromium and WebGL smoke tests
         run: python3 tests/browser_smoke.py
+      - name: Scene geometry, observation layout and agent gesture
+        run: python3 tests/scene_coherence.py
       - name: Save build, source modules and test evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

@@ -21,7 +21,7 @@
     html=once(html,'O.v/2.7*Math.tan(O.steer)','O.v/2.8*Math.tan(O.steer)');
     html=once(html,'Gn.setPixelRatio(Math.min(devicePixelRatio,2))','Gn.setPixelRatio(Math.min(devicePixelRatio,1.5))');
     html=once(html,'fi.shadow.mapSize.set(3072,3072)','fi.shadow.mapSize.set(innerWidth<700?1024:2048,innerWidth<700?1024:2048)');
-    html=once(html,'window.__NORENDER||Gn.render(Ut,na)','Dt.visible=!($u===1&&At==="drive"&&!Ie);window.__NORENDER||Gn.render(Ut,na)');
+    html=once(html,'window.__NORENDER||Gn.render(Ut,na)','Dt.visible=!(($u===1&&At==="drive"&&!Ie)||(window.SwissDriverScene&&window.SwissDriverScene.isDriverView()));window.__NORENDER||Gn.render(Ut,na)');
     html=once(html,'</head>','<style data-swissdriver-modern="2">\n'+css+'\n</style>\n</head>');
     html=once(html,'<title>Permis B · Rossa GT</title>','<title>SwissDriver Lab · Cours et conduite</title>');
     return html;
