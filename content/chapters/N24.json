@@ -1,0 +1,798 @@
+{
+ "chapter": {
+  "id": "N24",
+  "official": "2.4",
+  "group": "G2",
+  "otitle": "Conduite préventive et analyse des usagers de la route en 4 points",
+  "title": "Conduire de manière préventive",
+  "oscope": "Analyser les autres usagers en quatre points, anticiper leurs actions possibles, choisir une tactique défensive et connaître les limites de ce que le véhicule permet de voir.",
+  "tagline": "À la fin de ce chapitre, vous saurez lire les autres usagers, imaginer ce qu’ils vont faire, vous donner de la marge et compenser ce que votre voiture vous cache.",
+  "intro": [
+   "Conduire de manière **préventive**, c’est agir avant que le danger n’existe vraiment. Vous ne vous contentez pas de réagir à ce qui se passe : vous observez les autres usagers, vous vous demandez ce qu’ils pourraient faire et vous vous organisez pour avoir toujours une solution de repli.",
+   "La loi sur la circulation routière (LCR) pose la règle de base : chacun doit se comporter de manière à ne gêner ni mettre en danger les autres. Vous pouvez en principe compter sur le respect des règles par les autres usagers, c’est le principe de confiance. Mais cette confiance a des limites : face à des enfants, à des personnes âgées ou à un usager visiblement inattentif, vous devez redoubler de prudence.",
+   "Ce chapitre suit une logique simple. D’abord, vous **lisez** chaque usager en quatre points. Ensuite, vous **prévoyez** ce qui peut arriver. Puis vous **vous protégez** par une tactique défensive. Enfin, vous **vérifiez** ce que votre véhicule et ses systèmes d’aide ne vous montrent pas."
+  ],
+  "keyIdea": "Ne vous demandez pas seulement ce que les autres doivent faire, mais aussi ce qu’ils pourraient faire, et gardez la marge pour y répondre.",
+  "memo": {
+   "code": "L–P–P–V",
+   "text": "Lire (analyser l’usager en 4 points), Prévoir (imaginer les évolutions possibles), Protéger (vitesse, distance, patience), Vérifier (angles morts, rétroviseurs, limites des systèmes d’aide)."
+  },
+  "color": "#1d6f8a",
+  "sources": [
+   {
+    "label": "asa · Catalogue des compétences, théorie de base",
+    "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+   },
+   {
+    "label": "Fedlex · LCR",
+    "href": "https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr"
+   },
+   {
+    "label": "BPA · Conseils de prévention",
+    "href": "https://www.bfu.ch/fr"
+   }
+  ],
+  "sections": [
+   {
+    "id": "analyse-usagers",
+    "otitle": "Analyse des usagers en 4 points",
+    "title": "Lire les autres usagers : comment se déplacent-ils, quel âge ont-ils, sont-ils attentifs, que veulent-ils faire ?",
+    "ogoal": "Évaluer chaque usager selon son mode de déplacement, son âge, sa vigilance et son intention afin de prévoir son comportement.",
+    "question": "Comment savoir si un piéton qui se tient au bord du trottoir va traverser ?",
+    "lead": [
+     "Les autres usagers ne se comportent pas tous de la même façon. Une méthode en quatre points vous aide à les « lire » rapidement et à deviner ce qu’ils risquent de faire, avant qu’ils ne le fassent."
+    ],
+    "parts": [
+     {
+      "title": "Mode de déplacement et âge",
+      "body": [
+       "Le **mode de déplacement** est la façon dont l’usager se déplace : à pied, à vélo, à trottinette, à moto, en voiture, en camion ou en tracteur. Chaque mode a ses particularités. Un piéton peut changer de direction en un instant. Un cycliste peut faire un écart pour éviter un nid-de-poule. Un camion a besoin de beaucoup de place pour tourner et voit mal autour de lui. Une moto est étroite, accélère vite et se remarque difficilement.",
+       "L’**âge** donne d’autres indices. Les jeunes enfants évaluent mal les distances et les vitesses ; ils peuvent courir sur la chaussée sans regarder, par exemple pour suivre un ballon. Les adolescents sont parfois distraits par leur groupe ou leur téléphone. Les personnes âgées peuvent se déplacer plus lentement, entendre ou voir moins bien, et avoir besoin de plus de temps pour traverser. La loi vous demande une prudence particulière envers les enfants et les personnes âgées."
+      ]
+     },
+     {
+      "title": "Vigilance et intention",
+      "body": [
+       "La **vigilance** est le degré d’attention de l’usager. Regardez ses yeux et sa tête : un piéton qui fixe son téléphone, porte des écouteurs ou discute en marchant est peut-être absent de la situation. Un conducteur qui ne tourne pas la tête vers vous ne vous a peut-être pas vu. Plus la vigilance d’un usager semble faible, moins vous pouvez compter sur lui.",
+       "L’**intention** est ce que l’usager s’apprête à faire. Elle se devine à des signes concrets : un clignoteur, un regard par-dessus l’épaule, une roue qui se tourne, un pas vers la chaussée, un véhicule qui ralentit près d’une place libre. Attention : un clignoteur annonce une intention, il ne prouve pas que la manœuvre aura lieu, et l’absence de clignoteur ne prouve pas que rien ne va se passer."
+      ]
+     },
+     {
+      "title": "De l’analyse à la décision",
+      "body": [
+       "Les quatre points se combinent. Un enfant (âge) à trottinette (mode) qui regarde ses camarades (vigilance faible) et se dirige vers la route (intention) représente un risque élevé. Un adulte à pied, arrêté, qui vous regarde, représente un risque plus faible, mais pas nul.",
+       "Votre analyse doit déboucher sur une décision : lever le pied, vous préparer à freiner, vous écarter si la place le permet, ou vous arrêter. Le principe de confiance vous permet de rouler normalement face à un usager qui se comporte correctement ; il cesse dès qu’un indice concret montre que cet usager risque de commettre une erreur."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Mode de déplacement",
+      "def": "La manière dont un usager se déplace : à pied, à vélo, à trottinette, à moto, en voiture, en camion, etc."
+     },
+     {
+      "term": "Vigilance",
+      "def": "Le niveau d’attention d’un usager envers la circulation. Elle se devine à son regard, à sa tête et à son comportement."
+     },
+     {
+      "term": "Intention",
+      "def": "Ce qu’un usager s’apprête à faire, annoncé par des signes : clignoteur, regard, orientation, changement de vitesse."
+     },
+     {
+      "term": "Principe de confiance",
+      "def": "L’idée que vous pouvez compter sur le respect des règles par les autres, sauf si un indice concret montre qu’ils vont se tromper."
+     }
+    ],
+    "method": [
+     "Identifiez le mode de déplacement de chaque usager proche de votre trajectoire.",
+     "Estimez son âge et ce que cela implique pour son comportement.",
+     "Observez son regard et son attitude pour juger sa vigilance.",
+     "Cherchez les signes qui annoncent son intention.",
+     "Adaptez votre vitesse et votre position avant d’arriver à sa hauteur."
+    ],
+    "example": {
+     "title": "L’adolescent à trottinette",
+     "scene": "Vous roulez dans une rue de localité, à Yverdon-les-Bains. Sur le trottoir de droite, un adolescent à trottinette électrique, des écouteurs sur les oreilles, regarde son téléphone. Il approche d’un passage pour piétons situé devant vous.",
+     "reasoning": [
+      "Mode : la trottinette va plus vite qu’un piéton et peut arriver sur le passage en très peu de temps. Âge : un adolescent peut se laisser distraire facilement.",
+      "Vigilance : les écouteurs et le téléphone montrent que son attention est ailleurs. Intention : il se dirige vers le passage, il pourrait donc traverser sans s’arrêter.",
+      "Vous levez le pied, vous placez le pied au-dessus du frein et vous êtes prêt à vous arrêter avant le passage."
+     ],
+     "answer": "Les quatre points indiquent un risque élevé. Vous réduisez votre vitesse avant le passage pour pouvoir vous arrêter, même s’il s’y engage sans regarder."
+    },
+    "trap": "Le piège est de juger un usager sur un seul indice, par exemple « il est adulte, donc il fera attention ». Combinez toujours les quatre points : un adulte distrait par son téléphone peut se comporter de manière aussi imprévisible qu’un enfant.",
+    "remember": "Mode, âge, vigilance, intention : quatre questions pour prévoir le comportement de chaque usager.",
+    "memo": {
+     "code": "M–A–V–I",
+     "text": "Mode de déplacement, Âge, Vigilance, Intention : posez-vous ces quatre questions pour chaque usager proche de votre trajectoire."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 3 ; LCR art. 26",
+    "source": {
+     "label": "Fedlex · LCR",
+     "href": "https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr"
+    }
+   },
+   {
+    "id": "anticipation",
+    "otitle": "Anticipation",
+    "title": "Se préparer mentalement à ce qui pourrait arriver",
+    "ogoal": "Imaginer à l’avance les évolutions possibles d’une situation pour être prêt à réagir sans être surpris.",
+    "question": "Pourquoi un bus arrêté à un arrêt doit-il vous faire réagir avant même qu’il ne bouge ?",
+    "lead": [
+     "Anticiper, c’est penser un coup d’avance. Vous ne savez pas exactement ce qui va se passer, mais vous pouvez imaginer ce qui est possible et vous y préparer. Cette préparation vous fait gagner un temps précieux."
+    ],
+    "parts": [
+     {
+      "title": "Se poser la question « et si… ? »",
+      "body": [
+       "Devant chaque situation, posez-vous la question : « et si… ? ». Et si ce bus repartait ? Et si un piéton sortait de derrière ? Et si la voiture garée ouvrait sa portière ? Chaque réponse est un **scénario**, une évolution possible de la situation.",
+       "Anticiper ne veut pas dire deviner l’avenir avec certitude. Il s’agit de repérer les scénarios les plus probables et les plus dangereux, puis de vous placer dans une position où vous pourrez faire face à chacun d’eux : vitesse plus basse, distance plus grande, pied prêt à freiner."
+      ]
+     },
+     {
+      "title": "Les indices qui annoncent une évolution",
+      "body": [
+       "La route est pleine d’indices. Un ballon qui roule annonce souvent un enfant. Des feux stop allumés plusieurs véhicules devant vous annoncent un ralentissement. Un feu vert depuis longtemps peut bientôt changer. Un panneau annonçant une école, un passage pour piétons ou des travaux vous prépare à des usagers ou à des obstacles particuliers.",
+       "Les lieux eux-mêmes sont des indices : arrêt de bus, sortie d’école, entrée de parking, chemin agricole, place de jeux. Plus vous repérez tôt ces indices, plus vous avez de temps pour adapter votre conduite calmement."
+      ]
+     },
+     {
+      "title": "Préparer sa réaction",
+      "body": [
+       "Une réaction préparée est plus rapide qu’une réaction improvisée. Si vous avez déjà imaginé qu’un enfant pourrait surgir, votre cerveau a moins de travail le jour où cela arrive : vous freinez au lieu de vous demander ce qui se passe.",
+       "Préparer sa réaction, c’est concrètement lever le pied de l’accélérateur, placer le pied au-dessus du frein, contrôler le rétroviseur pour savoir ce qui vous suit et repérer un espace libre où vous pourriez vous écarter. Ces gestes ne coûtent presque rien et peuvent éviter un accident."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Anticipation",
+      "def": "Le fait de prévoir les évolutions possibles d’une situation et de s’y préparer avant qu’elles ne se produisent."
+     },
+     {
+      "term": "Scénario",
+      "def": "Une évolution possible de la situation, que vous imaginez pour être prêt à y répondre."
+     },
+     {
+      "term": "Indice",
+      "def": "Un signe visible sur la route qui annonce qu’une situation pourrait changer : ballon, feux stop, panneau, clignoteur, etc."
+     },
+     {
+      "term": "Marge de sécurité",
+      "def": "L’espace et le temps dont vous disposez pour réagir si un imprévu survient."
+     }
+    ],
+    "method": [
+     "Repérez tôt les lieux et les indices qui annoncent un changement possible.",
+     "Imaginez les scénarios les plus probables et les plus dangereux.",
+     "Choisissez une vitesse et une position qui vous permettent de répondre à chacun d’eux.",
+     "Préparez le geste : pied levé, pied au-dessus du frein, rétroviseur contrôlé.",
+     "Réévaluez la situation à mesure qu’elle évolue."
+    ],
+    "example": {
+     "title": "Le tracteur au bord du chemin",
+     "scene": "Sur une route hors localité dans le Jura, vous suivez un tracteur qui roule lentement. Plus loin, un chemin agricole part sur la gauche. Le conducteur du tracteur tourne la tête vers la gauche, mais n’a pas encore enclenché son clignoteur.",
+     "reasoning": [
+      "Le chemin agricole et le regard du conducteur sont deux indices : le tracteur pourrait tourner à gauche.",
+      "Si vous commenciez maintenant à dépasser, vous pourriez vous retrouver à côté de lui au moment où il tourne.",
+      "Vous restez derrière avec une distance suffisante et vous attendez que la situation se clarifie."
+     ],
+     "answer": "Vous renoncez au dépassement tant que l’intention du tracteur n’est pas claire. Vous n’attendez pas le clignoteur pour vous préparer : vous anticipez à partir des indices."
+    },
+    "trap": "Le piège est d’attendre la preuve que quelque chose va se passer avant d’agir. Quand le danger est visible, il est souvent trop tard pour réagir calmement. Préparez-vous dès les premiers indices.",
+    "remember": "Anticiper, c’est imaginer ce qui peut arriver et préparer sa réaction avant que cela n’arrive.",
+    "memo": {
+     "code": "E–S–I",
+     "text": "« Et Si… ? » : posez-vous la question devant chaque situation, puis préparez la réponse."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 3 ; LCR art. 26",
+    "source": {
+     "label": "asa · Catalogue des compétences",
+     "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+    }
+   },
+   {
+    "id": "tactique-defensive",
+    "otitle": "Tactique défensive et stratégies de sécurité",
+    "title": "Se donner de la marge : vitesse, distance, patience et communication",
+    "ogoal": "Appliquer des stratégies qui créent de la marge : vitesse adaptée, distances suffisantes, patience, disposition à freiner ou à s’arrêter, contact visuel, signaux d’avertissement et choix de l’itinéraire.",
+    "question": "Si un autre usager commet une erreur, comment faire pour qu’elle ne devienne pas un accident ?",
+    "lead": [
+     "La conduite défensive part d’une idée simple : tout le monde peut se tromper, vous comme les autres. Votre objectif est de garder assez de marge pour que l’erreur d’un usager ne se transforme pas en collision."
+    ],
+    "parts": [
+     {
+      "title": "Vitesse et distances : créer du temps",
+      "body": [
+       "La **vitesse** est votre premier outil. Plus vous roulez lentement, plus vous avez de temps pour voir, comprendre et réagir, et plus votre distance d’arrêt est courte. La vitesse maximale signalée est un plafond, pas une vitesse conseillée : en présence d’enfants, de mauvaise visibilité ou de chaussée glissante, elle peut être beaucoup trop élevée.",
+       "Les **distances** vous donnent de l’espace. Gardez une distance suffisante avec le véhicule qui vous précède pour pouvoir vous arrêter s’il freine brusquement. Gardez aussi de l’espace sur les côtés, par exemple en dépassant un cycliste ou en longeant des voitures stationnées. Le BPA publie des recommandations pratiques sur les distances à respecter."
+      ]
+     },
+     {
+      "title": "Patience, disposition à freiner et arrêt",
+      "body": [
+       "La **patience** évite de nombreux conflits. Laisser passer un conducteur pressé, attendre derrière un cycliste jusqu’à ce que le dépassement soit sûr ou laisser s’insérer un véhicule dans un bouchon ne vous coûte que quelques secondes. Renoncer à votre droit peut être la décision la plus sûre.",
+       "Être **disposé à freiner**, c’est lever le pied de l’accélérateur et placer le pied au-dessus de la pédale de frein dès qu’une situation devient incertaine. Vous gagnez ainsi le temps du déplacement du pied. Et si l’incertitude persiste, la solution peut être de vous **arrêter** complètement jusqu’à ce que la situation soit claire."
+      ]
+     },
+     {
+      "title": "Communiquer et choisir son itinéraire",
+      "body": [
+       "Le **contact visuel** avec un piéton, un cycliste ou un conducteur vous aide à savoir s’il vous a vu. Mais il ne garantit pas qu’il a compris vos intentions ni qu’il agira correctement. Les **signaux d’avertissement**, comme le klaxon ou l’appel de phares, servent à prévenir un usager d’un danger lorsque la sécurité l’exige ; ils ne servent pas à exprimer votre mécontentement ou à presser quelqu’un.",
+       "Enfin, la sécurité commence avant de partir. Le **choix de l’itinéraire** compte : par neige ou fortes pluies, une route principale bien entretenue peut être préférable à un col ; un trajet préparé à l’avance évite les changements de voie précipités et les freinages de dernière minute pour ne pas manquer une sortie."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Conduite défensive",
+      "def": "Manière de conduire qui garde assez de marge pour compenser les erreurs possibles des autres et les siennes."
+     },
+     {
+      "term": "Distance de sécurité",
+      "def": "L’espace laissé avec le véhicule qui précède pour pouvoir s’arrêter s’il freine brusquement."
+     },
+     {
+      "term": "Disposition à freiner",
+      "def": "Le pied levé de l’accélérateur et placé au-dessus du frein, prêt à freiner dans une situation incertaine."
+     },
+     {
+      "term": "Signal d’avertissement",
+      "def": "Klaxon ou appel de phares utilisé pour prévenir un usager d’un danger, lorsque la sécurité l’exige."
+     }
+    ],
+    "method": [
+     "Choisissez une vitesse qui vous permet de vous arrêter dans l’espace que vous voyez libre.",
+     "Gardez des distances suffisantes devant vous et sur les côtés.",
+     "Dès qu’une situation devient incertaine, levez le pied et préparez le freinage.",
+     "Cherchez le contact visuel, sans le prendre pour une garantie.",
+     "Renoncez à votre droit ou arrêtez-vous si cela évite un conflit."
+    ],
+    "example": {
+     "title": "Le piéton au passage, la voiture derrière",
+     "scene": "Dans une localité du canton de Vaud, vous approchez d’un passage pour piétons. Une femme attend au bord du trottoir, son chien en laisse. Derrière vous, une voiture vous suit d’assez près.",
+     "reasoning": [
+      "La femme attend : elle va probablement traverser. Vous cherchez son regard pour savoir si elle vous a vu.",
+      "La voiture qui vous suit de près ne doit pas être surprise par votre arrêt. Vous ralentissez tôt et progressivement, pour qu’elle comprenne vos intentions.",
+      "Vous vous arrêtez avant le passage et vous la laissez traverser complètement, en gardant un œil sur le chien."
+     ],
+     "answer": "Vous ralentissez tôt, vous cherchez le contact visuel et vous vous arrêtez pour laisser passer la piétonne. Ce ralentissement progressif protège aussi le conducteur qui vous suit."
+    },
+    "trap": "Le piège est de croire qu’un contact visuel vaut un accord. Un piéton qui vous regarde peut quand même s’engager, et un conducteur qui semble vous voir peut avoir regardé à travers vous. Restez prêt à freiner jusqu’à ce que la situation soit réglée.",
+    "remember": "Vitesse adaptée, distances suffisantes et patience vous donnent le temps de corriger les erreurs des autres.",
+    "memo": {
+     "code": "V–D–P",
+     "text": "Vitesse adaptée, Distance suffisante, Patience : trois réserves de marge qui transforment une erreur en simple frayeur."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 3 ; LCR art. 26",
+    "source": {
+     "label": "BPA · Conseils de prévention",
+     "href": "https://www.bfu.ch/fr"
+    }
+   },
+   {
+    "id": "limites-perception",
+    "otitle": "Limites de perception du véhicule",
+    "title": "Ce que votre voiture vous montre… et ce qu’elle vous cache",
+    "ogoal": "Connaître les angles morts, les éléments qui masquent la vue, les limites des rétroviseurs et des systèmes d’aide à la conduite, et compenser ces limites par l’observation.",
+    "question": "Si aucun voyant ne s’allume dans le rétroviseur, la voie à côté de vous est-elle forcément libre ?",
+    "lead": [
+     "Depuis le siège du conducteur, vous ne voyez pas tout. La carrosserie, les rétroviseurs et même les systèmes d’aide ont leurs limites. Connaître ces limites vous permet de les compenser par des regards ciblés."
+    ],
+    "parts": [
+     {
+      "title": "Angles morts et éléments qui masquent la vue",
+      "body": [
+       "L’**angle mort** est une zone autour du véhicule que vous ne voyez ni directement ni dans les rétroviseurs. Il se situe surtout de chaque côté, légèrement en arrière de vous. Un cycliste, une moto ou même une voiture entière peuvent s’y trouver sans que vous les remarquiez.",
+       "D’autres éléments masquent la vue : les **montants** de la carrosserie, notamment ceux de chaque côté du pare-brise, les appuie-tête, les passagers, un chargement, des autocollants ou de la buée sur les vitres. À l’extérieur, une camionnette stationnée, une haie ou un bus peuvent cacher un piéton. Pour voir autour de ces obstacles, déplacez la tête et réduisez votre vitesse."
+      ]
+     },
+     {
+      "title": "Rétroviseurs : utiles mais incomplets",
+      "body": [
+       "Les **rétroviseurs** vous montrent ce qui se passe derrière et sur les côtés, à condition d’être bien réglés avant de partir. Le rétroviseur intérieur montre l’arrière à travers la lunette ; les rétroviseurs extérieurs montrent les voies voisines. Aucun ne couvre tout : il reste toujours un angle mort.",
+       "Le rétroviseur extérieur, en particulier côté passager, est souvent **bombé** (convexe). Il montre un champ plus large, mais les véhicules y paraissent plus petits et plus éloignés. L’estimation de leur distance et de leur vitesse peut donc être trompeuse. Avant tout changement de voie ou de direction, complétez le rétroviseur par un regard par-dessus l’épaule."
+      ]
+     },
+     {
+      "title": "Systèmes d’aide : un signal n’est pas une garantie",
+      "body": [
+       "De nombreuses voitures disposent de **systèmes d’aide à la conduite** (en anglais ADAS) : avertisseur d’angle mort, assistant de maintien de voie, freinage d’urgence automatique, capteurs et caméras de stationnement. Ils peuvent vous signaler un danger que vous n’aviez pas vu. Ce qu’ils **montrent** est une information utile.",
+       "Mais ce qu’ils **cachent** est tout aussi important. Un capteur sale, enneigé ou masqué, la pluie, le brouillard, un marquage effacé ou un objet que le système reconnaît mal peuvent empêcher l’alerte. L’absence de signal ne prouve donc pas que la voie est libre. Les systèmes d’aide ne vous dispensent jamais de votre responsabilité : c’est vous qui conduisez."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Angle mort",
+      "def": "Zone autour du véhicule que le conducteur ne voit ni directement ni dans les rétroviseurs."
+     },
+     {
+      "term": "Montant",
+      "def": "Partie de la carrosserie qui soutient le toit, par exemple de chaque côté du pare-brise. Il peut cacher un piéton ou un cycliste."
+     },
+     {
+      "term": "Rétroviseur convexe",
+      "def": "Rétroviseur bombé qui montre un champ plus large, mais fait paraître les objets plus éloignés."
+     },
+     {
+      "term": "Système d’aide à la conduite (ADAS)",
+      "def": "Équipement électronique qui assiste le conducteur, par exemple avertisseur d’angle mort ou freinage d’urgence automatique. Il ne le remplace pas."
+     }
+    ],
+    "method": [
+     "Réglez les rétroviseurs et le siège avant de partir.",
+     "Contrôlez régulièrement les rétroviseurs pendant la conduite.",
+     "Avant chaque changement de voie ou de direction, ajoutez un regard par-dessus l’épaule.",
+     "Déplacez la tête pour voir derrière les montants et les obstacles qui masquent la vue.",
+     "Considérez une alerte d’un système d’aide comme une information, et son silence comme une absence d’information."
+    ],
+    "example": {
+     "title": "Le voyant éteint et la moto",
+     "scene": "Sur l’autoroute A1 près de Berne, vous roulez sur la voie de droite et voulez dépasser un camion. Le voyant de l’avertisseur d’angle mort, dans votre rétroviseur gauche, reste éteint. Il pleut et la route projette de l’eau.",
+     "reasoning": [
+      "La pluie et les projections peuvent gêner les capteurs : le voyant éteint ne prouve pas que la voie de gauche est libre.",
+      "Vous contrôlez le rétroviseur intérieur, puis le rétroviseur gauche, et vous enclenchez le clignoteur.",
+      "Juste avant de vous déporter, un regard par-dessus l’épaule gauche vous montre une moto qui arrive rapidement dans votre angle mort. Vous attendez qu’elle vous ait dépassé."
+     ],
+     "answer": "Vous ne vous fiez pas au voyant éteint. Rétroviseurs, clignoteur et regard par-dessus l’épaule restent indispensables, et c’est ce regard qui révèle la moto."
+    },
+    "trap": "Le piège est de se reposer sur la technique : « la voiture m’aurait prévenu ». Un système d’aide peut se tromper, être en panne ou être aveuglé par la météo. La responsabilité reste toujours celle du conducteur.",
+    "remember": "Ce que votre voiture ne vous montre pas peut quand même être là : complétez toujours par vos propres regards.",
+    "memo": {
+     "code": "R–É–A",
+     "text": "Rétroviseur, Épaule, Agir : le rétroviseur ne suffit pas, le regard par-dessus l’épaule complète, puis vous agissez. Un voyant éteint ne remplace aucune de ces étapes."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 3 ; LCR art. 26",
+    "source": {
+     "label": "BPA · Conseils de prévention",
+     "href": "https://www.bfu.ch/fr"
+    }
+   }
+  ]
+ },
+ "questions": [
+  {
+   "id": "N24-AU-01",
+   "chapter": "N24",
+   "section": "analyse-usagers",
+   "stem": "Un enfant court sur le trottoir derrière un ballon qui roule vers la chaussée. Que retenez-vous ?",
+   "options": [
+    "L’enfant peut s’élancer sur la chaussée sans regarder.",
+    "Le principe de confiance vous permet de garder la même vitesse.",
+    "Vous réduisez votre vitesse et vous vous préparez à freiner."
+   ],
+   "answers": [0, 2],
+   "truth": "L’âge et l’intention de l’enfant annoncent un comportement imprévisible.",
+   "why": "Un jeune enfant concentré sur son ballon évalue mal le danger ; le principe de confiance ne s’applique pas face à un tel indice.",
+   "trap": "Croire que l’enfant s’arrêtera de lui-même au bord du trottoir.",
+   "action": "Levez le pied, couvrez le frein et soyez prêt à vous arrêter.",
+   "memory": "Un ballon qui roule annonce un enfant qui court."
+  },
+  {
+   "id": "N24-AU-02",
+   "chapter": "N24",
+   "section": "analyse-usagers",
+   "stem": "Quels éléments font partie de l’analyse des usagers en 4 points ?",
+   "options": [
+    "La vigilance et l’intention de l’usager.",
+    "Le mode de déplacement et l’âge de l’usager.",
+    "La marque et la couleur du véhicule de l’usager."
+   ],
+   "answers": [0, 1],
+   "truth": "Les quatre points sont : mode de déplacement, âge, vigilance et intention.",
+   "why": "Ces quatre éléments renseignent sur la façon dont l’usager risque de se comporter ; la marque ou la couleur n’en disent rien.",
+   "trap": "Se laisser influencer par des préjugés sur un type de voiture au lieu d’observer le comportement.",
+   "action": "Pour chaque usager proche, posez-vous les quatre questions.",
+   "memory": "M–A–V–I : Mode, Âge, Vigilance, Intention."
+  },
+  {
+   "id": "N24-AU-03",
+   "chapter": "N24",
+   "section": "analyse-usagers",
+   "stem": "Un cycliste roule à droite devant vous et tourne plusieurs fois la tête vers la gauche, par-dessus son épaule. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Il s’apprête peut-être à se déplacer vers la gauche ou à tourner à gauche.",
+    "Il va forcément s’arrêter sur le bord droit.",
+    "Ce geste ne donne aucune information utile."
+   ],
+   "answers": [0],
+   "truth": "Le regard par-dessus l’épaule est un indice d’intention de changement de direction.",
+   "why": "Les cyclistes contrôlent l’arrière avant de se déporter ; ce geste peut précéder un écart, même sans signe de la main.",
+   "trap": "Attendre un signe de la main pour envisager le changement de direction.",
+   "action": "Renoncez à dépasser à ce moment, gardez votre distance et observez.",
+   "memory": "Tête qui tourne, direction qui change."
+  },
+  {
+   "id": "N24-AU-04",
+   "chapter": "N24",
+   "section": "analyse-usagers",
+   "stem": "Une personne âgée avec une canne traverse lentement un passage pour piétons devant vous. Quelles affirmations sont correctes ?",
+   "options": [
+    "Elle peut avoir besoin de plus de temps que prévu pour traverser.",
+    "Vous klaxonnez brièvement pour qu’elle accélère.",
+    "Vous attendez qu’elle ait terminé de traverser en sécurité."
+   ],
+   "answers": [0, 2],
+   "truth": "Les personnes âgées demandent une prudence particulière et du temps.",
+   "why": "Leur mobilité, leur vue ou leur ouïe peuvent être réduites ; les presser augmente le risque de chute ou d’hésitation.",
+   "trap": "Utiliser le klaxon pour presser un piéton, ce qui n’est pas un signal d’avertissement justifié.",
+   "action": "Restez arrêté calmement jusqu’à ce qu’elle ait atteint le trottoir.",
+   "memory": "Âge avancé : patience assurée."
+  },
+  {
+   "id": "N24-AU-05",
+   "chapter": "N24",
+   "section": "analyse-usagers",
+   "stem": "Un piéton marche le regard fixé sur son téléphone, des écouteurs sur les oreilles. Qu’indique cette observation ?",
+   "options": [
+    "Sa vigilance est probablement réduite.",
+    "Il vous a sans doute entendu arriver.",
+    "Vous devez vous attendre à un comportement imprévu de sa part."
+   ],
+   "answers": [0, 2],
+   "truth": "Un usager distrait est moins prévisible.",
+   "why": "Les écouteurs réduisent l’ouïe et le téléphone capte le regard : il peut s’engager sans vous percevoir.",
+   "trap": "Supposer qu’un piéton entend forcément une voiture qui approche.",
+   "action": "Ralentissez et préparez le freinage en passant à sa hauteur.",
+   "memory": "Écran et écouteurs : attention ailleurs."
+  },
+  {
+   "id": "N24-AU-06",
+   "chapter": "N24",
+   "section": "analyse-usagers",
+   "stem": "En localité, un véhicule de livraison s’arrête sur le bord de la route, feux de détresse allumés. Quelles réactions sont adaptées ?",
+   "options": [
+    "Vous passez au plus près de lui pour ne pas gêner la circulation en sens inverse.",
+    "Vous prévoyez qu’une portière s’ouvre ou que le chauffeur descende côté chaussée.",
+    "Vous vous attendez à ce qu’un piéton apparaisse devant le véhicule arrêté."
+   ],
+   "answers": [1, 2],
+   "truth": "L’intention probable d’un livreur arrêté est de descendre et de se déplacer autour du véhicule.",
+   "why": "Le chauffeur est souvent pressé et le véhicule masque les piétons qui traversent devant lui.",
+   "trap": "Raser le véhicule arrêté sans laisser d’espace pour une portière ou un piéton.",
+   "action": "Réduisez votre vitesse et gardez un écart latéral suffisant, ou attendez.",
+   "memory": "Livreur arrêté : portière et piéton à prévoir."
+  },
+  {
+   "id": "N24-AN-01",
+   "chapter": "N24",
+   "section": "anticipation",
+   "stem": "Un bus est arrêté à un arrêt en localité. Que devez-vous envisager ?",
+   "options": [
+    "Des piétons peuvent traverser devant ou derrière le bus.",
+    "Le bus peut reprendre sa route et quitter l’arrêt.",
+    "Rien ne peut se passer tant que le bus est arrêté."
+   ],
+   "answers": [0, 1],
+   "truth": "Un bus arrêté annonce des piétons et un départ possible.",
+   "why": "Les passagers qui descendent traversent parfois sans regarder, cachés par le bus, et le bus repartira dans votre voie.",
+   "trap": "Considérer un véhicule arrêté comme un simple obstacle immobile.",
+   "action": "Ralentissez, élargissez l’écart et soyez prêt à le laisser repartir.",
+   "memory": "Bus arrêté : piétons cachés, départ possible."
+  },
+  {
+   "id": "N24-AN-02",
+   "chapter": "N24",
+   "section": "anticipation",
+   "stem": "Que signifie anticiper au volant ?",
+   "options": [
+    "Se représenter à l’avance ce qui pourrait se passer et s’y préparer.",
+    "Réagir le plus vite possible une fois que le danger est apparu.",
+    "Savoir avec certitude ce que les autres usagers vont faire."
+   ],
+   "answers": [0],
+   "truth": "Anticiper, c’est préparer sa réaction avant que la situation n’évolue.",
+   "why": "On ne peut pas connaître l’avenir, mais on peut imaginer les scénarios possibles et s’y préparer.",
+   "trap": "Confondre anticipation et simple rapidité de réaction.",
+   "action": "Devant chaque situation, demandez-vous : « et si… ? ».",
+   "memory": "Anticiper = préparer, pas deviner."
+  },
+  {
+   "id": "N24-AN-03",
+   "chapter": "N24",
+   "section": "anticipation",
+   "stem": "Vous longez une file de voitures stationnées dans une rue d’habitation. Quels scénarios faut-il envisager ?",
+   "options": [
+    "Un enfant peut surgir entre deux voitures.",
+    "Une portière peut s’ouvrir côté chaussée.",
+    "Les voitures stationnées excluent la présence de piétons."
+   ],
+   "answers": [0, 1],
+   "truth": "Les voitures stationnées cachent des usagers et peuvent s’ouvrir.",
+   "why": "Un enfant est souvent plus petit qu’une voiture et invisible derrière elle ; un occupant peut ouvrir sans regarder.",
+   "trap": "Penser que ce qu’on ne voit pas n’existe pas.",
+   "action": "Réduisez votre vitesse et gardez un écart latéral avec les voitures stationnées.",
+   "memory": "Rangée de voitures : enfants et portières cachés."
+  },
+  {
+   "id": "N24-AN-04",
+   "chapter": "N24",
+   "section": "anticipation",
+   "stem": "Sur l’autoroute, vous voyez des feux stop s’allumer plusieurs véhicules devant vous. Quelle réaction est anticipative ?",
+   "options": [
+    "Attendre que la voiture directement devant vous freine.",
+    "Lever le pied tôt et contrôler le rétroviseur.",
+    "Changer de voie immédiatement sans contrôle."
+   ],
+   "answers": [1],
+   "truth": "Regarder loin devant permet de réagir avant le véhicule qui vous précède.",
+   "why": "Un ralentissement qui se propage arrive vite jusqu’à vous ; en réagissant tôt, vous freinez plus doucement et vous prévenez ceux qui vous suivent.",
+   "trap": "Ne regarder que le véhicule directement devant soi.",
+   "action": "Levez le pied, contrôlez l’arrière et préparez un freinage progressif.",
+   "memory": "Feux stop au loin : pied levé tout de suite."
+  },
+  {
+   "id": "N24-AN-05",
+   "chapter": "N24",
+   "section": "anticipation",
+   "stem": "Vous approchez d’un carrefour dont le feu est vert depuis un long moment. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Le feu peut passer à l’orange bientôt ; vous vous y préparez.",
+    "Vous accélérez pour passer avant le changement.",
+    "Vous gardez une vitesse qui vous permet encore de vous arrêter en sécurité si nécessaire."
+   ],
+   "answers": [0, 2],
+   "truth": "Un feu vert « ancien » est un indice d’un changement prochain.",
+   "why": "En vous préparant, vous pouvez vous arrêter calmement à l’orange au lieu de freiner brutalement ou de forcer le passage.",
+   "trap": "Accélérer pour « attraper » le vert.",
+   "action": "Levez légèrement le pied et contrôlez le rétroviseur à l’approche.",
+   "memory": "Vert qui dure, orange qui vient."
+  },
+  {
+   "id": "N24-AN-06",
+   "chapter": "N24",
+   "section": "anticipation",
+   "stem": "Pourquoi l’anticipation améliore-t-elle la sécurité ?",
+   "options": [
+    "Une réaction déjà préparée se déclenche plus rapidement.",
+    "Elle permet de rouler plus vite partout.",
+    "Elle laisse plus de marge pour freiner ou éviter."
+   ],
+   "answers": [0, 2],
+   "truth": "Anticiper fait gagner du temps et de l’espace.",
+   "why": "Si vous avez déjà imaginé le scénario et préparé le geste, vous n’avez pas à analyser la situation à partir de zéro.",
+   "trap": "Utiliser l’anticipation comme prétexte pour augmenter sa vitesse.",
+   "action": "Transformez chaque indice en geste préparé : pied levé, pied au-dessus du frein.",
+   "memory": "Prévu, donc plus vite réglé."
+  },
+  {
+   "id": "N24-TD-01",
+   "chapter": "N24",
+   "section": "tactique-defensive",
+   "stem": "Qu’est-ce qui caractérise une conduite défensive ?",
+   "options": [
+    "Renoncer à son droit lorsque cela évite un conflit.",
+    "Imposer sa priorité pour que les autres apprennent les règles.",
+    "Garder des marges suffisantes en vitesse et en distance."
+   ],
+   "answers": [0, 2],
+   "truth": "La conduite défensive cherche à éviter les conflits, pas à les gagner.",
+   "why": "La règle de base demande de ne mettre personne en danger ; les marges permettent de compenser les erreurs.",
+   "trap": "Croire qu’avoir raison suffit à éviter un accident.",
+   "action": "Dès qu’un conflit s’annonce, ralentissez et laissez de la place.",
+   "memory": "Mieux vaut céder que heurter."
+  },
+  {
+   "id": "N24-TD-02",
+   "chapter": "N24",
+   "section": "tactique-defensive",
+   "stem": "Vous établissez un contact visuel avec un piéton qui attend au bord d’un passage. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Ce contact garantit qu’il restera sur le trottoir.",
+    "Ce contact vous aide à savoir s’il vous a vu.",
+    "Ce contact ne remplace pas votre disposition à vous arrêter."
+   ],
+   "answers": [1, 2],
+   "truth": "Le contact visuel est une information, pas une garantie.",
+   "why": "Le piéton peut vous avoir vu sans comprendre ce que vous allez faire, ou mal estimer votre vitesse.",
+   "trap": "Interpréter un regard comme un accord pour continuer.",
+   "action": "Cherchez le regard, puis restez prêt à freiner.",
+   "memory": "Regard croisé ≠ passage assuré."
+  },
+  {
+   "id": "N24-TD-03",
+   "chapter": "N24",
+   "section": "tactique-defensive",
+   "stem": "En localité, un véhicule vous suit de très près. Quelle réaction est défensive ?",
+   "options": [
+    "Freiner brusquement pour qu’il recule.",
+    "Augmenter la distance avec le véhicule qui vous précède, afin de pouvoir freiner plus progressivement.",
+    "Accélérer au-delà de la vitesse adaptée pour vous en éloigner."
+   ],
+   "answers": [1],
+   "truth": "Face à un suiveur trop proche, on crée de l’espace devant soi.",
+   "why": "Avec plus d’espace devant vous, vous pouvez ralentir doucement en cas de besoin, ce qui laisse au suiveur le temps de réagir.",
+   "trap": "Répondre à la pression par un freinage d’intimidation.",
+   "action": "Agrandissez la distance devant vous et annoncez tôt vos ralentissements.",
+   "memory": "Collé derrière ? Plus d’espace devant."
+  },
+  {
+   "id": "N24-TD-04",
+   "chapter": "N24",
+   "section": "tactique-defensive",
+   "stem": "Dans quel cas un signal d’avertissement (klaxon ou appel de phares) est-il justifié ?",
+   "options": [
+    "Pour avertir un usager d’un danger lorsque la sécurité l’exige.",
+    "Pour exprimer votre mécontentement envers un autre conducteur.",
+    "Pour presser un piéton qui traverse lentement."
+   ],
+   "answers": [0],
+   "truth": "Le signal d’avertissement sert à prévenir d’un danger.",
+   "why": "Utilisé à mauvais escient, il effraie, provoque des réactions imprévisibles et perd sa valeur d’alerte.",
+   "trap": "Se servir du klaxon comme moyen d’expression.",
+   "action": "Réservez le klaxon et l’appel de phares aux situations où ils évitent un danger.",
+   "memory": "Klaxon : alerte, pas colère."
+  },
+  {
+   "id": "N24-TD-05",
+   "chapter": "N24",
+   "section": "tactique-defensive",
+   "stem": "Que signifie être disposé à freiner ?",
+   "options": [
+    "Lever le pied de l’accélérateur et placer le pied au-dessus du frein dans une situation incertaine.",
+    "Freiner fortement à chaque intersection.",
+    "Gagner du temps de réaction si la situation se dégrade."
+   ],
+   "answers": [0, 2],
+   "truth": "La disposition à freiner prépare le geste sans freiner inutilement.",
+   "why": "Le pied déjà placé supprime le temps de déplacement entre les pédales.",
+   "trap": "Confondre disposition à freiner et freinage systématique, qui surprend ceux qui suivent.",
+   "action": "Dans le doute, pied levé et pied au-dessus du frein.",
+   "memory": "Doute ? Pied au-dessus du frein."
+  },
+  {
+   "id": "N24-TD-06",
+   "chapter": "N24",
+   "section": "tactique-defensive",
+   "stem": "Le choix de l’itinéraire peut-il faire partie d’une stratégie de sécurité ?",
+   "options": [
+    "Oui : éviter un trajet difficile par mauvais temps ou aux heures de pointe peut réduire les risques.",
+    "Non : seul le comportement pendant la conduite compte.",
+    "Oui : un trajet préparé évite des manœuvres précipitées de dernière minute."
+   ],
+   "answers": [0, 2],
+   "truth": "La sécurité commence avant le départ.",
+   "why": "Un itinéraire adapté aux conditions et connu à l’avance réduit les situations difficiles et les décisions prises dans l’urgence.",
+   "trap": "Penser que la préparation du trajet n’a rien à voir avec la sécurité.",
+   "action": "Préparez votre itinéraire en tenant compte de la météo, du trafic et de votre expérience.",
+   "memory": "Bon trajet choisi, risques réduits."
+  },
+  {
+   "id": "N24-TD-07",
+   "chapter": "N24",
+   "section": "tactique-defensive",
+   "stem": "Dans un bouchon sur l’autoroute, un conducteur veut s’insérer devant vous depuis une voie qui se termine. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Vous lui laissez la place si cela reste sûr.",
+    "Vous refermez l’espace pour défendre votre place.",
+    "La patience évite un conflit inutile."
+   ],
+   "answers": [0, 2],
+   "truth": "Faciliter l’insertion fait partie de la conduite défensive.",
+   "why": "Refermer l’espace crée un risque de collision et de tension, pour un gain de temps insignifiant.",
+   "trap": "Voir la circulation comme une compétition.",
+   "action": "Laissez un espace et laissez-le s’insérer calmement.",
+   "memory": "Un de plus devant, pas une seconde de perdue."
+  },
+  {
+   "id": "N24-LP-01",
+   "chapter": "N24",
+   "section": "limites-perception",
+   "stem": "Le voyant de l’avertisseur d’angle mort reste éteint. Vous voulez changer de voie sur l’autoroute. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Vous pouvez changer de voie sans autre contrôle, puisque le système ne signale rien.",
+    "Vous contrôlez les rétroviseurs et l’angle mort par un regard par-dessus l’épaule.",
+    "Vous restez responsable, même si le système est en panne ou gêné par la météo."
+   ],
+   "answers": [1, 2],
+   "truth": "L’absence d’alerte ne prouve pas que la voie est libre.",
+   "why": "Les capteurs peuvent être sales, masqués par la pluie ou ne pas détecter un usager ; la responsabilité reste au conducteur.",
+   "trap": "Remplacer son propre contrôle par le silence d’un voyant.",
+   "action": "Rétroviseurs, clignoteur, regard par-dessus l’épaule, puis changement de voie.",
+   "memory": "Voyant éteint ≠ voie libre."
+  },
+  {
+   "id": "N24-LP-02",
+   "chapter": "N24",
+   "section": "limites-perception",
+   "stem": "Qu’est-ce que l’angle mort ?",
+   "options": [
+    "Une zone autour du véhicule que le conducteur ne voit ni directement ni dans les rétroviseurs.",
+    "La partie de la route éclairée par les feux de croisement.",
+    "Une zone où un cycliste ou une moto peut se trouver sans apparaître dans les rétroviseurs."
+   ],
+   "answers": [0, 2],
+   "truth": "L’angle mort est une zone invisible depuis le poste de conduite.",
+   "why": "Les rétroviseurs ont un champ limité ; un usager peut s’y cacher complètement.",
+   "trap": "Croire que des rétroviseurs bien réglés suppriment tout angle mort.",
+   "action": "Complétez chaque contrôle des rétroviseurs par un regard par-dessus l’épaule avant de vous déporter.",
+   "memory": "Angle mort : là où le rétro ne va pas."
+  },
+  {
+   "id": "N24-LP-03",
+   "chapter": "N24",
+   "section": "limites-perception",
+   "stem": "Que faut-il savoir des montants situés de chaque côté du pare-brise ?",
+   "options": [
+    "Ils peuvent masquer un piéton ou un cycliste dans un virage ou à un carrefour.",
+    "Ils ne cachent jamais rien, car ils sont étroits.",
+    "Il faut parfois déplacer la tête pour voir ce qu’ils cachent."
+   ],
+   "answers": [0, 2],
+   "truth": "Les montants créent des zones cachées vers l’avant.",
+   "why": "Un usager qui s’approche sur une trajectoire qui croise la vôtre peut rester caché derrière un montant pendant une bonne partie de votre approche.",
+   "trap": "Penser que les angles morts n’existent que vers l’arrière.",
+   "action": "Aux carrefours et dans les virages, bougez la tête pour regarder autour des montants.",
+   "memory": "Montant devant : tête qui bouge."
+  },
+  {
+   "id": "N24-LP-04",
+   "chapter": "N24",
+   "section": "limites-perception",
+   "stem": "Le rétroviseur extérieur côté passager est souvent bombé (convexe). Qu’est-ce qui est vrai ?",
+   "options": [
+    "Il montre un champ plus large.",
+    "Il peut rendre trompeuse l’estimation des distances et des vitesses.",
+    "Il supprime tout angle mort."
+   ],
+   "answers": [0, 1],
+   "truth": "Un rétroviseur convexe élargit la vue mais déforme les distances.",
+   "why": "Les objets y paraissent plus petits, donc plus éloignés qu’ils ne le sont réellement.",
+   "trap": "Croire qu’un véhicule est loin parce qu’il paraît petit dans ce rétroviseur.",
+   "action": "Gardez une marge supplémentaire et complétez par un regard direct.",
+   "memory": "Rétro bombé : plus large, moins fiable pour les distances."
+  },
+  {
+   "id": "N24-LP-05",
+   "chapter": "N24",
+   "section": "limites-perception",
+   "stem": "Votre voiture est équipée d’un freinage d’urgence automatique. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Il vous permet de suivre de plus près le véhicule qui précède.",
+    "Il peut ne pas réagir dans certaines conditions, par exemple capteur sale, mauvais temps ou obstacle mal détecté.",
+    "Il ne vous dispense pas de garder vos distances et votre attention."
+   ],
+   "answers": [1, 2],
+   "truth": "Un système d’aide assiste le conducteur, il ne le remplace pas.",
+   "why": "Les systèmes ont des limites de détection et le conducteur reste entièrement responsable de sa conduite.",
+   "trap": "Prendre plus de risques parce que la voiture semble « protéger ».",
+   "action": "Conduisez comme si le système n’existait pas.",
+   "memory": "L’aide aide, le conducteur conduit."
+  },
+  {
+   "id": "N24-LP-06",
+   "chapter": "N24",
+   "section": "limites-perception",
+   "stem": "En localité, vous allez tourner à droite et une cycliste roulait à votre droite peu avant. Comment compenser l’angle mort ?",
+   "options": [
+    "Contrôler le rétroviseur droit, puis jeter un regard par-dessus l’épaule droite.",
+    "Vous fier uniquement au rétroviseur intérieur.",
+    "Observer la cycliste dès l’approche pour savoir où elle se trouve."
+   ],
+   "answers": [0, 2],
+   "truth": "Avant de tourner à droite, il faut savoir où se trouvent les cyclistes à droite.",
+   "why": "Une cycliste peut se trouver exactement dans l’angle mort droit au moment où vous braquez.",
+   "trap": "Tourner en se basant sur la dernière image vue plusieurs secondes plus tôt.",
+   "action": "Suivez-la du regard dès l’approche et contrôlez encore juste avant de tourner.",
+   "memory": "À droite, je vérifie deux fois."
+  },
+  {
+   "id": "N24-LP-07",
+   "chapter": "N24",
+   "section": "limites-perception",
+   "stem": "Une camionnette stationnée juste avant un passage pour piétons masque la vue sur le trottoir. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Un piéton peut s’avancer de derrière la camionnette.",
+    "Comme vous ne voyez personne, il n’y a personne.",
+    "Vous réduisez votre vitesse pour pouvoir vous arrêter avant le passage."
+   ],
+   "answers": [0, 2],
+   "truth": "Un obstacle qui masque la vue impose une vitesse permettant de s’arrêter.",
+   "why": "Le piéton caché ne vous voit pas non plus ; vous découvrirez sa présence très tard.",
+   "trap": "Conclure à l’absence de danger parce qu’on ne voit rien.",
+   "action": "Ralentissez fortement et soyez prêt à vous arrêter devant le passage.",
+   "memory": "Vue cachée, vitesse baissée."
+  }
+ ]
+}

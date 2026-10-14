@@ -1,0 +1,142 @@
+{
+ "D16-O52-PLACES-01": {
+  "option": "Six, si l’un des passagers est un enfant",
+  "why": "Chaque personne, enfant compris, occupe une place : cinq places, cinq personnes."
+ },
+ "D16-O52-PLACES-02": {
+  "option": "Trois, car une place doit rester libre",
+  "why": "Aucune règle n’impose une place libre : quatre passagers peuvent accompagner le conducteur."
+ },
+ "D16-O52-PLACES-03": {
+  "option": "Oui, si la plage arrière est retirée",
+  "why": "Le coffre n’est pas une place homologuée, quel que soit son aménagement."
+ },
+ "D16-O52-PLACES-05": {
+  "option": "L’attestation d’assurance",
+  "why": "Le nombre de places autorisées figure dans le permis de circulation."
+ },
+ "D16-O52-PLACES-06": {
+  "option": "Oui, si le passager se tient à une poignée",
+  "why": "Chaque passager doit occuper une place prévue, avec sa ceinture."
+ },
+ "D16-O52-PLACES-08": {
+  "option": "Oui, si un passager prend la caisse sur ses genoux",
+  "why": "La caisse devient un projectile et la place doit rester utilisable et sûre."
+ },
+ "D16-O52-PLACES-11": {
+  "option": "Non, un enfant peut encore s’asseoir entre deux adultes",
+  "why": "Toutes les places sont occupées ; un enfant compte aussi pour une place."
+ },
+ "D16-O52-CEINTURES-01": {
+  "option": "Seulement les passagers de moins de 12 ans",
+  "why": "L’obligation vise le conducteur et tous les passagers, adultes compris."
+ },
+ "D16-O52-CEINTURES-02": {
+  "option": "Seulement si le siège avant est occupé",
+  "why": "Le port est obligatoire à l’arrière quelle que soit l’occupation de l’avant."
+ },
+ "D16-O52-CEINTURES-03": {
+  "option": "Oui, si le moteur est coupé par le start-stop",
+  "why": "Un arrêt momentané fait partie du trajet ; la ceinture reste bouclée."
+ },
+ "D16-O52-CEINTURES-04": {
+  "option": "Oui, si le véhicule a aussi des airbags latéraux",
+  "why": "Aucun airbag ne remplace la ceinture ; ils la complètent."
+ },
+ "D16-O52-CEINTURES-05": {
+  "option": "La sangle diagonale passée derrière le dos",
+  "why": "La sangle doit passer sur l’épaule et le thorax, sinon elle ne retient pas le haut du corps."
+ },
+ "D16-O52-CEINTURES-08": {
+  "option": "Dès que l’on s’engage sur une route principale",
+  "why": "La ceinture se boucle avant de commencer à rouler, sur toutes les routes."
+ },
+ "D16-O52-CEINTURES-11": {
+  "option": "Oui, dans les zones 30",
+  "why": "La ceinture est obligatoire quelle que soit la vitesse ou la zone."
+ },
+ "D16-O52-ENFANTS-01": {
+  "option": "Un coussin ordinaire pour le rehausser",
+  "why": "Seul un dispositif de retenue homologué et adapté est admis."
+ },
+ "D16-O52-ENFANTS-02": {
+  "option": "Il garde un rehausseur jusqu’à 12 ans quelle que soit sa taille",
+  "why": "L’obligation cesse dès 150 cm, même avant 12 ans."
+ },
+ "D16-O52-ENFANTS-04": {
+  "option": "Moins de 12 ans ou moins de 150 cm",
+  "why": "Les deux conditions sont cumulatives : l’obligation cesse dès 12 ans ou dès 150 cm."
+ },
+ "D16-O52-ENFANTS-08": {
+  "option": "Prendre l’enfant sur les genoux d’un adulte à l’avant",
+  "why": "Un enfant doit être retenu dans un dispositif adapté, jamais sur les genoux."
+ },
+ "D16-O52-ENFANTS-10": {
+  "option": "Non, l’enfant doit être à côté du conducteur pour être surveillé",
+  "why": "La banquette arrière est généralement recommandée lorsque l’installation y est conforme."
+ },
+ "D16-O52-ENFANTS-11": {
+  "option": "Oui, s’il est posé à l’arrière",
+  "why": "Seul un rehausseur homologué est admis, quelle que soit la place."
+ },
+ "D16-O52-ENFANTS-12": {
+  "option": "Le passager assis à côté de l’enfant",
+  "why": "La responsabilité de la retenue d’un enfant de moins de 12 ans incombe au conducteur."
+ },
+ "D16-O52-EMBARQUEMENT-02": {
+  "option": "Le côté où la porte est la plus proche du passager",
+  "why": "Le côté trottoir est préférable, car il évite d’ouvrir dans la circulation."
+ },
+ "D16-O52-EMBARQUEMENT-03": {
+  "option": "Uniquement la circulation venant en sens inverse",
+  "why": "Le danger principal vient de l’arrière et de l’angle mort, notamment des cyclistes."
+ },
+ "D16-O52-EMBARQUEMENT-04": {
+  "option": "Oui, s’il ouvre la porte lentement",
+  "why": "Même lente, l’ouverture coupe la trajectoire du cycliste ; il faut attendre."
+ },
+ "D16-O52-EMBARQUEMENT-05": {
+  "option": "À empêcher l’ouverture de la porte depuis l’extérieur",
+  "why": "La sécurité enfant bloque l’ouverture par la poignée intérieure."
+ },
+ "D16-O52-EMBARQUEMENT-06": {
+  "option": "Pour que l’alarme puisse rester active en roulant",
+  "why": "Fermer les portes sert à protéger les occupants et la circulation, pas l’alarme."
+ },
+ "D16-O52-EMBARQUEMENT-08": {
+  "option": "L’enfant contrôle seul le rétroviseur intérieur",
+  "why": "Un adulte vérifie le trafic ; le rétroviseur intérieur ne montre pas l’angle mort."
+ },
+ "D16-O52-EMBARQUEMENT-10": {
+  "option": "Klaxonner pour annoncer le départ",
+  "why": "Le klaxon ne remplace pas le contrôle des portes et de l’environnement."
+ },
+ "D16-O52-CONDUCTEUR-01": {
+  "option": "Uniquement le parent de l’enfant",
+  "why": "C’est au conducteur de veiller à la retenue des enfants de moins de 12 ans."
+ },
+ "D16-O52-CONDUCTEUR-02": {
+  "option": "Tendre le bras vers l’arrière pour rattacher le harnais en roulant",
+  "why": "Cela détourne regard et mains de la conduite ; il faut s’arrêter en sécurité."
+ },
+ "D16-O52-CONDUCTEUR-03": {
+  "option": "Non, seule la police peut exiger le port de la ceinture",
+  "why": "Le conducteur peut refuser de partir tant que les conditions ne sont pas sûres."
+ },
+ "D16-O52-CONDUCTEUR-04": {
+  "option": "Accélérer pour arriver plus vite et régler la dispute à destination",
+  "why": "Accélérer ajoute du risque à la distraction ; il faut s’arrêter en sécurité."
+ },
+ "D16-O52-CONDUCTEUR-05": {
+  "option": "Rouler en se penchant pour voir autour de l’objet",
+  "why": "La vue doit être dégagée avant de rouler ; se pencher dégrade la position et l’observation."
+ },
+ "D16-O52-CONDUCTEUR-08": {
+  "option": "Lui passer un objet vers l’arrière en roulant",
+  "why": "Se retourner pour donner un objet détourne le regard de la route."
+ },
+ "D16-O52-CONDUCTEUR-12": {
+  "option": "Ajuster le harnais seulement s’il paraît lâche après le départ",
+  "why": "La retenue se vérifie avant de repartir, pas en roulant."
+ }
+}

@@ -1,0 +1,162 @@
+{
+ "O12-C01": {
+  "option": "Il interdit la circulation aux seuls poids lourds.",
+  "why": "Le signal 2.01 vise en principe tous les véhicules, sans se limiter à une catégorie."
+ },
+ "O12-C02": {
+  "option": "Vous pouvez entrer si vous roulez au pas.",
+  "why": "La vitesse ne lève pas l’interdiction d’entrer posée par le signal 2.02."
+ },
+ "O12-C05": {
+  "option": "Rouler sur le trottoir pour contourner le signal.",
+  "why": "Le trottoir n’est pas une voie pour les cycles et ne permet pas d’échapper à l’interdiction."
+ },
+ "O12-C07": {
+  "option": "Une camionnette de livraison légère est visée au même titre qu’un camion.",
+  "why": "Le signal 2.07 vise les voitures automobiles lourdes affectées au transport de choses, non les véhicules légers."
+ },
+ "O12-C09": {
+  "option": "Les usagers en transit qui traversent le quartier sans s’y arrêter.",
+  "why": "Le transit ne relève pas de la notion de riverain et reste interdit."
+ },
+ "O12-C10": {
+  "option": "Les motocycles bénéficient aussi de l’exception.",
+  "why": "L’exception « Excepté cycles » ne vise que les cycles, non les motocycles."
+ },
+ "O12-C11": {
+  "option": "Seulement après la prochaine intersection.",
+  "why": "Sans plaque de distance, l’interdiction commence à l’endroit du signal."
+ },
+ "O12-C12": {
+  "option": "L’interdiction vaut dès le signal et sur deux cents mètres.",
+  "why": "Une plaque de distance situe le début de la prescription ; elle n’en indique pas la longueur."
+ },
+ "O12-G01": {
+  "option": "Uniquement le poids du chargement transporté.",
+  "why": "Le poids effectif comprend aussi le véhicule et ses occupants."
+ },
+ "O12-G02": {
+  "option": "Le poids à vide inscrit dans le permis de circulation.",
+  "why": "C’est le poids effectif du moment, occupants et chargement compris, qui est déterminant."
+ },
+ "O12-G04": {
+  "option": "Oui, s’il franchit l’ouvrage au pas.",
+  "why": "La vitesse ne compense pas un dépassement de la charge par essieu."
+ },
+ "O12-G06": {
+  "option": "Le chargement peut dépasser la limite s’il est signalé.",
+  "why": "Une signalisation du chargement ne modifie pas la largeur maximale admise."
+ },
+ "O12-G07": {
+  "option": "Le coffre de toit ne compte que s’il est chargé.",
+  "why": "La hauteur du coffre s’ajoute à celle du véhicule, qu’il soit plein ou vide."
+ },
+ "O12-G08": {
+  "option": "Uniquement la longueur de la remorque.",
+  "why": "La longueur comparée comprend tout l’ensemble et le chargement qui dépasse."
+ },
+ "O12-G11": {
+  "option": "Le passage est permis si vous roulez au pas.",
+  "why": "Toute largeur supérieure au chiffre tombe sous l’interdiction, quelle que soit la vitesse."
+ },
+ "O12-G14": {
+  "option": "Un dépassement est compensé si les autres limites sont largement respectées.",
+  "why": "Les limitations sont cumulatives : aucune ne compense le dépassement d’une autre."
+ },
+ "O12-A01": {
+  "option": "Oui, si le moteur reste en marche.",
+  "why": "L’état du moteur est sans importance : une immobilisation imposée par le feu n’est pas un arrêt volontaire."
+ },
+ "O12-A02": {
+  "option": "Oui, si le conducteur reste au volant.",
+  "why": "Rester au volant ne change rien : déposer un passager est un arrêt volontaire interdit sous 2.49."
+ },
+ "O12-A03": {
+  "option": "Uniquement du côté opposé au signal.",
+  "why": "Le signal 2.49 s’applique au côté de la route où il est placé."
+ },
+ "O12-A05": {
+  "option": "Elle signale une place de dépose-minute.",
+  "why": "La ligne jaune continue interdit l’arrêt volontaire ; elle ne crée aucune place de dépose."
+ },
+ "O12-A06": {
+  "option": "Le danger n’existe que de nuit.",
+  "why": "Le défaut de visibilité dans un tournant ou au sommet d’une côte existe aussi de jour."
+ },
+ "O12-A09": {
+  "option": "La règle ne s’applique qu’aux intersections munies de feux.",
+  "why": "L’interdiction protège toutes les intersections, avec ou sans feux."
+ },
+ "O12-A12": {
+  "option": "Sur toute route bordée d’un trottoir.",
+  "why": "La présence d’un trottoir n’entraîne pas, à elle seule, l’interdiction de l’arrêt volontaire."
+ },
+ "O12-A13": {
+  "option": "L’arrêt est permis si vous allumez les feux de détresse.",
+  "why": "Les feux de détresse ne rendent pas visible le signal que votre véhicule masque."
+ },
+ "O12-S01": {
+  "option": "Uniquement lorsque le moteur est coupé.",
+  "why": "L’état du moteur ne définit pas le parcage ; seul compte le but de l’immobilisation."
+ },
+ "O12-S02": {
+  "option": "Le parcage y reste admis la nuit.",
+  "why": "Là où l’arrêt volontaire est interdit, le parcage l’est aussi, de jour comme de nuit."
+ },
+ "O12-S03": {
+  "option": "Un parcage de courte durée avec les feux de détresse.",
+  "why": "Les feux de détresse ne transforment pas un parcage en arrêt autorisé sous 2.50."
+ },
+ "O12-S05": {
+  "option": "Elle signale une place réservée aux motocycles.",
+  "why": "La ligne jaune interrompue par des x interdit le parcage ; elle ne réserve aucune place."
+ },
+ "O12-S07": {
+  "option": "Oui, si vous restez à proximité du véhicule.",
+  "why": "Rester près du véhicule ne lève pas l’interdiction générale de parquer sur la route principale hors localité."
+ },
+ "O12-S08": {
+  "option": "Uniquement lorsqu’un signal le précise.",
+  "why": "L’interdiction découle directement de la règle générale lorsque deux voitures ne pourraient plus se croiser."
+ },
+ "O12-S11": {
+  "option": "Oui, si le pont se trouve en localité.",
+  "why": "L’interdiction de parquer sur les ponts vaut en localité comme hors localité."
+ },
+ "O12-S12": {
+  "option": "Oui, si vous laissez votre numéro de téléphone derrière le pare-brise.",
+  "why": "Un numéro de téléphone ne lève pas l’interdiction de parquer devant l’accès d’autrui."
+ },
+ "O12-T01": {
+  "option": "Elle n’a qu’une valeur de recommandation.",
+  "why": "La plaque complémentaire fait partie de la prescription et la rend obligatoire telle que précisée."
+ },
+ "O12-T02": {
+  "option": "La prescription a pris fin trois cents mètres plus tôt.",
+  "why": "La plaque de distance annonce le début futur de la prescription, non sa fin passée."
+ },
+ "O12-T03": {
+  "option": "Elle indique la distance jusqu’à la prochaine localité.",
+  "why": "La plaque de longueur décrit l’étendue du tronçon soumis à la prescription."
+ },
+ "O12-T05": {
+  "option": "À indiquer la durée maximale de stationnement.",
+  "why": "Les plaques 5.05 et 5.06 délimitent le début et la fin du tronçon, sans fixer de durée."
+ },
+ "O12-T06": {
+  "option": "Le sens obligatoire que les véhicules doivent suivre.",
+  "why": "La plaque de direction indique où s’étend la prescription ; elle n’impose pas de sens de marche."
+ },
+ "O12-T08": {
+  "option": "Uniquement le samedi et le dimanche.",
+  "why": "La plaque « Lu–Ve » limite la prescription aux jours du lundi au vendredi."
+ },
+ "O12-T09": {
+  "option": "La trajectoire la plus courte entre les deux marquages.",
+  "why": "Seules les marques jaune-orange provisoires sont valables dans la zone de chantier."
+ },
+ "O12-T10": {
+  "option": "Vous le respectez seulement pendant les heures de travail.",
+  "why": "Le signal temporaire reste obligatoire tant qu’il est en place, même hors des heures de travail."
+ }
+}

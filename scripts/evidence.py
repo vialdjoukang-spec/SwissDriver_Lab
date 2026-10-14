@@ -13,6 +13,7 @@ import hashlib, json, sys
 REPORTS = [
     {'file': 'browser-results.json', 'kind': 'checks', 'key': 'tests', 'errors': 'javascriptErrors', 'minimum': 20},
     {'file': 'scene-coherence-results.json', 'kind': 'checks', 'key': 'checks', 'errors': 'errors', 'minimum': 24},
+    {'file': 'learning-results.json', 'kind': 'checks', 'key': 'checks', 'errors': 'errors', 'minimum': 33},
     {'file': 'decision-paths-results.json', 'kind': 'branches', 'key': 'branches', 'errors': 'errors', 'minimum': 75},
 ]
 REQUIRED_FILES = ['test-results/' + spec['file'] for spec in REPORTS]

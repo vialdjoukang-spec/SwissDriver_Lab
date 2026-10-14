@@ -17,6 +17,7 @@ def good_reports():
     return {
         'browser-results.json': {'tests': checks(20), 'javascriptErrors': [], 'scope': 's', 'htmlSha256': SHA, 'completed': True},
         'scene-coherence-results.json': {'checks': checks(24), 'errors': [], 'scope': 's', 'htmlSha256': SHA, 'completed': True},
+        'learning-results.json': {'checks': checks(33), 'errors': [], 'scope': 's', 'htmlSha256': SHA, 'completed': True},
         'decision-paths-results.json': {'branches': branches, 'errors': [], 'fatal': None, 'scope': 's', 'htmlSha256': SHA,
                                         'expectedBranches': 75, 'attemptedBranches': 75, 'passedBranches': 75,
                                         'allPassed': True, 'fixedFrameMs': 50},
@@ -38,7 +39,7 @@ class EvidenceGateTests(unittest.TestCase):
     def test_01_complete_reports_are_accepted_and_summarised(self):
         summary = self.run_gate(good_reports())
         self.assertEqual([e['file'] for e in summary], evidence.REQUIRED_FILES)
-        decision = summary[2]
+        decision = summary[3]
         self.assertEqual((decision['branches'], decision['passedBranches'], decision['allPassed']), (75, 75, True))
         self.assertTrue(all(e['htmlMatchesBuild'] and len(e['sha256']) == 64 for e in summary))
 
@@ -70,7 +71,7 @@ class EvidenceGateTests(unittest.TestCase):
             self.assertRefused(reports, fragment)
 
     def test_06_unfinished_or_failed_check_suites_are_refused(self):
-        for name in ['browser-results.json', 'scene-coherence-results.json']:
+        for name in ['browser-results.json', 'scene-coherence-results.json', 'learning-results.json']:
             reports = good_reports(); reports[name]['completed'] = False
             self.assertRefused(reports, 'non terminee')
             reports = good_reports(); key = 'tests' if name.startswith('browser') else 'checks'
@@ -87,7 +88,7 @@ class EvidenceGateTests(unittest.TestCase):
             for name, report in reports.items():
                 (Path(tmp) / name).write_text(json.dumps(report))
             summary = evidence.validate(tmp, HTML, require=False)
-        self.assertFalse(summary[2]['allPassed'])
+        self.assertFalse(summary[3]['allPassed'])
 
     def make_release(self, tmp, commit='abc', mutate=None):
         manifest = {'sourceCommit': commit, 'autonomousHtmlSha256': SHA,
@@ -101,7 +102,7 @@ class EvidenceGateTests(unittest.TestCase):
     def test_08_pages_gate_requires_same_commit_and_positive_evidence(self):
         cases = [(None, 'abc', None), (None, 'other', 'commit'),
                  (lambda m: m['browserEvidence'].pop(), 'abc', 'decision-paths'),
-                 (lambda m: m['browserEvidence'][2].update(allPassed=False), 'abc', 'decision-paths'),
+                 (lambda m: m['browserEvidence'][3].update(allPassed=False), 'abc', 'decision-paths'),
                  (lambda m: m.update(autonomousHtmlSha256='0' * 64), 'abc', 'HTML different')]
         for mutate, commit, fragment in cases:
             with tempfile.TemporaryDirectory() as tmp:

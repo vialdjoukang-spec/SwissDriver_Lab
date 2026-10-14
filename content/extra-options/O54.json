@@ -1,0 +1,142 @@
+{
+ "D18-O54-PLA-01": {
+  "option": "Oui si les feux arrière sont propres",
+  "why": "La plaque elle-même doit être lisible, indépendamment des feux."
+ },
+ "D18-O54-PLA-02": {
+  "option": "Oui si elle reste solidement fixée",
+  "why": "Une plaque officielle ne doit pas être modifiée, même bien fixée."
+ },
+ "D18-O54-PLA-06": {
+  "option": "Oui si elle a la même taille",
+  "why": "Seule une plaque officielle délivrée par l’autorité est admise."
+ },
+ "D18-O54-PLA-07": {
+  "option": "Oui si l’écusson cantonal reste lisible",
+  "why": "Tous les caractères de la plaque doivent rester visibles."
+ },
+ "D18-O54-PLA-08": {
+  "option": "Seulement en localité",
+  "why": "L’éclairage de la plaque arrière est requis de nuit partout."
+ },
+ "D18-O54-PLA-11": {
+  "option": "Utiliser la plaque d’un autre véhicule en attendant",
+  "why": "Une plaque est attribuée à un véhicule précis ; il faut s’adresser à l’autorité."
+ },
+ "D18-O54-PLA-12": {
+  "option": "Oui s’il est aux couleurs du canton",
+  "why": "Aucun autocollant ne doit couvrir les caractères."
+ },
+ "D18-O54-CIR-02": {
+  "option": "Dans le permis de conduire",
+  "why": "Le permis de conduire concerne le conducteur ; les places figurent au permis de circulation."
+ },
+ "D18-O54-CIR-04": {
+  "option": "Appliquer la limite générale si le trajet est court",
+  "why": "La valeur inscrite s’applique quelle que soit la distance."
+ },
+ "D18-O54-CIR-05": {
+  "option": "La valeur la plus élevée des deux",
+  "why": "Seul le permis de circulation du véhicule concret fait foi."
+ },
+ "D18-O54-CIR-06": {
+  "option": "Elles ne concernent que l’ancien détenteur",
+  "why": "Les remarques visent le véhicule et restent valables pour tout conducteur."
+ },
+ "D18-O54-CIR-07": {
+  "option": "Uniquement changer les plaques",
+  "why": "Une modification de la hauteur peut exiger annonce et expertise, pas un changement de plaques."
+ },
+ "D18-O54-CIR-09": {
+  "option": "Oui si le dépassement est faible",
+  "why": "La charge remorquable inscrite ne peut pas être dépassée, même de peu."
+ },
+ "D18-O54-CIR-11": {
+  "option": "Oui, tant que le document est valable",
+  "why": "Le document décrit le véhicule admis, pas son état technique du jour."
+ },
+ "D18-O54-ANT-03": {
+  "option": "Oui après un redémarrage du moteur",
+  "why": "Le défaut doit être réparé ; l’extinction du voyant ne suffit pas."
+ },
+ "D18-O54-ANT-06": {
+  "option": "Attendre la prochaine expertise périodique",
+  "why": "Le défaut OBD a son propre délai, souvent plus court que l’expertise."
+ },
+ "D18-O54-ANT-07": {
+  "option": "À fixer le prix de la vignette",
+  "why": "Le prix de la vignette ne dépend pas des émissions du véhicule."
+ },
+ "D18-O54-ANT-08": {
+  "option": "Chaque garage selon ses propres critères",
+  "why": "Les tableaux officiels des codes d’émissions sont publiés par l’OFROU."
+ },
+ "D18-O54-ANT-09": {
+  "option": "Oui, il impose toujours d’appeler une dépanneuse",
+  "why": "Il faut lire le manuel et évaluer la situation, sans réaction automatique."
+ },
+ "D18-O54-ANT-11": {
+  "option": "Le voyant s’éteint toujours de lui-même",
+  "why": "Un défaut d’émissions persiste tant qu’il n’est pas réparé."
+ },
+ "D18-O54-ANT-12": {
+  "option": "Combien de kilomètres parcourt-il par an ?",
+  "why": "Le calendrier dépend d’abord de la présence d’un OBD reconnu, pas du kilométrage."
+ },
+ "D18-O54-VIG-03": {
+  "option": "Au smartphone de l’acheteur",
+  "why": "L’e-vignette est enregistrée sur la plaque de contrôle."
+ },
+ "D18-O54-VIG-05": {
+  "option": "Oui si la voiture a une e-vignette",
+  "why": "Une remorque assujettie nécessite sa propre vignette."
+ },
+ "D18-O54-VIG-06": {
+  "option": "Un site revendeur trouvé sur un réseau social",
+  "why": "Seul le portail officiel de l’OFDF garantit un achat sûr."
+ },
+ "D18-O54-VIG-07": {
+  "option": "Oui, la plaque est enregistrée au moment du collage",
+  "why": "La vignette autocollante est liée au véhicule par son apposition, pas à la plaque."
+ },
+ "D18-O54-VIG-08": {
+  "option": "Non, l’erreur est corrigée automatiquement au passage",
+  "why": "Les données doivent correspondre exactement ; aucune correction automatique n’est prévue."
+ },
+ "D18-O54-VIG-09": {
+  "option": "Oui, le relevé bancaire suffit",
+  "why": "Le paiement ne prouve pas que la bonne plaque est enregistrée."
+ },
+ "D18-O54-VIG-10": {
+  "option": "Non, l’autocollante est réservée aux véhicules étrangers",
+  "why": "Les deux formes sont proposées au choix de tous les usagers."
+ },
+ "D18-O54-CON-01": {
+  "option": "Seulement si le voyant de frein est allumé",
+  "why": "Un défaut de frein doit être réparé avant de rouler, voyant allumé ou non."
+ },
+ "D18-O54-CON-03": {
+  "option": "Seulement la pression des pneus",
+  "why": "Une transformation exige de vérifier homologation et éventuelle expertise."
+ },
+ "D18-O54-CON-04": {
+  "option": "Attendre la prochaine expertise périodique",
+  "why": "Le rappel doit être traité selon ses propres instructions, sans attendre."
+ },
+ "D18-O54-CON-05": {
+  "option": "Oui, s’il a lieu chaque année",
+  "why": "Le contrôle périodique ne remplace jamais l’entretien courant."
+ },
+ "D18-O54-CON-08": {
+  "option": "Oui, l’eCoC garantit l’état technique",
+  "why": "L’eCoC atteste la conformité d’origine, pas l’état actuel du véhicule."
+ },
+ "D18-O54-CON-10": {
+  "option": "Toujours s’arrêter et faire remorquer le véhicule",
+  "why": "Pour un défaut réellement mineur, l’OCR admet de poursuivre avec précautions."
+ },
+ "D18-O54-CON-11": {
+  "option": "Oui, si le véhicule roule encore droit",
+  "why": "Direction et freinage sont des organes essentiels ; un défaut n’y est pas anodin."
+ }
+}

@@ -1,7 +1,7 @@
 # Commencer ici — SwissDriver Lab
 
 ## Utiliser le jeu sans installer d'outil
-Télécharger **SwissDriver_Lab_Edition.zip** dans la release `v0.4.0-preview.1`, extraire le ZIP, puis ouvrir **dist/SwissDriver_Lab.html**. Sous Windows, **LANCER_WINDOWS.cmd** ouvre ce même fichier. Le fichier HTML seul est également joint à la release.
+Télécharger **SwissDriver_Lab_Edition.zip** dans la release `v0.5.0-preview.1`, extraire le ZIP, puis ouvrir **dist/SwissDriver_Lab.html**. Sous Windows, **LANCER_WINDOWS.cmd** ouvre ce même fichier. Le fichier HTML seul est également joint à la release.
 
 Ne pas ouvrir `index.html` en double-cliquant : c'est le lanceur des sources, prévu pour HTTP. La version autonome fonctionne hors ligne avec une police de repli ; Atkinson est demandée à Google Fonts lorsqu'une connexion est disponible.
 

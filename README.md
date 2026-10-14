@@ -1,9 +1,9 @@
 # SwissDriver Lab
 
-**Édition modifiable 0.4.0-preview.1** — interface claire, berline et observation 3D. Prototype pédagogique en développement, non certifié.
+**Édition modifiable 0.5.0-preview.1** — interface claire, berline et observation 3D. Prototype pédagogique en développement, non certifié.
 
 ## Ouvrir la version actuelle
-[Édition et téléchargements](https://github.com/vialdjoukang-spec/SwissDriver_Lab/releases/tag/v0.4.0-preview.1) · [Guide de démarrage](START_HERE.md) · [Ce qui reste](docs/ETAT_ET_RESTE.md) · [Modifier les sources](docs/EDITER.md)
+[Édition et téléchargements](https://github.com/vialdjoukang-spec/SwissDriver_Lab/releases/tag/v0.5.0-preview.1) · [Guide de démarrage](START_HERE.md) · [Ce qui reste](docs/ETAT_ET_RESTE.md) · [Modifier les sources](docs/EDITER.md)
 
 Dans la release, télécharger **SwissDriver_Lab_Edition.zip**, l'extraire puis ouvrir **dist/SwissDriver_Lab.html**. Le ZIP comprend le jeu prêt à ouvrir, les sources, les tests et les preuves. Le HTML seul est également fourni. Les archives automatiques « Source code » de GitHub contiennent les sources mais pas le fichier construit : exécuter alors `npm run build`.
 

@@ -1,0 +1,183 @@
+{
+ "chapterId": "O43",
+ "after": "apprentissage",
+ "section": {
+  "id": "moto-base",
+  "otitle": "Instruction pratique de base moto (catégories A/A1)",
+  "title": "Avant de rouler librement à moto : 12 heures pour apprendre les bases",
+  "ogoal": "Savoir que l’instruction pratique de base de 12 heures est obligatoire pour les catégories A et A1, à quoi elle sert et comment elle s’inscrit dans la période du permis d’élève.",
+  "question": "Pourquoi un futur motocycliste doit-il suivre des heures de cours obligatoires alors que l’élève automobiliste peut s’exercer avec un accompagnant ?",
+  "lead": [
+   "À moto, il n’y a pas de carrosserie pour vous protéger et l’équilibre dépend entièrement de vous. C’est pourquoi le droit suisse prévoit, pour les catégories A et A1, une **instruction pratique de base** obligatoire. Même si vous préparez le permis B, il est utile de comprendre ce que vivent les motocyclistes débutants que vous croiserez sur la route."
+  ],
+  "parts": [
+   {
+    "title": "Une obligation de 12 heures et son but",
+    "body": [
+     "Pour les catégories A et A1, l’instruction pratique de base compte **12 heures**. Elle est donnée par un moniteur de conduite habilité et fait partie de la formation obligatoire. Il s’agit d’une **obligation légale** fixée dans l’OAC, et non d’une simple recommandation.",
+     "Son but est de faire acquérir la **maîtrise de base** du véhicule avant de rouler librement dans la circulation : démarrer et s’arrêter proprement, rouler lentement en équilibre, diriger le regard, freiner de façon dosée et contrôlée, éviter un obstacle. Ces gestes doivent devenir des automatismes, car à moto une erreur de base se paie très vite par une chute."
+    ]
+   },
+   {
+    "title": "Le lien avec le permis d’élève",
+    "body": [
+     "L’instruction pratique de base s’inscrit dans la période du **permis d’élève conducteur**. Elle vient au début de l’apprentissage : on apprend d’abord les bases sous la conduite d’un moniteur, puis on s’exerce et on se prépare à l’examen pratique. Les délais et conditions précis sont fixés par l’OAC et appliqués par l’office cantonal de la circulation : renseignez-vous auprès de lui ou de l’asa pour votre situation.",
+     "Retenez la différence de logique avec la voiture : un élève motocycliste est seul sur son véhicule, personne ne peut freiner ou corriger à sa place. La formation de base sert justement à compenser cette absence d’aide immédiate."
+    ]
+   },
+   {
+    "title": "L’équipement : ce qui est obligatoire et ce qui est recommandé",
+    "body": [
+     "Le **casque** est obligatoire pour les conducteurs et passagers de motocycles. Le reste de l’équipement relève surtout de la **recommandation** : gants, veste et pantalon de protection, bottes montantes, éventuellement protection dorsale. Le BPA conseille un équipement complet et des vêtements bien visibles, de couleur claire ou munis d’éléments réfléchissants.",
+     "Pour vous, futur automobiliste, la leçon est double : un motocycliste débutant peut avoir des réactions hésitantes, et même bien équipé il reste un **usager vulnérable**. Gardez une distance généreuse, regardez deux fois aux intersections et méfiez-vous des angles morts, où une moto disparaît facilement."
+    ]
+   }
+  ],
+  "words": [
+   {
+    "term": "Instruction pratique de base",
+    "def": "Formation obligatoire de 12 heures pour les catégories A et A1, donnée par un moniteur, consacrée aux gestes fondamentaux de la conduite à moto."
+   },
+   {
+    "term": "Catégories A et A1",
+    "def": "Catégories de permis pour les motocycles ; A1 concerne les motocycles légers, A les motocycles plus puissants."
+   },
+   {
+    "term": "Permis d’élève conducteur",
+    "def": "Autorisation provisoire qui permet d’apprendre à conduire avant l’examen pratique, selon les conditions fixées par l’OAC."
+   },
+   {
+    "term": "Maîtrise de base",
+    "def": "Ensemble des gestes indispensables (équilibre, regard, freinage, évitement) qui doivent être sûrs avant de rouler librement dans le trafic."
+   }
+  ],
+  "method": [
+   "Retenez le chiffre : 12 heures d’instruction pratique de base pour A et A1.",
+   "Rappelez-vous qu’il s’agit d’une obligation légale, donnée par un moniteur.",
+   "Situez-la au début de l’apprentissage, pendant la période du permis d’élève.",
+   "Distinguez le casque obligatoire de l’équipement complet recommandé.",
+   "Au volant, traitez chaque motocycliste comme un usager vulnérable."
+  ],
+  "example": {
+   "title": "Le motocycliste hésitant",
+   "scene": "Hors localité, vous suivez un motocycliste qui roule lentement et freine de façon un peu irrégulière avant chaque virage. Il porte un casque et une veste claire.",
+   "reasoning": [
+    "Ses hésitations peuvent indiquer un débutant qui consolide encore sa maîtrise de base.",
+    "Le principe de confiance a des limites lorsque le comportement d’un usager montre qu’il n’est pas sûr de lui.",
+    "Vous augmentez la distance, renoncez à un dépassement serré et ne dépassez que lorsque la visibilité et l’espace le permettent largement."
+   ],
+   "answer": "Vous gardez une distance généreuse et restez patient : un motocycliste hésitant a besoin de marge, pas de pression."
+  },
+  "trap": "Le piège à l’examen est d’inventer d’autres chiffres ou de croire que ces 12 heures ne seraient qu’une recommandation. Retenez uniquement ce qui est sûr : 12 heures, obligatoires, pour A et A1. Pour les délais, renvoyez à l’OAC et à l’office cantonal.",
+  "remember": "L’instruction pratique de base moto dure 12 heures, elle est obligatoire pour A et A1 et sert à maîtriser les bases avant de rouler librement.",
+  "memo": {
+   "code": "12 – A – B",
+   "text": "12 heures, pour A et A1, pour les Bases avant la circulation libre."
+  },
+  "law": "OAC"
+ },
+ "questions": [
+  {
+   "id": "O43-MOT-01",
+   "chapter": "O43",
+   "section": "moto-base",
+   "stem": "Combien d’heures compte l’instruction pratique de base obligatoire pour les catégories A et A1 ?",
+   "options": [
+    "12 heures.",
+    "Aucune durée n’est fixée, le moniteur décide seul.",
+    "Une durée fixée par le droit fédéral."
+   ],
+   "answers": [0, 2],
+   "truth": "L’instruction pratique de base moto compte 12 heures, fixées par l’OAC.",
+   "why": "Le législateur impose une base commune minimale à tous les futurs motocyclistes.",
+   "trap": "Croire que la durée est laissée au choix de l’école.",
+   "action": "Retenez le chiffre 12.",
+   "memory": "12 heures pour les bases."
+  },
+  {
+   "id": "O43-MOT-02",
+   "chapter": "O43",
+   "section": "moto-base",
+   "stem": "Quel est le but principal de l’instruction pratique de base moto ?",
+   "options": [
+    "Acquérir la maîtrise de base du véhicule avant de rouler librement dans la circulation.",
+    "Remplacer l’examen pratique.",
+    "Automatiser l’équilibre, le regard et le freinage dosé."
+   ],
+   "answers": [0, 2],
+   "truth": "La formation de base vise la maîtrise des gestes fondamentaux.",
+   "why": "À moto, une erreur de base peut entraîner rapidement une chute.",
+   "trap": "Croire qu’elle dispense de l’examen pratique.",
+   "action": "Considérez-la comme le socle de la formation, pas comme sa fin.",
+   "memory": "D’abord les bases, ensuite la route."
+  },
+  {
+   "id": "O43-MOT-03",
+   "chapter": "O43",
+   "section": "moto-base",
+   "stem": "L’instruction pratique de base moto est-elle obligatoire ?",
+   "options": [
+    "Oui, c’est une obligation légale pour les catégories A et A1.",
+    "Non, c’est seulement une recommandation du BPA.",
+    "Elle est donnée par un moniteur de conduite habilité."
+   ],
+   "answers": [0, 2],
+   "truth": "Il s’agit d’une obligation fixée par l’OAC, assurée par un moniteur.",
+   "why": "La loi distingue cette formation obligatoire des conseils de prévention.",
+   "trap": "Confondre obligation légale et recommandation.",
+   "action": "Classez cette formation parmi les obligations.",
+   "memory": "Obligatoire, pas facultatif."
+  },
+  {
+   "id": "O43-MOT-04",
+   "chapter": "O43",
+   "section": "moto-base",
+   "stem": "Comment l’instruction pratique de base s’inscrit-elle dans la formation à la conduite d’une moto ?",
+   "options": [
+    "Elle se déroule pendant la période du permis d’élève conducteur.",
+    "Elle se suit seulement après l’obtention du permis définitif.",
+    "Elle intervient au début de l’apprentissage pratique."
+   ],
+   "answers": [0, 2],
+   "truth": "La formation de base fait partie de la phase du permis d’élève.",
+   "why": "Elle prépare l’élève avant qu’il ne s’exerce plus librement et ne passe l’examen.",
+   "trap": "La placer après l’examen, comme une formation complémentaire.",
+   "action": "Renseignez-vous auprès de l’office cantonal pour les délais précis.",
+   "memory": "Permis d’élève, puis bases, puis examen."
+  },
+  {
+   "id": "O43-MOT-05",
+   "chapter": "O43",
+   "section": "moto-base",
+   "stem": "Concernant l’équipement du motocycliste, quelles affirmations sont correctes ?",
+   "options": [
+    "Le casque est obligatoire.",
+    "Les gants, bottes et vêtements de protection sont fortement recommandés.",
+    "Un casque rend l’équipement de protection du reste du corps inutile."
+   ],
+   "answers": [0, 1],
+   "truth": "Casque obligatoire ; équipement complet recommandé.",
+   "why": "Sans carrosserie, tout le corps est exposé en cas de chute.",
+   "trap": "Croire que le casque suffit à protéger le motocycliste.",
+   "action": "Distinguez ce qui est obligatoire de ce qui est recommandé.",
+   "memory": "Casque obligé, le reste conseillé."
+  },
+  {
+   "id": "O43-MOT-06",
+   "chapter": "O43",
+   "section": "moto-base",
+   "stem": "Vous conduisez une voiture et suivez un motocycliste qui semble hésitant. Quelle attitude est correcte ?",
+   "options": [
+    "Augmenter la distance de suivi.",
+    "Le serrer de près pour l’encourager à accélérer.",
+    "Ne dépasser que si la visibilité et l’espace latéral le permettent largement."
+   ],
+   "answers": [0, 2],
+   "truth": "Un motocycliste reste un usager vulnérable, surtout s’il hésite.",
+   "why": "Un comportement hésitant est un indice qui limite le principe de confiance.",
+   "trap": "Mettre la pression à un débutant.",
+   "action": "Donnez de la marge et restez patient.",
+   "memory": "Moto hésitante = marge plus grande."
+  }
+ ]
+}

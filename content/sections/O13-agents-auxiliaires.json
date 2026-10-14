@@ -1,0 +1,200 @@
+{
+ "chapterId": "O13",
+ "after": "regulation",
+ "section": {
+  "id": "agents-auxiliaires",
+  "otitle": "Police, police auxiliaire et patrouilleurs scolaires",
+  "title": "Quand une personne règle la circulation, c’est elle qui commande",
+  "ogoal": "Reconnaître les personnes habilitées à régler la circulation, comprendre leurs gestes et leur obéir en priorité sur les feux, les panneaux et les règles générales.",
+  "question": "Le feu est vert, mais un agent au milieu du carrefour lève le bras : qui faut-il suivre ?",
+  "lead": [
+   "Les feux et les panneaux ne peuvent pas tout prévoir : accident, manifestation, chantier, sortie d’école. Dans ces moments, une personne habilitée règle la circulation à la main. Cette section vous apprend à la reconnaître, à lire ses gestes et à savoir pourquoi ses ordres passent avant tout le reste."
+  ],
+  "parts": [
+   {
+    "title": "Qui a le droit de régler la circulation ?",
+    "body": [
+     "En premier lieu, c’est la **police**, reconnaissable à son uniforme et souvent à un gilet de signalisation ou à un bâton lumineux. Elle peut intervenir à un carrefour, lors d’un contrôle ou sur le lieu d’un accident. À côté d’elle, des personnes mandatées par l’autorité peuvent aussi régler le trafic : on parle de **police auxiliaire**. Il peut s’agir par exemple de membres d’un service de circulation lors d’une manifestation ou de sapeurs-pompiers sur une intervention.",
+     "Les **patrouilleurs scolaires** sont des personnes, adultes ou élèves formés, qui aident les enfants à traverser près des écoles. Ils portent un équipement bien visible et tiennent souvent une palette de signalisation. Lorsqu’ils vous font signe de vous arrêter, vous devez obéir comme vous le feriez pour un agent de police. En revanche, une personne quelconque qui agite les bras au bord de la route n’a pas cette autorité : vous restez alors prudent, sans considérer son geste comme un ordre."
+    ]
+   },
+   {
+    "title": "Lire les gestes : arrêt, passage, ralentir",
+    "body": [
+     "Les gestes de base sont simples. Un **bras levé verticalement** signifie : attention, arrêt pour les usagers qui s’approchent ; ceux qui sont déjà engagés dans le carrefour le libèrent. Lorsque l’agent vous présente **sa face ou son dos**, bras tendus ou non, vous devez vous arrêter. Lorsqu’il se tient **de profil** par rapport à vous, la voie vous est ouverte et vous pouvez passer, avec prudence.",
+     "Un **mouvement du bras de haut en bas** vous demande de ralentir. Un geste de la main qui vous invite clairement à avancer vous autorise à passer. En cas de doute sur le sens d’un geste, ralentissez, établissez si possible un contact visuel et attendez un signe clair : il vaut mieux quelques secondes d’attente qu’une mauvaise interprétation au milieu d’un carrefour."
+    ]
+   },
+   {
+    "title": "Pourquoi leurs signes passent avant tout",
+    "body": [
+     "La LCR établit un ordre clair : les **signes de la police** l’emportent sur les signaux lumineux, les panneaux, les marques et les règles générales de priorité. Si un agent vous arrête alors que votre feu est vert, vous vous arrêtez. S’il vous fait passer alors que le feu est rouge ou qu’un « Cédez le passage » vous concerne, vous pouvez passer, car il a pris la régulation en main.",
+     "Obéir ne veut pas dire cesser d’être prudent. L’agent voit beaucoup de choses, mais pas tout : un cycliste peut surgir, un piéton peut se tromper. Passez donc à une allure modérée, gardez les yeux ouverts et restez prêt à freiner. Près d’une école, attendez que tous les enfants aient complètement traversé avant de repartir, même si le patrouilleur a déjà baissé sa palette."
+    ]
+   }
+  ],
+  "words": [
+   {
+    "term": "Police auxiliaire",
+    "def": "Personnes chargées par l’autorité de régler la circulation à une occasion précise, sans être policiers, par exemple un service de circulation lors d’une manifestation."
+   },
+   {
+    "term": "Patrouilleur scolaire",
+    "def": "Personne formée et équipée de façon bien visible qui aide les enfants à traverser près d’une école et peut arrêter les véhicules."
+   },
+   {
+    "term": "Présenter la face ou le dos",
+    "def": "Position de l’agent tourné vers vous ou vous tournant le dos : elle signifie que vous devez vous arrêter."
+   },
+   {
+    "term": "Ordre de priorité des règles",
+    "def": "Hiérarchie fixée par la LCR : signes de la police d’abord, puis signaux et marques, puis règles générales."
+   }
+  ],
+  "method": [
+   "Repérez de loin toute personne en uniforme, en gilet de signalisation ou avec une palette sur la chaussée.",
+   "Réduisez votre vitesse dès que vous la voyez, même si le feu est vert.",
+   "Identifiez sa position par rapport à vous : face ou dos, vous vous arrêtez ; profil, vous pouvez passer.",
+   "Suivez son geste en priorité sur les feux, les panneaux et les règles de priorité.",
+   "Passez lentement en continuant d’observer piétons, cyclistes et autres véhicules."
+  ],
+  "example": {
+   "title": "Feu vert, agent levé",
+   "scene": "En localité, vous approchez d’un carrefour réglé par des feux. Votre feu est vert. Une voiture en panne bloque une voie et un agent de police s’est placé au centre du carrefour. Il vous fait face et lève le bras verticalement.",
+   "reasoning": [
+    "Le feu vert vous autoriserait normalement à passer, mais l’agent a pris la régulation en main.",
+    "Ses signes priment sur le feu : son bras levé et sa position face à vous signifient l’arrêt.",
+    "Vous freinez progressivement et vous vous arrêtez avant le carrefour, puis vous attendez qu’il se tourne de profil ou qu’il vous invite à passer."
+   ],
+   "answer": "Vous vous arrêtez. Le geste de l’agent l’emporte sur le feu vert, et vous ne repartez que sur son signe, en restant attentif aux autres usagers."
+  },
+  "trap": "Le piège est de se fier au feu ou au panneau que l’on connaît bien et de voir l’agent trop tard. Dès qu’une personne règle la circulation, considérez que les feux et panneaux ne comptent plus : regardez d’abord la personne, ensuite seulement le reste.",
+  "remember": "Un signe de la police, de la police auxiliaire ou d’un patrouilleur scolaire passe avant le feu, le panneau et la règle de priorité.",
+  "memo": {
+   "code": "F–D–S / P–P",
+   "text": "Face ou Dos : Stop. Profil : Passage. Et la personne passe avant le feu."
+  },
+  "law": "LCR art. 27 ; OSR"
+ },
+ "questions": [
+  {
+   "id": "O13-AUX-01",
+   "chapter": "O13",
+   "section": "agents-auxiliaires",
+   "stem": "Votre feu est vert, mais un agent de police au centre du carrefour vous fait face, le bras levé. Que faites-vous ?",
+   "options": [
+    "Vous vous arrêtez, car le signe de l’agent l’emporte sur le feu.",
+    "Vous passez, car le feu vert vous donne le droit de passage.",
+    "Vous attendez un signe de l’agent qui vous autorise à repartir."
+   ],
+   "answers": [0, 2],
+   "truth": "Les signes de la police priment sur les signaux lumineux.",
+   "why": "L’agent a pris la régulation en main ; le feu n’est plus déterminant pour vous.",
+   "trap": "Continuer en se fiant au feu vert.",
+   "action": "Arrêtez-vous avant le carrefour et attendez son geste de passage.",
+   "memory": "L’agent passe avant le feu."
+  },
+  {
+   "id": "O13-AUX-02",
+   "chapter": "O13",
+   "section": "agents-auxiliaires",
+   "stem": "Un agent qui règle la circulation se tient de profil par rapport à vous. Que signifie cette position ?",
+   "options": [
+    "La voie vous est ouverte et vous pouvez passer avec prudence.",
+    "Vous devez vous arrêter jusqu’à ce qu’il vous fasse face.",
+    "Vous continuez à observer piétons et cyclistes en passant."
+   ],
+   "answers": [0, 2],
+   "truth": "De profil, l’agent ouvre le passage aux usagers qui arrivent sur ses côtés.",
+   "why": "Face ou dos signifie l’arrêt ; profil signifie le passage.",
+   "trap": "Inverser les positions face et profil.",
+   "action": "Passez à allure modérée en restant prêt à freiner.",
+   "memory": "Profil : passage."
+  },
+  {
+   "id": "O13-AUX-03",
+   "chapter": "O13",
+   "section": "agents-auxiliaires",
+   "stem": "Près d’une école, un patrouilleur scolaire lève sa palette pour vous arrêter. Quelles affirmations sont correctes ?",
+   "options": [
+    "Vous devez obéir à son signe comme à celui d’un agent de police.",
+    "Son signe n’est qu’une recommandation, car il n’est pas policier.",
+    "Vous repartez seulement lorsque tous les enfants ont fini de traverser."
+   ],
+   "answers": [0, 2],
+   "truth": "Les signes des patrouilleurs scolaires doivent être respectés.",
+   "why": "Ils protègent des usagers très vulnérables et agissent dans un cadre prévu par la réglementation.",
+   "trap": "Croire que seul un uniforme de police oblige à s’arrêter.",
+   "action": "Arrêtez-vous et attendez que la chaussée soit entièrement libre.",
+   "memory": "Palette levée, je m’arrête."
+  },
+  {
+   "id": "O13-AUX-04",
+   "chapter": "O13",
+   "section": "agents-auxiliaires",
+   "stem": "Un agent vous fait signe de passer alors qu’un signal « Cédez le passage » vous concerne. Que faut-il retenir ?",
+   "options": [
+    "Le signe de l’agent l’emporte sur le signal.",
+    "Vous devez quand même attendre que la route prioritaire soit vide.",
+    "Vous passez en restant attentif, car l’agent ne voit pas forcément tout."
+   ],
+   "answers": [0, 2],
+   "truth": "Les signes de la police priment sur les signaux et les règles de priorité.",
+   "why": "L’agent organise lui-même l’ordre de passage ; la prudence reste néanmoins due.",
+   "trap": "Rester bloqué en ignorant le geste de l’agent, ou passer sans regarder.",
+   "action": "Avancez lentement en contrôlant les côtés.",
+   "memory": "J’obéis, mais je regarde."
+  },
+  {
+   "id": "O13-AUX-05",
+   "chapter": "O13",
+   "section": "agents-auxiliaires",
+   "stem": "Un agent bouge le bras de haut en bas en direction de votre file. Que vous demande-t-il ?",
+   "options": [
+    "De ralentir.",
+    "D’accélérer pour dégager rapidement le carrefour.",
+    "D’adapter votre allure en étant prêt à vous arrêter."
+   ],
+   "answers": [0, 2],
+   "truth": "Le mouvement du bras de haut en bas invite à ralentir.",
+   "why": "L’agent veut réduire la vitesse de la file, souvent à cause d’un obstacle ou d’un danger plus loin.",
+   "trap": "Interpréter tout geste de la main comme une invitation à passer vite.",
+   "action": "Levez le pied, couvrez le frein et cherchez la cause du ralentissement.",
+   "memory": "Bras qui monte et descend : je ralentis."
+  },
+  {
+   "id": "O13-AUX-06",
+   "chapter": "O13",
+   "section": "agents-auxiliaires",
+   "stem": "Lors d’une manifestation, une personne portant un gilet de signalisation d’un service de circulation mandaté vous fait signe de vous arrêter. Que faites-vous ?",
+   "options": [
+    "Vous vous arrêtez, car la police auxiliaire peut régler la circulation.",
+    "Vous continuez, puisque seule la police en uniforme peut vous arrêter.",
+    "Vous suivez ses gestes plutôt que les feux ou les panneaux de l’endroit."
+   ],
+   "answers": [0, 2],
+   "truth": "Les personnes mandatées par l’autorité pour régler la circulation doivent être suivies.",
+   "why": "La police auxiliaire remplit la même fonction de régulation que la police à cet endroit.",
+   "trap": "Croire qu’un gilet ne suffit pas et qu’il faut un uniforme de policier.",
+   "action": "Arrêtez-vous et attendez son geste de passage.",
+   "memory": "Gilet mandaté = régulation officielle."
+  },
+  {
+   "id": "O13-AUX-07",
+   "chapter": "O13",
+   "section": "agents-auxiliaires",
+   "stem": "Dans quel ordre faut-il appliquer les indications lorsqu’elles se contredisent ?",
+   "options": [
+    "Les signes de la police passent avant les signaux et les marques.",
+    "Les signaux et les marques passent avant les règles générales de priorité.",
+    "La règle de la priorité de droite passe avant les signes de la police."
+   ],
+   "answers": [0, 1],
+   "truth": "Ordre : signes de la police, puis signaux et marques, puis règles générales.",
+   "why": "Plus l’indication est adaptée à la situation du moment, plus elle a de poids.",
+   "trap": "Penser qu’une règle générale bien connue l’emporte sur un ordre donné sur place.",
+   "action": "Regardez d’abord s’il y a une personne qui règle le trafic, puis les signaux, puis appliquez les règles générales.",
+   "memory": "Personne, panneau, principe."
+  }
+ ]
+}

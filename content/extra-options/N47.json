@@ -1,0 +1,66 @@
+{
+ "N47-STA-01": {
+  "option": "Leur risque est le même que celui des conducteurs expérimentés.",
+  "why": "Les statistiques montrent une surreprésentation des jeunes et nouveaux conducteurs dans les accidents graves."
+ },
+ "N47-STA-02": {
+  "option": "Auprès du constructeur de votre voiture.",
+  "why": "Les chiffres officiels des accidents en Suisse proviennent notamment du BPA et de l’OFS, pas des constructeurs."
+ },
+ "N47-STA-03": {
+  "option": "Ce groupe est le seul responsable des accidents.",
+  "why": "Être surreprésenté signifie apparaître plus souvent que prévu, pas être l’unique responsable."
+ },
+ "N47-STA-04": {
+  "option": "Surtout l’état des routes, sans lien avec le comportement.",
+  "why": "Les analyses attribuent la majorité des accidents à des facteurs humains comme l’inattention ou une vitesse inadaptée."
+ },
+ "N47-CAU-01": {
+  "option": "Parce que les voitures des nouveaux conducteurs sont moins bien équipées.",
+  "why": "Le risque lié à l’inexpérience tient au conducteur, dont l’attention est encore absorbée par les gestes, pas au véhicule."
+ },
+ "N47-CAU-02": {
+  "option": "Regarder loin devant soi sur la route.",
+  "why": "Regarder loin devant fait partie d’une observation correcte ; ce n’est pas une distraction."
+ },
+ "N47-CAU-03": {
+  "option": "Seuls les panneaux déterminent la vitesse à adopter.",
+  "why": "La vitesse doit aussi être adaptée à l’état de la route, au tracé et à la visibilité."
+ },
+ "N47-CAU-04": {
+  "option": "Elle n’a d’effet qu’au-delà de la limite légale.",
+  "why": "L’alcool influence déjà les réactions et le jugement en dessous des limites légales."
+ },
+ "N47-FAC-01": {
+  "option": "Le fait de faire régulièrement des pauses sur les longs trajets.",
+  "why": "Les pauses réduisent la fatigue ; elles diminuent le risque au lieu de l’aggraver."
+ },
+ "N47-FAC-02": {
+  "option": "Les piétons sont plus faciles à voir que de jour.",
+  "why": "De nuit, les piétons et cyclistes peu éclairés sont vus plus tard qu’en plein jour."
+ },
+ "N47-FAC-03": {
+  "option": "Que le conducteur n’a aucune influence sur le risque.",
+  "why": "Le modèle place le conducteur au centre des interactions ; son comportement influence fortement le risque."
+ },
+ "N47-FAC-04": {
+  "option": "Rouler à la vitesse maximale autorisée suffit à être en sécurité.",
+  "why": "Avec plusieurs facteurs aggravants cumulés, la vitesse doit être réduite sous la limite."
+ },
+ "N47-PRE-01": {
+  "option": "Suivre de près le véhicule qui précède pour qu’on ne vous coupe pas la route.",
+  "why": "Une distance réduite supprime la solution de rechange ; c’est l’opposé de la tactique défensive."
+ },
+ "N47-PRE-02": {
+  "option": "Lorsque vous connaissez bien la route.",
+  "why": "Connaître la route ne rend pas une manœuvre risquée ; le risque vient de conditions incontrôlées ou d’une visibilité insuffisante."
+ },
+ "N47-PRE-03": {
+  "option": "Parce qu’une marge plus grande permet de rouler plus vite.",
+  "why": "La marge sert à compenser un temps d’analyse et de réaction plus long, pas à augmenter la vitesse."
+ },
+ "N47-PRE-04": {
+  "option": "Il fonctionne parfaitement dans toutes les conditions météo.",
+  "why": "Pluie, neige, brouillard ou capteur sale peuvent limiter le système."
+ }
+}

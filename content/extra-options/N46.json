@@ -1,0 +1,82 @@
+{
+ "N46-FOR-02": {
+  "option": "Vous pouvez conduire seul de jour, mais pas de nuit.",
+  "why": "Avec un permis d’élève, vous ne conduisez qu’accompagné, de jour comme de nuit."
+ },
+ "N46-FOR-03": {
+  "option": "L’accompagnant peut s’asseoir à l’arrière du véhicule.",
+  "why": "L’accompagnant doit être placé à côté de l’élève pour pouvoir intervenir."
+ },
+ "N46-FOR-05": {
+  "option": "Il suffit de ne pas avoir eu d’accident pendant la première année.",
+  "why": "Le permis définitif suppose la fin de la période probatoire sans annulation et la formation complémentaire suivie."
+ },
+ "N46-FOR-06": {
+  "option": "Un médecin-conseil de l’office cantonal.",
+  "why": "L’examen pratique est conduit par un expert de la circulation, pas par un médecin."
+ },
+ "N46-HEU-01": {
+  "option": "Le nombre d’heures se décide uniquement selon le budget de l’élève.",
+  "why": "Le besoin dépend des progrès de l’élève, évalués par le moniteur, et non du seul budget."
+ },
+ "N46-HEU-02": {
+  "option": "Remplacer l’examen pratique par une attestation de l’accompagnant.",
+  "why": "Aucune attestation privée ne remplace l’examen pratique officiel."
+ },
+ "N46-HEU-04": {
+  "option": "Pour remplacer les explications du moniteur.",
+  "why": "Les doubles commandes servent à intervenir en sécurité ; elles ne remplacent pas l’enseignement."
+ },
+ "N46-HEU-05": {
+  "option": "Une longue sortie de nuit sur l’autoroute dès le premier jour.",
+  "why": "Au début, la difficulté doit rester faible et augmenter progressivement."
+ },
+ "N46-ESS-02": {
+  "option": "Le permis devient définitif dès la fin du retrait.",
+  "why": "Un retrait pendant la période probatoire prolonge cette période ; il ne la termine pas."
+ },
+ "N46-ESS-03": {
+  "option": "Vous recevez seulement un avertissement écrit.",
+  "why": "Un deuxième retrait pour infraction moyenne ou grave entraîne l’annulation du permis à l’essai."
+ },
+ "N46-ESS-04": {
+  "option": "Pour remplacer l’examen pratique par une période d’observation.",
+  "why": "La période probatoire s’ajoute à l’examen pratique réussi ; elle ne le remplace pas."
+ },
+ "N46-ESS-06": {
+  "option": "Boire un café, puis conduire normalement.",
+  "why": "Le café ne fait pas baisser l’alcoolémie ; la seule option sûre est de ne pas conduire."
+ },
+ "N46-CFC-01": {
+  "option": "Dans le mois qui suit l’obtention du permis d’élève.",
+  "why": "Le délai court à partir de l’examen pratique, pas du permis d’élève."
+ },
+ "N46-CFC-03": {
+  "option": "Le permis est automatiquement transformé en permis définitif.",
+  "why": "Sans formation complémentaire suivie dans le délai, le permis à l’essai perd sa validité."
+ },
+ "N46-CFC-04": {
+  "option": "Cours de premiers secours.",
+  "why": "Le cours de premiers secours est une autre formation ; il ne remplace pas la formation complémentaire."
+ },
+ "N46-CFC-05": {
+  "option": "Elle remplace l’examen pratique.",
+  "why": "La formation complémentaire se suit après l’examen pratique réussi ; elle ne le remplace pas."
+ },
+ "N46-DET-01": {
+  "option": "Uniquement de l’aspect extérieur et du lavage du véhicule.",
+  "why": "Le détenteur répond notamment de l’état du véhicule et de son assurance responsabilité civile, pas seulement de son aspect."
+ },
+ "N46-DET-02": {
+  "option": "Vous lui prêtez la voiture si vous restez assis à côté de lui.",
+  "why": "Un permis retiré interdit de conduire ; être accompagné n’y change rien."
+ },
+ "N46-DET-03": {
+  "option": "Vous la laissez partir si elle promet de faire des pauses.",
+  "why": "Des pauses ne suppriment pas l’effet du médicament ; elle doit être apte à conduire au moment du trajet."
+ },
+ "N46-DET-04": {
+  "option": "Vous devenez le détenteur inscrit sur le permis de circulation.",
+  "why": "Louer une voiture pour un week-end ne fait pas de vous le détenteur ; l’entreprise reste en principe détentrice."
+ }
+}

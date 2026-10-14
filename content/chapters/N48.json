@@ -1,0 +1,809 @@
+{
+ "chapter": {
+  "id": "N48",
+  "official": "4.8",
+  "group": "G4",
+  "color": "#4b6b2a",
+  "otitle": "Modèles : interactions et fourche analytique",
+  "title": "Deux modèles pour décider avant le danger",
+  "oscope": "Utiliser le modèle des interactions et le modèle de la fourche analytique pour analyser les situations, construire ses stratégies personnelles et appliquer la règle fondamentale de l’art. 26 LCR.",
+  "tagline": "À la fin de ce chapitre, vous saurez analyser une situation avec deux modèles simples et repérer le moment où vous pouvez encore choisir la solution sûre.",
+  "intro": [
+   "Conduire, c’est prendre sans cesse des décisions. Pour les prendre de façon réfléchie, deux modèles pédagogiques sont utiles. Le **modèle des interactions** montre que la sécurité dépend de l’équilibre entre le conducteur, le véhicule et l’environnement de la circulation. Le **modèle de la fourche analytique** montre qu’une situation évolue en étapes, de sûre à dangereuse, et qu’il existe des moments où vous pouvez encore choisir l’issue sûre.",
+   "Ces modèles ne sont pas des règles de droit : ce sont des méthodes de réflexion. Ils servent à appliquer la règle fondamentale de l’art. 26 LCR, qui demande de ne gêner ni mettre en danger personne, et le principe de la confiance avec ses limites.",
+   "Ce chapitre vous montre comment utiliser ces outils pour repérer les dangers tôt, préparer vos réactions et construire des stratégies personnelles de conduite défensive."
+  ],
+  "keyIdea": "Une situation dangereuse se prépare en étapes : en analysant conducteur, véhicule et environnement, vous pouvez choisir la branche sûre avant qu’il ne soit trop tard.",
+  "memo": {
+   "code": "V–F–C",
+   "text": "Voir les trois éléments (conducteur, véhicule, environnement), trouver la Fourche, Choisir la branche sûre."
+  },
+  "sources": [
+   {
+    "label": "asa · Catalogue des compétences (théorie de base, 2027)",
+    "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+   },
+   {
+    "label": "Fedlex · LCR art. 26",
+    "href": "https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr"
+   },
+   {
+    "label": "BPA · Conseils de sécurité",
+    "href": "https://www.bfu.ch/fr"
+   }
+  ],
+  "sections": [
+   {
+    "id": "modele-interactions",
+    "otitle": "Modèle des interactions",
+    "title": "Conducteur, véhicule, environnement : comment ces trois éléments s’influencent-ils ?",
+    "ogoal": "Décrire une situation de conduite comme l’interaction entre le conducteur, le véhicule et l’environnement de la circulation.",
+    "question": "Si un accident se produit sur une route mouillée, est-ce la faute de la pluie ?",
+    "lead": [
+     "Une situation de conduite n’est jamais le résultat d’un seul facteur. Le modèle des interactions est un outil pédagogique qui vous aide à voir trois éléments à la fois : vous, votre véhicule et l’environnement de la circulation. Quand l’un change, les deux autres doivent s’adapter."
+    ],
+    "parts": [
+     {
+      "title": "Les trois éléments du modèle",
+      "body": [
+       "**Le conducteur** : son état (fatigue, émotions, alcool, médicaments), ses compétences, son expérience, son attention et sa motivation. **Le véhicule** : son état technique (freins, pneus, éclairage), ses dimensions, sa charge, ses systèmes d’aide. **L’environnement de la circulation** : la route et son tracé, la météo, la luminosité, la densité du trafic et les autres usagers.",
+       "Le modèle ne dit pas qu’un élément est « coupable ». Il montre que la sécurité dépend de l’**équilibre** entre les trois. Une route mouillée n’est pas dangereuse en soi ; elle le devient si le conducteur garde la même vitesse et la même distance qu’avec une route sèche, ou si les pneus sont usés."
+      ]
+     },
+     {
+      "title": "Un changement en entraîne d’autres",
+      "body": [
+       "Quand l’environnement se dégrade (brouillard, neige, nuit, chantier), le conducteur doit compenser : ralentir, augmenter la distance, renforcer l’observation. Quand le véhicule est chargé ou tracte une remorque, la distance de freinage s’allonge et la tenue de route change ; là encore, le conducteur adapte sa conduite.",
+       "Le seul élément que vous contrôlez vraiment pendant le trajet, c’est **vous**. Vous pouvez choisir votre vitesse, votre distance, votre trajectoire, et même renoncer à partir. C’est pourquoi le modèle vous place au centre de la décision."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Interaction",
+      "def": "Influence réciproque entre deux éléments : si l’un change, l’autre est touché."
+     },
+     {
+      "term": "Environnement de la circulation",
+      "def": "Route, météo, lumière, trafic et autres usagers qui entourent votre véhicule."
+     },
+     {
+      "term": "Compenser",
+      "def": "Adapter votre conduite pour rétablir une marge de sécurité quand un élément se dégrade."
+     },
+     {
+      "term": "Marge de sécurité",
+      "def": "Espace et temps de réserve qui permettent de réagir à un imprévu."
+     }
+    ],
+    "method": [
+     "Faites le point sur vous-même : état, attention, fatigue.",
+     "Vérifiez votre véhicule : état technique, charge, visibilité.",
+     "Observez l’environnement : route, météo, lumière, trafic, usagers.",
+     "Repérez l’élément qui s’est dégradé.",
+     "Compensez par votre conduite : vitesse, distance, observation, ou renoncement."
+    ],
+    "example": {
+     "title": "Retour de ski sur la route du Simplon",
+     "scene": "Vous rentrez de ski en fin d’après-midi par la route du Simplon. Vous êtes fatigué, la voiture est chargée de quatre passagers et de leurs bagages, et la neige commence à tomber à la tombée de la nuit.",
+     "reasoning": [
+      "Les trois éléments se sont dégradés en même temps : conducteur fatigué, véhicule chargé, environnement enneigé et sombre.",
+      "Chaque dégradation réduit votre marge ; ensemble, elles s’additionnent.",
+      "Vous réduisez nettement la vitesse, augmentez la distance, faites une pause si la fatigue s’installe, et envisagez de confier le volant à un passager reposé et autorisé à conduire."
+     ],
+     "answer": "Le danger ne vient pas seulement de la neige. Vous compensez sur l’élément que vous maîtrisez : votre propre conduite, jusqu’à faire une pause si nécessaire."
+    },
+    "trap": "Le piège est de chercher un seul responsable : « c’est la faute de la route » ou « c’est la faute de l’autre ». Le modèle des interactions vous rappelle que vous pouvez presque toujours agir sur votre propre comportement pour rétablir l’équilibre.",
+    "remember": "La sécurité naît de l’équilibre entre conducteur, véhicule et environnement ; c’est vous qui ajustez cet équilibre.",
+    "memo": {
+     "code": "C–V–E",
+     "text": "Conducteur, Véhicule, Environnement : trois pieds d’un tabouret ; si l’un faiblit, vous rééquilibrez en adaptant votre conduite."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 1",
+    "source": {
+     "label": "asa · Catalogue des compétences (théorie de base, 2027)",
+     "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+    }
+   },
+   {
+    "id": "fourche-analytique",
+    "otitle": "Modèle de la fourche analytique",
+    "title": "Comment une situation sûre devient-elle dangereuse, et où peut-on encore l’éviter ?",
+    "ogoal": "Décrire l’évolution d’une situation de sûre à dangereuse et repérer les points où l’on peut encore choisir la branche sûre.",
+    "question": "À quel moment puis-je encore éviter un accident qui se prépare ?",
+    "lead": [
+     "Un accident arrive rarement sans prévenir. La situation évolue en plusieurs phases, et à chaque phase, un choix est possible. Le modèle de la fourche analytique représente cette évolution comme un chemin qui se divise : une branche reste sûre, l’autre mène vers le danger. Plus vous choisissez tôt, plus vous avez d’options."
+    ],
+    "parts": [
+     {
+      "title": "De la situation sûre à la situation dangereuse",
+      "body": [
+       "On peut décrire l’évolution en étapes : d’abord une **situation normale et sûre** ; puis une **situation à risque**, où un indice apparaît (un ballon roule, un véhicule s’approche trop vite d’un croisement) ; puis une **situation critique**, où il ne reste plus que peu de temps et d’espace ; enfin, si rien n’est fait, la **collision** ou la sortie de route.",
+       "À chaque passage d’une étape à l’autre, le temps disponible diminue et les solutions se réduisent. Dans la situation sûre, vous pouvez simplement lever le pied. Dans la situation critique, il ne reste parfois qu’un freinage d’urgence, et il peut ne plus suffire."
+      ]
+     },
+     {
+      "title": "Les points de fourche : choisir la branche sûre",
+      "body": [
+       "Un **point de fourche** est le moment où vous pouvez encore choisir. Par exemple : voir un piéton près d’un passage et décider de ralentir, ou continuer à la même allure. Choisir la branche sûre ramène la situation vers la normalité ; choisir l’autre la rapproche du danger.",
+       "Les meilleurs points de fourche sont les **premiers** : ceux où vous détectez un indice avant qu’il ne devienne une menace. C’est là que l’anticipation est la plus efficace et que la réaction peut rester douce : relâcher l’accélérateur, couvrir le frein, se décaler, augmenter la distance."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Fourche",
+      "def": "Point où une situation peut évoluer dans deux directions : vers la sécurité ou vers le danger."
+     },
+     {
+      "term": "Situation critique",
+      "def": "Moment où le temps et l’espace restants sont très faibles ; seules des réactions d’urgence restent possibles."
+     },
+     {
+      "term": "Indice",
+      "def": "Signe visible qui annonce un danger possible : mouvement, regard, objet, comportement."
+     },
+     {
+      "term": "Anticipation",
+      "def": "Fait de prévoir l’évolution d’une situation et d’agir avant qu’elle ne devienne dangereuse."
+     }
+    ],
+    "method": [
+     "Observez loin devant pour détecter les indices tôt.",
+     "Demandez-vous : « Comment cette situation peut-elle évoluer ? »",
+     "Identifiez le point de fourche où vous pouvez encore choisir.",
+     "Choisissez la branche sûre par une action douce et précoce.",
+     "Vérifiez que la situation est revenue à la normale avant de reprendre votre allure."
+    ],
+    "example": {
+     "title": "Le ballon à Winterthour",
+     "scene": "Vous roulez dans un quartier résidentiel de Winterthour. Entre deux voitures garées, un ballon roule sur la chaussée. Aucun enfant n’est visible.",
+     "reasoning": [
+      "Le ballon est un indice : un enfant pourrait le suivre. La situation sûre devient une situation à risque.",
+      "C’est un point de fourche : vous pouvez soit continuer, soit ralentir fortement et vous préparer à vous arrêter.",
+      "En choisissant tôt la branche sûre, un simple ralentissement suffit ; plus tard, seul un freinage d’urgence resterait possible."
+     ],
+     "answer": "Vous ralentissez immédiatement, couvrez le frein et observez entre les véhicules garés. Vous ne reprenez de la vitesse qu’après avoir vérifié qu’aucun enfant ne surgit."
+    },
+    "trap": "Le piège est d’attendre que le danger soit évident pour réagir. À ce stade, on est souvent déjà dans la situation critique, où les options sont rares. Réagissez au premier indice, quand une action douce suffit encore.",
+    "remember": "Plus vous choisissez tôt la branche sûre, plus votre réaction peut rester simple et efficace.",
+    "memo": {
+     "code": "S–R–C–A",
+     "text": "Sûre, Risque, Critique, Accident : quatre étapes ; agissez dès le R, quand vous avez encore le choix."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 1",
+    "source": {
+     "label": "asa · Catalogue des compétences (théorie de base, 2027)",
+     "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+    }
+   },
+   {
+    "id": "strategies-personnelles",
+    "otitle": "Stratégies personnelles",
+    "title": "Comment utiliser les deux modèles pour construire vos propres stratégies ?",
+    "ogoal": "Utiliser le modèle des interactions et la fourche analytique pour repérer les dangers, planifier sa réaction et conduire de façon défensive.",
+    "question": "Comment puis-je me préparer aux situations qui me mettent personnellement en difficulté ?",
+    "lead": [
+     "Les modèles ne servent pas qu’à analyser un accident après coup. Ils vous aident à préparer vos propres stratégies, adaptées à vos points faibles et à vos trajets habituels. Une stratégie personnelle, c’est une décision prise à l’avance pour une situation que vous savez difficile."
+    ],
+    "parts": [
+     {
+      "title": "Repérer les dangers et planifier la réaction",
+      "body": [
+       "Commencez par vous connaître. Grâce au modèle des interactions, demandez-vous : dans quelles situations suis-je le plus vulnérable ? Peut-être la nuit, sous la pluie, quand vous êtes pressé, ou avec des passagers bruyants. Ce sont vos zones de risque personnelles.",
+       "Grâce à la fourche analytique, préparez votre réaction avant d’y être : « Si un véhicule s’arrête devant moi sur l’autoroute, je garde assez de distance pour freiner sans surprise », « Si je suis fatigué, je fais une pause ». Une réaction préparée est plus rapide et plus calme qu’une réaction improvisée."
+      ]
+     },
+     {
+      "title": "Conduite défensive",
+      "body": [
+       "La **conduite défensive** consiste à conduire en prévoyant que les autres peuvent se tromper, et en gardant toujours une solution de repli. Concrètement : distance suffisante, vitesse adaptée, place pour s’écarter, regard loin devant et dans les rétroviseurs, contact visuel avec les usagers vulnérables.",
+       "Conduire de façon défensive ne veut pas dire conduire timidement. Vous restez clair et prévisible : vous annoncez vos intentions à temps, vous choisissez une position nette sur la chaussée, et vous évitez les manœuvres brusques. Vous laissez simplement assez de marge pour que l’erreur d’un autre ne devienne pas un accident."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Stratégie personnelle",
+      "def": "Décision préparée à l’avance pour une situation que vous savez difficile pour vous."
+     },
+     {
+      "term": "Zone de risque personnelle",
+      "def": "Situation dans laquelle vos compétences ou votre état vous rendent plus vulnérable."
+     },
+     {
+      "term": "Conduite défensive",
+      "def": "Manière de conduire qui prévoit les erreurs possibles des autres et garde toujours une solution de repli."
+     },
+     {
+      "term": "Solution de repli",
+      "def": "Espace ou action disponible si la situation tourne mal : freiner, s’écarter, s’arrêter."
+     }
+    ],
+    "method": [
+     "Listez les situations dans lesquelles vous vous sentez le moins sûr.",
+     "Analysez-les avec le modèle des interactions : conducteur, véhicule, environnement.",
+     "Pour chacune, identifiez le premier point de fourche.",
+     "Décidez à l’avance de la réaction sûre que vous adopterez.",
+     "Appliquez-la et ajustez-la après chaque trajet."
+    ],
+    "example": {
+     "title": "L’entrée d’autoroute à Genève",
+     "scene": "Vous avez du mal à vous insérer sur l’autoroute près de Genève aux heures de pointe : vous hésitez, puis vous accélérez trop tard.",
+     "reasoning": [
+      "Avec le modèle des interactions, vous identifiez le problème : trafic dense (environnement) et manque d’expérience (conducteur).",
+      "Avec la fourche analytique, vous repérez le point de choix : dès la voie d’accélération, il faut observer et choisir sa brèche, pas au bout de la voie.",
+      "Votre stratégie : regarder tôt dans le rétroviseur et par-dessus l’épaule, adapter votre vitesse à celle du trafic et viser une brèche précise."
+     ],
+     "answer": "Vous préparez votre insertion avant d’arriver au bout de la voie d’accélération. La décision prise à l’avance remplace l’hésitation de dernière minute."
+    },
+    "trap": "Le piège est de croire qu’une bonne stratégie consiste à toujours se méfier de tout et à freiner sans cesse. Une conduite défensive reste fluide et prévisible. Elle repose sur l’anticipation et sur des marges, pas sur l’hésitation.",
+    "remember": "Une stratégie personnelle, c’est une réaction sûre décidée à l’avance pour une situation que vous savez difficile.",
+    "memo": {
+     "code": "R–P–M",
+     "text": "Repérer le danger, Planifier la réaction, garder une Marge : la base de toute conduite défensive."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 1",
+    "source": {
+     "label": "asa · Catalogue des compétences (théorie de base, 2027)",
+     "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+    }
+   },
+   {
+    "id": "modeles-regle-fondamentale",
+    "otitle": "Modèles et règle fondamentale",
+    "title": "En quoi ces modèles aident-ils à respecter la règle fondamentale de l’art. 26 LCR ?",
+    "ogoal": "Relier les deux modèles à la règle fondamentale (diligence, prévenance, principe de la confiance) et au sens des responsabilités.",
+    "question": "Puis-je toujours compter sur le fait que les autres respectent les règles ?",
+    "lead": [
+     "L’art. 26 LCR pose la règle fondamentale de la circulation : chacun doit se comporter de manière à ne pas gêner ni mettre en danger les autres. Les deux modèles de ce chapitre sont des outils concrets pour appliquer cette règle au quotidien et pour exercer votre sens des responsabilités."
+    ],
+    "parts": [
+     {
+      "title": "Diligence et prévenance",
+      "body": [
+       "La **diligence**, c’est le soin et l’attention que l’on doit apporter à la conduite. La **prévenance**, c’est l’attitude qui tient compte des autres usagers, de leurs besoins et de leurs faiblesses. Ensemble, elles traduisent l’exigence de l’art. 26 LCR : ne gêner ni mettre en danger personne.",
+       "Le modèle des interactions vous aide à être diligent : il vous oblige à vérifier votre état, votre véhicule et l’environnement. La fourche analytique vous aide à être prévenant : elle vous pousse à anticiper ce que les autres pourraient faire et à leur laisser de la marge."
+      ]
+     },
+     {
+      "title": "Le principe de la confiance et ses limites",
+      "body": [
+       "Selon le **principe de la confiance**, vous pouvez en règle générale compter sur le fait que les autres usagers respectent les règles. Sans cette confiance, la circulation serait impossible : personne n’oserait passer un carrefour.",
+       "Mais cette confiance a des **limites**. Elle cesse lorsqu’un indice montre qu’un usager ne va pas se comporter correctement, et elle est réduite envers les enfants, les personnes âgées ou les personnes qui montrent des signes d’inattention. Ces indices sont exactement les points de fourche du modèle : dès que vous les voyez, vous devez choisir la branche sûre."
+      ]
+     },
+     {
+      "title": "Le sens des responsabilités",
+      "body": [
+       "Être responsable, c’est assumer que vos décisions ont des conséquences pour vous et pour les autres. Les modèles vous donnent une méthode pour prendre ces décisions de façon réfléchie, plutôt que par habitude ou par réflexe.",
+       "Avoir la priorité ou rouler sous la vitesse maximale ne suffit pas à être en règle avec l’art. 26 LCR. Ce qui compte, c’est de vous comporter de manière à ne mettre personne en danger, compte tenu de la situation réelle que vous observez."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Règle fondamentale",
+      "def": "Exigence de l’art. 26 LCR : se comporter de manière à ne pas gêner ni mettre en danger les autres."
+     },
+     {
+      "term": "Diligence",
+      "def": "Soin et attention que le conducteur doit apporter à sa conduite."
+     },
+     {
+      "term": "Prévenance",
+      "def": "Attitude qui tient compte des autres usagers, de leurs besoins et de leurs faiblesses."
+     },
+     {
+      "term": "Principe de la confiance",
+      "def": "Possibilité de compter sur le respect des règles par les autres, sauf indice contraire ou usager particulièrement vulnérable."
+     }
+    ],
+    "method": [
+     "Partez de la règle fondamentale : ne gêner ni mettre en danger personne.",
+     "Faites confiance aux autres tant qu’aucun indice ne montre le contraire.",
+     "Cherchez activement les indices : enfants, personnes âgées, signes d’inattention, comportements anormaux.",
+     "Dès qu’un indice apparaît, traitez-le comme un point de fourche et choisissez la branche sûre.",
+     "Assumez votre décision : la sécurité passe avant votre droit."
+    ],
+    "example": {
+     "title": "La personne âgée au passage piéton de Lucerne",
+     "scene": "Vous approchez d’un passage piéton à Lucerne. Une personne âgée attend au bord du trottoir, regarde dans l’autre direction et s’engage lentement, sans vous avoir vu.",
+     "reasoning": [
+      "Le principe de la confiance est limité : il s’agit d’une personne âgée qui montre un signe d’inattention.",
+      "C’est un point de fourche : vous pouvez encore ralentir tranquillement et vous arrêter.",
+      "La règle fondamentale de l’art. 26 LCR exige que vous évitiez de la mettre en danger, quoi qu’elle fasse."
+     ],
+     "answer": "Vous ralentissez tôt et vous vous arrêtez pour la laisser traverser. Vous ne comptez pas sur le fait qu’elle vous verra à temps."
+    },
+    "trap": "Le piège est d’appliquer le principe de la confiance de façon absolue : « il doit me voir », « elle doit attendre ». La confiance cesse dès qu’un indice montre une erreur possible, et elle est réduite envers les usagers vulnérables. Les modèles vous aident justement à repérer ce moment.",
+    "remember": "Faites confiance aux autres, mais dès qu’un indice montre une erreur possible, la règle fondamentale vous impose de choisir la branche sûre.",
+    "memo": {
+     "code": "D–P–C",
+     "text": "Diligence (je fais attention), Prévenance (je pense aux autres), Confiance (oui, mais avec limites) : les trois piliers de l’art. 26 LCR."
+    },
+    "law": "LCR art. 26 ; Plan d’enseignement OCTC, bloc 1",
+    "source": {
+     "label": "Fedlex · LCR art. 26",
+     "href": "https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr"
+    }
+   }
+  ]
+ },
+ "questions": [
+  {
+   "id": "N48-INT-01",
+   "chapter": "N48",
+   "section": "modele-interactions",
+   "stem": "Quels sont les trois éléments du modèle des interactions ?",
+   "options": [
+    "Le conducteur, le véhicule et l’environnement de la circulation.",
+    "La vitesse, le klaxon et les feux.",
+    "Le permis, l’assurance et le contrôle technique."
+   ],
+   "answers": [
+    0
+   ],
+   "truth": "Le modèle relie conducteur, véhicule et environnement de la circulation.",
+   "why": "Ces trois éléments s’influencent en permanence pendant la conduite.",
+   "trap": "Confondre le modèle avec une liste de documents ou d’équipements.",
+   "action": "Passez en revue ces trois éléments avant et pendant chaque trajet.",
+   "memory": "C–V–E."
+  },
+  {
+   "id": "N48-INT-02",
+   "chapter": "N48",
+   "section": "modele-interactions",
+   "stem": "La chaussée devient mouillée. Selon le modèle des interactions, que faites-vous ?",
+   "options": [
+    "Vous gardez la même vitesse, la route n’a pas changé de tracé.",
+    "Vous augmentez la distance avec le véhicule qui précède.",
+    "Vous adaptez votre vitesse aux nouvelles conditions."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "Quand l’environnement se dégrade, le conducteur compense.",
+   "why": "Une chaussée mouillée allonge la distance de freinage et réduit l’adhérence.",
+   "trap": "Croire que seul le tracé de la route compte.",
+   "action": "Ralentissez et augmentez la distance dès les premières gouttes.",
+   "memory": "Route change, je change."
+  },
+  {
+   "id": "N48-INT-03",
+   "chapter": "N48",
+   "section": "modele-interactions",
+   "stem": "Qu’est-ce qui fait partie de l’élément « conducteur » ?",
+   "options": [
+    "La fatigue et les émotions.",
+    "La largeur de la chaussée.",
+    "L’attention et l’expérience."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "L’élément conducteur comprend son état, son attention et ses compétences.",
+   "why": "La largeur de la chaussée appartient à l’environnement.",
+   "trap": "Mélanger les éléments du modèle.",
+   "action": "Avant de partir, demandez-vous si vous êtes en état et attentif.",
+   "memory": "Moi : état, attention, expérience."
+  },
+  {
+   "id": "N48-INT-04",
+   "chapter": "N48",
+   "section": "modele-interactions",
+   "stem": "Votre voiture est fortement chargée pour des vacances. Qu’est-ce qui est vrai ?",
+   "options": [
+    "La charge peut allonger la distance de freinage.",
+    "La charge n’a aucune influence sur la tenue de route.",
+    "Vous adaptez votre conduite à ce véhicule plus lourd."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Un changement du véhicule demande une adaptation du conducteur.",
+   "why": "La masse supplémentaire modifie le freinage et le comportement en virage.",
+   "trap": "Penser que le véhicule se comporte toujours de la même façon.",
+   "action": "Freinez plus tôt et abordez les virages plus lentement.",
+   "memory": "Plus lourd, plus tôt."
+  },
+  {
+   "id": "N48-INT-05",
+   "chapter": "N48",
+   "section": "modele-interactions",
+   "stem": "Pendant un trajet, sur quel élément avez-vous le plus de contrôle direct ?",
+   "options": [
+    "Sur la météo.",
+    "Sur votre propre comportement de conduite.",
+    "Sur le comportement des autres usagers."
+   ],
+   "answers": [
+    1
+   ],
+   "truth": "Vous contrôlez avant tout votre vitesse, votre distance, votre trajectoire et vos choix.",
+   "why": "Vous ne pouvez ni changer la météo ni décider à la place des autres.",
+   "trap": "Attendre que les autres ou les conditions s’adaptent à vous.",
+   "action": "Agissez sur ce que vous maîtrisez : votre conduite.",
+   "memory": "Je maîtrise ma conduite."
+  },
+  {
+   "id": "N48-INT-06",
+   "chapter": "N48",
+   "section": "modele-interactions",
+   "stem": "Un accident se produit par brouillard. Selon le modèle, quelle analyse est la plus juste ?",
+   "options": [
+    "Le brouillard est la seule cause.",
+    "Plusieurs éléments ont pu interagir, par exemple vitesse non adaptée et brouillard.",
+    "Le conducteur aurait pu compenser en ralentissant et en augmentant la distance."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "Le modèle analyse l’interaction des éléments, pas un seul coupable.",
+   "why": "Le brouillard réduit la visibilité, mais le conducteur peut adapter sa vitesse à la distance de visibilité.",
+   "trap": "Attribuer l’accident à un seul facteur extérieur.",
+   "action": "Par visibilité réduite, roulez de façon à pouvoir vous arrêter sur la distance visible.",
+   "memory": "Pas un coupable : une interaction."
+  },
+  {
+   "id": "N48-FOU-01",
+   "chapter": "N48",
+   "section": "fourche-analytique",
+   "stem": "Que représente le modèle de la fourche analytique ?",
+   "options": [
+    "L’évolution d’une situation de sûre à dangereuse.",
+    "Les points où l’on peut encore choisir une issue sûre.",
+    "La façon de régler les rétroviseurs."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Le modèle décrit l’évolution d’une situation et les moments de choix.",
+   "why": "Il montre que l’accident se prépare en étapes, avec des occasions de l’éviter.",
+   "trap": "Croire que le danger surgit toujours sans prévenir.",
+   "action": "Cherchez les points de fourche dans chaque situation.",
+   "memory": "Évolution + choix."
+  },
+  {
+   "id": "N48-FOU-02",
+   "chapter": "N48",
+   "section": "fourche-analytique",
+   "stem": "Quand vos options pour éviter un accident sont-elles les plus nombreuses ?",
+   "options": [
+    "Dans la situation critique.",
+    "Au premier indice d’un danger possible.",
+    "Juste avant la collision."
+   ],
+   "answers": [
+    1
+   ],
+   "truth": "Les premiers points de fourche offrent le plus d’options.",
+   "why": "Plus la situation avance, plus le temps et l’espace disponibles se réduisent.",
+   "trap": "Attendre la certitude du danger pour agir.",
+   "action": "Réagissez dès le premier indice.",
+   "memory": "Tôt = plus de choix."
+  },
+  {
+   "id": "N48-FOU-03",
+   "chapter": "N48",
+   "section": "fourche-analytique",
+   "stem": "Un ballon roule sur la chaussée entre des voitures garées. Qu’est-ce qui est vrai ?",
+   "options": [
+    "C’est un indice qu’un enfant pourrait suivre.",
+    "Vous êtes à un point de fourche.",
+    "Vous pouvez garder votre vitesse puisqu’aucun enfant n’est visible."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Le ballon est un indice et marque un point de fourche.",
+   "why": "Un enfant concentré sur son ballon peut surgir sans regarder.",
+   "trap": "Attendre de voir l’enfant pour réagir.",
+   "action": "Ralentissez et préparez-vous à vous arrêter.",
+   "memory": "Ballon = enfant possible."
+  },
+  {
+   "id": "N48-FOU-04",
+   "chapter": "N48",
+   "section": "fourche-analytique",
+   "stem": "Dans une situation critique, quelle affirmation est juste ?",
+   "options": [
+    "Il reste peu de temps et d’espace pour réagir.",
+    "Un simple relâchement de l’accélérateur suffit toujours.",
+    "Seules des réactions d’urgence restent souvent possibles."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La situation critique laisse peu de marge et impose des réactions d’urgence.",
+   "why": "Les solutions douces ne sont efficaces que plus tôt dans l’évolution.",
+   "trap": "Surestimer ce qu’on peut encore faire au dernier moment.",
+   "action": "Évitez d’atteindre ce stade en agissant plus tôt.",
+   "memory": "Critique = presque plus de choix."
+  },
+  {
+   "id": "N48-FOU-05",
+   "chapter": "N48",
+   "section": "fourche-analytique",
+   "stem": "Quelle action correspond à choisir tôt la branche sûre ?",
+   "options": [
+    "Relâcher l’accélérateur et couvrir le frein dès un indice.",
+    "Klaxonner et maintenir la vitesse.",
+    "Augmenter la distance avec le véhicule qui précède quand il commence à hésiter."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Les actions précoces sont douces : lever le pied, couvrir le frein, augmenter la distance.",
+   "why": "Elles créent du temps et de l’espace avant que la situation ne devienne critique.",
+   "trap": "Compter sur le klaxon pour remplacer une réduction de vitesse.",
+   "action": "Préparez votre réaction dès que vous percevez un indice.",
+   "memory": "Pied levé, distance gagnée."
+  },
+  {
+   "id": "N48-FOU-06",
+   "chapter": "N48",
+   "section": "fourche-analytique",
+   "stem": "Après avoir ralenti à cause d’un indice, quand reprenez-vous votre allure ?",
+   "options": [
+    "Dès que vous avez dépassé l’indice, sans vérifier.",
+    "Une fois que vous avez vérifié que la situation est revenue à la normale.",
+    "Immédiatement, pour ne pas gêner les véhicules qui suivent."
+   ],
+   "answers": [
+    1
+   ],
+   "truth": "On ne reprend l’allure qu’après avoir confirmé que le danger a disparu.",
+   "why": "Un danger peut persister ou réapparaître : un deuxième enfant, un véhicule qui hésite.",
+   "trap": "Reprendre de la vitesse par impatience ou sous la pression du trafic.",
+   "action": "Vérifiez, puis accélérez progressivement.",
+   "memory": "Vérifier avant de repartir."
+  },
+  {
+   "id": "N48-STR-01",
+   "chapter": "N48",
+   "section": "strategies-personnelles",
+   "stem": "Qu’est-ce qu’une stratégie personnelle au sens de ce chapitre ?",
+   "options": [
+    "Une réaction sûre décidée à l’avance pour une situation difficile.",
+    "Une manière de rouler plus vite que les autres.",
+    "Une préparation adaptée à vos propres points faibles."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Une stratégie personnelle est une réaction préparée, adaptée à vos points faibles.",
+   "why": "Préparer sa réaction permet de réagir plus vite et plus calmement.",
+   "trap": "Confondre stratégie et habileté à aller vite.",
+   "action": "Listez vos situations difficiles et préparez une réponse pour chacune.",
+   "memory": "Décider avant d’y être."
+  },
+  {
+   "id": "N48-STR-02",
+   "chapter": "N48",
+   "section": "strategies-personnelles",
+   "stem": "Que signifie conduire de façon défensive ?",
+   "options": [
+    "Prévoir que les autres peuvent se tromper.",
+    "Garder une solution de repli : distance, espace, vitesse adaptée.",
+    "Ne jamais laisser passer personne pour défendre sa place."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "La conduite défensive prévoit les erreurs des autres et garde une solution de repli.",
+   "why": "Des marges suffisantes empêchent l’erreur d’un autre de devenir un accident.",
+   "trap": "Confondre « défensive » avec « défendre son territoire ».",
+   "action": "Gardez toujours de la distance et un espace pour vous écarter.",
+   "memory": "Prévoir l’erreur, garder la marge."
+  },
+  {
+   "id": "N48-STR-03",
+   "chapter": "N48",
+   "section": "strategies-personnelles",
+   "stem": "Conduire de façon défensive veut-il dire conduire de façon hésitante ?",
+   "options": [
+    "Oui, il faut freiner dès qu’on voit un autre véhicule.",
+    "Non, vous restez clair et prévisible pour les autres.",
+    "Non, vous annoncez vos intentions à temps et évitez les manœuvres brusques."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "La conduite défensive est fluide, claire et prévisible.",
+   "why": "Un conducteur hésitant devient lui-même imprévisible pour les autres.",
+   "trap": "Penser que la prudence se mesure au nombre de coups de frein.",
+   "action": "Anticipez pour pouvoir rester fluide.",
+   "memory": "Défensif = prévisible."
+  },
+  {
+   "id": "N48-STR-04",
+   "chapter": "N48",
+   "section": "strategies-personnelles",
+   "stem": "Vous savez que vous êtes moins à l’aise de nuit sous la pluie. Quelle démarche correspond à une stratégie personnelle ?",
+   "options": [
+    "Prévoir à l’avance de réduire votre vitesse et d’augmenter la distance dans ces conditions.",
+    "Éviter d’y penser et improviser le moment venu.",
+    "Choisir si possible un horaire ou un itinéraire moins exigeant."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "On anticipe ses zones de risque par des décisions préparées.",
+   "why": "Le modèle des interactions montre que l’environnement dégradé exige une compensation du conducteur.",
+   "trap": "Compter sur l’improvisation dans une situation qu’on sait difficile.",
+   "action": "Planifiez vos trajets difficiles et vos marges.",
+   "memory": "Point faible connu, réponse prête."
+  },
+  {
+   "id": "N48-STR-05",
+   "chapter": "N48",
+   "section": "strategies-personnelles",
+   "stem": "Pour une insertion sur autoroute, où se trouve le premier point de fourche utile ?",
+   "options": [
+    "Au bout de la voie d’accélération, au dernier moment.",
+    "Dès le début de la voie d’accélération, quand vous observez et choisissez votre brèche.",
+    "Après vous être inséré, en freinant sur la voie de droite."
+   ],
+   "answers": [
+    1
+   ],
+   "truth": "Le choix se prépare dès l’entrée sur la voie d’accélération.",
+   "why": "Au bout de la voie, il ne reste plus d’options, et freiner sur l’autoroute crée un danger.",
+   "trap": "Attendre la fin de la voie pour décider.",
+   "action": "Regardez tôt, adaptez votre vitesse et visez une brèche précise.",
+   "memory": "Brèche choisie tôt."
+  },
+  {
+   "id": "N48-STR-06",
+   "chapter": "N48",
+   "section": "strategies-personnelles",
+   "stem": "Après un trajet où vous avez été surpris par une situation, que faites-vous ?",
+   "options": [
+    "Vous analysez ce qui s’est passé avec les deux modèles.",
+    "Vous ajustez votre stratégie pour la prochaine fois.",
+    "Vous oubliez l’incident puisque rien n’est arrivé."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Chaque situation surprenante est une occasion d’améliorer ses stratégies.",
+   "why": "Une situation évitée de justesse montre souvent un point de fourche manqué.",
+   "trap": "Penser qu’un incident sans dommage ne mérite pas d’analyse.",
+   "action": "Repérez le point de fourche que vous auriez pu utiliser plus tôt.",
+   "memory": "Surpris ? J’analyse."
+  },
+  {
+   "id": "N48-REG-01",
+   "chapter": "N48",
+   "section": "modeles-regle-fondamentale",
+   "stem": "Que demande la règle fondamentale de l’art. 26 LCR ?",
+   "options": [
+    "Se comporter de manière à ne pas gêner ni mettre en danger les autres.",
+    "Rouler le plus vite possible pour fluidifier le trafic.",
+    "Faire valoir sa priorité en toutes circonstances."
+   ],
+   "answers": [
+    0
+   ],
+   "truth": "L’art. 26 LCR impose de ne gêner ni mettre en danger personne.",
+   "why": "C’est la base de toutes les autres règles de circulation.",
+   "trap": "Croire qu’une règle de priorité l’emporte sur la règle fondamentale.",
+   "action": "Évaluez chaque décision selon ce critère.",
+   "memory": "Ne gêner, ne mettre en danger."
+  },
+  {
+   "id": "N48-REG-02",
+   "chapter": "N48",
+   "section": "modeles-regle-fondamentale",
+   "stem": "Selon le principe de la confiance, qu’est-ce qui est vrai ?",
+   "options": [
+    "Vous pouvez en règle générale compter sur le respect des règles par les autres.",
+    "Cette confiance reste valable même si un indice montre qu’un usager va se tromper.",
+    "Cette confiance cesse lorsqu’un indice concret annonce une erreur."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La confiance est la règle, mais elle cesse dès qu’un indice annonce une erreur.",
+   "why": "Sans confiance la circulation serait bloquée ; sans limites, elle deviendrait dangereuse.",
+   "trap": "Appliquer la confiance de façon absolue.",
+   "action": "Observez les autres usagers pour détecter les indices d’erreur.",
+   "memory": "Confiance, sauf indice."
+  },
+  {
+   "id": "N48-REG-03",
+   "chapter": "N48",
+   "section": "modeles-regle-fondamentale",
+   "stem": "Envers quels usagers la confiance doit-elle être particulièrement réduite ?",
+   "options": [
+    "Les enfants.",
+    "Les personnes âgées ou qui montrent des signes d’inattention.",
+    "Uniquement les conducteurs de camions."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "La confiance est limitée envers les enfants, les personnes âgées et les usagers inattentifs.",
+   "why": "Leur comportement est moins prévisible ou leurs capacités de réaction peuvent être réduites.",
+   "trap": "Croire que la limite vise une catégorie de véhicules plutôt que des indices de vulnérabilité.",
+   "action": "Redoublez de prudence dès que vous voyez ces usagers.",
+   "memory": "Enfant, âgé, inattentif : prudence."
+  },
+  {
+   "id": "N48-REG-04",
+   "chapter": "N48",
+   "section": "modeles-regle-fondamentale",
+   "stem": "Comment la fourche analytique aide-t-elle à appliquer le principe de la confiance ?",
+   "options": [
+    "Elle permet de repérer l’indice qui marque la fin de la confiance.",
+    "Elle montre à quel moment choisir la branche sûre.",
+    "Elle supprime la nécessité d’observer les autres usagers."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Les indices qui limitent la confiance correspondent aux points de fourche du modèle.",
+   "why": "Repérer l’indice tôt permet une réaction douce et efficace.",
+   "trap": "Croire qu’un modèle remplace l’observation.",
+   "action": "Associez chaque indice à une décision : je ralentis, je me prépare.",
+   "memory": "Indice = fourche."
+  },
+  {
+   "id": "N48-REG-05",
+   "chapter": "N48",
+   "section": "modeles-regle-fondamentale",
+   "stem": "Vous avez la priorité et respectez la vitesse maximale. Êtes-vous forcément en règle avec l’art. 26 LCR ?",
+   "options": [
+    "Oui, la priorité et la vitesse légale suffisent toujours.",
+    "Non, vous devez aussi éviter de mettre en danger quelqu’un dont vous voyez l’erreur.",
+    "Non, la situation réelle peut exiger une vitesse plus basse que la vitesse maximale."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "La priorité et la vitesse maximale ne dispensent pas de la règle fondamentale.",
+   "why": "L’art. 26 LCR s’applique selon la situation concrète, pas seulement selon les panneaux.",
+   "trap": "Confondre être dans son droit et être prudent.",
+   "action": "Adaptez-vous à ce que vous voyez réellement.",
+   "memory": "Mon droit ne remplace pas ma prudence."
+  },
+  {
+   "id": "N48-REG-06",
+   "chapter": "N48",
+   "section": "modeles-regle-fondamentale",
+   "stem": "Que signifient les termes « diligence » et « prévenance » ?",
+   "options": [
+    "La diligence est le soin et l’attention apportés à la conduite.",
+    "La prévenance est l’attitude qui tient compte des autres usagers.",
+    "La diligence signifie rouler toujours sur la voie de gauche."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Diligence = soin et attention ; prévenance = égard envers les autres.",
+   "why": "Ces deux attitudes traduisent concrètement la règle fondamentale.",
+   "trap": "Confondre ces notions avec des règles de placement sur la chaussée.",
+   "action": "Vérifiez votre attention et pensez aux besoins des autres.",
+   "memory": "Soin pour moi, égard pour eux."
+  }
+ ]
+}

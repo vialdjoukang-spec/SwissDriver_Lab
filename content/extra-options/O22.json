@@ -1,0 +1,146 @@
+{
+ "O22-R01": {
+  "option": "Vous klaxonnez pour qu’il vous laisse sortir.",
+  "why": "Le cycliste qui circule est prioritaire ; le klaxon ne vous donne aucun droit."
+ },
+ "O22-R02": {
+  "option": "Klaxonner puis démarrer sans attendre sa réaction.",
+  "why": "Le klaxon ne garantit pas que l’enfant a compris ; il faut s’assurer qu’il est hors trajectoire."
+ },
+ "O22-R03": {
+  "option": "Un coup de klaxon pour annoncer le départ.",
+  "why": "Le klaxon ne remplace pas le contrôle de l’angle mort et de l’avant."
+ },
+ "O22-R05": {
+  "option": "Vous dispenser du contrôle de l’angle mort.",
+  "why": "Le clignotant informe seulement ; il ne remplace aucun contrôle."
+ },
+ "O22-R06": {
+  "option": "Klaxonner pour qu’il reste à l’arrêt.",
+  "why": "En localité, il faut faciliter le départ du bus de ligne, pas l’en empêcher."
+ },
+ "O22-R09": {
+  "option": "Reculer rapidement pour limiter le temps de danger.",
+  "why": "La marche arrière se fait à l’allure du pas ; la vitesse augmente le danger."
+ },
+ "O22-R11": {
+  "option": "Seulement lorsque la voie de droite est encombrée.",
+  "why": "La présélection dépend de la direction choisie, pas de l’état de la voie de droite."
+ },
+ "O22-R12": {
+  "option": "Oui, si la ligne médiane est discontinue.",
+  "why": "Une ligne discontinue n’autorise pas à rouler sur la partie du trafic opposé pour se présélectionner."
+ },
+ "O22-R14": {
+  "option": "Vous vous arrêtez sur la voie pour attendre une ouverture.",
+  "why": "S’arrêter pour attendre de franchir la ligne crée un danger et ne rend pas la manœuvre permise."
+ },
+ "O22-R17": {
+  "option": "Oui, chacun peut se placer librement sur la chaussée.",
+  "why": "La présélection s’applique aussi sans voies marquées, dans la mesure du possible."
+ },
+ "O22-R18": {
+  "option": "Tourner à droite depuis cette voie en signalant tôt.",
+  "why": "La flèche impose la direction ; le clignotant n’autorise pas à s’en écarter."
+ },
+ "O22-R19": {
+  "option": "Les autres usagers doivent toujours s’arrêter pour le laisser faire.",
+  "why": "Le conducteur du véhicule long doit prendre des précautions ; il n’obtient pas de priorité."
+ },
+ "O22-R21": {
+  "option": "Non, si vous ralentissez suffisamment avant le virage.",
+  "why": "Ralentir ne remplace pas l’obligation d’annoncer le changement de direction."
+ },
+ "O22-R23": {
+  "option": "Le véhicule arrivé le premier à l’intersection.",
+  "why": "Celui qui tourne à gauche cède au trafic venant en sens inverse, quel que soit l’ordre d’arrivée."
+ },
+ "O22-R24": {
+  "option": "Klaxonner pour qu’il freine avant le carrefour.",
+  "why": "Le cycliste qui continue tout droit est prioritaire ; c’est à vous d’attendre."
+ },
+ "O22-R25": {
+  "option": "Vous klaxonnez pour qu’il accélère sa traversée.",
+  "why": "Le piéton engagé sur le passage a la priorité ; il ne doit pas être pressé."
+ },
+ "O22-R26": {
+  "option": "Oui, si vous mettez le clignotant à temps.",
+  "why": "Le clignotant n’autorise pas à couper le virage et à envahir la partie opposée."
+ },
+ "O22-R30": {
+  "option": "Le fait que la moto est plus petite que votre voiture.",
+  "why": "La taille du véhicule ne change rien : la moto venant en face est prioritaire."
+ },
+ "O22-R31": {
+  "option": "Le premier qui allume ses phares.",
+  "why": "Un appel de phares ne crée pas de priorité ; celui dont le côté est obstrué cède."
+ },
+ "O22-R32": {
+  "option": "Le véhicule le plus lourd doit toujours céder.",
+  "why": "C’est la position de l’obstacle qui détermine qui cède, pas le poids."
+ },
+ "O22-R33": {
+  "option": "Le véhicule stationné vous donne la priorité sur ceux qui suivent.",
+  "why": "Se déporter ne donne aucune priorité sur un usager qui vous suit ou vous dépasse."
+ },
+ "O22-R34": {
+  "option": "Oui, si vous allumez les feux de détresse.",
+  "why": "Le signal 2.34 impose le côté du contournement ; les feux de détresse n’y changent rien."
+ },
+ "O22-R35": {
+  "option": "Une vitesse plus élevée pour réduire le temps de passage.",
+  "why": "Passer plus vite réduit la marge de réaction si le cycliste bouge."
+ },
+ "O22-R39": {
+  "option": "Klaxonner et franchir l’axe à vitesse normale.",
+  "why": "Le klaxon ne rend pas visible un véhicule caché par le virage."
+ },
+ "O22-R41": {
+  "option": "À la vitesse de la circulation environnante.",
+  "why": "La marche arrière se fait à l’allure du pas."
+ },
+ "O22-R42": {
+  "option": "Celui des deux qui klaxonne le premier.",
+  "why": "Le klaxon ne crée pas de priorité ; celui qui recule doit céder."
+ },
+ "O22-R43": {
+  "option": "Oui, si vous klaxonnez avant de reculer.",
+  "why": "Le klaxon ne remplace pas la visibilité exigée sur les débouchés."
+ },
+ "O22-R46": {
+  "option": "Oui, si l’écran affiche des lignes de guidage.",
+  "why": "Les lignes de guidage restent une aide ; les contrôles directs restent nécessaires."
+ },
+ "O22-R48": {
+  "option": "Oui, si vous restez à l’allure du pas.",
+  "why": "La marche arrière est interdite sur l’autoroute, quelle que soit l’allure."
+ },
+ "O22-R50": {
+  "option": "Vous klaxonnez puis poursuivez la manœuvre.",
+  "why": "Un piéton hors de vue peut être derrière le véhicule ; il faut s’arrêter."
+ },
+ "O22-R51": {
+  "option": "Il est prioritaire dès qu’il est signalé.",
+  "why": "Le clignotant n’accorde aucune priorité ; le demi-tour ne doit gêner personne."
+ },
+ "O22-R52": {
+  "option": "Oui si vous allumez les feux de détresse.",
+  "why": "Les feux de détresse ne compensent pas l’absence de visibilité, qui interdit la manœuvre."
+ },
+ "O22-R53": {
+  "option": "Oui si un conducteur vous fait un appel de phares.",
+  "why": "Un appel de phares ne lève pas l’interdiction liée au trafic intense."
+ },
+ "O22-R54": {
+  "option": "Le véhicule qui a mis le clignotant en premier.",
+  "why": "Le clignotant ne donne pas la priorité ; la voiture qui circule normalement passe d’abord."
+ },
+ "O22-R55": {
+  "option": "Oui, à condition de rouler lentement.",
+  "why": "Le demi-tour est interdit sur l’autoroute, quelle que soit la vitesse."
+ },
+ "O22-R58": {
+  "option": "Reculer jusqu’au dernier carrefour dépassé.",
+  "why": "Une marche arrière sur une longue distance n’est admise que si aucune autre solution n’existe."
+ }
+}

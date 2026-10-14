@@ -1,0 +1,74 @@
+{
+ "U25-Q01": {
+  "option": "Je contrôle seulement le rétroviseur intérieur.",
+  "why": "Le rétroviseur intérieur ne montre pas l’angle mort gauche ; il faut aussi le regard par-dessus l’épaule."
+ },
+ "U25-Q03": {
+  "option": "Il braque de lui-même pour contourner tout obstacle.",
+  "why": "Le freinage d’urgence agit sur les freins ; il ne garantit aucun évitement par la direction."
+ },
+ "U25-Q05": {
+  "option": "Aux aides qui gardent la distance avec le véhicule devant.",
+  "why": "La lecture des panneaux informe seulement ; elle n’agit pas sur la distance."
+ },
+ "U25-Q06": {
+  "option": "Je peux confier la conduite au système dans les bouchons.",
+  "why": "Un nom commercial ne vaut pas homologation ; le conducteur garde la conduite."
+ },
+ "U25-Q07": {
+  "option": "Le passager avant, s’il y en a un.",
+  "why": "La surveillance de la route incombe toujours au conducteur."
+ },
+ "U25-Q10": {
+  "option": "Confier la conduite au système dès que la route est droite.",
+  "why": "Reprendre la conduite signifie en reprendre soi-même le contrôle complet."
+ },
+ "U25-Q11": {
+  "option": "En roulant sur autoroute, d’une seule main.",
+  "why": "Les réglages se font de préférence à l’arrêt, avant le départ."
+ },
+ "U25-Q13": {
+  "option": "Je compte sur la lecture des panneaux pour corriger seule la vitesse.",
+  "why": "Le régulateur ne reconnaît pas toujours les limites de chantier ; c’est au conducteur d’agir."
+ },
+ "U25-Q14": {
+  "option": "Régler la distance minimale pour éviter les insertions.",
+  "why": "Une distance minimale réduit le temps de réaction au lieu de garder une marge."
+ },
+ "U25-Q16": {
+  "option": "Le système se désactive automatiquement chaque hiver.",
+  "why": "L’indisponibilité vient le plus souvent d’un capteur recouvert, pas de la saison."
+ },
+ "U25-Q17": {
+  "option": "Surtout en ville par temps sec et lumineux.",
+  "why": "Les capteurs sont surtout gênés par la pluie, le brouillard ou le soleil bas."
+ },
+ "U25-Q18": {
+  "option": "Oui, dès que les feux de signalisation sont éteints.",
+  "why": "Une aide peut ne pas comprendre les signes d’un agent, feux éteints ou non."
+ },
+ "U25-Q20": {
+  "option": "Le conducteur de devant, car il a freiné.",
+  "why": "Celui qui suit doit garder une distance suffisante ; l’aide ne transfère pas sa responsabilité."
+ },
+ "U25-Q23": {
+  "option": "Parce que les aides rendent les pauses inutiles.",
+  "why": "Les aides ne combattent pas la fatigue ; les pauses restent nécessaires."
+ },
+ "U25-Q24": {
+  "option": "Donner un coup de volant sans regarder.",
+  "why": "Un écart brusque sans observation peut créer une autre collision ; il faut freiner franchement."
+ },
+ "U25-Q27": {
+  "option": "La voiture continue à suivre la voie grâce à la caméra.",
+  "why": "Une fois l’aide coupée, plus aucune correction n’est faite : le conducteur dirige seul."
+ },
+ "U25-Q29": {
+  "option": "Le CTC devient facultatif.",
+  "why": "La réforme réorganise le CTC sans le rendre facultatif."
+ },
+ "U25-Q30": {
+  "option": "Permettre de passer l’examen pratique sans leçons de conduite.",
+  "why": "Le but est la continuité entre théorie et pratique, non la suppression des leçons."
+ }
+}

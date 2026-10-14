@@ -42,7 +42,7 @@ class SwissDriverTests(unittest.TestCase):
         out=ROOT/'test-results';out.mkdir(exist_ok=True)
         (out/'course-scene-contract.json').write_text(json.dumps({'scope':'structural, not a legal or driving-skill certification','parts':len(DATA['groups']),'chapters':len(DATA['chapters']),'rows':rows},ensure_ascii=False,indent=2))
     def test_06_transform_fails_closed(self):
-        code="const fs=require('fs'),assert=require('assert'),m=require('./src/transform.js');const r=p=>fs.readFileSync(p,'utf8');const a=[r('Permis_GT_Rossa.html'),r('swissdriver-modern.css'),r('src/sedan.js'),r('src/engine-bridge.js')];assert.throws(()=>m.assemble(a[0].replace('function Kf(){','function missing(){'),...a.slice(1)));const html=m.assemble(...a);assert.throws(()=>m.assemble(html,...a.slice(1)));assert.throws(()=>m.once('aa','a','b'));"
+        code="const fs=require('fs'),assert=require('assert'),m=require('./src/transform.js');const r=p=>fs.readFileSync(p,'utf8');const a=[r('Permis_GT_Rossa.html'),r('swissdriver-modern.css'),r('src/sedan.js'),r('src/engine-bridge.js'),r('src/curriculum.js')];assert.throws(()=>m.assemble(a[0].replace('function Kf(){','function missing(){'),...a.slice(1)));const html=m.assemble(...a);assert.throws(()=>m.assemble(html,...a.slice(1)));assert.throws(()=>m.once('aa','a','b'));"
         subprocess.run(['node','-e',code],cwd=ROOT,check=True)
     def test_07_vehicle_contract_and_light_theme(self):
         sedan=(ROOT/'src/sedan.js').read_text();css=(ROOT/'swissdriver-modern.css').read_text()

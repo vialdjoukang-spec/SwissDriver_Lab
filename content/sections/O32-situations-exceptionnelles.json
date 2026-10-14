@@ -1,0 +1,183 @@
+{
+ "chapterId": "O32",
+ "after": "gestion",
+ "section": {
+  "id": "situations-exceptionnelles",
+  "otitle": "Déviations et circulation à contresens temporaire",
+  "title": "Quand la route change : déviations, marquages jaunes et voies basculées",
+  "ogoal": "Reconnaître la signalisation temporaire, suivre une déviation, comprendre la priorité des marquages jaunes provisoires et circuler prudemment sur une chaussée où le trafic est temporairement basculé ou à double sens.",
+  "question": "Sur l’autoroute, les lignes blanches et des lignes jaunes se croisent dans un chantier : lesquelles faut-il suivre ?",
+  "lead": [
+   "Travaux, accident, manifestation : la route que vous connaissez peut changer du jour au lendemain. Des panneaux temporaires apparaissent, des marquages jaunes recouvrent les blancs et le trafic peut être dévié ou basculé sur l’autre chaussée. Cette section vous apprend à lire ces situations exceptionnelles et à y adapter votre conduite."
+  ],
+  "parts": [
+   {
+    "title": "Signalisation temporaire et marquages jaunes",
+    "body": [
+     "Dans un chantier ou lors d’un événement, l’autorité installe une **signalisation temporaire** : panneaux, balises, feux de chantier et marquages provisoires. Ces signaux s’appliquent **comme** les signaux permanents. Une limitation de vitesse de chantier est un maximum obligatoire, et un feu de chantier qui règle une circulation alternée doit être respecté comme tout autre feu.",
+     "Les **marquages provisoires** sont tracés en **jaune**. Lorsqu’ils sont présents, ils **l’emportent sur les marquages blancs** habituels, même si ceux-ci restent visibles. Suivez donc les lignes jaunes pour savoir où rouler, et ignorez les lignes blanches qu’elles contredisent."
+    ]
+   },
+   {
+    "title": "Suivre une déviation",
+    "body": [
+     "Lorsqu’une route est fermée, une **déviation** est signalée par des panneaux qui indiquent l’itinéraire de remplacement. Repérez le premier panneau et suivez ensuite chaque indication, sans chercher votre propre raccourci : l’itinéraire a été choisi pour que le trafic puisse passer en sécurité.",
+     "Une déviation vous amène souvent sur des routes que vous ne connaissez pas, parfois étroites ou traversant des localités. Réduisez votre vitesse, attendez-vous à des carrefours inhabituels et à des usagers surpris eux aussi. Un système de navigation peut ne pas connaître la déviation : en cas de contradiction, la **signalisation sur place prime**."
+    ]
+   },
+   {
+    "title": "Trafic basculé et circulation à contresens temporaire",
+    "body": [
+     "Sur une autoroute en travaux, le trafic d’un sens peut être **basculé** sur l’autre chaussée. Vous roulez alors sur une chaussée où, temporairement, des véhicules circulent **en sens inverse** juste à côté de vous, séparés seulement par des balises ou un marquage. Les voies sont souvent plus étroites, et la bande d’arrêt d’urgence peut manquer.",
+     "Dans cette situation, la vigilance doit être maximale : restez au centre de votre voie, gardez une distance plus grande, ne dépassez pas lorsque c’est interdit ou que la largeur ne le permet pas, et respectez la vitesse signalée, voire roulez plus lentement si la situation l’exige. Une seconde d’inattention peut suffire à franchir la séparation et à provoquer une collision frontale."
+    ]
+   }
+  ],
+  "words": [
+   {
+    "term": "Signalisation temporaire",
+    "def": "Panneaux, feux, balises et marquages installés pour une durée limitée, par exemple pour un chantier. Ils s’appliquent comme les signaux permanents."
+   },
+   {
+    "term": "Marquage jaune provisoire",
+    "def": "Ligne tracée en jaune pendant un chantier ; elle l’emporte sur les marquages blancs habituels."
+   },
+   {
+    "term": "Déviation",
+    "def": "Itinéraire de remplacement signalé lorsqu’une route est fermée."
+   },
+   {
+    "term": "Trafic basculé",
+    "def": "Situation où le trafic d’un sens est dirigé sur l’autre chaussée, avec une circulation à double sens temporaire."
+   }
+  ],
+  "method": [
+   "Repérez de loin les premiers signaux temporaires et réduisez votre vitesse.",
+   "Suivez les marquages jaunes lorsqu’ils contredisent les marquages blancs.",
+   "Sur une déviation, suivez chaque panneau, même si votre navigation dit autre chose.",
+   "Dans une zone de trafic basculé, restez au centre de votre voie et augmentez la distance.",
+   "Respectez la vitesse signalée comme un maximum et ralentissez davantage si nécessaire."
+  ],
+  "example": {
+   "title": "Les lignes jaunes du chantier",
+   "scene": "Sur l’autoroute, vous approchez d’un chantier. La vitesse est réduite par des panneaux. Les anciennes lignes blanches sont encore visibles, mais de nouvelles lignes jaunes partent en biais vers la gauche et vous conduisent sur la chaussée opposée, où des balises vous séparent des véhicules qui viennent en face.",
+   "reasoning": [
+    "Les lignes jaunes sont des marquages provisoires : elles l’emportent sur les lignes blanches.",
+    "Vous suivez donc le tracé jaune et vous respectez la vitesse signalée.",
+    "Sur la chaussée basculée, le trafic opposé est tout proche : vous restez au centre de votre voie, à bonne distance, sans dépasser là où ce n’est pas permis ou pas possible en sécurité."
+   ],
+   "answer": "Vous suivez les lignes jaunes, vous respectez la vitesse du chantier et vous redoublez d’attention jusqu’à la fin de la zone de trafic basculé."
+  },
+  "trap": "Le piège est de suivre par habitude les lignes blanches ou le système de navigation, alors que la signalisation temporaire a changé l’itinéraire. Un autre piège est de reprendre de la vitesse trop tôt dans un long chantier. Tant que la signalisation temporaire continue, votre vigilance continue.",
+  "remember": "Signalisation temporaire = règles à suivre ; jaune l’emporte sur blanc ; trafic basculé = vigilance maximale.",
+  "memo": {
+   "code": "J > B",
+   "text": "Jaune l’emporte sur Blanc. Et dans un chantier, je ralentis, je suis le jaune et je garde mes distances."
+  },
+  "law": "LCR ; OSR"
+ },
+ "questions": [
+  {
+   "id": "O32-EXC-01",
+   "chapter": "O32",
+   "section": "situations-exceptionnelles",
+   "stem": "Dans un chantier, des marquages jaunes et des marquages blancs se contredisent. Lesquels suivez-vous ?",
+   "options": [
+    "Les marquages jaunes.",
+    "Les marquages blancs, car ils sont permanents.",
+    "Les marquages jaunes provisoires l’emportent sur les marquages blancs."
+   ],
+   "answers": [0, 2],
+   "truth": "Les marquages jaunes provisoires priment sur les marquages blancs.",
+   "why": "Ils indiquent le tracé valable pendant le chantier.",
+   "trap": "Suivre par habitude les lignes blanches.",
+   "action": "Suivez les lignes jaunes jusqu’à la fin du chantier.",
+   "memory": "Jaune > blanc."
+  },
+  {
+   "id": "O32-EXC-02",
+   "chapter": "O32",
+   "section": "situations-exceptionnelles",
+   "stem": "Que savez-vous de la signalisation temporaire d’un chantier ?",
+   "options": [
+    "Elle s’applique comme la signalisation permanente.",
+    "Une vitesse maximale de chantier est seulement une recommandation.",
+    "Un feu de chantier réglant une circulation alternée doit être respecté."
+   ],
+   "answers": [0, 2],
+   "truth": "Les signaux temporaires sont obligatoires comme les signaux permanents.",
+   "why": "Ils adaptent les règles à une situation de danger particulière.",
+   "trap": "Considérer la signalisation de chantier comme facultative.",
+   "action": "Respectez chaque panneau et chaque feu de chantier.",
+   "memory": "Temporaire, mais obligatoire."
+  },
+  {
+   "id": "O32-EXC-03",
+   "chapter": "O32",
+   "section": "situations-exceptionnelles",
+   "stem": "Une route est fermée et une déviation est signalée. Votre système de navigation propose un autre itinéraire. Que faites-vous ?",
+   "options": [
+    "Vous suivez les panneaux de déviation.",
+    "Vous suivez la navigation, car elle connaît le trajet le plus court.",
+    "En cas de contradiction, la signalisation sur place prime."
+   ],
+   "answers": [0, 2],
+   "truth": "La signalisation sur place prime sur les indications d’un système de navigation.",
+   "why": "La navigation peut ignorer une fermeture ou une déviation récente.",
+   "trap": "Faire plus confiance à l’écran qu’aux panneaux.",
+   "action": "Suivez chaque panneau de déviation jusqu’à votre retour sur l’itinéraire normal.",
+   "memory": "Le panneau prime sur l’écran."
+  },
+  {
+   "id": "O32-EXC-04",
+   "chapter": "O32",
+   "section": "situations-exceptionnelles",
+   "stem": "Sur l’autoroute, le trafic est basculé sur l’autre chaussée. Des véhicules circulent en sens inverse juste à côté de vous. Qu’est-ce qui est juste ?",
+   "options": [
+    "Vous restez au centre de votre voie et augmentez votre distance.",
+    "Vous pouvez dépasser librement, puisque vous êtes sur l’autoroute.",
+    "Une inattention peut provoquer une collision frontale."
+   ],
+   "answers": [0, 2],
+   "truth": "Le trafic basculé exige une vigilance maximale.",
+   "why": "Seules des balises ou un marquage vous séparent du trafic venant en face.",
+   "trap": "Conduire comme sur une autoroute normale.",
+   "action": "Tenez votre voie, gardez vos distances et respectez la vitesse signalée.",
+   "memory": "Trafic en face : vigilance maximale."
+  },
+  {
+   "id": "O32-EXC-05",
+   "chapter": "O32",
+   "section": "situations-exceptionnelles",
+   "stem": "Vous suivez une déviation qui vous fait passer par des routes inconnues et des petites localités. Que faites-vous ?",
+   "options": [
+    "Vous réduisez votre vitesse et vous attendez à des carrefours inhabituels.",
+    "Vous roulez plus vite pour rattraper le temps perdu.",
+    "Vous restez attentif à d’autres usagers eux aussi surpris par la déviation."
+   ],
+   "answers": [0, 2],
+   "truth": "Une déviation demande une vitesse adaptée à des routes inconnues.",
+   "why": "Les routes de déviation sont souvent plus étroites et moins familières, pour vous comme pour les autres.",
+   "trap": "Compenser le détour par la vitesse.",
+   "action": "Acceptez le détour et adaptez votre allure.",
+   "memory": "Déviation = découverte, donc lenteur."
+  },
+  {
+   "id": "O32-EXC-06",
+   "chapter": "O32",
+   "section": "situations-exceptionnelles",
+   "stem": "Dans un long chantier autoroutier, la limitation de vitesse signalée est encore en vigueur, mais la route paraît dégagée. Qu’est-ce qui est vrai ?",
+   "options": [
+    "La vitesse signalée reste un maximum obligatoire.",
+    "Vous pouvez reprendre votre vitesse habituelle dès que vous ne voyez plus d’ouvriers.",
+    "Vous pouvez devoir rouler plus lentement que la limite si la situation l’exige."
+   ],
+   "answers": [0, 2],
+   "truth": "La limitation de chantier s’applique jusqu’à sa fin signalée et reste un plafond.",
+   "why": "Les dangers d’un chantier ne se voient pas toujours : voies étroites, obstacles, revêtement modifié.",
+   "trap": "Accélérer trop tôt parce que la zone semble vide.",
+   "action": "Attendez la fin signalée de la limitation avant de reprendre de la vitesse.",
+   "memory": "Fin du chantier = fin du panneau, pas fin des ouvriers."
+  }
+ ]
+}

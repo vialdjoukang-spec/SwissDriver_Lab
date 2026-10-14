@@ -1,0 +1,781 @@
+{
+ "chapter": {
+  "id": "N25",
+  "official": "2.5",
+  "group": "G2",
+  "otitle": "Observation de la circulation et techniques d’observation",
+  "title": "Regarder pour comprendre la circulation",
+  "oscope": "Diriger le regard loin et au bon endroit, observer de façon sélective et méthodique, effectuer les regards de contrôle et adapter l’observation aux conditions de visibilité.",
+  "tagline": "À la fin de ce chapitre, vous saurez où, quand et combien de temps regarder, et pourquoi chaque seconde gagnée par le regard compte pour réagir.",
+  "intro": [
+   "Au volant, presque toutes les informations dont vous avez besoin arrivent par les yeux. Bien conduire commence donc par bien **regarder** : au bon endroit, au bon moment et pendant la bonne durée. Un regard mal dirigé fait manquer un danger ; un regard bien organisé vous donne le temps de décider calmement.",
+   "Regarder ne suffit pas : il faut aussi **comprendre** ce que l’on voit, puis **agir**. Entre le moment où un danger apparaît et celui où votre pied appuie sur le frein, il s’écoule toujours du temps, pendant lequel votre voiture continue d’avancer. Une bonne technique d’observation sert précisément à repérer les situations assez tôt pour que ce temps ne devienne pas un problème.",
+   "Ce chapitre vous apprend quatre techniques complémentaires : orienter votre regard loin devant, trier les informations utiles et observer avec méthode, contrôler les zones à risque avant chaque manœuvre, et adapter votre observation quand la visibilité diminue."
+  ],
+  "keyIdea": "Ce que vous voyez tôt, vous le gérez calmement ; ce que vous voyez tard, vous le subissez.",
+  "memo": {
+   "code": "L–T–C–V",
+   "text": "Loin (regarder loin devant), Tri (sélectionner l’utile, observer avec méthode), Contrôle (rétroviseurs, angle mort, croisements), Visibilité (adapter la vitesse quand on voit moins)."
+  },
+  "color": "#2a6a4f",
+  "sources": [
+   {
+    "label": "asa · Catalogue des compétences, théorie de base",
+    "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+   },
+   {
+    "label": "Fedlex · LCR",
+    "href": "https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr"
+   },
+   {
+    "label": "BPA · Conseils de prévention",
+    "href": "https://www.bfu.ch/fr"
+   }
+  ],
+  "sections": [
+   {
+    "id": "orientation-regard",
+    "otitle": "Orientation du regard et anticipation précoce",
+    "title": "Regarder loin devant, sans fixer un seul point",
+    "ogoal": "Diriger le regard loin devant, le déplacer régulièrement et repérer tôt les situations afin de gagner du temps pour décider.",
+    "question": "Où devez-vous regarder la plupart du temps quand vous conduisez ?",
+    "lead": [
+     "Les débutants regardent souvent juste devant le capot. C’est naturel, mais cela les prive de temps. Cette section vous montre où diriger votre regard, combien de temps le laisser à un endroit et comment il guide votre trajectoire."
+    ],
+    "parts": [
+     {
+      "title": "Regarder loin pour gagner du temps",
+      "body": [
+       "Plus vous regardez **loin**, plus vous découvrez tôt ce qui vous attend : un bouchon, un feu, un piéton, un virage serré, des travaux. Chaque situation repérée tôt vous laisse du temps pour lever le pied, contrôler le rétroviseur et choisir votre position sans précipitation. C’est cela, l’**anticipation précoce**.",
+       "Regarder loin ne veut pas dire ignorer ce qui est proche. Votre regard fait des allers-retours entre le loin, la distance intermédiaire et les abords immédiats du véhicule. En localité, où les situations changent vite, votre regard porte un peu moins loin mais balaie davantage les côtés ; sur l’autoroute, il porte très loin devant."
+      ]
+     },
+     {
+      "title": "Durée du regard : balayer plutôt que fixer",
+      "body": [
+       "Un regard qui reste longtemps sur un seul point devient une **fixation** : vous voyez bien ce point, mais vous ne remarquez plus ce qui se passe autour. Préférez des regards courts et fréquents qui **balaient** la scène : loin devant, côtés, rétroviseurs, tableau de bord, puis à nouveau devant.",
+       "La **vision périphérique**, c’est-à-dire ce que vous percevez du coin de l’œil, détecte surtout les mouvements. Elle vous alerte, mais elle ne vous donne pas les détails : quand elle repère quelque chose, tournez les yeux vers l’endroit pour comprendre ce qui se passe. Les regards hors de la route, par exemple vers un écran, doivent rester très brefs."
+      ]
+     },
+     {
+      "title": "Le regard guide la trajectoire",
+      "body": [
+       "Vos mains suivent naturellement vos yeux. Dans un virage, regardez vers la **sortie du virage**, aussi loin que la vue le permet : votre trajectoire sera plus régulière et vous découvrirez plus tôt ce qui se trouve après.",
+       "Dans une situation d’urgence, regardez l’**espace libre** où vous voulez aller, et non l’obstacle à éviter. Si vous fixez l’obstacle, vous risquez de vous diriger vers lui sans le vouloir."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Regard lointain",
+      "def": "Regard porté loin devant le véhicule pour repérer tôt les situations à venir."
+     },
+     {
+      "term": "Balayage visuel",
+      "def": "Succession de regards courts sur différentes zones de la scène, pour ne rien laisser de côté."
+     },
+     {
+      "term": "Fixation",
+      "def": "Regard qui reste trop longtemps sur un même point, au détriment du reste de la scène."
+     },
+     {
+      "term": "Vision périphérique",
+      "def": "Ce que l’on perçoit du coin de l’œil ; elle détecte surtout les mouvements, pas les détails."
+     }
+    ],
+    "method": [
+     "Portez votre regard loin devant, aussi loin que la route est visible.",
+     "Faites des allers-retours réguliers entre le loin, l’intermédiaire et le proche.",
+     "Gardez des regards courts et revenez souvent à la route devant vous.",
+     "Dans un virage, regardez vers la sortie.",
+     "En urgence, regardez l’espace libre où vous voulez aller."
+    ],
+    "example": {
+     "title": "Le virage en forêt",
+     "scene": "Sur une route hors localité près de Fribourg, vous approchez d’un virage à gauche dans une forêt. Un panneau signale le virage. Vous ne voyez pas encore la sortie.",
+     "reasoning": [
+      "Le panneau et la forêt vous informent tôt : le virage est peut-être serré et la vue sur la sortie est limitée.",
+      "Vous adaptez votre vitesse avant d’entrer dans le virage, pour pouvoir vous arrêter dans la distance que vous voyez.",
+      "Dans le virage, vous portez le regard vers la sortie dès qu’elle apparaît, ce qui vous permet de découvrir un cycliste qui roule juste après."
+     ],
+     "answer": "Grâce au regard lointain, vous ralentissez avant le virage. Grâce au regard vers la sortie, vous découvrez le cycliste à temps et vous restez derrière lui."
+    },
+    "trap": "Le piège est de regarder le capot ou la ligne juste devant la roue, surtout quand on est stressé. Vous découvrez alors tout au dernier moment. Forcez-vous à lever les yeux loin devant, puis à balayer la scène.",
+    "remember": "Regardez loin, balayez souvent, et laissez le regard guider la trajectoire.",
+    "memo": {
+     "code": "L–B–S",
+     "text": "Loin (regard porté loin devant), Balayer (regards courts et fréquents), Sortie (dans un virage, regardez où vous allez)."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 2",
+    "source": {
+     "label": "asa · Catalogue des compétences",
+     "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+    }
+   },
+   {
+    "id": "regards-selectifs",
+    "otitle": "Regards sélectifs et méthodiques",
+    "title": "Trier ce qui compte et regarder dans un ordre",
+    "ogoal": "Distinguer les informations importantes des détails inutiles et observer selon un ordre systématique pour ne rien oublier.",
+    "question": "Dans une rue animée pleine de panneaux, de vitrines et de passants, comment savoir quoi regarder ?",
+    "lead": [
+     "Il y a toujours plus à voir que ce que votre cerveau peut traiter. Le regard **sélectif** trie l’essentiel ; le regard **méthodique** suit un ordre pour ne rien oublier. Les deux ensemble rendent votre observation fiable."
+    ],
+    "parts": [
+     {
+      "title": "Sélectionner ce qui peut vous concerner",
+      "body": [
+       "Une information est **pertinente** lorsqu’elle peut influencer votre conduite : la signalisation, les marquages, les feux, et surtout les usagers qui pourraient croiser votre trajectoire. Un piéton près du bord, un cycliste, une voiture qui sort d’une place de parc ou un ballon qui roule méritent votre attention.",
+       "Ce qui ne peut pas entrer dans votre trajectoire, comme une façade, un paysage ou une vitrine, n’a pas besoin d’être regardé. Posez-vous la question : « Est-ce que cela peut bouger vers moi ou m’obliger à changer quelque chose ? » Si oui, gardez-le à l’œil."
+      ]
+     },
+     {
+      "title": "Observer méthodiquement",
+      "body": [
+       "Une **méthode** est un ordre d’observation que vous répétez toujours de la même façon. Par exemple : loin devant, puis les côtés, puis les rétroviseurs, puis à nouveau devant. À une intersection : d’un côté, de l’autre, puis encore une fois du premier côté avant de vous engager, car la situation a pu changer pendant que vous regardiez ailleurs.",
+       "L’avantage d’une méthode, c’est qu’elle devient une habitude. Même fatigué ou stressé, vous continuez à regarder partout où c’est nécessaire. C’est une méthode pédagogique, pas une règle de loi : l’essentiel est qu’aucune zone importante ne soit oubliée."
+      ]
+     },
+     {
+      "title": "Les distractions qui captent le regard",
+      "body": [
+       "Certaines choses attirent le regard sans être utiles : un écran publicitaire lumineux, un accident sur la voie d’en face, une notification sur le téléphone. Une **distraction** détourne votre attention de la circulation, même brièvement, et c’est justement pendant ce moment qu’un danger peut apparaître.",
+       "Quand vous remarquez que votre regard a été capté, ramenez-le volontairement sur la route. Rangez le téléphone avant de partir et réglez la navigation à l’arrêt. Le BPA donne des conseils détaillés sur les distractions au volant."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Regard sélectif",
+      "def": "Façon d’observer qui donne la priorité aux informations pouvant influencer votre conduite."
+     },
+     {
+      "term": "Observation méthodique",
+      "def": "Observation qui suit un ordre fixe et répété, pour ne laisser aucune zone importante de côté."
+     },
+     {
+      "term": "Information pertinente",
+      "def": "Élément de la scène qui peut vous obliger à modifier votre vitesse, votre position ou votre trajectoire."
+     },
+     {
+      "term": "Distraction",
+      "def": "Ce qui détourne votre regard ou votre attention de la circulation."
+     }
+    ],
+    "method": [
+     "Repérez d’abord la signalisation et les règles de priorité qui s’appliquent.",
+     "Identifiez les usagers qui pourraient croiser votre trajectoire.",
+     "Suivez toujours le même ordre d’observation.",
+     "À une intersection, regardez d’un côté, de l’autre, puis encore du premier côté.",
+     "Ramenez volontairement votre regard sur la route si une distraction l’a capté."
+    ],
+    "example": {
+     "title": "Le carrefour animé",
+     "scene": "Au centre de Bienne, vous approchez d’un carrefour avec feux. Il y a des vitrines éclairées, un grand écran publicitaire, des terrasses de café, un cycliste à votre droite et des piétons qui attendent au bord du trottoir.",
+     "reasoning": [
+      "Vous triez : le feu, le cycliste et les piétons au bord du trottoir sont pertinents. Les vitrines, les terrasses et l’écran ne le sont pas.",
+      "Vous suivez votre méthode : feu, piétons, cycliste dans le rétroviseur droit, puis à nouveau devant.",
+      "L’écran publicitaire change d’image et attire votre œil : vous ramenez immédiatement votre regard sur le carrefour."
+     ],
+     "answer": "Vous concentrez votre regard sur le feu, les piétons et le cycliste, dans un ordre fixe, et vous ignorez volontairement ce qui ne peut pas croiser votre trajectoire."
+    },
+    "trap": "Le piège est de croire que regarder beaucoup suffit. Regarder partout sans trier ni suivre d’ordre fatigue et fait oublier des zones. Triez l’utile et répétez toujours la même méthode.",
+    "remember": "Triez ce qui peut vous concerner et regardez toujours dans le même ordre.",
+    "memo": {
+     "code": "T–O–R",
+     "text": "Trier (ce qui peut me concerner), Ordonner (toujours le même ordre), Revenir (ramener le regard sur la route après une distraction)."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 2",
+    "source": {
+     "label": "BPA · Conseils de prévention",
+     "href": "https://www.bfu.ch/fr"
+    }
+   },
+   {
+    "id": "regards-controle",
+    "otitle": "Regards de contrôle",
+    "title": "Vérifier avant d’agir : rétroviseurs, angle mort et croisements",
+    "ogoal": "Effectuer au bon moment les regards de contrôle dans les rétroviseurs, dans l’angle mort et aux croisements avant chaque changement de voie, de direction ou de vitesse.",
+    "question": "Quand et où devez-vous regarder avant de changer de voie ou de tourner ?",
+    "lead": [
+     "Un regard de contrôle est un regard ciblé, fait juste avant une action, pour vérifier que cette action est possible sans danger. Il ne remplace pas l’observation générale : il la complète au moment décisif."
+    ],
+    "parts": [
+     {
+      "title": "Les rétroviseurs : régulièrement et avant chaque action",
+      "body": [
+       "Regardez dans les **rétroviseurs** régulièrement, même sans manœuvre prévue : vous savez ainsi en permanence qui vous suit et qui roule à côté de vous. Si vous devez freiner soudainement, vous savez déjà si quelqu’un vous suit de près.",
+       "Avant chaque action qui modifie votre trajectoire ou votre vitesse, faites un regard de contrôle : avant de ralentir, de freiner, de changer de voie, de tourner, de vous arrêter ou de repartir. L’ordre habituel enseigné est : rétroviseurs, clignoteur, regard dans l’angle mort, puis manœuvre."
+      ]
+     },
+     {
+      "title": "L’angle mort : le regard par-dessus l’épaule",
+      "body": [
+       "Les rétroviseurs ne montrent pas tout. Avant de vous déporter, de tourner ou de quitter une place de stationnement, jetez un **regard par-dessus l’épaule** du côté où vous allez. Ce regard doit être bref, pour ne pas perdre de vue la route devant vous.",
+       "Pensez particulièrement aux cyclistes et aux motocyclistes, qui sont étroits et peuvent se glisser dans l’angle mort. Avant d’ouvrir votre portière côté chaussée, contrôlez aussi l’arrière : un cycliste qui arrive peut être heurté par une portière ouverte sans contrôle."
+      ]
+     },
+     {
+      "title": "Croisements et intersections : contrôler avant de s’engager",
+      "body": [
+       "À l’approche d’une intersection, contrôlez toutes les directions d’où un usager peut venir : gauche, droite, en face, ainsi que les passages pour piétons et les pistes cyclables. Si la vue est masquée, avancez lentement pour gagner de la visibilité.",
+       "Faites un **dernier contrôle** juste avant de vous engager, surtout si vous avez attendu : la situation a pu changer depuis votre premier regard. En tournant, vérifiez aussi les piétons et les cyclistes dans la rue où vous entrez."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Regard de contrôle",
+      "def": "Regard ciblé fait juste avant une manœuvre pour vérifier qu’elle est possible sans danger."
+     },
+     {
+      "term": "Regard par-dessus l’épaule",
+      "def": "Bref coup d’œil en tournant la tête, pour contrôler l’angle mort que les rétroviseurs ne montrent pas."
+     },
+     {
+      "term": "Rétroviseur intérieur",
+      "def": "Rétroviseur placé au centre du pare-brise, qui montre ce qui se trouve derrière à travers la lunette arrière."
+     },
+     {
+      "term": "Dernier contrôle",
+      "def": "Regard répété juste avant de s’engager, pour vérifier que la situation n’a pas changé."
+     }
+    ],
+    "method": [
+     "Contrôlez régulièrement les rétroviseurs pendant toute la conduite.",
+     "Avant une manœuvre, regardez dans les rétroviseurs puis enclenchez le clignoteur.",
+     "Contrôlez l’angle mort par un bref regard par-dessus l’épaule.",
+     "Aux intersections, contrôlez toutes les directions, puis faites un dernier contrôle.",
+     "N’exécutez la manœuvre que si tous les contrôles sont favorables."
+    ],
+    "example": {
+     "title": "Tourner à gauche en localité",
+     "scene": "Dans une rue de Neuchâtel, vous voulez tourner à gauche dans une rue latérale. Une voiture vient en face, et vous savez qu’un scooter roulait derrière vous il y a quelques instants.",
+     "reasoning": [
+      "Vous contrôlez le rétroviseur intérieur et le rétroviseur gauche, puis vous enclenchez le clignoteur gauche et vous vous placez correctement.",
+      "Avant de quitter votre voie, un regard par-dessus l’épaule gauche vérifie que le scooter n’est pas en train de vous dépasser.",
+      "Vous laissez passer la voiture d’en face, puis vous contrôlez les piétons qui traversent la rue latérale avant de tourner."
+     ],
+     "answer": "Rétroviseurs, clignoteur, angle mort, véhicules en face, puis piétons dans la rue où vous entrez : chaque contrôle arrive juste avant l’action qu’il protège."
+    },
+    "trap": "Le piège est de faire les contrôles trop tôt, puis d’agir plusieurs secondes plus tard sans regarder à nouveau. Un contrôle n’est valable que s’il est fait juste avant l’action.",
+    "remember": "Avant chaque action : rétroviseurs, clignoteur, angle mort, puis dernier contrôle.",
+    "memo": {
+     "code": "R–C–A",
+     "text": "Rétroviseurs, Clignoteur, Angle mort : l’ordre de contrôle avant chaque changement de voie ou de direction."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 2",
+    "source": {
+     "label": "asa · Catalogue des compétences",
+     "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+    }
+   },
+   {
+    "id": "visibilite-reaction",
+    "otitle": "Conditions de visibilité et temps de réaction",
+    "title": "Quand on voit moins, on réagit plus tard",
+    "ogoal": "Adapter l’observation et la vitesse à l’obscurité, à l’éblouissement, à la pluie et au brouillard, et comprendre que percevoir, comprendre puis agir prend du temps.",
+    "question": "Pourquoi faut-il ralentir la nuit ou dans le brouillard, même sur une route que l’on connaît bien ?",
+    "lead": [
+     "Toute réaction suit une chaîne : percevoir le danger, comprendre ce qu’il signifie, décider, puis agir. Quand la visibilité baisse, la première étape arrive plus tard, et toute la chaîne est retardée. Votre vitesse doit en tenir compte."
+    ],
+    "parts": [
+     {
+      "title": "Obscurité et éblouissement",
+      "body": [
+       "De nuit, vous ne voyez que ce que vos phares et l’éclairage public éclairent. Les feux de croisement ont une portée limitée, et un piéton habillé en sombre apparaît très tard. Les contrastes et les couleurs sont moins bien perçus. Règle générale : vous devez pouvoir vous arrêter dans la distance que vous voyez libre.",
+       "L’**éblouissement** survient quand une lumière forte vous aveugle, par exemple les phares d’un véhicule qui arrive en face ou un soleil bas. Ne regardez pas la source de lumière : portez le regard vers le **bord droit de la chaussée** et réduisez votre vitesse. Après un éblouissement, vos yeux ont besoin d’un moment pour retrouver une vision normale."
+      ]
+     },
+     {
+      "title": "Pluie et brouillard",
+      "body": [
+       "Sous la **pluie**, les gouttes, les projections d’eau et la buée sur les vitres réduisent la vision. Utilisez les essuie-glaces et le désembuage, et allumez les feux de croisement. La chaussée mouillée allonge la distance de freinage et peut provoquer un aquaplanage : augmentez vos distances et réduisez votre vitesse.",
+       "Dans le **brouillard**, les distances sont difficiles à estimer et les autres usagers vous voient mal. Allumez les feux de croisement et, si votre véhicule en est équipé, les feux de brouillard dans les conditions prévues par la loi. N’utilisez pas les feux de route : leur lumière est renvoyée par le brouillard et vous éblouit. Réduisez fortement votre vitesse et augmentez la distance avec le véhicule qui précède."
+      ]
+     },
+     {
+      "title": "De la perception à la réaction",
+      "body": [
+       "Le **temps de réaction** est le temps qui s’écoule entre le moment où un danger apparaît et le moment où vous commencez à agir, par exemple à freiner. Pendant ce temps, votre voiture continue à rouler à la même vitesse : la distance parcourue s’appelle la **distance de réaction**. Si votre vitesse double, cette distance double aussi.",
+       "Le temps de réaction s’allonge avec la fatigue, l’alcool, certains médicaments, la distraction ou une situation inattendue. Il se raccourcit quand vous avez repéré les indices tôt et préparé votre geste. La **distance d’arrêt** est la somme de la distance de réaction et de la distance de freinage ; elle augmente fortement avec la vitesse et sur chaussée mouillée."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Éblouissement",
+      "def": "Gêne visuelle causée par une lumière forte, qui empêche temporairement de bien voir."
+     },
+     {
+      "term": "Temps de réaction",
+      "def": "Temps entre l’apparition d’un danger et le début de votre action, comme le freinage."
+     },
+     {
+      "term": "Distance de réaction",
+      "def": "Distance parcourue pendant le temps de réaction, à vitesse inchangée."
+     },
+     {
+      "term": "Distance d’arrêt",
+      "def": "Distance de réaction plus distance de freinage : l’espace total nécessaire pour s’arrêter."
+     }
+    ],
+    "method": [
+     "Évaluez la distance que vous voyez réellement libre devant vous.",
+     "Choisissez une vitesse qui vous permet de vous arrêter dans cette distance.",
+     "Utilisez les feux et les équipements adaptés aux conditions.",
+     "En cas d’éblouissement, regardez le bord droit et ralentissez.",
+     "Augmentez vos distances quand la visibilité ou l’adhérence diminuent."
+    ],
+    "example": {
+     "title": "Pluie nocturne hors localité",
+     "scene": "Il pleut, il fait nuit, et vous roulez sur une route cantonale hors localité dans le canton du Valais, sans éclairage public. Une voiture arrive en face avec des phares très lumineux. Au bord de la route, plus loin, marche un piéton habillé en sombre.",
+     "reasoning": [
+      "L’obscurité et la pluie réduisent déjà la distance que vous voyez ; la chaussée mouillée allonge la distance de freinage.",
+      "Les phares d’en face vous éblouissent : vous regardez vers le bord droit de la chaussée et vous réduisez votre vitesse.",
+      "Le piéton n’apparaît que tardivement dans vos phares. Comme vous avez déjà ralenti, il vous reste assez de distance pour l’éviter calmement en gardant un écart suffisant."
+     ],
+     "answer": "Obscurité, pluie et éblouissement s’additionnent : vous voyez plus tard, vous freinez plus long. Vous réduisez votre vitesse avant d’en avoir besoin, pour garder une distance d’arrêt compatible avec ce que vous voyez."
+    },
+    "trap": "Le piège est de rouler à la même vitesse que de jour parce que l’on connaît la route. Connaître la route ne vous montre pas le piéton ou l’obstacle qui s’y trouve ce soir. Votre vitesse doit dépendre de ce que vous voyez, pas de ce dont vous vous souvenez.",
+    "remember": "Moins vous voyez loin, plus vous devez rouler lentement, car la réaction arrive toujours avec un temps de retard.",
+    "memo": {
+     "code": "P–C–A",
+     "text": "Percevoir, Comprendre, Agir : trois étapes qui prennent du temps. Quand la visibilité baisse, la première arrive plus tard ; votre vitesse doit baisser aussi."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 2",
+    "source": {
+     "label": "BPA · Conseils de prévention",
+     "href": "https://www.bfu.ch/fr"
+    }
+   }
+  ]
+ },
+ "questions": [
+  {
+   "id": "N25-OR-01",
+   "chapter": "N25",
+   "section": "orientation-regard",
+   "stem": "Pourquoi est-il important de regarder loin devant soi ?",
+   "options": [
+    "Pour repérer tôt les situations et avoir plus de temps pour décider.",
+    "Pour pouvoir ignorer ce qui se passe près du véhicule.",
+    "Pour adapter sa vitesse avant d’arriver sur la difficulté."
+   ],
+   "answers": [0, 2],
+   "truth": "Le regard lointain donne du temps.",
+   "why": "Une situation repérée tôt peut être gérée calmement, par un ralentissement progressif plutôt qu’un freinage brusque.",
+   "trap": "Croire que regarder loin dispense de surveiller les abords du véhicule.",
+   "action": "Alternez entre le loin, l’intermédiaire et le proche.",
+   "memory": "Je vois loin, j’ai du temps."
+  },
+  {
+   "id": "N25-OR-02",
+   "chapter": "N25",
+   "section": "orientation-regard",
+   "stem": "Vous gardez longtemps les yeux sur un seul point devant vous. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Cela améliore la sécurité en ville.",
+    "Cela réduit votre perception de ce qui se passe autour.",
+    "Vous pouvez manquer un danger qui arrive sur le côté."
+   ],
+   "answers": [1, 2],
+   "truth": "La fixation réduit la perception du reste de la scène.",
+   "why": "Le regard doit balayer la scène par des regards courts et fréquents pour ne rien manquer.",
+   "trap": "Confondre concentration et fixation sur un point.",
+   "action": "Faites circuler votre regard : loin, côtés, rétroviseurs, puis devant.",
+   "memory": "Balayer, pas fixer."
+  },
+  {
+   "id": "N25-OR-03",
+   "chapter": "N25",
+   "section": "orientation-regard",
+   "stem": "Dans un virage, où portez-vous votre regard ?",
+   "options": [
+    "Vers la sortie du virage, aussi loin que la vue le permet.",
+    "Uniquement sur le capot de la voiture.",
+    "Sur la ligne de bord juste devant la roue."
+   ],
+   "answers": [0],
+   "truth": "Le regard vers la sortie guide une trajectoire régulière.",
+   "why": "Les mains suivent les yeux, et regarder loin vous fait découvrir plus tôt ce qui suit le virage.",
+   "trap": "Regarder trop près, ce qui provoque une trajectoire hachée et des découvertes tardives.",
+   "action": "Levez les yeux vers la sortie du virage dès qu’elle apparaît.",
+   "memory": "Virage : les yeux à la sortie."
+  },
+  {
+   "id": "N25-OR-04",
+   "chapter": "N25",
+   "section": "orientation-regard",
+   "stem": "Vous devez faire un écart soudain pour éviter un obstacle. Où regardez-vous ?",
+   "options": [
+    "Fixement sur l’obstacle à éviter.",
+    "Vers l’espace libre où vous voulez aller.",
+    "Vers le tableau de bord pour contrôler la vitesse."
+   ],
+   "answers": [1],
+   "truth": "En urgence, le regard doit viser la solution, pas le problème.",
+   "why": "Fixer l’obstacle risque de vous y conduire, car la trajectoire suit le regard.",
+   "trap": "Être « aspiré » par l’obstacle en le fixant.",
+   "action": "Cherchez des yeux l’espace libre et dirigez-vous vers lui.",
+   "memory": "Je regarde où je veux aller."
+  },
+  {
+   "id": "N25-OR-05",
+   "chapter": "N25",
+   "section": "orientation-regard",
+   "stem": "Sur l’autoroute, vous apercevez loin devant des feux de détresse et des véhicules à l’arrêt. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Vous pouvez réduire tôt et progressivement votre vitesse.",
+    "Il vaut mieux attendre d’être tout près pour décider.",
+    "Vous gagnez du temps pour contrôler le rétroviseur avant de freiner."
+   ],
+   "answers": [0, 2],
+   "truth": "L’anticipation précoce permet un ralentissement calme et contrôlé.",
+   "why": "Plus vous repérez tôt la fin d’un bouchon, plus vous évitez un freinage d’urgence et une collision par l’arrière.",
+   "trap": "Ne réagir qu’au véhicule directement devant soi.",
+   "action": "Levez le pied, contrôlez l’arrière et freinez progressivement.",
+   "memory": "Bouchon au loin : je ralentis tôt."
+  },
+  {
+   "id": "N25-OR-06",
+   "chapter": "N25",
+   "section": "orientation-regard",
+   "stem": "Comment gérer la durée de vos regards pendant la conduite ?",
+   "options": [
+    "Des regards courts et fréquents, en revenant régulièrement à la route devant vous.",
+    "Un long regard dans le rétroviseur alors que la circulation est dense devant vous.",
+    "Un regard prolongé sur l’écran de navigation pendant que vous roulez."
+   ],
+   "answers": [0],
+   "truth": "Les regards hors de la route devant doivent rester brefs.",
+   "why": "Pendant un regard prolongé ailleurs, la situation devant vous peut changer sans que vous le remarquiez.",
+   "trap": "Croire qu’un regard d’une ou deux secondes ailleurs est sans conséquence.",
+   "action": "Réglez la navigation à l’arrêt et gardez des regards courts.",
+   "memory": "Coup d’œil court, retour à la route."
+  },
+  {
+   "id": "N25-RS-01",
+   "chapter": "N25",
+   "section": "regards-selectifs",
+   "stem": "Que signifie observer de manière sélective ?",
+   "options": [
+    "Repérer en priorité les éléments qui peuvent influencer votre conduite.",
+    "Regarder seulement les panneaux et ignorer les usagers.",
+    "Laisser de côté ce qui ne peut pas croiser votre trajectoire, comme une vitrine."
+   ],
+   "answers": [0, 2],
+   "truth": "Le regard sélectif trie l’utile de l’inutile.",
+   "why": "Le cerveau ne peut pas tout traiter ; il doit consacrer son attention à ce qui peut changer la situation.",
+   "trap": "Trier trop fort et oublier les usagers, qui sont souvent l’information la plus importante.",
+   "action": "Demandez-vous : « Est-ce que cela peut venir vers moi ? »",
+   "memory": "Je trie : ce qui bouge vers moi d’abord."
+  },
+  {
+   "id": "N25-RS-02",
+   "chapter": "N25",
+   "section": "regards-selectifs",
+   "stem": "Pourquoi observer selon un ordre fixe ?",
+   "options": [
+    "Pour pouvoir regarder moins souvent.",
+    "Pour éviter d’oublier une zone importante.",
+    "Pour que l’observation devienne une habitude fiable, même sous stress."
+   ],
+   "answers": [1, 2],
+   "truth": "Une méthode d’observation garantit qu’aucune zone n’est oubliée.",
+   "why": "Une routine répétée fonctionne même quand l’attention est sollicitée par d’autres tâches.",
+   "trap": "Croire qu’une méthode permet de réduire la fréquence des regards.",
+   "action": "Choisissez un ordre et répétez-le à chaque trajet.",
+   "memory": "Même ordre, rien d’oublié."
+  },
+  {
+   "id": "N25-RS-03",
+   "chapter": "N25",
+   "section": "regards-selectifs",
+   "stem": "À l’approche d’une intersection en localité, quels éléments sont prioritaires dans votre observation ?",
+   "options": [
+    "La signalisation et les règles de priorité qui s’appliquent.",
+    "Les usagers qui pourraient croiser votre trajectoire, y compris piétons et cyclistes.",
+    "L’affiche publicitaire au coin de la rue."
+   ],
+   "answers": [0, 1],
+   "truth": "À une intersection, signalisation et usagers concernés passent en premier.",
+   "why": "Ce sont eux qui déterminent si vous pouvez passer et qui risque de croiser votre route.",
+   "trap": "Se laisser distraire par l’environnement visuel de la ville.",
+   "action": "Lisez la signalisation, puis repérez chaque usager qui peut croiser votre trajectoire.",
+   "memory": "Panneaux et usagers, le décor après."
+  },
+  {
+   "id": "N25-RS-04",
+   "chapter": "N25",
+   "section": "regards-selectifs",
+   "stem": "Lequel de ces éléments annonce un danger possible et mérite votre attention ?",
+   "options": [
+    "Un ballon qui roule sur la chaussée.",
+    "La façade d’un immeuble sans accès à la route.",
+    "Les nuages au-dessus des montagnes, par temps sec."
+   ],
+   "answers": [0],
+   "truth": "Un ballon qui roule est un indice de la présence probable d’un enfant.",
+   "why": "Les informations pertinentes sont celles qui peuvent vous obliger à modifier votre conduite.",
+   "trap": "Regarder le ballon sans penser à l’enfant qui peut le suivre.",
+   "action": "Ralentissez et cherchez l’enfant du regard.",
+   "memory": "Le ballon d’abord, l’enfant ensuite."
+  },
+  {
+   "id": "N25-RS-05",
+   "chapter": "N25",
+   "section": "regards-selectifs",
+   "stem": "Un écran publicitaire lumineux attire votre regard à un carrefour. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Il peut détourner votre attention d’un usager important.",
+    "Vous ramenez volontairement votre regard sur la circulation.",
+    "Il améliore la visibilité du carrefour."
+   ],
+   "answers": [0, 1],
+   "truth": "Une distraction visuelle doit être reconnue et écartée.",
+   "why": "Même un bref détournement du regard peut vous faire manquer un piéton ou un changement de feu.",
+   "trap": "Laisser son regard suivre ce qui brille ou bouge sans rapport avec la circulation.",
+   "action": "Dès que vous remarquez la distraction, revenez à votre ordre d’observation.",
+   "memory": "Ça brille ? Je reviens à la route."
+  },
+  {
+   "id": "N25-RS-06",
+   "chapter": "N25",
+   "section": "regards-selectifs",
+   "stem": "Vous arrivez à une intersection où la vue sur les côtés est limitée. Qu’est-ce qui correspond à une observation méthodique ?",
+   "options": [
+    "Regarder d’un côté, puis de l’autre, puis à nouveau du premier côté avant de s’engager.",
+    "Regarder une seule fois du côté d’où viennent les véhicules prioritaires.",
+    "Avancer lentement pour gagner de la visibilité si nécessaire."
+   ],
+   "answers": [0, 2],
+   "truth": "Le double contrôle et l’avance prudente compensent une vue limitée.",
+   "why": "La situation du premier côté a pu changer pendant que vous regardiez de l’autre côté.",
+   "trap": "Se contenter d’un seul regard rapide et s’engager.",
+   "action": "Avancez au pas, regardez des deux côtés, puis encore du premier côté.",
+   "memory": "Un côté, l’autre, et encore le premier."
+  },
+  {
+   "id": "N25-RC-01",
+   "chapter": "N25",
+   "section": "regards-controle",
+   "stem": "Avant de changer de voie, quel est l’ordre de contrôle enseigné ?",
+   "options": [
+    "Rétroviseurs, clignoteur, regard dans l’angle mort, puis changement de voie.",
+    "Changement de voie, puis rétroviseur pour vérifier.",
+    "Clignoteur seulement, car il suffit d’annoncer sa manœuvre."
+   ],
+   "answers": [0],
+   "truth": "On vérifie avant d’annoncer, et on contrôle l’angle mort avant d’agir.",
+   "why": "Le clignoteur annonce une intention, mais ne garantit pas que la voie est libre.",
+   "trap": "Croire que le clignoteur donne le droit de se déporter.",
+   "action": "Appliquez toujours l’ordre rétroviseurs, clignoteur, angle mort.",
+   "memory": "R–C–A avant chaque déport."
+  },
+  {
+   "id": "N25-RC-02",
+   "chapter": "N25",
+   "section": "regards-controle",
+   "stem": "Quand faut-il regarder dans les rétroviseurs ?",
+   "options": [
+    "Avant de freiner, de ralentir ou de changer de direction.",
+    "Régulièrement pendant la conduite, pour savoir qui vous suit.",
+    "Uniquement en marche arrière."
+   ],
+   "answers": [0, 1],
+   "truth": "Le rétroviseur se consulte avant chaque action et régulièrement.",
+   "why": "Connaître en permanence la situation derrière vous permet de choisir une réaction sûre, par exemple un freinage plus ou moins fort.",
+   "trap": "Ne regarder dans le rétroviseur qu’avant les manœuvres.",
+   "action": "Intégrez les rétroviseurs à votre balayage visuel habituel.",
+   "memory": "Je sais toujours qui me suit."
+  },
+  {
+   "id": "N25-RC-03",
+   "chapter": "N25",
+   "section": "regards-controle",
+   "stem": "Qu’est-ce qui est vrai à propos du regard par-dessus l’épaule ?",
+   "options": [
+    "Il sert à contrôler l’angle mort que les rétroviseurs ne montrent pas.",
+    "Il doit être bref pour ne pas perdre de vue la route devant.",
+    "Il devient inutile si les rétroviseurs sont bien réglés."
+   ],
+   "answers": [0, 1],
+   "truth": "Le regard par-dessus l’épaule complète les rétroviseurs.",
+   "why": "Même bien réglés, les rétroviseurs laissent un angle mort ; un regard bref le couvre sans négliger l’avant.",
+   "trap": "Supprimer ce regard par confiance excessive dans les rétroviseurs.",
+   "action": "Tournez brièvement la tête du côté de la manœuvre, puis revenez devant.",
+   "memory": "Rétro, puis épaule, puis devant."
+  },
+  {
+   "id": "N25-RC-04",
+   "chapter": "N25",
+   "section": "regards-controle",
+   "stem": "Vous venez de vous garer en localité et voulez ouvrir votre portière côté chaussée. Que faites-vous ?",
+   "options": [
+    "Vous contrôlez le rétroviseur et regardez en arrière pour repérer cyclistes et véhicules.",
+    "Vous ouvrez rapidement pour gêner le moins longtemps possible.",
+    "Vous n’ouvrez que lorsque personne n’arrive."
+   ],
+   "answers": [0, 2],
+   "truth": "Ouvrir une portière exige un contrôle de l’arrière.",
+   "why": "Un cycliste qui arrive peut heurter une portière ouverte brusquement, avec des blessures graves.",
+   "trap": "Ouvrir vite en pensant réduire le risque.",
+   "action": "Contrôlez le rétroviseur et l’arrière, puis ouvrez lentement.",
+   "memory": "Portière : je regarde derrière avant."
+  },
+  {
+   "id": "N25-RC-05",
+   "chapter": "N25",
+   "section": "regards-controle",
+   "stem": "Après un temps d’attente, vous allez vous engager dans une intersection pour tourner. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Vous faites un dernier contrôle, car la situation a pu changer.",
+    "Le contrôle fait au début de l’attente suffit.",
+    "Vous vérifiez aussi les piétons qui traversent la rue où vous allez entrer."
+   ],
+   "answers": [0, 2],
+   "truth": "Un contrôle n’est valable que s’il est fait juste avant l’action.",
+   "why": "Pendant l’attente, de nouveaux usagers ont pu arriver, notamment des piétons dans la rue de destination.",
+   "trap": "S’engager sur la base d’une image ancienne.",
+   "action": "Refaites un tour de contrôle complet juste avant de démarrer.",
+   "memory": "J’ai attendu ? Je regarde à nouveau."
+  },
+  {
+   "id": "N25-RC-06",
+   "chapter": "N25",
+   "section": "regards-controle",
+   "stem": "Vous allez tourner à droite et un cycliste roulait derrière vous peu avant. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Le cycliste peut se trouver dans votre angle mort droit au moment de tourner.",
+    "Le cycliste doit toujours s’arrêter dès que vous enclenchez le clignoteur.",
+    "Vous contrôlez à droite juste avant de braquer."
+   ],
+   "answers": [0, 2],
+   "truth": "Avant de tourner à droite, il faut savoir où se trouve le cycliste.",
+   "why": "Le cycliste peut avoir avancé à votre droite ; le clignoteur ne l’oblige pas à s’arrêter et ne garantit pas qu’il l’a vu.",
+   "trap": "Considérer le clignoteur comme une autorisation de tourner.",
+   "action": "Rétroviseur droit et regard par-dessus l’épaule droite juste avant de tourner.",
+   "memory": "À droite, vélo possible : je contrôle."
+  },
+  {
+   "id": "N25-VR-01",
+   "chapter": "N25",
+   "section": "visibilite-reaction",
+   "stem": "De nuit, vous êtes ébloui par les phares d’un véhicule qui arrive en face. Que faites-vous ?",
+   "options": [
+    "Vous regardez vers le bord droit de la chaussée et vous réduisez votre vitesse.",
+    "Vous fixez les phares pour estimer la distance du véhicule.",
+    "Vous enclenchez vos feux de route pour lui répondre."
+   ],
+   "answers": [0],
+   "truth": "En cas d’éblouissement, on détourne le regard vers le bord droit et on ralentit.",
+   "why": "Fixer la lumière aggrave l’éblouissement ; répondre par les feux de route éblouit l’autre conducteur et crée un double danger.",
+   "trap": "Vouloir « se venger » de l’éblouissement.",
+   "action": "Regard vers le bord droit, pied levé, prêt à freiner.",
+   "memory": "Ébloui : bord droit et pied levé."
+  },
+  {
+   "id": "N25-VR-02",
+   "chapter": "N25",
+   "section": "visibilite-reaction",
+   "stem": "De nuit, un piéton habillé en sombre marche au bord d’une route hors localité. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Vous risquez de le voir tard.",
+    "Vos feux de croisement le rendent toujours visible de loin.",
+    "Votre vitesse doit vous permettre de vous arrêter dans la distance que vous voyez libre."
+   ],
+   "answers": [0, 2],
+   "truth": "La nuit, les usagers sombres apparaissent tardivement.",
+   "why": "La portée des feux de croisement est limitée et les contrastes sont faibles ; la vitesse doit correspondre à la distance visible.",
+   "trap": "Croire que l’on voit aussi bien de nuit que de jour avec des phares.",
+   "action": "Réduisez votre vitesse sur les routes non éclairées et observez les bords.",
+   "memory": "Nuit noire, vitesse réduite."
+  },
+  {
+   "id": "N25-VR-03",
+   "chapter": "N25",
+   "section": "visibilite-reaction",
+   "stem": "Qu’est-ce qui est vrai à propos du temps de réaction ?",
+   "options": [
+    "C’est le temps entre l’apparition d’un danger et le début de votre action, par exemple le freinage.",
+    "Il s’allonge avec la fatigue, l’alcool ou la distraction.",
+    "Il est le même pour tout le monde en toutes circonstances."
+   ],
+   "answers": [0, 1],
+   "truth": "Le temps de réaction varie selon l’état du conducteur et la situation.",
+   "why": "Percevoir, comprendre et décider prend du temps, et ce temps augmente quand l’attention ou l’état physique sont diminués.",
+   "trap": "Penser que ses propres réflexes sont toujours rapides.",
+   "action": "Ne conduisez qu’en pleine forme et éliminez les distractions.",
+   "memory": "Fatigué ou distrait : réaction en retard."
+  },
+  {
+   "id": "N25-VR-04",
+   "chapter": "N25",
+   "section": "visibilite-reaction",
+   "stem": "Que se passe-t-il pendant le temps de réaction ?",
+   "options": [
+    "La voiture continue d’avancer à la même vitesse.",
+    "La voiture commence déjà à ralentir.",
+    "La distance parcourue est plus grande si vous roulez plus vite."
+   ],
+   "answers": [0, 2],
+   "truth": "Pendant le temps de réaction, le freinage n’a pas encore commencé.",
+   "why": "La voiture parcourt une distance de réaction qui augmente avec la vitesse : si la vitesse double, cette distance double.",
+   "trap": "Croire que le freinage commence au moment où l’on voit le danger.",
+   "action": "Adaptez votre vitesse pour que la distance de réaction reste compatible avec ce que vous voyez.",
+   "memory": "Je réagis : la voiture roule encore."
+  },
+  {
+   "id": "N25-VR-05",
+   "chapter": "N25",
+   "section": "visibilite-reaction",
+   "stem": "Vous roulez dans un épais brouillard. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Vous allumez au moins les feux de croisement.",
+    "Les feux de route améliorent toujours la visibilité.",
+    "Vous réduisez votre vitesse et augmentez la distance avec le véhicule qui précède."
+   ],
+   "answers": [0, 2],
+   "truth": "Dans le brouillard, on éclaire bas, on ralentit et on augmente les distances.",
+   "why": "Les feux de route sont renvoyés par les gouttelettes du brouillard et éblouissent le conducteur.",
+   "trap": "Allumer les feux de route en pensant voir plus loin.",
+   "action": "Feux de croisement, vitesse fortement réduite, grande distance.",
+   "memory": "Brouillard : feux bas, vitesse basse."
+  },
+  {
+   "id": "N25-VR-06",
+   "chapter": "N25",
+   "section": "visibilite-reaction",
+   "stem": "Vous roulez sous une forte pluie. Qu’est-ce qui est vrai ?",
+   "options": [
+    "La buée et les projections d’eau réduisent votre vision ; vous utilisez désembuage et essuie-glaces.",
+    "La distance de freinage peut s’allonger ; vous augmentez vos distances.",
+    "La pluie n’a d’influence que pour les motocyclistes."
+   ],
+   "answers": [0, 1],
+   "truth": "La pluie réduit à la fois la visibilité et l’adhérence.",
+   "why": "On voit moins bien et la voiture freine moins bien : la distance d’arrêt augmente.",
+   "trap": "Ne penser qu’à la visibilité et oublier l’adhérence.",
+   "action": "Désembuez, allumez les feux de croisement, ralentissez et augmentez vos distances.",
+   "memory": "Pluie : voir moins, freiner plus long."
+  },
+  {
+   "id": "N25-VR-07",
+   "chapter": "N25",
+   "section": "visibilite-reaction",
+   "stem": "Qu’est-ce qui raccourcit la chaîne « percevoir, comprendre, agir » ?",
+   "options": [
+    "Une observation qui repère tôt les indices.",
+    "Une attention détournée par le téléphone.",
+    "Une situation déjà imaginée, avec le pied prêt au-dessus du frein."
+   ],
+   "answers": [0, 2],
+   "truth": "Repérer tôt et préparer le geste fait gagner du temps.",
+   "why": "Un danger déjà envisagé se comprend plus vite, et un pied déjà placé agit plus vite.",
+   "trap": "Croire que seuls les réflexes comptent, et non l’observation.",
+   "action": "Regardez loin, triez l’utile et préparez le geste dès qu’un doute apparaît.",
+   "memory": "Vu tôt, préparé, plus vite freiné."
+  }
+ ]
+}

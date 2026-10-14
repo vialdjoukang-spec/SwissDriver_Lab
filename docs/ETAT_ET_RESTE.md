@@ -1,46 +1,25 @@
 # État actuel et travaux restants — 14 octobre 2026
 
-## Disponible
-Le moteur, ses ressources embarquées, la berline, les cours consultables, le programme compact, l'interface exclusivement claire, les commandes tactiles et le mode observation sont dans main après les PR #2 et #3. L'édition de livraison ajoute un HTML autonome, les sources modifiables, les tests et preuves, les scripts de construction/publication, un inventaire calculé et un manifeste SHA-256.
+## Disponible (édition 0.5.0-preview.1)
+- **Programme aligné sur le catalogue asa de juillet 2026** (en vigueur au 1er janvier 2027) : 6 parties, 27 chapitres. Les 8 chapitres ajoutés sont N24, N25, N26, N33, N43, N46, N47 et N48 ; 13 sous-chapitres complètent les chapitres existants. Chacun des 161 contenus d'examen est relié à au moins un cours (`content/programme-asa-2027.json`), ce que `tests/test_programme.py` vérifie.
+- **Exercices style examen** pour chaque sous-chapitre : QCM à 3 ou 4 propositions, une ou plusieurs bonnes réponses, avec explication (vrai, pourquoi, piège, action, mémo) et lien vers le cours. L'examen asa officiel en compte 3 ; la 4e proposition sert d'entraînement plus exigeant.
+- **Reconnaître les signaux** : 27 signaux suisses courants (dessins simplifiés, non officiels) présentés au bord d'une route, 4 significations proposées, retour sur la famille de forme et de couleur, lien vers le cours.
+- **Aller-retour partout** : « Cours vus » (touche J) rouvre chaque fragment à la page quittée. Les boutons sous-chapitre précédent et suivant traversent tout le programme. « Retour » (Échap) ramène exactement à l'endroit précédent : route, programme, explication, exercice ou cours.
+- **Schémas** des sous-chapitres affichés dans les cours (113 schémas embarqués).
+- **Priorités (O11)** : 25 situations 3D. Le geste annoncé par une mauvaise réponse devient visible (klaxon, appel de phares, signe, décalage, recul, accélération) ; sinon la limite est signalée dans `docs/COHERENCE_PRIORITES.json`.
 
 ## Couverture réelle
-6 parties ; 19 chapitres ; 120 sous-chapitres ; 1 220 questions stockées. Un chapitre simulé : O11, 7 sous-chapitres, 25 situations. **18 chapitres et 113 sous-chapitres n'ont pas de scènes dédiées.** La présence d'un texte ou d'une question ne signifie pas sa validation éditoriale ni une simulation achevée.
+Seul O11 possède des scènes 3D. Les 26 autres chapitres offrent cours, schémas éventuels et QCM, **sans simulation de conduite**. La couverture du programme est rédactionnelle : elle n'a été validée ni par l'asa ni par une personne compétente.
 
-| Code | Chapitre | Sous-chapitres | Simulation dédiée |
-|---|---|---:|---|
-| O11 | Priorités | 7 | 25 situations |
-| O12 | Interdictions | 5 | À développer |
-| O13 | Obligations et indications | 5 | À développer |
-| O14 | Gestion du trafic | 8 | À développer |
-| O21 | Conduite et dangers | 8 | À développer |
-| O22 | Changement de direction | 6 | À développer |
-| O23 | Avec les autres usagers de la route | 7 | À développer |
-| O31 | Infrastructure | 6 | À développer |
-| O32 | Conditions variables | 6 | À développer |
-| O41 | Responsabilité | 6 | À développer |
-| O42 | Usagers de la route plus vulnérables | 6 | À développer |
-| O43 | Aspects administratifs du conducteur | 6 | À développer |
-| O44 | Dispositions pénales | 5 | À développer |
-| O45 | Assurances | 5 | À développer |
-| O51 | Mesures de sécurité du véhicule | 10 | À développer |
-| O52 | Passagers | 5 | À développer |
-| O53 | Équipements, accessoires et chargement | 7 | À développer |
-| O54 | Aspects administratifs du véhicule | 5 | À développer |
-| U25 | Systèmes d’aide à la conduite et automatisation | 7 | À développer |
-
-## Travaux, dans l'ordre de priorité
-| Priorité | Travail restant | Critère d'achèvement |
+## Travaux restants, par priorité
+| Priorité | Travail | Critère d'achèvement |
 |---|---|---|
-| P0 | Vérifier toutes les décisions et trajectoires de Priorités | Fait : 75 issues terminales et rejeux (PR #5). Reste (issue #6) : geste réel conforme à chaque réponse, approches manuelles, contacts ; suivi dans `docs/COHERENCE_PRIORITES.json`, 40 lignes partagent un `act` générique dans leur situation. |
-| P0 | Vérifier le contenu routier suisse | Chaque règle rattachée à une source officielle datée, contradictions corrigées, validation par une personne compétente. |
-| P1 | Créer les exercices des 18 autres chapitres | Matrice cours → règle → exercice approprié → environnement → évaluation complète ; scènes 3D quand pertinentes, autres exercices interactifs sinon. |
-| P1 | Évaluer la conduite réellement effectuée | Événements mesurés : arrêt, priorité, vitesse, trajectoire, collision et clignotant ; séparer trajectoires assistées et actions manuelles. |
-| P1 | Renforcer réalisme et fluidité | Panneaux/marquages contrôlés, comportements crédibles, collisions testées ; mesures en rendu continu sur appareils cibles. |
-| P1 | Extraire le contenu éditorial du monolithe | Chapitres, règles, vocabulaire et scénarios en fichiers séparés avec schémas et tests ; interfaces d'édition documentées. |
-| P2 | Sauvegarde portable et accessibilité | Export/import validé, migration, contrôle clavier/focus/contraste et tests Firefox/Safari/Chrome sur ordinateur et mobile. |
-| P2 | Documenter les actifs et déployer le site | Provenance des modèles/médias, licences vérifiées ; activation Pages et contrôle de l'URL réellement publiée. |
+| P0 | Relecture experte des contenus ajoutés | Faits juridiques signalés par les rédacteurs (gestes de police, plaques, retraits, montagne, recours) confirmés sur Fedlex ; corrections tracées. |
+| P0 | Sources officielles datées par règle | Champ `regulatorySource` rempli dans la matrice O11, puis par sous-chapitre. |
+| P1 | Scènes 3D au-delà d'O11 | Commencer par O12–O14 (signaux réels sur la route), puis O21–O23, O31–O32. |
+| P1 | Approches manuelles mesurées (issue #6) | STOP, sortie de cour, ambulance au rouge depuis l'amont, contacts tracés. |
+| P2 | Rendu continu, autres navigateurs, appareils réels | Mesures nommées ; Firefox/WebKit. |
+| P2 | Pages | Activation par le propriétaire, puis déploiement d'un run vérifié et contrôle de l'URL. |
 
 ## Ce que les tests prouvent — et ne prouvent pas
-Les lots fusionnés totalisent 8 tests structurels, 20 contrôles navigateur et 24 contrôles des scènes, réussis lors de leur vérification. La PR #5 (non fusionnée) ajoute 75 branches décisionnelles ; la PR de relais ajoute le verrou des preuves (9 tests) et le contrat de la matrice (4 tests). La livraison relance ces suites et ajoute 6 contrôles de distribution ; chaque rapport porte l'empreinte du HTML testé. Les résultats effectifs et captures de chaque édition sont joints à sa release ; un résultat de test concerne le commit indiqué, pas toute modification future.
-
-Les tests instrumentés utilisent des rendus ponctuels. Ils ne constituent pas un benchmark de fluidité. La construction des 25 scènes ne prouve pas l'exactitude de leurs 75 branches. L'agent et la ville restent pédagogiques, non des reproductions réglementaires ou géographiques certifiées. Le projet n'est ni une auto-école homologuée ni un certificat de capacité à conduire.
+Les suites structurelles, navigateur, scènes, parcours d'apprentissage, 75 branches, programme et distribution sont exigées avant chaque archive ; chaque rapport porte l'empreinte du HTML testé. Ces tests ne prouvent ni l'exactitude juridique, ni la fluidité, ni une compétence de conduite. Le projet n'est ni une auto-école homologuée ni un certificat de capacité.

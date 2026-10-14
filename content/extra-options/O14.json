@@ -1,0 +1,194 @@
+{
+ "O14-C01": {
+  "option": "Mettre le clignotant au dernier moment pour ne pas tromper les autres.",
+  "why": "Le virage doit être annoncé assez tôt pour que les autres puissent anticiper."
+ },
+ "O14-C02": {
+  "option": "Vous vous insérez dès que votre clignotant a été vu.",
+  "why": "Être vu ne vous donne pas la priorité sur le véhicule déjà établi dans la voie visée."
+ },
+ "O14-C03": {
+  "option": "Le clignotant gauche est obligatoire pendant tout le tour.",
+  "why": "L’entrée et le parcours dans l’anneau ne s’annoncent normalement pas ; seule la sortie se signale à droite."
+ },
+ "O14-C06": {
+  "option": "Klaxonner pour obliger les autres à vous laisser sortir.",
+  "why": "Le klaxon ne crée aucune priorité ; vous laissez passer les usagers déjà sur la chaussée."
+ },
+ "O14-C08": {
+  "option": "Oui, à condition de rouler lentement.",
+  "why": "Même à faible vitesse, les feux de détresse n’indiquent pas le côté du virage."
+ },
+ "O14-C10": {
+  "option": "L’annonce suffit si vous tournez lentement.",
+  "why": "Une annonce tardive reste insuffisante quelle que soit la vitesse du virage."
+ },
+ "O14-V01": {
+  "option": "Sur la voie la moins chargée, quelle qu’elle soit.",
+  "why": "Sans manœuvre de dépassement, vous devez circuler sur la voie de droite."
+ },
+ "O14-V02": {
+  "option": "Le véhicule le plus lent des deux.",
+  "why": "C’est le conducteur qui change de voie qui doit éviter de gêner, quelle que soit sa vitesse."
+ },
+ "O14-V03": {
+  "option": "La voie est réservée aux véhicules lents.",
+  "why": "Le X rouge ferme la voie à tous les véhicules."
+ },
+ "O14-V05": {
+  "option": "La voie est réservée aux véhicules prioritaires.",
+  "why": "La flèche verte ouvre la voie à la circulation concernée, sans la réserver."
+ },
+ "O14-V06": {
+  "option": "Dès le premier panneau annonçant la réduction, en se rabattant aussitôt.",
+  "why": "La fermeture éclair se fait près du point où la voie se termine, non bien avant."
+ },
+ "O14-V07": {
+  "option": "Vous l’empruntez si aucun bus n’est en vue.",
+  "why": "Une voie réservée aux bus ne devient pas une voie générale parce qu’elle paraît libre."
+ },
+ "O14-P01": {
+  "option": "Pour pouvoir changer d’avis au dernier moment.",
+  "why": "La présélection sert justement à éviter les changements de voie tardifs."
+ },
+ "O14-P02": {
+  "option": "Tourner à droite si aucun véhicule ne vous suit.",
+  "why": "La flèche affecte la voie à la gauche ; tourner à droite y reste interdit."
+ },
+ "O14-P03": {
+  "option": "Reculer jusqu’à l’ouverture de la ligne.",
+  "why": "Reculer dans la circulation est dangereux ; il faut suivre la direction actuelle."
+ },
+ "O14-P05": {
+  "option": "Le GPS, si ses données sont récentes.",
+  "why": "La signalisation réelle prime toujours les instructions du GPS."
+ },
+ "O14-P07": {
+  "option": "Mettre le clignotant pour obliger les cyclistes à freiner.",
+  "why": "Le clignotant n’oblige pas les cyclistes à céder ; vous ne devez pas les gêner."
+ },
+ "O14-P10": {
+  "option": "Oui, si le virage est annoncé assez tôt.",
+  "why": "Le clignotant ne supprime ni la ligne de sécurité ni l’affectation de la voie."
+ },
+ "O14-M01": {
+  "option": "Rien, si la visibilité est bonne.",
+  "why": "La ligne de sécurité ne doit être ni franchie ni chevauchée, même avec une bonne visibilité."
+ },
+ "O14-M02": {
+  "option": "Seulement de nuit.",
+  "why": "Le franchissement d’une ligne discontinue ne dépend pas de l’heure, mais de la manœuvre et de la sécurité."
+ },
+ "O14-M03": {
+  "option": "Juste après la ligne, pour mieux voir le feu.",
+  "why": "Le véhicule doit s’arrêter avant la ligne d’arrêt, sans la dépasser."
+ },
+ "O14-M04": {
+  "option": "L’obligation de s’arrêter dans tous les cas.",
+  "why": "Les triangles imposent de céder le passage, non un arrêt systématique comme le STOP."
+ },
+ "O14-M05": {
+  "option": "L’utiliser comme voie de présélection lorsque la file est longue.",
+  "why": "La surface hachurée sépare les flux et ne sert pas de voie de circulation."
+ },
+ "O14-M08": {
+  "option": "Elle sépare deux voies de même sens.",
+  "why": "La ligne de bord marque la limite de la chaussée, non une séparation entre voies."
+ },
+ "O14-PI01": {
+  "option": "Klaxonner pour lui signaler d’attendre.",
+  "why": "Le klaxon ne retire pas la priorité de la piétonne qui montre clairement son intention."
+ },
+ "O14-PI02": {
+  "option": "Klaxonner pour qu’il reste sur le trottoir.",
+  "why": "Le klaxon peut surprendre l’enfant et provoquer un mouvement soudain."
+ },
+ "O14-PI03": {
+  "option": "Changer de voie pour dépasser la voiture arrêtée sans ralentir.",
+  "why": "La voiture arrêtée peut masquer un piéton : il faut approcher en étant prêt à s’arrêter."
+ },
+ "O14-PI04": {
+  "option": "Sur le passage, en laissant un espace pour les piétons.",
+  "why": "Le passage piéton ne doit pas être bloqué, même partiellement."
+ },
+ "O14-PI07": {
+  "option": "Vous passez entre deux groupes de piétons.",
+  "why": "Vous devez céder à tous les piétons engagés, sans vous faufiler entre eux."
+ },
+ "O14-PI09": {
+  "option": "Compter sur les piétons pour vous voir à temps.",
+  "why": "De nuit sous la pluie, c’est au conducteur d’adapter vitesse et observation."
+ },
+ "O14-CY01": {
+  "option": "Klaxonner pour faire freiner le cycliste.",
+  "why": "Le klaxon ne vous donne pas le droit de couper la trajectoire du cycliste."
+ },
+ "O14-CY02": {
+  "option": "Pour y stationner brièvement.",
+  "why": "La bande cyclable reste destinée aux cycles ; on ne s’y arrête pas."
+ },
+ "O14-CY04": {
+  "option": "Vous empiétez à moitié sur la bande.",
+  "why": "Même un empiétement partiel bloque la trajectoire des cyclistes."
+ },
+ "O14-CY06": {
+  "option": "Uniquement de la largeur de votre voiture.",
+  "why": "La marge dépend de la situation réelle et du cycliste, pas de la seule largeur du véhicule."
+ },
+ "O14-CY07": {
+  "option": "Seulement que le moteur est coupé.",
+  "why": "Couper le moteur ne protège pas un cycliste qui arrive à côté de la portière."
+ },
+ "O14-CY08": {
+  "option": "Au milieu de la zone, pour ne pas gêner la file.",
+  "why": "La zone d’attente avancée est réservée aux cycles et doit rester libre."
+ },
+ "O14-F01": {
+  "option": "Le rouge ne concerne que les poids lourds.",
+  "why": "La flèche rouge règle le virage à gauche pour tous les véhicules concernés."
+ },
+ "O14-F02": {
+  "option": "Vous franchissez la ligne d’arrêt et attendez sur le passage piéton.",
+  "why": "Si l’arrêt est possible sans danger, il doit se faire avant la ligne d’arrêt."
+ },
+ "O14-F03": {
+  "option": "S’engager et attendre sur le passage piéton suivant.",
+  "why": "Le feu vert ne permet ni de bloquer l’intersection ni d’occuper le passage piéton."
+ },
+ "O14-F05": {
+  "option": "Attendre que le feu passe au rouge pour obéir.",
+  "why": "L’instruction de l’agent s’applique immédiatement et prime le feu."
+ },
+ "O14-F07": {
+  "option": "Allumer les feux de détresse et rester sur la voie.",
+  "why": "Le X rouge ferme la voie : les feux de détresse ne permettent pas d’y rester."
+ },
+ "O14-F09": {
+  "option": "Vous partez en même temps que le tram.",
+  "why": "Le signal blanc ne concerne que les transports publics ; votre feu reste rouge."
+ },
+ "O14-Z01": {
+  "option": "Le parcage est libre partout dans la zone.",
+  "why": "Dans une zone de rencontre, le parcage n’est permis qu’aux emplacements signalés ou marqués."
+ },
+ "O14-Z02": {
+  "option": "Les voitures doivent s’arrêter pour tout piéton, comme sur un passage.",
+  "why": "En zone 30 sans passage, le piéton n’a pas de priorité générale ; le conducteur doit toutefois éviter le danger."
+ },
+ "O14-Z03": {
+  "option": "La priorité au véhicule venant de gauche.",
+  "why": "Aux intersections non signalées de la zone 30, c’est la priorité de droite qui s’applique."
+ },
+ "O14-Z07": {
+  "option": "Considérer que la priorité de droite cesse automatiquement.",
+  "why": "La fin de la zone 30 ne supprime pas la priorité de droite ; il faut lire la signalisation suivante."
+ },
+ "O14-Z08": {
+  "option": "Oui, la nuit lorsque la rue est déserte.",
+  "why": "La limite de 30 km/h reste un maximum légal à toute heure."
+ },
+ "O14-Z10": {
+  "option": "Oui, si vous allumez les feux de détresse.",
+  "why": "Les feux de détresse n’autorisent pas à circuler sur le trottoir."
+ }
+}

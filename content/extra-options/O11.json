@@ -1,0 +1,170 @@
+{
+ "O11-H01": {
+  "option": "Vous attendez le feu vert avant de suivre le geste de l’agent.",
+  "why": "L’instruction de l’agent prime le feu : attendre le vert revient à ignorer son ordre."
+ },
+ "O11-H03": {
+  "option": "La priorité de droite, en ignorant le signal.",
+  "why": "Le signal « Cédez le passage » règle l’intersection et prime la priorité de droite."
+ },
+ "O11-H04": {
+  "option": "Avancer jusqu’au milieu de l’intersection et y attendre.",
+  "why": "S’engager sans pouvoir dégager l’intersection la bloque, même au feu vert."
+ },
+ "O11-H06": {
+  "option": "Vous vous fiez au feu destiné aux piétons.",
+  "why": "Seul le feu qui concerne votre voie et votre direction règle votre départ."
+ },
+ "O11-H08": {
+  "option": "Le tracé que vous preniez habituellement avant les travaux.",
+  "why": "Le guidage temporaire du chantier prime le marquage permanent et vos habitudes."
+ },
+ "O11-H09": {
+  "option": "Céder systématiquement au véhicule venant de gauche.",
+  "why": "Sans autre réglementation, c’est le véhicule venant de droite qui est prioritaire."
+ },
+ "O11-I01": {
+  "option": "Le véhicule qui a mis son clignotant en premier.",
+  "why": "Le clignotant annonce une intention et ne crée aucune priorité."
+ },
+ "O11-I03": {
+  "option": "Passer avant lui en invoquant la priorité de droite.",
+  "why": "Celui qui oblique à gauche cède aux véhicules venant en sens inverse ; la priorité de droite ne règle pas ce conflit."
+ },
+ "O11-I04": {
+  "option": "La priorité au véhicule venant de gauche.",
+  "why": "Sans signalisation, le véhicule venant de droite est prioritaire, y compris à une intersection en T."
+ },
+ "O11-I05": {
+  "option": "Celui qui fait un appel de phares en premier.",
+  "why": "Un appel de phares ne crée aucune priorité ; la priorité de droite s’applique."
+ },
+ "O11-I08": {
+  "option": "Sa taille vous permet de passer en même temps qu’elle.",
+  "why": "Couper sa trajectoire la met en danger : vous devez la laisser passer, quelle que soit sa taille."
+ },
+ "O11-I10": {
+  "option": "Vous klaxonnez et maintenez votre trajectoire.",
+  "why": "Le klaxon ne remplace pas la manœuvre d’évitement ; maintenir la trajectoire peut provoquer la collision."
+ },
+ "O11-R01": {
+  "option": "Vous entrez si vous avez mis le clignotant droit.",
+  "why": "Le clignotant ne donne aucune priorité : vous cédez aux véhicules déjà dans l’anneau."
+ },
+ "O11-R02": {
+  "option": "Oui, le clignotant droit est obligatoire dès l’entrée.",
+  "why": "L’entrée dans le giratoire n’a pas à être annoncée ; le clignotant droit sert à signaler la sortie."
+ },
+ "O11-R03": {
+  "option": "Seulement au moment où vous braquez pour sortir.",
+  "why": "Annoncée si tard, la sortie n’est plus comprise à temps par les autres usagers."
+ },
+ "O11-R05": {
+  "option": "Accélérer pour sortir avant lui.",
+  "why": "Accélérer pour couper la trajectoire du cycliste crée un conflit au lieu de lui céder."
+ },
+ "O11-R06": {
+  "option": "S’arrêter dans l’anneau en face de la sortie manquée.",
+  "why": "S’immobiliser dans l’anneau bloque la circulation et crée un danger inutile."
+ },
+ "O11-R09": {
+  "option": "La voie de gauche, puis un changement de voie juste avant la sortie.",
+  "why": "Choisir la gauche pour la première sortie impose une coupe tardive vers la droite."
+ },
+ "O11-E01": {
+  "option": "Vous, si vous avez allumé votre clignotant.",
+  "why": "Le clignotant n’efface pas l’obligation de céder au trafic déjà établi sur la route."
+ },
+ "O11-E02": {
+  "option": "Les véhicules qui arrivent doivent ralentir pour vous laisser sortir.",
+  "why": "Celui qui quitte une place de stationnement cède aux usagers qui circulent déjà."
+ },
+ "O11-E03": {
+  "option": "Vous klaxonnez pour que le piéton s’arrête.",
+  "why": "Le piéton sur le trottoir doit pouvoir passer ; le klaxon ne vous donne aucune priorité."
+ },
+ "O11-E05": {
+  "option": "Vous êtes prioritaire si le véhicule arrive de votre gauche.",
+  "why": "Le conducteur qui débouche d’un chemin rural cède le passage ; la priorité de droite ne joue pas en sa faveur."
+ },
+ "O11-E07": {
+  "option": "Les feux de détresse vous donnent la priorité pendant la manœuvre.",
+  "why": "Les feux de détresse ne créent aucune priorité ; la marche arrière ne doit gêner personne."
+ },
+ "O11-E09": {
+  "option": "Oui, si la voiture sur la route roule moins vite que la limite.",
+  "why": "Imposer un freinage net au trafic établi reste interdit, quelle que soit sa vitesse."
+ },
+ "O11-N01": {
+  "option": "Le véhicule qui arrive le plus vite au rétrécissement.",
+  "why": "La vitesse ne donne aucune priorité ; c’est celui dont la voie est obstruée qui cède en principe."
+ },
+ "O11-N03": {
+  "option": "Vous pouvez traverser sans adapter votre vitesse.",
+  "why": "Une priorité de passage ne dispense jamais de la prudence ni d’une vitesse adaptée."
+ },
+ "O11-N06": {
+  "option": "Vous passez dès que le véhicule qui vous précède s’est engagé.",
+  "why": "Le feu rouge s’applique à chaque véhicule ; suivre celui qui est passé ne le rend pas vert."
+ },
+ "O11-N07": {
+  "option": "Klaxonner pour signaler que vous passez en premier.",
+  "why": "Le klaxon ne crée aucune priorité ; l’ordre de passage doit être convenu prudemment."
+ },
+ "O11-N08": {
+  "option": "Vous entrez et attendez au milieu du passage.",
+  "why": "Attendre dans le passage étroit le bloquerait pour les deux sens."
+ },
+ "O11-N10": {
+  "option": "Avancer jusqu’au milieu de la série pour réduire l’attente.",
+  "why": "Une fois engagé au milieu, vous obstruez la voie opposée sans pouvoir vous ranger."
+ },
+ "O11-M01": {
+  "option": "Vous devez céder le passage à l’intersection suivante.",
+  "why": "Le losange jaune désigne une route principale ; il n’impose pas de céder le passage."
+ },
+ "O11-M02": {
+  "option": "Celui qui atteint l’intersection en premier.",
+  "why": "L’ordre d’arrivée ne compte pas : la route principale est prioritaire."
+ },
+ "O11-M03": {
+  "option": "Elle est prioritaire si elle porte une ligne médiane.",
+  "why": "Une ligne médiane ne désigne pas une route principale ; seule la signalisation de priorité le fait."
+ },
+ "O11-M06": {
+  "option": "Vous passez si aucun véhicule ne vient de droite.",
+  "why": "Tant que les feux fonctionnent, le feu rouge impose l’arrêt, quelle que soit la priorité."
+ },
+ "O11-M08": {
+  "option": "S’arrêter seulement si un véhicule arrive de droite.",
+  "why": "Le signal STOP impose un arrêt complet dans tous les cas, puis de céder au trafic principal."
+ },
+ "O11-M09": {
+  "option": "Oui, mais seulement aux heures de pointe.",
+  "why": "La priorité découle des signaux, jamais du volume de trafic ni de l’heure."
+ },
+ "O11-P01": {
+  "option": "Vous la laissez attendre derrière vous jusqu’au prochain carrefour.",
+  "why": "Un véhicule d’urgence annoncé par feu bleu et sirène doit pouvoir passer immédiatement."
+ },
+ "O11-P02": {
+  "option": "Vous reculez rapidement pour lui libérer la voie.",
+  "why": "Reculer vers le véhicule d’urgence et les usagers arrêtés derrière vous crée un nouveau danger."
+ },
+ "O11-P05": {
+  "option": "Le tramway doit céder s’il vient de votre gauche.",
+  "why": "Le tramway reste prioritaire quel que soit le côté d’où il arrive."
+ },
+ "O11-P06": {
+  "option": "Le piéton, si le tramway roule lentement.",
+  "why": "Même sur un passage piéton, le piéton doit accorder la priorité au tramway."
+ },
+ "O11-P09": {
+  "option": "Oui, tant que la sirène reste audible.",
+  "why": "Le droit spécial de priorité profite seulement au véhicule d’urgence, jamais à ceux qui le suivent."
+ },
+ "O11-P10": {
+  "option": "S’engager derrière le grand véhicule dès qu’il avance.",
+  "why": "Le grand véhicule peut encore masquer un tramway : il faut voir les rails libres avant de s’engager."
+ }
+}

@@ -1,5 +1,12 @@
 # Historique
 
+## 0.5.0-preview.1 — 14 octobre 2026
+- Programme aligné sur le catalogue asa de juillet 2026 (en vigueur au 1er janvier 2027) : 8 chapitres nouveaux (N24, N25, N26, N33, N43, N46, N47, N48) et 13 sous-chapitres complémentaires ; les 161 contenus d'examen sont reliés à un cours (`content/programme-asa-2027.json`, `tests/test_programme.py`).
+- Exercices style examen pour chaque sous-chapitre : 1 543 QCM, dont 928 à 4 propositions ; reconnaissance de 27 signaux avec 4 significations proposées.
+- Navigation : « Cours vus » (J), sous-chapitre précédent et suivant, retour exact (Échap) ; schémas des sous-chapitres affichés.
+- Priorités : geste annoncé rendu visible pour les mauvaises réponses (klaxon, appel de phares, décalage, recul, accélération), légende « Votre action ».
+- Contenu versionné dans `content/`, fusionné par `src/curriculum.js` dans le HTML autonome et le lanceur HTTP ; inventaire calculé sur les données réellement utilisées.
+
 ## 0.4.0-preview.1 — 14 octobre 2026
 Inclut la PR #5 (75 branches de Priorités, arrêt t3 au rouge) et la PR #7 ci-dessous.
 

@@ -23,7 +23,7 @@ class DistributionTests(unittest.TestCase):
                      'scripts/build.cjs', 'scripts/serve.cjs', 'scripts/package.py',
                      'tests/browser_smoke.py', 'tests/scene_coherence.py',
                      'tests/decision_paths.py', 'tests/test_evidence_gate.py', 'tests/test_coherence_matrix.py',
-                     'scripts/evidence.py', 'scripts/coherence_matrix.py', 'src/decision-safety.js',
+                     'scripts/evidence.py', 'src/learning.js', 'src/learning.css', 'src/signs.js', 'src/gestures.js', 'tests/test_programme.py', 'src/curriculum.js', 'content/index.json', 'tests/learning_flow.py', 'scripts/coherence_matrix.py', 'src/decision-safety.js',
                      'docs/COHERENCE_PRIORITES.json', 'docs/DECISIONS_75.md', '.github/workflows/pages.yml', 'START_HERE.md',
                      'docs/EDITER.md', 'docs/ETAT_ET_RESTE.md', 'AGENTS.md',
                      '.github/workflows/swissdriver-quality.yml']:

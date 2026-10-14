@@ -1,0 +1,838 @@
+{
+ "chapter": {
+  "id": "N47",
+  "official": "4.7",
+  "group": "G4",
+  "color": "#a33a1f",
+  "otitle": "Accidents et conscience des risques",
+  "title": "Comprendre les accidents pour mieux les éviter",
+  "oscope": "Connaître les tendances des statistiques d’accidents, les causes typiques chez les nouveaux conducteurs et les facteurs personnels aggravants, lire le risque et adopter une stratégie de prévention.",
+  "tagline": "À la fin de ce chapitre, vous saurez pourquoi les premières années de conduite sont plus risquées, quelles causes et quels facteurs augmentent votre risque, et comment vous protéger par une conduite défensive.",
+  "intro": [
+   "Les accidents de la route ne sont pas une fatalité. Ils ont des causes connues, que les analyses du BPA et de l’Office fédéral de la statistique décrivent régulièrement. Une tendance concerne directement les personnes qui apprennent à conduire : les **jeunes et nouveaux conducteurs** sont surreprésentés dans les accidents graves.",
+   "Ce chapitre vous explique pourquoi, sans chiffres à mémoriser : il présente les causes typiques (inexpérience, distraction, vitesse, conduite sous influence), les facteurs personnels qui les aggravent, et deux outils pour lire le risque, le modèle des interactions et la fourche analytique, approfondis au chapitre 4.8.",
+   "Il se termine par une stratégie de prévention concrète : tactique défensive, refus des manœuvres risquées et marge de sécurité permanente. Ce chapitre est théorique : il ne comporte pas de simulation de conduite. Pour les chiffres à jour, consultez le BPA et l’OFS."
+  ],
+  "keyIdea": "La plupart des accidents ont des causes humaines : votre comportement est le levier le plus puissant pour réduire votre risque.",
+  "memo": {
+   "code": "C–C–F–P",
+   "text": "Le parcours du chapitre : Constater (les tendances), Causes (typiques), Facteurs (personnels), Prévenir (défensif, renoncer, marge)."
+  },
+  "sources": [
+   {
+    "label": "asa · Catalogue des compétences (théorie de base, 2026)",
+    "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+   },
+   {
+    "label": "BPA · Bureau de prévention des accidents",
+    "href": "https://www.bfu.ch/fr"
+   },
+   {
+    "label": "OFS · Mobilité et transports (accidents)",
+    "href": "https://www.bfs.admin.ch/bfs/fr/home/statistiques/mobilite-transports.html"
+   },
+   {
+    "label": "Fedlex · LCR",
+    "href": "https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr"
+   }
+  ],
+  "sections": [
+   {
+    "id": "statistiques-accidents",
+    "otitle": "Statistiques d’accidents",
+    "title": "Ce que les statistiques d’accidents nous apprennent",
+    "ogoal": "Comprendre les grandes tendances des accidents de la route en Suisse et savoir où trouver les chiffres officiels à jour.",
+    "question": "Les jeunes conducteurs ont-ils vraiment plus d’accidents, ou est-ce un cliché ?",
+    "lead": [
+     "Les statistiques d’accidents ne servent pas à faire peur : elles montrent **où**, **quand** et **chez qui** les accidents graves se produisent le plus souvent. Ce chapitre ne donne volontairement aucun chiffre, car ils changent chaque année. Les données officielles sont publiées par le BPA et l’Office fédéral de la statistique (OFS)."
+    ],
+    "parts": [
+     {
+      "title": "Les jeunes et les nouveaux conducteurs sont surreprésentés",
+      "body": [
+       "Une tendance revient régulièrement dans les analyses : les **jeunes conducteurs** et les **nouveaux conducteurs** sont impliqués dans les accidents graves plus souvent que leur part dans la population des conducteurs ne le laisserait attendre. On dit qu’ils sont **surreprésentés**.",
+       "Cela ne signifie pas que chaque jeune conducteur est dangereux. Cela signifie que la période qui suit l’obtention du permis est une phase à risque, liée surtout au manque d’expérience et à certains comportements typiques de cet âge. C’est l’une des raisons pour lesquelles la Suisse a introduit le permis à l’essai et la formation complémentaire obligatoire."
+      ]
+     },
+     {
+      "title": "Lire une statistique avec prudence",
+      "body": [
+       "Une statistique décrit un ensemble de cas, pas votre avenir personnel. Elle indique des tendances : certaines situations, certains moments ou certains comportements sont plus souvent liés à des accidents graves. Pour l’interpréter correctement, il faut savoir de quoi on parle : nombre d’accidents, de blessés graves, de morts, par rapport à quelle population ou à quelle distance parcourue.",
+       "Pour des chiffres précis et à jour, consultez les publications du **BPA** (https://www.bfu.ch/fr) et de l’**OFS**. À l’examen, on attend de vous que vous connaissiez les tendances et ce qu’elles impliquent pour votre conduite, pas que vous récitiez des chiffres."
+      ]
+     },
+     {
+      "title": "Ce que les tendances signifient pour vous",
+      "body": [
+       "Savoir que votre groupe est plus exposé n’est pas une fatalité : c’est une information utile. Elle vous invite à être particulièrement attentif pendant vos premières années de conduite, justement parce que c’est la période où l’expérience manque le plus.",
+       "Les analyses d’accidents montrent aussi que la plupart des accidents ont des causes humaines : erreur d’attention, vitesse inadaptée, mauvaise appréciation d’une situation. Cela veut dire que **votre comportement** est le levier le plus important pour réduire votre risque."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Statistique d’accidents",
+      "def": "Ensemble de données qui décrit le nombre, le type et les circonstances des accidents sur une période donnée."
+     },
+     {
+      "term": "Surreprésenté",
+      "def": "Qui apparaît plus souvent dans un ensemble (ici les accidents) que sa part dans la population ne le laisserait attendre."
+     },
+     {
+      "term": "BPA",
+      "def": "Bureau de prévention des accidents, centre suisse de compétences qui publie des analyses et des conseils de prévention."
+     },
+     {
+      "term": "OFS",
+      "def": "Office fédéral de la statistique, qui publie notamment les données officielles sur les accidents de la route."
+     }
+    ],
+    "method": [
+     "Retenez les tendances plutôt que des chiffres isolés.",
+     "Vérifiez de quoi parle une statistique : accidents, blessés, morts, quelle population.",
+     "Consultez le BPA ou l’OFS pour les chiffres à jour.",
+     "Traduisez chaque tendance en une décision concrète pour votre propre conduite."
+    ],
+    "example": {
+     "title": "Le débat entre amis",
+     "scene": "Lors d’une discussion, un ami affirme : « Les statistiques sur les jeunes conducteurs, c’est de la propagande. Moi, je conduis très bien. » Il a son permis depuis quatre mois.",
+     "reasoning": [
+      "Les statistiques ne disent pas que votre ami conduit mal : elles décrivent un groupe, pas une personne.",
+      "En revanche, elles montrent que la période des premières années de conduite est plus risquée, en grande partie à cause du manque d’expérience, que l’on ne perçoit justement pas soi-même.",
+      "Se sentir bon conducteur après quelques mois est fréquent ; c’est même l’un des facteurs de risque connus."
+     ],
+     "answer": "La tendance est réelle et documentée par le BPA et l’OFS. La bonne réaction n’est pas de la nier, mais d’en tenir compte en gardant de grandes marges pendant les premières années."
+    },
+    "trap": "Le piège est de penser « une statistique, ça ne me concerne pas ». Une tendance ne prédit pas votre avenir personnel, mais elle indique où se trouvent les risques. L’ignorer, c’est se priver d’une information gratuite pour se protéger.",
+    "remember": "Les jeunes et nouveaux conducteurs sont surreprésentés dans les accidents graves : c’est une raison de redoubler de prudence, pas de s’en croire exempté.",
+    "memo": {
+     "code": "T–S–D",
+     "text": "Face à une statistique : Tendance (que montre-t-elle ?), Source (BPA, OFS), Décision (que change-t-elle pour moi ?)."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 1",
+    "source": {
+     "label": "BPA · Bureau de prévention des accidents",
+     "href": "https://www.bfu.ch/fr"
+    }
+   },
+   {
+    "id": "causes-nouveaux",
+    "otitle": "Causes typiques chez les nouveaux conducteurs",
+    "title": "Pourquoi les nouveaux conducteurs ont des accidents",
+    "ogoal": "Connaître les causes d’accident les plus typiques chez les nouveaux conducteurs : inexpérience, distraction, vitesse excessive et conduite sous influence.",
+    "question": "Qu’est-ce qui rend les premières années de conduite plus risquées ?",
+    "lead": [
+     "Les accidents des nouveaux conducteurs ne sont pas le fruit du hasard. On retrouve souvent les mêmes causes, seules ou combinées. Les connaître permet de les repérer à temps dans votre propre conduite."
+    ],
+    "parts": [
+     {
+      "title": "L’inexpérience",
+      "body": [
+       "Au début, beaucoup de gestes demandent encore de l’attention consciente : changer de vitesse, contrôler les rétroviseurs, se placer correctement. Il reste alors moins d’attention disponible pour observer la circulation et anticiper. C’est l’**inexpérience** : vous n’avez pas encore rencontré assez de situations pour les reconnaître rapidement.",
+       "Un conducteur expérimenté voit un ballon rouler sur la route et pense immédiatement à l’enfant qui peut suivre. Un débutant voit le ballon, mais met plus de temps à en tirer la conséquence. L’expérience s’acquiert avec le temps et la pratique ; en attendant, la seule compensation possible est une **marge de sécurité plus grande**."
+      ]
+     },
+     {
+      "title": "La distraction et la vitesse excessive",
+      "body": [
+       "La **distraction**, c’est tout ce qui détourne votre regard, vos mains ou votre esprit de la conduite : téléphone, réglage de la musique, discussion animée avec des passagers. Même un coup d’œil de quelques instants suffit pour ne pas voir un véhicule qui freine ou un piéton qui s’engage.",
+       "La **vitesse excessive** ou inadaptée est l’autre grande cause. Elle ne signifie pas seulement dépasser la limite : rouler à la vitesse autorisée peut être trop rapide dans un virage serré, sur une route mouillée ou près d’une école. Plus la vitesse est élevée, plus la distance d’arrêt est longue et plus les conséquences d’un choc sont graves."
+      ]
+     },
+     {
+      "title": "La conduite sous influence",
+      "body": [
+       "Conduire sous l’influence de l’**alcool**, de **drogues** ou de certains **médicaments** diminue la perception, ralentit les réactions et augmente la confiance en soi. C’est une combinaison particulièrement dangereuse : vous prenez plus de risques au moment précis où vous êtes moins capable d’y faire face.",
+       "Les règles en matière d’alcool sont plus strictes pour les nouveaux conducteurs, et une infraction pendant la période probatoire peut entraîner le retrait du permis, la prolongation de la période d’essai, voire l’annulation du permis à l’essai en cas de récidive. La règle la plus simple et la plus sûre : si vous conduisez, vous ne buvez pas et vous ne consommez aucune substance qui altère vos capacités."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Inexpérience",
+      "def": "Manque de pratique qui empêche de reconnaître rapidement les situations et d’y réagir de façon automatique."
+     },
+     {
+      "term": "Distraction",
+      "def": "Tout ce qui détourne le regard, les mains ou l’esprit de la tâche de conduite."
+     },
+     {
+      "term": "Vitesse inadaptée",
+      "def": "Vitesse trop élevée pour les conditions du moment (route, météo, visibilité, trafic), même si elle respecte la limite."
+     },
+     {
+      "term": "Conduite sous influence",
+      "def": "Conduite après avoir consommé de l’alcool, des drogues ou des médicaments qui altèrent les capacités."
+     }
+    ],
+    "method": [
+     "Augmentez vos marges tant que l’expérience vous manque.",
+     "Rangez le téléphone et réglez tout avant de partir.",
+     "Adaptez votre vitesse à la route, à la météo et à la visibilité, pas seulement au panneau.",
+     "Ne consommez ni alcool ni substance altérant vos capacités si vous devez conduire."
+    ],
+    "example": {
+     "title": "Le message sur l’autoroute",
+     "scene": "Vous roulez sur l’A1 entre Lausanne et Genève, permis obtenu il y a deux mois. Votre téléphone vibre sur le siège passager. Le trafic est dense et les véhicules devant vous roulent de façon irrégulière.",
+     "reasoning": [
+      "Vous cumulez deux facteurs : l’inexpérience, qui demande déjà beaucoup d’attention, et la tentation de la distraction.",
+      "Dans un trafic dense, les ralentissements arrivent soudainement ; un regard vers le téléphone peut suffire pour ne pas voir les feux stop devant vous.",
+      "Le message peut attendre ; votre attention ne peut pas."
+     ],
+     "answer": "Vous ignorez le téléphone, gardez une distance généreuse et ne lisez le message qu’une fois arrêté sur une aire de repos ou à destination."
+    },
+    "trap": "Le piège est de croire que ces causes concernent « les autres » : ceux qui boivent, ceux qui foncent. En réalité, les nouveaux conducteurs prudents sont aussi exposés, simplement par inexpérience ou par une distraction d’un instant. Personne n’est à l’abri ; tout le monde peut réduire son risque.",
+    "remember": "Inexpérience, distraction, vitesse inadaptée et conduite sous influence : quatre causes typiques que vous pouvez toutes contrer par vos choix.",
+    "memo": {
+     "code": "I–D–V–S",
+     "text": "Les quatre causes typiques : Inexpérience (je garde plus de marge), Distraction (je range le téléphone), Vitesse (je l’adapte), Substances (zéro si je conduis)."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 1",
+    "source": {
+     "label": "BPA · Bureau de prévention des accidents",
+     "href": "https://www.bfu.ch/fr"
+    }
+   },
+   {
+    "id": "facteurs-personnels",
+    "otitle": "Facteurs personnels et lecture du risque",
+    "title": "Ce qui augmente votre risque personnel, et comment le lire",
+    "ogoal": "Reconnaître les facteurs personnels qui aggravent le risque et découvrir deux outils pour l’analyser : le modèle des interactions et la fourche analytique.",
+    "question": "Pourquoi deux conducteurs sur la même route ne courent-ils pas le même risque ?",
+    "lead": [
+     "Le risque ne dépend pas seulement de la route : il dépend aussi de la personne qui conduit. Certains facteurs personnels l’augmentent nettement. Cette section les présente, puis introduit brièvement deux outils d’analyse qui seront approfondis au chapitre 4.8."
+    ],
+    "parts": [
+     {
+      "title": "Les facteurs personnels aggravants",
+      "body": [
+       "Plusieurs facteurs se combinent souvent chez les nouveaux conducteurs. L’**âge** : chez les jeunes, la recherche de sensations et la sensibilité au regard des autres sont souvent plus fortes. Le **manque d’expérience** : les situations ne sont pas encore reconnues rapidement. La **surestimation de soi** : après quelques mois sans problème, on se croit plus compétent qu’on ne l’est.",
+       "S’y ajoutent la **pression du groupe**, lorsque des passagers du même âge encouragent une conduite rapide, et la **conduite de nuit** : visibilité réduite, fatigue, et parfois retour de soirée. Chaque facteur augmente le risque ; plusieurs facteurs réunis l’augmentent fortement. Un trajet de nuit, avec des amis, peu après l’obtention du permis, cumule ainsi plusieurs facteurs à la fois."
+      ]
+     },
+     {
+      "title": "Le modèle des interactions",
+      "body": [
+       "Le **modèle des interactions** est une manière de comprendre comment naît une situation dangereuse. Il considère que le risque résulte de l’interaction entre trois éléments : **la personne** qui conduit (son état, son expérience, ses motivations), **le véhicule** (son état, ses équipements, son chargement) et **l’environnement** (la route, la météo, le trafic, les autres usagers).",
+       "Un accident survient rarement à cause d’un seul élément. C’est souvent la rencontre de plusieurs : un conducteur fatigué, des pneus usés et une route mouillée de nuit. Ce modèle vous aide à regarder l’ensemble de la situation, et à agir sur ce qui dépend de vous : votre état, votre véhicule, votre vitesse."
+      ]
+     },
+     {
+      "title": "La fourche analytique (aperçu)",
+      "body": [
+       "La **fourche analytique** est un outil pédagogique pour décomposer une situation à risque en plusieurs branches : on examine séparément les différents facteurs possibles, puis la manière dont ils peuvent évoluer, avant de choisir la décision qui laisse la plus grande marge. Il s’agit d’une **méthode d’analyse**, pas d’une règle légale.",
+       "Ce chapitre n’en donne qu’une présentation simplifiée ; la méthode détaillée est exposée au chapitre 4.8. Retenez pour l’instant l’idée principale : avant d’agir, on ne se contente pas d’une seule hypothèse, on envisage les différentes évolutions possibles de la situation."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Facteur aggravant",
+      "def": "Élément qui augmente le risque d’accident, comme la fatigue, l’inexpérience ou la conduite de nuit."
+     },
+     {
+      "term": "Surestimation de soi",
+      "def": "Fait de se croire plus compétent ou plus en sécurité qu’on ne l’est réellement."
+     },
+     {
+      "term": "Modèle des interactions",
+      "def": "Méthode qui explique le risque par l’interaction entre la personne, le véhicule et l’environnement."
+     },
+     {
+      "term": "Fourche analytique",
+      "def": "Outil pédagogique qui décompose une situation en plusieurs branches pour examiner les évolutions possibles avant de décider. Détail au chapitre 4.8."
+     }
+    ],
+    "method": [
+     "Faites le point sur vos propres facteurs : âge, expérience, fatigue, passagers, heure.",
+     "Comptez combien de facteurs aggravants se cumulent pour ce trajet.",
+     "Examinez la personne, le véhicule et l’environnement séparément.",
+     "Envisagez plusieurs évolutions possibles de la situation.",
+     "Choisissez la décision qui vous laisse la plus grande marge."
+    ],
+    "example": {
+     "title": "Retour de nuit vers Fribourg",
+     "scene": "Il est une heure du matin. Vous avez votre permis depuis trois mois. Vous ramenez quatre amis d’un concert, hors localité, vers Fribourg. Il bruine et la route est peu éclairée. Vos amis vous encouragent à « accélérer un peu ».",
+     "reasoning": [
+      "Facteurs personnels : jeune âge, peu d’expérience, fatigue de la nuit, pression du groupe. Au moins quatre facteurs se cumulent.",
+      "Selon le modèle des interactions : la personne est fatiguée et sollicitée, le véhicule est chargé, l’environnement est sombre et humide.",
+      "En envisageant plusieurs évolutions possibles (animal sur la route, virage plus serré que prévu, véhicule en panne), la seule décision qui garde une marge est de rouler plus lentement que d’habitude."
+     ],
+     "answer": "Vous refusez d’accélérer, réduisez votre vitesse, augmentez vos distances et demandez le calme à bord. Si la fatigue est trop forte, vous vous arrêtez dans un endroit sûr."
+    },
+    "trap": "Le piège est d’évaluer chaque facteur séparément en se disant « ce n’est pas grave ». Un peu de fatigue, un peu de pluie, un peu d’encouragement des passagers : pris un à un, ils semblent mineurs. C’est leur **cumul** qui rend la situation dangereuse.",
+    "remember": "Le risque naît de la rencontre entre vous, votre véhicule et l’environnement : plus les facteurs aggravants se cumulent, plus votre marge doit grandir.",
+    "memo": {
+     "code": "P–V–E",
+     "text": "Le modèle des interactions en trois lettres : Personne, Véhicule, Environnement. Si l’un des trois faiblit, les deux autres doivent compenser."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 1",
+    "source": {
+     "label": "asa · Catalogue des compétences (théorie de base, 2026)",
+     "href": "https://asa.ch/wp-content/uploads/2026/07/Catalogue-des-competences_theorie-de-base-1.pdf"
+    }
+   },
+   {
+    "id": "strategie-prevention",
+    "otitle": "Stratégie de prévention",
+    "title": "Se protéger : conduite défensive et marges de sécurité",
+    "ogoal": "Adopter une stratégie de prévention fondée sur la tactique défensive, le refus des manœuvres risquées et le maintien d’une marge de sécurité.",
+    "question": "Comment réduire concrètement mon risque d’accident dès mes premiers trajets ?",
+    "lead": [
+     "Connaître les risques n’a de valeur que si vous en tirez une manière de conduire. Cette section présente une stratégie simple en trois piliers : une tactique défensive, le refus de toute manœuvre risquée et une marge de sécurité permanente."
+    ],
+    "parts": [
+     {
+      "title": "La tactique défensive",
+      "body": [
+       "La **tactique défensive** consiste à conduire en anticipant les erreurs possibles des autres et les siennes. Vous regardez loin, vous observez les indices (un véhicule qui hésite, un piéton qui regarde son téléphone, une portière qui pourrait s’ouvrir) et vous vous préparez avant que la situation ne devienne critique.",
+       "Elle s’appuie sur la règle fondamentale de la LCR : vous pouvez en principe compter sur le respect des règles par les autres, mais cette confiance cesse dès qu’un indice montre qu’un usager va se tromper, ou face à des enfants, des personnes âgées ou des usagers inattentifs. Être défensif, ce n’est pas être craintif : c’est garder l’initiative en ayant toujours une solution de rechange."
+      ]
+     },
+     {
+      "title": "Refuser les manœuvres risquées",
+      "body": [
+       "Une manœuvre est risquée lorsque sa réussite dépend de conditions que vous ne contrôlez pas : un dépassement dont vous ne voyez pas la fin, un feu orange « tiré », une insertion dans un trou trop court. La bonne décision est alors simple : **renoncer**.",
+       "Renoncer n’est pas un échec. Sur la plupart des trajets, une manœuvre risquée ne fait gagner que très peu de temps, alors qu’elle peut avoir des conséquences irréversibles. Prenez l’habitude de vous poser une question avant chaque manœuvre : « si quelque chose d’imprévu arrive, ai-je encore une solution ? » Si la réponse est non, vous n’y allez pas."
+      ]
+     },
+     {
+      "title": "Garder une marge de sécurité",
+      "body": [
+       "La **marge de sécurité**, c’est l’espace et le temps que vous gardez en réserve : une distance suffisante avec le véhicule qui précède, de l’espace sur les côtés, une vitesse qui vous permet de vous arrêter dans la distance que vous voyez libre.",
+       "Pendant vos premières années, cette marge doit être plus grande que celle d’un conducteur expérimenté, car votre temps de réaction et votre capacité à reconnaître les situations sont encore en développement. Les systèmes d’aide à la conduite peuvent soutenir cette marge, mais ils ne vous dispensent jamais de votre responsabilité."
+      ]
+     }
+    ],
+    "words": [
+     {
+      "term": "Tactique défensive",
+      "def": "Manière de conduire qui anticipe les erreurs possibles des autres et les siennes, pour garder toujours une solution de rechange."
+     },
+     {
+      "term": "Manœuvre risquée",
+      "def": "Action dont la réussite dépend de conditions que vous ne pouvez pas contrôler ou vérifier."
+     },
+     {
+      "term": "Marge de sécurité",
+      "def": "Espace et temps gardés en réserve pour pouvoir réagir à un imprévu sans collision."
+     },
+     {
+      "term": "Solution de rechange",
+      "def": "Possibilité d’action restante (freiner, s’écarter, s’arrêter) si la situation évolue de manière imprévue."
+     }
+    ],
+    "method": [
+     "Regardez loin et repérez les indices d’erreur des autres usagers.",
+     "Avant chaque manœuvre, vérifiez que vous aurez encore une solution en cas d’imprévu.",
+     "Renoncez dès que la réussite dépend de ce que vous ne contrôlez pas.",
+     "Gardez une distance et une vitesse qui vous permettent de vous arrêter dans l’espace visible libre.",
+     "Ne laissez jamais un système d’aide décider à votre place."
+    ],
+    "example": {
+     "title": "Le feu orange à Neuchâtel",
+     "scene": "Vous roulez en localité à Neuchâtel. Le feu devant vous passe à l’orange alors que vous êtes encore à une bonne distance. Un piéton attend sur le trottoir, prêt à traverser dès que son feu passera au vert.",
+     "reasoning": [
+      "« Tirer » l’orange serait une manœuvre risquée : sa réussite dépend du piéton, qui pourrait s’engager dès le changement de feu.",
+      "Vous êtes à une distance qui vous permet de vous arrêter sans freinage brusque : votre marge de sécurité est suffisante pour vous arrêter.",
+      "La tactique défensive vous pousse à anticiper le mouvement du piéton plutôt qu’à espérer qu’il attende."
+     ],
+     "answer": "Vous vous arrêtez avant le feu. Le temps perdu est de quelques dizaines de secondes, et aucun conflit avec le piéton n’est possible."
+    },
+    "trap": "Le piège est de croire que la conduite défensive rend lent ou hésitant. Au contraire, un conducteur défensif est souvent plus fluide, car il anticipe et évite les freinages brusques. Ce qui rend une conduite dangereuse, ce n’est pas la prudence, c’est l’absence de solution de rechange.",
+    "remember": "Anticipez les erreurs, renoncez aux manœuvres risquées et gardez toujours une marge : c’est votre meilleure protection pendant les premières années.",
+    "memo": {
+     "code": "A–R–M",
+     "text": "Votre stratégie de prévention : Anticiper (tactique défensive), Renoncer (pas de manœuvre risquée), Marge (toujours de l’espace et du temps en réserve)."
+    },
+    "law": "Plan d’enseignement OCTC, bloc 1 ; LCR art. 26",
+    "source": {
+     "label": "Fedlex · LCR",
+     "href": "https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr"
+    }
+   }
+  ]
+ },
+ "questions": [
+  {
+   "id": "N47-STA-01",
+   "chapter": "N47",
+   "section": "statistiques-accidents",
+   "stem": "Que montrent de façon générale les statistiques d’accidents au sujet des jeunes et nouveaux conducteurs ?",
+   "options": [
+    "Ils sont surreprésentés dans les accidents graves.",
+    "Ils ont moins d’accidents grâce à leur formation récente.",
+    "La période qui suit l’obtention du permis est une phase à risque."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Les jeunes et nouveaux conducteurs sont plus souvent impliqués que leur part ne le laisserait attendre.",
+   "why": "Le manque d’expérience et certains comportements typiques augmentent le risque dans les premières années.",
+   "trap": "Croire qu’une formation récente suffit à protéger.",
+   "action": "Gardez de grandes marges de sécurité pendant vos premières années.",
+   "memory": "Nouveau permis, prudence maximale."
+  },
+  {
+   "id": "N47-STA-02",
+   "chapter": "N47",
+   "section": "statistiques-accidents",
+   "stem": "Où trouver des chiffres officiels et à jour sur les accidents de la route en Suisse ?",
+   "options": [
+    "Auprès du BPA.",
+    "Auprès de l’Office fédéral de la statistique (OFS).",
+    "Uniquement dans les commentaires des réseaux sociaux."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Le BPA et l’OFS publient des données fiables sur les accidents.",
+   "why": "Ces organismes collectent et analysent les données de manière systématique.",
+   "trap": "Se fier à des chiffres non sourcés.",
+   "action": "Consultez https://www.bfu.ch/fr et les publications de l’OFS.",
+   "memory": "Un chiffre ? Une source."
+  },
+  {
+   "id": "N47-STA-03",
+   "chapter": "N47",
+   "section": "statistiques-accidents",
+   "stem": "Que signifie qu’un groupe est « surreprésenté » dans les accidents ?",
+   "options": [
+    "Il apparaît plus souvent dans les accidents que sa part dans la population ne le laisserait attendre.",
+    "Chaque membre de ce groupe aura forcément un accident.",
+    "Il s’agit d’une tendance qui concerne le groupe, pas une prédiction sur une personne."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Surreprésenté décrit une proportion au niveau du groupe.",
+   "why": "Une statistique décrit un ensemble de cas, pas le destin de chacun.",
+   "trap": "Confondre tendance de groupe et certitude individuelle.",
+   "action": "Utilisez la tendance comme signal de prudence pour vous-même.",
+   "memory": "Tendance de groupe ≠ destin personnel."
+  },
+  {
+   "id": "N47-STA-04",
+   "chapter": "N47",
+   "section": "statistiques-accidents",
+   "stem": "Selon les analyses d’accidents, quelle est la cause la plus fréquente des accidents ?",
+   "options": [
+    "Des facteurs humains, comme l’inattention ou une vitesse inadaptée.",
+    "Presque toujours une défaillance technique imprévisible du véhicule.",
+    "Des erreurs d’appréciation d’une situation de circulation."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La plupart des accidents ont des causes humaines.",
+   "why": "Erreurs d’attention, vitesse inadaptée et mauvaise appréciation reviennent régulièrement dans les analyses.",
+   "trap": "Attribuer les accidents surtout à la malchance ou à la technique.",
+   "action": "Concentrez vos efforts sur votre propre comportement.",
+   "memory": "Le facteur principal, c’est l’humain."
+  },
+  {
+   "id": "N47-STA-05",
+   "chapter": "N47",
+   "section": "statistiques-accidents",
+   "stem": "Pourquoi est-il utile, pour un nouveau conducteur, de connaître les tendances des accidents ?",
+   "options": [
+    "Pour savoir dans quelles situations être particulièrement attentif.",
+    "Pour pouvoir réciter des chiffres précis à l’examen pratique.",
+    "Pour comprendre pourquoi des mesures comme le permis à l’essai existent."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Les tendances aident à orienter sa prudence et à comprendre le système de formation.",
+   "why": "Le permis à l’essai et la formation complémentaire répondent au risque accru des débuts.",
+   "trap": "Croire que l’objectif est de mémoriser des chiffres.",
+   "action": "Retenez les tendances et appliquez-les à vos trajets.",
+   "memory": "Comprendre pour se protéger."
+  },
+  {
+   "id": "N47-STA-06",
+   "chapter": "N47",
+   "section": "statistiques-accidents",
+   "stem": "Un ami qui a son permis depuis quatre mois dit : « Les statistiques, ça ne me concerne pas, je conduis bien. » Qu’est-ce qui est juste ?",
+   "options": [
+    "Se sentir bon conducteur après peu de temps est un facteur de risque connu.",
+    "Il a raison : une statistique ne concerne jamais les individus.",
+    "Le manque d’expérience est difficile à percevoir soi-même."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Le sentiment de maîtrise précoce fait partie du risque des débuts.",
+   "why": "On ne voit pas facilement ce que l’expérience ne nous a pas encore appris.",
+   "trap": "Nier une tendance parce qu’on se sent compétent.",
+   "action": "Gardez une attitude modeste et de grandes marges.",
+   "memory": "Je me sens bon ? Je reste prudent."
+  },
+  {
+   "id": "N47-CAU-01",
+   "chapter": "N47",
+   "section": "causes-nouveaux",
+   "stem": "Pourquoi l’inexpérience augmente-t-elle le risque d’accident ?",
+   "options": [
+    "Parce que beaucoup de gestes demandent encore une attention consciente.",
+    "Parce qu’il reste moins d’attention disponible pour observer et anticiper.",
+    "Parce que les nouveaux conducteurs n’ont pas le droit d’utiliser l’autoroute."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Le débutant consacre une partie de son attention à la manipulation du véhicule.",
+   "why": "Les situations ne sont pas encore reconnues automatiquement, ce qui ralentit l’anticipation.",
+   "trap": "Penser que la connaissance des règles suffit à remplacer l’expérience.",
+   "action": "Compensez l’inexpérience par des marges plus grandes.",
+   "memory": "Peu d’expérience, plus de marge."
+  },
+  {
+   "id": "N47-CAU-02",
+   "chapter": "N47",
+   "section": "causes-nouveaux",
+   "stem": "Qu’est-ce qui peut être une source de distraction au volant ?",
+   "options": [
+    "Lire un message sur son téléphone.",
+    "Une discussion animée avec des passagers.",
+    "Contrôler régulièrement les rétroviseurs."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "La distraction détourne le regard, les mains ou l’esprit de la conduite.",
+   "why": "Le téléphone et les discussions animées captent une partie de votre attention.",
+   "trap": "Croire que seul le téléphone est une distraction.",
+   "action": "Réglez tout avant de partir et limitez les sources de distraction.",
+   "memory": "Yeux, mains, tête : sur la route."
+  },
+  {
+   "id": "N47-CAU-03",
+   "chapter": "N47",
+   "section": "causes-nouveaux",
+   "stem": "Vous roulez à la vitesse maximale autorisée sur une route mouillée, dans un virage serré. Qu’est-ce qui est juste ?",
+   "options": [
+    "Cette vitesse peut être inadaptée même si elle respecte la limite.",
+    "Une vitesse légale est toujours une vitesse sûre.",
+    "Il faut adapter la vitesse à l’état de la route et à la visibilité."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Vitesse autorisée et vitesse adaptée ne sont pas la même chose.",
+   "why": "Sur route mouillée, l’adhérence diminue et la distance d’arrêt s’allonge.",
+   "trap": "Se fier uniquement au panneau de limitation.",
+   "action": "Réduisez la vitesse avant le virage.",
+   "memory": "Limite = plafond, pas objectif."
+  },
+  {
+   "id": "N47-CAU-04",
+   "chapter": "N47",
+   "section": "causes-nouveaux",
+   "stem": "Pourquoi la conduite sous l’influence de l’alcool est-elle particulièrement dangereuse ?",
+   "options": [
+    "Elle ralentit les réactions et diminue la perception.",
+    "Elle augmente la confiance en soi, ce qui pousse à prendre plus de risques.",
+    "Elle améliore la concentration sur les longs trajets."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "L’alcool réduit les capacités tout en augmentant la prise de risque.",
+   "why": "Vous prenez plus de risques au moment où vous êtes le moins capable d’y faire face.",
+   "trap": "Croire qu’on « tient bien l’alcool ».",
+   "action": "Si vous conduisez, ne buvez pas.",
+   "memory": "Je conduis, je ne bois pas."
+  },
+  {
+   "id": "N47-CAU-05",
+   "chapter": "N47",
+   "section": "causes-nouveaux",
+   "stem": "Quelles conséquences une infraction grave pendant la période probatoire peut-elle avoir ?",
+   "options": [
+    "Un retrait du permis et une prolongation d’un an de la période d’essai.",
+    "Aucune, tant qu’il s’agit d’une première infraction.",
+    "L’annulation du permis à l’essai en cas de deuxième infraction de ce type."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Le permis à l’essai est sanctionné plus sévèrement en cas d’infraction moyenne ou grave.",
+   "why": "Un premier retrait prolonge la période probatoire d’un an ; une deuxième infraction de ce type entraîne l’annulation du permis à l’essai.",
+   "trap": "Penser qu’une première infraction est sans effet.",
+   "action": "Pendant la période probatoire, roulez de manière irréprochable.",
+   "memory": "Une fois : prolongé. Deux fois : annulé."
+  },
+  {
+   "id": "N47-CAU-06",
+   "chapter": "N47",
+   "section": "causes-nouveaux",
+   "stem": "Vous êtes nouveau conducteur sur l’autoroute en trafic dense et votre téléphone vibre. Que faites-vous ?",
+   "options": [
+    "Vous jetez un rapide coup d’œil, puisque cela ne prend qu’un instant.",
+    "Vous ignorez le téléphone jusqu’à un arrêt dans un endroit sûr.",
+    "Vous gardez une distance généreuse avec le véhicule qui précède."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "En trafic dense, un instant d’inattention peut suffire à provoquer une collision.",
+   "why": "Les ralentissements surviennent soudainement ; le message peut attendre.",
+   "trap": "Croire qu’un coup d’œil rapide est sans risque.",
+   "action": "Rangez le téléphone hors de portée avant de partir.",
+   "memory": "Le message attend, la route non."
+  },
+  {
+   "id": "N47-FAC-01",
+   "chapter": "N47",
+   "section": "facteurs-personnels",
+   "stem": "Quels éléments sont des facteurs personnels qui aggravent le risque chez un nouveau conducteur ?",
+   "options": [
+    "La surestimation de ses propres capacités.",
+    "Le manque d’expérience.",
+    "Le fait d’avoir suivi un cours de théorie de la circulation."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Surestimation et inexpérience augmentent le risque.",
+   "why": "On se croit vite compétent alors que l’expérience manque encore pour reconnaître les situations.",
+   "trap": "Croire que la formation théorique suffit à éliminer le risque.",
+   "action": "Restez modeste et gardez de grandes marges.",
+   "memory": "Je me crois fort ? Je reste humble."
+  },
+  {
+   "id": "N47-FAC-02",
+   "chapter": "N47",
+   "section": "facteurs-personnels",
+   "stem": "Pourquoi la conduite de nuit est-elle un facteur aggravant ?",
+   "options": [
+    "La visibilité est réduite.",
+    "La fatigue est plus fréquente.",
+    "Les règles de circulation ne s’appliquent pas la nuit."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "La nuit cumule visibilité réduite et fatigue.",
+   "why": "On voit moins loin et les réactions peuvent être plus lentes à cause de la fatigue.",
+   "trap": "Croire que la route vide de nuit rend la conduite plus sûre.",
+   "action": "Réduisez la vitesse de nuit et faites des pauses si vous êtes fatigué.",
+   "memory": "Nuit = voir moins, réagir moins vite."
+  },
+  {
+   "id": "N47-FAC-03",
+   "chapter": "N47",
+   "section": "facteurs-personnels",
+   "stem": "Que considère le modèle des interactions ?",
+   "options": [
+    "Que le risque résulte de l’interaction entre la personne, le véhicule et l’environnement.",
+    "Que seul l’état du véhicule détermine le risque.",
+    "Qu’un accident naît souvent de la rencontre de plusieurs éléments."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Le modèle des interactions regarde l’ensemble de la situation.",
+   "why": "Personne, véhicule et environnement s’influencent mutuellement ; c’est leur combinaison qui crée le danger.",
+   "trap": "Chercher une cause unique à chaque accident.",
+   "action": "Examinez les trois éléments avant et pendant le trajet.",
+   "memory": "Personne, Véhicule, Environnement."
+  },
+  {
+   "id": "N47-FAC-04",
+   "chapter": "N47",
+   "section": "facteurs-personnels",
+   "stem": "Vous rentrez de nuit avec des amis, permis obtenu il y a peu, sous la pluie. Qu’est-ce qui est juste ?",
+   "options": [
+    "Plusieurs facteurs aggravants se cumulent dans cette situation.",
+    "Chaque facteur pris seul est mineur, donc la situation n’est pas risquée.",
+    "Votre marge de sécurité doit être plus grande que d’habitude."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "C’est le cumul des facteurs qui rend la situation dangereuse.",
+   "why": "Inexpérience, nuit, pluie et passagers du même âge s’additionnent.",
+   "trap": "Évaluer les facteurs un par un en les jugeant chacun « pas grave ».",
+   "action": "Ralentissez, augmentez vos distances et demandez le calme à bord.",
+   "memory": "Plus de facteurs, plus de marge."
+  },
+  {
+   "id": "N47-FAC-05",
+   "chapter": "N47",
+   "section": "facteurs-personnels",
+   "stem": "Qu’est-ce que la fourche analytique, telle que présentée dans ce chapitre ?",
+   "options": [
+    "Un outil pédagogique pour décomposer une situation en plusieurs évolutions possibles avant de décider.",
+    "Une règle légale inscrite dans la LCR.",
+    "Une méthode d’analyse détaillée au chapitre 4.8."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La fourche analytique est une méthode d’analyse, pas une obligation légale.",
+   "why": "Elle aide à ne pas se contenter d’une seule hypothèse sur l’évolution d’une situation.",
+   "trap": "Confondre méthode pédagogique et règle de droit.",
+   "action": "Avant d’agir, envisagez plusieurs évolutions possibles.",
+   "memory": "Une situation, plusieurs branches."
+  },
+  {
+   "id": "N47-FAC-06",
+   "chapter": "N47",
+   "section": "facteurs-personnels",
+   "stem": "Des passagers du même âge encouragent une conduite rapide. Qu’est-ce qui est vrai ?",
+   "options": [
+    "Il s’agit d’une forme de pression du groupe, facteur aggravant connu.",
+    "La présence de passagers diminue toujours le risque, car ils aident à surveiller.",
+    "Cette pression peut pousser à réduire les marges de sécurité."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La pression du groupe est un facteur personnel aggravant.",
+   "why": "Le désir de répondre aux attentes des passagers peut faire accepter des risques que l’on n’aurait pas pris seul.",
+   "trap": "Croire que les passagers sont toujours une aide.",
+   "action": "Gardez votre rythme et dites clairement que vous ne roulerez pas plus vite.",
+   "memory": "Leur encouragement, ma responsabilité."
+  },
+  {
+   "id": "N47-PRE-01",
+   "chapter": "N47",
+   "section": "strategie-prevention",
+   "stem": "Qu’est-ce qui caractérise la tactique défensive ?",
+   "options": [
+    "Anticiper les erreurs possibles des autres usagers.",
+    "Imposer sa priorité pour que les autres apprennent les règles.",
+    "Garder toujours une solution de rechange en cas d’imprévu."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La tactique défensive repose sur l’anticipation et les solutions de rechange.",
+   "why": "En prévoyant les erreurs possibles, vous agissez avant que la situation ne devienne critique.",
+   "trap": "Confondre conduite défensive et conduite craintive ou agressive.",
+   "action": "Regardez loin et préparez-vous à chaque indice d’erreur.",
+   "memory": "Anticiper, c’est garder l’initiative."
+  },
+  {
+   "id": "N47-PRE-02",
+   "chapter": "N47",
+   "section": "strategie-prevention",
+   "stem": "Quand une manœuvre doit-elle être considérée comme risquée ?",
+   "options": [
+    "Lorsque sa réussite dépend de conditions que vous ne contrôlez pas.",
+    "Lorsque vous ne voyez pas la fin d’un dépassement.",
+    "Lorsque vous avez une visibilité dégagée et une distance suffisante."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "truth": "Une manœuvre est risquée quand vous ne pouvez pas en garantir la fin en sécurité.",
+   "why": "Sans visibilité ni contrôle de la situation, la réussite dépend du hasard.",
+   "trap": "Croire que la puissance du véhicule ou l’habileté compensent le manque de visibilité.",
+   "action": "Renoncez dès qu’un élément essentiel vous échappe.",
+   "memory": "Pas de solution ? Pas de manœuvre."
+  },
+  {
+   "id": "N47-PRE-03",
+   "chapter": "N47",
+   "section": "strategie-prevention",
+   "stem": "Pourquoi un nouveau conducteur doit-il garder une marge de sécurité plus grande ?",
+   "options": [
+    "Parce que sa capacité à reconnaître les situations est encore en développement.",
+    "Parce que la loi impose une distance différente aux nouveaux conducteurs dans tous les cas.",
+    "Parce qu’une marge plus grande compense un temps de réaction et d’analyse plus long."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La marge plus grande est une recommandation qui compense le manque d’expérience.",
+   "why": "Le débutant met plus de temps à reconnaître un danger ; l’espace en réserve lui donne ce temps.",
+   "trap": "Confondre recommandation de prudence et obligation légale spécifique.",
+   "action": "Augmentez vos distances tant que l’expérience vous manque.",
+   "memory": "Peu d’expérience, grande marge."
+  },
+  {
+   "id": "N47-PRE-04",
+   "chapter": "N47",
+   "section": "strategie-prevention",
+   "stem": "Votre voiture est équipée d’un système de freinage d’urgence automatique. Qu’est-ce qui est juste ?",
+   "options": [
+    "Il peut soutenir votre marge de sécurité.",
+    "Il vous dispense de garder une distance suffisante.",
+    "Vous restez entièrement responsable de votre conduite."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "Les systèmes d’aide aident, mais ne remplacent pas le conducteur.",
+   "why": "Un système peut avoir des limites (météo, capteurs, situations particulières) ; la responsabilité reste la vôtre.",
+   "trap": "Se reposer sur la technique et réduire sa vigilance.",
+   "action": "Conduisez comme si le système n’existait pas.",
+   "memory": "Le système aide, je conduis."
+  },
+  {
+   "id": "N47-PRE-05",
+   "chapter": "N47",
+   "section": "strategie-prevention",
+   "stem": "En localité, le feu passe à l’orange alors que vous pouvez encore vous arrêter sans freinage brusque. Un piéton attend de traverser. Que faites-vous ?",
+   "options": [
+    "Vous accélérez pour passer avant le rouge.",
+    "Vous vous arrêtez avant le feu.",
+    "Vous anticipez que le piéton peut s’engager dès que son feu passera au vert."
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "truth": "Si l’arrêt est possible en sécurité, l’orange impose de s’arrêter.",
+   "why": "Tirer l’orange est une manœuvre risquée qui dépend du comportement du piéton.",
+   "trap": "Considérer l’orange comme un « dernier moment pour passer ».",
+   "action": "Arrêtez-vous calmement et laissez passer le piéton.",
+   "memory": "Orange et arrêt possible : je m’arrête."
+  },
+  {
+   "id": "N47-PRE-06",
+   "chapter": "N47",
+   "section": "strategie-prevention",
+   "stem": "Selon la règle fondamentale de la LCR, quand le principe de confiance envers les autres usagers cesse-t-il ?",
+   "options": [
+    "Lorsqu’un indice concret montre qu’un usager va se tromper.",
+    "Jamais : on peut toujours compter sur le respect des règles par les autres.",
+    "Face à des enfants ou à des usagers qui semblent inattentifs."
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "truth": "La confiance a des limites : indices d’erreur et usagers vulnérables.",
+   "why": "La LCR exige une prudence particulière dans ces situations, ce qui est au cœur de la tactique défensive.",
+   "trap": "Se croire protégé par le fait que l’autre est en tort.",
+   "action": "Dès qu’un indice apparaît, ralentissez et préparez-vous à freiner.",
+   "memory": "Indice d’erreur : la confiance s’arrête."
+  }
+ ]
+}

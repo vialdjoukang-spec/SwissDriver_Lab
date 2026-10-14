@@ -1,0 +1,251 @@
+{
+ "chapterId": "U25",
+ "after": "familles",
+ "section": {
+  "id": "systemes",
+  "otitle": "Principaux systèmes : fonctions, limites et risques",
+  "title": "Ce que font vraiment les systèmes d’aide, et ce qu’ils ne font pas",
+  "ogoal": "Connaître la fonction, les limites et les risques des principaux systèmes d’aide à la conduite, savoir quand les activer ou les désactiver, et rester en tout temps responsable de la conduite.",
+  "question": "Si ma voiture freine toute seule et surveille mon angle mort, puis-je relâcher mon attention ?",
+  "lead": [
+   "Les voitures récentes sont équipées de nombreux systèmes d’aide : ils freinent, corrigent, avertissent ou maintiennent une distance. Ils peuvent éviter des accidents, mais chacun a un rôle précis et des limites. Cette section présente les principaux systèmes et vous montre comment les utiliser sans leur confier ce qui reste votre travail : la maîtrise du véhicule."
+  ],
+  "parts": [
+   {
+    "title": "Systèmes qui agissent sur le freinage et la stabilité",
+    "body": [
+     "L’**ABS** (système antiblocage) empêche les roues de se bloquer lors d’un freinage fort. Son principal avantage : vous pouvez **continuer à diriger** la voiture pendant le freinage d’urgence. Il ne raccourcit pas toujours la distance de freinage ; sur certains sols, comme le gravier ou la neige fraîche, elle peut même être plus longue. En cas d’urgence, freinez à fond et maintenez la pression, même si la pédale vibre.",
+     "L’**ESP** (correcteur électronique de trajectoire) détecte un début de dérapage et freine certaines roues pour aider la voiture à rester sur sa trajectoire. Il ne supprime pas les lois de la physique : à vitesse trop élevée dans un virage ou sur une route glissante, il ne peut pas tout rattraper. Le **freinage d’urgence automatique (AEB)** surveille l’avant du véhicule, vous avertit d’un risque de collision et peut freiner seul si vous ne réagissez pas ; il ne détecte cependant pas toujours tous les obstacles, par exemple certains piétons, cyclistes ou objets dans de mauvaises conditions."
+    ]
+   },
+   {
+    "title": "Systèmes qui surveillent, avertissent ou conduisent en partie",
+    "body": [
+     "L’**assistant de suivi ou de maintien de voie** repère les lignes au sol et vous avertit, ou corrige légèrement la direction, si vous quittez votre voie sans clignoter. Il dépend de marquages visibles : lignes effacées, neige, chantier ou marquages provisoires peuvent le tromper. L’**avertisseur d’angle mort** signale un véhicule dans la zone latérale difficile à voir. Il ne remplace **jamais** le coup d’œil par-dessus l’épaule, car il peut manquer un cycliste ou un véhicule très rapide.",
+     "Le **régulateur de vitesse adaptatif (ACC)** maintient la vitesse choisie et adapte automatiquement la distance au véhicule qui précède. Selon les modèles, il réagit mal ou pas du tout à un véhicule arrêté, à un véhicule qui s’insère brusquement ou à un virage serré. L’**assistant de stationnement** aide à manœuvrer, parfois en tournant le volant lui-même ; vous devez pourtant surveiller l’environnement, en particulier les enfants et les petits obstacles, et être prêt à freiner."
+    ]
+   },
+   {
+    "title": "Activer, désactiver et garder la responsabilité",
+    "body": [
+     "Chaque système s’utilise **selon la situation** et selon les indications du manuel du véhicule. Par exemple, il est raisonnable de ne pas utiliser l’ACC sur route glissante, dans un chantier aux voies rétrécies ou dans un trafic très irrégulier. Certains manuels prévoient de désactiver brièvement l’antipatinage pour démarrer dans la neige profonde : dans ce cas, réactivez-le dès que possible. Avant de partir avec une voiture inconnue, vérifiez quels systèmes elle possède et comment ils s’affichent.",
+     "Les systèmes ont des **limites technologiques** : pluie forte, brouillard, neige, soleil rasant, capteurs ou caméras sales ou couverts de glace, erreurs ou mises à jour de logiciel. Un voyant d’avertissement signale souvent qu’un système est indisponible. Quoi qu’il arrive, la loi exige que vous gardiez en permanence la **maîtrise de votre véhicule** : le système vous aide, mais c’est vous qui conduisez et vous restez responsable."
+    ]
+   }
+  ],
+  "words": [
+   {
+    "term": "ABS",
+    "def": "Système antiblocage des roues : il évite le blocage au freinage et permet de continuer à diriger le véhicule."
+   },
+   {
+    "term": "ESP",
+    "def": "Correcteur électronique de trajectoire : il freine certaines roues pour limiter un dérapage, dans les limites de l’adhérence."
+   },
+   {
+    "term": "AEB",
+    "def": "Freinage d’urgence automatique : il avertit d’un risque de collision et peut freiner seul si le conducteur ne réagit pas."
+   },
+   {
+    "term": "ACC",
+    "def": "Régulateur de vitesse adaptatif : il maintient une vitesse choisie et adapte la distance au véhicule qui précède."
+   }
+  ],
+  "method": [
+   "Informez-vous sur les systèmes de votre véhicule et sur leurs voyants avant de partir.",
+   "Activez chaque système seulement dans les situations où il fonctionne correctement.",
+   "Gardez les capteurs et caméras propres, et désactivez ou n’utilisez pas un système lorsque les conditions dépassent ses limites.",
+   "Continuez à observer comme si aucun système n’existait : rétroviseurs, coup d’œil par-dessus l’épaule, distance.",
+   "Reprenez immédiatement la main dès qu’un système agit de façon inattendue."
+  ],
+  "example": {
+   "title": "Autoroute sous la neige avec l’ACC",
+   "scene": "Vous roulez sur l’autoroute avec le régulateur adaptatif activé. La neige commence à tomber, la chaussée devient blanche et un voyant indique que le capteur avant est encrassé. Plus loin, un panneau annonce un chantier avec voies rétrécies.",
+   "reasoning": [
+    "La neige et le capteur couvert dépassent les limites du système : il risque de ne plus détecter correctement le véhicule qui précède.",
+    "Sur chaussée glissante et dans un chantier, vous devez pouvoir doser vous-même vitesse et distance.",
+    "Vous désactivez l’ACC, réduisez votre vitesse, augmentez la distance et reprenez entièrement la conduite."
+   ],
+   "answer": "Vous coupez l’ACC et conduisez vous-même avec une vitesse et une distance adaptées. Le système était une aide ; la responsabilité de maîtriser le véhicule reste la vôtre."
+  },
+  "trap": "Le piège est l’excès de confiance : après quelques semaines, on s’habitue à ce que la voiture freine ou corrige, et on regarde moins. Or un système peut se tromper ou se couper sans prévenir. Considérez chaque aide comme un filet de sécurité, jamais comme un pilote.",
+  "remember": "Un système d’aide soutient le conducteur, il ne le remplace jamais : vous restez à tout moment responsable de la maîtrise du véhicule.",
+  "memo": {
+   "code": "A–L–R",
+   "text": "Aide, pas pilote ; Limites à connaître ; Responsabilité toujours au conducteur."
+  },
+  "law": "OAC annexe 11 ; LCR art. 31"
+ },
+ "questions": [
+  {
+   "id": "U25-SYS-01",
+   "chapter": "U25",
+   "section": "systemes",
+   "stem": "Quel est le principal avantage de l’ABS lors d’un freinage d’urgence ?",
+   "options": [
+    "Il empêche les roues de se bloquer.",
+    "Il raccourcit toujours la distance de freinage, quel que soit le sol.",
+    "Il permet de continuer à diriger le véhicule pendant le freinage."
+   ],
+   "answers": [0, 2],
+   "truth": "L’ABS évite le blocage des roues et préserve la possibilité de diriger.",
+   "why": "Une roue bloquée ne guide plus le véhicule ; une roue qui tourne encore le peut.",
+   "trap": "Croire que l’ABS raccourcit la distance de freinage dans tous les cas.",
+   "action": "En urgence, freinez à fond, maintenez la pression et dirigez pour éviter l’obstacle.",
+   "memory": "ABS : freiner et diriger."
+  },
+  {
+   "id": "U25-SYS-02",
+   "chapter": "U25",
+   "section": "systemes",
+   "stem": "Que fait l’ESP ?",
+   "options": [
+    "Il freine certaines roues pour aider à limiter un dérapage.",
+    "Il permet de prendre un virage à n’importe quelle vitesse.",
+    "Il agit dans les limites de l’adhérence disponible."
+   ],
+   "answers": [0, 2],
+   "truth": "L’ESP aide à stabiliser la trajectoire, sans supprimer les lois physiques.",
+   "why": "Si l’adhérence est insuffisante, aucun système ne peut empêcher la sortie de route.",
+   "trap": "Augmenter sa vitesse parce que la voiture possède un ESP.",
+   "action": "Adaptez votre vitesse à la route comme si l’ESP n’existait pas.",
+   "memory": "ESP aide, la physique décide."
+  },
+  {
+   "id": "U25-SYS-03",
+   "chapter": "U25",
+   "section": "systemes",
+   "stem": "Votre voiture possède un freinage d’urgence automatique (AEB). Quelles affirmations sont correctes ?",
+   "options": [
+    "Il peut avertir d’un risque de collision et freiner si vous ne réagissez pas.",
+    "Il détecte toujours tous les piétons et cyclistes, de jour comme de nuit.",
+    "Vous devez maintenir votre distance et votre attention comme sans système."
+   ],
+   "answers": [0, 2],
+   "truth": "L’AEB est un dernier recours qui ne détecte pas tout.",
+   "why": "Ses capteurs ont des limites selon la météo, l’éclairage et le type d’obstacle.",
+   "trap": "Réduire sa distance de suivi en comptant sur l’AEB.",
+   "action": "Gardez une distance suffisante et freinez vous-même à temps.",
+   "memory": "AEB = filet, pas frein principal."
+  },
+  {
+   "id": "U25-SYS-04",
+   "chapter": "U25",
+   "section": "systemes",
+   "stem": "Votre voiture est équipée d’un avertisseur d’angle mort. Vous voulez changer de voie. Que faites-vous ?",
+   "options": [
+    "Vous contrôlez rétroviseurs et donnez un coup d’œil par-dessus l’épaule.",
+    "Vous changez de voie dès que le voyant reste éteint, sans autre contrôle.",
+    "Vous considérez le voyant comme une information supplémentaire."
+   ],
+   "answers": [0, 2],
+   "truth": "L’avertisseur d’angle mort ne remplace pas le coup d’œil par-dessus l’épaule.",
+   "why": "Il peut manquer un cycliste, une moto ou un véhicule qui arrive très vite.",
+   "trap": "Se fier uniquement à l’absence de voyant.",
+   "action": "Rétroviseurs, coup d’œil, clignotant, puis manœuvre.",
+   "memory": "Voyant éteint ne veut pas dire voie libre."
+  },
+  {
+   "id": "U25-SYS-05",
+   "chapter": "U25",
+   "section": "systemes",
+   "stem": "Vous roulez avec le régulateur de vitesse adaptatif (ACC). Quelles affirmations sont correctes ?",
+   "options": [
+    "Il adapte la distance au véhicule qui précède.",
+    "Selon le modèle, il peut ne pas réagir correctement à un véhicule arrêté.",
+    "Il vous permet de détourner le regard de la route en toute sécurité."
+   ],
+   "answers": [0, 1],
+   "truth": "L’ACC gère vitesse et distance dans certaines limites.",
+   "why": "Certains obstacles ou situations ne sont pas bien détectés par ses capteurs.",
+   "trap": "Utiliser l’ACC comme un pilote automatique.",
+   "action": "Gardez les yeux sur la route et le pied prêt à freiner.",
+   "memory": "ACC : je garde l’œil."
+  },
+  {
+   "id": "U25-SYS-06",
+   "chapter": "U25",
+   "section": "systemes",
+   "stem": "Dans quelles situations est-il raisonnable de ne pas utiliser l’ACC ?",
+   "options": [
+    "Sur une route enneigée ou verglacée.",
+    "Dans un chantier aux voies rétrécies.",
+    "Sur une autoroute sèche, avec un trafic fluide et une bonne visibilité."
+   ],
+   "answers": [0, 1],
+   "truth": "L’ACC s’utilise lorsque les conditions correspondent à ses capacités.",
+   "why": "Sur sol glissant ou dans un chantier, vous devez doser vous-même vitesse et distance.",
+   "trap": "Laisser le système activé par habitude, quelles que soient les conditions.",
+   "action": "Désactivez l’ACC dès que la situation devient délicate.",
+   "memory": "Conditions difficiles : je reprends la main."
+  },
+  {
+   "id": "U25-SYS-07",
+   "chapter": "U25",
+   "section": "systemes",
+   "stem": "Un voyant indique que la caméra de l’assistant de maintien de voie est encrassée. Que faut-il en déduire ?",
+   "options": [
+    "Le système peut être indisponible ou fonctionner de manière peu fiable.",
+    "Vous devez tenir le volant et maintenir votre trajectoire vous-même.",
+    "Le système continue de fonctionner normalement, le voyant n’a pas d’importance."
+   ],
+   "answers": [0, 1],
+   "truth": "Un capteur sale limite le fonctionnement du système.",
+   "why": "Les systèmes dépendent de capteurs propres et de conditions qu’ils peuvent interpréter.",
+   "trap": "Ignorer les voyants d’avertissement.",
+   "action": "Conduisez sans compter sur le système et nettoyez le capteur dès que possible à l’arrêt.",
+   "memory": "Capteur sale, aide en panne."
+  },
+  {
+   "id": "U25-SYS-08",
+   "chapter": "U25",
+   "section": "systemes",
+   "stem": "Vous utilisez un assistant de stationnement qui tourne le volant à votre place. Quelles affirmations sont correctes ?",
+   "options": [
+    "Vous devez surveiller l’environnement pendant toute la manœuvre.",
+    "Vous devez être prêt à freiner, notamment si un enfant s’approche.",
+    "Vous n’êtes plus responsable d’un dommage, puisque le système manœuvre."
+   ],
+   "answers": [0, 1],
+   "truth": "Même pendant une manœuvre assistée, le conducteur reste responsable.",
+   "why": "Les capteurs peuvent manquer de petits obstacles ou des personnes en mouvement.",
+   "trap": "Regarder l’écran et oublier l’extérieur.",
+   "action": "Regardez autour de vous et gardez le pied prêt sur le frein.",
+   "memory": "Il tourne, je surveille."
+  },
+  {
+   "id": "U25-SYS-09",
+   "chapter": "U25",
+   "section": "systemes",
+   "stem": "Quelles conditions peuvent limiter le fonctionnement des systèmes d’aide à la conduite ?",
+   "options": [
+    "La pluie forte, le brouillard ou la neige.",
+    "Des capteurs ou des caméras sales ou couverts de glace.",
+    "Aucune, car les systèmes sont conçus pour fonctionner dans toutes les situations."
+   ],
+   "answers": [0, 1],
+   "truth": "Les systèmes ont des limites liées à la météo, aux capteurs et aux logiciels.",
+   "why": "Ils interprètent leur environnement à partir de capteurs qui peuvent être gênés ou trompés.",
+   "trap": "Croire qu’un système homologué fonctionne toujours.",
+   "action": "Tenez compte des limites et reprenez la conduite en main lorsqu’elles sont atteintes.",
+   "memory": "Mauvais temps, aide fragile."
+  },
+  {
+   "id": "U25-SYS-10",
+   "chapter": "U25",
+   "section": "systemes",
+   "stem": "Qui est responsable de la maîtrise du véhicule lorsque des systèmes d’aide sont activés ?",
+   "options": [
+    "Le conducteur, en tout temps.",
+    "Le constructeur du système, dès que celui-ci est activé.",
+    "Le conducteur, qui doit pouvoir reprendre la main immédiatement."
+   ],
+   "answers": [0, 2],
+   "truth": "La loi impose au conducteur de rester maître de son véhicule.",
+   "why": "Les systèmes d’aide soutiennent la conduite, ils ne transfèrent pas la responsabilité.",
+   "trap": "Penser que l’activation d’un système décharge le conducteur.",
+   "action": "Restez attentif et prêt à intervenir à chaque instant.",
+   "memory": "Aide activée, conducteur responsable."
+  }
+ ]
+}

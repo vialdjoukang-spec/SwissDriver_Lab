@@ -119,7 +119,7 @@ var sdSimTime=0;
         badge.textContent=Nu.includes(chapter.id)?'Cours + conduite':'Cours · 3D non disponible';summary.append(badge);details.append(summary);
         const driveButtons=[...card.querySelectorAll('[data-gi]')];
         chapter.sections.forEach((sectionData,sectionIndex)=>{
-          const row=document.createElement('div');row.className='lab-lesson-row';
+          const row=document.createElement('div');row.className='lab-lesson-row';row.dataset.rule=chapter.id+'/'+sectionData.id;
           const title=document.createElement('strong');title.textContent=sectionData.otitle;row.append(title);
           const actions=document.createElement('div');actions.className='lab-lesson-actions';
           const read=document.createElement('button');read.type='button';read.className='ghost lab-read';read.textContent='Lire le cours';
@@ -141,8 +141,8 @@ var sdSimTime=0;
 
   text(st('#start h1'),'SwissDriver Lab');
   text(st('#start .kick'),'Cours · décision · conduite');
-  text(st('#start .lead'),'Une berline, un cours, puis la situation correspondante. Le chapitre Priorités propose '+coverage.playableSections+' sous-chapitres et '+coverage.scenarios+' situations décisionnelles. Les autres cours sont consultables dans le programme ; leurs scènes 3D ne sont pas encore disponibles.');
-  text(st('#start .steps li'),'Passez le portique vert, lisez chaque page avec Entrée, puis reprenez la route à la dernière page.');
+  text(st('#start .lead'),'Une berline, un cours, puis la situation correspondante. Le chapitre Priorités propose '+coverage.playableSections+' sous-chapitres et '+coverage.scenarios+' situations décisionnelles. Tous les chapitres du programme asa 2027 sont consultables dans le programme (M), avec des QCM style examen et un exercice de reconnaissance des signaux ; seules les Priorités ont des scènes 3D.');
+  text(st('#start .steps li'),'Passez le portique vert, lisez chaque page avec Entrée, puis reprenez la route. J rouvre à tout moment les cours déjà vus ; Échap revient en arrière.');
   text(st('#startBtn'),'Commencer la conduite');
   const note=document.createElement('p');note.className='lab-scope';note.textContent='Environnement urbain simulé, non certifié comme reproduction géographique. Après votre choix, la trajectoire est assistée : le résultat évalue la décision, pas une conduite manuelle complète.';st('#start .card').insertBefore(note,st('#startBtn'));
   const controls=document.createElement('div');controls.id='labControls';
@@ -155,7 +155,7 @@ var sdSimTime=0;
     const state=snapshot();const label=state.scenarioId?state.ruleId+' · '+state.scenarioId+(state.assistedTrajectory?' · Trajectoire assistée':' · Décision'):state.ruleId||'Parcours Priorités';
     if(label!==lastContext){coherence.textContent=label;lastContext=label;}
     course.disabled=!['drive','explain'].includes(At);
-    document.body.classList.toggle('lab-reading',['course','plan','explain'].includes(At));
+    document.body.classList.toggle('lab-reading',['course','plan','explain','lab'].includes(At));
   },200);
   document.querySelectorAll('#course,#plan,#explain').forEach(panel=>{panel.setAttribute('role','dialog');panel.setAttribute('aria-label',panel.id==='course'?'Cours':panel.id==='plan'?'Programme':'Explication de la décision');});
   const touch=document.createElement('div');touch.id='labTouch';touch.setAttribute('aria-label','Commandes tactiles');

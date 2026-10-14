@@ -1,0 +1,122 @@
+{
+ "D14-O45-RC-01": {
+  "option": "Oui, si le véhicule est conduit uniquement par son détenteur",
+  "why": "La RC conforme est obligatoire pour toute mise en circulation, quel que soit le conducteur."
+ },
+ "D14-O45-RC-02": {
+  "option": "Uniquement les passagers du véhicule assuré",
+  "why": "La RC couvre la responsabilité civile du détenteur et des personnes dont il répond envers les lésés."
+ },
+ "D14-O45-RC-06": {
+  "option": "Non, elle n’est demandée qu’après un accident",
+  "why": "L’attestation d’assurance est exigée pour l’immatriculation, avant la mise en circulation."
+ },
+ "D14-O45-RC-07": {
+  "option": "Oui, si le véhicule a une casco complète",
+  "why": "La casco ne remplace pas la RC, qui reste obligatoire."
+ },
+ "D14-O45-RC-08": {
+  "option": "L’assurance accidents personnelle du conducteur responsable",
+  "why": "Le mécanisme légal envers le tiers lésé repose sur la RC automobile."
+ },
+ "D14-O45-RC-10": {
+  "option": "RC = propre véhicule ; casco = dommages causés à autrui",
+  "why": "C’est l’inverse : la RC vise la responsabilité envers autrui, la casco le propre véhicule selon contrat."
+ },
+ "D14-O45-RECOURS-01": {
+  "option": "Non, seul son propre assureur peut intervenir",
+  "why": "La LCR accorde au lésé un droit d’action directe contre l’assureur du responsable."
+ },
+ "D14-O45-RECOURS-02": {
+  "option": "Oui, si l’assuré n’a pas payé sa prime",
+  "why": "Les exceptions tirées du contrat ne peuvent pas être opposées au lésé ; elles relèvent du rapport avec l’assuré."
+ },
+ "D14-O45-RECOURS-03": {
+  "option": "Uniquement si le tiers lésé l’accepte",
+  "why": "Le recours dépend du contrat et de la loi sur le contrat d’assurance, pas de l’accord du lésé."
+ },
+ "D14-O45-RECOURS-04": {
+  "option": "Oui, si l’assuré était en état d’ébriété",
+  "why": "Le recours concerne seulement la relation entre l’assureur et son assuré ; le tiers conserve son indemnité."
+ },
+ "D14-O45-RECOURS-06": {
+  "option": "Non, une violation contractuelle n’a jamais de conséquence",
+  "why": "Une violation peut ouvrir un recours, dont l’étendue dépend du contrat et de la loi."
+ },
+ "D14-O45-RECOURS-08": {
+  "option": "Une action directe du lésé",
+  "why": "L’action directe va du lésé vers l’assureur ; ici l’assureur se retourne contre son assuré."
+ },
+ "D14-O45-CONSTAT-01": {
+  "option": "Remplir le constat amiable avec l’autre conducteur",
+  "why": "Sécuriser, alerter et porter assistance passent avant tout document d’assurance."
+ },
+ "D14-O45-CONSTAT-02": {
+  "option": "Votre estimation de la vitesse de l’autre, notée comme certaine",
+  "why": "Une estimation non vérifiée ne doit pas être présentée comme un fait."
+ },
+ "D14-O45-CONSTAT-04": {
+  "option": "Non, si l’autre conducteur est d’accord",
+  "why": "Même avec un accord, une supposition ne doit pas être présentée comme une observation."
+ },
+ "D14-O45-CONSTAT-05": {
+  "option": "Oui, dès qu’elle figure dans les conditions générales",
+  "why": "Une clause d’assurance lie les parties au contrat ; elle ne devient pas une règle légale générale."
+ },
+ "D14-O45-CONSTAT-07": {
+  "option": "Oui, sinon le constat n’est pas valable",
+  "why": "On peut documenter les faits sans reconnaître de faute ; la responsabilité est appréciée ensuite."
+ },
+ "D14-O45-CONSTAT-09": {
+  "option": "Oui, si un constat amiable a été signé",
+  "why": "Un constat ne remplace pas l’intervention des autorités lorsque la loi l’exige."
+ },
+ "D14-O45-COUVERTURES-01": {
+  "option": "L’assurance protection juridique",
+  "why": "Seule la RC automobile est légalement obligatoire pour mettre une voiture en circulation."
+ },
+ "D14-O45-COUVERTURES-04": {
+  "option": "L’assurance accidents des occupants",
+  "why": "Elle concerne les personnes transportées ; les dommages au propre véhicule relèvent de la casco."
+ },
+ "D14-O45-COUVERTURES-05": {
+  "option": "Parce que la casco couvre toujours tous les dommages sans franchise",
+  "why": "Les risques couverts, franchises et exclusions varient d’un contrat à l’autre."
+ },
+ "D14-O45-COUVERTURES-06": {
+  "option": "Oui, si la voiture était fermée à clé",
+  "why": "La RC ne couvre pas le vol du propre véhicule, qui relève d’une casco selon contrat."
+ },
+ "D14-O45-COUVERTURES-07": {
+  "option": "RC : propre véhicule ; casco : dommages causés à autrui",
+  "why": "C’est l’inverse : la RC vise autrui, la casco certains dommages du propre véhicule."
+ },
+ "D14-O45-COUVERTURES-08": {
+  "option": "D’une obligation imposée par l’office de la circulation",
+  "why": "L’autorité exige la RC ; la casco demandée par la banque est une exigence contractuelle."
+ },
+ "D14-O45-CAS-01": {
+  "option": "La RC paie aussi votre voiture si vous déclarez le sinistre rapidement",
+  "why": "La rapidité de déclaration ne change pas l’objet de la RC, limitée à la responsabilité envers le tiers."
+ },
+ "D14-O45-CAS-02": {
+  "option": "Oui, si le conducteur a un permis de durée illimitée",
+  "why": "Le permis du conducteur ne remplace pas l’assurance obligatoire du véhicule."
+ },
+ "D14-O45-CAS-03": {
+  "option": "Non, le lésé doit d’abord obtenir un jugement contre le conducteur",
+  "why": "La LCR permet au lésé d’agir directement contre l’assureur, sans jugement préalable contre le conducteur."
+ },
+ "D14-O45-CAS-06": {
+  "option": "Oui, si le trajet est court",
+  "why": "La RC est obligatoire pour toute mise en circulation, quelle que soit la distance."
+ },
+ "D14-O45-CAS-09": {
+  "option": "L’assureur seul, puisqu’il ne peut jamais récupérer ses paiements",
+  "why": "Un recours admis permet précisément à l’assureur de récupérer une partie auprès de l’assuré."
+ },
+ "D14-O45-CAS-10": {
+  "option": "Faute → amende → retrait de permis",
+  "why": "Cette suite décrit les sanctions, pas la résolution d’un cas d’assurance."
+ }
+}

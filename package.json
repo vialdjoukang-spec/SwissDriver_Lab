@@ -1,14 +1,14 @@
 {
   "name": "swissdriver-lab",
-  "version": "0.4.0-preview.1",
+  "version": "0.5.0-preview.1",
   "private": true,
   "description": "Edition modifiable du prototype SwissDriver Lab",
   "engines": {"node": ">=20"},
   "scripts": {
     "build": "node scripts/build.cjs",
     "start": "node scripts/serve.cjs",
-    "test": "python3 tests/test_swissdriver.py && python3 tests/test_evidence_gate.py && python3 tests/test_coherence_matrix.py",
-    "test:browser": "python3 tests/browser_smoke.py && python3 tests/scene_coherence.py && python3 tests/decision_paths.py",
+    "test": "python3 tests/test_swissdriver.py && python3 tests/test_evidence_gate.py && python3 tests/test_coherence_matrix.py && python3 tests/test_programme.py",
+    "test:browser": "python3 tests/browser_smoke.py && python3 tests/scene_coherence.py && python3 tests/learning_flow.py && python3 tests/decision_paths.py",
     "coherence": "python3 scripts/coherence_matrix.py",
     "package": "node scripts/build.cjs && python3 scripts/package.py --require-browser-evidence",
     "test:distribution": "python3 tests/test_distribution.py"

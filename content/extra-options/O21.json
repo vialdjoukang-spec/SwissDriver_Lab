@@ -1,0 +1,194 @@
+{
+ "O21-V01": {
+  "option": "50 km/h en localité et 100 km/h hors localité.",
+  "why": "Hors localité, la limite générale est 80 km/h ; 100 km/h concerne la semi-autoroute."
+ },
+ "O21-V02": {
+  "option": "Il faut maintenir 80 km/h pour ne pas gêner la circulation.",
+  "why": "La limitation n’est pas une vitesse imposée : la pluie et la visibilité exigent souvent moins."
+ },
+ "O21-V05": {
+  "option": "30 km/h dans une zone de rencontre.",
+  "why": "La zone de rencontre est limitée à 20 km/h ; 30 km/h correspond à la zone 30."
+ },
+ "O21-V07": {
+  "option": "Klaxonner pour avertir les enfants et conserver l’allure.",
+  "why": "Le klaxon ne remplace pas la réduction de vitesse imposée par la présence d’enfants."
+ },
+ "O21-V08": {
+  "option": "100 km/h si la route est large et dégagée.",
+  "why": "Le signal fixe le maximum à 60 km/h, quelle que soit la largeur de la route."
+ },
+ "O21-V10": {
+  "option": "Elle reste identique quelle que soit la vitesse.",
+  "why": "Pendant le temps de réaction, plus la vitesse est élevée, plus la distance parcourue est longue."
+ },
+ "O21-D01": {
+  "option": "La voie de gauche si vous roulez à la vitesse maximale.",
+  "why": "Rouler à la vitesse maximale ne dispense pas de circuler à droite lorsque la voie est libre."
+ },
+ "O21-D02": {
+  "option": "Vous vous rabattez dès que l’avant de votre voiture a dépassé l’autre.",
+  "why": "Le rabattement exige une distance suffisante devant le véhicule dépassé, sans le couper."
+ },
+ "O21-D04": {
+  "option": "Oui, mais seulement au dernier moment avant le carrefour.",
+  "why": "La présélection se fait à temps ; une manœuvre de dernier moment surprend et gêne les autres."
+ },
+ "O21-D06": {
+  "option": "Vous pouvez couper le virage pour garder de l’élan.",
+  "why": "Couper un virage sans visibilité envahit la voie opposée où un véhicule peut surgir."
+ },
+ "O21-D08": {
+  "option": "Oui, si vous mettez le clignotant suffisamment tôt.",
+  "why": "Une ligne de sécurité ne doit pas être franchie ; le clignotant n’y change rien."
+ },
+ "O21-D09": {
+  "option": "Oui, si vous enclenchez les feux de détresse.",
+  "why": "Les feux de détresse ne transforment pas l’accotement en voie de circulation."
+ },
+ "O21-A02": {
+  "option": "Le véhicule le plus rapide des deux.",
+  "why": "La priorité appartient au trafic de l’autoroute, pas au véhicule le plus rapide."
+ },
+ "O21-A04": {
+  "option": "Rouler lentement jusqu’au bout puis s’insérer à faible vitesse.",
+  "why": "La voie d’accélération sert à atteindre une vitesse proche du flux avant l’insertion."
+ },
+ "O21-A05": {
+  "option": "Klaxonner pour obliger le véhicule à vous laisser passer.",
+  "why": "Celui qui s’insère doit céder ; le klaxon ne crée aucune priorité."
+ },
+ "O21-A06": {
+  "option": "Accélérer pour l’empêcher de s’insérer devant vous.",
+  "why": "Entraver volontairement une insertion crée un danger ; il faut rester prévisible ou faciliter."
+ },
+ "O21-A07": {
+  "option": "Patinage volontaire des roues pour dégager la neige.",
+  "why": "Le patinage réduit l’adhérence et peut immobiliser ou faire dévier le véhicule."
+ },
+ "O21-A09": {
+  "option": "Elle est conseillée pour libérer rapidement le carrefour.",
+  "why": "Un démarrage brusque réduit la maîtrise et crée un bruit évitable ; il n’est jamais conseillé."
+ },
+ "O21-C01": {
+  "option": "À la sortie du virage, une fois la courbe passée.",
+  "why": "Ralentir après la courbe est trop tard : la vitesse doit être réduite avant d’entrer."
+ },
+ "O21-C02": {
+  "option": "Sur la ligne médiane juste devant le capot.",
+  "why": "Un regard trop proche empêche d’anticiper la courbe ; il faut regarder loin vers la sortie."
+ },
+ "O21-C04": {
+  "option": "Une accélération franche au point le plus serré.",
+  "why": "Une accélération brusque en courbe humide peut faire perdre l’adhérence."
+ },
+ "O21-C06": {
+  "option": "Une tenue de route identique à celle du véhicule vide.",
+  "why": "La charge modifie l’inertie, le freinage et le comportement en virage."
+ },
+ "O21-C07": {
+  "option": "Débrayer pendant toute la courbe pour rester souple.",
+  "why": "Débrayer supprime le frein moteur et réduit la maîtrise dans la descente."
+ },
+ "O21-C09": {
+  "option": "Débrayer et braquer plus fort vers l’intérieur.",
+  "why": "Un braquage accru et la perte du frein moteur aggravent le risque de dérapage."
+ },
+ "O21-P01": {
+  "option": "Pour pouvoir utiliser davantage les freins de service.",
+  "why": "Le rapport inférieur sert justement à ménager les freins de service grâce au frein moteur."
+ },
+ "O21-P02": {
+  "option": "Oui, si la descente est courte et droite.",
+  "why": "Au point mort, le frein moteur disparaît quelle que soit la longueur de la descente."
+ },
+ "O21-P05": {
+  "option": "Relâcher l’embrayage brusquement pour éviter le recul.",
+  "why": "Un embrayage relâché brusquement fait caler ou bondir le véhicule et ne garantit pas l’absence de recul."
+ },
+ "O21-P06": {
+  "option": "Parce que la limitation de vitesse change toujours au sommet.",
+  "why": "La raison est la visibilité masquée par la crête, pas un changement de limitation."
+ },
+ "O21-P08": {
+  "option": "Les freins sont plus efficaces en descente.",
+  "why": "En descente, la gravité allonge le freinage au lieu de l’améliorer."
+ },
+ "O21-P09": {
+  "option": "Descendre au point mort pour soulager le moteur.",
+  "why": "Le point mort supprime le frein moteur, indispensable avec un véhicule chargé."
+ },
+ "O21-F01": {
+  "option": "La distance de visibilité.",
+  "why": "La distance d’arrêt se compose de la distance de réaction et de la distance de freinage."
+ },
+ "O21-F02": {
+  "option": "Elle reste identique grâce à l’ABS.",
+  "why": "L’ABS ne change pas le fait que la distance de freinage augmente fortement avec la vitesse."
+ },
+ "O21-F04": {
+  "option": "Relâcher la pédale dès que l’ABS vibre.",
+  "why": "Les vibrations sont normales ; relâcher la pédale allonge le freinage."
+ },
+ "O21-F06": {
+  "option": "À autoriser une distance plus courte la nuit.",
+  "why": "La nuit, la visibilité réduite exige au contraire une marge plus grande."
+ },
+ "O21-F09": {
+  "option": "Elle raccourcit le temps de réaction grâce à la routine.",
+  "why": "La fatigue allonge le temps de réaction, elle ne le raccourcit jamais."
+ },
+ "O21-F10": {
+  "option": "Des feux de position allumés.",
+  "why": "L’éclairage n’influence pas la distance de freinage du véhicule."
+ },
+ "O21-S01": {
+  "option": "Un arrêt seulement en cas de trafic transversal.",
+  "why": "Le STOP impose un arrêt complet dans tous les cas, même sans trafic."
+ },
+ "O21-S03": {
+  "option": "Vous avancez jusqu’au milieu pour montrer votre intention.",
+  "why": "S’engager sans pouvoir dégager bloque l’intersection et le trafic transversal."
+ },
+ "O21-S06": {
+  "option": "Réparer d’abord le véhicule avant de baliser.",
+  "why": "La mise en sécurité et le balisage passent avant toute réparation."
+ },
+ "O21-S07": {
+  "option": "Sur le passage, si aucun piéton n’attend.",
+  "why": "Un piéton peut arriver à tout moment ; le passage doit rester libre."
+ },
+ "O21-S09": {
+  "option": "Suivre le camion de près pour profiter de son passage.",
+  "why": "Coller au camion masque encore davantage la vue sur le trafic opposé."
+ },
+ "O21-S10": {
+  "option": "Sa vitesse est forcément adaptée au tunnel.",
+  "why": "Chaque conducteur doit adapter sa propre vitesse ; celle d’un autre n’est pas une garantie."
+ },
+ "O21-R01": {
+  "option": "Seule la balle représente un obstacle à éviter.",
+  "why": "Une balle annonce souvent un enfant qui la suit ; le danger principal est caché."
+ },
+ "O21-R02": {
+  "option": "Vous pouvez dépasser le bus à vitesse normale.",
+  "why": "La zone masquée devant le bus impose de réduire la vitesse."
+ },
+ "O21-R03": {
+  "option": "Aucun risque si les voitures sont garées correctement.",
+  "why": "Un stationnement correct n’empêche ni l’ouverture d’une portière ni un piéton surgissant."
+ },
+ "O21-R05": {
+  "option": "Accélérer pour traverser rapidement la zone.",
+  "why": "Accélérer sur une surface glissante réduit encore l’adhérence avant le virage."
+ },
+ "O21-R08": {
+  "option": "Allumer les feux de route en direction de l’animal.",
+  "why": "Les feux de route peuvent éblouir l’animal et le figer sur la chaussée."
+ },
+ "O21-R09": {
+  "option": "Accélérer pour traverser plus vite la zone exposée.",
+  "why": "Une vitesse plus élevée augmente l’effet du vent latéral et réduit la maîtrise."
+ }
+}

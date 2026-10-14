@@ -1,0 +1,146 @@
+{
+ "O41-B01": {
+  "option": "Vous vous engagez puis attendez au milieu de l’intersection que la sortie se libère.",
+  "why": "Rester arrêté dans l’intersection la bloque pour les autres flux ; on ne s’y engage que si l’on peut la libérer."
+ },
+ "O41-B02": {
+  "option": "Klaxonner et maintenir votre allure puisque la priorité vous appartient.",
+  "why": "Le signal sonore ne remplace pas le freinage lorsqu’une erreur de l’autre devient prévisible."
+ },
+ "O41-B03": {
+  "option": "Dépasser en allumant les feux de route pour avertir les usagers venant en face.",
+  "why": "Avertir ne crée pas la visibilité nécessaire : sans vue suffisante sur toute la manœuvre, le dépassement est exclu."
+ },
+ "O41-B05": {
+  "option": "Lorsque l’autre usager circule sur une route non prioritaire.",
+  "why": "Le seul fait de devoir céder le passage n’est pas un indice concret d’erreur de l’autre usager."
+ },
+ "O41-B07": {
+  "option": "Vous dépassez si le passager confirme que la voie opposée est libre.",
+  "why": "Le conducteur reste seul responsable de l’évaluation ; l’avis d’un passager ne remplace pas sa propre observation."
+ },
+ "O41-B09": {
+  "option": "Vous klaxonnez et gardez votre trajectoire pour qu’il recule.",
+  "why": "La faute du piéton ne vous dispense pas de freiner pour éviter le choc."
+ },
+ "O41-A01": {
+  "option": "Ouvrir la fenêtre et monter le son de la radio pour rester éveillé.",
+  "why": "Ces moyens ne suppriment pas la fatigue et n’empêchent pas un endormissement au volant."
+ },
+ "O41-A02": {
+  "option": "Conduire seulement de jour, quand la somnolence pose moins de problème.",
+  "why": "L’effet du médicament ne dépend pas de l’heure ; une vigilance altérée exclut la conduite."
+ },
+ "O41-A04": {
+  "option": "Conduire en évitant de tourner la tête aux intersections.",
+  "why": "Les contrôles latéraux sont indispensables ; y renoncer crée un autre danger au lieu de régler le symptôme."
+ },
+ "O41-A07": {
+  "option": "Deux cafés permettent de conduire plusieurs heures sans pause.",
+  "why": "Le café ne fait que masquer brièvement la fatigue ; il ne remplace ni le sommeil ni les pauses."
+ },
+ "O41-A08": {
+  "option": "Conduire si vous avez bu beaucoup d’eau entre-temps.",
+  "why": "Boire de l’eau n’élimine ni la substance ni ses effets ; le ressenti « normal » ne prouve pas l’aptitude."
+ },
+ "O41-A10": {
+  "option": "Rouler plus lentement compense un état incertain.",
+  "why": "Réduire la vitesse ne rétablit pas l’aptitude ; un doute sérieux conduit à ne pas conduire."
+ },
+ "O41-D01": {
+  "option": "Vous le lisez lors d’un ralentissement dans une file en mouvement.",
+  "why": "Même à faible vitesse, regarder l’écran détourne l’attention ; seul un arrêt sûr le permet."
+ },
+ "O41-D02": {
+  "option": "Monter le volume pour mieux entendre l’interlocuteur et poursuivre.",
+  "why": "Mieux entendre ne réduit pas la charge mentale du conflit, qui continue de capter l’attention."
+ },
+ "O41-D03": {
+  "option": "Saisir l’adresse en tenant le volant d’une main à vitesse réduite.",
+  "why": "La saisie détourne le regard et l’attention quelle que soit la vitesse ; il faut s’arrêter en lieu sûr."
+ },
+ "O41-D05": {
+  "option": "Se retourner brièvement pour les séparer.",
+  "why": "Se retourner fait quitter la route des yeux et lâcher le volant, ce qui crée un danger immédiat."
+ },
+ "O41-D07": {
+  "option": "Pousser l’objet du pied pour l’écarter tout en continuant.",
+  "why": "Manipuler l’objet près des pédales peut le coincer sous le frein ; on le retire seulement à l’arrêt."
+ },
+ "O41-D08": {
+  "option": "Conserver le volume et compter sur les rétroviseurs pour repérer les véhicules prioritaires.",
+  "why": "Un véhicule d’urgence peut arriver hors du champ des rétroviseurs ; la perception auditive doit être rétablie."
+ },
+ "O41-V02": {
+  "option": "Accélérer pour arriver plus vite au garage.",
+  "why": "Un témoin rouge peut signaler un défaut grave ; il faut réduire et s’arrêter en sécurité, pas solliciter davantage le véhicule."
+ },
+ "O41-V03": {
+  "option": "Reculer en regardant uniquement l’écran, sans tourner la tête.",
+  "why": "La caméra ne couvre pas tous les angles ; le contrôle direct et par les rétroviseurs reste nécessaire."
+ },
+ "O41-V04": {
+  "option": "Vous pouvez vous contenter du rétroviseur intérieur.",
+  "why": "Le rétroviseur intérieur ne couvre pas l’angle mort ; le contrôle par-dessus l’épaule reste obligatoire."
+ },
+ "O41-V05": {
+  "option": "Activer aussi le maintien de voie pour pouvoir relâcher l’attention.",
+  "why": "Les aides à la conduite n’enlèvent rien à la responsabilité ni à l’attention exigées du conducteur."
+ },
+ "O41-V08": {
+  "option": "Choisir une position au hasard et observer la réaction du véhicule en roulant.",
+  "why": "Essayer une commande inconnue en circulation peut provoquer une réaction imprévue ; on s’informe à l’arrêt."
+ },
+ "O41-V10": {
+  "option": "Augmenter la vitesse pour que la neige se détache des capteurs.",
+  "why": "Accélérer alors que les aides sont indisponibles augmente le risque ; les capteurs se nettoient à l’arrêt."
+ },
+ "O41-X01": {
+  "option": "Oui, si l’autre conducteur vous fait signe de continuer.",
+  "why": "Un signe de la main ne dispense pas de s’arrêter et de remplir les obligations après un accident."
+ },
+ "O41-X02": {
+  "option": "Rester dans votre véhicule sur la voie en attendant la police.",
+  "why": "Rester sur une voie rapide expose au suraccident ; il faut se mettre à l’abri, sécuriser et alerter."
+ },
+ "O41-X03": {
+  "option": "Lui proposer de rentrer seule chez elle pour se soigner.",
+  "why": "Une personne blessée doit recevoir assistance et les secours ainsi que la police doivent être alertés."
+ },
+ "O41-X05": {
+  "option": "Quitter les lieux puis communiquer vos coordonnées plus tard par message.",
+  "why": "Les informations doivent être échangées sur place ; partir sans le faire revient à quitter les lieux de l’accident."
+ },
+ "O41-X06": {
+  "option": "Attendre quelques minutes puis repartir sans rien laisser si personne ne vient.",
+  "why": "Si le lésé ne peut pas être informé, l’annonce à la police est obligatoire."
+ },
+ "O41-X07": {
+  "option": "Oui, mais seulement après l’accord écrit des assurances concernées.",
+  "why": "Lorsque la sécurité l’exige, on déplace les véhicules sans attendre ; aucun accord des assureurs n’est requis."
+ },
+ "O41-R01": {
+  "option": "Suivre de près un véhicule pour profiter de ses traces.",
+  "why": "Sur verglas, la distance de freinage s’allonge ; il faut au contraire augmenter l’écart."
+ },
+ "O41-R02": {
+  "option": "Attribuer l’événement à la seule faute de l’autre usager.",
+  "why": "Rejeter toute la faute sur l’autre empêche d’identifier l’indice manqué et de corriger sa méthode."
+ },
+ "O41-R03": {
+  "option": "Faire demi-tour immédiatement en franchissant la ligne de sécurité.",
+  "why": "La ligne de sécurité ne doit pas être franchie ; il faut continuer jusqu’à une possibilité sûre."
+ },
+ "O41-R05": {
+  "option": "Oui, si vous allumez le clignotant suffisamment tôt.",
+  "why": "Le clignotant annonce une intention mais ne donne aucune priorité ni marge supplémentaire."
+ },
+ "O41-R07": {
+  "option": "Poursuivre si la pédale de frein semble encore normale.",
+  "why": "Un témoin de freinage peut signaler un défaut avant que la pédale ne change ; on ne s’engage pas dans la descente."
+ },
+ "O41-R10": {
+  "option": "« Combien de temps vais-je gagner ? »",
+  "why": "Le gain de temps n’est pas un critère de sécurité et pousse à réduire les marges."
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "N24-AU-01": {
+  "option": "Un coup de klaxon suffit à empêcher l’enfant de traverser.",
+  "why": "Un enfant concentré sur son ballon peut ne pas réagir au signal ; seule une vitesse réduite et la disposition à freiner le protègent."
+ },
+ "N24-AU-02": {
+  "option": "La nationalité et la profession de l’usager.",
+  "why": "Ces éléments ne disent rien de son comportement probable ; l’analyse porte sur vigilance, intention, mode de déplacement et âge."
+ },
+ "N24-AU-04": {
+  "option": "Vous la contournez lentement pour ne pas perdre de temps.",
+  "why": "Un piéton engagé sur le passage doit pouvoir terminer sa traversée ; le contourner le met en danger et viole sa priorité."
+ },
+ "N24-AU-06": {
+  "option": "Vous accélérez pour le dépasser avant que le chauffeur descende.",
+  "why": "Accélérer réduit le temps de réaction face à une portière ou un piéton qui surgit ; il faut au contraire ralentir et garder de l’espace."
+ },
+ "N24-AN-01": {
+  "option": "Le bus doit attendre que vous soyez passé avant de repartir.",
+  "why": "En localité, il faut faciliter le départ d’un bus qui quitte son arrêt, et non compter qu’il vous attende."
+ },
+ "N24-AN-02": {
+  "option": "Freiner chaque fois qu’un autre usager apparaît, quelle que soit la situation.",
+  "why": "Anticiper consiste à évaluer les évolutions possibles et à s’y préparer, pas à freiner systématiquement."
+ },
+ "N24-AN-03": {
+  "option": "Vous roulez tout près des voitures stationnées pour laisser de la place en face.",
+  "why": "Rouler au ras des voitures stationnées supprime la marge face à une portière ou à un enfant qui surgit."
+ },
+ "N24-AN-05": {
+  "option": "Un feu vert depuis longtemps restera vert jusqu’à votre passage.",
+  "why": "Plus le vert dure, plus le passage à l’orange est probable ; rien ne garantit qu’il tienne jusqu’à votre arrivée."
+ },
+ "N24-TD-01": {
+  "option": "Suivre de près le véhicule qui précède pour qu’on ne vous coupe pas la route.",
+  "why": "Une distance réduite supprime la marge de freinage, ce qui est le contraire d’une conduite défensive."
+ },
+ "N24-TD-02": {
+  "option": "Ce contact vous donne la priorité sur lui.",
+  "why": "Le contact visuel ne modifie pas les règles : un piéton qui s’engage ou veut s’engager sur le passage reste prioritaire."
+ },
+ "N24-TD-04": {
+  "option": "Pour indiquer au conducteur devant vous que le feu est passé au vert.",
+  "why": "Le signal d’avertissement sert à prévenir un danger, pas à presser ou interpeller un autre usager."
+ },
+ "N24-TD-06": {
+  "option": "Non : l’itinéraire relève du confort, jamais de la sécurité.",
+  "why": "Un itinéraire choisi selon la météo, le trafic et son expérience réduit réellement les risques."
+ },
+ "N24-LP-01": {
+  "option": "Vous vous contentez du rétroviseur intérieur.",
+  "why": "Le rétroviseur intérieur ne montre pas l’angle mort latéral ; il faut les rétroviseurs extérieurs et un regard par-dessus l’épaule."
+ },
+ "N24-LP-02": {
+  "option": "Une zone qui disparaît entièrement si les rétroviseurs sont bien réglés.",
+  "why": "Des rétroviseurs bien réglés réduisent l’angle mort sans le supprimer ; le regard par-dessus l’épaule reste nécessaire."
+ },
+ "N24-LP-04": {
+  "option": "Il fait paraître les véhicules plus proches qu’ils ne le sont.",
+  "why": "Un miroir convexe rapetisse l’image : les véhicules paraissent plus éloignés qu’en réalité."
+ },
+ "N24-LP-05": {
+  "option": "Il fonctionne de la même manière par tous les temps.",
+  "why": "Pluie, neige, brouillard ou capteur encrassé peuvent limiter ou empêcher son fonctionnement."
+ }
+}

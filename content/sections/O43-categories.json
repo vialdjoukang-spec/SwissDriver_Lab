@@ -1,0 +1,183 @@
+{
+ "chapterId": "O43",
+ "after": "permis",
+ "section": {
+  "id": "categories",
+  "otitle": "Catégories A, A1, B et B1",
+  "title": "Quel véhicule votre permis vous autorise-t-il à conduire ?",
+  "ogoal": "Associer les catégories A, A1, B et B1 aux véhicules qu’elles couvrent et savoir lire les limites de la catégorie B dans le permis de circulation.",
+  "question": "Avec un permis B, puis-je conduire un minibus de douze places ou une camionnette de 4 tonnes ?",
+  "lead": [
+   "Un permis de conduire n’autorise pas à conduire tous les véhicules : il est divisé en catégories. Chaque catégorie correspond à un type de véhicule et à des limites précises. Cette section présente les quatre catégories les plus courantes pour les débutants et vous montre comment vérifier, avant de prendre le volant, que le véhicule entre bien dans votre catégorie."
+  ],
+  "parts": [
+   {
+    "title": "La catégorie B : la voiture ordinaire, avec deux limites",
+    "body": [
+     "La **catégorie B** couvre les voitures automobiles dont la **masse totale ne dépasse pas 3500 kg** et qui comptent **au maximum 8 places en plus de celle du conducteur**. Ces deux limites s’appliquent ensemble : un véhicule qui dépasse l’une d’elles ne relève plus de la catégorie B.",
+     "La **masse totale** n’est pas le poids de la voiture vide : c’est la masse maximale autorisée, chargement et occupants compris, inscrite dans le **permis de circulation** du véhicule. C’est là que vous vérifiez, avant de louer ou d’emprunter une camionnette ou un minibus, que vous restez dans les limites. Pour la traction d’une remorque, des règles particulières s’appliquent : renseignez-vous avant d’atteler."
+    ]
+   },
+   {
+    "title": "Les catégories A et A1 : les motocycles",
+    "body": [
+     "La **catégorie A** couvre les **motocycles**. La **catégorie A1** couvre les **motocycles légers**, dont la cylindrée et la puissance sont limitées. L’accès à la catégorie A se fait par étapes, avec au début une restriction de puissance, et une instruction pratique de base de 12 heures est exigée pour les catégories A et A1.",
+     "Le permis B ne remplace pas ces catégories : conduire une moto suppose la catégorie correspondante. Les conditions d’âge, de formation et de puissance sont détaillées par l’asa et par l’office cantonal des automobiles ; vérifiez-les auprès d’eux avant de vous inscrire."
+    ]
+   },
+   {
+    "title": "La catégorie B1 : quadricycles et tricycles à moteur",
+    "body": [
+     "La **catégorie B1** couvre les **quadricycles et tricycles à moteur**, c’est-à-dire des véhicules à quatre ou trois roues qui ne sont pas des voitures ordinaires et dont la masse et les caractéristiques sont limitées. On en voit par exemple sous forme de petits véhicules urbains à quatre roues.",
+     "Comme les limites exactes de ces véhicules sont techniques, la référence reste le **permis de circulation** du véhicule et l’office cantonal des automobiles. Si vous avez un doute sur la catégorie d’un véhicule inhabituel, vérifiez avant de conduire : rouler sans la catégorie nécessaire revient à conduire sans permis valable pour ce véhicule."
+    ]
+   }
+  ],
+  "words": [
+   {
+    "term": "Catégorie de permis",
+    "def": "La partie du permis de conduire qui indique quel type de véhicule vous êtes autorisé à conduire."
+   },
+   {
+    "term": "Masse totale",
+    "def": "La masse maximale autorisée du véhicule chargé, inscrite dans le permis de circulation."
+   },
+   {
+    "term": "Motocycle léger",
+    "def": "Moto dont la cylindrée et la puissance sont limitées, relevant de la catégorie A1."
+   },
+   {
+    "term": "Quadricycle ou tricycle à moteur",
+    "def": "Véhicule à quatre ou trois roues aux caractéristiques limitées, relevant de la catégorie B1."
+   }
+  ],
+  "method": [
+   "Identifiez le type de véhicule : voiture, moto, moto légère, quadricycle ou tricycle.",
+   "Lisez dans le permis de circulation la masse totale et le nombre de places.",
+   "Comparez avec les limites de votre catégorie.",
+   "Vérifiez que cette catégorie figure bien sur votre permis de conduire.",
+   "En cas de doute, renseignez-vous auprès de l’office cantonal avant de conduire."
+  ],
+  "example": {
+   "title": "Le minibus du club de sport",
+   "scene": "Votre club de football vous propose de conduire le minibus pour emmener l’équipe à un tournoi dans un autre canton. Vous avez un permis B. Dans le permis de circulation du minibus, vous lisez : masse totale 3500 kg, 13 places assises, conducteur compris.",
+   "reasoning": [
+    "La masse totale de 3500 kg respecte la limite de la catégorie B.",
+    "Mais 13 places conducteur compris, soit 12 en plus du conducteur, dépassent le maximum de 8 : le véhicule ne relève plus de la catégorie B.",
+    "Les deux limites doivent être respectées en même temps ; une seule suffit pour sortir de votre catégorie."
+   ],
+   "answer": "Vous ne conduisez pas ce minibus avec votre permis B. Le club doit trouver un conducteur titulaire de la catégorie nécessaire ou un véhicule plus petit."
+  },
+  "trap": "Le piège est de ne regarder qu’une seule limite, souvent le poids, et d’oublier le nombre de places, ou l’inverse. Un autre piège est de confondre la masse totale avec le poids à vide. Lisez toujours le permis de circulation : masse totale et nombre de places doivent tous deux entrer dans la catégorie B.",
+  "remember": "Catégorie B : masse totale jusqu’à 3500 kg et au maximum 8 places en plus du conducteur, les deux à la fois.",
+  "memo": {
+   "code": "35 / 8",
+   "text": "3500 kg au maximum, 8 passagers au maximum : il faut les deux pour rester en B."
+  },
+  "law": "OAC"
+ },
+ "questions": [
+  {
+   "id": "O43-CAT-01",
+   "chapter": "O43",
+   "section": "categories",
+   "stem": "Quelles limites s’appliquent à un véhicule de catégorie B ?",
+   "options": [
+    "Une masse totale de 3500 kg au maximum.",
+    "Au maximum 8 places en plus de celle du conducteur.",
+    "Au maximum 12 places en plus de celle du conducteur."
+   ],
+   "answers": [0, 1],
+   "truth": "La catégorie B est limitée à 3500 kg de masse totale et à 8 places en plus du conducteur.",
+   "why": "Ces deux limites doivent être respectées en même temps.",
+   "trap": "Retenir un nombre de places trop élevé.",
+   "action": "Contrôlez masse totale et nombre de places dans le permis de circulation.",
+   "memory": "35 / 8."
+  },
+  {
+   "id": "O43-CAT-02",
+   "chapter": "O43",
+   "section": "categories",
+   "stem": "Avec un permis de catégorie B, pouvez-vous conduire un minibus de 3200 kg de masse totale comptant 12 places en plus du conducteur ?",
+   "options": [
+    "Oui, car la masse totale est inférieure à 3500 kg.",
+    "Non, car le nombre de places dépasse la limite de la catégorie B.",
+    "Il suffit qu’une seule des deux limites soit dépassée pour sortir de la catégorie B."
+   ],
+   "answers": [1, 2],
+   "truth": "Un véhicule doit respecter à la fois la limite de masse et la limite de places pour relever de la catégorie B.",
+   "why": "Avec 12 places en plus du conducteur, la limite de 8 est dépassée.",
+   "trap": "Ne regarder que le poids.",
+   "action": "Lisez les deux données avant de prendre le volant.",
+   "memory": "Une limite dépassée suffit."
+  },
+  {
+   "id": "O43-CAT-03",
+   "chapter": "O43",
+   "section": "categories",
+   "stem": "Où trouvez-vous la masse totale d’une camionnette que vous voulez louer ?",
+   "options": [
+    "Dans le permis de circulation du véhicule.",
+    "En pesant la camionnette vide.",
+    "La masse totale est la masse maximale autorisée, chargement et occupants compris."
+   ],
+   "answers": [0, 2],
+   "truth": "La masse totale est inscrite dans le permis de circulation et comprend le chargement autorisé.",
+   "why": "Le poids à vide ne dit rien de la masse maximale autorisée.",
+   "trap": "Confondre masse totale et poids à vide.",
+   "action": "Demandez le permis de circulation avant de signer la location.",
+   "memory": "Masse totale = véhicule chargé au maximum."
+  },
+  {
+   "id": "O43-CAT-04",
+   "chapter": "O43",
+   "section": "categories",
+   "stem": "À quoi correspondent les catégories A et A1 ?",
+   "options": [
+    "La catégorie A couvre les motocycles.",
+    "La catégorie A1 couvre les motocycles légers.",
+    "La catégorie A1 couvre les voitures de moins de 3500 kg."
+   ],
+   "answers": [0, 1],
+   "truth": "A désigne les motocycles et A1 les motocycles légers.",
+   "why": "Les catégories A et A1 concernent les deux-roues motorisés, pas les voitures.",
+   "trap": "Mélanger les lettres A et B.",
+   "action": "Vérifiez la catégorie exacte avant de conduire une moto.",
+   "memory": "A comme moto, A1 comme moto légère."
+  },
+  {
+   "id": "O43-CAT-05",
+   "chapter": "O43",
+   "section": "categories",
+   "stem": "Que couvre la catégorie B1 ?",
+   "options": [
+    "Les quadricycles à moteur.",
+    "Les tricycles à moteur.",
+    "Les autocars."
+   ],
+   "answers": [0, 1],
+   "truth": "La catégorie B1 couvre les quadricycles et les tricycles à moteur.",
+   "why": "Ce sont des véhicules à quatre ou trois roues aux caractéristiques limitées.",
+   "trap": "Croire que B1 désigne un véhicule plus grand qu’une voiture.",
+   "action": "Pour un véhicule inhabituel, vérifiez sa catégorie dans le permis de circulation.",
+   "memory": "B1 : trois ou quatre roues, petit gabarit."
+  },
+  {
+   "id": "O43-CAT-06",
+   "chapter": "O43",
+   "section": "categories",
+   "stem": "Vous n’êtes pas sûr que votre catégorie de permis couvre un véhicule qu’on vous prête. Que faites-vous ?",
+   "options": [
+    "Vous conduisez prudemment, ce qui suffit.",
+    "Vous comparez les données du permis de circulation avec les limites de votre catégorie.",
+    "En cas de doute, vous vous renseignez auprès de l’office cantonal avant de conduire."
+   ],
+   "answers": [1, 2],
+   "truth": "Conduire un véhicule sans la catégorie nécessaire revient à conduire sans permis valable pour ce véhicule.",
+   "why": "La prudence ne remplace pas l’autorisation de conduire ce type de véhicule.",
+   "trap": "Croire qu’une conduite prudente compense l’absence de catégorie.",
+   "action": "Vérifiez avant de partir, jamais après.",
+   "memory": "Doute sur la catégorie : je vérifie d’abord."
+  }
+ ]
+}

@@ -1,0 +1,170 @@
+{
+ "D18-O53-ARR-01": {
+  "option": "Sur la plage arrière, contre la vitre",
+  "why": "Une charge lourde en hauteur et non retenue devient un projectile au freinage."
+ },
+ "D18-O53-ARR-03": {
+  "option": "Oui, si elle est couchée sur la banquette",
+  "why": "Couchée mais non retenue, elle reste un projectile lors d’un freinage."
+ },
+ "D18-O53-ARR-05": {
+  "option": "Le glisser sous les autres objets sans le fixer",
+  "why": "Le vent peut l’arracher ; il doit être sécurisé par des moyens appropriés."
+ },
+ "D18-O53-ARR-06": {
+  "option": "Parce que les sangles se resserrent en roulant",
+  "why": "C’est l’inverse : la charge se tasse et les sangles peuvent se détendre."
+ },
+ "D18-O53-ARR-08": {
+  "option": "Oui, si la charge est répartie sur les deux essieux",
+  "why": "Une bonne répartition ne rend pas admissible un dépassement de la masse."
+ },
+ "D18-O53-ARR-10": {
+  "option": "La charge reste en place véhicule à l’arrêt",
+  "why": "L’arrimage doit résister aux forces d’un freinage ou d’un virage brusque."
+ },
+ "D18-O53-CHA-01": {
+  "option": "Réduire la vitesse sans monter de chaînes",
+  "why": "Le signal impose le montage des chaînes, pas seulement une allure réduite."
+ },
+ "D18-O53-CHA-03": {
+  "option": "Juste après le signal, sur la voie de circulation",
+  "why": "Le montage se fait sur une aire sûre, avant le tronçon concerné."
+ },
+ "D18-O53-CHA-04": {
+  "option": "Toujours les roues avant",
+  "why": "Les chaînes vont sur les roues motrices, qui ne sont pas toujours à l’avant."
+ },
+ "D18-O53-CHA-06": {
+  "option": "Oui, si les chaînes sont neuves",
+  "why": "Même neuves, les chaînes imposent d’adapter vitesse et distance."
+ },
+ "D18-O53-CHA-07": {
+  "option": "Lors du premier montage sous le signal",
+  "why": "La compatibilité se vérifie avant le voyage, pas sur place."
+ },
+ "D18-O53-CHA-09": {
+  "option": "Continuer à vitesse réduite jusqu’à destination",
+  "why": "Une chaîne desserrée peut endommager le véhicule ; il faut s’arrêter et contrôler."
+ },
+ "D18-O53-EQU-01": {
+  "option": "Une protection dorsale",
+  "why": "La protection dorsale est recommandée mais seul le casque est expressément obligatoire."
+ },
+ "D18-O53-EQU-02": {
+  "option": "Seulement si le trajet dépasse quelques kilomètres",
+  "why": "L’obligation du casque ne dépend pas de la longueur du trajet."
+ },
+ "D18-O53-EQU-07": {
+  "option": "Il faut le dépasser rapidement pour s’en éloigner",
+  "why": "La vulnérabilité du motocycliste demande davantage de marge, pas un dépassement pressé."
+ },
+ "D18-O53-EQU-08": {
+  "option": "L’enfant lui-même",
+  "why": "Pour un enfant de moins de douze ans, c’est le conducteur qui doit y veiller."
+ },
+ "D18-O53-EQU-09": {
+  "option": "Une dispense du port du casque",
+  "why": "Aucun équipement ne dispense du casque obligatoire."
+ },
+ "D18-O53-EQU-10": {
+  "option": "Oui, si le trajet est court",
+  "why": "Un casque non fermé peut être éjecté au choc, quelle que soit la distance."
+ },
+ "D18-O53-TOI-01": {
+  "option": "La charge indiquée sur le coffre de toit seul",
+  "why": "Il faut retenir la plus faible des limites du toit, des barres et de l’accessoire."
+ },
+ "D18-O53-TOI-02": {
+  "option": "Pour savoir si le coffre est couvert par l’assurance",
+  "why": "La hauteur sert à éviter les passages et accès trop bas."
+ },
+ "D18-O53-TOI-03": {
+  "option": "Les objets lourds dans le coffre de toit plutôt que dans le coffre",
+  "why": "Les objets lourds en hauteur relèvent le centre de gravité ; ils vont dans le coffre."
+ },
+ "D18-O53-TOI-04": {
+  "option": "Une moindre sensibilité aux rafales",
+  "why": "Une charge haute augmente la prise au vent et le roulis."
+ },
+ "D18-O53-TOI-06": {
+  "option": "Oui, pour tout porte-vélos arrière",
+  "why": "Elle est facultative ; on peut aussi déplacer la plaque officielle."
+ },
+ "D18-O53-TOI-08": {
+  "option": "Uniquement avant le premier trajet de l’année",
+  "why": "La fixation se contrôle après le montage et de nouveau après le début du trajet."
+ },
+ "D18-O53-REM-02": {
+  "option": "Si la remorque est équipée de freins",
+  "why": "Le critère est la masse de l’ensemble, pas l’équipement de freins."
+ },
+ "D18-O53-REM-03": {
+  "option": "C1",
+  "why": "La catégorie C1 concerne les camions moyens, pas les ensembles voiture-remorque."
+ },
+ "D18-O53-REM-04": {
+  "option": "Oui, si la remorque a ses propres freins",
+  "why": "La charge remorquable inscrite reste une limite absolue."
+ },
+ "D18-O53-REM-05": {
+  "option": "Seulement la propreté de la carrosserie",
+  "why": "Le contrôle porte sur l’accouplement, l’éclairage et les freins."
+ },
+ "D18-O53-REM-07": {
+  "option": "La vitesse maximale générale de l’autoroute",
+  "why": "Une limite signalée plus basse s’applique toujours."
+ },
+ "D18-O53-REM-10": {
+  "option": "En braquant fortement dès le début",
+  "why": "De grands braquages font pivoter brusquement la remorque ; il faut de petites corrections."
+ },
+ "D18-O53-DEP-01": {
+  "option": "Il peut dépasser si la charge est légère",
+  "why": "La règle générale interdit le dépassement latéral, quel que soit le poids."
+ },
+ "D18-O53-DEP-03": {
+  "option": "Le bord avant du capot",
+  "why": "Le repère est le centre du dispositif de direction."
+ },
+ "D18-O53-DEP-07": {
+  "option": "Un panneau « charge longue » de fabrication personnelle",
+  "why": "Un dépassement des dimensions ordinaires peut exiger une autorisation écrite."
+ },
+ "D18-O53-DEP-08": {
+  "option": "L’allumage des feux de brouillard arrière",
+  "why": "Ces feux ne remplacent pas la vision arrière par des rétroviseurs extérieurs."
+ },
+ "D18-O53-DEP-09": {
+  "option": "Une telle remorque ne peut circuler que de nuit",
+  "why": "Aucune règle de ce type ; une exception est prévue dans la limite fixée."
+ },
+ "D18-O53-DEP-10": {
+  "option": "Oui, si le trajet est court",
+  "why": "Le champ de vision du conducteur ne doit jamais être réduit."
+ },
+ "D18-O53-DYN-01": {
+  "option": "Elle raccourcit le temps de réaction",
+  "why": "La masse n’agit pas sur le temps de réaction mais sur la distance de freinage."
+ },
+ "D18-O53-DYN-02": {
+  "option": "Une meilleure adhérence des pneus en virage",
+  "why": "Une charge haute augmente le roulis sans améliorer l’adhérence."
+ },
+ "D18-O53-DYN-03": {
+  "option": "Seulement en hiver",
+  "why": "La pression s’adapte à la charge selon le constructeur, en toute saison."
+ },
+ "D18-O53-DYN-04": {
+  "option": "Garder sa vitesse habituelle grâce à la charge",
+  "why": "La charge augmente l’inertie ; il faut ralentir avant le virage."
+ },
+ "D18-O53-DYN-05": {
+  "option": "Freiner fort immédiatement",
+  "why": "Un freinage brusque peut amplifier l’oscillation ; il faut réduire progressivement."
+ },
+ "D18-O53-DYN-07": {
+  "option": "Elle reste identique si le moteur est puissant",
+  "why": "La masse allonge l’accélération ; la marge doit augmenter."
+ }
+}

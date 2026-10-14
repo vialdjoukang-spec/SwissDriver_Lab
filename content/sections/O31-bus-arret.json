@@ -1,0 +1,183 @@
+{
+ "chapterId": "O31",
+ "after": "transports",
+ "section": {
+  "id": "bus-arret",
+  "otitle": "Bus quittant un arrêt et distance de sécurité",
+  "title": "Laisser repartir le bus et garder ses distances",
+  "ogoal": "Faciliter le départ d’un bus de ligne qui quitte un arrêt en localité, garder une distance suffisante derrière les transports publics et protéger les voyageurs qui montent, descendent ou traversent.",
+  "question": "Un bus arrêté à droite met son clignotant gauche alors que vous arrivez à sa hauteur : devez-vous le laisser partir ?",
+  "lead": [
+   "Les bus et les trams s’arrêtent souvent et repartent sans cesse. Autour d’eux, des voyageurs montent, descendent et traversent. Cette section approfondit le chapitre sur les arrêts : comment réagir quand un bus annonce son départ, quelle distance garder derrière lui et pourquoi ne jamais passer à côté d’un véhicule arrêté là où des passagers sont sur la chaussée."
+  ],
+  "parts": [
+   {
+    "title": "En localité, le bus qui quitte l’arrêt doit pouvoir repartir",
+    "body": [
+     "À l’intérieur des localités, lorsqu’un **bus de ligne** arrêté à un arrêt **signale avec son clignotant** qu’il veut repartir, les conducteurs qui arrivent derrière lui doivent **faciliter son départ** : ils réduisent leur vitesse et, au besoin, s’arrêtent pour le laisser s’insérer. Cette règle aide les transports publics à tenir leur horaire.",
+     "Le conducteur du bus, de son côté, ne peut pas forcer le passage : il doit lui aussi éviter de mettre les autres en danger. Mais pour vous, la conduite à tenir est claire : dès que le clignotant du bus s’allume, levez le pied, observez et laissez-le partir. Ne cherchez pas à le dépasser au dernier moment pour « passer avant »."
+    ]
+   },
+   {
+    "title": "Piétons devant et derrière le bus",
+    "body": [
+     "Un bus arrêté cache tout ce qui se trouve devant lui et sur le trottoir. Des voyageurs qui viennent de descendre traversent souvent la route **devant ou derrière** le bus, pressés et sans regarder. D’autres courent pour attraper le bus de l’autre côté de la rue. Les enfants, petits et rapides, sont particulièrement difficiles à voir.",
+     "Passez donc à côté d’un bus arrêté à une vitesse qui vous permet de vous arrêter immédiatement. Cherchez les indices : des pieds visibles sous le bus, une personne qui court, une porte encore ouverte. **Ne passez jamais à côté d’un tram ou d’un bus arrêté là où des passagers montent ou descendent sur la chaussée** : attendez qu’ils l’aient quittée."
+    ]
+   },
+   {
+    "title": "La distance de sécurité derrière les transports publics",
+    "body": [
+     "Derrière un bus, gardez une **distance plus grande** que d’habitude. Il peut s’arrêter à chaque arrêt, parfois brusquement, et sa taille vous cache la route devant lui : vous ne voyez ni le feu, ni le piéton, ni le bouchon qu’il voit déjà. En reculant un peu, vous gagnez de la visibilité et du temps de réaction.",
+     "Quand un bus s’arrête devant vous, ne vous collez pas à lui et ne déboîtez pas brusquement pour le contourner. Vérifiez d’abord que la voie voisine est libre et qu’aucun piéton ne surgit de devant le bus. Si vous ne voyez pas, attendez : quelques secondes perdues valent mieux qu’un piéton heurté."
+    ]
+   }
+  ],
+  "words": [
+   {
+    "term": "Bus de ligne",
+    "def": "Bus de transport public qui circule sur un itinéraire fixe selon un horaire et s’arrête aux arrêts prévus."
+   },
+   {
+    "term": "Faciliter le départ",
+    "def": "Réduire sa vitesse et, au besoin, s’arrêter pour qu’un bus de ligne qui a mis son clignotant puisse quitter l’arrêt."
+   },
+   {
+    "term": "Zone masquée",
+    "def": "L’espace caché par un véhicule arrêté, où un piéton peut se trouver sans que vous le voyiez."
+   },
+   {
+    "term": "Distance de sécurité",
+    "def": "L’espace que vous laissez devant vous pour pouvoir vous arrêter si le véhicule qui vous précède freine brusquement."
+   }
+  ],
+  "method": [
+   "Repérez de loin les arrêts de bus et de tram.",
+   "Augmentez votre distance derrière un bus ou un tram.",
+   "En localité, dès que le bus met son clignotant pour repartir, ralentissez et laissez-le partir, au besoin en vous arrêtant.",
+   "Passez à côté d’un bus arrêté à une vitesse qui vous permet un arrêt immédiat.",
+   "Attendez si des passagers montent ou descendent sur la chaussée."
+  ],
+  "example": {
+   "title": "Le bus qui repart au centre-ville",
+   "scene": "Vous roulez en ville sur une rue à une voie par sens. Devant vous, un bus de ligne est arrêté à un arrêt en bordure de chaussée. Au moment où vous approchez, son clignotant gauche s’allume. Une personne court sur le trottoir d’en face.",
+   "reasoning": [
+    "Le clignotant indique que le bus veut quitter l’arrêt : en localité, vous devez faciliter son départ.",
+    "Vous levez le pied et vous vous arrêtez au besoin pour le laisser s’insérer devant vous.",
+    "La personne qui court pourrait traverser pour attraper un autre bus : vous restez prêt à freiner, puis vous gardez une bonne distance derrière le bus."
+   ],
+   "answer": "Vous laissez le bus repartir, vous surveillez la personne qui court et vous reprenez votre route à bonne distance derrière lui."
+  },
+  "trap": "Le piège est d’accélérer pour passer avant que le bus ne déboîte. Vous créez alors un conflit avec un véhicule lourd et vous passez à côté d’une zone masquée où peuvent se trouver des voyageurs. Dès que le clignotant du bus s’allume, la bonne réaction est de ralentir, pas d’accélérer.",
+  "remember": "En localité, le bus qui signale son départ doit pouvoir repartir : ralentissez, laissez-le partir et gardez vos distances.",
+  "memo": {
+   "code": "C–L–A",
+   "text": "Clignotant du bus : Lever le pied, Laisser partir, Agrandir la distance."
+  },
+  "law": "LCR ; OCR"
+ },
+ "questions": [
+  {
+   "id": "O31-BUS-01",
+   "chapter": "O31",
+   "section": "bus-arret",
+   "stem": "En localité, un bus de ligne arrêté à un arrêt met son clignotant pour repartir. Que faites-vous ?",
+   "options": [
+    "Vous réduisez votre vitesse pour faciliter son départ.",
+    "Vous accélérez pour passer avant qu’il ne s’insère.",
+    "Vous vous arrêtez au besoin pour le laisser partir."
+   ],
+   "answers": [0, 2],
+   "truth": "En localité, on facilite le départ d’un bus de ligne qui signale son intention de quitter l’arrêt.",
+   "why": "Cette règle permet aux transports publics de circuler et évite un conflit avec un véhicule lourd.",
+   "trap": "Vouloir passer avant le bus.",
+   "action": "Levez le pied dès que le clignotant s’allume.",
+   "memory": "Clignotant du bus : je le laisse partir."
+  },
+  {
+   "id": "O31-BUS-02",
+   "chapter": "O31",
+   "section": "bus-arret",
+   "stem": "Vous passez à côté d’un bus arrêté à un arrêt. Qu’est-ce qui est juste ?",
+   "options": [
+    "Des piétons peuvent traverser devant le bus sans que vous les voyiez.",
+    "Si vous ne voyez personne, vous pouvez garder votre vitesse.",
+    "Vous roulez à une vitesse qui vous permet de vous arrêter immédiatement."
+   ],
+   "answers": [0, 2],
+   "truth": "Un bus arrêté crée une zone masquée où peuvent se trouver des piétons.",
+   "why": "Les voyageurs qui descendent traversent souvent devant ou derrière le bus.",
+   "trap": "Conclure qu’il n’y a personne parce qu’on ne voit personne.",
+   "action": "Réduisez et cherchez les indices, comme des pieds sous le bus.",
+   "memory": "Ce que le bus cache peut surgir."
+  },
+  {
+   "id": "O31-BUS-03",
+   "chapter": "O31",
+   "section": "bus-arret",
+   "stem": "Un tram est arrêté et des voyageurs descendent directement sur la chaussée, à côté de votre voie. Que faites-vous ?",
+   "options": [
+    "Vous attendez que les voyageurs aient quitté la chaussée.",
+    "Vous passez rapidement entre le tram et les voyageurs.",
+    "Vous ne passez pas à côté du tram tant que des passagers montent ou descendent sur la chaussée."
+   ],
+   "answers": [0, 2],
+   "truth": "On ne passe jamais à côté d’un tram ou d’un bus arrêté là où des passagers montent ou descendent sur la chaussée.",
+   "why": "Les voyageurs se trouvent alors directement sur votre trajectoire.",
+   "trap": "Profiter d’un espace libre entre deux voyageurs.",
+   "action": "Arrêtez-vous et attendez que la chaussée soit libre.",
+   "memory": "Passagers sur la chaussée : j’attends."
+  },
+  {
+   "id": "O31-BUS-04",
+   "chapter": "O31",
+   "section": "bus-arret",
+   "stem": "Vous suivez un bus de ligne en ville. Pourquoi est-il judicieux de garder une distance plus grande que d’habitude ?",
+   "options": [
+    "Il peut s’arrêter souvent, parfois brusquement.",
+    "Sa taille vous cache ce qui se passe devant lui.",
+    "Une grande distance oblige le bus à rouler plus vite."
+   ],
+   "answers": [0, 1],
+   "truth": "Une distance plus grande derrière un bus améliore votre visibilité et votre temps de réaction.",
+   "why": "Le bus s’arrête aux arrêts et masque feux, piétons et obstacles.",
+   "trap": "Coller au bus pour le dépasser plus vite.",
+   "action": "Reculez pour voir plus loin et anticiper ses arrêts.",
+   "memory": "Grand véhicule, grande distance."
+  },
+  {
+   "id": "O31-BUS-05",
+   "chapter": "O31",
+   "section": "bus-arret",
+   "stem": "Le bus qui vous précède s’arrête à un arrêt sur la chaussée. Vous voulez le contourner. Qu’est-ce qui est juste ?",
+   "options": [
+    "Vous vérifiez d’abord que la voie voisine est libre.",
+    "Vous déboîtez immédiatement pour ne pas perdre de temps.",
+    "Vous restez attentif aux piétons qui pourraient surgir devant le bus."
+   ],
+   "answers": [0, 2],
+   "truth": "Contourner un bus arrêté exige de contrôler la voie voisine et la zone devant le bus.",
+   "why": "Un déboîtement brusque peut surprendre les autres usagers et vous amener sur un piéton caché.",
+   "trap": "Déboîter sans regarder, pressé par le temps.",
+   "action": "Contrôlez rétroviseurs et angle mort, puis passez lentement.",
+   "memory": "Contourner, c’est d’abord contrôler."
+  },
+  {
+   "id": "O31-BUS-06",
+   "chapter": "O31",
+   "section": "bus-arret",
+   "stem": "Le bus a mis son clignotant pour quitter l’arrêt. Que savez-vous de son conducteur ?",
+   "options": [
+    "Il doit lui aussi éviter de mettre les autres en danger.",
+    "Il peut forcer le passage sans tenir compte des autres usagers.",
+    "Vous restez attentif à ses mouvements pendant qu’il s’insère."
+   ],
+   "answers": [0, 2],
+   "truth": "Faciliter le départ du bus ne supprime pas le devoir de prudence de chacun.",
+   "why": "La règle fondamentale de la LCR s’applique à tous les conducteurs, y compris celui du bus.",
+   "trap": "Croire que le bus a un droit absolu de passage.",
+   "action": "Laissez-le partir et restez prêt à réagir.",
+   "memory": "Je facilite, chacun reste prudent."
+  }
+ ]
+}

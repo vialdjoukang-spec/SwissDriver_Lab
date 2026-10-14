@@ -1,0 +1,66 @@
+{
+ "N25-OR-01": {
+  "option": "Pour ne plus avoir besoin de contrôler les rétroviseurs.",
+  "why": "Regarder loin devant ne remplace pas les contrôles réguliers de ce qui se passe derrière et sur les côtés."
+ },
+ "N25-OR-02": {
+  "option": "Cela vous permet de mieux évaluer ce qui arrive sur les côtés.",
+  "why": "Fixer un point rétrécit le champ d’attention ; ce qui arrive latéralement est perçu plus tard."
+ },
+ "N25-OR-04": {
+  "option": "Juste devant le capot, pour sentir la voiture.",
+  "why": "Le véhicule va là où se porte le regard ; il faut viser l’espace libre, loin devant."
+ },
+ "N25-OR-05": {
+  "option": "Vous gardez votre vitesse jusqu’à voir la cause de l’arrêt.",
+  "why": "Attendre de comprendre la cause fait perdre la marge de freinage gagnée en repérant tôt le danger."
+ },
+ "N25-RS-01": {
+  "option": "Fixer en permanence le véhicule qui vous précède.",
+  "why": "Observer de manière sélective, c’est balayer la scène et retenir les éléments utiles, pas fixer un seul objet."
+ },
+ "N25-RS-02": {
+  "option": "Pour ne plus devoir adapter votre observation à la situation.",
+  "why": "L’ordre fixe évite les oublis, mais l’observation doit toujours s’adapter à la situation rencontrée."
+ },
+ "N25-RS-04": {
+  "option": "Une vitrine de magasin bien éclairée.",
+  "why": "Une vitrine ne peut pas croiser votre trajectoire ; elle n’annonce pas de danger de circulation."
+ },
+ "N25-RS-06": {
+  "option": "Vous engager rapidement pour passer moins de temps dans l’intersection.",
+  "why": "S’engager vite sans visibilité suffisante empêche de repérer un usager prioritaire ; il faut avancer lentement et regarder."
+ },
+ "N25-RC-01": {
+  "option": "Regard dans l’angle mort, changement de voie, puis clignoteur.",
+  "why": "Le clignoteur doit annoncer la manœuvre avant de l’exécuter, après le contrôle des rétroviseurs."
+ },
+ "N25-RC-02": {
+  "option": "Seulement lorsqu’un véhicule klaxonne derrière vous.",
+  "why": "Les rétroviseurs se contrôlent régulièrement et avant chaque ralentissement ou changement de direction, sans attendre un signal."
+ },
+ "N25-RC-03": {
+  "option": "Il se fait en tournant tout le buste pendant plusieurs secondes.",
+  "why": "Un regard long détourne l’attention de la route devant ; il doit rester bref."
+ },
+ "N25-RC-05": {
+  "option": "Vous ne surveillez plus que le véhicule arrêté devant vous.",
+  "why": "Après une attente, la situation a pu changer de tous côtés ; un dernier contrôle complet reste nécessaire."
+ },
+ "N25-VR-01": {
+  "option": "Vous fermez brièvement les yeux jusqu’au croisement.",
+  "why": "Fermer les yeux supprime toute perception de la route ; il faut regarder vers le bord droit et ralentir."
+ },
+ "N25-VR-02": {
+  "option": "Il vous voit forcément et s’écartera à votre approche.",
+  "why": "Vous ne pouvez pas compter sur sa réaction ; c’est à vous d’adapter votre vitesse à ce que vous voyez."
+ },
+ "N25-VR-03": {
+  "option": "Il raccourcit lorsque vous êtes pressé.",
+  "why": "La hâte n’améliore pas la réaction ; le stress et la distraction tendent au contraire à l’allonger."
+ },
+ "N25-VR-05": {
+  "option": "Vous suivez de près les feux arrière du véhicule qui précède pour vous guider.",
+  "why": "Suivre de près dans le brouillard supprime la distance nécessaire pour freiner si ce véhicule s’arrête."
+ }
+}
