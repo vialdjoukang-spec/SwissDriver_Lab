@@ -30,6 +30,8 @@ jobs:
         run: python3 tests/browser_smoke.py
       - name: Scene geometry, observation layout and agent gesture
         run: python3 tests/scene_coherence.py
+      - name: All 75 decision paths through terminal outcome and replay
+        run: python3 tests/decision_paths.py
       - name: Assemble complete edition and verify its distribution
         run: |
           python3 scripts/package.py --require-browser-evidence
