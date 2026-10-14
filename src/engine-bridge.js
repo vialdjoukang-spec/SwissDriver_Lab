@@ -4,15 +4,21 @@ var sdSimTime=0;
 (function(){
   'use strict';
   const events=[];
+  const nativeRender=Gn.render.bind(Gn);
+  Gn.render=function(scene,camera){
+    if(document.hidden||!st('#start').hidden||!st('#course').hidden||!st('#plan').hidden)return;
+    nativeRender(scene,camera);
+  };
   const text=(node,value)=>{if(node)node.textContent=value;};
-  const activeItem=()=>Ie?.it||Jt?.it||dr();
+  const activeItem=()=>Jt?.it||Ie?.it||dr();
   const ruleId=item=>item?.s?item.c.id+'/'+item.s.id:null;
   function snapshot(){
     const item=activeItem();
+    const scene=Ie&&(!Jt||ruleId(Jt.it)===ruleId(Ie.it))?Ie:null;
     return {version:2,mode:At,ruleId:ruleId(item),chapterId:item?.c.id||null,sectionId:item?.s?.id||null,
-      scenarioId:Ie?.sc.id||null,scenarioKind:Ie?.sc.kind||null,
+      scenarioId:scene?.sc.id||null,scenarioKind:scene?.sc.kind||null,
       lessonTitle:item?.s?.otitle||item?.c.otitle||null,speedKmh:Math.round(Math.abs(O.v)*36)/10,
-      assistedTrajectory:!!O.auto,assessment:'decision-and-simulated-consequence',simulationSeconds:sdSimTime};
+      assistedTrajectory:!!scene&&!!O.auto,assessment:'decision-and-simulated-consequence',simulationSeconds:sdSimTime};
   }
   function emit(type,details={}){
     const entry={type,...snapshot(),...details};events.push(entry);if(events.length>200)events.shift();

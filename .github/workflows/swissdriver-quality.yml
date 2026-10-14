@@ -1,7 +1,5 @@
 name: SwissDriver quality
 on:
-  push:
-    branches: [feat/integration-atkinson-audit-runtime]
   pull_request:
     branches: [main]
 permissions:

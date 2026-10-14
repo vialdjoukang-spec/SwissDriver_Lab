@@ -5,15 +5,18 @@ from pathlib import Path
 from functools import partial
 import http.server,threading,json,os,traceback
 from playwright.sync_api import sync_playwright
+os.environ['PW_TEST_SCREENSHOT_NO_FONTS_READY']='1'
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'test-results';OUT.mkdir(exist_ok=True)
 class QuietHandler(http.server.SimpleHTTPRequestHandler):
     def log_message(self,*args):pass
 server=http.server.ThreadingHTTPServer(('127.0.0.1',0),partial(QuietHandler,directory=str(ROOT)))
 threading.Thread(target=server.serve_forever,daemon=True).start()
 results=[];errors=[]
+def save_progress():
+    (OUT/'browser-results.json').write_text(json.dumps({'tests':results,'javascriptErrors':errors,'scope':'Chromium/WebGL initialization, real scene construction, selected transitions and static render captures; not an exhaustive driving/legal audit'},ensure_ascii=False,indent=2))
 def check(name,condition,details=None):
     results.append({'test':name,'passed':bool(condition),'details':details});print(name,condition,flush=True)
-    assert condition,name
+    save_progress();assert condition,name
 with sync_playwright() as p:
     args={'headless':True,'args':['--no-sandbox','--enable-unsafe-swiftshader']}
     if os.getenv('CHROMIUM_EXECUTABLE'):args['executable_path']=os.environ['CHROMIUM_EXECUTABLE']
@@ -26,12 +29,15 @@ with sync_playwright() as p:
         page.goto(f'http://127.0.0.1:{server.server_port}/dist/SwissDriver_Lab.html',wait_until='domcontentloaded',timeout=120000)
         page.wait_for_function('window.SwissDriverLab && window.__G && window.__G.frames()>2',timeout=120000)
         check('engine_boot',not errors,errors)
+        page.evaluate('window.__NORENDER=true')
         coverage=page.evaluate('SwissDriverLab.coverage')
         check('coverage_25_scenes',coverage['scenarios']==25 and coverage['playableSections']==7 and not coverage['contractErrors'],coverage)
-        page.screenshot(path=str(OUT/'desktop-start.png'))
+        page.screenshot(path=str(OUT/'desktop-start.png'),timeout=60000)
         page.locator('#startBtn').click()
         model=page.evaluate('({meta:SwissDriverLab.vehicle(),wheels:SwissDriverLab.test.player.userData.wheels.length,front:SwissDriverLab.test.player.userData.front.length})')
         check('sedan_engine_contract',model['wheels']==4 and model['front']==2 and model['meta']['wheelbaseM']==2.8,model)
+        page.evaluate('SwissDriverLab.test.vehiclePreview()')
+        page.screenshot(path=str(OUT/'desktop-sedan.png'),timeout=60000)
         scenes=page.evaluate("__G.ITEMS.filter(x=>x.type==='sit').map(x=>SwissDriverLab.test.inspectScene(x.sc.id))")
         check('25_real_scene_constructors',len(scenes)==25 and all(x['pathLength']>0 for x in scenes),scenes)
         page.evaluate("SwissDriverLab.test.openLesson('O11','hierarchie')")
@@ -67,7 +73,8 @@ with sync_playwright() as p:
         page.evaluate('SwissDriverLab.test.closePlan()')
         page.evaluate("SwissDriverLab.test.prepareDecision('h1')")
         check('scene_lesson_identity',page.evaluate("SwissDriverLab.snapshot().ruleId==='O11/hierarchie' && SwissDriverLab.snapshot().scenarioId==='h1'"))
-        page.screenshot(path=str(OUT/'desktop-decision.png'))
+        page.evaluate('SwissDriverLab.test.render()')
+        page.screenshot(path=str(OUT/'desktop-decision.png'),timeout=60000)
         page.evaluate('(()=>{const d=__G.DEC();__G.choose(d.order.findIndex(i=>i!==d.S.sc.ok));})()')
         decision=page.evaluate("SwissDriverLab.events().filter(e=>e.type==='decision').at(-1)")
         check('decision_event_matches_scene',decision['scenarioId']=='h1' and decision['ruleId']=='O11/hierarchie' and decision['correct'] is False,decision)
@@ -76,16 +83,31 @@ with sync_playwright() as p:
         page.set_viewport_size({'width':390,'height':844});page.wait_for_timeout(700)
         check('mobile_no_horizontal_overflow',page.evaluate('document.documentElement.scrollWidth<=innerWidth'))
         check('mobile_touch_controls',page.locator('#labTouch button:visible').count()==6)
-        page.screenshot(path=str(OUT/'mobile-drive.png'))
+        page.evaluate('SwissDriverLab.test.render()')
+        page.screenshot(path=str(OUT/'mobile-drive.png'),timeout=60000)
         page.evaluate('SwissDriverLab.test.openPlan()');page.wait_for_timeout(250)
         check('mobile_single_program_page',page.locator('#planList>section:visible').count()==1)
         page.screenshot(path=str(OUT/'mobile-program.png'))
         check('no_javascript_errors',not errors,errors)
+        page.close()
+        page=browser.new_page(viewport={'width':900,'height':700})
+        page.on('pageerror',lambda err:errors.append(str(err)))
+        page.goto(f'http://127.0.0.1:{server.server_port}/index.html',wait_until='domcontentloaded',timeout=120000)
+        page.wait_for_function("document.querySelector('#notice').hidden",timeout=120000)
+        frame=page.frame_locator('#game')
+        check('http_launcher_boot',frame.locator('#startBtn').is_visible() and not errors,errors)
+        page.close()
+        offline=browser.new_context(offline=True)
+        page=offline.new_page()
+        page.on('pageerror',lambda err:errors.append(str(err)))
+        page.goto((ROOT/'dist/SwissDriver_Lab.html').as_uri(),wait_until='domcontentloaded',timeout=120000)
+        page.wait_for_function('window.SwissDriverLab && window.__G',timeout=120000)
+        check('standalone_offline_boot',page.locator('#startBtn').is_visible() and not errors,errors)
     except Exception:
         print(traceback.format_exc(),flush=True)
         try:page.screenshot(path=str(OUT/'failure.png'),timeout=10000)
         except Exception:pass
         raise
     finally:
-        (OUT/'browser-results.json').write_text(json.dumps({'tests':results,'javascriptErrors':errors,'scope':'Chromium smoke tests, scene construction and selected transitions; not a complete driving/legal audit'},ensure_ascii=False,indent=2))
+        save_progress()
         browser.close();server.shutdown()
