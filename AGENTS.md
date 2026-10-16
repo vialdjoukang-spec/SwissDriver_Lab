@@ -1,6 +1,6 @@
 # SwissDriver Lab — règles de contribution
 
-Lire dans cet ordre : START_HERE.md, docs/ETAT_ET_RESTE.md, docs/EDITER.md.
+Lire dans cet ordre : START_HERE.md, docs/ETAT_ET_RESTE.md, docs/ROADMAP.json (feuille de route canonique, à tenir à jour), docs/EDITER.md.
 
 ## Source canonique
 - `main` est la source publiée. Travailler sur une branche dédiée et ouvrir une PR. Ne pas fusionner sans autorisation du propriétaire.

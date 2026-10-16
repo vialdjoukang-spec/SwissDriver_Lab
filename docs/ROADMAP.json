@@ -1,0 +1,240 @@
+{
+  "schema": "swissdriver.roadmap/1",
+  "updated": "2026-10-16",
+  "supersedes": "Tableau « Travaux restants » de docs/ETAT_ET_RESTE.md (14 octobre 2026)",
+  "readOrder": ["AGENTS.md", "START_HERE.md", "docs/ETAT_ET_RESTE.md", "docs/ROADMAP.json", "docs/EDITER.md"],
+  "howToUse": [
+    "Traiter les tâches dans l'ordre de 'sequence' ; une tâche ne démarre que si toutes ses 'dependsOn' sont 'done'.",
+    "Une tâche passe à 'done' seulement quand chaque critère de 'acceptance' est vérifié et consigné dans le commit ou la PR.",
+    "Mettre à jour 'status' dans ce fichier dans le même commit que le travail livré.",
+    "Les estimations sont des ordres de grandeur non mesurés (modèle Opus, tokens entrée+sortie) ; remplacer par la mesure réelle dans 'measured' après chaque tâche.",
+    "Les règles de AGENTS.md priment sur ce fichier en cas de conflit."
+  ],
+
+  "objective": {
+    "primary": "Permettre à l'apprenant de parcourir les 27 chapitres et de s'exercer sur chacun.",
+    "strategy": "Complétude avec exigence simplifiée : un petit nombre de mécanismes génériques branchés sur les scènes, schémas et QCM existants, au lieu d'un décor 3D par chapitre.",
+    "maintained": [
+      "Relecture experte P0 (T01) : obligatoire, non supprimée par la simplification.",
+      "Sources officielles datées par règle P0 (T02).",
+      "Règles de AGENTS.md : moteur Permis_GT_Rossa.html non écrasé, identifiants inchangés, thèmes clairs, alertes rouges grasses italiques, QCM à 3 ou 4 propositions, aucun test retiré pour obtenir du vert.",
+      "Toute fusion vers main exige la validation complète de AGENTS.md (T90)."
+    ],
+    "simplified": [
+      "Pas de nouveau décor 3D pour N26 et O31 : désignation sur les schémas existants.",
+      "Inspection véhicule et papiers en 2D, pas en 3D.",
+      "Conséquences accident, assurance, permis à l'essai et aides à la conduite : variantes de texte du mécanisme M1.",
+      "Pendant le développement sur branche : tests rapides ; validation complète avant fusion seulement."
+    ],
+    "nonGoals": [
+      "Certifier une compétence de conduite ou se substituer à une auto-école.",
+      "Transformer un QCM en certificat de conduite manuelle.",
+      "Tester Firefox/WebKit et appareils réels (reporté, T95)."
+    ]
+  },
+
+  "baseline": {
+    "date": "2026-10-14",
+    "edition": "0.5.0-preview.1",
+    "facts": [
+      "27 chapitres en 6 parties, alignés sur le catalogue asa de juillet 2026 (content/programme-asa-2027.json).",
+      "Chaque sous-chapitre a des QCM style examen à 3 ou 4 propositions avec explication.",
+      "113 schémas embarqués ; 27 signaux suisses en exercice de reconnaissance.",
+      "Seul O11 (Priorités) a des scènes 3D : 25 situations, 75 branches de réponse.",
+      "Écran d'erreur existant : « Ce que vous avez fait » / « Ce qu'il fallait faire » / « Pourquoi » / « Mnémo ».",
+      "Les scénarios O11 sont des données (var Uu) ; chaque 'kind' a un constructeur codé dans le moteur.",
+      "Aucun contenu n'a été validé par l'asa ni par une personne compétente."
+    ],
+    "reusableEngineParts": ["carrefour", "giratoire", "passage étroit", "sortie de cour", "tourner à gauche", "feux", "panneaux (src/signs.js)", "agent", "piéton", "vélo", "tram", "ambulance", "file d'attente", "berline (src/sedan.js)", "gestes (src/gestures.js)"]
+  },
+
+  "mechanisms": {
+    "M1": {
+      "name": "Faute → conséquence",
+      "principle": "Détection automatique de la faute par le moteur, sans personnage humain dans la scène. L'écran rouge affiche : règle violée, ce qu'il fallait faire, catégorie d'infraction, sanction ENCOURUE, base légale avec lien Fedlex.",
+      "trigger": "Choix différent de 'ok' ou collision dans une scène existante.",
+      "data": "content/consequences.json : violationId → {regle, aFaire, categorie, sanctionEncourue, baseLegale, fedlexUrl, sourceCheckedOn, expertReviewed}",
+      "variants": ["sanction (O44)", "permis à l'essai : conséquence aggravée (N46)", "accident : qui paie (O45, N47)", "aide à la conduite défaillante : reprise en main (U25)"],
+      "display": "Ligne supplémentaire dans l'écran d'explication existant ; mention « non vérifié par un expert » tant que expertReviewed=false.",
+      "estimate": {"tokens": "1–1,5 M", "hours": "2–3"}
+    },
+    "M2": {
+      "name": "Observer et désigner",
+      "principle": "La scène 3D se fige, ou un schéma existant s'affiche ; l'apprenant clique l'objet pertinent (panneau, danger, usager). Retour immédiat, puis lien vers le cours.",
+      "data": "content/designate/<chapitre>.json : {sceneOrSchema, cibles[{id, zone, correct, explication}]}",
+      "estimate": {"tokens": "2–3 M", "hours": "4–6"}
+    },
+    "M3": {
+      "name": "Variable d'état",
+      "principle": "Rejouer une scène existante avec un paramètre modifié : nuit, pluie, brouillard, vitesse, temps de réaction allongé (alcool, fatigue). La conséquence passe par M1.",
+      "limit": "Simule l'effet sur la réaction et la distance, pas l'état lui-même : à signaler comme trajectoire assistée.",
+      "estimate": {"tokens": "1,5–2 M", "hours": "3–4"}
+    },
+    "M4": {
+      "name": "Inspection 2D",
+      "principle": "Image de la berline à l'arrêt ou des documents ; trouver le défaut ou l'oubli.",
+      "limit": "Inspection, pas conduite : à signaler.",
+      "estimate": {"tokens": "0,5–1 M", "hours": "1–2"}
+    },
+    "M5": {
+      "name": "Examen blanc",
+      "principle": "Tirage aléatoire de QCM sur tous les chapitres, score, liste des erreurs avec renvoi au cours, rejeu des seules erreurs.",
+      "constraint": "Ne pas affirmer de paramètres officiels de l'examen asa (nombre de questions, seuil) sans source datée ; les rendre configurables.",
+      "estimate": {"tokens": "0,5–1 M", "hours": "1–2"}
+    }
+  },
+
+  "chapters": [
+    {"id": "O11", "title": "Priorités", "mode": ["3D existante", "M1"], "status": "simulated"},
+    {"id": "O12", "title": "Interdictions", "mode": ["M2", "M1"], "status": "todo"},
+    {"id": "O13", "title": "Prescriptions", "mode": ["M2", "M1"], "status": "todo"},
+    {"id": "O14", "title": "Lire et partager la route", "mode": ["M2", "M1"], "status": "todo"},
+    {"id": "O21", "title": "Vitesse, freinage, dangers", "mode": ["M3", "M1"], "status": "todo"},
+    {"id": "O22", "title": "Démarrer, tourner, manœuvrer", "mode": ["3D existante (sortie de cour, tourner à gauche)", "M1"], "status": "todo"},
+    {"id": "O23", "title": "Partager la route", "mode": ["M2", "M1"], "status": "todo"},
+    {"id": "N24", "title": "Conduite préventive", "mode": ["M2"], "status": "todo"},
+    {"id": "N25", "title": "Observation", "mode": ["M2"], "status": "todo"},
+    {"id": "N26", "title": "Virages", "mode": ["M2 sur schéma"], "status": "todo", "note": "Pas de décor courbe en phase simplifiée."},
+    {"id": "O31", "title": "Autoroutes, tunnels, voies ferrées, bus", "mode": ["M2 sur schéma", "M1"], "status": "todo", "note": "Pas de décor autoroute en phase simplifiée."},
+    {"id": "O32", "title": "Conditions changeantes", "mode": ["M3"], "status": "todo"},
+    {"id": "N33", "title": "Analyse de tronçon", "mode": ["M2"], "status": "todo"},
+    {"id": "O41", "title": "Conducteur responsable", "mode": ["M3", "M1"], "status": "todo"},
+    {"id": "O42", "title": "Usagers fragiles", "mode": ["M2", "M1"], "status": "todo"},
+    {"id": "N43", "title": "Motivations", "mode": ["cours + QCM"], "status": "noSimulation", "note": "À déclarer explicitement sans simulation."},
+    {"id": "O43", "title": "Papiers du conducteur", "mode": ["M4"], "status": "todo"},
+    {"id": "O44", "title": "Amendes, retraits, peines", "mode": ["M1"], "status": "todo"},
+    {"id": "O45", "title": "Assurance", "mode": ["M1 variante accident"], "status": "todo"},
+    {"id": "N46", "title": "Formation et permis à l'essai", "mode": ["M1 variante permis à l'essai"], "status": "todo"},
+    {"id": "N47", "title": "Accidents et risques", "mode": ["M1 variante accident", "M2"], "status": "todo"},
+    {"id": "N48", "title": "Modèles d'interaction", "mode": ["cours + QCM"], "status": "noSimulation", "note": "À déclarer explicitement sans simulation."},
+    {"id": "O51", "title": "Sécurité du véhicule", "mode": ["M4"], "status": "todo"},
+    {"id": "O52", "title": "Passagers", "mode": ["M4"], "status": "todo"},
+    {"id": "O53", "title": "Équipements et chargement", "mode": ["M4", "M3"], "status": "todo"},
+    {"id": "O54", "title": "Papiers du véhicule", "mode": ["M4"], "status": "todo"},
+    {"id": "U25", "title": "Aides à la conduite", "mode": ["M1 variante aide défaillante"], "status": "todo"}
+  ],
+
+  "sequence": ["T00", "T01", "T02", "T10", "T20", "T21", "T30", "T31", "T40", "T50", "T60", "T70", "T90", "T95"],
+
+  "tasks": [
+    {
+      "id": "T00", "priority": "P0", "status": "done",
+      "title": "Feuille de route lisible par IA",
+      "deliverable": "docs/ROADMAP.json",
+      "dependsOn": [],
+      "acceptance": ["Fichier JSON valide", "Référencé depuis docs/ETAT_ET_RESTE.md et AGENTS.md"]
+    },
+    {
+      "id": "T01", "priority": "P0", "status": "todo", "owner": "humain compétent (moniteur, juriste) ; l'IA prépare",
+      "title": "Relecture experte des contenus",
+      "scope": "Tous les faits juridiques des cours et QCM ajoutés (gestes de police, plaques, retraits, montagne, recours) puis chaque entrée de content/consequences.json (T20).",
+      "dependsOn": [],
+      "aiPart": "Produire docs/RELECTURE_P0.md : liste des affirmations à vérifier, chacune avec fichier, identifiant, texte, article Fedlex proposé.",
+      "humanPart": "Valider, corriger ou rejeter chaque affirmation ; consigner nom ou qualité du relecteur et date.",
+      "acceptance": ["Chaque affirmation porte un verdict humain daté", "Corrections tracées par commit", "expertReviewed=true seulement pour les entrées validées"],
+      "gate": "Bloque la suppression de la mention « non vérifié par un expert » et toute release présentée comme vérifiée. Ne bloque pas le développement sur branche.",
+      "estimate": {"tokens": "0,5–1 M (préparation IA)", "hours": "1–2 IA + temps humain"}
+    },
+    {
+      "id": "T02", "priority": "P0", "status": "todo",
+      "title": "Sources officielles datées par règle",
+      "scope": "Champ regulatorySource dans docs/COHERENCE_PRIORITES.json (O11), puis par sous-chapitre, puis par entrée de content/consequences.json.",
+      "dependsOn": [],
+      "acceptance": ["Chaque règle O11 a regulatorySource {texte, article, url Fedlex, consulté le}", "Test bloquant si une conséquence M1 n'a pas de source"],
+      "estimate": {"tokens": "0,8–1,5 M", "hours": "2–3"}
+    },
+    {
+      "id": "T10", "priority": "P1", "status": "todo",
+      "title": "M5 Examen blanc",
+      "dependsOn": [],
+      "files": ["src/learning.js", "src/curriculum.js", "src/scene-coherence.css"],
+      "acceptance": ["Tirage sur les 27 chapitres", "Score et liste des erreurs avec lien vers le cours", "Rejeu des erreurs seules", "Progression sous permisGT.v1 sans renommer d'identifiant", "Test navigateur dédié"],
+      "estimate": {"tokens": "0,5–1 M", "hours": "1–2"}
+    },
+    {
+      "id": "T20", "priority": "P1", "status": "todo",
+      "title": "M1 Faute → conséquence sur O11",
+      "dependsOn": ["T02"],
+      "files": ["content/consequences.json (nouveau)", "src/decision-safety.js ou nouveau module src/consequences.js", "src/transform.js si un point d'insertion est requis"],
+      "acceptance": ["Les 75 branches O11 : chaque mauvaise réponse affiche règle, à faire, catégorie, sanction encourue, base légale", "Formulation « encourue », jamais « prononcée »", "Mention « non vérifié par un expert » si expertReviewed=false", "Alertes rouges grasses italiques", "tests/decision_paths.py vert"],
+      "estimate": {"tokens": "1–1,5 M", "hours": "2–3"}
+    },
+    {
+      "id": "T21", "priority": "P1", "status": "todo",
+      "title": "M1 variantes : permis à l'essai, accident/assurance, aide défaillante",
+      "dependsOn": ["T20"],
+      "chapters": ["N46", "O45", "N47", "U25", "O44"],
+      "acceptance": ["Chaque variante sourcée (T02)", "Chapitres marqués couverts par M1 dans ce fichier"],
+      "estimate": {"tokens": "0,5 M", "hours": "1"}
+    },
+    {
+      "id": "T30", "priority": "P1", "status": "todo",
+      "title": "M2 Observer et désigner : moteur",
+      "dependsOn": [],
+      "acceptance": ["Fonctionne sur scène 3D figée et sur schéma", "La question ne masque jamais la zone utile", "Test navigateur : clic correct, clic incorrect, retour au cours"],
+      "estimate": {"tokens": "1 M", "hours": "2"}
+    },
+    {
+      "id": "T31", "priority": "P1", "status": "todo",
+      "title": "M2 : contenus par chapitre",
+      "dependsOn": ["T30"],
+      "chapters": ["O12", "O13", "O14", "O23", "N24", "N25", "N26", "O31", "N33", "O42", "N47"],
+      "acceptance": ["Au moins 3 exercices de désignation par chapitre, chacun relié à un sous-chapitre existant", "Identifiants partagés cours ↔ exercice"],
+      "estimate": {"tokens": "1–2 M", "hours": "2–4"}
+    },
+    {
+      "id": "T40", "priority": "P1", "status": "todo",
+      "title": "M3 Variable d'état",
+      "dependsOn": ["T20"],
+      "chapters": ["O21", "O32", "O41", "O53"],
+      "acceptance": ["Même scène rejouée avec au moins 2 valeurs du paramètre", "Distance d'arrêt ou réaction visible", "Signalé comme trajectoire assistée", "Conséquence via M1"],
+      "estimate": {"tokens": "1,5–2 M", "hours": "3–4"}
+    },
+    {
+      "id": "T50", "priority": "P1", "status": "todo",
+      "title": "M4 Inspection 2D",
+      "dependsOn": [],
+      "chapters": ["O51", "O52", "O53", "O54", "O43"],
+      "acceptance": ["Au moins 3 défauts ou oublis par chapitre", "Signalé « inspection, pas conduite »"],
+      "estimate": {"tokens": "0,5–1 M", "hours": "1–2"}
+    },
+    {
+      "id": "T60", "priority": "P1", "status": "todo",
+      "title": "O22 : manœuvres sur décors existants",
+      "dependsOn": ["T20"],
+      "acceptance": ["Situations sortie de cour et tourner à gauche reliées au cours O22", "Stationnement hors périmètre simplifié, signalé"],
+      "estimate": {"tokens": "0,5–1 M", "hours": "1–2"}
+    },
+    {
+      "id": "T70", "priority": "P1", "status": "todo",
+      "title": "Déclaration de couverture",
+      "dependsOn": ["T21", "T31", "T40", "T50", "T60"],
+      "acceptance": ["N43 et N48 affichés « sans simulation »", "Trajectoires assistées et inspections signalées dans l'interface", "docs/ETAT_ET_RESTE.md et ce fichier à jour"],
+      "estimate": {"tokens": "0,3 M", "hours": "0,5"}
+    },
+    {
+      "id": "T90", "priority": "P1", "status": "todo",
+      "title": "Validation complète et fusion",
+      "dependsOn": ["T70"],
+      "acceptance": ["Toute la liste « Validation minimale » de AGENTS.md exécutée et verte", "docs/COHERENCE_PRIORITES.json régénéré et commité si modifié", "package.json incrémenté avant release", "PR ouverte ; fusion uniquement avec autorisation du propriétaire"],
+      "estimate": {"tokens": "1–1,5 M", "hours": "1–2"}
+    },
+    {
+      "id": "T95", "priority": "P2", "status": "deferred",
+      "title": "Hors périmètre simplifié, à reprendre après T90",
+      "items": [
+        "Décors 3D N26 (virages) et O31 (autoroute, tunnel, passage à niveau)",
+        "Approches manuelles mesurées (issue #6) : STOP, sortie de cour, ambulance au rouge depuis l'amont",
+        "Rendu continu, Firefox/WebKit, appareils réels",
+        "GitHub Pages : activation par le propriétaire, puis déploiement d'un run vérifié et contrôle de l'URL",
+        "Export/import de progression"
+      ]
+    }
+  ],
+
+  "totals": {
+    "scopeSimplified": "T00–T90",
+    "estimate": {"tokens": "≈ 9–14 M (Opus, non mesuré)", "hours": "≈ 16–25 IA", "humanP0": "temps de relecture humaine en sus"},
+    "coverageTarget": "25 chapitres sur 27 avec exercice interactif ; 27 sur 27 avec cours, QCM et examen blanc ; N43 et N48 déclarés sans simulation."
+  }
+}

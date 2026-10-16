@@ -11,15 +11,10 @@
 ## Couverture réelle
 Seul O11 possède des scènes 3D. Les 26 autres chapitres offrent cours, schémas éventuels et QCM, **sans simulation de conduite**. La couverture du programme est rédactionnelle : elle n'a été validée ni par l'asa ni par une personne compétente.
 
-## Travaux restants, par priorité
-| Priorité | Travail | Critère d'achèvement |
-|---|---|---|
-| P0 | Relecture experte des contenus ajoutés | Faits juridiques signalés par les rédacteurs (gestes de police, plaques, retraits, montagne, recours) confirmés sur Fedlex ; corrections tracées. |
-| P0 | Sources officielles datées par règle | Champ `regulatorySource` rempli dans la matrice O11, puis par sous-chapitre. |
-| P1 | Scènes 3D au-delà d'O11 | Commencer par O12–O14 (signaux réels sur la route), puis O21–O23, O31–O32. |
-| P1 | Approches manuelles mesurées (issue #6) | STOP, sortie de cour, ambulance au rouge depuis l'amont, contacts tracés. |
-| P2 | Rendu continu, autres navigateurs, appareils réels | Mesures nommées ; Firefox/WebKit. |
-| P2 | Pages | Activation par le propriétaire, puis déploiement d'un run vérifié et contrôle de l'URL. |
+## Travaux restants
+La feuille de route canonique est **docs/ROADMAP.json** (mise à jour du 16 octobre 2026, lisible par IA : tâches, dépendances, critères d'achèvement, statut). Elle remplace l'ancien tableau de cette section.
+
+Objectif : parcourir les 27 chapitres et s'exercer sur chacun, par cinq mécanismes génériques branchés sur l'existant — M1 faute → conséquence (sanction encourue sourcée), M2 observer et désigner, M3 variable d'état, M4 inspection 2D, M5 examen blanc. La relecture experte (T01) et les sources officielles datées (T02) restent P0 et ne sont pas simplifiées. Décors 3D N26/O31, issue #6, autres navigateurs et Pages sont reportés (T95).
 
 ## Ce que les tests prouvent — et ne prouvent pas
 Les suites structurelles, navigateur, scènes, parcours d'apprentissage, 75 branches, programme et distribution sont exigées avant chaque archive ; chaque rapport porte l'empreinte du HTML testé. Ces tests ne prouvent ni l'exactitude juridique, ni la fluidité, ni une compétence de conduite. Le projet n'est ni une auto-école homologuée ni un certificat de capacité.
