@@ -19,17 +19,19 @@ python3 tests/test_swissdriver.py
 python3 tests/test_evidence_gate.py
 python3 tests/test_coherence_matrix.py
 python3 tests/test_programme.py
+python3 tests/test_road_lessons.py
 python3 -m pip install -r requirements-dev.txt
 python3 -m playwright install chromium
 python3 tests/browser_smoke.py
 python3 tests/scene_coherence.py
 python3 tests/learning_flow.py
 python3 tests/decision_paths.py
+python3 tests/road_lessons.py
 python3 scripts/coherence_matrix.py   # après decision_paths ; committer docs/COHERENCE_PRIORITES.json si modifié
 python3 scripts/package.py --require-browser-evidence
 python3 tests/test_distribution.py
 ```
-Le packaging strict refuse tout rapport navigateur, scène, parcours d'apprentissage ou 75 branches absent, incomplet, en échec ou lié à un autre HTML (`scripts/evidence.py`). Ne pas retirer un test qui échoue pour obtenir un résultat vert. Conserver preuves et limites. Le rendu instrumenté ne remplace pas un benchmark en rendu continu ni le test de toutes les trajectoires.
+Le packaging strict refuse tout rapport navigateur, scène, parcours d'apprentissage, 75 branches ou 42 branches des scènes de cours absent, incomplet, en échec ou lié à un autre HTML (`scripts/evidence.py`). Ne pas retirer un test qui échoue pour obtenir un résultat vert. Conserver preuves et limites. Le rendu instrumenté ne remplace pas un benchmark en rendu continu ni le test de toutes les trajectoires.
 
 ## Programme et exercices
 Les ajouts de contenu passent par `content/` (index, chapitres, sous-chapitres, questions, 4es propositions), fusionnés par `src/curriculum.js` dans les deux chemins de chargement. `content/programme-asa-2027.json` relie chaque contenu du catalogue asa (juillet 2026) à des sous-chapitres ; `tests/test_programme.py` bloque toute notion sans cours ou tout sous-chapitre sans exercices. Exercices : QCM style examen à 3 ou 4 propositions uniquement ; l'examen asa officiel en compte 3. Ne jamais renommer un identifiant existant (sauvegarde `permisGT.v1`).

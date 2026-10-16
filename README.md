@@ -15,7 +15,7 @@ npm start
 Node.js >=20 suffit pour ces deux commandes, sans dépendances npm à installer. Python et Playwright servent aux tests, non à l'utilisation du jeu. Lire [AGENTS.md](AGENTS.md) pour une reprise dans Codex ou Claude.
 
 ## Périmètre exact
-6 parties, 19 chapitres, 120 sous-chapitres et 1 220 questions dans les données historiques. **Priorités** est le seul chapitre équipé de scènes de conduite : 7 sous-chapitres, 25 situations. Avec l'extension `content/` (programme asa 2027), les 27 chapitres sont consultables et se suivent sur la route par portiques de cours ; les 26 autres que Priorités n'ont pas de simulation dédiée. La banque de questions n'est pas présentée comme 1 220 exercices 3D.
+6 parties, 19 chapitres, 120 sous-chapitres et 1 220 questions dans les données historiques. **Priorités** est le seul chapitre équipé de scènes de conduite : 7 sous-chapitres, 25 situations. Avec l'extension `content/` (programme asa 2027), les 27 chapitres sont consultables et se suivent sur la route par portiques de cours. O12, O13 et O14 ont en plus 14 scènes simplifiées de panneaux et marquages (trajectoire assistée) ; les autres chapitres que Priorités n'ont pas de simulation dédiée. La banque de questions n'est pas présentée comme 1 220 exercices 3D.
 
 Les données détaillées, leurs décomptes et les contrôles d'intégrité sont recalculés dans `curriculum-status.json` et `edition-manifest.json` à chaque livraison. La réussite des tests ne garantit ni toutes les trajectoires ni la conformité juridique intégrale.
 

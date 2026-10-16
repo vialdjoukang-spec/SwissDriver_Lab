@@ -18,4 +18,4 @@ Voir **docs/EDITER.md** pour les fichiers à modifier et **docs/ETAT_ET_RESTE.md
 ## Ce que contient cette édition
 Le moteur 3D et les ressources embarquées, les modules modifiables, l'interface claire, la berline, le mode observation, les tests, les captures, un inventaire du programme et un manifeste de contrôle. Les deux anciens ZIP Rossa restent dans l'historique du dépôt ; ils ne sont pas nécessaires au fonctionnement de cette édition.
 
-**Édition complète à reprendre et à exécuter ne signifie pas programme de conduite achevé.** Priorités dispose de 25 situations. Les 26 autres chapitres apparaissent sur la route comme portiques de cours seuls (sans simulation) et restent à relier à des scènes.
+**Édition complète à reprendre et à exécuter ne signifie pas programme de conduite achevé.** Priorités dispose de 25 situations. Sur la route, O12, O13 et O14 ont 14 scènes simplifiées de panneaux et marquages (décision, conséquence assistée, explication, rejeu) ; les autres chapitres apparaissent comme portiques de cours seuls, sans simulation.

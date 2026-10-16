@@ -48,7 +48,8 @@ var sdSimTime=0;
     }
     const it=Jt.it,onRoad=!Jt.fromKey&&Hn[Rt.idx]===it;
     originalXo();Bi=1;clearKeys();
-    if(onRoad&&it.type==='secGate'&&courseOnly(it.s))us('<b>Cours seul</b> · « '+Be(it.s.otitle)+' » n’a pas encore de simulation. Portique suivant devant vous.','info');
+    if(onRoad&&it.type==='secGate'&&hasLesson(it.s))us('<b>Scène de cours</b> · panneau ou marquage réel devant vous, puis une décision. Scène simplifiée, trajectoire assistée.','info');
+    else if(onRoad&&it.type==='secGate'&&courseOnly(it.s))us('<b>Cours seul</b> · « '+Be(it.s.otitle)+' » n’a pas encore de simulation. Portique suivant devant vous.','info');
     if(after==='plan')cr(true);
     emit('lesson-close');
   };
@@ -86,7 +87,10 @@ var sdSimTime=0;
   Bu=function(scene){emit('scenario-feedback',{ruleId:ruleId(scene.it),scenarioId:scene.sc.id});originalBu(scene);};
 
   const scen=Hn.filter(item=>item.type==='sit');
-  function courseOnly(section){return !scen.some(item=>item.s===section);}
+  const lessonItems=Hn.filter(item=>item.type==='lesson');
+  function hasLesson(section){return lessonItems.some(item=>item.s===section);}
+  function hasScene(section){return scen.some(item=>item.s===section);}
+  function courseOnly(section){return !hasScene(section)&&!hasLesson(section);}
   // HUD: a course-only section says so instead of « 0 / 0 situations ».
   const originalKo=Ko;
   Ko=function(){originalKo();const item=dr();if(item?.s&&courseOnly(item.s)){text(st('#hZone'),'Cours seul · simulation non disponible');text(st('#hAll'),'Priorités : '+Rt.done.length+' / '+scen.length+' situations');}};
@@ -98,7 +102,8 @@ var sdSimTime=0;
     scenarioIds.add(item.sc.id);
     if(!Array.isArray(item.sc.choices)||item.sc.choices.length!==3||!item.sc.choices[item.sc.ok])contractErrors.push('Choix invalides : '+item.sc.id);
   }
-  const coverage={parts:Yo.groups.length,chapters:Yo.chapters.length,sections:ruleIds.size,playableChapters:Nu.length,playableSections:Yu.filter(g=>!courseOnly(g.s)).length,scenarios:scen.length,
+  const coverage={parts:Yo.groups.length,chapters:Yo.chapters.length,sections:ruleIds.size,playableChapters:Nu.length,playableSections:Yu.filter(g=>hasScene(g.s)).length,scenarios:scen.length,
+    roadLessons:lessonItems.length,lessonSections:Yu.filter(g=>hasLesson(g.s)).length,
     roadChapters:Hn.filter(item=>item.type==='chapGate').length,roadSections:Yu.length,contractErrors};
   if(contractErrors.length)throw new Error('Contrat cours–scènes invalide : '+contractErrors.join('; '));
 
@@ -123,11 +128,12 @@ var sdSimTime=0;
         const details=document.createElement('details');details.className='lab-chapter';
         const summary=document.createElement('summary');summary.textContent=chapter.otitle;
         const badge=document.createElement('span');badge.className='lab-badge';
-        badge.textContent=Nu.includes(chapter.id)?'Cours + conduite':'Portiques de cours · sans simulation';summary.append(badge);details.append(summary);
+        badge.textContent=Nu.includes(chapter.id)?'Cours + conduite':chapter.sections.some(hasLesson)?'Cours + scènes simplifiées':'Portiques de cours · sans simulation';summary.append(badge);details.append(summary);
         const driveButtons=[...card.querySelectorAll('[data-gi]')];
         chapter.sections.forEach((sectionData,sectionIndex)=>{
           const row=document.createElement('div');row.className='lab-lesson-row';row.dataset.rule=chapter.id+'/'+sectionData.id;
           const title=document.createElement('strong');title.textContent=sectionData.otitle;row.append(title);
+          if(hasLesson(sectionData)){const tag=document.createElement('small');tag.className='lab-scene-tag';tag.textContent='Scène simplifiée sur la route';title.append(document.createElement('br'),tag);}
           const actions=document.createElement('div');actions.className='lab-lesson-actions';
           const read=document.createElement('button');read.type='button';read.className='ghost lab-read';read.textContent='Lire le cours';
           read.setAttribute('aria-label','Lire : '+sectionData.otitle);
@@ -150,7 +156,7 @@ var sdSimTime=0;
 
   text(st('#start h1'),'SwissDriver Lab');
   text(st('#start .kick'),'Cours · décision · conduite');
-  text(st('#start .lead'),'Une berline, un cours, puis la situation correspondante. Le chapitre Priorités propose '+coverage.playableSections+' sous-chapitres et '+coverage.scenarios+' situations décisionnelles. Les '+coverage.roadChapters+' chapitres du programme asa 2027 se suivent sur la route : chaque partie, chapitre et sous-chapitre a son portique de cours. Seules les Priorités ont des scènes 3D ; les autres portiques sont des cours seuls, signalés comme tels. Le programme (M) donne accès à tous les cours, aux QCM style examen et à la reconnaissance des signaux.');
+  text(st('#start .lead'),'Une berline, un cours, puis la situation correspondante. Le chapitre Priorités propose '+coverage.playableSections+' sous-chapitres et '+coverage.scenarios+' situations décisionnelles. Les '+coverage.roadChapters+' chapitres du programme asa 2027 se suivent sur la route : chaque partie, chapitre et sous-chapitre a son portique de cours. Seules les Priorités ont des situations 3D complètes. '+coverage.roadLessons+' scènes simplifiées montrent sur la route les panneaux et marquages des chapitres Interdictions, Obligations et indications et Gestion du trafic ; les autres portiques sont des cours seuls, signalés comme tels. Le programme (M) donne accès à tous les cours, aux QCM style examen et à la reconnaissance des signaux.');
   text(st('#start .steps li'),'Passez le portique vert, lisez chaque page avec Entrée, puis reprenez la route. J rouvre à tout moment les cours déjà vus ; Échap revient en arrière.');
   text(st('#startBtn'),'Commencer la conduite');
   const note=document.createElement('p');note.className='lab-scope';note.textContent='Environnement urbain simulé, non certifié comme reproduction géographique. Après votre choix, la trajectoire est assistée : le résultat évalue la décision, pas une conduite manuelle complète.';st('#start .card').insertBefore(note,st('#startBtn'));

@@ -13,7 +13,7 @@ concurrency:
 jobs:
   inspect:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
@@ -25,6 +25,7 @@ jobs:
           python3 tests/test_evidence_gate.py
           python3 tests/test_coherence_matrix.py
           python3 tests/test_programme.py
+          python3 tests/test_road_lessons.py
       - name: Install pinned browser tooling
         run: |
           python3 -m pip install -r requirements-dev.txt
@@ -37,6 +38,8 @@ jobs:
         run: python3 tests/learning_flow.py
       - name: All 75 decision paths through terminal outcome and replay
         run: python3 tests/decision_paths.py
+      - name: All 42 simplified course-scene paths through outcome and replay
+        run: python3 tests/road_lessons.py
       - name: Assemble complete edition and verify its distribution
         run: |
           python3 scripts/package.py --require-browser-evidence

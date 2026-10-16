@@ -1,0 +1,103 @@
+[
+ {
+  "id": "s13-direction",
+  "rule": "O13/direction",
+  "title": "Un îlot et sa flèche",
+  "scene": "Un **îlot** sépare les deux sens de circulation. Sur l’îlot, un disque bleu dont la flèche blanche descend en biais **vers la droite**.",
+  "props": [
+   {"kind": "island", "x": -0.2, "from": 2, "to": -10, "w": 1.2},
+   {"kind": "sign", "id": "oblig-contourner", "x": -0.2, "dz": 1.6, "height": 1.2}
+  ],
+  "choices": [
+   {"t": "Je passe à gauche de l’îlot : l’espace paraît plus large.", "act": "overtake", "lat": -3.6, "did": "Vous êtes passé à gauche de l’îlot, sur la partie réservée au sens inverse."},
+   {"t": "Je contourne l’îlot par la droite.", "act": "go"},
+   {"t": "Je tourne dans la prochaine rue à droite.", "act": "stop", "did": "Vous avez cherché une rue à droite : ce signal ne commande pas de tourner, il indique par quel côté contourner l’obstacle."}
+  ],
+  "ok": 1,
+  "should": "Contourner l’îlot **par la droite**.",
+  "why": "La flèche oblique vers le bas indique le côté par lequel contourner l’obstacle sur lequel le signal est installé. Ce n’est ni un conseil ni un ordre d’entrer dans une rue à droite. Une flèche blanche sur disque bleu commande : ce n’est pas une simple information.",
+  "memo": "Flèche oblique vers le bas : je **contourne** de ce côté."
+ },
+ {
+  "id": "s13-indications",
+  "rule": "O13/indications",
+  "title": "Une place d’évitement",
+  "scene": "Vous voulez consulter votre téléphone. À droite, un panneau **bleu** annonce une **place d’évitement**. Personne ne vous suit.",
+  "props": [
+   {"kind": "sign", "id": "evitement", "x": 5.6, "dz": 8},
+   {"kind": "line", "style": "dashed", "color": "white", "x": 3.1, "from": 6, "to": -18}
+  ],
+  "choices": [
+   {"t": "Je m’y arrête quelques minutes : un panneau bleu ne fait qu’informer.", "act": "park", "did": "Vous vous êtes arrêté pour une pause sur une place d’évitement, où l’arrêt volontaire est interdit."},
+   {"t": "Je continue et je cherche un endroit où l’arrêt est permis.", "act": "go"},
+   {"t": "Je m’y arrête brièvement avec les feux de détresse.", "act": "park", "did": "Vous vous êtes arrêté avec les feux de détresse : ils n’autorisent pas un arrêt interdit."}
+  ],
+  "ok": 1,
+  "should": "Continuer : une place d’évitement ne sert qu’à laisser passer des véhicules plus rapides.",
+  "why": "Une place d’évitement permet à un véhicule lent de se ranger pour laisser passer ceux qui le suivent. L’arrêt volontaire et le parcage y sont interdits. Fond bleu ne veut pas dire simple information : derrière ce panneau se cache une règle de comportement.",
+  "memo": "Derrière chaque panneau bleu, je cherche la **règle**."
+ },
+ {
+  "id": "s13-familles",
+  "rule": "O13/familles-signaux",
+  "title": "Un triangle avec deux enfants",
+  "scene": "Un **triangle pointe en haut, bordé de rouge**, montre deux enfants. Plus loin, des enfants marchent sur le trottoir.",
+  "props": [
+   {"kind": "sign", "id": "danger-enfants", "x": 5.6, "dz": 10},
+   {"kind": "ped", "child": true, "x": 6.4, "dz": -6, "toX": 6.4, "toDz": -40, "start": "always", "kmh": 3},
+   {"kind": "ped", "child": true, "x": 7.1, "dz": -9, "toX": 7.1, "toDz": -40, "start": "always", "kmh": 3}
+  ],
+  "choices": [
+   {"t": "Je garde ma vitesse : un triangle n’interdit rien.", "act": "go", "kmh": 45, "did": "Vous avez gardé votre vitesse devant un danger annoncé."},
+   {"t": "Je lève le pied et je surveille le bord de la route.", "act": "go", "kmh": 18},
+   {"t": "Je m’arrête net au niveau du panneau.", "act": "stop", "stopDz": 12, "did": "Vous vous êtes arrêté net au panneau : le danger est plus loin, et un arrêt brusque surprend ceux qui vous suivent."}
+  ],
+  "ok": 1,
+  "should": "**Anticiper** : lever le pied, regarder plus loin et se préparer à freiner.",
+  "why": "Les signaux de danger sont des triangles pointe en haut bordés de rouge. Ils n’interdisent rien et n’imposent aucun mouvement précis : ils annoncent un danger plus loin. Le dessin précise lequel ; ici des enfants qui peuvent surgir sur la chaussée.",
+  "memo": "Triangle pointe en haut : **anticiper**."
+ },
+ {
+  "id": "s13-parking",
+  "rule": "O13/parking",
+  "title": "Zone bleue à 10 h 07",
+  "scene": "Vous vous garez à **10 h 07** sur une case bleue, sous un panneau « Parcage avec disque de stationnement ». Aucun autre horaire n’est indiqué. Comment réglez-vous le disque ?",
+  "props": [
+   {"kind": "sign", "id": "parking-disque", "x": 5.6, "dz": 5},
+   {"kind": "bay", "x": 4.0, "dz": 0, "len": 5.5, "w": 2.0, "color": "blue"},
+   {"kind": "bay", "x": 4.0, "dz": 6, "len": 5.5, "w": 2.0, "color": "blue"},
+   {"kind": "bay", "x": 4.0, "dz": -6, "len": 5.5, "w": 2.0, "color": "blue"},
+   {"kind": "car", "x": 4.0, "dz": 6, "paint": 3},
+   {"kind": "car", "x": 4.0, "dz": -6, "paint": 6}
+  ],
+  "choices": [
+   {"t": "Je règle le disque sur 10 h 00.", "act": "park", "did": "Vous avez réglé le disque sur 10 h 00, avant votre heure d’arrivée."},
+   {"t": "Je règle le disque sur 10 h 30, le trait qui suit mon arrivée.", "act": "park"},
+   {"t": "Je règle le disque sur 10 h 07, l’heure exacte.", "act": "park", "did": "Vous avez réglé le disque sur l’heure exacte au lieu du trait suivant."}
+  ],
+  "ok": 1,
+  "should": "Placer la flèche sur le trait qui **suit** l’heure d’arrivée : 10 h 30.",
+  "why": "En zone bleue, le disque de stationnement prouve depuis quand vous êtes là. La flèche se place sur le trait qui suit votre heure réelle d’arrivée ; vous n’y touchez plus avant de repartir et vous le laissez visible derrière le pare-brise. Sans autre horaire indiqué, la règle vaut les jours ouvrables de 8 à 19 heures.",
+  "memo": "Disque : le trait **suivant**, puis on n’y touche plus."
+ },
+ {
+  "id": "s13-combinaisons",
+  "rule": "O13/combinaisons",
+  "title": "P, « 2 h » et une borne",
+  "scene": "Un panneau **P** porte une plaque « **2 h** » et une plaque « **Recharge** » ; le symbole d’une borne est peint dans la case libre. Votre voiture roule à l’essence.",
+  "props": [
+   {"kind": "sign", "id": "ind-parking", "x": 5.6, "dz": 5, "plates": ["2 h", "Recharge"]},
+   {"kind": "bay", "x": 4.0, "dz": 0, "len": 5.5, "w": 2.0, "color": "white", "symbol": "bolt"},
+   {"kind": "car", "x": 4.0, "dz": -6, "paint": 2}
+  ],
+  "choices": [
+   {"t": "Je m’y gare deux heures : la case est libre.", "act": "park", "did": "Vous avez occupé une place réservée à la recharge avec une voiture à essence."},
+   {"t": "Je m’y gare un quart d’heure, le temps d’une course.", "act": "park", "did": "Vous avez occupé, même brièvement, une place réservée à la recharge."},
+   {"t": "Je ne m’y gare pas : la place est réservée à la recharge.", "act": "go"}
+  ],
+  "ok": 2,
+  "should": "Ne pas s’y garer : panneau, plaques et case réservent la place à la recharge, au plus deux heures.",
+  "why": "Un panneau n’est complet qu’avec ses plaques, et le symbole peint dans la case a la même force que le panneau. Le grand P autorise le parcage ; les plaques le limitent à deux heures et le réservent à la recharge d’un véhicule électrique. Une case libre n’est pas forcément une case ouverte à vous.",
+  "memo": "Panneau, plaque **et** case : une seule règle."
+ }
+]

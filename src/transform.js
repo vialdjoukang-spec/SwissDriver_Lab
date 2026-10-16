@@ -27,6 +27,9 @@
     html=once(html,'if(!Nu.includes(r)){i.push({type:"locked",c:a,g:s,z:null});continue}','');
     html=once(html,'l=t(e-25),i.push({type:"secEnd",c:a,g:s,s:u,z:l}),e=l','c.length&&(l=t(e-25),i.push({type:"secEnd",c:a,g:s,s:u,z:l}),e=l)');
     html=once(html,'Hn[Rt.idx]===i&&(ih(),i.type==="secGate")','Hn[Rt.idx]===i&&(ih(),i.type==="secGate"&&yM(i.s))');
+    // Simplified course scenes (content/road-lessons) take a mid-block slot after their gate.
+    html=once(html,'let c=Uu[r]&&Uu[r][u.id]||[];','let c=Uu[r]&&Uu[r][u.id]||[];for(let h of (Yo.roadLessons||[]).filter(q=>q.rule===r+"/"+u.id)){let d=Math.floor((e-26+40)/Oe)*Oe-40;i.push({type:"lesson",ls:h,c:a,g:s,s:u,z:d}),e=d-30}');
+    html=once(html,'label:i.type==="sit"?"Situation":','label:i.type==="sit"?"Situation":i.type==="lesson"?"Scène de cours":');
     // The versioned curriculum is merged where the engine first reads the data.
     html=once(html,'var Yo=window.DATA,','var Yo=(window.DATA=SwissDriverCurriculum.merge(window.DATA,window.__SD_EXTENSION)),');
     html=once(html,'</head>','<script data-swissdriver-curriculum="1">\n'+curriculum.replace(/<\/script/gi,'<\\/script')+'\n</script>\n</head>');

@@ -30,3 +30,4 @@
 #labAction b{color:var(--accent);margin-right:6px}#labAction span{font-weight:800}
 body.lab-flash #stage::after{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 60%,rgba(255,255,220,.55),transparent 45%);animation:labFlash .3s steps(2) 3}
 @keyframes labFlash{50%{opacity:0}}
+.lab-scene-tag{font-weight:600;font-size:13px;color:#365a70}

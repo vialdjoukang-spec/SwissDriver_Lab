@@ -8,6 +8,7 @@
 | Navigation des cours, progression et journal d'événements | `src/engine-bridge.js` |
 | Caméras, gestes, panneaux et inspection des scènes | `src/scene-coherence.js` |
 | Vérification des points d'insertion dans le moteur | `src/transform.js` |
+| Scènes de cours simplifiées (panneaux, marquages) | données `content/road-lessons/*.json`, moteur `src/road-lessons.js`, dessins `src/signs.js` |
 | Chargement HTTP des modules | `src/launcher.js` et `index.html` |
 | Construction du HTML autonome | `scripts/build.cjs` |
 | Archive complète et inventaire calculé | `scripts/package.py` |

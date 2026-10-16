@@ -115,5 +115,10 @@
   "content/extra-options/SECTIONS1.json",
   "content/extra-options/SECTIONS2.json",
   "content/extra-options/U25.json"
+ ],
+ "roadLessons": [
+  "content/road-lessons/O12.json",
+  "content/road-lessons/O13.json",
+  "content/road-lessons/O14.json"
  ]
 }

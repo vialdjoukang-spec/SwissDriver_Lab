@@ -1,6 +1,9 @@
 # Historique
 
-## Non publié — route simplifiée du programme
+## Non publié — route simplifiée du programme et scènes de cours
+- **14 scènes de cours simplifiées sur la route** (`content/road-lessons/`, `src/road-lessons.js`) pour les panneaux et marquages : O12 (5 sous-chapitres), O13 (direction, indications, familles de signaux, stationnement, combinaisons), O14 (marquages, passages piétons, bandes cyclables, zones). Chaque scène suit cours → règle → objets réels (panneau, plaque, ligne, case, passage, cônes, îlot, piéton, cycliste, voiture lente) → décision en 3 choix → conséquence assistée → explication → rejeu. Identifiants partagés avec les cours ; fusion validée et fermée sur erreur par `src/curriculum.js`.
+- Les scènes ne touchent ni aux 25 situations Priorités, ni à l’XP, ni aux erreurs de `permisGT.v1` ; leurs résultats vont dans `swissdriver.roadLessons.v1`. Elles sont signalées « Scène simplifiée · trajectoire assistée ».
+- Tests : `tests/test_road_lessons.py` (structure, dessins, refus des données invalides) et `tests/road_lessons.py` (42 branches : issue, rejeu, piéton protégé, distance au véhicule lent et à la cycliste). Le packaging strict exige désormais ce rapport.
 - Les 27 chapitres se suivent sur la route : chaque chapitre et sous-chapitre possède son portique de cours, dans l'ordre du programme. Les chapitres sans scène 3D ne reçoivent ni situation, ni fin de sous-chapitre, ni XP : rien n'est validé en passant un portique.
 - HUD et message « Cours seul · simulation non disponible » ; programme : badge « Portiques de cours · sans simulation » et bouton « Aller au portique » (libre accès, aucune situation O11 n'est validée par le saut).
 - Moteur : trois ancrages vérifiés dans `src/transform.js` (3.1.0) ; O11 conserve exactement ses positions et ses 25 situations. Sauvegarde `permisGT.v1` inchangée.

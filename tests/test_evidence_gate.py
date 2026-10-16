@@ -21,6 +21,10 @@ def good_reports():
         'decision-paths-results.json': {'branches': branches, 'errors': [], 'fatal': None, 'scope': 's', 'htmlSha256': SHA,
                                         'expectedBranches': 75, 'attemptedBranches': 75, 'passedBranches': 75,
                                         'allPassed': True, 'fixedFrameMs': 50},
+        'road-lessons-results.json': {'branches': [{'scenarioId': f'l{i // 3}', 'choiceIndex': i % 3, 'passed': True} for i in range(42)],
+                                      'errors': [], 'fatal': None, 'scope': 's', 'htmlSha256': SHA,
+                                      'expectedBranches': 42, 'attemptedBranches': 42, 'passedBranches': 42,
+                                      'allPassed': True, 'fixedFrameMs': 50},
     }
 
 
@@ -101,7 +105,8 @@ class EvidenceGateTests(unittest.TestCase):
 
     def test_08_pages_gate_requires_same_commit_and_positive_evidence(self):
         cases = [(None, 'abc', None), (None, 'other', 'commit'),
-                 (lambda m: m['browserEvidence'].pop(), 'abc', 'decision-paths'),
+                 (lambda m: m['browserEvidence'].pop(3), 'abc', 'decision-paths'),
+                 (lambda m: m['browserEvidence'].pop(4), 'abc', 'road-lessons'),
                  (lambda m: m['browserEvidence'][3].update(allPassed=False), 'abc', 'decision-paths'),
                  (lambda m: m.update(autonomousHtmlSha256='0' * 64), 'abc', 'HTML different')]
         for mutate, commit, fragment in cases:

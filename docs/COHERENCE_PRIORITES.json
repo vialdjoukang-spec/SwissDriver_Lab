@@ -8,7 +8,7 @@
   "coherent_observe": "Geste observe identique a l’annonce, sans contact imprevu, source officielle datee."
  },
  "sourceHtmlSha256": "58ec2197dd14b8e8895cb83d134a2b598213b7f3d03b221fbf39f8e74258335a",
- "decisionReportHtmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+ "decisionReportHtmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
  "totals": {
   "rows": 75,
   "byStatus": {
@@ -37,7 +37,7 @@
     "sampling": "1 echantillon par seconde simulee, le premier 1 s apres le choix",
     "firstS": 60.65,
     "lastS": 66.69,
-    "maxSpeedMs": 3.91,
+    "maxSpeedMs": 4.01,
     "lateralRangeM": 0.0,
     "maxLaneOffsetM": 0,
     "pullManoeuvre": false
@@ -54,7 +54,7 @@
    "expectedBehaviour": "Suivre le geste de l’agent et avancer prudemment.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -96,7 +96,7 @@
    "expectedBehaviour": "Suivre le geste de l’agent et avancer prudemment.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -138,7 +138,7 @@
    "expectedBehaviour": "Suivre le geste de l’agent et avancer prudemment.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -194,7 +194,7 @@
    "expectedBehaviour": "Appliquer le panneau : céder le passage, même au véhicule de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -250,7 +250,7 @@
    "expectedBehaviour": "Appliquer le panneau : céder le passage, même au véhicule de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -306,7 +306,7 @@
    "expectedBehaviour": "Appliquer le panneau : céder le passage, même au véhicule de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -362,7 +362,7 @@
    "expectedBehaviour": "Céder le passage à la voiture, même si elle vient de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -418,7 +418,7 @@
    "expectedBehaviour": "Céder le passage à la voiture, même si elle vient de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -474,7 +474,7 @@
    "expectedBehaviour": "Céder le passage à la voiture, même si elle vient de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -518,7 +518,7 @@
    "expectedBehaviour": "Attendre avant la ligne tant que vous ne pouvez pas ressortir du carrefour.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -562,7 +562,7 @@
    "expectedBehaviour": "Attendre avant la ligne tant que vous ne pouvez pas ressortir du carrefour.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -606,7 +606,7 @@
    "expectedBehaviour": "Attendre avant la ligne tant que vous ne pouvez pas ressortir du carrefour.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -655,7 +655,7 @@
    "expectedBehaviour": "Céder à la voiture qui vient de votre droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -704,7 +704,7 @@
    "expectedBehaviour": "Céder à la voiture qui vient de votre droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -753,7 +753,7 @@
    "expectedBehaviour": "Céder à la voiture qui vient de votre droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -802,7 +802,7 @@
    "expectedBehaviour": "La laisser passer : elle vient de votre droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -851,7 +851,7 @@
    "expectedBehaviour": "La laisser passer : elle vient de votre droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -900,7 +900,7 @@
    "expectedBehaviour": "La laisser passer : elle vient de votre droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -949,7 +949,7 @@
    "expectedBehaviour": "Céder le passage à la voiture d’en face, puis tourner.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -998,7 +998,7 @@
    "expectedBehaviour": "Céder le passage à la voiture d’en face, puis tourner.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1047,7 +1047,7 @@
    "expectedBehaviour": "Céder le passage à la voiture d’en face, puis tourner.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1099,7 +1099,7 @@
    "expectedBehaviour": "Attendre avant le carrefour, jusqu’à pouvoir le traverser entièrement.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1151,7 +1151,7 @@
    "expectedBehaviour": "Attendre avant le carrefour, jusqu’à pouvoir le traverser entièrement.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1203,7 +1203,7 @@
    "expectedBehaviour": "Attendre avant le carrefour, jusqu’à pouvoir le traverser entièrement.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1280,7 +1280,7 @@
    "expectedBehaviour": "Céder à ceux qui sont déjà dans le rond-point et qui arrivent de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1357,7 +1357,7 @@
    "expectedBehaviour": "Céder à ceux qui sont déjà dans le rond-point et qui arrivent de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1434,7 +1434,7 @@
    "expectedBehaviour": "Céder à ceux qui sont déjà dans le rond-point et qui arrivent de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1509,7 +1509,7 @@
    "expectedBehaviour": "Aucun clignotant en entrant ; clignotant droit juste après la sortie qui précède la vôtre.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1584,7 +1584,7 @@
    "expectedBehaviour": "Aucun clignotant en entrant ; clignotant droit juste après la sortie qui précède la vôtre.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1659,7 +1659,7 @@
    "expectedBehaviour": "Aucun clignotant en entrant ; clignotant droit juste après la sortie qui précède la vôtre.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1737,7 +1737,7 @@
    "expectedBehaviour": "Contrôler à droite et l’angle mort, laisser passer cycliste et piéton, puis sortir.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1815,7 +1815,7 @@
    "expectedBehaviour": "Contrôler à droite et l’angle mort, laisser passer cycliste et piéton, puis sortir.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1893,7 +1893,7 @@
    "expectedBehaviour": "Contrôler à droite et l’angle mort, laisser passer cycliste et piéton, puis sortir.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1934,7 +1934,7 @@
    "expectedBehaviour": "Céder le passage à tous les usagers de l’avenue, quelle que soit leur direction.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -1975,7 +1975,7 @@
    "expectedBehaviour": "Céder le passage à tous les usagers de l’avenue, quelle que soit leur direction.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2016,7 +2016,7 @@
    "expectedBehaviour": "Céder le passage à tous les usagers de l’avenue, quelle que soit leur direction.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2058,7 +2058,7 @@
    "expectedBehaviour": "Laisser passer le piéton, puis contrôler cyclistes et véhicules des deux côtés.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2100,7 +2100,7 @@
    "expectedBehaviour": "Laisser passer le piéton, puis contrôler cyclistes et véhicules des deux côtés.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2142,7 +2142,7 @@
    "expectedBehaviour": "Laisser passer le piéton, puis contrôler cyclistes et véhicules des deux côtés.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2183,7 +2183,7 @@
    "expectedBehaviour": "Avancer très lentement pour laisser aux autres le temps de vous voir, et ne s’insérer que si personne ne doit freiner.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2224,7 +2224,7 @@
    "expectedBehaviour": "Avancer très lentement pour laisser aux autres le temps de vous voir, et ne s’insérer que si personne ne doit freiner.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2265,7 +2265,7 @@
    "expectedBehaviour": "Avancer très lentement pour laisser aux autres le temps de vous voir, et ne s’insérer que si personne ne doit freiner.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2314,7 +2314,7 @@
    "expectedBehaviour": "Attendre qu’elle sorte : on n’entre pas si quelqu’un est déjà engagé.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2363,7 +2363,7 @@
    "expectedBehaviour": "Attendre qu’elle sorte : on n’entre pas si quelqu’un est déjà engagé.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2412,7 +2412,7 @@
    "expectedBehaviour": "Attendre qu’elle sorte : on n’entre pas si quelqu’un est déjà engagé.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2453,7 +2453,7 @@
    "expectedBehaviour": "S’arrêter un peu avant l’obstacle et laisser passer le trafic d’en face.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2494,7 +2494,7 @@
    "expectedBehaviour": "S’arrêter un peu avant l’obstacle et laisser passer le trafic d’en face.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2535,7 +2535,7 @@
    "expectedBehaviour": "S’arrêter un peu avant l’obstacle et laisser passer le trafic d’en face.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2576,7 +2576,7 @@
    "expectedBehaviour": "Continuer prudemment sur votre voie : c’est l’autre qui doit attendre.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2617,7 +2617,7 @@
    "expectedBehaviour": "Continuer prudemment sur votre voie : c’est l’autre qui doit attendre.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2658,7 +2658,7 @@
    "expectedBehaviour": "Continuer prudemment sur votre voie : c’est l’autre qui doit attendre.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2699,7 +2699,7 @@
    "expectedBehaviour": "Passer prudemment sur votre voie, avec une marge latérale suffisante.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2740,7 +2740,7 @@
    "expectedBehaviour": "Passer prudemment sur votre voie, avec une marge latérale suffisante.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2781,7 +2781,7 @@
    "expectedBehaviour": "Passer prudemment sur votre voie, avec une marge latérale suffisante.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2837,7 +2837,7 @@
    "expectedBehaviour": "Continuer : sur la route principale, vous êtes prioritaire, même face à la droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2893,7 +2893,7 @@
    "expectedBehaviour": "Continuer : sur la route principale, vous êtes prioritaire, même face à la droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -2949,7 +2949,7 @@
    "expectedBehaviour": "Continuer : sur la route principale, vous êtes prioritaire, même face à la droite.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3005,7 +3005,7 @@
    "expectedBehaviour": "Céder à droite : après le panneau de fin, la règle générale revient.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3061,7 +3061,7 @@
    "expectedBehaviour": "Céder à droite : après le panneau de fin, la règle générale revient.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3117,7 +3117,7 @@
    "expectedBehaviour": "Céder à droite : après le panneau de fin, la règle générale revient.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3180,7 +3180,7 @@
    "expectedBehaviour": "Céder à tous les véhicules de l’axe principal, même venant de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3243,7 +3243,7 @@
    "expectedBehaviour": "Céder à tous les véhicules de l’axe principal, même venant de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3306,7 +3306,7 @@
    "expectedBehaviour": "Céder à tous les véhicules de l’axe principal, même venant de gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3369,7 +3369,7 @@
    "expectedBehaviour": "Suivre le dessin de la plaque : votre route est secondaire, vous cédez au véhicule du trait épais.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3432,7 +3432,7 @@
    "expectedBehaviour": "Suivre le dessin de la plaque : votre route est secondaire, vous cédez au véhicule du trait épais.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3495,7 +3495,7 @@
    "expectedBehaviour": "Suivre le dessin de la plaque : votre route est secondaire, vous cédez au véhicule du trait épais.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3536,7 +3536,7 @@
    "expectedBehaviour": "Créer immédiatement un passage : clignotant, se serrer à droite, ralentir.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3577,7 +3577,7 @@
    "expectedBehaviour": "Créer immédiatement un passage : clignotant, se serrer à droite, ralentir.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3618,7 +3618,7 @@
    "expectedBehaviour": "Créer immédiatement un passage : clignotant, se serrer à droite, ralentir.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3667,7 +3667,7 @@
    "expectedBehaviour": "Laisser passer le tram, même lorsqu’il tourne à gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3716,7 +3716,7 @@
    "expectedBehaviour": "Laisser passer le tram, même lorsqu’il tourne à gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3765,7 +3765,7 @@
    "expectedBehaviour": "Laisser passer le tram, même lorsqu’il tourne à gauche.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3808,7 +3808,7 @@
    "expectedBehaviour": "Libérer le passage de façon sûre : se serrer, sans franchir le feu au milieu du trafic.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3851,7 +3851,7 @@
    "expectedBehaviour": "Libérer le passage de façon sûre : se serrer, sans franchir le feu au milieu du trafic.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-complete",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },
@@ -3894,7 +3894,7 @@
    "expectedBehaviour": "Libérer le passage de façon sûre : se serrer, sans franchir le feu au milieu du trafic.",
    "evidence": {
     "file": "test-results/decision-paths-results.json",
-    "htmlSha256": "6f1b9b7cc9d27e3bd1505e4a7c4420631b2e43017fc3a934ff81716657c67b22",
+    "htmlSha256": "11253f28473fb261d2b1951bbb06c49bbce84cfa7da81c4fca3acbb7927a24b8",
     "terminal": "scenario-feedback",
     "scope": "issue terminale et rejeu ; ni geste, ni contacts, ni approche manuelle"
    },

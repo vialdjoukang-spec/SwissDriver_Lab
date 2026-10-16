@@ -1,0 +1,81 @@
+[
+ {
+  "id": "s14-marquages",
+  "rule": "O14/marquages",
+  "title": "Ligne continue et voiture lente",
+  "scene": "Une **ligne continue** sépare les deux sens. Devant vous, une voiture roule lentement.",
+  "endDz": -14,
+  "props": [
+   {"kind": "line", "style": "solid", "color": "white", "x": 0, "from": 36, "to": -36},
+   {"kind": "leadCar", "x": 1.5, "dz": 6, "kmh": 10, "paint": 5}
+  ],
+  "choices": [
+   {"t": "Je la dépasse en franchissant la ligne continue.", "act": "overtake", "did": "Vous avez franchi une ligne de sécurité pour dépasser."},
+   {"t": "Je la dépasse en roulant **sur** la ligne.", "act": "overtake", "lat": -1.5, "did": "Vous avez roulé sur une ligne de sécurité : c’est aussi interdit que de la franchir."},
+   {"t": "Je reste derrière, à distance, tant que la ligne est continue.", "act": "go", "kmh": 10}
+  ],
+  "ok": 2,
+  "should": "Rester derrière tant que la ligne est **continue**.",
+  "why": "La ligne de sécurité est une ligne continue : vous ne devez ni la franchir ni rouler dessus. Seule une ligne discontinue, la ligne de direction, peut être franchie, et seulement si la manœuvre est autorisée et sûre. Les marquages sont des ordres, au même titre que les panneaux.",
+  "memo": "Ligne continue : **ni dessus, ni par-dessus**."
+ },
+ {
+  "id": "s14-pietons",
+  "rule": "O14/pietons",
+  "title": "Une personne attend au bord",
+  "scene": "Un passage pour piétons. Une personne attend **au bord, tournée vers la route** : elle veut traverser.",
+  "props": [
+   {"kind": "sign", "id": "ind-pietons", "x": 5.6, "dz": 1, "height": 1.9},
+   {"kind": "crosswalk", "dz": -2, "from": -4.6, "to": 4.6},
+   {"kind": "ped", "x": 5.6, "dz": -2, "toX": -6.0, "toDz": -2, "start": "good"}
+  ],
+  "choices": [
+   {"t": "Je passe avant qu’elle s’engage : elle n’est pas encore sur les bandes.", "act": "go", "did": "Vous êtes passé devant une personne qui montrait clairement son intention de traverser."},
+   {"t": "Je m’arrête avant les bandes et je la laisse traverser.", "act": "stop", "stopDz": 4.5},
+   {"t": "Je klaxonne pour qu’elle attende.", "act": "honk", "did": "Vous avez klaxonné pour vous imposer à une personne prioritaire."}
+  ],
+  "ok": 1,
+  "should": "S’arrêter avant les bandes et laisser traverser.",
+  "why": "La priorité est due au piéton déjà engagé, mais aussi à celui qui montre clairement son intention de traverser, par exemple en attendant au bord, tourné vers la route. Approchez chaque passage avec une réserve de freinage suffisante pour vous arrêter calmement.",
+  "memo": "Intention claire de traverser : **priorité** au piéton."
+ },
+ {
+  "id": "s14-cycles",
+  "rule": "O14/cycles",
+  "title": "Une cycliste sur la bande cyclable",
+  "scene": "Une **ligne jaune discontinue** délimite une bande cyclable à droite. Une cycliste y roule ; vous allez la dépasser.",
+  "props": [
+   {"kind": "line", "style": "dashed", "color": "yellow", "x": 3.1, "from": 40, "to": -40},
+   {"kind": "symbol", "id": "bike", "x": 4.0, "dz": 14},
+   {"kind": "bike", "x": 4.0, "dz": 8, "toX": 4.0, "toDz": -160, "kmh": 11, "start": "resolve"}
+  ],
+  "choices": [
+   {"t": "Je la dépasse dans ma voie, avec une large distance latérale.", "act": "go", "kmh": 25},
+   {"t": "Je la serre en mordant sur la bande pour rester loin du milieu.", "act": "go", "kmh": 25, "lat": 1.1, "did": "Vous avez empiété sur la bande cyclable et frôlé la cycliste."},
+   {"t": "Je klaxonne pour qu’elle se range.", "act": "honk", "kmh": 25, "did": "Vous avez klaxonné pour pousser une cycliste qui roulait à sa place."}
+  ],
+  "ok": 0,
+  "should": "Dépasser dans sa voie, avec une **large distance latérale**.",
+  "why": "La bande cyclable fait partie de la chaussée mais est réservée aux vélos ; une ligne discontinue ne se franchit que si c’est nécessaire et sans gêner aucun cycliste. En dépassant, gardez une distance latérale suffisante pour ne pas frôler ni déséquilibrer la cycliste, davantage encore si la route est étroite ou s’il y a du vent.",
+  "memo": "Bande cyclable : espace **réservé**, dépassement avec marge."
+ },
+ {
+  "id": "s14-zones",
+  "rule": "O14/zones",
+  "title": "Entrée en zone 30",
+  "scene": "Vous entrez dans une **zone 30**. Aucun autre panneau ne règle les prochains carrefours.",
+  "props": [
+   {"kind": "sign", "id": "ind-zone30", "x": 5.6, "dz": 4},
+   {"kind": "sign", "id": "ind-zone30", "x": -5.6, "dz": 4}
+  ],
+  "choices": [
+   {"t": "Je roule au plus à 30 km/h et j’applique la priorité de droite aux carrefours.", "act": "go", "kmh": 28},
+   {"t": "Je garde 50 km/h jusqu’au prochain panneau de vitesse.", "act": "go", "kmh": 50, "did": "Vous avez gardé 50 km/h dans une zone limitée à 30 km/h."},
+   {"t": "Je roule à 20 km/h et je laisse aux piétons la priorité partout sur la chaussée.", "act": "go", "kmh": 20, "did": "Vous avez appliqué les règles de la zone de rencontre : en zone 30, la limite est de 30 km/h et les piétons n’ont pas de priorité générale hors des passages."}
+  ],
+  "ok": 0,
+  "should": "Rouler **au plus à 30 km/h** et appliquer la priorité de droite.",
+  "why": "Dans une zone 30, la vitesse maximale est de 30 km/h dans toute la zone, jusqu’au panneau de fin. Aux carrefours sans autre signalisation, la priorité de droite s’applique généralement. Les piétons n’y ont pas de priorité générale hors des passages ; c’est la zone de rencontre, limitée à 20 km/h, qui leur donne la priorité sur la chaussée.",
+  "memo": "Zone 30 : **30 au plus**, priorité de droite."
+ }
+]
