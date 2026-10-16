@@ -1,0 +1,146 @@
+[
+ {
+  "id": "s41-confiance",
+  "rule": "O41/regle-base",
+  "title": "Un piéton qui semble perdu",
+  "scene": "Hors de tout passage piéton, un homme, un plan à la main, se tient **au bord du trottoir**. Il regarde de tous côtés, l’air perdu, et se tourne vers la chaussée.",
+  "props": [
+   {
+    "kind": "ped",
+    "x": 5.4,
+    "dz": -4,
+    "toX": -6.0,
+    "toDz": -6,
+    "kmh": 4,
+    "start": "good"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je garde mon allure : hors d’un passage, c’est à lui de me laisser passer.",
+    "act": "go",
+    "kmh": 40,
+    "did": "Vous avez gardé votre allure en comptant sur votre priorité, alors qu’un indice concret annonçait une erreur possible."
+   },
+   {
+    "t": "Je m’écarte vers le milieu de la route, sans ralentir.",
+    "act": "detour",
+    "lat": -1.4,
+    "kmh": 35,
+    "did": "Vous vous êtes écarté sans ralentir : s’il s’était engagé, il ne vous restait aucune marge pour vous arrêter."
+   },
+   {
+    "t": "Je ralentis et je m’arrête pour le laisser traverser.",
+    "act": "stop",
+    "stopDz": 7
+   }
+  ],
+  "ok": 2,
+  "should": "Ralentir, voire **s’arrêter**, dès l’indice d’erreur, et le laisser traverser.",
+  "why": "Vous pouvez en principe compter sur le fait que les autres respectent les règles : c’est le principe de confiance. Mais cette confiance cesse dès qu’un indice concret annonce une erreur, comme une personne qui semble perdue au bord de la chaussée. Les règles de priorité ne vous donnent **jamais** le droit de provoquer un accident : avoir raison ne protège ni votre voiture ni votre santé.",
+  "memo": "Un indice d’erreur : la sécurité passe **avant** la priorité."
+ },
+ {
+  "id": "s41-telephone",
+  "rule": "O41/distraction",
+  "title": "Le téléphone sonne dans le sac",
+  "scene": "Votre téléphone sonne au fond du sac posé sur le siège passager. Plus loin à droite, une **case de stationnement** est libre.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "ind-parking",
+    "x": 5.6,
+    "dz": 2
+   },
+   {
+    "kind": "bay",
+    "x": 4.0,
+    "dz": -6,
+    "len": 5.5,
+    "w": 2.0,
+    "color": "white"
+   },
+   {
+    "kind": "car",
+    "x": 4.0,
+    "dz": -24,
+    "paint": 3
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je laisse sonner ; si l’appel ne peut pas attendre, je me range d’abord sur la case libre.",
+    "act": "park",
+    "stopDz": -6
+   },
+   {
+    "t": "Je cherche le téléphone dans le sac : ça ne prend qu’une seconde.",
+    "act": "go",
+    "did": "Vous avez fouillé le sac en roulant : pendant ces secondes, la voiture a continué d’avancer sans que vous regardiez la route."
+   },
+   {
+    "t": "Je réponds par un court message sur l’écran de la voiture.",
+    "act": "go",
+    "did": "Vous avez écrit un message en roulant, les yeux sur l’écran au lieu de la route."
+   }
+  ],
+  "ok": 0,
+  "should": "Laisser sonner et, si l’action ne peut pas attendre, s’arrêter **d’abord** à un endroit autorisé et sûr.",
+  "why": "Chercher son téléphone qui sonne dans un sac, c’est régler une distraction en se distrayant encore plus. Écrire un message ou régler un écran détourne aussi l’attention : pendant ce temps, la voiture continue d’avancer et vous voyez moins bien ce qui se passe devant vous. Toute activité autre que la conduite doit être supprimée, reportée ou faite à l’arrêt.",
+  "memo": "La conduite est **toujours** plus urgente."
+ },
+ {
+  "id": "s41-accident",
+  "rule": "O41/accident",
+  "title": "Accrochage devant vous",
+  "scene": "Juste devant vous, une voiture vient de heurter l’arrière d’une voiture arrêtée. Les deux voitures bloquent votre voie. Personne ne saigne, mais la conductrice, sortie de sa voiture, **se tient la poitrine**.",
+  "props": [
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -2,
+    "paint": 4
+   },
+   {
+    "kind": "car",
+    "x": 1.4,
+    "dz": -7.4,
+    "paint": 1
+   },
+   {
+    "kind": "ped",
+    "x": 3.6,
+    "dz": -1.5,
+    "toX": 6.8,
+    "toDz": -1.5,
+    "kmh": 2.5,
+    "start": "good"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je passe lentement à côté par la voie de gauche : personne ne saigne, ce n’est pas grave.",
+    "act": "detour",
+    "lat": -3,
+    "kmh": 10,
+    "did": "Vous êtes passé à côté en jugeant la gravité à l’absence de sang, sans sécuriser ni appeler les secours."
+   },
+   {
+    "t": "Je m’arrête avant l’accident, feux de détresse et gilet, j’éloigne les personnes du danger et j’appelle le 144.",
+    "act": "stop",
+    "stopDz": 10,
+    "then": "wait"
+   },
+   {
+    "t": "Je m’arrête juste derrière et je photographie d’abord les voitures pour établir qui est en tort.",
+    "act": "stop",
+    "stopDz": 6,
+    "did": "Vous vous êtes occupé de savoir qui était responsable avant de sécuriser les lieux et d’alerter les secours."
+   }
+  ],
+  "ok": 1,
+  "should": "**Protéger** les lieux sans se mettre en danger, puis **alerter** les secours : une douleur à la poitrine peut cacher une blessure interne.",
+  "why": "On sécurise d’abord les lieux sans se mettre soi-même en danger : feux de détresse, gilet de sécurité, personnes éloignées du danger, secours appelés selon la situation (117 police, 144 ambulance, 118 pompiers). Le piège est de juger la gravité uniquement à ce que l’on voit : une douleur, même sans plaie, doit être prise au sérieux. Protéger et aider passent avant toute discussion sur qui est responsable.",
+  "memo": "Protéger, alerter, aider : la **faute** se discute après."
+ }
+]

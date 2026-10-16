@@ -1,0 +1,266 @@
+[
+ {
+  "id": "s22-demarrer",
+  "rule": "O22/demarrer",
+  "title": "Repartir avec un cycliste à côté",
+  "scene": "Vous avez arrêté la voiture au bord droit de la rue pour déposer un passager ; vous voulez repartir. Le rétroviseur intérieur paraît vide, mais un **cycliste** arrive à votre hauteur, à gauche, dans votre **angle mort**.",
+  "props": [
+   {
+    "kind": "bike",
+    "x": -0.6,
+    "dz": 21,
+    "toX": 1.5,
+    "toDz": -60,
+    "kmh": 25,
+    "start": "always"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je regarde le rétroviseur intérieur, je mets le clignotant et je pars aussitôt en m’écartant vers la gauche.",
+    "act": "go",
+    "kmh": 15,
+    "lat": -0.5,
+    "stopDz": 15,
+    "blink": "L",
+    "did": "Vous êtes parti après un simple coup d’œil au rétroviseur intérieur : le cycliste, invisible dans votre angle mort, a dû freiner ou s’écarter pour vous éviter."
+   },
+   {
+    "t": "Je tourne la tête vers l’angle mort, je laisse passer le cycliste, puis je démarre.",
+    "act": "stop",
+    "stopDz": 18,
+    "blink": "L"
+   },
+   {
+    "t": "Mon clignotant est mis : le cycliste doit me laisser partir.",
+    "act": "go",
+    "kmh": 15,
+    "lat": -0.5,
+    "stopDz": 15,
+    "blink": "L",
+    "did": "Vous êtes parti en comptant sur le clignotant : il annonce votre intention, mais ne vous donne aucun droit de passage. Le cycliste, qui roulait déjà, a dû freiner ou s’écarter."
+   }
+  ],
+  "ok": 1,
+  "should": "Tourner la tête vers l’angle mort, laisser passer le cycliste qui roule déjà, puis démarrer.",
+  "why": "Le conducteur qui engage son véhicule dans la circulation doit laisser la priorité aux autres usagers. Le rétroviseur intérieur ne montre pas tout : un cycliste peut rester invisible dans l’**angle mort**, sauf si vous tournez la tête. Le clignotant rend votre intention visible, mais il ne vous donne **aucun droit de passage**.",
+  "memo": "Je tourne la tête, **puis** je pars : ceux qui roulent déjà passent d’abord."
+ },
+ {
+  "id": "s22-preselection",
+  "rule": "O22/preselection",
+  "title": "Se préparer à tourner à gauche",
+  "scene": "Au prochain carrefour, vous voulez **tourner à gauche**. Une voiture arrive en face. Personne ne vous suit de près.",
+  "props": [
+   {
+    "kind": "vehicle",
+    "body": "car",
+    "paint": 3,
+    "x": -1.5,
+    "dz": -36,
+    "toX": -1.5,
+    "toDz": 60,
+    "kmh": 25,
+    "start": "always"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je me place déjà de l’autre côté de la ligne du milieu, sur la voie d’en face, pour être prêt à tourner.",
+    "act": "detour",
+    "kmh": 20,
+    "lat": -2.0,
+    "blink": "L",
+    "did": "Vous avez roulé sur la partie de la chaussée réservée aux véhicules qui viennent en face, alors qu’une voiture arrivait."
+   },
+   {
+    "t": "Je reste au bord droit de ma voie ; je me déplacerai à gauche juste avant le carrefour.",
+    "act": "go",
+    "kmh": 20,
+    "lat": 0.5,
+    "did": "Vous avez repoussé la présélection au dernier moment : le déplacement sur le côté se ferait dans la zone où les trajectoires se croisent."
+   },
+   {
+    "t": "Je contrôle rétroviseurs et angle mort, je mets le clignotant à gauche et je me mets en présélection dès maintenant, dans ma voie.",
+    "act": "go",
+    "kmh": 20,
+    "lat": -0.5,
+    "blink": "L"
+   }
+  ],
+  "ok": 2,
+  "should": "Contrôler, annoncer, puis se mettre **à temps** en présélection, sans empiéter sur la partie de la chaussée des véhicules qui viennent en face.",
+  "why": "Le conducteur doit se mettre à temps en présélection lorsqu’il oblique. Pour tourner à gauche, il ne se place jamais sur la partie de la chaussée réservée aux véhicules qui viennent en face. Avant chaque déplacement sur le côté : rétroviseurs, clignotant, angle mort ; le déplacement se termine avant la zone où les trajectoires se croisent.",
+  "memo": "Présélection **tôt**, et **dans ma voie**."
+ },
+ {
+  "id": "s22-tourner",
+  "rule": "O22/tourner",
+  "title": "Tourner à droite après la cycliste",
+  "scene": "Au prochain carrefour, vous voulez **tourner à droite**. Une **bande cyclable** longe votre voie ; une cycliste y roule, juste devant vous à droite, et continue tout droit.",
+  "props": [
+   {
+    "kind": "line",
+    "style": "dashed",
+    "color": "yellow",
+    "x": 3.1,
+    "from": 38,
+    "to": -38
+   },
+   {
+    "kind": "symbol",
+    "id": "bike",
+    "x": 4.05,
+    "dz": 16
+   },
+   {
+    "kind": "bike",
+    "x": 4.05,
+    "dz": 10,
+    "toX": 4.05,
+    "toDz": -160,
+    "kmh": 15,
+    "start": "resolve"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je mets le clignotant à droite, je contrôle l’angle mort et je reste derrière la cycliste : elle passe avant que je tourne.",
+    "act": "go",
+    "kmh": 12,
+    "blink": "R"
+   },
+   {
+    "t": "J’accélère pour la dépasser et tourner devant elle.",
+    "act": "go",
+    "kmh": 35,
+    "blink": "R",
+    "did": "Vous avez accéléré pour tourner devant la cycliste : votre virage lui couperait la route alors qu’elle continue tout droit."
+   },
+   {
+    "t": "Mon clignotant est mis : c’est à elle de me laisser tourner.",
+    "act": "go",
+    "kmh": 25,
+    "blink": "R",
+    "did": "Vous avez gardé votre allure en comptant sur le clignotant : il annonce votre virage, mais ne vous autorise pas à couper la route à la cycliste."
+   }
+  ],
+  "ok": 0,
+  "endDz": -22,
+  "should": "Annoncer le virage, contrôler l’angle mort et laisser la cycliste continuer tout droit avant de tourner.",
+  "why": "Avant un virage à droite, le contrôle de l’angle mort est particulièrement important lorsqu’une **bande cyclable** longe la chaussée : un cycliste qui continue tout droit à votre droite serait coupé par votre virage. Le clignotant ne vous autorise pas à lui couper la route ; vous attendez que le conflit soit réglé.",
+  "memo": "Virage à droite : **angle mort**, et le cycle tout droit passe d’abord."
+ },
+ {
+  "id": "s22-contourner",
+  "rule": "O22/contourner",
+  "title": "Une camionnette, un cycliste derrière",
+  "scene": "Une **camionnette de livraison** est arrêtée sur votre voie. Personne ne vient en face. Un **cycliste** arrive derrière vous et commence à vous dépasser par la gauche.",
+  "props": [
+   {
+    "kind": "car",
+    "body": "van",
+    "x": 1.5,
+    "dz": -2
+   },
+   {
+    "kind": "bike",
+    "x": -0.9,
+    "dz": 24,
+    "toX": 1.5,
+    "toDz": -160,
+    "kmh": 20,
+    "start": "always"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Rien n’apparaît dans le rétroviseur : je m’écarte tout de suite à gauche.",
+    "act": "detour",
+    "kmh": 15,
+    "lat": -0.8,
+    "stopDz": 13,
+    "did": "Vous vous êtes écarté en vous fiant au rétroviseur : le cycliste qui vous dépassait, dans votre angle mort, a dû freiner ou s’écarter."
+   },
+   {
+    "t": "Je mets le clignotant à gauche et je déboîte : le cycliste doit me laisser passer.",
+    "act": "detour",
+    "kmh": 15,
+    "lat": -0.8,
+    "stopDz": 13,
+    "blink": "L",
+    "did": "Vous avez déboîté en comptant sur le clignotant, alors que le cycliste était déjà en train de vous dépasser."
+   },
+   {
+    "t": "Je m’arrête derrière la camionnette, je contrôle l’arrière et je laisse passer le cycliste avant de m’écarter.",
+    "act": "stop",
+    "stopDz": 9,
+    "then": "wait"
+   }
+  ],
+  "ok": 2,
+  "should": "S’arrêter derrière l’obstacle, contrôler l’arrière, laisser passer le cycliste, puis contourner avec une marge suffisante.",
+  "why": "Avant de vous écarter pour contourner, contrôlez aussi la circulation derrière vous : un motocycliste ou un cycliste peut déjà être en train de vous dépasser, ou se trouver dans votre angle mort. Vous contournez seulement lorsque l’espace est libre, puis vous revenez progressivement, sans couper la route à personne.",
+  "memo": "Avant de déboîter : **derrière** aussi."
+ },
+ {
+  "id": "s22-demi-tour",
+  "rule": "O22/demi-tour",
+  "title": "La rue est déjà passée",
+  "scene": "Vous venez de dépasser la rue que vous cherchiez. La circulation est **dense** : une voiture vous précède et plusieurs véhicules arrivent en face.",
+  "props": [
+   {
+    "kind": "leadCar",
+    "x": 1.5,
+    "dz": 4,
+    "kmh": 25,
+    "paint": 2
+   },
+   {
+    "kind": "vehicle",
+    "body": "car",
+    "paint": 5,
+    "x": -1.5,
+    "dz": -30,
+    "toX": -1.5,
+    "toDz": 60,
+    "kmh": 30,
+    "start": "always"
+   },
+   {
+    "kind": "vehicle",
+    "body": "van",
+    "x": -1.5,
+    "dz": -38,
+    "toX": -1.5,
+    "toDz": 60,
+    "kmh": 30,
+    "start": "always"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je fais demi-tour ici : cela ne prendra que quelques secondes.",
+    "act": "detour",
+    "kmh": 10,
+    "lat": -2.6,
+    "stopDz": 14,
+    "blink": "L",
+    "did": "Vous vous êtes mis en travers de la voie d’en face pour faire demi-tour, dans une circulation dense : les véhicules qui arrivent devraient s’arrêter pour vous."
+   },
+   {
+    "t": "Je continue et je reviens plus loin par une rue latérale, une place ou un giratoire.",
+    "act": "go"
+   },
+   {
+    "t": "Je me range à droite et j’attends un trou dans la circulation pour faire demi-tour.",
+    "act": "park",
+    "did": "Vous vous êtes rangé pour tenter un demi-tour sur la chaussée malgré une circulation intense, au lieu de faire un détour sûr."
+   }
+  ],
+  "ok": 1,
+  "should": "Continuer et corriger l’itinéraire plus loin, par une rue latérale, une place ou un giratoire.",
+  "why": "Le conducteur doit éviter de faire demi-tour directement sur la chaussée ; la manœuvre est interdite lorsque la circulation est intense. Ce qui compte n’est pas la durée de la manœuvre, mais la visibilité et la densité de la circulation : une erreur de route se corrige par un détour sûr.",
+  "memo": "Rue manquée : **détour**, pas demi-tour."
+ }
+]

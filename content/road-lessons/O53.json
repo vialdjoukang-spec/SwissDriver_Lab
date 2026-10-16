@@ -1,0 +1,40 @@
+[
+ {
+  "id": "s53-charge",
+  "rule": "O53/dynamique",
+  "title": "Départ en vacances, voiture chargée",
+  "scene": "Quatre passagers, des bagages et un **coffre de toit** : votre voiture est lourdement chargée. Devant vous, une voiture roule à allure régulière.",
+  "props": [
+   {
+    "kind": "leadCar",
+    "x": 1.5,
+    "dz": 6,
+    "kmh": 20,
+    "paint": 2
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je laisse un intervalle plus grand que d’habitude et je prévois de freiner plus tôt.",
+    "act": "go",
+    "kmh": 14
+   },
+   {
+    "t": "Je garde mon intervalle habituel : les freins sont faits pour ça.",
+    "act": "go",
+    "kmh": 20,
+    "did": "Vous avez gardé l’intervalle d’une voiture vide alors que la charge peut allonger la distance d’arrêt."
+   },
+   {
+    "t": "Je reste près d’elle : s’il le faut, je freinerai plus fort.",
+    "act": "go",
+    "kmh": 24,
+    "did": "Vous vous êtes rapproché en comptant sur un freinage plus fort au dernier moment."
+   }
+  ],
+  "ok": 0,
+  "should": "**Augmenter l’intervalle** avec le véhicule qui précède et commencer à ralentir plus tôt.",
+  "why": "Une masse plus élevée demande un effort de freinage plus important et peut allonger la distance d’arrêt. Une charge placée haut, comme un coffre de toit, rend aussi la voiture plus sensible aux gestes brusques. Une voiture chargée exige donc plus de marge avant le danger, et non une correction plus forte au dernier moment.",
+  "memo": "Chargé : **plus de distance**, moins de vitesse, plus de douceur."
+ }
+]

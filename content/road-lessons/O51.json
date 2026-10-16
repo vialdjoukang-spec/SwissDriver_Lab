@@ -1,0 +1,41 @@
+[
+ {
+  "id": "s51-panne",
+  "rule": "O51/alerte-panne",
+  "title": "Le moteur s’arrête",
+  "scene": "Le moteur s’arrête brusquement : la voiture roule encore sur son **élan**. À droite, la bande de stationnement est libre sur plusieurs mètres.",
+  "props": [
+   {
+    "kind": "car",
+    "x": 4.0,
+    "dz": -18,
+    "paint": 5
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je m’arrête tout de suite dans ma voie et je descends chercher la panne.",
+    "act": "stop",
+    "stopDz": 12,
+    "did": "Vous avez immobilisé la voiture sur la chaussée et vous êtes resté exposé à la circulation pour chercher la cause."
+   },
+   {
+    "t": "J’utilise l’élan pour me ranger le plus à droite possible, puis j’allume les feux de détresse.",
+    "act": "park",
+    "kmh": 12,
+    "stopDz": 2,
+    "then": "wait"
+   },
+   {
+    "t": "Je m’arrête dans ma voie avec les feux de détresse et j’attends le dépannage dans la voiture.",
+    "act": "stop",
+    "stopDz": 10,
+    "did": "Vous êtes resté sur la chaussée alors que l’élan permettait de dégager la voie : la voiture devient un obstacle inattendu."
+   }
+  ],
+  "ok": 1,
+  "should": "Profiter de l’élan pour se ranger **le plus à droite possible**, hors de la circulation, puis allumer les feux de détresse.",
+  "why": "Si la voiture roule encore, profitez de l’élan qui lui reste pour rejoindre le bas-côté et arrêtez-la le plus à droite possible. Évitez de rester sur la chaussée : vous y devenez un obstacle inattendu. Plus la voiture est éloignée de la circulation, plus le risque de suraccident diminue. Rester près de la voiture pour chercher la panne vous expose : protégez avant de réparer.",
+  "memo": "En panne : je **dégage**, je signale, puis je répare."
+ }
+]

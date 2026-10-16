@@ -1,0 +1,392 @@
+[
+ {
+  "id": "s23-croiser",
+  "rule": "O23/croiser",
+  "title": "Voiture garée, camion en face",
+  "scene": "Une **voiture garée** déborde sur votre voie. En face arrive un **camion** : il n’y a pas la place de passer tous les deux en même temps avec une marge suffisante.",
+  "props": [
+   {
+    "kind": "car",
+    "x": 3.2,
+    "dz": 2,
+    "paint": 4
+   },
+   {
+    "kind": "vehicle",
+    "body": "truck",
+    "x": -1.5,
+    "dz": -34,
+    "toX": -1.5,
+    "toDz": 60,
+    "kmh": 25,
+    "start": "always"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je ralentis et je m’arrête avant la voiture garée : le camion passe d’abord.",
+    "act": "stop",
+    "stopDz": 9,
+    "then": "wait"
+   },
+   {
+    "t": "J’arrive le premier à la voiture garée : je passe.",
+    "act": "detour",
+    "kmh": 25,
+    "lat": -1.2,
+    "did": "Vous avez débordé sur la voie du camion parce que vous arriviez le premier : il a dû freiner ou s’écarter."
+   },
+   {
+    "t": "Je passe sans ralentir, en serrant la voiture garée : il y a juste la place.",
+    "act": "go",
+    "kmh": 25,
+    "lat": -0.5,
+    "did": "Vous avez gardé votre vitesse dans un passage trop étroit, sans marge sur le côté ni envers la voiture garée ni envers le camion."
+   }
+  ],
+  "ok": 0,
+  "should": "Céder : s’arrêter avant la voiture garée et laisser passer le camion.",
+  "why": "L’obstacle se trouve sur votre moitié de chaussée et rend le croisement difficile : c’est à vous de céder au trafic qui vient en face. Celui qui doit emprunter la voie de l’autre attend qu’elle soit libre. Arriver le premier ne donne aucun droit, et la priorité ne remplace jamais la marge : si la largeur ne suffit pas, arrêtez-vous avant le passage étroit.",
+  "memo": "Obstacle **de mon côté** : je cède."
+ },
+ {
+  "id": "s23-eviter",
+  "rule": "O23/eviter",
+  "title": "La voiture de devant s’immobilise",
+  "scene": "La voiture qui vous précède **s’immobilise net**. À gauche, une voiture arrive en face ; à droite, un **cycliste** roule sur la bande cyclable, encore derrière vous.",
+  "props": [
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -4,
+    "paint": 1
+   },
+   {
+    "kind": "line",
+    "style": "dashed",
+    "color": "yellow",
+    "x": 3.1,
+    "from": 38,
+    "to": -38
+   },
+   {
+    "kind": "symbol",
+    "id": "bike",
+    "x": 4.05,
+    "dz": 6
+   },
+   {
+    "kind": "bike",
+    "x": 4.05,
+    "dz": 30,
+    "toX": 4.05,
+    "toDz": -160,
+    "kmh": 10,
+    "start": "always"
+   },
+   {
+    "kind": "vehicle",
+    "body": "car",
+    "paint": 6,
+    "x": -1.5,
+    "dz": -38,
+    "toX": -1.5,
+    "toDz": 60,
+    "kmh": 20,
+    "start": "always"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je donne un coup de volant à gauche, sans freiner.",
+    "act": "overtake",
+    "did": "Vous vous êtes jeté sur la voie d’en face sans freiner ni vérifier qu’elle était libre : une voiture y arrivait."
+   },
+   {
+    "t": "Je donne un coup de volant à droite, sur la bande cyclable.",
+    "act": "detour",
+    "kmh": 25,
+    "lat": 2.5,
+    "stopDz": 10,
+    "did": "Vous avez déplacé la voiture vers une zone que vous n’aviez pas vérifiée : le cycliste qui arrivait derrière vous sur la bande cyclable se retrouve face à votre voiture."
+   },
+   {
+    "t": "Je freine fort en gardant ma trajectoire, et je m’arrête derrière elle.",
+    "act": "stop",
+    "stopDz": 5,
+    "then": "wait"
+   }
+  ],
+  "ok": 2,
+  "should": "Freiner en gardant le contrôle de la voiture : aucune issue latérale n’est libre.",
+  "why": "La réaction la plus sûre commence souvent par **freiner** : réduire la vitesse réduit la violence d’un éventuel choc et rend la voiture plus précise. On ne change de trajectoire que vers une zone vérifiée comme libre ; ici, la voie d’en face et la bande cyclable sont occupées. Un écart à l’aveugle transfère le risque à un autre usager.",
+  "memo": "D’abord **freiner** ; s’écarter seulement vers un espace libre."
+ },
+ {
+  "id": "s23-cote-a-cote",
+  "rule": "O23/cote-a-cote",
+  "title": "Bouchon sur deux voies",
+  "scene": "Deux voies vont dans votre sens ; la circulation est **dense**. Votre file avance lentement. Dans la **voie de droite**, une voiture arrive derrière vous et avance plus vite.",
+  "props": [
+   {
+    "kind": "line",
+    "style": "dashed",
+    "color": "white",
+    "x": 3.1,
+    "from": 38,
+    "to": -38
+   },
+   {
+    "kind": "leadCar",
+    "x": 1.5,
+    "dz": 8,
+    "kmh": 10,
+    "paint": 5
+   },
+   {
+    "kind": "vehicle",
+    "body": "car",
+    "paint": 2,
+    "x": 4.05,
+    "dz": 30,
+    "toX": 4.05,
+    "toDz": -170,
+    "kmh": 25,
+    "start": "always"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je passe dans la voie de droite pour gagner quelques places, puis je me rabattrai à gauche.",
+    "act": "detour",
+    "kmh": 25,
+    "lat": 2.55,
+    "blink": "R",
+    "did": "Vous avez changé de voie pour gagner des places : c’est un dépassement par la droite. Et vous vous êtes placé devant la voiture qui arrivait dans cette voie, qui a dû freiner."
+   },
+   {
+    "t": "Je reste dans ma file, derrière la voiture de devant ; la voie de droite peut avancer plus vite.",
+    "act": "go",
+    "kmh": 10
+   },
+   {
+    "t": "Je m’arrête : la voiture de droite me dépasse par la droite, c’est interdit, je la laisse filer.",
+    "act": "stop",
+    "stopDz": 14,
+    "did": "Vous vous êtes arrêté dans votre file sans raison : la voiture de droite ne dépassait pas, elle devançait en restant dans sa voie, ce qui est admis."
+   }
+  ],
+  "ok": 1,
+  "endDz": -10,
+  "should": "Rester dans sa file : la voie de droite peut avancer plus vite sans que ce soit un dépassement.",
+  "why": "Lorsque la circulation est dense et que la place suffit, la circulation en **files parallèles** est admise. **Devancer**, c’est avancer plus vite que la file voisine en restant dans sa voie ; **dépasser**, c’est sortir de sa voie pour passer devant puis revenir. Changer de voie pour gagner des places est un dépassement, et le conducteur qui change de voie ne doit pas gêner les véhicules qui s’y trouvent déjà.",
+  "memo": "En files parallèles, je **reste dans ma file**."
+ },
+ {
+  "id": "s23-suivi",
+  "rule": "O23/suivi",
+  "title": "Derrière une voiture",
+  "scene": "Vous suivez une voiture qui roule à 25 km/h en localité. L’écart entre vous est d’environ **une longueur de voiture**.",
+  "props": [
+   {
+    "kind": "leadCar",
+    "x": 1.5,
+    "dz": 9,
+    "kmh": 25,
+    "paint": 3
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je laisse l’écart grandir : si elle freine soudainement, je dois pouvoir m’arrêter à temps.",
+    "act": "go",
+    "kmh": 18
+   },
+   {
+    "t": "Je reste tout près derrière elle pour qu’elle accélère.",
+    "act": "go",
+    "kmh": 32,
+    "did": "Vous avez talonné la voiture pour la pousser à accélérer : vous n’aviez plus aucune réserve pour réagir si elle freinait."
+   },
+   {
+    "t": "Je garde dix mètres, le chiffre que j’ai appris, quelle que soit ma vitesse.",
+    "act": "go",
+    "kmh": 25,
+    "did": "Vous avez appliqué un nombre de mètres appris par cœur, au lieu de vérifier en temps que vous pourriez vous arrêter si la voiture freinait soudainement."
+   }
+  ],
+  "ok": 0,
+  "should": "Agrandir l’écart jusqu’à pouvoir s’arrêter à temps si la voiture de devant freine de manière inattendue.",
+  "why": "L’OCR exige une distance suffisante pour pouvoir s’arrêter à temps si le véhicule précédent freine de manière inattendue ; la loi ne fixe pas une distance unique. Raisonnez en **temps** : choisissez un repère fixe et comptez le temps jusqu’à l’atteindre. Talonner supprime toute réserve de réaction et peut constituer une **violation grave**.",
+  "memo": "Distance de suivi : en **temps**, pas en mètres appris."
+ },
+ {
+  "id": "s23-depasser",
+  "rule": "O23/depasser",
+  "title": "Un passage à niveau sans barrières",
+  "scene": "Une voiture roule lentement devant vous. La voie d’en face paraît libre, mais juste devant se trouve un **passage à niveau sans barrières**, signalé par la croix de Saint-André.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "croix-andre",
+    "x": 5.6,
+    "dz": 4
+   },
+   {
+    "kind": "rail",
+    "dz": -6
+   },
+   {
+    "kind": "leadCar",
+    "x": 1.5,
+    "dz": 6,
+    "kmh": 15,
+    "paint": 6
+   }
+  ],
+  "choices": [
+   {
+    "t": "La voie d’en face est libre : je dépasse avant les rails.",
+    "act": "overtake",
+    "did": "Vous avez commencé un dépassement à l’approche d’un passage à niveau sans barrières, où il est interdit ou fortement limité."
+   },
+   {
+    "t": "Elle roule si lentement que le dépassement sera bref : je passe vite.",
+    "act": "overtake",
+    "kmh": 40,
+    "did": "Vous avez dépassé vite en pensant que la manœuvre serait brève, juste avant un passage à niveau sans barrières."
+   },
+   {
+    "t": "Je reste derrière elle jusqu’après le passage à niveau.",
+    "act": "go",
+    "kmh": 15
+   }
+  ],
+  "ok": 2,
+  "endDz": -24,
+  "should": "Rester derrière : pas de dépassement à l’approche d’un passage à niveau sans barrières.",
+  "why": "Le dépassement est interdit ou fortement limité là où la visibilité ou les risques de conflit deviennent critiques, notamment à un **passage à niveau** sans barrières. La lenteur du véhicule devant vous donne l’impression que la manœuvre sera brève ; elle doit pourtant être permise, visible et réalisable jusqu’au bout.",
+  "memo": "Passage à niveau sans barrières : **je ne dépasse pas**."
+ },
+ {
+  "id": "s23-distance",
+  "rule": "O23/distance",
+  "title": "Un cycliste hésitant",
+  "scene": "Un **cycliste** roule lentement près du bord droit et semble **instable**. Des voitures sont garées à droite ; une voiture arrive en face.",
+  "props": [
+   {
+    "kind": "car",
+    "x": 4.05,
+    "dz": 15,
+    "paint": 2
+   },
+   {
+    "kind": "car",
+    "x": 4.05,
+    "dz": -8,
+    "paint": 4
+   },
+   {
+    "kind": "car",
+    "x": 4.05,
+    "dz": -20,
+    "paint": 1
+   },
+   {
+    "kind": "bike",
+    "x": 2.5,
+    "dz": 7,
+    "toX": 2.4,
+    "toDz": -160,
+    "kmh": 12,
+    "start": "always"
+   },
+   {
+    "kind": "vehicle",
+    "body": "car",
+    "paint": 5,
+    "x": -1.5,
+    "dz": -38,
+    "toX": -1.5,
+    "toDz": 60,
+    "kmh": 25,
+    "start": "always"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je le dépasse en restant presque dans ma voie : il y a juste la place.",
+    "act": "go",
+    "kmh": 25,
+    "lat": -0.9,
+    "did": "Vous avez dépassé le cycliste avec une marge minimale : s’il fait un écart pour éviter un trou, vous n’avez plus ni espace ni temps pour réagir."
+   },
+   {
+    "t": "Je ralentis et je reste derrière lui tant que je ne peux pas le dépasser avec une marge généreuse.",
+    "act": "go",
+    "kmh": 12
+   },
+   {
+    "t": "Je le dépasse en m’écartant largement sur la voie d’en face.",
+    "act": "overtake",
+    "did": "Vous avez gagné de la marge envers le cycliste en la prenant sur la voiture qui arrivait en face."
+   }
+  ],
+  "ok": 1,
+  "endDz": -16,
+  "should": "Ralentir et rester derrière le cycliste tant que la marge latérale n’est pas disponible.",
+  "why": "Un cycliste instable est un usager **vulnérable** : sa trajectoire peut changer d’un coup. Il demande une marge latérale généreuse ; si elle n’est pas disponible, ralentissez davantage ou attendez. Ici, la route est étroite et une voiture arrive en face : la marge sur le côté passe avant l’envie de gagner quelques secondes.",
+  "memo": "Pas de marge : **je ralentis ou j’attends**."
+ },
+ {
+  "id": "s23-signaler",
+  "rule": "O23/signaler",
+  "title": "Des enfants qui ne regardent pas",
+  "scene": "En plein jour, deux **enfants** jouent au bord du trottoir, dos à la route : ils semblent ne pas faire attention à la circulation.",
+  "props": [
+   {
+    "kind": "ped",
+    "child": true,
+    "x": 5.4,
+    "dz": 0,
+    "toX": 5.3,
+    "toDz": -4,
+    "kmh": 1.5,
+    "start": "always"
+   },
+   {
+    "kind": "ped",
+    "child": true,
+    "x": 6.2,
+    "dz": -3,
+    "toX": 6.0,
+    "toDz": -6,
+    "kmh": 1.5,
+    "start": "always"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je ralentis nettement et je donne un coup de klaxon pour les avertir.",
+    "act": "honk",
+    "kmh": 15
+   },
+   {
+    "t": "Je klaxonne et je garde ma vitesse : maintenant, ils sont prévenus.",
+    "act": "honk",
+    "kmh": 40,
+    "did": "Vous avez klaxonné puis gardé votre vitesse, comme si l’avertissement rendait les enfants responsables : le signal ne raccourcit pas votre distance d’arrêt."
+   },
+   {
+    "t": "Je ne fais rien de spécial : ils sont sur le trottoir.",
+    "act": "go",
+    "kmh": 40,
+    "did": "Vous avez gardé votre vitesse sans avertir, alors que les enfants ne faisaient pas attention à la circulation."
+   }
+  ],
+  "ok": 0,
+  "should": "Réduire nettement la vitesse ; un coup de klaxon peut avertir des enfants qui ne font pas attention à la circulation.",
+  "why": "Le klaxon n’est utilisé que lorsque la **sécurité** de la circulation l’exige ; il peut être nécessaire lorsque des enfants semblent ne pas faire attention. Mais un signal n’informe que : il ne crée aucun droit de passage et ne change rien à la distance dont vous avez besoin pour vous arrêter. C’est votre vitesse qui vous protège.",
+  "memo": "Je signale pour **informer** ; je ralentis pour **protéger**."
+ }
+]
