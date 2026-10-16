@@ -1,9 +1,9 @@
 # SwissDriver Lab
 
-**Édition modifiable 0.5.0-preview.1** — interface claire, berline et observation 3D. Prototype pédagogique en développement, non certifié.
+**Édition modifiable 0.6.0-preview.1** — interface claire, berline et observation 3D. Prototype pédagogique en développement, non certifié.
 
 ## Ouvrir la version actuelle
-[Édition et téléchargements](https://github.com/vialdjoukang-spec/SwissDriver_Lab/releases/tag/v0.5.0-preview.1) · [Guide de démarrage](START_HERE.md) · [Ce qui reste](docs/ETAT_ET_RESTE.md) · [Modifier les sources](docs/EDITER.md)
+[Édition et téléchargements](https://github.com/vialdjoukang-spec/SwissDriver_Lab/releases) · [Guide de démarrage](START_HERE.md) · [Ce qui reste](docs/ETAT_ET_RESTE.md) · [Modifier les sources](docs/EDITER.md)
 
 Dans la release, télécharger **SwissDriver_Lab_Edition.zip**, l'extraire puis ouvrir **dist/SwissDriver_Lab.html**. Le ZIP comprend le jeu prêt à ouvrir, les sources, les tests et les preuves. Le HTML seul est également fourni. Les archives automatiques « Source code » de GitHub contiennent les sources mais pas le fichier construit : exécuter alors `npm run build`.
 
@@ -15,7 +15,7 @@ npm start
 Node.js >=20 suffit pour ces deux commandes, sans dépendances npm à installer. Python et Playwright servent aux tests, non à l'utilisation du jeu. Lire [AGENTS.md](AGENTS.md) pour une reprise dans Codex ou Claude.
 
 ## Périmètre exact
-6 parties, 19 chapitres, 120 sous-chapitres et 1 220 questions dans les données historiques. **Priorités** est le seul chapitre équipé de scènes de conduite : 7 sous-chapitres, 25 situations. Avec l'extension `content/` (programme asa 2027), les 27 chapitres sont consultables et se suivent sur la route par portiques de cours. O12, O13 et O14 ont en plus 14 scènes simplifiées de panneaux et marquages (trajectoire assistée) ; les autres chapitres que Priorités n'ont pas de simulation dédiée. La banque de questions n'est pas présentée comme 1 220 exercices 3D.
+6 parties, 19 chapitres, 120 sous-chapitres et 1 220 questions dans les données historiques. **Priorités** est le seul chapitre équipé de scènes de conduite : 7 sous-chapitres, 25 situations. Avec l'extension `content/` (programme asa 2027), les 27 chapitres sont consultables et se suivent sur la route par portiques de cours. 80 sous-chapitres de 17 chapitres ont en plus une scène simplifiée sur la route (trajectoire assistée) ; les sous-chapitres théoriques ou administratifs restent des cours avec QCM. La banque de questions n'est pas présentée comme 1 220 exercices 3D.
 
 Les données détaillées, leurs décomptes et les contrôles d'intégrité sont recalculés dans `curriculum-status.json` et `edition-manifest.json` à chaque livraison. La réussite des tests ne garantit ni toutes les trajectoires ni la conformité juridique intégrale.
 

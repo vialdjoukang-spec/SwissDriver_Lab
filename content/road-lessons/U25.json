@@ -63,8 +63,8 @@
    {
     "t": "Je laisse l’assistant suivre les lignes : c’est son rôle.",
     "act": "go",
-    "stopDz": 1,
-    "did": "Vous avez laissé l’assistant suivre l’ancienne ligne blanche vers le balisage du chantier."
+    "stopDz": 15,
+    "did": "Vous avez laissé l’assistant suivre l’ancienne ligne blanche jusqu’aux cônes du chantier."
    },
    {
     "t": "Je reprends moi-même la trajectoire et je suis le tracé jaune-orange en ralentissant.",
@@ -74,14 +74,15 @@
    {
     "t": "Je garde l’assistant actif : s’il ne peut plus suivre, il m’avertira.",
     "act": "go",
-    "stopDz": 1,
+    "stopDz": 15,
     "did": "Vous avez compté sur une alerte, alors que l’assistant peut se tromper de trajectoire ou faiblir sans prévenir."
    }
   ],
   "ok": 1,
   "should": "Reprendre **soi-même** la trajectoire et suivre le marquage provisoire en ralentissant.",
   "why": "Le maintien de voie dépend des lignes au sol : effacées, couvertes de neige ou provisoires dans un chantier, elles peuvent le tromper de trajectoire ou le désactiver. Une aide peut faiblir **sans prévenir** de façon évidente : ne comptez jamais sur elle quand les conditions deviennent difficiles, c’est précisément là que votre attention doit augmenter.",
-  "memo": "Lignes provisoires : je **reprends la main**."
+  "memo": "Lignes provisoires : je **reprends la main**.",
+  "endDz": -38
  },
  {
   "id": "su25-regulateur",

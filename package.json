@@ -1,6 +1,6 @@
 {
   "name": "swissdriver-lab",
-  "version": "0.5.0-preview.1",
+  "version": "0.6.0-preview.1",
   "private": true,
   "description": "Edition modifiable du prototype SwissDriver Lab",
   "engines": {"node": ">=20"},

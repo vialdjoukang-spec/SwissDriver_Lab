@@ -50,6 +50,10 @@
     'vitesse-80':ring(`<text x="50" y="63" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="36" fill="${INK}">80</text>`),
     'vitesse-120':ring(`<text x="50" y="61" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="30" fill="${INK}">120</text>`),
     'tunnel':square(`<path d="M22 86 V54 Q22 26 50 26 Q78 26 78 54 V86 Z" fill="#fff"/><path d="M34 86 V58 Q34 40 50 40 Q66 40 66 58 V86 Z" fill="${INK}"/>`),
+    'hauteur-max':ring(`<path d="M42 20 H58 L50 30 Z M42 80 H58 L50 70 Z" fill="${INK}"/><text x="50" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="22" fill="${INK}">1,9 m</text>`),
+    'direction-verte':`<rect x="2" y="22" width="96" height="56" rx="5" fill="${GREEN}" stroke="#fff" stroke-width="3"/><path d="M18 64 V40 M10 48 L18 38 L26 48" stroke="#fff" stroke-width="5" fill="none"/><text x="62" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="16" fill="#fff">Autoroute</text>`,
+    'direction-bleue':`<rect x="2" y="22" width="96" height="56" rx="5" fill="${BLUE}" stroke="#fff" stroke-width="3"/><text x="42" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fff">Lausanne</text><path d="M78 50 H92 M86 43 L94 50 L86 57" stroke="#fff" stroke-width="5" fill="none"/>`,
+    'direction-blanche':`<rect x="2" y="22" width="96" height="56" rx="5" fill="#fff" stroke="${INK}" stroke-width="3"/><text x="42" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="${INK}">Gare</text><path d="M78 50 H92 M86 43 L94 50 L86 57" stroke="${INK}" stroke-width="5" fill="none"/>`,
     'parking-disque':square(`<text x="50" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="54" fill="#fff">P</text><rect x="30" y="66" width="40" height="22" rx="3" fill="#fff"/><circle cx="50" cy="77" r="8" fill="${BLUE}"/>`),
   };
   const drawing=id=>(byId[id]&&byId[id].svg)||EXTRA[id]||null;

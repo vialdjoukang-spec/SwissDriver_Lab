@@ -484,5 +484,55 @@
   "should": "Rester arrêté jusqu’à ce que la piétonne ait **fini de traverser**.",
   "why": "Lorsque votre feu redevient vert, la traversée n’est pas toujours terminée : une personne âgée, un enfant ou une personne qui court au dernier moment peut encore être sur le passage. Le vert vous autorise à partir, mais **jamais** à mettre en danger un piéton retardataire : laissez-le finir sa traversée avant d’avancer.",
   "memo": "Vert : je **contrôle** le passage avant de partir."
+ },
+ {
+  "id": "s14-orientation",
+  "rule": "O14/orientation",
+  "title": "Suivre le vert vers l’autoroute",
+  "scene": "Vous cherchez l’entrée de l’**autoroute**. Au bord de la route, trois indicateurs de direction : **vert** tout droit « Autoroute », **bleu** à droite « Lausanne », **blanc** à droite « Gare ».",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "direction-blanche",
+    "x": 5.6,
+    "dz": 10,
+    "height": 1.5
+   },
+   {
+    "kind": "sign",
+    "id": "direction-bleue",
+    "x": 5.6,
+    "dz": 10,
+    "height": 2.5
+   },
+   {
+    "kind": "sign",
+    "id": "direction-verte",
+    "x": 5.6,
+    "dz": 10,
+    "height": 3.5
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je me prépare à tourner à droite : le panneau bleu mène aux grandes routes.",
+    "act": "go",
+    "blink": "R",
+    "did": "Vous avez suivi le bleu, qui conduit aux autres routes, au lieu du vert qui mène à l’autoroute."
+   },
+   {
+    "t": "Je m’arrête au bord pour lire tous les panneaux tranquillement.",
+    "act": "park",
+    "did": "Vous vous êtes arrêté pour lire au lieu de lire tôt, en roulant à une allure adaptée."
+   },
+   {
+    "t": "Je suis le panneau vert et je continue tout droit.",
+    "act": "go"
+   }
+  ],
+  "ok": 2,
+  "should": "Suivre le panneau **vert** : il conduit à l’autoroute.",
+  "why": "La couleur de fond indique le type de route : vert pour une destination atteinte par autoroute ou semi-autoroute, bleu pour les autres routes, blanc pour une destination locale comme une gare. Lisez les panneaux dès qu’ils deviennent lisibles, décidez tôt, puis restez dans la voie choisie.",
+  "memo": "Vert : autoroute. Bleu : autres routes. Blanc : local."
  }
 ]

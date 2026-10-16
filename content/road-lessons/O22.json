@@ -7,10 +7,10 @@
   "props": [
    {
     "kind": "bike",
-    "x": -0.6,
+    "x": -0.8,
     "dz": 21,
     "toX": 1.5,
-    "toDz": -60,
+    "toDz": -70,
     "kmh": 25,
     "start": "always"
    }
@@ -20,7 +20,7 @@
     "t": "Je regarde le rétroviseur intérieur, je mets le clignotant et je pars aussitôt en m’écartant vers la gauche.",
     "act": "go",
     "kmh": 15,
-    "lat": -0.5,
+    "lat": -0.4,
     "stopDz": 15,
     "blink": "L",
     "did": "Vous êtes parti après un simple coup d’œil au rétroviseur intérieur : le cycliste, invisible dans votre angle mort, a dû freiner ou s’écarter pour vous éviter."
@@ -35,7 +35,7 @@
     "t": "Mon clignotant est mis : le cycliste doit me laisser partir.",
     "act": "go",
     "kmh": 15,
-    "lat": -0.5,
+    "lat": -0.4,
     "stopDz": 15,
     "blink": "L",
     "did": "Vous êtes parti en comptant sur le clignotant : il annonce votre intention, mais ne vous donne aucun droit de passage. Le cycliste, qui roulait déjà, a dû freiner ou s’écarter."
@@ -165,7 +165,7 @@
    },
    {
     "kind": "bike",
-    "x": -0.9,
+    "x": -1.1,
     "dz": 24,
     "toX": 1.5,
     "toDz": -160,
@@ -178,7 +178,7 @@
     "t": "Rien n’apparaît dans le rétroviseur : je m’écarte tout de suite à gauche.",
     "act": "detour",
     "kmh": 15,
-    "lat": -0.8,
+    "lat": -0.7,
     "stopDz": 13,
     "did": "Vous vous êtes écarté en vous fiant au rétroviseur : le cycliste qui vous dépassait, dans votre angle mort, a dû freiner ou s’écarter."
    },
@@ -186,7 +186,7 @@
     "t": "Je mets le clignotant à gauche et je déboîte : le cycliste doit me laisser passer.",
     "act": "detour",
     "kmh": 15,
-    "lat": -0.8,
+    "lat": -0.7,
     "stopDz": 13,
     "blink": "L",
     "did": "Vous avez déboîté en comptant sur le clignotant, alors que le cycliste était déjà en train de vous dépasser."

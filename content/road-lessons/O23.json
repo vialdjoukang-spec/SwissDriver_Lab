@@ -108,7 +108,7 @@
     "kmh": 25,
     "lat": 2.5,
     "stopDz": 10,
-    "did": "Vous avez déplacé la voiture vers une zone que vous n’aviez pas vérifiée : le cycliste qui arrivait derrière vous sur la bande cyclable se retrouve face à votre voiture."
+    "did": "Vous avez déplacé la voiture vers une zone que vous n’aviez pas vérifiée : le cycliste qui arrivait derrière vous sur la bande cyclable trouve votre voiture sur sa trajectoire."
    },
    {
     "t": "Je freine fort en gardant ma trajectoire, et je m’arrête derrière elle.",
@@ -162,7 +162,7 @@
     "kmh": 25,
     "lat": 2.55,
     "blink": "R",
-    "did": "Vous avez changé de voie pour gagner des places : c’est un dépassement par la droite. Et vous vous êtes placé devant la voiture qui arrivait dans cette voie, qui a dû freiner."
+    "did": "Vous avez changé de voie pour gagner des places : c’est un dépassement par la droite. Et vous vous êtes placé juste devant la voiture qui arrivait déjà dans cette voie."
    },
    {
     "t": "Je reste dans ma file, derrière la voiture de devant ; la voie de droite peut avancer plus vite.",
@@ -186,7 +186,7 @@
   "id": "s23-suivi",
   "rule": "O23/suivi",
   "title": "Derrière une voiture",
-  "scene": "Vous suivez une voiture qui roule à 25 km/h en localité. L’écart entre vous est d’environ **une longueur de voiture**.",
+  "scene": "Vous suivez une voiture qui roule à 25 km/h en localité. L’écart entre vous est **court** : moins de deux longueurs de voiture.",
   "props": [
    {
     "kind": "leadCar",
@@ -205,7 +205,7 @@
    {
     "t": "Je reste tout près derrière elle pour qu’elle accélère.",
     "act": "go",
-    "kmh": 32,
+    "kmh": 30,
     "did": "Vous avez talonné la voiture pour la pousser à accélérer : vous n’aviez plus aucune réserve pour réagir si elle freinait."
    },
    {

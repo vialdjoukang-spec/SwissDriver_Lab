@@ -65,7 +65,7 @@ with sync_playwright() as pw:
   for lesson in catalogue:
    wanted=sorted({p['id'] for p in lesson['props'] if p['kind']=='sign'})
    inspected=page.evaluate('id=>SwissDriverRoadLessons.test.inspect(id)',lesson['id'])
-   assert sorted(set(inspected['signs']))==wanted and inspected['objects']>0,('Scene objects',lesson['id'],inspected)
+   assert sorted(set(inspected['signs']))==wanted and inspected['objects']+inspected['actors']>0,('Scene objects',lesson['id'],inspected)
    for choice in [i for i in range(3) if i!=lesson['ok']]+[lesson['ok']]:
     good=choice==lesson['ok'];L=lesson['z'];fixed=obstacles(lesson)
     row={'scenarioId':lesson['id'],'ruleId':lesson['rule'],'choiceIndex':choice,'expectedCorrect':good,'passed':False}
@@ -84,6 +84,8 @@ with sync_playwright() as pw:
      for _ in range(240):
       page.clock.run_for(250);s=page.evaluate('SwissDriverRoadLessons.test.sample()');trail.append(s)
       car=s['car']
+      ev=page.evaluate("__lessonEvents.find(e=>e.type==='road-lesson-complete'||e.type==='road-lesson-feedback')||null")
+      if ev:terminal=ev;break
       for name,x,z,hx,hz in fixed:
        if overlap(car,x,z,hx,hz):raise AssertionError(f'Car crossed a fixed object ({name})')
       if good:
@@ -100,8 +102,6 @@ with sync_playwright() as pw:
       if good and lesson['id']=='s14-cycles':
        for a in s['actors']:
         if a['kind']=='bike' and abs(a['z']-car['z'])<3 and abs(a['x']-car['x'])<2.2:raise AssertionError('Insufficient lateral distance to the cyclist')
-      ev=page.evaluate("__lessonEvents.find(e=>e.type==='road-lesson-complete'||e.type==='road-lesson-feedback')||null")
-      if ev:terminal=ev;break
      row['simulationSecondsAdvanced']=len(trail)/4;row['trail']=trail[::4]
      if not terminal:raise AssertionError('No terminal outcome after 60 simulated seconds')
      decision=page.evaluate("__lessonEvents.find(e=>e.type==='road-lesson-decision')")

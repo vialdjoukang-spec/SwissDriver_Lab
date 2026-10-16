@@ -27,20 +27,28 @@ def package(require_evidence=False):
     # Evaluate only the trusted source object in an isolated VM with a time limit.
     code = "const fs=require('fs'),vm=require('vm');const s=fs.readFileSync(0,'utf8');process.stdout.write(JSON.stringify(vm.runInNewContext('('+s+')',{}, {timeout:2000})));"
     scenarios = json.loads(subprocess.check_output(['node', '-e', code], input=source[start:end], text=True))
+    lessons = {}
+    for lesson in data.get('roadLessons', []):
+        lessons.setdefault(lesson['rule'], []).append(lesson['id'])
     catalogue = []
     by_id = {c['id']: c for c in data['chapters']}
     for chapter in [by_id[i] for g in data['groups'] for i in g['chapters']]:
         sections = []
         for section in chapter['sections']:
             ids = [s['id'] for s in scenarios.get(chapter['id'], {}).get(section['id'], [])]
-            sections.append({'id': section['id'], 'title': section['otitle'], 'scenarioIds': ids})
+            sections.append({'id': section['id'], 'title': section['otitle'], 'scenarioIds': ids,
+                             'courseSceneIds': lessons.get(chapter['id'] + '/' + section['id'], [])})
         catalogue.append({'id': chapter['id'], 'official': chapter.get('official'), 'title': chapter['otitle'], 'sections': sections,
                           'simulationAvailable': any(s['scenarioIds'] for s in sections)})
     totals = {'parts': len(data['groups']), 'chapters': len(catalogue),
               'sections': sum(len(c['sections']) for c in catalogue), 'storedQuestions': len(data['questions']),
               'simulatedChapters': sum(c['simulationAvailable'] for c in catalogue),
               'simulatedSections': sum(bool(s['scenarioIds']) for c in catalogue for s in c['sections']),
-              'scenarios': sum(len(s['scenarioIds']) for c in catalogue for s in c['sections'])}
+              'scenarios': sum(len(s['scenarioIds']) for c in catalogue for s in c['sections']),
+              # Simplified course scenes: real object, decision, assisted consequence (content/road-lessons).
+              'courseScenes': sum(len(s['courseSceneIds']) for c in catalogue for s in c['sections']),
+              'sectionsWithCourseScene': sum(bool(s['courseSceneIds']) for c in catalogue for s in c['sections']),
+              'chaptersWithCourseScene': sum(any(s['courseSceneIds'] for s in c['sections']) for c in catalogue)}
     files = {}
     root_files = ['Permis_GT_Rossa.html', 'index.html', 'swissdriver-modern.css', 'package.json',
                   'requirements-dev.txt', '.gitignore', '.gitattributes', '.editorconfig', 'README.md',
@@ -90,7 +98,7 @@ Sources et programme executables du commit `{revision}`. Extraire **SwissDriver_
 
 Le ZIP comprend les modules, le moteur historique avec ses ressources, les scripts, les guides, les tests, les captures et un manifeste d'integrite. Aucun fichier de police n'est distribue. La police Atkinson est externe ; repli Arial hors ligne.
 
-Perimetre : {totals['chapters']} chapitres et {totals['sections']} sous-chapitres stockes ; {totals['simulatedChapters']} chapitre simule, {totals['simulatedSections']} sous-chapitres et {totals['scenarios']} situations. Les autres chapitres ne sont pas des scenes jouables. Voir **docs/ETAT_ET_RESTE.md**.
+Perimetre : {totals['chapters']} chapitres et {totals['sections']} sous-chapitres stockes ; {totals['simulatedChapters']} chapitre simule, {totals['simulatedSections']} sous-chapitres et {totals['scenarios']} situations. En outre, {totals['courseScenes']} scenes de cours simplifiees (trajectoire assistee) couvrent {totals['sectionsWithCourseScene']} sous-chapitres de {totals['chaptersWithCourseScene']} chapitres ; les autres sous-chapitres sont des cours seuls. Voir **docs/ETAT_ET_RESTE.md**.
 
 Rapports navigateur : {sum(e.get('checks', 0) for e in evidence)} controles et {sum(e.get('branches', 0) for e in evidence)} branches decisionnelles, lies a l'empreinte du HTML livre. La publication est conditionnee aux tests de structure, navigateur, scene, des 75 branches et de distribution. Les tests instrumentes ne certifient pas toutes les trajectoires, la fluidite ni le droit routier suisse.
 

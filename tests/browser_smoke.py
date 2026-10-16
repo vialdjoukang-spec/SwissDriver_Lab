@@ -76,8 +76,10 @@ with sync_playwright() as p:
         check('program_pauses_simulation',before==page.evaluate('({z:__G.P.z,t:SwissDriverLab.snapshot().simulationSeconds})'))
         page.screenshot(path=str(OUT/'desktop-program.png'))
         # Simplified road: a course-only chapter is reached by its gate, opens on the road, and is labelled without simulation.
+        # Part 5 (vehicle), first chapter O51: its first section (reglages) has no scene and stays course-only.
+        page.locator('#labProgramNav button').nth(4).click()
         page.locator('#planList>section:visible summary').first.click()
-        gate=page.locator('#planList>section:visible .lab-gate').first
+        gate=page.locator('#planList>section:visible .lab-lesson-row:not(:has(.lab-scene-tag)) .lab-gate').first
         gi=int(gate.get_attribute('data-gi'));xp=page.evaluate('__G.ST.xp');gate.click()
         road=page.evaluate("(()=>{const it=__G.ITEMS[__G.ST.idx];return {mode:__G.mode,idx:__G.ST.idx,type:it.type,chapter:it.c.id,zone:document.querySelector('#hZone').textContent}})()")
         check('course_only_gate_reachable',road['mode']=='drive' and road['idx']==gi and road['type']=='secGate' and road['chapter']!='O11' and 'Cours seul' in road['zone'],road)

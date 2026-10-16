@@ -248,7 +248,7 @@
    {
     "t": "Je m’approche au plus près pour ne pas perdre de place.",
     "act": "stop",
-    "stopDz": 2.8,
+    "stopDz": 3.4,
     "did": "Vous vous êtes arrêté collé à la voiture de devant : impossible de vous décaler si elle tombe en panne."
    },
    {

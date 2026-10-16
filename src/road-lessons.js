@@ -147,7 +147,7 @@
   const resultOf=item=>results.done.includes(item.ls.id);
   function begin(item){
     const lesson=item.ls,L=item.z;if(!built.has(item))built.set(item,build(item));
-    const b=built.get(item);resetActors(b);
+    const b=built.get(item);resetActors(b);hideScene(b,false);
     Ie&&($o(Ie),Ie=null);
     O.x=He;O.z=L+DECIDE_DZ;O.h=0;O.v=0;O.auto=null;O.blink=0;Vn=true;
     const path=new yt(bt([He,L+START_DZ+20],[He,L-80]));
@@ -175,6 +175,8 @@
     emit({type:'road-lesson-decision',lessonId:lesson.id,ruleId:ruleOf(active.item),choiceIndex:choice,correct:active.good});
   }
   const L0=()=>active.item.z;
+  // Once the wait is over the obstacle has cleared: the scene is hidden until it is played again.
+  function hideScene(b,hidden){b.group.visible=!hidden;b.actors.forEach(a=>{a.mesh.visible=!hidden;});}
   function step(dt){
     const a=O.auto;if(!a)return abort();
     active.t+=dt;
@@ -186,7 +188,7 @@
     // A good stop is held, then the car leaves once the released actors (a pedestrian) are clear.
     const choice=active.lesson.choices[active.choice];
     // "then: wait": the right decision is to stay stopped (blocked exit, agent, rails); the scene then resumes beyond it.
-    if(stopped&&active.held>1.6&&choice.then==='wait'){active.phase='leaving';const end=L0()+(active.lesson.endDz??-30);Sp(()=>{O.auto=null;O.x=He;O.z=end;O.v=0;Vn=true;active.phase='resolve';complete();});return;}
+    if(stopped&&active.held>1.6&&choice.then==='wait'){active.phase='leaving';const end=L0()+(active.lesson.endDz??-30);Sp(()=>{O.auto=null;O.x=He;O.z=end;O.v=0;Vn=true;hideScene(active.b,true);active.phase='resolve';complete();});return;}
     if(stopped&&active.held>1.6&&active.b.actors.every(x=>!x.released||x.labStart!=='good'||x.s>=x.path.len-.6)){a.stopAt=null;a.target=7;active.lat=0;active.resuming=true;}
     // Leaving a bay: creep out until back in the lane, then drive on.
     if(active.resuming)a.target=Math.abs(a.lat||0)>.6?1.2:7;
