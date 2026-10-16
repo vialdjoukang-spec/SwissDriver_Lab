@@ -6,13 +6,39 @@
   "scene": "Une **ligne continue** sépare les deux sens. Devant vous, une voiture roule lentement.",
   "endDz": -14,
   "props": [
-   {"kind": "line", "style": "solid", "color": "white", "x": 0, "from": 36, "to": -36},
-   {"kind": "leadCar", "x": 1.5, "dz": 6, "kmh": 10, "paint": 5}
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "white",
+    "x": 0,
+    "from": 36,
+    "to": -36
+   },
+   {
+    "kind": "leadCar",
+    "x": 1.5,
+    "dz": 6,
+    "kmh": 10,
+    "paint": 5
+   }
   ],
   "choices": [
-   {"t": "Je la dépasse en franchissant la ligne continue.", "act": "overtake", "did": "Vous avez franchi une ligne de sécurité pour dépasser."},
-   {"t": "Je la dépasse en roulant **sur** la ligne.", "act": "overtake", "lat": -1.5, "did": "Vous avez roulé sur une ligne de sécurité : c’est aussi interdit que de la franchir."},
-   {"t": "Je reste derrière, à distance, tant que la ligne est continue.", "act": "go", "kmh": 10}
+   {
+    "t": "Je la dépasse en franchissant la ligne continue.",
+    "act": "overtake",
+    "did": "Vous avez franchi une ligne de sécurité pour dépasser."
+   },
+   {
+    "t": "Je la dépasse en roulant **sur** la ligne.",
+    "act": "overtake",
+    "lat": -1.5,
+    "did": "Vous avez roulé sur une ligne de sécurité : c’est aussi interdit que de la franchir."
+   },
+   {
+    "t": "Je reste derrière, à distance, tant que la ligne est continue.",
+    "act": "go",
+    "kmh": 10
+   }
   ],
   "ok": 2,
   "should": "Rester derrière tant que la ligne est **continue**.",
@@ -25,14 +51,44 @@
   "title": "Une personne attend au bord",
   "scene": "Un passage pour piétons. Une personne attend **au bord, tournée vers la route** : elle veut traverser.",
   "props": [
-   {"kind": "sign", "id": "ind-pietons", "x": 5.6, "dz": 1, "height": 1.9},
-   {"kind": "crosswalk", "dz": -2, "from": -4.6, "to": 4.6},
-   {"kind": "ped", "x": 5.6, "dz": -2, "toX": -6.0, "toDz": -2, "start": "good"}
+   {
+    "kind": "sign",
+    "id": "ind-pietons",
+    "x": 5.6,
+    "dz": 1,
+    "height": 1.9
+   },
+   {
+    "kind": "crosswalk",
+    "dz": -2,
+    "from": -4.6,
+    "to": 4.6
+   },
+   {
+    "kind": "ped",
+    "x": 5.6,
+    "dz": -2,
+    "toX": -6.0,
+    "toDz": -2,
+    "start": "good"
+   }
   ],
   "choices": [
-   {"t": "Je passe avant qu’elle s’engage : elle n’est pas encore sur les bandes.", "act": "go", "did": "Vous êtes passé devant une personne qui montrait clairement son intention de traverser."},
-   {"t": "Je m’arrête avant les bandes et je la laisse traverser.", "act": "stop", "stopDz": 4.5},
-   {"t": "Je klaxonne pour qu’elle attende.", "act": "honk", "did": "Vous avez klaxonné pour vous imposer à une personne prioritaire."}
+   {
+    "t": "Je passe avant qu’elle s’engage : elle n’est pas encore sur les bandes.",
+    "act": "go",
+    "did": "Vous êtes passé devant une personne qui montrait clairement son intention de traverser."
+   },
+   {
+    "t": "Je m’arrête avant les bandes et je la laisse traverser.",
+    "act": "stop",
+    "stopDz": 4.5
+   },
+   {
+    "t": "Je klaxonne pour qu’elle attende.",
+    "act": "honk",
+    "did": "Vous avez klaxonné pour vous imposer à une personne prioritaire."
+   }
   ],
   "ok": 1,
   "should": "S’arrêter avant les bandes et laisser traverser.",
@@ -45,14 +101,49 @@
   "title": "Une cycliste sur la bande cyclable",
   "scene": "Une **ligne jaune discontinue** délimite une bande cyclable à droite. Une cycliste y roule ; vous allez la dépasser.",
   "props": [
-   {"kind": "line", "style": "dashed", "color": "yellow", "x": 3.1, "from": 40, "to": -40},
-   {"kind": "symbol", "id": "bike", "x": 4.0, "dz": 14},
-   {"kind": "bike", "x": 4.0, "dz": 8, "toX": 4.0, "toDz": -160, "kmh": 11, "start": "resolve"}
+   {
+    "kind": "line",
+    "style": "dashed",
+    "color": "yellow",
+    "x": 3.1,
+    "from": 38,
+    "to": -38
+   },
+   {
+    "kind": "symbol",
+    "id": "bike",
+    "x": 4.0,
+    "dz": 14
+   },
+   {
+    "kind": "bike",
+    "x": 4.0,
+    "dz": 8,
+    "toX": 4.0,
+    "toDz": -160,
+    "kmh": 11,
+    "start": "resolve"
+   }
   ],
   "choices": [
-   {"t": "Je la dépasse dans ma voie, avec une large distance latérale.", "act": "go", "kmh": 25},
-   {"t": "Je la serre en mordant sur la bande pour rester loin du milieu.", "act": "go", "kmh": 25, "lat": 1.1, "did": "Vous avez empiété sur la bande cyclable et frôlé la cycliste."},
-   {"t": "Je klaxonne pour qu’elle se range.", "act": "honk", "kmh": 25, "did": "Vous avez klaxonné pour pousser une cycliste qui roulait à sa place."}
+   {
+    "t": "Je la dépasse dans ma voie, avec une large distance latérale.",
+    "act": "go",
+    "kmh": 25
+   },
+   {
+    "t": "Je la serre en mordant sur la bande pour rester loin du milieu.",
+    "act": "go",
+    "kmh": 25,
+    "lat": 1.1,
+    "did": "Vous avez empiété sur la bande cyclable et frôlé la cycliste."
+   },
+   {
+    "t": "Je klaxonne pour qu’elle se range.",
+    "act": "honk",
+    "kmh": 25,
+    "did": "Vous avez klaxonné pour pousser une cycliste qui roulait à sa place."
+   }
   ],
   "ok": 0,
   "should": "Dépasser dans sa voie, avec une **large distance latérale**.",
@@ -65,17 +156,333 @@
   "title": "Entrée en zone 30",
   "scene": "Vous entrez dans une **zone 30**. Aucun autre panneau ne règle les prochains carrefours.",
   "props": [
-   {"kind": "sign", "id": "ind-zone30", "x": 5.6, "dz": 4},
-   {"kind": "sign", "id": "ind-zone30", "x": -5.6, "dz": 4}
+   {
+    "kind": "sign",
+    "id": "ind-zone30",
+    "x": 5.6,
+    "dz": 4
+   },
+   {
+    "kind": "sign",
+    "id": "ind-zone30",
+    "x": -5.6,
+    "dz": 4
+   }
   ],
   "choices": [
-   {"t": "Je roule au plus à 30 km/h et j’applique la priorité de droite aux carrefours.", "act": "go", "kmh": 28},
-   {"t": "Je garde 50 km/h jusqu’au prochain panneau de vitesse.", "act": "go", "kmh": 50, "did": "Vous avez gardé 50 km/h dans une zone limitée à 30 km/h."},
-   {"t": "Je roule à 20 km/h et je laisse aux piétons la priorité partout sur la chaussée.", "act": "go", "kmh": 20, "did": "Vous avez appliqué les règles de la zone de rencontre : en zone 30, la limite est de 30 km/h et les piétons n’ont pas de priorité générale hors des passages."}
+   {
+    "t": "Je roule au plus à 30 km/h et j’applique la priorité de droite aux carrefours.",
+    "act": "go",
+    "kmh": 28
+   },
+   {
+    "t": "Je garde 50 km/h jusqu’au prochain panneau de vitesse.",
+    "act": "go",
+    "kmh": 50,
+    "did": "Vous avez gardé 50 km/h dans une zone limitée à 30 km/h."
+   },
+   {
+    "t": "Je roule à 20 km/h et je laisse aux piétons la priorité partout sur la chaussée.",
+    "act": "go",
+    "kmh": 20,
+    "did": "Vous avez appliqué les règles de la zone de rencontre : en zone 30, la limite est de 30 km/h et les piétons n’ont pas de priorité générale hors des passages."
+   }
   ],
   "ok": 0,
   "should": "Rouler **au plus à 30 km/h** et appliquer la priorité de droite.",
   "why": "Dans une zone 30, la vitesse maximale est de 30 km/h dans toute la zone, jusqu’au panneau de fin. Aux carrefours sans autre signalisation, la priorité de droite s’applique généralement. Les piétons n’y ont pas de priorité générale hors des passages ; c’est la zone de rencontre, limitée à 20 km/h, qui leur donne la priorité sur la chaussée.",
   "memo": "Zone 30 : **30 au plus**, priorité de droite."
+ },
+ {
+  "id": "s14-feux",
+  "rule": "O14/feux",
+  "title": "Le feu passe au jaune",
+  "scene": "Le feu passe au **jaune**. Vous roulez à 30 km/h, encore à une vingtaine de mètres de la ligne d’arrêt ; personne ne vous suit de près.",
+  "props": [
+   {
+    "kind": "light",
+    "x": 3.6,
+    "dz": 4,
+    "state": "amber"
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "white",
+    "x": 0.1,
+    "x2": 3.1,
+    "from": 5,
+    "to": 5,
+    "width": 0.5
+   }
+  ],
+  "choices": [
+   {
+    "t": "J’accélère pour passer avant le rouge.",
+    "act": "go",
+    "kmh": 45,
+    "did": "Vous avez accéléré au feu jaune alors que vous pouviez encore vous arrêter sans danger."
+   },
+   {
+    "t": "Je m’arrête à la ligne d’arrêt.",
+    "act": "stop",
+    "stopDz": 7.5,
+    "then": "wait"
+   },
+   {
+    "t": "Je continue à la même vitesse : le jaune n’est pas encore le rouge.",
+    "act": "go",
+    "did": "Vous avez franchi la ligne au jaune alors que l’arrêt était possible sans danger."
+   }
+  ],
+  "ok": 1,
+  "should": "S’arrêter à la ligne d’arrêt : le jaune oblige à s’arrêter tant que c’est possible sans danger.",
+  "why": "Le jaune vous oblige à vous arrêter chaque fois que vous pouvez encore le faire sans danger ; ce n’est pas une invitation à accélérer. Vous ne continuez que si vous êtes déjà si près que freiner serait dangereux.",
+  "memo": "Jaune : je **m’arrête** si je le peux sans danger."
+ },
+ {
+  "id": "s14-clignotants",
+  "rule": "O14/clignotants",
+  "title": "Clignotant et voie déjà occupée",
+  "scene": "Deux voies vont dans votre sens. Vous voulez passer dans la **voie de droite**. Une voiture y roule déjà, **à votre hauteur**, un peu devant vous.",
+  "props": [
+   {
+    "kind": "line",
+    "style": "dashed",
+    "color": "white",
+    "x": 3.1,
+    "from": 38,
+    "to": -38
+   },
+   {
+    "kind": "vehicle",
+    "body": "car",
+    "paint": 2,
+    "x": 4.05,
+    "dz": 14,
+    "toX": 4.05,
+    "toDz": -38,
+    "kmh": 50,
+    "start": "resolve"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je mets le clignotant droit et je me déplace aussitôt : il annonce ma manœuvre.",
+    "act": "detour",
+    "lat": 2.5,
+    "kmh": 12,
+    "blink": "R",
+    "did": "Vous vous êtes déplacé vers la droite en comptant sur votre clignotant, alors qu’une voiture roulait déjà dans cette voie."
+   },
+   {
+    "t": "Je me déplace sans clignoter : j’ai regardé, cela suffit.",
+    "act": "detour",
+    "lat": 2.5,
+    "kmh": 12,
+    "did": "Vous vous êtes déplacé sans annoncer votre intention, à côté d’une voiture déjà engagée dans la voie de droite."
+   },
+   {
+    "t": "Je mets le clignotant droit, je laisse passer cette voiture et je contrôle l’angle mort avant de bouger.",
+    "act": "go",
+    "kmh": 15,
+    "blink": "R"
+   }
+  ],
+  "ok": 2,
+  "should": "Annoncer avec le clignotant, **laisser passer** la voiture déjà dans la voie, puis contrôler l’angle mort avant de se déplacer.",
+  "why": "Le clignotant s’utilise assez tôt avant tout déplacement sur le côté, mais il **informe** sans donner **aucun droit de passage** : si une voiture roule déjà dans la voie où vous voulez aller, c’est elle qui garde la priorité. Il ne remplace jamais le coup d’œil dans les rétroviseurs ni la vérification de l’angle mort.",
+  "memo": "J’annonce, puis je vérifie, et seulement ensuite **je bouge**."
+ },
+ {
+  "id": "s14-voies",
+  "rule": "O14/voies",
+  "title": "Une voie qui se termine",
+  "scene": "Deux voies vont dans votre sens. Plus loin, la **voie de droite se termine** : balises et barrière. Une voiture y roule, un peu devant vous ; elle va devoir rejoindre votre voie près du rétrécissement.",
+  "endDz": -30,
+  "props": [
+   {
+    "kind": "line",
+    "style": "dashed",
+    "color": "white",
+    "x": 3.1,
+    "from": 38,
+    "to": -20
+   },
+   {
+    "kind": "cones",
+    "x": 4.7,
+    "from": 0,
+    "to": -20,
+    "step": 4
+   },
+   {
+    "kind": "barrier",
+    "x": 4.1,
+    "dz": -24,
+    "w": 1.8
+   },
+   {
+    "kind": "vehicle",
+    "body": "car",
+    "paint": 4,
+    "x": 4.05,
+    "dz": 12,
+    "toX": 1.5,
+    "toDz": -38,
+    "kmh": 20,
+    "start": "resolve"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je ralentis et je la laisse s’insérer devant moi, près du rétrécissement.",
+    "act": "go",
+    "kmh": 12
+   },
+   {
+    "t": "Je colle la voiture de devant : elle n’avait qu’à se rabattre plus tôt.",
+    "act": "go",
+    "kmh": 22,
+    "stopDz": 5,
+    "did": "Vous avez refusé l’alternance de la fermeture éclair et gêné une voiture qui roulait normalement jusqu’au rétrécissement."
+   },
+   {
+    "t": "J’accélère pour passer avant elle au rétrécissement.",
+    "act": "go",
+    "kmh": 40,
+    "stopDz": 6,
+    "did": "Vous avez accéléré brusquement pour gagner une place au lieu de laisser l’alternance se faire."
+   }
+  ],
+  "ok": 0,
+  "should": "Appliquer la **fermeture éclair** : laisser la voiture de droite s’insérer devant soi, près du rétrécissement.",
+  "why": "Quand une voie se termine, chaque file roule jusqu’à l’endroit où la voie se rétrécit, puis les voitures s’insèrent en alternance, une de chaque côté. Il faut le faire près du rétrécissement, sans accélérer brusquement pour gagner une place. Empêcher l’autre file d’avancer jusqu’au bout crée des à-coups et des bouchons.",
+  "memo": "Fermeture éclair : **une voiture sur deux**, au rétrécissement."
+ },
+ {
+  "id": "s14-preselection",
+  "rule": "O14/preselection",
+  "title": "Trop tard pour changer de voie",
+  "scene": "Vous vouliez tourner à droite, mais vous êtes dans la voie marquée d’une flèche **tout droit**. Une **ligne continue** sépare déjà votre voie de la voie de droite.",
+  "props": [
+   {
+    "kind": "line",
+    "style": "dashed",
+    "color": "white",
+    "x": 3.1,
+    "from": 38,
+    "to": 26
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "white",
+    "x": 3.1,
+    "from": 26,
+    "to": -34
+   },
+   {
+    "kind": "arrow",
+    "x": 1.5,
+    "dz": 6,
+    "dir": "straight"
+   },
+   {
+    "kind": "arrow",
+    "x": 4.05,
+    "dz": 6,
+    "dir": "right"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je me décale doucement à cheval sur la ligne pour rejoindre la voie de droite.",
+    "act": "detour",
+    "lat": 1.6,
+    "kmh": 15,
+    "blink": "R",
+    "did": "Vous avez chevauché une ligne de sécurité : la chevaucher est interdit, comme la franchir."
+   },
+   {
+    "t": "Je continue tout droit et je corrige mon itinéraire plus loin.",
+    "act": "go"
+   },
+   {
+    "t": "Je mets le clignotant et je franchis la ligne : la voie de droite est vide.",
+    "act": "detour",
+    "lat": 2.5,
+    "kmh": 15,
+    "blink": "R",
+    "did": "Vous avez franchi une ligne de sécurité pour corriger votre choix de voie au dernier moment."
+   }
+  ],
+  "ok": 1,
+  "should": "Suivre la direction imposée par sa voie et **corriger plus loin**.",
+  "why": "Près du carrefour, les voies sont séparées par une ligne de sécurité qu’il est interdit de franchir ou de chevaucher : une fois cette ligne commencée, il est trop tard pour corriger. Si vous êtes dans la mauvaise voie, suivez la direction qu’elle impose et corrigez votre itinéraire plus loin ; couper au dernier moment est bien plus dangereux qu’un petit détour.",
+  "memo": "Mauvaise voie : je la **suis**, je corrige plus loin."
+ },
+ {
+  "id": "s14-feux-pietons",
+  "rule": "O14/feux-pietons",
+  "title": "Le vert revient, la traversée continue",
+  "scene": "Vous attendiez au rouge devant un passage équipé d’un bouton-poussoir. Votre feu passe au **vert**, mais la dame âgée qui avait demandé sa phase est **encore au milieu de votre voie**.",
+  "props": [
+   {
+    "kind": "light",
+    "x": 3.6,
+    "dz": 11,
+    "state": "green"
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "white",
+    "x": 0.1,
+    "x2": 3.1,
+    "from": 12,
+    "to": 12,
+    "width": 0.5
+   },
+   {
+    "kind": "crosswalk",
+    "dz": 7,
+    "from": -4.6,
+    "to": 4.6
+   },
+   {
+    "kind": "ped",
+    "x": 1.2,
+    "dz": 7,
+    "toX": -6.0,
+    "toDz": 7,
+    "kmh": 2.5,
+    "start": "good"
+   }
+  ],
+  "choices": [
+   {
+    "t": "J’attends qu’elle ait fini de traverser avant d’avancer.",
+    "act": "stop",
+    "stopDz": 14.5
+   },
+   {
+    "t": "Je démarre : mon feu est vert.",
+    "act": "go",
+    "stopDz": 12.5,
+    "did": "Vous avez démarré au vert vers une piétonne qui n’avait pas fini de traverser."
+   },
+   {
+    "t": "Je la contourne par la gauche : l’autre moitié du passage est libre.",
+    "act": "detour",
+    "lat": -2.1,
+    "stopDz": 12.5,
+    "did": "Vous avez contourné une piétonne retardataire en vous dirigeant vers la partie du passage qu’elle allait traverser."
+   }
+  ],
+  "ok": 0,
+  "should": "Rester arrêté jusqu’à ce que la piétonne ait **fini de traverser**.",
+  "why": "Lorsque votre feu redevient vert, la traversée n’est pas toujours terminée : une personne âgée, un enfant ou une personne qui court au dernier moment peut encore être sur le passage. Le vert vous autorise à partir, mais **jamais** à mettre en danger un piéton retardataire : laissez-le finir sa traversée avant d’avancer.",
+  "memo": "Vert : je **contrôle** le passage avant de partir."
  }
 ]

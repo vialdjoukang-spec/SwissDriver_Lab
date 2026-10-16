@@ -9,6 +9,7 @@ import evidence  # noqa: E402
 
 HTML = b'<!doctype html><title>build</title>'
 SHA = hashlib.sha256(HTML).hexdigest()
+LESSONS = evidence.road_lesson_branches()
 
 
 def good_reports():
@@ -21,9 +22,9 @@ def good_reports():
         'decision-paths-results.json': {'branches': branches, 'errors': [], 'fatal': None, 'scope': 's', 'htmlSha256': SHA,
                                         'expectedBranches': 75, 'attemptedBranches': 75, 'passedBranches': 75,
                                         'allPassed': True, 'fixedFrameMs': 50},
-        'road-lessons-results.json': {'branches': [{'scenarioId': f'l{i // 3}', 'choiceIndex': i % 3, 'passed': True} for i in range(42)],
+        'road-lessons-results.json': {'branches': [{'scenarioId': f'l{i // 3}', 'choiceIndex': i % 3, 'passed': True} for i in range(LESSONS)],
                                       'errors': [], 'fatal': None, 'scope': 's', 'htmlSha256': SHA,
-                                      'expectedBranches': 42, 'attemptedBranches': 42, 'passedBranches': 42,
+                                      'expectedBranches': LESSONS, 'attemptedBranches': LESSONS, 'passedBranches': LESSONS,
                                       'allPassed': True, 'fixedFrameMs': 50},
     }
 

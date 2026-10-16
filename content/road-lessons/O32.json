@@ -1,0 +1,367 @@
+[
+ {
+  "id": "s32-chaussee",
+  "rule": "O32/chaussee",
+  "title": "Chaussée glissante annoncée",
+  "scene": "Le panneau **chaussée glissante** annonce une zone où l’adhérence est réduite. Une voiture vous précède.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "danger-glissant",
+    "x": 5.6,
+    "dz": 8
+   },
+   {
+    "kind": "leadCar",
+    "x": 1.5,
+    "dz": -6,
+    "kmh": 20,
+    "paint": 2
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je ralentis dès maintenant et j’allonge la distance avec la voiture devant.",
+    "act": "go",
+    "kmh": 12
+   },
+   {
+    "t": "Je garde mon allure et ma distance : je ralentirai si je sens que ça glisse.",
+    "act": "go",
+    "kmh": 30,
+    "did": "Vous êtes arrivé sur la zone glissante à la même allure et à la même distance."
+   },
+   {
+    "t": "Je garde mon allure, puis je freine fort une fois sur la zone.",
+    "act": "stop",
+    "kmh": 30,
+    "stopDz": -2,
+    "did": "Vous avez attendu d’être sur la zone glissante pour freiner brusquement."
+   }
+  ],
+  "ok": 0,
+  "should": "Ralentir **avant** la zone glissante, allonger la distance et agir doucement.",
+  "why": "Une chaussée glissante exige une vitesse plus basse, une distance plus grande et des gestes plus progressifs. On ralentit avant d’arriver sur la zone glissante, pas dessus : un mouvement brusque du frein demande trop d’adhérence d’un coup, et les pneus décrochent.",
+  "memo": "Route glissante : **ralentir avant**, distance, douceur."
+ },
+ {
+  "id": "s32-gestion",
+  "rule": "O32/gestion",
+  "title": "Croix rouge sur la bande de droite",
+  "scene": "Après l’entrée d’**autoroute**, un portique est placé au-dessus des voies : **flèche verte** au-dessus de votre voie, **croix rouge** au-dessus de la bande d’arrêt d’urgence, à droite. La bande est vide.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "ind-autoroute",
+    "x": 5.6,
+    "dz": 12
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "white",
+    "x": 3.1,
+    "from": 36,
+    "to": -36
+   },
+   {
+    "kind": "overhead",
+    "dz": 2,
+    "x": 2.6,
+    "width": 6.2,
+    "lanes": [
+     {
+      "x": 1.5,
+      "signal": "green"
+     },
+     {
+      "x": 4.0,
+      "signal": "cross"
+     }
+    ]
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je roule sur la bande de droite : elle est libre.",
+    "act": "detour",
+    "lat": 2.5,
+    "kmh": 25,
+    "blink": "R",
+    "did": "Vous avez roulé sur une bande d’arrêt d’urgence fermée par une croix rouge."
+   },
+   {
+    "t": "Je m’arrête : une croix rouge est allumée sur le portique.",
+    "act": "stop",
+    "did": "Vous vous êtes arrêté alors que la croix rouge ne visait que la bande de droite ; votre voie était ouverte."
+   },
+   {
+    "t": "Je reste dans ma voie, sous la flèche verte.",
+    "act": "go"
+   }
+  ],
+  "ok": 2,
+  "should": "Rester dans sa voie, **ouverte** par la flèche verte, sans entrer sur la bande marquée d’une **croix rouge**.",
+  "why": "Chaque signal placé au-dessus d’une voie s’applique d’abord à cette voie. Une flèche verte indique que la voie est ouverte ; une croix rouge signifie que la voie est fermée : vous ne devez pas y entrer. La bande d’arrêt d’urgence ne devient une voie de circulation que lorsqu’une flèche verte l’ouvre.",
+  "memo": "Je lis le signal **au-dessus de ma voie**."
+ },
+ {
+  "id": "s32-situations-exceptionnelles",
+  "rule": "O32/situations-exceptionnelles",
+  "title": "Feu de chantier au rouge",
+  "scene": "Un **chantier** ferme votre voie ; la circulation passe en alternance sur l’autre voie. Un **feu de chantier** provisoire est au **rouge**. Personne ne vient en face.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "danger-travaux",
+    "x": 5.6,
+    "dz": 12
+   },
+   {
+    "kind": "light",
+    "x": 3.6,
+    "dz": 4,
+    "state": "red"
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "white",
+    "x": 0.1,
+    "from": 5,
+    "to": 5,
+    "x2": 3.1,
+    "width": 0.5
+   },
+   {
+    "kind": "barrier",
+    "x": 1.5,
+    "dz": -12,
+    "w": 2.4
+   },
+   {
+    "kind": "cones",
+    "x": 1.5,
+    "from": -16,
+    "to": -34,
+    "step": 6
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je contourne le chantier par la voie de gauche : personne ne vient en face.",
+    "act": "detour",
+    "lat": -3,
+    "kmh": 20,
+    "did": "Vous vous êtes engagé dans la circulation alternée malgré le feu rouge du chantier."
+   },
+   {
+    "t": "Je m’arrête à la ligne et j’attends le vert.",
+    "act": "stop",
+    "stopDz": 7.5,
+    "then": "wait"
+   },
+   {
+    "t": "Je passe au pas : ce n’est qu’un feu provisoire.",
+    "act": "go",
+    "kmh": 10,
+    "stopDz": -6,
+    "did": "Vous avez franchi le feu rouge d’un chantier en le prenant pour une simple indication."
+   }
+  ],
+  "ok": 1,
+  "should": "S’arrêter à la ligne et attendre le **vert** du feu de chantier.",
+  "why": "La signalisation temporaire s’applique comme les signaux permanents. Un feu de chantier qui règle une circulation alternée doit être respecté comme tout autre feu, même si personne ne semble venir en face.",
+  "memo": "Feu de chantier = **feu** à respecter."
+ },
+ {
+  "id": "s32-chantiers",
+  "rule": "O32/chantiers",
+  "title": "Une voie supprimée plus loin",
+  "scene": "Chantier : la **voie de droite** est supprimée plus loin, par des cônes et une barrière. Une voiture y roule ; elle devra s’insérer dans votre voie au point de fermeture.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "danger-travaux",
+    "x": 5.6,
+    "dz": 14
+   },
+   {
+    "kind": "line",
+    "style": "dashed",
+    "color": "white",
+    "x": 3.1,
+    "from": 36,
+    "to": -20
+   },
+   {
+    "kind": "cones",
+    "x": 4.2,
+    "from": -22,
+    "to": -30,
+    "step": 4
+   },
+   {
+    "kind": "barrier",
+    "x": 4.2,
+    "dz": -34,
+    "w": 1.6
+   },
+   {
+    "kind": "vehicle",
+    "body": "car",
+    "paint": 5,
+    "x": 4.0,
+    "dz": -10,
+    "toX": 1.5,
+    "toDz": -38,
+    "kmh": 20,
+    "start": "resolve"
+   }
+  ],
+  "endDz": -24,
+  "choices": [
+   {
+    "t": "J’accélère pour passer avant elle : c’est ma voie qui continue.",
+    "act": "go",
+    "kmh": 40,
+    "stopDz": -6,
+    "did": "Vous avez accéléré pour fermer l’espace à la voiture qui devait s’insérer, et vous avez dû freiner brusquement."
+   },
+   {
+    "t": "Je m’arrête tout de suite pour laisser passer toute la file de droite.",
+    "act": "stop",
+    "stopDz": 12,
+    "did": "Vous vous êtes arrêté sans nécessité à l’entrée du chantier, au lieu de rouler à vitesse constante."
+   },
+   {
+    "t": "Je garde une allure régulière et je la laisse s’insérer devant moi au point de fermeture.",
+    "act": "go",
+    "kmh": 12
+   }
+  ],
+  "ok": 2,
+  "should": "Rouler à vitesse **constante** et laisser entrer, **en alternance**, la voiture de la voie supprimée.",
+  "why": "Dans un chantier, on roule à vitesse constante, sans accélérer ni freiner sans raison. Si une voie est fermée plus loin, on utilise les deux voies jusqu’au point où l’une disparaît, puis on applique la fermeture éclair : les véhicules s’insèrent en alternance, un de chaque voie.",
+  "memo": "Point de fermeture : **un sur deux**."
+ },
+ {
+  "id": "s32-bouchons",
+  "rule": "O32/bouchons",
+  "title": "La file bloque après le passage",
+  "scene": "Bouchon : une **file de voitures** immobiles commence juste après un **passage pour piétons**. Il ne reste pas la place de votre voiture entre les bandes et la dernière voiture.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "ind-pietons",
+    "x": 5.6,
+    "dz": 1,
+    "height": 1.9
+   },
+   {
+    "kind": "crosswalk",
+    "dz": -2,
+    "from": -4.6,
+    "to": 4.6
+   },
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -8,
+    "paint": 1
+   },
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -14,
+    "paint": 4
+   },
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -20,
+    "paint": 6
+   },
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -26,
+    "paint": 2
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je m’arrête avant le passage pour piétons et j’attends que la file avance.",
+    "act": "stop",
+    "stopDz": 4.5,
+    "then": "wait"
+   },
+   {
+    "t": "Je m’avance jusqu’à la voiture de devant : la file va repartir.",
+    "act": "stop",
+    "stopDz": -0.5,
+    "did": "Vous vous êtes arrêté sur le passage pour piétons."
+   },
+   {
+    "t": "Je change de voie pour remonter la file par la gauche.",
+    "act": "overtake",
+    "did": "Vous avez quitté votre voie dans un bouchon pour remonter la file."
+   }
+  ],
+  "ok": 0,
+  "should": "S’arrêter **avant** le passage pour piétons et rester sur sa voie.",
+  "why": "Dans un bouchon, on ne s’arrête jamais au milieu d’une intersection ni sur un passage pour piétons. On évite aussi les changements de voie inutiles, qui ne font gagner presque rien et provoquent des accrochages.",
+  "memo": "Bouchon : jamais **sur** le passage."
+ },
+ {
+  "id": "s32-eco",
+  "rule": "O32/eco",
+  "title": "Un feu rouge au bout de la rue",
+  "scene": "Au bout de la rue, vous voyez déjà un **feu rouge**.",
+  "props": [
+   {
+    "kind": "light",
+    "x": 3.6,
+    "dz": -16,
+    "state": "red"
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "white",
+    "x": 0.1,
+    "from": -15,
+    "to": -15,
+    "x2": 3.1,
+    "width": 0.5
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je garde mon allure et je freine au dernier moment.",
+    "act": "stop",
+    "kmh": 35,
+    "stopDz": -12.5,
+    "did": "Vous avez gardé votre allure puis freiné tard : le coup de frein gaspille l’énergie dépensée pour prendre de la vitesse."
+   },
+   {
+    "t": "Je lève tôt le pied et je laisse la voiture ralentir jusqu’à la ligne.",
+    "act": "stop",
+    "kmh": 15,
+    "stopDz": -12.5,
+    "then": "wait"
+   },
+   {
+    "t": "J’accélère pour arriver plus vite à la ligne.",
+    "act": "stop",
+    "kmh": 45,
+    "stopDz": -12.5,
+    "did": "Vous avez accéléré vers un feu rouge, puis freiné : accélération et freinage inutiles."
+   }
+  ],
+  "ok": 1,
+  "should": "Lever **tôt** le pied et laisser la voiture ralentir d’elle-même jusqu’à la ligne.",
+  "why": "Une voiture consomme surtout lorsqu’elle accélère, et chaque coup de frein gaspille l’énergie dépensée pour prendre de la vitesse. En regardant loin, on voit venir le ralentissement, on lève tôt le pied et on laisse la voiture ralentir d’elle-même, sans jamais toucher à la sécurité.",
+  "memo": "Feu rouge au loin : **lever le pied** tôt."
+ }
+]

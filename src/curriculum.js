@@ -8,7 +8,7 @@
   const QUESTION_FIELDS=['id','chapter','section','stem','options','answers','truth','why'];
   const LESSON_FIELDS=['id','rule','title','scene','props','choices','ok','should','why','memo'];
   const LESSON_ACTS=['go','stop','park','detour','overtake','honk'];
-  const LESSON_PROPS=['sign','line','crosswalk','bay','cones','barrier','island','car','ped','bike','leadCar','symbol'];
+  const LESSON_PROPS=['sign','line','crosswalk','bay','cones','barrier','island','car','ped','bike','leadCar','symbol','vehicle','light','overhead','arrow','agent','rail'];
   // A simplified road scene: real objects, three decisions, one right answer and a consequence for each wrong one.
   function checkLesson(l,chapters){
     need(l,LESSON_FIELDS,'scène '+l.id);

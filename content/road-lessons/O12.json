@@ -84,8 +84,8 @@
     "style": "solid",
     "color": "white",
     "x": 3.1,
-    "from": 40,
-    "to": -40
+    "from": 38,
+    "to": -38
    }
   ],
   "choices": [
@@ -161,8 +161,8 @@
     "style": "solid",
     "color": "white",
     "x": 3.1,
-    "from": 40,
-    "to": -40
+    "from": 38,
+    "to": -38
    },
    {
     "kind": "line",
@@ -208,8 +208,8 @@
    {
     "t": "Je suis l’ancienne ligne blanche : elle est permanente.",
     "act": "go",
-    "stopDz": 1,
-    "did": "Vous avez suivi l’ancienne ligne blanche jusqu’aux barrières du chantier."
+    "stopDz": 15,
+    "did": "Vous avez suivi l’ancienne ligne blanche jusqu’aux cônes qui ferment la voie."
    },
    {
     "t": "Je suis le tracé jaune-orange en ralentissant.",
@@ -219,7 +219,8 @@
    {
     "t": "Je m’arrête et j’attends la fin des travaux.",
     "act": "stop",
-    "did": "Vous vous êtes arrêté devant un tracé provisoire ouvert à la circulation."
+    "did": "Vous vous êtes arrêté devant un tracé provisoire ouvert à la circulation.",
+    "stopDz": 15
    }
   ],
   "ok": 1,

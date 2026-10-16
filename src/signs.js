@@ -45,6 +45,11 @@
     'interdit-camions':ring(`<g fill="${INK}"><rect x="26" y="38" width="30" height="22" rx="2"/><path d="M58 44 H68 L76 52 V60 H58 Z"/><circle cx="36" cy="64" r="5"/><circle cx="66" cy="64" r="5"/></g>`),
     'poids-max':ring(`<text x="50" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="25" fill="${INK}">3,5 t</text>`),
     'evitement':square(`<path d="M40 92 V8 M60 92 V64 Q60 58 70 56 V44 Q60 42 60 36 V8" stroke="#fff" stroke-width="6" fill="none"/><rect x="64" y="45" width="10" height="10" rx="2" fill="#fff"/>`),
+    'croix-andre':`<g transform="rotate(35 50 50)"><rect x="8" y="42" width="84" height="16" fill="#fff" stroke="${RED}" stroke-width="4"/></g><g transform="rotate(-35 50 50)"><rect x="8" y="42" width="84" height="16" fill="#fff" stroke="${RED}" stroke-width="4"/></g>`,
+    'vitesse-30':ring(`<text x="50" y="63" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="36" fill="${INK}">30</text>`),
+    'vitesse-80':ring(`<text x="50" y="63" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="36" fill="${INK}">80</text>`),
+    'vitesse-120':ring(`<text x="50" y="61" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="30" fill="${INK}">120</text>`),
+    'tunnel':square(`<path d="M22 86 V54 Q22 26 50 26 Q78 26 78 54 V86 Z" fill="#fff"/><path d="M34 86 V58 Q34 40 50 40 Q66 40 66 58 V86 Z" fill="${INK}"/>`),
     'parking-disque':square(`<text x="50" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="54" fill="#fff">P</text><rect x="30" y="66" width="40" height="22" rx="3" fill="#fff"/><circle cx="50" cy="77" r="8" fill="${BLUE}"/>`),
   };
   const drawing=id=>(byId[id]&&byId[id].svg)||EXTRA[id]||null;

@@ -27,6 +27,22 @@ def save():
  'errors':errors,'fatal':fatal,'branches':rows}
  (OUT/'road-lessons-results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
  return result
+# Half sizes (x, z) of footprints; the car heads along -z within a few degrees.
+SIZE={'car':(.9,2.3),'van':(1.15,2.6),'truck':(1.15,4.5),'ambulance':(1.1,3.2),'amb':(1.1,3.2),'ped':(.3,.3),'child':(.25,.25),'bike':(.35,.9)}
+def obstacles(lesson):
+ L=lesson['z'];boxes=[]
+ for p in lesson['props']:
+  k=p['kind']
+  if k=='barrier':boxes.append(('barrier',p['x'],L+p['dz'],p.get('w',2.4)/2,.15))
+  elif k=='island':boxes.append(('island',p['x'],L+(p['from']+p['to'])/2,p.get('w',1.2)/2,abs(p['from']-p['to'])/2))
+  elif k=='car':hx,hz=SIZE[p.get('body','car')];boxes.append((p.get('body','car'),p['x'],L+p['dz'],hx,hz))
+  elif k=='cones':
+   d=p['from']
+   while d>=p['to']:boxes.append(('cone',p['x'],L+d,.2,.2));d-=p.get('step',4)
+ return boxes
+def overlap(car,x,z,hx,hz,margin=.05):
+ cx,cz=SIZE['car']
+ return abs(car['x']-x)<cx+hx-margin and abs(car['z']-z)<cz+hz-margin
 PROGRESS='({xp:__G.ST.xp,errors:__G.ST.errors,idx:__G.ST.idx,done:SwissDriverRoadLessons.results().done})'
 with sync_playwright() as pw:
  options={'headless':True,'args':['--no-sandbox','--enable-unsafe-swiftshader']}
@@ -51,7 +67,7 @@ with sync_playwright() as pw:
    inspected=page.evaluate('id=>SwissDriverRoadLessons.test.inspect(id)',lesson['id'])
    assert sorted(set(inspected['signs']))==wanted and inspected['objects']>0,('Scene objects',lesson['id'],inspected)
    for choice in [i for i in range(3) if i!=lesson['ok']]+[lesson['ok']]:
-    good=choice==lesson['ok'];L=lesson['z']
+    good=choice==lesson['ok'];L=lesson['z'];fixed=obstacles(lesson)
     row={'scenarioId':lesson['id'],'ruleId':lesson['rule'],'choiceIndex':choice,'expectedCorrect':good,'passed':False}
     try:
      page.evaluate('window.__lessonEvents=[]')
@@ -68,6 +84,12 @@ with sync_playwright() as pw:
      for _ in range(240):
       page.clock.run_for(250);s=page.evaluate('SwissDriverRoadLessons.test.sample()');trail.append(s)
       car=s['car']
+      for name,x,z,hx,hz in fixed:
+       if overlap(car,x,z,hx,hz):raise AssertionError(f'Car crossed a fixed object ({name})')
+      if good:
+       for a in s['actors']:
+        hx,hz=SIZE.get(a.get('body') or a['kind'],SIZE['car'])
+        if overlap(car,a['x'],a['z'],hx,hz):raise AssertionError(f"Car touched a moving road user ({a.get('body') or a['kind']})")
       if not all(isinstance(v,(int,float)) for v in (car['x'],car['z'],car['v'])):raise AssertionError('Non-finite car state')
       if good and lesson['id']=='s14-pietons':
        for a in s['actors']:

@@ -30,7 +30,7 @@ class RoadLessonTests(unittest.TestCase):
         self.assertEqual(len({l['id'] for l in lessons}), len(lessons))
         for l in lessons:
             self.assertIn(l['rule'], self.data['sections'], l['id'])
-            self.assertIn(l['rule'].split('/')[0], ('O12', 'O13', 'O14'), l['id'])
+            self.assertNotEqual(l['rule'].split('/')[0], 'O11', l['id'])
 
     def test_02_signs_and_markings_are_covered(self):
         rules = {l['rule'] for l in self.data['lessons']}
