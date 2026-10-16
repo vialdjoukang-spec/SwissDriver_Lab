@@ -40,6 +40,23 @@
     {id:'ind-zone30',family:'prescription',name:'Zone 30',meaning:'Début d’une zone où la vitesse est limitée à 30 km/h',rule:'O14/zones',svg:`<rect x="10" y="4" width="80" height="92" rx="6" fill="#fff" stroke="${INK}" stroke-width="2"/><circle cx="50" cy="40" r="26" fill="${RED}"/><circle cx="50" cy="40" r="19" fill="#fff"/><text x="50" y="49" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="24" fill="${INK}">30</text><text x="50" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="${INK}">ZONE</text>`},
     {id:'ind-autoroute',family:'indication',name:'Autoroute',meaning:'Début de l’autoroute et de ses règles particulières',rule:'O31/autoroute',svg:square(`<path d="M30 86 L44 30 M70 86 L56 30 M50 86 V72 M50 62 V50 M50 40 V32" stroke="#fff" stroke-width="7" fill="none"/><path d="M30 26 H70" stroke="#fff" stroke-width="6"/>`,GREEN)},
   ];
+  // Drawings used only by the road scenes (not part of the recognition exercise).
+  const EXTRA={
+    'interdit-camions':ring(`<g fill="${INK}"><rect x="26" y="38" width="30" height="22" rx="2"/><path d="M58 44 H68 L76 52 V60 H58 Z"/><circle cx="36" cy="64" r="5"/><circle cx="66" cy="64" r="5"/></g>`),
+    'poids-max':ring(`<text x="50" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="25" fill="${INK}">3,5 t</text>`),
+    'evitement':square(`<path d="M40 92 V8 M60 92 V64 Q60 58 70 56 V44 Q60 42 60 36 V8" stroke="#fff" stroke-width="6" fill="none"/><rect x="64" y="45" width="10" height="10" rx="2" fill="#fff"/>`),
+    'croix-andre':`<g transform="rotate(35 50 50)"><rect x="8" y="42" width="84" height="16" fill="#fff" stroke="${RED}" stroke-width="4"/></g><g transform="rotate(-35 50 50)"><rect x="8" y="42" width="84" height="16" fill="#fff" stroke="${RED}" stroke-width="4"/></g>`,
+    'vitesse-30':ring(`<text x="50" y="63" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="36" fill="${INK}">30</text>`),
+    'vitesse-80':ring(`<text x="50" y="63" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="36" fill="${INK}">80</text>`),
+    'vitesse-120':ring(`<text x="50" y="61" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="30" fill="${INK}">120</text>`),
+    'tunnel':square(`<path d="M22 86 V54 Q22 26 50 26 Q78 26 78 54 V86 Z" fill="#fff"/><path d="M34 86 V58 Q34 40 50 40 Q66 40 66 58 V86 Z" fill="${INK}"/>`),
+    'hauteur-max':ring(`<path d="M42 20 H58 L50 30 Z M42 80 H58 L50 70 Z" fill="${INK}"/><text x="50" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="22" fill="${INK}">1,9 m</text>`),
+    'direction-verte':`<rect x="2" y="22" width="96" height="56" rx="5" fill="${GREEN}" stroke="#fff" stroke-width="3"/><path d="M18 64 V40 M10 48 L18 38 L26 48" stroke="#fff" stroke-width="5" fill="none"/><text x="62" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="16" fill="#fff">Autoroute</text>`,
+    'direction-bleue':`<rect x="2" y="22" width="96" height="56" rx="5" fill="${BLUE}" stroke="#fff" stroke-width="3"/><text x="42" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="#fff">Lausanne</text><path d="M78 50 H92 M86 43 L94 50 L86 57" stroke="#fff" stroke-width="5" fill="none"/>`,
+    'direction-blanche':`<rect x="2" y="22" width="96" height="56" rx="5" fill="#fff" stroke="${INK}" stroke-width="3"/><text x="42" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="17" fill="${INK}">Gare</text><path d="M78 50 H92 M86 43 L94 50 L86 57" stroke="${INK}" stroke-width="5" fill="none"/>`,
+    'parking-disque':square(`<text x="50" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="54" fill="#fff">P</text><rect x="30" y="66" width="40" height="22" rx="3" fill="#fff"/><circle cx="50" cy="77" r="8" fill="${BLUE}"/>`),
+  };
+  const drawing=id=>(byId[id]&&byId[id].svg)||EXTRA[id]||null;
   const FAMILIES={danger:'Signal de danger : triangle à bord rouge',prescription:'Signal de prescription : disque (interdiction à bord rouge)',obligation:'Signal d’obligation : disque bleu',priorite:'Signal de priorité : forme propre (octogone, triangle renversé, losange)',indication:'Signal d’indication : rectangle ou carré'};
   const byId=Object.fromEntries(SIGNS.map(s=>[s.id,s]));
   const icon=(id,size=96)=>`<svg viewBox="0 0 100 100" width="${size}" height="${size}" role="img" aria-label="${byId[id].name}">${byId[id].svg}</svg>`;
@@ -51,5 +68,5 @@
       `<path d="M250 170 L40 300 M390 170 L600 300" stroke="#e6e6e6" stroke-width="4"/>`+
       `<rect x="471" y="104" width="6" height="120" fill="#7c8a96"/><g transform="translate(424 20)">${icon(id,100)}</g></svg>`;
   }
-  return Object.freeze({SIGNS,FAMILIES,byId,icon,scene,version:'1.0.0'});
+  return Object.freeze({SIGNS,FAMILIES,byId,icon,scene,drawing,EXTRA,version:'1.1.0'});
 });

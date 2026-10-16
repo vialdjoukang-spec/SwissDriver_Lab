@@ -6,6 +6,19 @@
   const SECTION_FIELDS=['id','otitle','title','ogoal','question','parts','words','method','example','trap','remember','law'];
   const CHAPTER_FIELDS=['id','official','group','otitle','title','oscope','tagline','intro','keyIdea','memo','sections'];
   const QUESTION_FIELDS=['id','chapter','section','stem','options','answers','truth','why'];
+  const LESSON_FIELDS=['id','rule','title','scene','props','choices','ok','should','why','memo'];
+  const LESSON_ACTS=['go','stop','park','detour','overtake','honk'];
+  const LESSON_PROPS=['sign','line','crosswalk','bay','cones','barrier','island','car','ped','bike','leadCar','symbol','vehicle','light','overhead','arrow','agent','rail'];
+  // A simplified road scene: real objects, three decisions, one right answer and a consequence for each wrong one.
+  function checkLesson(l,chapters){
+    need(l,LESSON_FIELDS,'scène '+l.id);
+    const [cid,sid]=String(l.rule).split('/');const c=chapters.get(cid);
+    if(!c||!c.sections.some(s=>s.id===sid))fail('scène '+l.id+' sans sous-chapitre '+l.rule);
+    if(!Array.isArray(l.choices)||l.choices.length!==3||l.choices.some(ch=>!ch||!ch.t||!LESSON_ACTS.includes(ch.act)))fail('scène '+l.id+' sans 3 choix valides');
+    if(!Number.isInteger(l.ok)||l.ok<0||l.ok>2)fail('scène '+l.id+' sans bonne réponse');
+    if(l.choices.some((ch,i)=>i!==l.ok&&!ch.did))fail('scène '+l.id+' : conséquence manquante pour un mauvais choix');
+    if(!Array.isArray(l.props)||!l.props.length||l.props.some(p=>!p||!LESSON_PROPS.includes(p.kind)))fail('scène '+l.id+' aux objets invalides');
+  }
   function fail(message){throw new Error('Extension du programme invalide : '+message);}
   function need(object,fields,label){for(const f of fields)if(object[f]===undefined||object[f]===null||object[f]==='')fail(label+' sans champ '+f);}
   function checkQuestion(q){
@@ -47,6 +60,10 @@
       const c=chapters.get(q.chapter);if(!c||!c.sections.some(s=>s.id===q.section))fail('question '+q.id+' sans sous-chapitre '+q.chapter+'/'+q.section);
       out.questions.push(q);
     }
+    out.roadLessons=[];const lessonIds=new Set();
+    for(const l of ext.roadLessons||[]){
+      checkLesson(l,chapters);if(lessonIds.has(l.id))fail('scène dupliquée '+l.id);lessonIds.add(l.id);out.roadLessons.push(l);
+    }
     // A fourth, false proposition turns a 3-proposition question into a 4-proposition QCM.
     const byId=new Map(out.questions.map((q,i)=>[q.id,i]));
     for(const [id,extra] of Object.entries(ext.extraOptions||{})){
@@ -64,12 +81,13 @@
     return fromIndex(read('content/index.json'),read);
   }
   function fromIndex(index,read){
-    const ext={official:index.official,groupTitles:index.groupTitles,groupOrder:index.groupOrder,chapters:[],sections:[],questions:[],extraOptions:{}};
+    const ext={official:index.official,groupTitles:index.groupTitles,groupOrder:index.groupOrder,chapters:[],sections:[],questions:[],extraOptions:{},roadLessons:[]};
+    for(const file of index.roadLessons||[])ext.roadLessons.push(...read(file));
     for(const file of index.extraOptions||[])Object.assign(ext.extraOptions,read(file));
     for(const file of index.questions||[])ext.questions.push(...read(file));
     for(const file of index.chapters||[]){const v=read(file);ext.chapters.push(v.chapter);ext.questions.push(...(v.questions||[]));}
     for(const file of index.sections||[]){const v=read(file);ext.sections.push({chapterId:v.chapterId,after:v.after,section:v.section});ext.questions.push(...(v.questions||[]));}
     return ext;
   }
-  return Object.freeze({merge,loadExtension,fromIndex,version:'1.0.0'});
+  return Object.freeze({merge,loadExtension,fromIndex,version:'1.1.0'});
 });

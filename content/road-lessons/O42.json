@@ -1,0 +1,301 @@
+[
+ {
+  "id": "s42-ecole",
+  "rule": "O42/enfants",
+  "title": "Sortie d’école",
+  "scene": "Triangle **Enfants**, heure de sortie des classes. Des voitures sont garées à droite. Entre deux d’entre elles, un enfant a croisé votre regard ; un autre marche sur le trottoir.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "danger-enfants",
+    "x": 5.6,
+    "dz": 10
+   },
+   {
+    "kind": "car",
+    "x": 4.0,
+    "dz": 2.6,
+    "paint": 2
+   },
+   {
+    "kind": "car",
+    "x": 4.0,
+    "dz": -4.6,
+    "paint": 5
+   },
+   {
+    "kind": "car",
+    "x": 4.0,
+    "dz": -11,
+    "paint": 1
+   },
+   {
+    "kind": "ped",
+    "child": true,
+    "x": 5.6,
+    "dz": -1,
+    "toX": 5.6,
+    "toDz": -38,
+    "kmh": 3,
+    "start": "good"
+   },
+   {
+    "kind": "ped",
+    "child": true,
+    "x": 6.4,
+    "dz": 9,
+    "toX": 6.4,
+    "toDz": -38,
+    "kmh": 3,
+    "start": "always"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je garde mon allure : l’enfant m’a regardé, il va m’attendre.",
+    "act": "go",
+    "kmh": 40,
+    "did": "Vous avez gardé votre allure en vous fiant au regard de l’enfant."
+   },
+   {
+    "t": "Je ralentis nettement avant les voitures garées, le pied prêt à freiner.",
+    "act": "go",
+    "kmh": 15
+   },
+   {
+    "t": "Je klaxonne pour prévenir les enfants et je garde mon allure.",
+    "act": "honk",
+    "kmh": 40,
+    "did": "Vous avez klaxonné au lieu de ralentir : un enfant peut ne pas comprendre le signal ou réagir dans le mauvais sens."
+   }
+  ],
+  "ok": 1,
+  "should": "Ralentir **avant** l’endroit où un enfant peut surgir, le pied prêt à freiner.",
+  "why": "Un enfant que vous voyez en annonce souvent d’autres que vous ne voyez pas encore, et une voiture garée suffit à en cacher un entièrement. Croiser le regard d’un enfant ne garantit pas qu’il va vous attendre : il évalue mal la distance. Klaxonner ne remplace jamais la réduction de vitesse. Quand l’enfant sera visible, il sera trop tard pour commencer à freiner.",
+  "memo": "Avec un enfant, j’anticipe **avant** qu’il apparaisse."
+ },
+ {
+  "id": "s42-canne",
+  "rule": "O42/handicap",
+  "title": "Une canne blanche",
+  "scene": "Au bord du trottoir, devant le passage piéton, une personne munie d’une **canne blanche** attend pour traverser.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "ind-pietons",
+    "x": 5.6,
+    "dz": 1,
+    "height": 1.9
+   },
+   {
+    "kind": "crosswalk",
+    "dz": -2,
+    "from": -4.6,
+    "to": 4.6
+   },
+   {
+    "kind": "ped",
+    "x": 5.6,
+    "dz": -2,
+    "toX": -6.0,
+    "toDz": -2,
+    "kmh": 3,
+    "start": "good"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je klaxonne brièvement pour lui faire comprendre qu’elle peut passer.",
+    "act": "honk",
+    "did": "Vous avez klaxonné puis continué : pour une personne aveugle, un klaxon peut signifier un danger, il ne dit pas « passez »."
+   },
+   {
+    "t": "J’avance doucement vers le passage pour lui montrer que je ralentis.",
+    "act": "go",
+    "kmh": 6,
+    "stopDz": 3,
+    "did": "Vous avez avancé lentement vers le passage : elle entend le moteur et peut croire que vous repartez."
+   },
+   {
+    "t": "Je m’arrête nettement avant le passage et je reste immobile jusqu’à ce qu’elle ait traversé.",
+    "act": "stop",
+    "stopDz": 4.5
+   }
+  ],
+  "ok": 2,
+  "should": "S’arrêter **nettement**, rester immobile et attendre qu’elle soit entièrement sortie de votre chemin.",
+  "why": "Une canne blanche indique qu’une personne voit mal ou pas du tout. Avancer par petits à-coups est un signal ambigu : elle pourrait entendre le moteur et croire que vous repartez. Pour une personne aveugle, un klaxon peut signifier un danger ; pour une personne sourde, il n’existe pas. Seul un arrêt clair et immobile communique votre intention.",
+  "memo": "Quand l’autre perçoit mal, je deviens **encore plus prévisible**."
+ },
+ {
+  "id": "s42-agee",
+  "rule": "O42/ages",
+  "title": "Une traversée lente",
+  "scene": "Sur le passage piéton, une dame âgée a parcouru la moitié de la traversée. Elle s’est arrêtée sur la voie d’en face, **hésite**, puis semble vouloir continuer vers votre voie.",
+  "props": [
+   {
+    "kind": "crosswalk",
+    "dz": -2,
+    "from": -4.6,
+    "to": 4.6
+   },
+   {
+    "kind": "ped",
+    "x": -1.4,
+    "dz": -2,
+    "toX": 6.0,
+    "toDz": -2,
+    "kmh": 2.5,
+    "start": "good"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je m’arrête avant le passage et j’attends qu’elle ait complètement traversé.",
+    "act": "stop",
+    "stopDz": 4.5
+   },
+   {
+    "t": "Je passe avant qu’elle arrive dans ma voie : elle est encore de l’autre côté.",
+    "act": "go",
+    "did": "Vous êtes passé devant une personne déjà engagée, en supposant qu’elle resterait sur l’autre voie."
+   },
+   {
+    "t": "Je ralentis un peu : à son rythme, elle n’atteindra pas ma voie avant que je sois passé.",
+    "act": "go",
+    "kmh": 15,
+    "did": "Vous avez parié sur son rythme au lieu de vous arrêter : elle peut hésiter, revenir en arrière ou repartir."
+   }
+  ],
+  "ok": 0,
+  "should": "S’arrêter et **rester arrêté** tant que son chemin n’est pas sûr, puis repartir quand l’espace est clairement libre.",
+  "why": "Une personne peut hésiter, revenir en arrière ou s’arrêter au milieu de la traversée. La vitesse de marche et la capacité à estimer la vitesse d’une voiture varient beaucoup : observez-la plutôt que de la juger. Ne la pressez pas et ne repartez pas en supposant qu’elle va bientôt avoir fini. Le corps étant plus fragile, une approche lente et un arrêt complet protègent bien mieux.",
+  "memo": "Je repars quand l’espace est **clairement** libre."
+ },
+ {
+  "id": "s42-masque",
+  "rule": "O42/pietons",
+  "title": "La camionnette devant le passage",
+  "scene": "Deux voies dans votre sens. Sur la voie de droite, une **camionnette s’est arrêtée** juste avant le passage piéton. De votre place, vous ne voyez personne sur les bandes.",
+  "props": [
+   {
+    "kind": "line",
+    "style": "dashed",
+    "color": "white",
+    "x": 3.1,
+    "from": 38,
+    "to": -38
+   },
+   {
+    "kind": "sign",
+    "id": "ind-pietons",
+    "x": 5.6,
+    "dz": 1,
+    "height": 1.9
+   },
+   {
+    "kind": "crosswalk",
+    "dz": -2,
+    "from": -4.6,
+    "to": 4.6
+   },
+   {
+    "kind": "car",
+    "x": 4.0,
+    "dz": 3.6,
+    "paint": 0,
+    "body": "van"
+   },
+   {
+    "kind": "ped",
+    "x": 4.4,
+    "dz": -2,
+    "toX": -6.0,
+    "toDz": -2,
+    "kmh": 4.5,
+    "start": "good"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je passe : je ne vois personne sur le passage.",
+    "act": "go",
+    "did": "Vous avez franchi le passage sans savoir ce que la camionnette cachait."
+   },
+   {
+    "t": "Je ralentis un peu et je passe en surveillant l’avant de la camionnette.",
+    "act": "go",
+    "kmh": 15,
+    "did": "Vous avez franchi le passage en comptant voir à temps un piéton masqué par la camionnette."
+   },
+   {
+    "t": "Je m’arrête avant le passage jusqu’à être sûr qu’il est libre.",
+    "act": "stop",
+    "stopDz": 4.5
+   }
+  ],
+  "ok": 2,
+  "should": "S’arrêter à son tour avant le passage **jusqu’à être sûr** qu’il est libre.",
+  "why": "Un véhicule arrêté devant un passage peut cacher un piéton en train de traverser ; le dépasser sans voir ce qui se passe devant lui est particulièrement dangereux. Ne pas voir de piéton ne signifie pas que le passage est libre : toute zone cachée doit être considérée comme peut-être occupée.",
+  "memo": "Zone cachée = **peut-être occupée**."
+ },
+ {
+  "id": "s42-cycliste",
+  "rule": "O42/cyclistes",
+  "title": "Un cycliste au milieu de la voie",
+  "scene": "La voie est étroite : des voitures sont garées à droite et un **camion de livraison** est arrêté sur la voie d’en face. Devant vous, un cycliste roule **au milieu** de votre voie.",
+  "props": [
+   {
+    "kind": "car",
+    "x": 4.0,
+    "dz": -1,
+    "paint": 6
+   },
+   {
+    "kind": "car",
+    "x": 4.0,
+    "dz": -14,
+    "paint": 2
+   },
+   {
+    "kind": "car",
+    "x": -1.5,
+    "dz": -18,
+    "paint": 0,
+    "body": "truck",
+    "facing": "oncoming"
+   },
+   {
+    "kind": "bike",
+    "x": 1.5,
+    "dz": 6,
+    "toX": 1.5,
+    "toDz": -160,
+    "kmh": 16,
+    "start": "resolve"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je klaxonne pour qu’il se range à droite et me laisse passer.",
+    "act": "honk",
+    "kmh": 14,
+    "did": "Vous avez klaxonné pour chasser le cycliste du milieu de la voie, alors que c’est son droit de s’y placer."
+   },
+   {
+    "t": "Je reste derrière lui, à distance, jusqu’à une occasion réellement sûre.",
+    "act": "go",
+    "kmh": 14
+   },
+   {
+    "t": "Je le dépasse tout de suite par la voie d’en face, avant le camion.",
+    "act": "overtake",
+    "did": "Vous vous êtes lancé dans un dépassement sans occasion réellement sûre : le camion arrêté en face ne laissait pas la place de le terminer."
+   }
+  ],
+  "ok": 1,
+  "should": "Rester derrière, à distance, et attendre une occasion **réellement sûre**.",
+  "why": "Sur une voie étroite, un cycliste peut se placer au milieu de la voie pour empêcher un dépassement dangereux : c’est son droit. La distance latérale d’un dépassement doit être adaptée à votre vitesse, à la largeur de la route et aux mouvements possibles du cycliste. Dépassez seulement si toute la manœuvre peut se faire sans le presser.",
+  "memo": "Cycliste au milieu : **son droit**, j’attends."
+ }
+]

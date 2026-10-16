@@ -1,5 +1,15 @@
 # Historique
 
+## 0.6.0-preview.1 — 16 octobre 2026
+- **80 scènes de cours simplifiées sur la route** (`content/road-lessons/`, `src/road-lessons.js`), une par sous-chapitre montrable, dans 17 chapitres : O12, O13, O14, O21, O22, O23, N24, N25, N33, O31, O32, O41, O42, O51, O52, O53, U25. Avec les 7 sous-chapitres Priorités, 87 des 166 sous-chapitres ont une simulation ; les 79 autres restent des cours avec QCM, signalés « Cours seul ».
+- Objets de terrain : panneaux et plaques, lignes, cases, passages piétons, flèches au sol, cônes, barrières, îlots, feux (fixes et clignotants), portiques de voies, agent, passage à niveau, véhicules immobiles ou mobiles (voiture, camionnette, camion, ambulance), piétons, enfants, cyclistes. Options de choix : clignotant, rester arrêté (`then: wait`). Chaque scène suit cours → règle → objets réels (panneau, plaque, ligne, case, passage, cônes, îlot, piéton, cycliste, voiture lente) → décision en 3 choix → conséquence assistée → explication → rejeu. Identifiants partagés avec les cours ; fusion validée et fermée sur erreur par `src/curriculum.js`.
+- Les scènes ne touchent ni aux 25 situations Priorités, ni à l’XP, ni aux erreurs de `permisGT.v1` ; leurs résultats vont dans `swissdriver.roadLessons.v1`. Elles sont signalées « Scène simplifiée · trajectoire assistée ».
+- Tests : `tests/test_road_lessons.py` (structure, dessins, refus des données invalides) et `tests/road_lessons.py` (3 branches par scène, soit 240 : issue, rejeu, aucune traversée d’objet fixe, aucun contact avec un usager après le bon choix). Le packaging strict exige ce rapport, dimensionné sur le nombre de scènes.
+- Outils : `docs/SCENES_COURS.md` (format), `scripts/check_scenes.cjs` (validation d’un fichier de scènes), `scripts/course_text.cjs` (texte d’un cours).
+- Les 27 chapitres se suivent sur la route : chaque chapitre et sous-chapitre possède son portique de cours, dans l'ordre du programme. Les chapitres sans scène 3D ne reçoivent ni situation, ni fin de sous-chapitre, ni XP : rien n'est validé en passant un portique.
+- HUD et message « Cours seul · simulation non disponible » ; programme : badge « Portiques de cours · sans simulation » et bouton « Aller au portique » (libre accès, aucune situation O11 n'est validée par le saut).
+- Moteur : trois ancrages vérifiés dans `src/transform.js` (3.1.0) ; O11 conserve exactement ses positions et ses 25 situations. Sauvegarde `permisGT.v1` inchangée.
+
 ## 0.5.0-preview.1 — 14 octobre 2026
 - Programme aligné sur le catalogue asa de juillet 2026 (en vigueur au 1er janvier 2027) : 8 chapitres nouveaux (N24, N25, N26, N33, N43, N46, N47, N48) et 13 sous-chapitres complémentaires ; les 161 contenus d'examen sont reliés à un cours (`content/programme-asa-2027.json`, `tests/test_programme.py`).
 - Exercices style examen pour chaque sous-chapitre : 1 543 QCM, dont 928 à 4 propositions ; reconnaissance de 27 signaux avec 4 significations proposées.

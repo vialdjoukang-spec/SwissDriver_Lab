@@ -1,0 +1,84 @@
+[
+ {
+  "id": "s53-toit",
+  "rule": "O53/toit",
+  "title": "Coffre de toit et parking couvert",
+  "scene": "Vous partez en vacances avec un **coffre de toit**. Votre voiture mesure d’habitude 1,65 m ; chargée, elle dépasse 2 m. L’entrée du parking couvert, à droite, est limitée à **1,9 m**.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "hauteur-max",
+    "x": 5.6,
+    "dz": 4,
+    "plates": [
+     "Parking"
+    ]
+   },
+   {
+    "kind": "sign",
+    "id": "ind-parking",
+    "x": 5.6,
+    "dz": 14
+   }
+  ],
+  "choices": [
+   {
+    "t": "J’entre : ma voiture passe d’habitude sans problème.",
+    "act": "park",
+    "did": "Vous vous êtes engagé vers une entrée de 1,9 m avec une voiture qui dépasse 2 m une fois chargée."
+   },
+   {
+    "t": "Je renonce à ce parking et j’en cherche un autre sans limite de hauteur.",
+    "act": "go"
+   },
+   {
+    "t": "J’entre très lentement en surveillant le coffre dans le rétroviseur.",
+    "act": "park",
+    "kmh": 8,
+    "did": "Rouler lentement ne change pas la hauteur : le coffre dépasse la limite."
+   }
+  ],
+  "ok": 1,
+  "should": "Renoncer : la hauteur **réelle** du jour, coffre compris, dépasse la limite.",
+  "why": "On raisonne avec la hauteur réelle de la voiture chargée, pas avec celle de la voiture sans chargement. Avant un parking couvert, un tunnel bas ou une barrière, il faut connaître cette nouvelle hauteur ; si la limite n’est pas respectée avec une marge suffisante, on cherche un autre passage.",
+  "memo": "La nouvelle hauteur se **connaît avant** de s’engager."
+ },
+ {
+  "id": "s53-charge",
+  "rule": "O53/dynamique",
+  "title": "Départ en vacances, voiture chargée",
+  "scene": "Quatre passagers, des bagages et un **coffre de toit** : votre voiture est lourdement chargée. Devant vous, une voiture roule à allure régulière.",
+  "props": [
+   {
+    "kind": "leadCar",
+    "x": 1.5,
+    "dz": 6,
+    "kmh": 20,
+    "paint": 2
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je laisse un intervalle plus grand que d’habitude et je prévois de freiner plus tôt.",
+    "act": "go",
+    "kmh": 14
+   },
+   {
+    "t": "Je garde mon intervalle habituel : les freins sont faits pour ça.",
+    "act": "go",
+    "kmh": 20,
+    "did": "Vous avez gardé l’intervalle d’une voiture vide alors que la charge peut allonger la distance d’arrêt."
+   },
+   {
+    "t": "Je reste près d’elle : s’il le faut, je freinerai plus fort.",
+    "act": "go",
+    "kmh": 24,
+    "did": "Vous vous êtes rapproché en comptant sur un freinage plus fort au dernier moment."
+   }
+  ],
+  "ok": 0,
+  "should": "**Augmenter l’intervalle** avec le véhicule qui précède et commencer à ralentir plus tôt.",
+  "why": "Une masse plus élevée demande un effort de freinage plus important et peut allonger la distance d’arrêt. Une charge placée haut, comme un coffre de toit, rend aussi la voiture plus sensible aux gestes brusques. Une voiture chargée exige donc plus de marge avant le danger, et non une correction plus forte au dernier moment.",
+  "memo": "Chargé : **plus de distance**, moins de vitesse, plus de douceur."
+ }
+]

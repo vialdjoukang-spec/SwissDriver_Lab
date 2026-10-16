@@ -36,6 +36,7 @@ with sync_playwright() as p:
         page.evaluate('window.__NORENDER=true')
         coverage=page.evaluate('SwissDriverLab.coverage')
         check('coverage_25_scenes',coverage['scenarios']==25 and coverage['playableSections']==7 and not coverage['contractErrors'],coverage)
+        check('every_chapter_on_road',coverage['roadChapters']==coverage['chapters']==27 and coverage['roadSections']==coverage['sections'],coverage)
         page.screenshot(path=str(OUT/'desktop-start.png'),timeout=60000)
         page.locator('#startBtn').click()
         model=page.evaluate('({meta:SwissDriverLab.vehicle(),wheels:SwissDriverLab.test.player.userData.wheels.length,front:SwissDriverLab.test.player.userData.front.length})')
@@ -74,6 +75,23 @@ with sync_playwright() as p:
         before=page.evaluate('({z:__G.P.z,t:SwissDriverLab.snapshot().simulationSeconds})');page.wait_for_timeout(700)
         check('program_pauses_simulation',before==page.evaluate('({z:__G.P.z,t:SwissDriverLab.snapshot().simulationSeconds})'))
         page.screenshot(path=str(OUT/'desktop-program.png'))
+        # Simplified road: a course-only chapter is reached by its gate, opens on the road, and is labelled without simulation.
+        # Part 5 (vehicle), first chapter O51: its first section (reglages) has no scene and stays course-only.
+        page.locator('#labProgramNav button').nth(4).click()
+        page.locator('#planList>section:visible summary').first.click()
+        gate=page.locator('#planList>section:visible .lab-lesson-row:not(:has(.lab-scene-tag)) .lab-gate').first
+        gi=int(gate.get_attribute('data-gi'));xp=page.evaluate('__G.ST.xp');gate.click()
+        road=page.evaluate("(()=>{const it=__G.ITEMS[__G.ST.idx];return {mode:__G.mode,idx:__G.ST.idx,type:it.type,chapter:it.c.id,zone:document.querySelector('#hZone').textContent}})()")
+        check('course_only_gate_reachable',road['mode']=='drive' and road['idx']==gi and road['type']=='secGate' and road['chapter']!='O11' and 'Cours seul' in road['zone'],road)
+        page.evaluate("__G.P.z=__G.ITEMS[__G.ST.idx].z+1")
+        page.wait_for_function("!document.querySelector('#course').hidden",timeout=20000)
+        check('course_only_gate_opens_on_road',page.evaluate('SwissDriverLab.snapshot().ruleId')==page.evaluate("(()=>{const it=__G.ITEMS[__G.ST.idx];return it.c.id+'/'+it.s.id})()"))
+        for _ in range(50):
+            if not page.locator('#course').is_visible():break
+            page.locator('.cnext').click()
+        after=page.evaluate("(()=>{const it=__G.ITEMS[__G.ST.idx];return {idx:__G.ST.idx,type:it&&it.type,xp:__G.ST.xp,toast:document.querySelector('#toast').textContent}})()")
+        check('course_only_gate_advances_without_score',after['idx']==gi+1 and after['xp']==xp and after['type'] in ('secGate','chapGate') and 'Cours seul' in after['toast'],after)
+        page.evaluate('SwissDriverLab.test.openPlan()')
         page.evaluate('SwissDriverLab.test.closePlan()')
         page.evaluate("SwissDriverLab.test.prepareDecision('h1')")
         check('scene_lesson_identity',page.evaluate("SwissDriverLab.snapshot().ruleId==='O11/hierarchie' && SwissDriverLab.snapshot().scenarioId==='h1'"))

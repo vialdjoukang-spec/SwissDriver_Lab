@@ -1,0 +1,329 @@
+[
+ {
+  "id": "s31-rail",
+  "rule": "O31/rail",
+  "title": "Une file après les rails",
+  "scene": "Passage à niveau, barrières levées, aucun feu allumé. Juste après les rails, une **file de voitures** est arrêtée : il ne reste pas la place d’une voiture.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "croix-andre",
+    "x": 5.6,
+    "dz": 6
+   },
+   {
+    "kind": "rail",
+    "dz": -4,
+    "lights": true
+   },
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -11,
+    "paint": 4
+   },
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -17,
+    "paint": 1
+   },
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -23,
+    "paint": 6
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je suis la voiture de devant : la barrière est ouverte.",
+    "act": "go",
+    "stopDz": -4,
+    "did": "Vous vous êtes engagé et vous êtes resté immobilisé sur les rails."
+   },
+   {
+    "t": "J’attends avant les rails qu’il y ait toute la place nécessaire après.",
+    "act": "stop",
+    "stopDz": 7,
+    "then": "wait"
+   },
+   {
+    "t": "Je m’avance jusqu’aux rails pour gagner du temps.",
+    "act": "stop",
+    "stopDz": -1.5,
+    "did": "Votre voiture empiète sur la voie ferrée pendant l’attente."
+   }
+  ],
+  "ok": 1,
+  "should": "Attendre **avant les rails** jusqu’à disposer d’un espace complet de l’autre côté.",
+  "why": "Même barrière ouverte, on reste avant les rails tant que la file est bloquée après le passage : sinon la voiture risque de rester immobilisée sur la voie ferrée. La place de sortie de la voiture de devant n’est pas la vôtre.",
+  "memo": "Avant les rails, je regarde **la place qui reste pour moi**."
+ },
+ {
+  "id": "s31-autoroute",
+  "rule": "O31/autoroute",
+  "title": "Entré par erreur sur l’autoroute",
+  "scene": "Vous passez le panneau d’entrée d’**autoroute**. Vous comprenez à ce moment que ce n’est pas la direction que vous vouliez prendre.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "ind-autoroute",
+    "x": 5.6,
+    "dz": 6
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je fais demi-tour tout de suite, avant d’aller plus loin.",
+    "act": "detour",
+    "lat": -3,
+    "did": "Vous avez entamé un demi-tour sur l’autoroute pour corriger une erreur d’itinéraire."
+   },
+   {
+    "t": "Je m’arrête sur le côté et je recule jusqu’à l’entrée.",
+    "act": "park",
+    "did": "Vous vous êtes arrêté pour reculer sur l’autoroute : l’arrêt et la marche arrière y sont interdits pour corriger un itinéraire."
+   },
+   {
+    "t": "Je continue et je sortirai à la sortie suivante.",
+    "act": "go",
+    "kmh": 40
+   }
+  ],
+  "ok": 2,
+  "should": "Continuer jusqu’à la **sortie suivante**.",
+  "why": "Sur l’autoroute, il est interdit de s’arrêter, de reculer ou de faire demi-tour pour corriger une erreur d’itinéraire. La sortie suivante ne coûte que quelques minutes, alors qu’une manœuvre brusque à grande vitesse peut provoquer un accident grave.",
+  "memo": "Erreur d’itinéraire : **la sortie suivante**."
+ },
+ {
+  "id": "s31-panne-autoroute",
+  "rule": "O31/panne-autoroute",
+  "title": "Le moteur faiblit sur l’autoroute",
+  "scene": "Juste après l’entrée d’**autoroute**, un voyant s’allume et le moteur perd de la puissance. La voiture **roule encore**. À droite, la **bande d’arrêt d’urgence** est libre.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "ind-autoroute",
+    "x": 5.6,
+    "dz": 12
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "white",
+    "x": 3.1,
+    "from": 36,
+    "to": -36
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je gagne la bande d’arrêt d’urgence avec les feux de détresse, puis tous les occupants sortent côté protégé, derrière la glissière.",
+    "act": "park",
+    "lat": 2.6,
+    "stopDz": -6,
+    "blink": "R",
+    "then": "wait"
+   },
+   {
+    "t": "Je m’arrête tout de suite sur ma voie, feux de détresse allumés.",
+    "act": "stop",
+    "did": "Vous avez immobilisé la voiture sur une voie de circulation alors qu’elle pouvait encore rouler jusqu’à la bande d’arrêt d’urgence."
+   },
+   {
+    "t": "Je me range sur la bande d’arrêt d’urgence et j’attends l’assistance assis dans la voiture, gilet enfilé.",
+    "act": "park",
+    "lat": 2.6,
+    "stopDz": -6,
+    "blink": "R",
+    "did": "Vous êtes resté dans la voiture, à quelques mètres du trafic : le gilet vous rend visible, il ne vous protège pas."
+   }
+  ],
+  "ok": 0,
+  "should": "Rejoindre la **bande d’arrêt d’urgence**, allumer les feux de détresse et mettre tout le monde à l’abri, derrière la glissière.",
+  "why": "Si la voiture peut encore rouler, on la dirige vers la bande d’arrêt d’urgence ou un autre emplacement sûr. On quitte la voiture du côté opposé à la circulation et tous les occupants vont derrière la glissière de sécurité ou loin de la chaussée. Gilet et triangle rendent visible, mais ils ne protègent pas : seule la distance vous protège.",
+  "memo": "Rendre visible, éloigner, **mettre à l’abri**, puis appeler."
+ },
+ {
+  "id": "s31-tunnel",
+  "rule": "O31/tunnel",
+  "title": "Entrée dans un tunnel",
+  "scene": "Le panneau **tunnel** annonce l’entrée. Une voiture roule devant vous, à une cinquantaine de mètres.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "tunnel",
+    "x": 5.6,
+    "dz": 6
+   },
+   {
+    "kind": "leadCar",
+    "x": 1.5,
+    "dz": -32,
+    "kmh": 30,
+    "paint": 3
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je n’allume pas mes feux : l’éclairage du tunnel suffit.",
+    "act": "go",
+    "did": "Vous êtes entré dans le tunnel sans allumer les feux de croisement."
+   },
+   {
+    "t": "J’allume les feux de croisement et je garde au moins 50 mètres derrière elle.",
+    "act": "go",
+    "kmh": 25
+   },
+   {
+    "t": "J’allume les feux de croisement et je me rapproche d’elle pour rouler groupé.",
+    "act": "go",
+    "kmh": 50,
+    "did": "Vous avez réduit la distance sous les 50 mètres dans le tunnel."
+   }
+  ],
+  "ok": 1,
+  "should": "Allumer les **feux de croisement** dès l’entrée et garder au moins **50 mètres** de distance.",
+  "why": "Dès l’entrée d’un tunnel, on allume les feux de croisement. On roule à une allure régulière et on garde au moins 50 mètres avec le véhicule qui précède : la lumière change, la place pour s’écarter manque, et un freinage brusque dans une file peut provoquer une série de collisions.",
+  "memo": "Tunnel : **feux**, **50 m**, allure régulière."
+ },
+ {
+  "id": "s31-transports",
+  "rule": "O31/transports",
+  "title": "Un minibus de ligne à l’arrêt",
+  "scene": "Un **minibus de ligne** jaune est arrêté à son arrêt, à droite. Vous ne voyez pas ce qui se passe devant lui, sur le trottoir et la chaussée.",
+  "props": [
+   {
+    "kind": "car",
+    "body": "van",
+    "color": "#f2c230",
+    "x": 4.1,
+    "dz": 0
+   },
+   {
+    "kind": "ped",
+    "x": 5.2,
+    "dz": -4,
+    "toX": -5.5,
+    "toDz": -4,
+    "start": "resolve"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je passe à allure normale : aucun piéton n’est visible.",
+    "act": "go",
+    "stopDz": 3,
+    "did": "Vous êtes arrivé trop vite à hauteur du minibus : un piéton a surgi devant lui et seul un freinage d’urgence a évité le choc."
+   },
+   {
+    "t": "Je klaxonne en passant pour prévenir les voyageurs.",
+    "act": "honk",
+    "stopDz": 3,
+    "did": "Le klaxon n’a pas réduit votre vitesse : un piéton a surgi devant le minibus et seul un freinage d’urgence a évité le choc."
+   },
+   {
+    "t": "Je ralentis fortement et je longe le minibus à une allure qui me permet de m’arrêter tout de suite.",
+    "act": "go",
+    "kmh": 8
+   }
+  ],
+  "ok": 2,
+  "should": "Ralentir **avant** de voir un piéton et passer le bus à une allure qui permet de réagir.",
+  "why": "Un bus arrêté crée une zone masquée : un piéton peut apparaître devant lui, derrière lui ou entre deux voitures. Ne pas voir de piéton ne prouve jamais que la zone masquée est vide. On passe le bus seulement à une vitesse qui permet de réagir si un piéton apparaît.",
+  "memo": "Près d’un arrêt : ralentir **avant** que le danger apparaisse."
+ },
+ {
+  "id": "s31-bus-arret",
+  "rule": "O31/bus-arret",
+  "title": "Le minibus veut repartir",
+  "scene": "En localité, un **minibus de ligne** jaune est arrêté à son arrêt, en bordure de chaussée à droite. À votre approche, il **met son clignotant gauche** : il veut repartir.",
+  "props": [
+   {
+    "kind": "vehicle",
+    "body": "van",
+    "color": "#f2c230",
+    "x": 4.1,
+    "dz": 2,
+    "toX": 1.5,
+    "toDz": -60,
+    "kmh": 25,
+    "start": "resolve"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je lève le pied et, au besoin, je m’arrête pour le laisser partir.",
+    "act": "stop",
+    "stopDz": 8
+   },
+   {
+    "t": "J’accélère pour passer avant qu’il déboîte.",
+    "act": "go",
+    "kmh": 40,
+    "stopDz": 6,
+    "did": "Vous avez accéléré vers un bus qui signalait son départ : il déboîtait déjà et vous avez dû freiner fort derrière lui."
+   },
+   {
+    "t": "Je déboîte à gauche pour le contourner pendant qu’il démarre.",
+    "act": "overtake",
+    "did": "Vous avez dépassé un bus qui quittait son arrêt, à côté de la zone masquée devant lui."
+   }
+  ],
+  "ok": 0,
+  "should": "Faciliter le départ du bus : **ralentir** et, au besoin, **s’arrêter** pour le laisser s’insérer.",
+  "why": "À l’intérieur des localités, lorsqu’un bus de ligne signale avec son clignotant qu’il veut repartir, les conducteurs qui arrivent derrière lui doivent faciliter son départ : ils réduisent leur vitesse et, au besoin, s’arrêtent. Le piège est d’accélérer pour passer avant : vous créez un conflit avec un véhicule lourd et vous longez une zone masquée.",
+  "memo": "Clignotant du bus : **lever le pied**, pas accélérer."
+ },
+ {
+  "id": "s31-interfaces",
+  "rule": "O31/interfaces",
+  "title": "La séparation est déjà là",
+  "scene": "Les voies se séparent : la vôtre va **tout droit**, celle de droite **tourne à droite**, et une ligne les sépare déjà. Votre GPS annonce maintenant : « tournez à droite ».",
+  "props": [
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "white",
+    "x": 3.1,
+    "from": 30,
+    "to": -36
+   },
+   {
+    "kind": "arrow",
+    "x": 1.5,
+    "dz": 12,
+    "dir": "straight"
+   },
+   {
+    "kind": "arrow",
+    "x": 4.0,
+    "dz": 12,
+    "dir": "right"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je passe tout de suite dans la voie de droite.",
+    "act": "detour",
+    "lat": 2.5,
+    "blink": "R",
+    "did": "Vous avez forcé un changement de voie tardif pour suivre le GPS, alors que les voies étaient déjà séparées."
+   },
+   {
+    "t": "Je continue tout droit et je corrigerai mon itinéraire plus loin.",
+    "act": "go"
+   },
+   {
+    "t": "Je m’arrête et j’attends une place pour passer à droite.",
+    "act": "stop",
+    "did": "Vous vous êtes arrêté sur votre voie pour rattraper une décision trop tardive."
+   }
+  ],
+  "ok": 1,
+  "should": "Continuer sur sa trajectoire et **corriger l’itinéraire plus loin**.",
+  "why": "Une bifurcation se prépare tôt : on choisit sa voie avant l’endroit où les voies se séparent, et non au moment où elles se séparent déjà. Si la décision arrive trop tard, on ne force rien : on continue sur sa trajectoire et on corrige son itinéraire plus loin. La navigation ne justifie jamais un changement de voie au dernier moment.",
+  "memo": "Trop tard pour la voie : **continuer**, corriger plus loin."
+ }
+]

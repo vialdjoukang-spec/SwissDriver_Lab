@@ -1,0 +1,323 @@
+[
+ {
+  "id": "s21-vitesse",
+  "rule": "O21/vitesse",
+  "title": "Des enfants au bord de la route",
+  "scene": "Vous roulez en localité, sans autre limite signalée. Plus loin, un **groupe d’enfants** marche au bord du trottoir.",
+  "props": [
+   {
+    "kind": "ped",
+    "child": true,
+    "x": 5.5,
+    "dz": -6,
+    "toX": 5.5,
+    "toDz": -38,
+    "kmh": 3,
+    "start": "always"
+   },
+   {
+    "kind": "ped",
+    "child": true,
+    "x": 6.2,
+    "dz": -8,
+    "toX": 6.2,
+    "toDz": -38,
+    "kmh": 3,
+    "start": "always"
+   },
+   {
+    "kind": "ped",
+    "child": true,
+    "x": 5.6,
+    "dz": -11,
+    "toX": 5.6,
+    "toDz": -38,
+    "kmh": 3,
+    "start": "always"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je roule à 50 km/h : c’est la limite générale en localité.",
+    "act": "go",
+    "kmh": 50,
+    "did": "Vous avez roulé à la limite légale alors que des enfants au bord de la route exigeaient une vitesse plus basse."
+   },
+   {
+    "t": "Je lève le pied dès maintenant, avant d’arriver à leur hauteur.",
+    "act": "go",
+    "kmh": 22
+   },
+   {
+    "t": "Je garde ma vitesse et je freinerai si l’un d’eux s’approche de la chaussée.",
+    "act": "go",
+    "kmh": 45,
+    "did": "Vous avez gardé votre vitesse en comptant freiner au dernier moment au lieu de ralentir avant le danger."
+   }
+  ],
+  "ok": 1,
+  "should": "Lever le pied **tout de suite**, avant le danger.",
+  "why": "Les vitesses maximales sont des plafonds : la présence d’enfants vous oblige à rouler moins vite. Il faut ralentir **avant** le danger, et non au moment où il devient impossible à éviter : si vous voyez de loin un groupe d’enfants au bord de la route, vous levez le pied tout de suite. L’anticipation transforme un freinage d’urgence en un ralentissement calme et maîtrisé.",
+  "memo": "La limite est un **plafond**, pas un objectif."
+ },
+ {
+  "id": "s21-droite",
+  "rule": "O21/droite",
+  "title": "Une file de voitures garées",
+  "scene": "Une file de **voitures garées** longe votre voie à droite. Personne ne vient en face.",
+  "props": [
+   {
+    "kind": "car",
+    "x": 4.15,
+    "dz": 10,
+    "paint": 1
+   },
+   {
+    "kind": "car",
+    "x": 4.15,
+    "dz": 3,
+    "paint": 3
+   },
+   {
+    "kind": "car",
+    "x": 4.15,
+    "dz": -4,
+    "paint": 6
+   },
+   {
+    "kind": "car",
+    "x": 4.15,
+    "dz": -11,
+    "paint": 2
+   },
+   {
+    "kind": "car",
+    "x": 4.15,
+    "dz": -18,
+    "paint": 5
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je serre les voitures garées pour bien tenir ma droite.",
+    "act": "go",
+    "lat": 0.6,
+    "did": "Vous avez frôlé les voitures garées : une portière qui s’ouvre ne vous laissait plus aucune marge."
+   },
+   {
+    "t": "Je roule sur la ligne du milieu pour m’éloigner des voitures garées.",
+    "act": "go",
+    "lat": -1.4,
+    "did": "Vous avez quitté la partie droite de la chaussée en roulant sur le milieu de la route."
+   },
+   {
+    "t": "Je reste dans la partie droite de la chaussée, avec une marge pour une portière qui s’ouvrirait.",
+    "act": "go",
+    "lat": -0.3
+   }
+  ],
+  "ok": 2,
+  "should": "Rouler **à droite**, en gardant une marge avec les voitures garées.",
+  "why": "En Suisse, on circule dans la partie droite de la chaussée. Mais rouler à droite ne signifie pas frôler le bord : vous gardez une marge suffisante avec le bord de la route, les obstacles, les portières des voitures garées qui pourraient s’ouvrir et les usagers vulnérables.",
+  "memo": "À droite, **sans frôler**."
+ },
+ {
+  "id": "s21-accelerer",
+  "rule": "O21/accelerer",
+  "title": "Repartir sur chaussée mouillée",
+  "scene": "Vous êtes arrêté et vous repartez. Un panneau annonce une **chaussée glissante** ; la route est mouillée.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "danger-glissant",
+    "x": 5.6,
+    "dz": 10
+   }
+  ],
+  "choices": [
+   {
+    "t": "J’accélère de façon douce et régulière.",
+    "act": "go",
+    "kmh": 22
+   },
+   {
+    "t": "J’appuie franchement sur l’accélérateur pour libérer vite la voie.",
+    "act": "go",
+    "kmh": 50,
+    "did": "Vous avez donné un coup d’accélérateur brusque sur une route mouillée : les roues peuvent patiner."
+   },
+   {
+    "t": "J’accélère fort et je corrigerai au volant si la voiture glisse.",
+    "act": "go",
+    "kmh": 45,
+    "did": "Vous avez accéléré brusquement en comptant rattraper une glissade au volant."
+   }
+  ],
+  "ok": 0,
+  "should": "Accélérer **progressivement**, de façon douce et régulière.",
+  "why": "Une accélération progressive garde les pneus bien accrochés à la route et rend votre conduite prévisible : c’est conserver l’adhérence. Sur une route glissante, par exemple mouillée ou enneigée, un coup d’accélérateur brusque peut faire patiner les roues et déstabiliser la voiture.",
+  "memo": "Route glissante : **pied doux** sur l’accélérateur."
+ },
+ {
+  "id": "s21-freiner",
+  "rule": "O21/freiner",
+  "title": "Suivre sur route mouillée",
+  "scene": "Vous suivez une voiture. Un panneau annonce une **chaussée glissante** ; la route est mouillée.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "danger-glissant",
+    "x": 5.6,
+    "dz": 12
+   },
+   {
+    "kind": "leadCar",
+    "x": 1.5,
+    "dz": 4,
+    "kmh": 30,
+    "paint": 3
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je reste à environ une seconde derrière elle, pour ne pas laisser de place.",
+    "act": "go",
+    "kmh": 36,
+    "did": "Vous avez suivi de trop près : si elle freine brusquement, vous n’avez plus le temps de réagir."
+   },
+   {
+    "t": "Je garde deux secondes, comme sur route sèche.",
+    "act": "go",
+    "kmh": 30,
+    "did": "Vous avez gardé l’écart minimum de la route sèche alors que la route mouillée allonge la distance de freinage."
+   },
+   {
+    "t": "Je lève le pied et je laisse nettement plus de deux secondes.",
+    "act": "go",
+    "kmh": 20
+   }
+  ],
+  "ok": 2,
+  "should": "Laisser **plus de deux secondes** d’écart, car la route est mouillée.",
+  "why": "Sur route sèche, un écart de deux secondes est un repère minimum pratique ; on l’augmente dès que les conditions se dégradent. Sur une route mouillée, la distance de freinage peut devenir beaucoup plus longue : lorsque l’adhérence diminue, il faut à la fois rouler moins vite et laisser plus de distance devant soi.",
+  "memo": "Route mouillée : **moins vite, plus loin**."
+ },
+ {
+  "id": "s21-arreter",
+  "rule": "O21/arreter",
+  "title": "Une file arrêtée au feu",
+  "scene": "Une **file de voitures** est arrêtée devant vous, au feu rouge. Une voiture vous suit.",
+  "props": [
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -2,
+    "paint": 5
+   },
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -9,
+    "paint": 2
+   },
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -16,
+    "paint": 6
+   },
+   {
+    "kind": "light",
+    "x": 3.6,
+    "dz": -20,
+    "state": "red"
+   },
+   {
+    "kind": "vehicle",
+    "body": "car",
+    "paint": 1,
+    "x": 1.5,
+    "dz": 34,
+    "toX": 1.5,
+    "toDz": 12,
+    "kmh": 18,
+    "start": "resolve"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je m’approche au plus près pour ne pas perdre de place.",
+    "act": "stop",
+    "stopDz": 3.4,
+    "did": "Vous vous êtes arrêté collé à la voiture de devant : impossible de vous décaler si elle tombe en panne."
+   },
+   {
+    "t": "Je regarde dans le rétroviseur, je freine progressivement et je m’arrête en voyant ses roues arrière toucher le sol.",
+    "act": "stop",
+    "stopDz": 5.5,
+    "then": "wait"
+   },
+   {
+    "t": "Je garde ma vitesse et je freine fort au dernier moment.",
+    "act": "stop",
+    "kmh": 40,
+    "stopDz": 4.5,
+    "did": "Vous avez freiné tard et fort, sans regarder derrière : la voiture qui vous suit ne pouvait pas anticiper votre arrêt."
+   }
+  ],
+  "ok": 1,
+  "should": "Regarder derrière, freiner **progressivement** et s’arrêter en voyant les **roues arrière** de la voiture devant.",
+  "why": "Avant de ralentir fortement, un coup d’œil dans le rétroviseur permet de rendre le ralentissement plus progressif et plus facile à comprendre pour la voiture qui suit. Dans une file arrêtée, laissez assez d’espace pour voir les roues arrière de la voiture devant vous, là où elles touchent le sol : vous pourrez vous décaler si elle tombe en panne et éviter de la percuter si vous êtes poussé par l’arrière.",
+  "memo": "File arrêtée : je vois **ses roues** toucher le sol."
+ },
+ {
+  "id": "s21-dangers",
+  "rule": "O21/dangers",
+  "title": "Une camionnette masque le trottoir",
+  "scene": "Une **camionnette de livraison** est garée à droite. Elle cache une partie du trottoir ; personne n’est visible.",
+  "props": [
+   {
+    "kind": "car",
+    "body": "van",
+    "color": "#e6e2d6",
+    "x": 4.2,
+    "dz": -2
+   },
+   {
+    "kind": "ped",
+    "child": true,
+    "x": 6.0,
+    "dz": -7,
+    "toX": 3.8,
+    "toDz": -7,
+    "kmh": 4,
+    "start": "resolve"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je lève le pied et je m’écarte un peu, prêt à freiner s’il en sort quelqu’un.",
+    "act": "go",
+    "kmh": 15,
+    "lat": -0.4
+   },
+   {
+    "t": "Je garde ma vitesse : personne n’est visible.",
+    "act": "go",
+    "kmh": 45,
+    "did": "Vous avez gardé votre vitesse le long d’un masque visuel : personne n’était visible, mais quelqu’un pouvait en sortir."
+   },
+   {
+    "t": "Je longe la camionnette au plus près pour garder ma voie bien à droite.",
+    "act": "go",
+    "kmh": 30,
+    "lat": 0.5,
+    "did": "Vous vous êtes serré contre la camionnette : vous n’aviez plus ni porte de sortie ni temps pour réagir."
+   }
+  ],
+  "ok": 0,
+  "should": "**Ralentir avant** le masque et garder une marge sur le côté.",
+  "why": "Une voiture garée forme un masque visuel : derrière lui peut surgir un enfant, un cycliste ou un animal. Chaque fois que vous voyez un masque, demandez-vous « qu’est-ce qui pourrait sortir de là ? », ralentissez avant d’entrer dans la zone d’incertitude et gardez une échappatoire : de la distance, une marge sur le côté et la possibilité de vous arrêter.",
+  "memo": "Masque visuel : **qu’est-ce qui pourrait en sortir ?**"
+ }
+]

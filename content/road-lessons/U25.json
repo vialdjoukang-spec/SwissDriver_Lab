@@ -1,0 +1,230 @@
+[
+ {
+  "id": "su25-chantier",
+  "rule": "U25/limites",
+  "title": "Maintien de voie et marquage provisoire",
+  "scene": "L’assistant de maintien de voie est actif. Un chantier commence : des **lignes jaune-orange provisoires** déplacent la voie vers la gauche, l’ancienne ligne blanche reste visible.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "danger-travaux",
+    "x": 5.6,
+    "dz": 28
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "white",
+    "x": 3.1,
+    "from": 38,
+    "to": -38
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "orange",
+    "x": 3.0,
+    "x2": 0.8,
+    "from": 24,
+    "to": 12
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "orange",
+    "x": 0.8,
+    "from": 12,
+    "to": -26
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "orange",
+    "x": 0.8,
+    "x2": 3.0,
+    "from": -26,
+    "to": -36
+   },
+   {
+    "kind": "cones",
+    "x": 1.3,
+    "from": 12,
+    "to": -26,
+    "step": 4
+   },
+   {
+    "kind": "barrier",
+    "x": 2.2,
+    "dz": -6,
+    "w": 2.4
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je laisse l’assistant suivre les lignes : c’est son rôle.",
+    "act": "go",
+    "stopDz": 15,
+    "did": "Vous avez laissé l’assistant suivre l’ancienne ligne blanche jusqu’aux cônes du chantier."
+   },
+   {
+    "t": "Je reprends moi-même la trajectoire et je suis le tracé jaune-orange en ralentissant.",
+    "act": "detour",
+    "lat": -2.3
+   },
+   {
+    "t": "Je garde l’assistant actif : s’il ne peut plus suivre, il m’avertira.",
+    "act": "go",
+    "stopDz": 15,
+    "did": "Vous avez compté sur une alerte, alors que l’assistant peut se tromper de trajectoire ou faiblir sans prévenir."
+   }
+  ],
+  "ok": 1,
+  "should": "Reprendre **soi-même** la trajectoire et suivre le marquage provisoire en ralentissant.",
+  "why": "Le maintien de voie dépend des lignes au sol : effacées, couvertes de neige ou provisoires dans un chantier, elles peuvent le tromper de trajectoire ou le désactiver. Une aide peut faiblir **sans prévenir** de façon évidente : ne comptez jamais sur elle quand les conditions deviennent difficiles, c’est précisément là que votre attention doit augmenter.",
+  "memo": "Lignes provisoires : je **reprends la main**.",
+  "endDz": -38
+ },
+ {
+  "id": "su25-regulateur",
+  "rule": "U25/usage",
+  "title": "Le régulateur à l’entrée du chantier",
+  "scene": "Votre régulateur adaptatif est réglé à **50 km/h**. Un chantier commence, la voie se rétrécit et un signal limite la vitesse à **30 km/h**.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "danger-travaux",
+    "x": 5.6,
+    "dz": 12
+   },
+   {
+    "kind": "sign",
+    "id": "vitesse-30",
+    "x": 5.6,
+    "dz": 4
+   },
+   {
+    "kind": "cones",
+    "x": 3.0,
+    "from": 2,
+    "to": -30,
+    "step": 4
+   },
+   {
+    "kind": "barrier",
+    "x": 4.1,
+    "dz": -10,
+    "w": 1.6
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je laisse le régulateur à 50 : il ralentira de lui-même devant un obstacle.",
+    "act": "go",
+    "kmh": 50,
+    "did": "Vous êtes entré dans le chantier à la vitesse réglée, au-dessus de la limite, en confiant la marge à l’aide."
+   },
+   {
+    "t": "Je règle la nouvelle vitesse dans le menu de l’écran, en roulant.",
+    "act": "go",
+    "kmh": 45,
+    "did": "Vous avez cherché dans le menu les yeux baissés, et la voiture est entrée trop vite dans le chantier."
+   },
+   {
+    "t": "Je coupe le régulateur d’un coup de frein et j’adapte moi-même ma vitesse au chantier.",
+    "act": "go",
+    "kmh": 25
+   }
+  ],
+  "ok": 2,
+  "should": "Adapter **soi-même** la vitesse et la trajectoire au chantier, en réglant ou en coupant l’aide **avant** d’y entrer.",
+  "why": "Choisissez une vitesse qui respecte la limite et les conditions de route : l’aide reste soumise à votre jugement. Le frein, le volant ou le bouton coupent l’aide d’un geste ; chercher un réglage dans les menus en roulant laisse la route sans surveillance. On règle à l’arrêt, on surveille en roulant.",
+  "memo": "Je sais **couper** l’aide d’un geste."
+ },
+ {
+  "id": "su25-camera",
+  "rule": "U25/responsabilite",
+  "title": "La limite mal lue",
+  "scene": "Un signal limite la vitesse à **30 km/h**. L’écran de la voiture, qui lit les panneaux par caméra, affiche toujours **50**, et le régulateur suit cette valeur.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "vitesse-30",
+    "x": 5.6,
+    "dz": 6
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je respecte le panneau : je ramène moi-même ma vitesse à 30.",
+    "act": "go",
+    "kmh": 25
+   },
+   {
+    "t": "Je suis l’écran : la caméra lit les panneaux mieux que moi.",
+    "act": "go",
+    "kmh": 50,
+    "did": "Vous avez suivi la valeur de la caméra au lieu du panneau réel."
+   },
+   {
+    "t": "Je garde 50 : si c’est une erreur, elle vient du constructeur.",
+    "act": "go",
+    "kmh": 50,
+    "did": "Vous avez roulé au-dessus de la limite en reportant la faute sur le système."
+   }
+  ],
+  "ok": 0,
+  "should": "Respecter la **signalisation réelle** et corriger soi-même l’erreur de l’aide.",
+  "why": "La signalisation s’impose toujours : si la caméra affiche une limite erronée, c’est le panneau réel qui compte. On ne peut pas transférer sa responsabilité au système ou à son constructeur : l’erreur de la caméra ne vous excuserait pas en cas d’excès de vitesse.",
+  "memo": "Une aide peut se tromper ; **moi**, je corrige."
+ },
+ {
+  "id": "su25-alerte",
+  "rule": "U25/cas",
+  "title": "Alerte de collision",
+  "scene": "Le régulateur adaptatif est actif. Devant vous, une **file de voitures est arrêtée**. Une alerte sonore retentit et un symbole rouge clignote : risque de collision.",
+  "props": [
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -6,
+    "paint": 3
+   },
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -12,
+    "paint": 5
+   },
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -18,
+    "paint": 1
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je regarde l’écran pour comprendre ce que signifie l’alerte.",
+    "act": "go",
+    "stopDz": 4,
+    "did": "Vous avez regardé l’écran au lieu de la route ; la voiture s’est arrêtée tout près de la file."
+   },
+   {
+    "t": "Je laisse le freinage automatique agir : c’est son rôle.",
+    "act": "go",
+    "stopDz": 2.5,
+    "did": "Vous avez attendu le freinage automatique, un dernier secours qui ne garantit pas d’éviter le choc."
+   },
+   {
+    "t": "Je freine immédiatement moi-même.",
+    "act": "stop",
+    "stopDz": 9,
+    "then": "wait"
+   }
+  ],
+  "ok": 2,
+  "should": "Agir **d’abord** sur la conduite : freiner soi-même immédiatement, puis analyser l’alerte une fois la situation calme.",
+  "why": "Quand une alerte se déclenche, on regarde d’abord la route et on agit sur la conduite avant de toucher au système. Chercher dans l’écran détourne les yeux au pire moment. Le freinage automatique n’est qu’un dernier secours, pas une solution sur laquelle compter.",
+  "memo": "D’abord l’**action sûre**, ensuite le système."
+ }
+]

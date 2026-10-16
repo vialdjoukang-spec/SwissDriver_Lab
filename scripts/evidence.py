@@ -15,7 +15,14 @@ REPORTS = [
     {'file': 'scene-coherence-results.json', 'kind': 'checks', 'key': 'checks', 'errors': 'errors', 'minimum': 24},
     {'file': 'learning-results.json', 'kind': 'checks', 'key': 'checks', 'errors': 'errors', 'minimum': 33},
     {'file': 'decision-paths-results.json', 'kind': 'branches', 'key': 'branches', 'errors': 'errors', 'minimum': 75},
+    {'file': 'road-lessons-results.json', 'kind': 'branches', 'key': 'branches', 'errors': 'errors', 'minimum': 'scenes'},
 ]
+
+
+def road_lesson_branches(root=Path(__file__).resolve().parents[1]):
+    """Three branches per simplified course scene listed in content/index.json."""
+    index = json.loads((root / 'content/index.json').read_text(encoding='utf8'))
+    return 3 * sum(len(json.loads((root / f).read_text(encoding='utf8'))) for f in index.get('roadLessons', []))
 REQUIRED_FILES = ['test-results/' + spec['file'] for spec in REPORTS]
 
 
@@ -29,6 +36,8 @@ def sha256(data):
 
 def _problems(spec, report, html_sha):
     problems = []
+    if spec['minimum'] == 'scenes':
+        spec = {**spec, 'minimum': road_lesson_branches()}
     items = report.get(spec['key'])
     if not isinstance(items, list) or len(items) < spec['minimum']:
         problems.append(f"{len(items) if isinstance(items, list) else 0} entrees, minimum {spec['minimum']}")

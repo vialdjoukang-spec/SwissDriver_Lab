@@ -1,0 +1,134 @@
+[
+ {
+  "id": "s25-file-loin",
+  "rule": "N25/orientation-regard",
+  "title": "Une file loin devant",
+  "scene": "Loin devant, **deux voitures sont immobiles** dans votre voie : une file se forme. Personne ne vous suit de près.",
+  "props": [
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -18,
+    "paint": 1
+   },
+   {
+    "kind": "car",
+    "x": 1.5,
+    "dz": -24,
+    "paint": 6
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je continue normalement : je freinerai en arrivant sur la file.",
+    "act": "go",
+    "kmh": 45,
+    "stopDz": -11,
+    "did": "Vous avez attendu d’arriver sur la file pour freiner : un freinage tardif, sans réserve de temps."
+   },
+   {
+    "t": "Je lève le pied dès maintenant, je contrôle le rétroviseur et je m’arrête calmement derrière la file.",
+    "act": "stop",
+    "kmh": 20,
+    "stopDz": -11,
+    "then": "wait"
+   },
+   {
+    "t": "Je freine fort tout de suite, là où je suis.",
+    "act": "stop",
+    "stopDz": 15,
+    "did": "Vous avez freiné brusquement, loin de la file : repérée tôt, la situation permettait de ralentir sans précipitation."
+   }
+  ],
+  "ok": 1,
+  "endDz": -34,
+  "should": "Repérer la file **loin devant**, lever le pied tôt et s’arrêter derrière elle sans précipitation.",
+  "why": "Plus vous regardez loin, plus vous découvrez tôt ce qui vous attend : un bouchon, un feu, un piéton. Chaque situation repérée tôt vous laisse du temps pour lever le pied, contrôler le rétroviseur et choisir votre position sans précipitation : c’est l’anticipation précoce. Regarder seulement juste devant le capot fait tout découvrir au dernier moment.",
+  "memo": "Regarder **loin**, c’est gagner du temps."
+ },
+ {
+  "id": "s25-ecran",
+  "rule": "N25/regards-selectifs",
+  "title": "L’écran et le piéton",
+  "scene": "Rue commerçante : vitrines éclairées et, à gauche, un **grand écran publicitaire** (non dessiné). Au bord du trottoir de droite, un **piéton** se tient tout près de la chaussée.",
+  "props": [
+   {
+    "kind": "ped",
+    "x": 5.4,
+    "dz": -4,
+    "toX": -6.0,
+    "toDz": -4,
+    "start": "good"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je garde le piéton à l’œil, je laisse l’écran et les vitrines de côté et je tiens le pied prêt à freiner.",
+    "act": "stop",
+    "kmh": 18,
+    "stopDz": 3
+   },
+   {
+    "t": "Je jette un coup d’œil à l’écran : la rue est droite et dégagée.",
+    "act": "go",
+    "kmh": 30,
+    "did": "Votre regard a été capté par l’écran : pendant ce moment, vous ne surveilliez plus le piéton au bord de la chaussée."
+   },
+   {
+    "t": "Je regarde partout, vitrines comprises, pour ne rien manquer.",
+    "act": "go",
+    "kmh": 25,
+    "did": "Vous avez regardé partout sans trier : les vitrines ne pouvaient pas croiser votre trajectoire, le piéton, si."
+   }
+  ],
+  "ok": 0,
+  "should": "**Trier** : garder à l’œil le piéton au bord de la chaussée et ignorer ce qui ne peut pas croiser votre trajectoire.",
+  "why": "Une information est pertinente lorsqu’elle peut influencer votre conduite, surtout les usagers qui pourraient croiser votre trajectoire, comme un piéton près du bord. Une vitrine ou un écran publicitaire ne peuvent pas entrer dans votre trajectoire ; ils captent le regard et c’est justement pendant ce moment qu’un danger peut apparaître. Regarder partout sans trier fait oublier des zones.",
+  "memo": "« Est-ce que cela peut **bouger vers moi** ? »"
+ },
+ {
+  "id": "s25-epaule",
+  "rule": "N25/regards-controle",
+  "title": "Se ranger à droite",
+  "scene": "Vous voulez vous arrêter au **bord droit** de la chaussée pour déposer un passager. Il y a quelques secondes, un **cycliste** roulait derrière vous, sur la droite. Dans le rétroviseur intérieur, la rue paraît vide.",
+  "props": [
+   {
+    "kind": "bike",
+    "x": 4.3,
+    "dz": 24,
+    "kmh": 20,
+    "start": "resolve"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Rétroviseur et clignoteur : la rue paraît vide, je me range.",
+    "act": "go",
+    "kmh": 10,
+    "lat": 1.0,
+    "blink": "R",
+    "did": "Vous vous êtes fié aux rétroviseurs : le cycliste était dans l’angle mort et vous l’avez frôlé en vous déportant."
+   },
+   {
+    "t": "J’ai contrôlé derrière moi il y a un moment : je mets le clignoteur et je me range.",
+    "act": "go",
+    "kmh": 12,
+    "lat": 0.9,
+    "blink": "R",
+    "did": "Vous avez agi sur un contrôle fait trop tôt : le cycliste arrivé entre-temps dans l’angle mort a été frôlé."
+   },
+   {
+    "t": "Rétroviseurs, clignoteur, regard par-dessus l’épaule droite : je laisse passer le cycliste avant de me ranger.",
+    "act": "stop",
+    "kmh": 15,
+    "stopDz": 10,
+    "blink": "R",
+    "then": "wait"
+   }
+  ],
+  "ok": 2,
+  "should": "Rétroviseurs, clignoteur, **regard par-dessus l’épaule**, puis laisser passer le cycliste avant de se ranger.",
+  "why": "Les rétroviseurs ne montrent pas tout. Avant de vous déporter, jetez un bref regard par-dessus l’épaule du côté où vous allez ; pensez particulièrement aux cyclistes, étroits, qui peuvent se glisser dans l’angle mort. Un contrôle n’est valable que s’il est fait juste avant l’action.",
+  "memo": "Rétroviseurs, clignoteur, **angle mort**, puis action."
+ }
+]

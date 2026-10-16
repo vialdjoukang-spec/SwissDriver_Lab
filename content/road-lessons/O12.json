@@ -1,0 +1,232 @@
+[
+ {
+  "id": "s12-circuler",
+  "rule": "O12/circuler",
+  "title": "Un disque pour les camions",
+  "scene": "Au bord de la route, un disque blanc **bordé de rouge** montre un **camion** noir : circulation interdite aux camions. Vous conduisez votre berline.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "interdit-camions",
+    "x": 5.6,
+    "dz": 4
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je fais demi-tour : cette route est interdite.",
+    "act": "stop",
+    "did": "Vous vous êtes arrêté devant un signal qui ne visait pas votre voiture."
+   },
+   {
+    "t": "Je continue : seul le véhicule dessiné, le camion, est visé.",
+    "act": "go"
+   },
+   {
+    "t": "Je continue seulement si j’habite dans cette rue.",
+    "act": "stop",
+    "did": "Vous avez cherché une exception « riverains » qui n’était écrite nulle part ; le signal ne visait de toute façon pas votre voiture."
+   }
+  ],
+  "ok": 1,
+  "should": "Continuer : une interdiction partielle ne vise que la catégorie **dessinée**.",
+  "why": "Le disque bordé de rouge interdit ; le dessin à l’intérieur dit **à qui**. Comparez le dessin à votre véhicule réel : une voiture n’est pas un camion. Une exception comme « Riverains autorisés » n’existe que si une plaque l’écrit sous le panneau.",
+  "memo": "Le dessin désigne **qui** est visé."
+ },
+ {
+  "id": "s12-gabarit",
+  "rule": "O12/gabarit",
+  "title": "Poids maximal 3,5 t",
+  "scene": "Un disque bordé de rouge indique **3,5 t** : poids maximal. Votre berline, avec deux passagers et leurs bagages, pèse réellement environ **1,9 t**.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "poids-max",
+    "x": 5.6,
+    "dz": 4
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je fais demi-tour : je ne connais pas le poids inscrit dans mon permis de circulation.",
+    "act": "stop",
+    "did": "Vous avez renoncé au passage en cherchant la valeur du document au lieu du poids réel."
+   },
+   {
+    "t": "Je continue seulement si le poids **à vide** de ma voiture est inférieur à 3,5 t.",
+    "act": "go",
+    "did": "Vous avez comparé le poids à vide : ce qui compte est le poids effectif, occupants et chargement compris."
+   },
+   {
+    "t": "Je continue : le poids réel du moment, 1,9 t, ne dépasse pas 3,5 t.",
+    "act": "go"
+   }
+  ],
+  "ok": 2,
+  "should": "Comparer le **poids effectif** du moment à la limite : 1,9 t ne dépasse pas 3,5 t, vous passez.",
+  "why": "Le signal de poids maximal se rapporte au poids réel au moment du passage : véhicule, occupants et chargement. Ni le poids à vide ni une valeur du permis de circulation ne suffisent. Une valeur égale est admise, toute valeur supérieure interdit le passage.",
+  "memo": "Poids **réel** du jour, pas celui du document."
+ },
+ {
+  "id": "s12-arret",
+  "rule": "O12/arret",
+  "title": "Déposer un ami",
+  "scene": "Votre passager veut descendre ici. Au bord de la chaussée, un disque **bleu bordé de rouge, barré d’une croix rouge** : interdiction de s’arrêter.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "interdit-arret",
+    "x": 5.6,
+    "dz": 6
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "white",
+    "x": 3.1,
+    "from": 38,
+    "to": -38
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je m’arrête une minute avec les feux de détresse.",
+    "act": "park",
+    "did": "Vous vous êtes arrêté, feux de détresse allumés, sous une interdiction de s’arrêter."
+   },
+   {
+    "t": "Je m’arrête sur le trottoir pour ne pas gêner la circulation.",
+    "act": "park",
+    "lat": 3.6,
+    "did": "Vous êtes monté sur le trottoir : l’interdiction vaut aussi pour le trottoir qui longe la chaussée."
+   },
+   {
+    "t": "Je continue jusqu’à un endroit où l’arrêt est permis.",
+    "act": "go"
+   }
+  ],
+  "ok": 2,
+  "should": "Continuer jusqu’à un endroit où l’arrêt est autorisé.",
+  "why": "Ce signal interdit **tout arrêt volontaire** du côté de la route où il est placé, trottoir compris. Déposer quelqu’un est un arrêt volontaire. Les feux de détresse signalent un danger : ils n’autorisent rien.",
+  "memo": "Croix rouge : **ni** arrêt **ni** parcage."
+ },
+ {
+  "id": "s12-stationner",
+  "rule": "O12/stationner",
+  "title": "Deux cartons à décharger",
+  "scene": "Vous devez sortir **immédiatement** deux cartons du coffre pour le magasin d’en face. Panneau : disque bleu bordé de rouge, **une seule** barre rouge, interdiction de parquer. Aucune ligne jaune, aucune autre interdiction.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "interdit-parquer",
+    "x": 5.6,
+    "dz": 6
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je m’arrête le temps strict de décharger, puis je repars.",
+    "act": "park"
+   },
+   {
+    "t": "Je laisse la voiture cinq minutes pour faire une course, feux de détresse allumés.",
+    "act": "park",
+    "did": "Vous avez quitté la voiture pour une course : c’est du parcage, interdit ici, feux de détresse ou non."
+   },
+   {
+    "t": "Je ne peux pas m’arrêter du tout ici : je continue.",
+    "act": "go",
+    "did": "Vous avez renoncé à un arrêt de déchargement que ce signal n’interdit pas."
+   }
+  ],
+  "ok": 0,
+  "should": "S’arrêter **seulement** le temps de décharger réellement, puis repartir.",
+  "why": "Le signal d’interdiction de parquer, à une seule barre, interdit le parcage, pas un arrêt bref pour charger, décharger ou faire monter et descendre des passagers, si aucune autre règle n’interdit l’arrêt. Ce qui sépare l’arrêt du parcage n’est pas la montre, mais ce que vous faites : décharger réellement reste un arrêt ; partir faire une course devient du parcage.",
+  "memo": "Une barre : pas de **parcage** ; l’arrêt utile reste possible."
+ },
+ {
+  "id": "s12-temporaire",
+  "rule": "O12/temporaire",
+  "title": "Chantier : lignes jaune-orange",
+  "scene": "Un chantier occupe votre voie. L’ancienne ligne blanche continue tout droit vers des barrières ; des **lignes jaune-orange** et des cônes déplacent la circulation vers la gauche.",
+  "props": [
+   {
+    "kind": "sign",
+    "id": "danger-travaux",
+    "x": 5.6,
+    "dz": 34
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "white",
+    "x": 3.1,
+    "from": 38,
+    "to": -38
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "orange",
+    "x": 3.0,
+    "x2": 0.8,
+    "from": 24,
+    "to": 12
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "orange",
+    "x": 0.8,
+    "from": 12,
+    "to": -26
+   },
+   {
+    "kind": "line",
+    "style": "solid",
+    "color": "orange",
+    "x": 0.8,
+    "x2": 3.0,
+    "from": -26,
+    "to": -36
+   },
+   {
+    "kind": "cones",
+    "x": 1.3,
+    "from": 12,
+    "to": -26,
+    "step": 4
+   },
+   {
+    "kind": "barrier",
+    "x": 2.2,
+    "dz": -6,
+    "w": 2.4
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je suis l’ancienne ligne blanche : elle est permanente.",
+    "act": "go",
+    "stopDz": 15,
+    "did": "Vous avez suivi l’ancienne ligne blanche jusqu’aux cônes qui ferment la voie."
+   },
+   {
+    "t": "Je suis le tracé jaune-orange en ralentissant.",
+    "act": "detour",
+    "lat": -2.3
+   },
+   {
+    "t": "Je m’arrête et j’attends la fin des travaux.",
+    "act": "stop",
+    "did": "Vous vous êtes arrêté devant un tracé provisoire ouvert à la circulation.",
+    "stopDz": 15
+   }
+  ],
+  "ok": 1,
+  "should": "Suivre le tracé **jaune-orange** et le balisage, en ralentissant.",
+  "why": "Lors de travaux, les marques jaune-orange signifient que les marques blanches habituelles ne sont plus valables à cet endroit : la règle provisoire l’emporte. Vous suivez le tracé provisoire sans franchir les balises.",
+  "memo": "Jaune-orange au sol : **c’est le jaune qui commande**.",
+  "endDz": -38
+ }
+]

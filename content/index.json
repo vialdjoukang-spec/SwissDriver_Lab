@@ -115,5 +115,24 @@
   "content/extra-options/SECTIONS1.json",
   "content/extra-options/SECTIONS2.json",
   "content/extra-options/U25.json"
+ ],
+ "roadLessons": [
+  "content/road-lessons/O12.json",
+  "content/road-lessons/O13.json",
+  "content/road-lessons/O14.json",
+  "content/road-lessons/O21.json",
+  "content/road-lessons/O22.json",
+  "content/road-lessons/O23.json",
+  "content/road-lessons/N24.json",
+  "content/road-lessons/N25.json",
+  "content/road-lessons/N33.json",
+  "content/road-lessons/O31.json",
+  "content/road-lessons/O32.json",
+  "content/road-lessons/O41.json",
+  "content/road-lessons/O42.json",
+  "content/road-lessons/O51.json",
+  "content/road-lessons/O52.json",
+  "content/road-lessons/O53.json",
+  "content/road-lessons/U25.json"
  ]
 }

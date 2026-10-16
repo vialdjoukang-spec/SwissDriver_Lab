@@ -1,0 +1,101 @@
+[
+ {
+  "id": "s52-descente",
+  "rule": "O52/embarquement",
+  "title": "Déposer un ami",
+  "scene": "Votre ami, assis derrière vous **côté chaussée**, veut descendre ici. À droite, une case est libre. Dans le rétroviseur, un cycliste arrive.",
+  "props": [
+   {
+    "kind": "bay",
+    "x": 4.0,
+    "dz": 2,
+    "len": 5.5,
+    "w": 2.0,
+    "color": "white"
+   },
+   {
+    "kind": "car",
+    "x": 4.0,
+    "dz": -12,
+    "paint": 2
+   },
+   {
+    "kind": "bike",
+    "x": -0.6,
+    "dz": 34,
+    "toX": -0.6,
+    "toDz": -160,
+    "kmh": 16,
+    "start": "resolve"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je m’arrête dans ma voie et mon ami ouvre tout de suite sa porte.",
+    "act": "stop",
+    "stopDz": 8,
+    "did": "Vous vous êtes arrêté sur la voie et la porte côté chaussée s’est ouverte sans contrôle, alors que le cycliste arrivait."
+   },
+   {
+    "t": "Je roule au pas et mon ami descend dès que la voiture est presque arrêtée.",
+    "act": "go",
+    "kmh": 5,
+    "did": "Votre ami est descendu pendant que la voiture roulait encore."
+   },
+   {
+    "t": "Je me range sur la case, à l’arrêt complet, et mon ami descend côté trottoir.",
+    "act": "park",
+    "stopDz": 2
+   }
+  ],
+  "ok": 2,
+  "should": "S’arrêter **complètement** à un endroit sûr et faire descendre le passager **côté trottoir**.",
+  "why": "Les passagers montent et descendent lorsque la voiture est complètement arrêtée, jamais pendant qu’elle roule encore. Côté trottoir, ils ne se retrouvent pas au milieu de la circulation et la porte ne s’ouvre pas dans le passage des autres usagers. Une porte côté chaussée ne s’ouvre qu’après le rétroviseur et le contrôle de l’angle mort, où un cycliste peut se trouver.",
+  "memo": "Arrêt complet, regard, **puis** ouverture."
+ },
+ {
+  "id": "s52-harnais",
+  "rule": "O52/conducteur",
+  "title": "Le clic du harnais",
+  "scene": "Derrière vous, **clic** : votre enfant de six ans vient de détacher son harnais. Plus loin à droite, une case de stationnement est libre.",
+  "props": [
+   {
+    "kind": "bay",
+    "x": 4.0,
+    "dz": -8,
+    "len": 5.5,
+    "w": 2.0,
+    "color": "white"
+   },
+   {
+    "kind": "car",
+    "x": 4.0,
+    "dz": -26,
+    "paint": 6
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je continue jusqu’à la case libre, je m’arrête et je le rattache avant de repartir.",
+    "act": "park",
+    "stopDz": -8
+   },
+   {
+    "t": "Je me retourne pour le rattacher en roulant au pas.",
+    "act": "go",
+    "kmh": 8,
+    "did": "Vous vous êtes retourné en roulant : pendant ces secondes, personne ne surveillait la route."
+   },
+   {
+    "t": "Je m’arrête aussitôt dans ma voie pour le rattacher.",
+    "act": "stop",
+    "stopDz": 12,
+    "did": "Vous vous êtes arrêté sur la chaussée : ce n’est pas un lieu sûr pour vous occuper de l’enfant."
+   }
+  ],
+  "ok": 0,
+  "should": "Chercher un **endroit sûr**, s’arrêter, rétablir la retenue, puis repartir.",
+  "why": "Le conducteur doit veiller à ce que les enfants de moins de 12 ans soient correctement retenus. Si un enfant se détache, la bonne réponse n’est pas de se retourner en conduisant : pendant ces secondes, personne ne surveille la route. Un problème de passager qui demande de détourner l’attention se règle à l’arrêt, dans un lieu sûr.",
+  "memo": "Intervenir auprès d’un passager : **à l’arrêt**, en lieu sûr."
+ }
+]
