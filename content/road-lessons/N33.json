@@ -1,0 +1,160 @@
+[
+ {
+  "id": "s33-bordure",
+  "rule": "N33/analyse-tsb",
+  "title": "Une ligne droite bordée de véhicules",
+  "scene": "Une **ligne droite** dégagée, revêtement sec. Le long du trottoir de droite, une file continue de **véhicules stationnés**, dont deux camionnettes, cache le trottoir et les entrées d’immeubles.",
+  "props": [
+   {
+    "kind": "car",
+    "body": "van",
+    "x": 4.3,
+    "dz": 12,
+    "color": "#d8dde2"
+   },
+   {
+    "kind": "car",
+    "x": 4.1,
+    "dz": 5.5,
+    "paint": 3
+   },
+   {
+    "kind": "car",
+    "body": "van",
+    "x": 4.3,
+    "dz": -1,
+    "color": "#e6e2d6"
+   },
+   {
+    "kind": "car",
+    "x": 4.1,
+    "dz": -8,
+    "paint": 1
+   },
+   {
+    "kind": "car",
+    "x": 4.1,
+    "dz": -14,
+    "paint": 5
+   },
+   {
+    "kind": "car",
+    "x": 4.1,
+    "dz": -20,
+    "paint": 2
+   }
+  ],
+  "choices": [
+   {
+    "t": "La route est droite et dégagée : je peux garder 50 km/h.",
+    "act": "go",
+    "kmh": 45,
+    "did": "Vous avez jugé le tronçon sur son seul tracé et gardé votre vitesse le long d’une bordure qui cachait le trottoir."
+   },
+   {
+    "t": "Je réduis ma vitesse et je prépare le frein : la bordure cache d’où quelqu’un pourrait surgir.",
+    "act": "go",
+    "kmh": 20
+   },
+   {
+    "t": "Je garde ma vitesse et je klaxonne pour signaler ma présence.",
+    "act": "honk",
+    "kmh": 40,
+    "did": "Vous avez klaxonné au lieu de ralentir : le danger de la bordure restait entier."
+   }
+  ],
+  "ok": 1,
+  "should": "Passer les **trois lettres** en revue : la bordure fermée annonce un surgissement possible, je réduis ma vitesse et je prépare le frein.",
+  "why": "La bordure dit d’où quelqu’un pourrait surgir. Une bordure fermée cache les piétons, les enfants et les véhicules qui débouchent. Le piège est de ne regarder que le tracé : une ligne droite peut être très dangereuse à cause d’une bordure pleine d’accès.",
+  "memo": "**Tracé, surface, bordure** : trois questions à chaque tronçon."
+ },
+ {
+  "id": "s33-cycliste",
+  "rule": "N33/vitesse-trajectoire",
+  "title": "Un cycliste, une voiture en face",
+  "scene": "Un **cycliste** roule devant vous, à droite de votre voie. En face, une **voiture arrive**. La place manque pour dépasser avec un bon écart.",
+  "props": [
+   {
+    "kind": "bike",
+    "x": 2.5,
+    "dz": 8,
+    "kmh": 14,
+    "start": "resolve"
+   },
+   {
+    "kind": "vehicle",
+    "body": "car",
+    "paint": 2,
+    "x": -1.5,
+    "dz": -38,
+    "toX": -1.5,
+    "toDz": 38,
+    "kmh": 25,
+    "start": "resolve"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je reste derrière le cycliste avec une bonne distance et j’attends que la voie d’en face soit libre.",
+    "act": "go",
+    "kmh": 12
+   },
+   {
+    "t": "Je le dépasse tout de suite en restant dans ma voie : la place suffit tout juste.",
+    "act": "go",
+    "kmh": 25,
+    "lat": -0.9,
+    "did": "Vous avez dépassé le cycliste à quelques dizaines de centimètres, sans distance latérale suffisante."
+   },
+   {
+    "t": "Je le dépasse maintenant par la voie d’en face, en accélérant.",
+    "act": "overtake",
+    "did": "Vous vous êtes engagé sur la voie d’en face alors qu’une voiture arrivait."
+   }
+  ],
+  "ok": 0,
+  "endDz": -14,
+  "should": "Rester **derrière le cycliste** avec une bonne distance et attendre un tronçon dégagé pour envisager le dépassement.",
+  "why": "En Suisse, vous circulez à droite, sur votre voie, et vous gardez une distance latérale suffisante avec les piétons, les cyclistes et les obstacles fixes. Tant que la voie d’en face est occupée, vous restez derrière le cycliste avec une bonne distance et attendez un tronçon dégagé. Chaque danger repéré doit modifier la vitesse, la position ou la distance.",
+  "memo": "Pas de place pour l’écart ? **Je reste derrière.**"
+ },
+ {
+  "id": "s33-distance",
+  "rule": "N33/strategies-securite",
+  "title": "Derrière une voiture lente",
+  "scene": "Vous suivez une **voiture qui roule lentement** dans une rue de localité. Vous ne voyez pas ce qui se passe devant elle. Votre navigation n’est pas encore programmée.",
+  "props": [
+   {
+    "kind": "leadCar",
+    "x": 1.5,
+    "dz": 6,
+    "kmh": 12,
+    "paint": 3
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je me rapproche d’elle pour ne pas laisser de trou.",
+    "act": "go",
+    "kmh": 18,
+    "did": "Vous vous êtes collé à la voiture qui précède : moins de temps pour réagir et moins de vue vers l’avant."
+   },
+   {
+    "t": "Je profite de la lenteur pour programmer la navigation en roulant.",
+    "act": "go",
+    "kmh": 12,
+    "did": "Vous avez programmé la navigation en roulant : votre attention a quitté la circulation."
+   },
+   {
+    "t": "Je garde une grande distance derrière elle et je laisse la navigation pour le prochain arrêt.",
+    "act": "go",
+    "kmh": 9
+   }
+  ],
+  "ok": 2,
+  "endDz": -10,
+  "should": "Garder une **grande distance** avec le véhicule qui précède et rester concentré sur la conduite.",
+  "why": "La vitesse et les distances sont les deux leviers les plus efficaces. Une distance plus grande avec le véhicule qui précède vous donne du temps pour réagir et pour voir plus loin. Pendant le trajet, restez concentré : pas de téléphone à la main, navigation programmée avant le départ.",
+  "memo": "Distance et vitesse en **réserve**."
+ }
+]

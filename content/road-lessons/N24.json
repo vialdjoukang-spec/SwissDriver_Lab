@@ -1,0 +1,202 @@
+[
+ {
+  "id": "s24-intention",
+  "rule": "N24/analyse-usagers",
+  "title": "Un cycliste regarde par-dessus l’épaule",
+  "scene": "Devant vous, un **cycliste** roule sur la bande cyclable de droite. Il tourne la tête **par-dessus son épaule gauche**, sans tendre le bras. À gauche, plus loin, s’ouvre l’entrée d’un garage.",
+  "props": [
+   {
+    "kind": "line",
+    "style": "dashed",
+    "color": "yellow",
+    "x": 3.1,
+    "from": 16,
+    "to": -20
+   },
+   {
+    "kind": "symbol",
+    "id": "bike",
+    "x": 4.0,
+    "dz": 13
+   },
+   {
+    "kind": "bike",
+    "x": 4.2,
+    "dz": 6,
+    "toX": -6.0,
+    "toDz": -30,
+    "kmh": 12,
+    "start": "resolve"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Il n’a pas tendu le bras : il continue tout droit, je le dépasse maintenant.",
+    "act": "overtake",
+    "did": "Vous avez dépassé au moment où le cycliste obliquait vers la gauche : vous avez jugé sur l’absence de signe de la main, pas sur son regard."
+   },
+   {
+    "t": "Je continue à ma vitesse en restant dans ma voie : il restera sur sa bande.",
+    "act": "go",
+    "kmh": 25,
+    "stopDz": 4,
+    "did": "Vous avez gardé votre vitesse et dû freiner fort quand le cycliste a traversé votre voie."
+   },
+   {
+    "t": "Je lève le pied, je reste derrière lui et je me prépare à freiner.",
+    "act": "go",
+    "kmh": 12
+   }
+  ],
+  "ok": 2,
+  "endDz": -14,
+  "should": "**Lever le pied**, rester derrière le cycliste et se préparer à freiner : son regard annonce une intention.",
+  "why": "L’intention se devine à des signes concrets : un regard par-dessus l’épaule, une roue qui se tourne, un clignoteur. L’absence de clignoteur ne prouve pas que rien ne va se passer. Un cycliste peut faire un écart. Votre analyse doit déboucher sur une décision : lever le pied, vous préparer à freiner ou vous arrêter.",
+  "memo": "Mode, âge, vigilance, **intention** : je lis les signes, pas seulement le bras."
+ },
+ {
+  "id": "s24-ballon",
+  "rule": "N24/anticipation",
+  "title": "Un ballon a traversé la rue",
+  "scene": "Un **ballon** vient de rouler sur la chaussée depuis l’espace entre **deux voitures garées** à droite ; il a déjà disparu de l’autre côté de la rue. Personne n’est visible.",
+  "props": [
+   {
+    "kind": "car",
+    "x": 4.1,
+    "dz": 5,
+    "paint": 2
+   },
+   {
+    "kind": "car",
+    "x": 4.1,
+    "dz": -2,
+    "paint": 5
+   },
+   {
+    "kind": "ped",
+    "child": true,
+    "x": 5.6,
+    "dz": 1.5,
+    "toX": -6.0,
+    "toDz": 1.5,
+    "kmh": 7,
+    "start": "good"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je lève le pied, je place le pied au-dessus du frein et je m’attends à voir surgir un enfant.",
+    "act": "stop",
+    "kmh": 15,
+    "stopDz": 7.5
+   },
+   {
+    "t": "Je continue : le ballon est passé, la voie est libre.",
+    "act": "go",
+    "kmh": 30,
+    "did": "Vous avez continué sans ralentir : vous attendiez de voir l’enfant pour réagir."
+   },
+   {
+    "t": "Je me décale vers la gauche pour passer loin des voitures garées, sans ralentir.",
+    "act": "detour",
+    "kmh": 25,
+    "did": "Vous vous êtes écarté sans ralentir : le scénario le plus probable, un enfant qui court derrière son ballon, n’était pas préparé."
+   }
+  ],
+  "ok": 0,
+  "should": "**Anticiper** : lever le pied, pied au-dessus du frein, en imaginant l’enfant qui suit le ballon.",
+  "why": "Un ballon qui roule annonce souvent un enfant. Posez-vous la question « et si… ? » et placez-vous dans une position qui permet d’y faire face : vitesse plus basse, pied prêt à freiner. Une réaction préparée est plus rapide qu’une réaction improvisée. Le piège est d’attendre la preuve que quelque chose va se passer avant d’agir.",
+  "memo": "Un ballon ? **Et si** un enfant le suivait…"
+ },
+ {
+  "id": "s24-regard-conducteur",
+  "rule": "N24/tactique-defensive",
+  "title": "Il semble vous avoir vu",
+  "scene": "En face, une voiture attend au milieu de la chaussée pour tourner vers une **entrée de garage de votre côté**. Son conducteur tourne la tête vers vous. Vous continuez tout droit.",
+  "props": [
+   {
+    "kind": "vehicle",
+    "body": "car",
+    "paint": 4,
+    "x": -1.5,
+    "dz": -12,
+    "toX": 6.6,
+    "toDz": -5,
+    "kmh": 12,
+    "start": "resolve"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Il m’a regardé : il va attendre que je sois passé, je continue.",
+    "act": "go",
+    "kmh": 30,
+    "stopDz": 0,
+    "did": "Vous avez pris son regard pour un accord : il s’est engagé et vous avez dû freiner tard."
+   },
+   {
+    "t": "Je lève le pied, je reste prêt à freiner et je le laisse passer s’il s’engage.",
+    "act": "stop",
+    "kmh": 20,
+    "stopDz": 8
+   },
+   {
+    "t": "Je klaxonne pour qu’il se dépêche de tourner.",
+    "act": "honk",
+    "stopDz": 0,
+    "did": "Vous avez klaxonné pour presser un conducteur : le klaxon sert à prévenir d’un danger, pas à presser quelqu’un."
+   }
+  ],
+  "ok": 1,
+  "should": "Lever le pied, rester **disposé à freiner** et le laisser passer : renoncer à son droit peut être la décision la plus sûre.",
+  "why": "Le contact visuel aide à savoir si l’autre vous a vu, mais il ne garantit pas qu’il a compris vos intentions ni qu’il agira correctement : un conducteur qui semble vous voir peut avoir regardé à travers vous. Les signaux d’avertissement ne servent pas à exprimer un mécontentement ni à presser quelqu’un. Patience et disposition à freiner vous donnent le temps de corriger l’erreur des autres.",
+  "memo": "Un regard n’est pas un **accord**."
+ },
+ {
+  "id": "s24-camionnette",
+  "rule": "N24/limites-perception",
+  "title": "Derrière la camionnette",
+  "scene": "Une **camionnette** est stationnée à droite et masque le trottoir devant elle. Votre voiture a un **freinage d’urgence automatique** ; son voyant est éteint.",
+  "props": [
+   {
+    "kind": "car",
+    "body": "van",
+    "x": 4.3,
+    "dz": 3.5,
+    "color": "#e6e2d6"
+   },
+   {
+    "kind": "ped",
+    "x": 5.5,
+    "dz": -1.5,
+    "toX": -6.0,
+    "toDz": -1.5,
+    "start": "good"
+   }
+  ],
+  "choices": [
+   {
+    "t": "Je garde ma vitesse : le freinage automatique réagira si quelqu’un surgit.",
+    "act": "go",
+    "kmh": 30,
+    "did": "Vous vous êtes reposé sur le système d’aide : son silence ne prouvait pas que la voie était libre."
+   },
+   {
+    "t": "Je continue : je ne vois personne devant la camionnette.",
+    "act": "go",
+    "kmh": 30,
+    "did": "Vous avez continué à votre vitesse alors que la camionnette pouvait cacher un piéton."
+   },
+   {
+    "t": "Je ralentis fortement, je déplace la tête pour voir au-delà de la camionnette et je reste prêt à m’arrêter.",
+    "act": "stop",
+    "kmh": 15,
+    "stopDz": 5.5
+   }
+  ],
+  "ok": 2,
+  "should": "**Réduire la vitesse** et déplacer la tête pour voir autour de la camionnette, prêt à s’arrêter.",
+  "why": "Une camionnette stationnée, une haie ou un bus peuvent cacher un piéton : pour voir autour de ces obstacles, déplacez la tête et réduisez votre vitesse. Un système d’aide peut se tromper ou ne pas reconnaître un objet ; l’absence de signal ne prouve pas que la voie est libre. Les systèmes d’aide ne vous dispensent jamais de votre responsabilité.",
+  "memo": "Silence du système = **absence d’information**."
+ }
+]
