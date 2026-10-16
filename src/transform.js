@@ -22,6 +22,11 @@
     html=once(html,'Gn.setPixelRatio(Math.min(devicePixelRatio,2))','Gn.setPixelRatio(Math.min(devicePixelRatio,1.5))');
     html=once(html,'fi.shadow.mapSize.set(3072,3072)','fi.shadow.mapSize.set(innerWidth<700?1024:2048,innerWidth<700?1024:2048)');
     html=once(html,'window.__NORENDER||Gn.render(Ut,na)','Dt.visible=!(($u===1&&At==="drive"&&!Ie)||(window.SwissDriverScene&&window.SwissDriverScene.isDriverView()));window.__NORENDER||Gn.render(Ut,na)');
+    // Simplified road: every chapter gets course gates; only chapters with scenes
+    // (Nu) get situations and a section end. Course-only gates award nothing.
+    html=once(html,'if(!Nu.includes(r)){i.push({type:"locked",c:a,g:s,z:null});continue}','');
+    html=once(html,'l=t(e-25),i.push({type:"secEnd",c:a,g:s,s:u,z:l}),e=l','c.length&&(l=t(e-25),i.push({type:"secEnd",c:a,g:s,s:u,z:l}),e=l)');
+    html=once(html,'Hn[Rt.idx]===i&&(ih(),i.type==="secGate")','Hn[Rt.idx]===i&&(ih(),i.type==="secGate"&&yM(i.s))');
     // The versioned curriculum is merged where the engine first reads the data.
     html=once(html,'var Yo=window.DATA,','var Yo=(window.DATA=SwissDriverCurriculum.merge(window.DATA,window.__SD_EXTENSION)),');
     html=once(html,'</head>','<script data-swissdriver-curriculum="1">\n'+curriculum.replace(/<\/script/gi,'<\\/script')+'\n</script>\n</head>');
@@ -29,5 +34,5 @@
     html=once(html,'<title>Permis B · Rossa GT</title>','<title>SwissDriver Lab · Cours et conduite</title>');
     return html;
   }
-  return Object.freeze({assemble,once,version:'3.0.0'});
+  return Object.freeze({assemble,once,version:'3.1.0'});
 });

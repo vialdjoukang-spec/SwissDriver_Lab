@@ -46,7 +46,9 @@ var sdSimTime=0;
     if(after==='explain'){
       Jt=null;ut.course.hidden=true;At='explain';Bi=0;ut.explain.hidden=false;clearKeys();emit('lesson-return-to-feedback');return;
     }
+    const it=Jt.it,onRoad=!Jt.fromKey&&Hn[Rt.idx]===it;
     originalXo();Bi=1;clearKeys();
+    if(onRoad&&it.type==='secGate'&&courseOnly(it.s))us('<b>Cours seul</b> · « '+Be(it.s.otitle)+' » n’a pas encore de simulation. Portique suivant devant vous.','info');
     if(after==='plan')cr(true);
     emit('lesson-close');
   };
@@ -84,6 +86,10 @@ var sdSimTime=0;
   Bu=function(scene){emit('scenario-feedback',{ruleId:ruleId(scene.it),scenarioId:scene.sc.id});originalBu(scene);};
 
   const scen=Hn.filter(item=>item.type==='sit');
+  function courseOnly(section){return !scen.some(item=>item.s===section);}
+  // HUD: a course-only section says so instead of « 0 / 0 situations ».
+  const originalKo=Ko;
+  Ko=function(){originalKo();const item=dr();if(item?.s&&courseOnly(item.s)){text(st('#hZone'),'Cours seul · simulation non disponible');text(st('#hAll'),'Priorités : '+Rt.done.length+' / '+scen.length+' situations');}};
   const ruleIds=new Set(Yo.chapters.flatMap(ch=>ch.sections.map(sec=>ch.id+'/'+sec.id)));
   const scenarioIds=new Set();const contractErrors=[];
   for(const item of scen){
@@ -92,7 +98,8 @@ var sdSimTime=0;
     scenarioIds.add(item.sc.id);
     if(!Array.isArray(item.sc.choices)||item.sc.choices.length!==3||!item.sc.choices[item.sc.ok])contractErrors.push('Choix invalides : '+item.sc.id);
   }
-  const coverage={parts:Yo.groups.length,chapters:Yo.chapters.length,sections:ruleIds.size,playableChapters:Nu.length,playableSections:Yu.length,scenarios:scen.length,contractErrors};
+  const coverage={parts:Yo.groups.length,chapters:Yo.chapters.length,sections:ruleIds.size,playableChapters:Nu.length,playableSections:Yu.filter(g=>!courseOnly(g.s)).length,scenarios:scen.length,
+    roadChapters:Hn.filter(item=>item.type==='chapGate').length,roadSections:Yu.length,contractErrors};
   if(contractErrors.length)throw new Error('Contrat cours–scènes invalide : '+contractErrors.join('; '));
 
   let selectedPart=0;
@@ -116,7 +123,7 @@ var sdSimTime=0;
         const details=document.createElement('details');details.className='lab-chapter';
         const summary=document.createElement('summary');summary.textContent=chapter.otitle;
         const badge=document.createElement('span');badge.className='lab-badge';
-        badge.textContent=Nu.includes(chapter.id)?'Cours + conduite':'Cours · 3D non disponible';summary.append(badge);details.append(summary);
+        badge.textContent=Nu.includes(chapter.id)?'Cours + conduite':'Portiques de cours · sans simulation';summary.append(badge);details.append(summary);
         const driveButtons=[...card.querySelectorAll('[data-gi]')];
         chapter.sections.forEach((sectionData,sectionIndex)=>{
           const row=document.createElement('div');row.className='lab-lesson-row';row.dataset.rule=chapter.id+'/'+sectionData.id;
@@ -127,6 +134,8 @@ var sdSimTime=0;
           read.onclick=()=>{cr(false);ia({type:'secGate',c:chapter,g:group,s:sectionData},true);Jt.after='plan';};
           actions.append(read);
           const drive=driveButtons[sectionIndex];
+          // Course-only gates are freely reachable: no situation is skipped or validated.
+          if(!drive&&!Nu.includes(chapter.id)){const gi=Hn.findIndex(h=>h.type==='secGate'&&h.s===sectionData);if(gi>=0){const go=document.createElement('button');go.type='button';go.dataset.gi=gi;go.className='ghost lab-drive lab-gate';go.textContent='Aller au portique';go.setAttribute('aria-label','Aller au portique : '+sectionData.otitle);actions.append(go);}}
           if(drive){drive.textContent=drive.disabled?'Conduite verrouillée':'Conduire';drive.classList.add('lab-drive');drive.setAttribute('aria-label','Conduire : '+sectionData.otitle);actions.append(drive);}
           row.append(actions);details.append(row);
         });
@@ -136,12 +145,12 @@ var sdSimTime=0;
     });
     selectPart(Math.min(selectedPart,sections.length-1));
     text(st('#plan header .kick'),'Programme & terrain');
-    text(st('#plan header b'),coverage.parts+' parties · '+coverage.chapters+' chapitres · '+coverage.playableChapters+' chapitre simulé');
+    text(st('#plan header b'),coverage.parts+' parties · '+coverage.roadChapters+' chapitres sur la route · '+coverage.playableChapters+' chapitre simulé');
   }
 
   text(st('#start h1'),'SwissDriver Lab');
   text(st('#start .kick'),'Cours · décision · conduite');
-  text(st('#start .lead'),'Une berline, un cours, puis la situation correspondante. Le chapitre Priorités propose '+coverage.playableSections+' sous-chapitres et '+coverage.scenarios+' situations décisionnelles. Tous les chapitres du programme asa 2027 sont consultables dans le programme (M), avec des QCM style examen et un exercice de reconnaissance des signaux ; seules les Priorités ont des scènes 3D.');
+  text(st('#start .lead'),'Une berline, un cours, puis la situation correspondante. Le chapitre Priorités propose '+coverage.playableSections+' sous-chapitres et '+coverage.scenarios+' situations décisionnelles. Les '+coverage.roadChapters+' chapitres du programme asa 2027 se suivent sur la route : chaque partie, chapitre et sous-chapitre a son portique de cours. Seules les Priorités ont des scènes 3D ; les autres portiques sont des cours seuls, signalés comme tels. Le programme (M) donne accès à tous les cours, aux QCM style examen et à la reconnaissance des signaux.');
   text(st('#start .steps li'),'Passez le portique vert, lisez chaque page avec Entrée, puis reprenez la route. J rouvre à tout moment les cours déjà vus ; Échap revient en arrière.');
   text(st('#startBtn'),'Commencer la conduite');
   const note=document.createElement('p');note.className='lab-scope';note.textContent='Environnement urbain simulé, non certifié comme reproduction géographique. Après votre choix, la trajectoire est assistée : le résultat évalue la décision, pas une conduite manuelle complète.';st('#start .card').insertBefore(note,st('#startBtn'));

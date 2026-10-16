@@ -1,5 +1,10 @@
 # Historique
 
+## Non publié — route simplifiée du programme
+- Les 27 chapitres se suivent sur la route : chaque chapitre et sous-chapitre possède son portique de cours, dans l'ordre du programme. Les chapitres sans scène 3D ne reçoivent ni situation, ni fin de sous-chapitre, ni XP : rien n'est validé en passant un portique.
+- HUD et message « Cours seul · simulation non disponible » ; programme : badge « Portiques de cours · sans simulation » et bouton « Aller au portique » (libre accès, aucune situation O11 n'est validée par le saut).
+- Moteur : trois ancrages vérifiés dans `src/transform.js` (3.1.0) ; O11 conserve exactement ses positions et ses 25 situations. Sauvegarde `permisGT.v1` inchangée.
+
 ## 0.5.0-preview.1 — 14 octobre 2026
 - Programme aligné sur le catalogue asa de juillet 2026 (en vigueur au 1er janvier 2027) : 8 chapitres nouveaux (N24, N25, N26, N33, N43, N46, N47, N48) et 13 sous-chapitres complémentaires ; les 161 contenus d'examen sont reliés à un cours (`content/programme-asa-2027.json`, `tests/test_programme.py`).
 - Exercices style examen pour chaque sous-chapitre : 1 543 QCM, dont 928 à 4 propositions ; reconnaissance de 27 signaux avec 4 significations proposées.

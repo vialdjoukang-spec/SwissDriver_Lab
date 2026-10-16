@@ -6,10 +6,11 @@
 - **Reconnaître les signaux** : 27 signaux suisses courants (dessins simplifiés, non officiels) présentés au bord d'une route, 4 significations proposées, retour sur la famille de forme et de couleur, lien vers le cours.
 - **Aller-retour partout** : « Cours vus » (touche J) rouvre chaque fragment à la page quittée. Les boutons sous-chapitre précédent et suivant traversent tout le programme. « Retour » (Échap) ramène exactement à l'endroit précédent : route, programme, explication, exercice ou cours.
 - **Schémas** des sous-chapitres affichés dans les cours (113 schémas embarqués).
+- **Route simplifiée du programme** : les 27 chapitres se suivent sur la route, un portique par chapitre et sous-chapitre. Hors O11, le portique ouvre le cours seul, signalé « Cours seul · simulation non disponible », sans XP ni validation ; « Aller au portique » (programme, M) y conduit directement.
 - **Priorités (O11)** : 25 situations 3D. Le geste annoncé par une mauvaise réponse devient visible (klaxon, appel de phares, signe, décalage, recul, accélération) ; sinon la limite est signalée dans `docs/COHERENCE_PRIORITES.json`.
 
 ## Couverture réelle
-Seul O11 possède des scènes 3D. Les 26 autres chapitres offrent cours, schémas éventuels et QCM, **sans simulation de conduite**. La couverture du programme est rédactionnelle : elle n'a été validée ni par l'asa ni par une personne compétente.
+Seul O11 possède des scènes 3D. Les 26 autres chapitres offrent portiques de cours sur la route, schémas éventuels et QCM, **sans simulation de conduite** : franchir un portique n'évalue rien. La couverture du programme est rédactionnelle : elle n'a été validée ni par l'asa ni par une personne compétente.
 
 ## Travaux restants, par priorité
 | Priorité | Travail | Critère d'achèvement |
